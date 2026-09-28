@@ -1,0 +1,18 @@
+Muscles of the shoulder and upper limb (right) - 3D model attribution
+
+BodyParts3D, (c) The Database Center for Life Science, licensed under
+Creative Commons Attribution-Share Alike 2.1 Japan (CC BY-SA 2.1 JP).
+https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en
+Source: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/ (version 3.0, 20110915),
+via the STL mirror https://github.com/Kevin-Mattheus-Moerman/BodyParts3D
+Citation: Mitsuhashi N, et al. BodyParts3D: 3D structure database for anatomical concepts.
+Nucleic Acids Res. 2009;37:D782-5. doi:10.1093/nar/gkn613
+
+Modifications: converted from STL to glTF binary (GLB); vertices welded; meshes simplified
+(quadric decimation) for web delivery; normals recomputed; axes converted and recentred; some
+structures merged from several source meshes or split into connected components.
+The modified model (model.glb) is distributed under the same licence, CC BY-SA 2.1 JP.
+
+Teaching content (pack.json names, content and questions) is part of AI Anatomy (GPL v3 or later).
+
+Source meshes (FMA IDs): BP45, BP47, FMA13322, FMA13358, FMA13375, FMA13381, FMA13383, FMA13395, FMA13398, FMA13414, FMA23130, FMA23464, FMA23467, FMA23725, FMA24435, FMA24437, FMA24439, FMA24441, FMA24443, FMA24446, FMA24448, FMA24464, FMA24466, FMA24468, FMA24470, FMA24472, FMA32540, FMA32544, FMA32547, FMA32551, FMA32553, FMA33581, FMA33584, FMA33586, FMA34680, FMA34682, FMA34684, FMA34690, FMA37665, FMA37668, FMA37684, FMA37686, FMA37695, FMA37697, FMA37699, FMA37705, FMA38454, FMA38460, FMA38463, FMA38479, FMA38482, FMA38486, FMA38495, FMA38498, FMA38501, FMA38504, FMA38513, FMA38516, FMA38519, FMA38522, FMA38525, FMA38560, FMA38562, FMA38617, FMA38619, FMA38638, FMA38640, FMA45874, FMA79979

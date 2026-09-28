@@ -1,0 +1,21 @@
+Right hand and wrist anatomy pack for mod_aianatomy
+
+3D geometry: BodyParts3D, (c) The Database Center for Life Science, licensed under
+Creative Commons Attribution-Share Alike 2.1 Japan (CC BY-SA 2.1 JP).
+https://dbarchive.biosciencedbc.jp/en/bodyparts3d/
+https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en
+
+Citation: Mitsuhashi N, Fujieda K, Tamura T, Kawamoto S, Takagi T, Okubo K.
+BodyParts3D: 3D structure database for anatomical concepts.
+Nucleic Acids Res. 2009;37(Database issue):D782-5. https://doi.org/10.1093/nar/gkn613
+
+Source files: BodyParts3D version 3.0 (20110915), obtained as binary STL from
+https://github.com/Kevin-Mattheus-Moerman/BodyParts3D (converted from the original OBJ files).
+
+Modifications (model.glb): 29 structures combined into one GLB, one node per structure;
+vertices welded; smooth normals computed; axes converted (X patient-left, Y superior,
+Z anterior, millimetres); recentred on the hand. Geometry is otherwise unchanged.
+Node names are neutral (s0..s28); pack.json maps each node to its stable id and FMA id.
+
+The converted model.glb is distributed under the same licence (CC BY-SA 2.1 JP).
+Library teaching content and questions in pack.json: (c) 2026 LMS Hosting Services, GPL v3 or later.

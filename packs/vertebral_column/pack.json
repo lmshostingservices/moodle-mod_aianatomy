@@ -1,0 +1,1604 @@
+{
+ "id": "vertebral_column",
+ "version": "1.0.0",
+ "name": "Vertebral column",
+ "description": "The 24 presacral vertebrae (7 cervical, 12 thoracic, 5 lumbar) and the sacrum.",
+ "system": "skeletal",
+ "region": "trunk",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "spine",
+ "rootframe": [
+  "cervical",
+  "thoracic",
+  "lumbar",
+  "sacral"
+ ],
+ "defaultgroups": [
+  "cervical",
+  "thoracic",
+  "lumbar",
+  "sacral"
+ ],
+ "presets": [
+  {
+   "id": "lateral",
+   "label": "Right lateral",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  }
+ ],
+ "defaultpreset": "lateral",
+ "tissue": false,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "spine",
+   "label": "Vertebral column",
+   "parent": null,
+   "tip": "Count the vertebrae with \"Breakfast at 7, lunch at 12, dinner at 5\": 7 cervical, 12 thoracic and 5 lumbar, then the fused sacrum and coccyx."
+  },
+  {
+   "id": "cervical",
+   "label": "Cervical vertebrae",
+   "parent": "spine",
+   "tip": "Only cervical vertebrae have a transverse foramen (for the vertebral artery), and most have a bifid spinous process. C1 says \"yes\", C2 says \"no\"."
+  },
+  {
+   "id": "thoracic",
+   "label": "Thoracic vertebrae",
+   "parent": "spine",
+   "tip": "Thoracic vertebrae are the only ones with rib facets; from the side they look like a giraffe's head, with a long spinous process pointing down."
+  },
+  {
+   "id": "lumbar",
+   "label": "Lumbar vertebrae",
+   "parent": "spine",
+   "tip": "Lumbar vertebrae have the largest, kidney-shaped bodies and short, square spinous processes; the bodies get bigger lower down as they carry more weight."
+  },
+  {
+   "id": "sacral",
+   "label": "Sacrum",
+   "parent": "spine",
+   "tip": "Five sacral vertebrae fuse into one triangular sacrum that joins the pelvis at the sacroiliac joints."
+  }
+ ],
+ "structures": [
+  {
+   "id": "skeletal_spine_c1_atlas",
+   "concept": "atlas",
+   "node": "s0",
+   "type": "bone",
+   "side": "midline",
+   "group": "cervical",
+   "names": {
+    "preferred": "Atlas (C1)",
+    "latin": "Atlas",
+    "synonyms": [
+     "C1",
+     "First cervical vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA12519"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c2_axis"
+    }
+   ],
+   "content": {
+    "pronunciation": "AT-lus",
+    "origin": "Named after Atlas, the Titan of Greek myth who held up the heavens, because it holds up the head.",
+    "location": "The top of the vertebral column, directly beneath the skull (occipital bone) and above the axis (C2).",
+    "description": "A ring of bone with no body and no spinous process. It has an anterior and a posterior arch joined by two lateral masses, and wide transverse processes that each contain a transverse foramen.",
+    "function": "Supports the skull. Its upper facets meet the occipital condyles at the atlanto-occipital joints, which allow nodding (the \"yes\" movement). It pivots around the dens of the axis when the head turns.",
+    "mnemonic": "Atlas holds up the world (the head) and says \"yes\"; the axis below says \"no\".",
+    "clinical": "A Jefferson fracture is a burst fracture of the ring of C1, usually caused by a heavy load straight down on the top of the head, such as diving into shallow water.",
+    "hint": "The very first bone of the spine: a ring with no body that the skull rests on."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Which vertebra has no body and no spinous process?",
+     "options": [
+      "Axis (C2)",
+      "Atlas (C1)",
+      "C7 vertebra",
+      "T1 vertebra"
+     ],
+     "answer": 1,
+     "explanation": "The atlas (C1) is a ring of bone with anterior and posterior arches and lateral masses but no body."
+    },
+    {
+     "kind": "function",
+     "text": "The atlanto-occipital joints mainly allow which movement of the head?",
+     "options": [
+      "Nodding (yes)",
+      "Rotation (no)",
+      "Chewing",
+      "Side bending of the lower back"
+     ],
+     "answer": 0,
+     "explanation": "The joints between the atlas and the occipital condyles allow flexion and extension of the head, the \"yes\" movement."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_c2_axis",
+   "concept": "axis",
+   "node": "s1",
+   "type": "bone",
+   "side": "midline",
+   "group": "cervical",
+   "names": {
+    "preferred": "Axis (C2)",
+    "latin": "Axis",
+    "synonyms": [
+     "C2",
+     "Second cervical vertebra",
+     "Epistropheus (older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA12520"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c1_atlas"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c3"
+    }
+   ],
+   "content": {
+    "pronunciation": "AK-sis",
+    "origin": "Latin axis, \"axle\" or \"pivot\", because the atlas and head turn around it.",
+    "location": "The second vertebra of the neck, just below the atlas (C1) and above C3.",
+    "description": "Recognised by the dens (odontoid process), a tooth-like peg that points up from its body into the front of the atlas ring. It has a large, bifid spinous process that can be felt at the back of the upper neck.",
+    "function": "Forms the pivot for turning the head. The atlas and skull rotate around the dens at the atlanto-axial joint, the \"no\" movement, which gives about half of the neck's rotation.",
+    "mnemonic": "The Axis is the Axle: the head turns around its tooth (dens).",
+    "clinical": "Fractures of the dens are common in older people after falls. A hangman's fracture is a break through both sides of the arch (pars interarticularis) of C2 caused by forced hyperextension.",
+    "hint": "The second bone of the neck, with a tooth-like peg pointing up into the ring above it."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "What is the tooth-like projection on the axis called?",
+     "options": [
+      "Spinous process",
+      "Transverse tubercle",
+      "Uncinate process",
+      "Dens (odontoid process)"
+     ],
+     "answer": 3,
+     "explanation": "The dens, or odontoid process (\"tooth-like\"), projects upward from the body of the axis."
+    },
+    {
+     "kind": "function",
+     "text": "Rotation of the head to say \"no\" mainly happens at which joint?",
+     "options": [
+      "Atlanto-axial joint",
+      "Atlanto-occipital joint",
+      "Temporomandibular joint",
+      "C6-C7 joint"
+     ],
+     "answer": 0,
+     "explanation": "At the atlanto-axial joint the atlas and skull rotate around the dens of the axis."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_c3",
+   "concept": "c3",
+   "node": "s2",
+   "type": "bone",
+   "side": "midline",
+   "group": "cervical",
+   "names": {
+    "preferred": "C3 vertebra",
+    "latin": "Vertebra cervicalis III",
+    "synonyms": [
+     "Third cervical vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA12521"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c2_axis"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c4"
+    }
+   ],
+   "content": {
+    "pronunciation": "SEE 3 (SER-vik-ul VER-tuh-bruh)",
+    "origin": "Latin cervix, cervicis, \"neck\", and vertebra, from vertere, \"to turn\".",
+    "location": "The third vertebra of the neck, between the axis (C2) above and C4 below. It lies at about the level of the hyoid bone.",
+    "description": "A typical cervical vertebra: a small, oval body, a triangular vertebral foramen, a short bifid (split) spinous process, and a transverse foramen in each transverse process.",
+    "function": "Supports the head and allows neck movement. Its transverse foramina carry the vertebral arteries up to the brain, and small uncinate processes on the upper body edges help stabilise the neck.",
+    "mnemonic": "\"C3, 4 and 5 keep the diaphragm alive\": the phrenic nerve comes from spinal nerves at this upper-middle neck level.",
+    "clinical": "Spinal cord injury in the upper neck, around C3 to C5, can damage the phrenic nerve supply to the diaphragm and affect breathing, so these patients may need ventilation.",
+    "hint": "The first typical vertebra of the neck, directly under the bone with the tooth-like peg."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Why is spinal cord injury around the C3 to C5 level especially dangerous?",
+     "options": [
+      "It stops the heart beating",
+      "It can affect nerve supply to the diaphragm and breathing",
+      "It causes loss of smell",
+      "It paralyses only the legs"
+     ],
+     "answer": 1,
+     "explanation": "The phrenic nerve to the diaphragm arises from spinal nerves C3, C4 and C5."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_c4",
+   "concept": "c4",
+   "node": "s3",
+   "type": "bone",
+   "side": "midline",
+   "group": "cervical",
+   "names": {
+    "preferred": "C4 vertebra",
+    "latin": "Vertebra cervicalis IV",
+    "synonyms": [
+     "Fourth cervical vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA12522"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c3"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c5"
+    }
+   ],
+   "content": {
+    "pronunciation": "SEE 4 (SER-vik-ul VER-tuh-bruh)",
+    "origin": "Latin cervix, cervicis, \"neck\", and vertebra, from vertere, \"to turn\".",
+    "location": "The fourth vertebra of the neck, in the middle of the cervical spine between C3 and C5, roughly level with the upper border of the thyroid cartilage.",
+    "description": "A typical cervical vertebra: a small, oval body, a triangular vertebral foramen, a short bifid (split) spinous process, and a transverse foramen in each transverse process.",
+    "function": "Supports the head and allows flexion, extension, side bending and rotation of the neck. Its transverse foramina carry the vertebral artery and vein.",
+    "mnemonic": "C4 = \"fork for the carotid\": the common carotid usually splits at about C3-C4.",
+    "clinical": "The common carotid artery usually divides into internal and external carotid arteries around the level of C3-C4 (upper border of the thyroid cartilage), a common site for atherosclerotic narrowing.",
+    "hint": "The middle bone of the seven in the neck, level with the top of the voice box."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The common carotid artery usually divides at about which vertebral level?",
+     "options": [
+      "C1",
+      "C7",
+      "T4",
+      "C3-C4"
+     ],
+     "answer": 3,
+     "explanation": "The carotid bifurcation is usually at about C3-C4, level with the upper border of the thyroid cartilage."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_c5",
+   "concept": "c5",
+   "node": "s4",
+   "type": "bone",
+   "side": "midline",
+   "group": "cervical",
+   "names": {
+    "preferred": "C5 vertebra",
+    "latin": "Vertebra cervicalis V",
+    "synonyms": [
+     "Fifth cervical vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA12523"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c4"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c6"
+    }
+   ],
+   "content": {
+    "pronunciation": "SEE 5 (SER-vik-ul VER-tuh-bruh)",
+    "origin": "Latin cervix, cervicis, \"neck\", and vertebra, from vertere, \"to turn\".",
+    "location": "The fifth vertebra of the neck, between C4 and C6, in the lower half of the cervical spine.",
+    "description": "A typical cervical vertebra: a small, oval body, a triangular vertebral foramen, a short bifid (split) spinous process, and a transverse foramen in each transverse process.",
+    "function": "Supports the head and allows neck movement. The lower neck, including the C5-C6 level, is one of the most mobile parts of the cervical spine for flexion and extension.",
+    "mnemonic": "C5-C6 is the busiest junction of the neck, so it wears out first.",
+    "clinical": "The C5-C6 level is one of the most common sites of cervical disc degeneration (cervical spondylosis) and disc prolapse, which can press on a nerve root and cause arm pain.",
+    "hint": "In the lower half of the neck, two bones above the one with the large palpable carotid tubercle."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Degeneration of the cervical discs (cervical spondylosis) is most common at which level?",
+     "options": [
+      "C1-C2",
+      "C5-C6",
+      "T6-T7",
+      "L1-L2"
+     ],
+     "answer": 1,
+     "explanation": "The mobile lower neck, especially C5-C6, is the most common site of cervical disc degeneration."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_c6",
+   "concept": "c6",
+   "node": "s5",
+   "type": "bone",
+   "side": "midline",
+   "group": "cervical",
+   "names": {
+    "preferred": "C6 vertebra",
+    "latin": "Vertebra cervicalis VI",
+    "synonyms": [
+     "Sixth cervical vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA12524"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c5"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c7"
+    }
+   ],
+   "content": {
+    "pronunciation": "SEE 6 (SER-vik-ul VER-tuh-bruh)",
+    "origin": "Latin cervix, cervicis, \"neck\", and vertebra, from vertere, \"to turn\".",
+    "location": "The sixth vertebra of the neck, between C5 and C7. It lies at the level of the cricoid cartilage, where the larynx becomes the trachea and the pharynx becomes the oesophagus.",
+    "description": "A typical cervical vertebra: a small, oval body, a triangular vertebral foramen, a short bifid (split) spinous process, and a transverse foramen in each transverse process.",
+    "function": "Supports the head and allows neck movement. The vertebral artery usually enters the transverse foramen of C6 on its way up to the brain.",
+    "mnemonic": "C6 is \"six for switch\": the larynx switches to trachea and the pharynx to oesophagus at this level.",
+    "clinical": "The anterior tubercle of the C6 transverse process (carotid tubercle) is large; the common carotid artery can be pressed against it, and it is a landmark for some nerve blocks in the neck.",
+    "hint": "The neck bone level with the cricoid cartilage, where the airway becomes the trachea."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "At the level of C6, the pharynx becomes which structure?",
+     "options": [
+      "Larynx",
+      "Stomach",
+      "Nasal cavity",
+      "Oesophagus"
+     ],
+     "answer": 3,
+     "explanation": "At the C6 level (cricoid cartilage) the pharynx continues as the oesophagus and the larynx as the trachea."
+    },
+    {
+     "kind": "relationship",
+     "text": "The vertebral artery usually enters the transverse foramina of the cervical spine at which vertebra?",
+     "options": [
+      "C1",
+      "C3",
+      "C6",
+      "C7"
+     ],
+     "answer": 2,
+     "explanation": "The vertebral artery usually enters the transverse foramen of C6 and runs up through the foramina above."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_c7",
+   "concept": "c7",
+   "node": "s6",
+   "type": "bone",
+   "side": "midline",
+   "group": "cervical",
+   "names": {
+    "preferred": "C7 vertebra (vertebra prominens)",
+    "latin": "Vertebra prominens",
+    "synonyms": [
+     "C7",
+     "Seventh cervical vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA12525"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c6"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t1"
+    }
+   ],
+   "content": {
+    "pronunciation": "SEE 7 (VER-tuh-bruh PROM-in-enz)",
+    "origin": "Latin vertebra prominens, \"prominent vertebra\", because its spinous process sticks out at the base of the neck.",
+    "location": "The lowest vertebra of the neck, between C6 and the first thoracic vertebra (T1), at the base of the neck.",
+    "description": "Has a long, single (not bifid) spinous process that is easily felt at the base of the neck. Its transverse foramina are small and usually carry only small veins, not the vertebral artery.",
+    "function": "Forms the transition from the mobile neck to the more rigid thoracic spine and gives attachment to the nuchal ligament and back muscles.",
+    "mnemonic": "C7 = the \"bump\" at the base of the neck: bend your head forward and feel it.",
+    "clinical": "Its spinous process is used as a surface landmark to count vertebrae when examining the back. Occasionally a cervical rib grows from C7 and can compress nerves or vessels going to the arm (thoracic outlet syndrome).",
+    "hint": "The last neck bone, whose long bump is the easiest to feel at the base of the neck."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Why is C7 called the vertebra prominens?",
+     "options": [
+      "Its long spinous process is easily felt at the base of the neck",
+      "It has the largest body in the spine",
+      "It has a tooth-like dens",
+      "It joins the skull"
+     ],
+     "answer": 0,
+     "explanation": "C7 has a long, non-bifid spinous process that stands out at the base of the neck."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t1",
+   "concept": "t1",
+   "node": "s7",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T1 vertebra",
+    "latin": "Vertebra thoracica I",
+    "synonyms": [
+     "First thoracic vertebra",
+     "D1 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA9165"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_c7"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t2"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 1 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The first vertebra of the chest (thoracic) region, just below C7 at the base of the neck.",
+    "description": "Transitional in shape: its body looks like a cervical body, and its side has a full costal facet for the head of the first rib and a demifacet below for the second rib. Its long spinous process is often almost as easy to feel as that of C7.",
+    "function": "Joins the first pair of ribs, helping to form the top of the thoracic cage and the thoracic inlet, through which the trachea, oesophagus and major vessels pass.",
+    "mnemonic": "T1 wears the first rib like a collar: one full facet for rib 1.",
+    "clinical": "The T1 spinal nerve contributes to the brachial plexus, so injury or tumours at the top of the chest (such as a Pancoast tumour of the lung apex) can cause hand weakness.",
+    "hint": "The first chest vertebra, directly under the prominent bump at the base of the neck, carrying the first pair of ribs."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The first rib joins a full costal facet on which vertebra?",
+     "options": [
+      "C7",
+      "T1",
+      "T2",
+      "T12"
+     ],
+     "answer": 1,
+     "explanation": "T1 has a full costal facet for the head of the first rib."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t2",
+   "concept": "t2",
+   "node": "s8",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T2 vertebra",
+    "latin": "Vertebra thoracica II",
+    "synonyms": [
+     "Second thoracic vertebra",
+     "D2 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA9187"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t1"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t3"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 2 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The second thoracic vertebra, between T1 and T3 in the upper back. The top of the sternum (jugular notch) lies at about the level of the T2-T3 disc.",
+    "description": "A typical thoracic vertebra: a heart-shaped body with costal facets (demifacets) on its sides for the heads of the ribs, facets on the transverse processes for the rib tubercles, a small round vertebral foramen and a long spinous process that slopes downwards.",
+    "function": "Articulates with the heads of the second and third ribs and the tubercle of the second rib, helping support the upper thoracic cage.",
+    "mnemonic": "T2 \"tops the sternum\": the jugular notch is level with T2-T3.",
+    "clinical": "Upper thoracic vertebrae are used as landmarks on chest X-rays; the jugular notch at the top of the sternum is usually level with the disc between T2 and T3.",
+    "hint": "The second bone of the chest spine, level with the notch at the top of the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The jugular notch at the top of the sternum is usually level with which part of the spine?",
+     "options": [
+      "C4-C5",
+      "T8-T9",
+      "L1-L2",
+      "T2-T3"
+     ],
+     "answer": 3,
+     "explanation": "The jugular (suprasternal) notch lies at about the level of the T2-T3 intervertebral disc."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t3",
+   "concept": "t3",
+   "node": "s9",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T3 vertebra",
+    "latin": "Vertebra thoracica III",
+    "synonyms": [
+     "Third thoracic vertebra",
+     "D3 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA9209"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t2"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t4"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 3 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The third thoracic vertebra, between T2 and T4 in the upper back. Its spinous process is level with the medial end of the spine of the scapula.",
+    "description": "A typical thoracic vertebra: a heart-shaped body with costal facets (demifacets) on its sides for the heads of the ribs, facets on the transverse processes for the rib tubercles, a small round vertebral foramen and a long spinous process that slopes downwards.",
+    "function": "Articulates with the third and fourth ribs and gives attachment to back muscles, including the rhomboids and trapezius.",
+    "mnemonic": "T3 = \"3 for the scapular spine\": draw a line between the inner ends of the shoulder blade spines.",
+    "clinical": "With the arms by the sides, the root (medial end) of the spine of the scapula is level with the T3 spinous process, a useful landmark for counting thoracic vertebrae.",
+    "hint": "The upper back vertebra level with the inner end of the ridge on each shoulder blade."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "With the arms relaxed, the medial end of the spine of the scapula is level with which spinous process?",
+     "options": [
+      "C7",
+      "T3",
+      "T7",
+      "T12"
+     ],
+     "answer": 1,
+     "explanation": "The root of the scapular spine lies at about the level of the T3 spinous process."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t4",
+   "concept": "t4",
+   "node": "s10",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T4 vertebra",
+    "latin": "Vertebra thoracica IV",
+    "synonyms": [
+     "Fourth thoracic vertebra",
+     "D4 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA9248"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t3"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t5"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 4 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The fourth thoracic vertebra, between T3 and T5. The disc below it (T4-T5) is level with the sternal angle at the front of the chest.",
+    "description": "A typical thoracic vertebra: a heart-shaped body with costal facets (demifacets) on its sides for the heads of the ribs, facets on the transverse processes for the rib tubercles, a small round vertebral foramen and a long spinous process that slopes downwards.",
+    "function": "Articulates with the fourth and fifth ribs. The T4-T5 level marks the plane where the arch of the aorta begins and ends and where the trachea divides.",
+    "mnemonic": "\"T4 is the fork\": the trachea forks near the T4-T5 level, level with the sternal angle.",
+    "clinical": "The sternal angle (angle of Louis) is at the T4-T5 disc level; it is used to find the second rib for counting ribs and marks where the trachea divides into the main bronchi.",
+    "hint": "The chest vertebra whose lower disc lines up with the ridge where the upper and middle parts of the breastbone meet."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The sternal angle lies at the level of which intervertebral disc?",
+     "options": [
+      "C6-C7",
+      "T2-T3",
+      "T4-T5",
+      "T11-T12"
+     ],
+     "answer": 2,
+     "explanation": "The sternal angle is level with the T4-T5 disc, the plane of the tracheal bifurcation and aortic arch."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t5",
+   "concept": "t5",
+   "node": "s11",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T5 vertebra",
+    "latin": "Vertebra thoracica V",
+    "synonyms": [
+     "Fifth thoracic vertebra",
+     "D5 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA9922"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t4"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t6"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 5 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The fifth thoracic vertebra, between T4 and T6 in the middle of the upper back, behind the heart and oesophagus.",
+    "description": "A typical thoracic vertebra: a heart-shaped body with costal facets (demifacets) on its sides for the heads of the ribs, facets on the transverse processes for the rib tubercles, a small round vertebral foramen and a long spinous process that slopes downwards.",
+    "function": "A typical thoracic vertebra that articulates with the fifth and sixth ribs. Together with the ribs and sternum it protects the heart and lungs.",
+    "mnemonic": "Typical thoracic vertebrae look like a giraffe's head from the side: long spinous process \"neck\" pointing down.",
+    "clinical": "The thoracic spine has a natural backward curve (kyphosis). An exaggerated curve can develop from poor posture, Scheuermann disease in adolescents or osteoporotic fractures in older adults.",
+    "hint": "A typical chest vertebra behind the heart, one level below the one lined up with the sternal angle."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "The normal backward curve of the thoracic spine is called what?",
+     "options": [
+      "Lordosis",
+      "Scoliosis",
+      "Kyphosis",
+      "Spondylolisthesis"
+     ],
+     "answer": 2,
+     "explanation": "Kyphosis is the normal backward (posteriorly convex) curve of the thoracic spine."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t6",
+   "concept": "t6",
+   "node": "s12",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T6 vertebra",
+    "latin": "Vertebra thoracica VI",
+    "synonyms": [
+     "Sixth thoracic vertebra",
+     "D6 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA9945"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t5"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t7"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 6 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The sixth thoracic vertebra, between T5 and T7 in the middle of the back.",
+    "description": "A typical thoracic vertebra: a heart-shaped body with costal facets (demifacets) on its sides for the heads of the ribs, facets on the transverse processes for the rib tubercles, a small round vertebral foramen and a long spinous process that slopes downwards.",
+    "function": "A typical thoracic vertebra that articulates with the sixth and seventh ribs, supporting the chest wall and allowing some rotation of the trunk.",
+    "mnemonic": "The T6 rule: injury \"at six or higher\" can trigger autonomic dysreflexia.",
+    "clinical": "People with spinal cord injury at or above about T6 are at risk of autonomic dysreflexia, a sudden dangerous rise in blood pressure triggered by stimuli such as a full bladder.",
+    "hint": "A typical mid-back chest vertebra, just above the one level with the lower tip of the shoulder blade."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Spinal cord injury at or above about which level puts people at risk of autonomic dysreflexia?",
+     "options": [
+      "T6",
+      "L3",
+      "L5",
+      "Sacrum"
+     ],
+     "answer": 0,
+     "explanation": "Autonomic dysreflexia mainly occurs in spinal cord injuries at or above about the T6 level."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t7",
+   "concept": "t7",
+   "node": "s13",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T7 vertebra",
+    "latin": "Vertebra thoracica VII",
+    "synonyms": [
+     "Seventh thoracic vertebra",
+     "D7 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA9968"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t6"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t8"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 7 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The seventh thoracic vertebra, between T6 and T8. With the arms by the sides, its spinous process is level with the inferior angle of the scapula.",
+    "description": "A typical thoracic vertebra: a heart-shaped body with costal facets (demifacets) on its sides for the heads of the ribs, facets on the transverse processes for the rib tubercles, a small round vertebral foramen and a long spinous process that slopes downwards.",
+    "function": "A typical thoracic vertebra that articulates with the seventh and eighth ribs. The seventh rib is the last true rib joining the sternum directly by its own cartilage.",
+    "mnemonic": "T7 = \"the tip of the scapula\": the inferior angle points to T7.",
+    "clinical": "The inferior angle of the scapula at the T7 level is a common landmark for counting vertebrae and for examining the lungs from behind.",
+    "hint": "The mid-back vertebra level with the lower tips of the shoulder blades."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The inferior angle of the scapula is usually level with which spinous process?",
+     "options": [
+      "T3",
+      "T12",
+      "L4",
+      "T7"
+     ],
+     "answer": 3,
+     "explanation": "With the arms by the sides, the inferior angle of the scapula lies at about the T7 spinous process."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t8",
+   "concept": "t8",
+   "node": "s14",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T8 vertebra",
+    "latin": "Vertebra thoracica VIII",
+    "synonyms": [
+     "Eighth thoracic vertebra",
+     "D8 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA9991"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t7"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t9"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 8 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The eighth thoracic vertebra, between T7 and T9, in the lower half of the thoracic spine.",
+    "description": "A typical thoracic vertebra: a heart-shaped body with costal facets (demifacets) on its sides for the heads of the ribs, facets on the transverse processes for the rib tubercles, a small round vertebral foramen and a long spinous process that slopes downwards.",
+    "function": "A typical thoracic vertebra that articulates with the eighth and ninth ribs. The inferior vena cava passes through the diaphragm at about this level.",
+    "mnemonic": "\"I 8 10 Eggs At 12\": IVC at T8, Oesophagus at T10, Aorta at T12.",
+    "clinical": "The caval opening in the central tendon of the diaphragm, carrying the inferior vena cava, lies at about the T8 level.",
+    "hint": "A lower chest vertebra at the level where the large vein from the lower body passes through the diaphragm."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The inferior vena cava passes through the diaphragm at about which level?",
+     "options": [
+      "T8",
+      "T10",
+      "T12",
+      "L2"
+     ],
+     "answer": 0,
+     "explanation": "The caval opening lies at about T8 (\"I 8 10 Eggs At 12\")."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t9",
+   "concept": "t9",
+   "node": "s15",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T9 vertebra",
+    "latin": "Vertebra thoracica IX",
+    "synonyms": [
+     "Ninth thoracic vertebra",
+     "D9 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA10014"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t8"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t10"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 9 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The ninth thoracic vertebra, between T8 and T10. The xiphisternal joint at the lower end of the sternum is level with it.",
+    "description": "A typical thoracic vertebra: a heart-shaped body with costal facets (demifacets) on its sides for the heads of the ribs, facets on the transverse processes for the rib tubercles, a small round vertebral foramen and a long spinous process that slopes downwards.",
+    "function": "A typical thoracic vertebra that articulates with the ninth and tenth ribs, helping to support the lower chest wall and diaphragm attachments.",
+    "mnemonic": "T9 = \"nine at the xiphoid\": the bottom of the breastbone lines up with T9.",
+    "clinical": "The lower thoracic spine is a common site of osteoporotic wedge compression fractures in older adults, which can cause back pain and loss of height.",
+    "hint": "A lower chest vertebra level with the lower tip of the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Which type of fracture commonly affects thoracic vertebrae in older people with osteoporosis?",
+     "options": [
+      "Wedge compression fracture",
+      "Jefferson fracture",
+      "Colles fracture",
+      "Hangman's fracture"
+     ],
+     "answer": 0,
+     "explanation": "Weakened vertebral bodies in osteoporosis often collapse at the front, giving a wedge compression fracture."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t10",
+   "concept": "t10",
+   "node": "s16",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T10 vertebra",
+    "latin": "Vertebra thoracica X",
+    "synonyms": [
+     "Tenth thoracic vertebra",
+     "D10 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA10037"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t9"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t11"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 10 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The tenth thoracic vertebra, between T9 and T11 in the lower back of the chest.",
+    "description": "Similar to a typical thoracic vertebra, but its body often has a single full costal facet for the tenth rib rather than two demifacets. Its long spinous process slopes downwards.",
+    "function": "Articulates with the tenth rib. The oesophagus passes through the diaphragm at about this level.",
+    "mnemonic": "\"I 8 10 Eggs At 12\": the Oesophagus (with 10 letters in \"oesophagus\") passes at T10.",
+    "clinical": "The oesophageal hiatus of the diaphragm lies at about T10; a hiatus hernia occurs when part of the stomach slides up through this opening into the chest.",
+    "hint": "The lower chest vertebra at the level where the food pipe passes through the diaphragm."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The oesophagus passes through the diaphragm at about which vertebral level?",
+     "options": [
+      "T4",
+      "T8",
+      "T10",
+      "L1"
+     ],
+     "answer": 2,
+     "explanation": "The oesophageal hiatus lies at about T10."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t11",
+   "concept": "t11",
+   "node": "s17",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T11 vertebra",
+    "latin": "Vertebra thoracica XI",
+    "synonyms": [
+     "Eleventh thoracic vertebra",
+     "D11 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA10059"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t10"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t12"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 11 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The eleventh thoracic vertebra, between T10 and T12 near the bottom of the thoracic spine.",
+    "description": "Atypical thoracic vertebra: its body has a single full costal facet for the eleventh rib, and its transverse processes have no facets because the eleventh rib does not attach to them. Its body is larger, more like a lumbar body.",
+    "function": "Articulates with the head of the eleventh rib, a floating rib that does not reach the sternum.",
+    "mnemonic": "T11 and T12 carry the floating ribs: \"11 and 12 float free\".",
+    "clinical": "The lower thoracic spine near the thoracolumbar junction is a common site of spinal fracture after falls or high-energy trauma.",
+    "hint": "The second-last chest vertebra, carrying a floating rib with no facet on its transverse process."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Why do the transverse processes of T11 have no rib facets?",
+     "options": [
+      "T11 has no ribs attached",
+      "The eleventh rib does not attach to the transverse process",
+      "The transverse processes are fused to the sacrum",
+      "The facets are on the spinous process instead"
+     ],
+     "answer": 1,
+     "explanation": "The eleventh rib joins only the vertebral body, so T11's transverse processes lack costal facets."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_t12",
+   "concept": "t12",
+   "node": "s18",
+   "type": "bone",
+   "side": "midline",
+   "group": "thoracic",
+   "names": {
+    "preferred": "T12 vertebra",
+    "latin": "Vertebra thoracica XII",
+    "synonyms": [
+     "Twelfth thoracic vertebra",
+     "D12 (dorsal, older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA10081"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t11"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_l1"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEE 12 (thor-AS-ik VER-tuh-bruh)",
+    "origin": "Greek thorax, \"breastplate\" or \"chest\", and Latin vertebra, from vertere, \"to turn\".",
+    "location": "The last thoracic vertebra, between T11 and the first lumbar vertebra (L1), at the thoracolumbar junction.",
+    "description": "A transitional vertebra: its upper articular processes face like those of a thoracic vertebra and its lower ones like a lumbar vertebra. It has a single full costal facet for the twelfth rib and a large, lumbar-like body.",
+    "function": "Articulates with the twelfth rib and forms the change from the rib-bearing, less mobile thoracic spine to the mobile lumbar spine. The aorta passes behind the diaphragm at this level.",
+    "mnemonic": "\"I 8 10 Eggs At 12\": the Aorta passes at T12.",
+    "clinical": "The thoracolumbar junction (T12-L1) is one of the most common sites of spinal fracture, because stress concentrates where the rigid thoracic spine meets the mobile lumbar spine.",
+    "hint": "The last rib-bearing vertebra, where the chest spine changes to the lower back."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Why is the T12-L1 region a common site of spinal fracture?",
+     "options": [
+      "It has no intervertebral disc",
+      "It carries the heaviest ribs",
+      "It contains the dens",
+      "It is where the rigid thoracic spine meets the mobile lumbar spine"
+     ],
+     "answer": 3,
+     "explanation": "Stress concentrates at the junction between the stiff thoracic and mobile lumbar regions."
+    },
+    {
+     "kind": "relationship",
+     "text": "The aorta passes through the aortic hiatus of the diaphragm at about which level?",
+     "options": [
+      "T8",
+      "T10",
+      "T12",
+      "L4"
+     ],
+     "answer": 2,
+     "explanation": "The aortic hiatus lies at about T12 (\"I 8 10 Eggs At 12\")."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_l1",
+   "concept": "l1",
+   "node": "s19",
+   "type": "bone",
+   "side": "midline",
+   "group": "lumbar",
+   "names": {
+    "preferred": "L1 vertebra",
+    "latin": "Vertebra lumbalis I",
+    "synonyms": [
+     "First lumbar vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13072"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_t12"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_l2"
+    }
+   ],
+   "content": {
+    "pronunciation": "EL 1 (LUM-bar VER-tuh-bruh)",
+    "origin": "Latin lumbus, \"loin\" (lower back), and vertebra, from vertere, \"to turn\".",
+    "location": "The first vertebra of the lower back, just below T12. The transpyloric plane, used to locate the pylorus of the stomach, lies at about this level.",
+    "description": "A typical lumbar vertebra: a large, kidney-shaped body, a triangular vertebral foramen, thick, short, square (hatchet-shaped) spinous process and no transverse foramina or rib facets.",
+    "function": "Carries the weight of the upper body. In adults the lower end of the spinal cord (conus medullaris) usually lies at about the L1-L2 level.",
+    "mnemonic": "\"The cord stops at L1-2\": below it lies the cauda equina, the \"horse's tail\" of nerve roots.",
+    "clinical": "Because the spinal cord ends around L1-L2 in adults, a lumbar puncture is done well below this, usually at L3-L4 or L4-L5, to avoid the cord.",
+    "hint": "The first bone of the lower back, just below the last rib-bearing vertebra, near where the spinal cord ends."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "In adults, the spinal cord usually ends at about which level?",
+     "options": [
+      "C7",
+      "T6",
+      "L1-L2",
+      "S2"
+     ],
+     "answer": 2,
+     "explanation": "The conus medullaris usually lies at about L1-L2 in adults; below that is the cauda equina."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_l2",
+   "concept": "l2",
+   "node": "s20",
+   "type": "bone",
+   "side": "midline",
+   "group": "lumbar",
+   "names": {
+    "preferred": "L2 vertebra",
+    "latin": "Vertebra lumbalis II",
+    "synonyms": [
+     "Second lumbar vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13073"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_l1"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_l3"
+    }
+   ],
+   "content": {
+    "pronunciation": "EL 2 (LUM-bar VER-tuh-bruh)",
+    "origin": "Latin lumbus, \"loin\" (lower back), and vertebra, from vertere, \"to turn\".",
+    "location": "The second lumbar vertebra, between L1 and L3 in the lower back.",
+    "description": "A typical lumbar vertebra: a large, kidney-shaped body, a triangular vertebral foramen, thick, short, square (hatchet-shaped) spinous process and no transverse foramina or rib facets.",
+    "function": "Carries the weight of the upper body and allows flexion, extension and side bending of the lower back. The crura (legs) of the diaphragm and the psoas major muscle attach to the upper lumbar bodies.",
+    "mnemonic": "Lumbar bodies are big because they carry the load: \"the lower you go, the bigger they grow\".",
+    "clinical": "Below about L2 the vertebral canal contains the cauda equina (nerve roots) rather than the spinal cord. Pressure on these roots, for example from a large disc prolapse, causes cauda equina syndrome, a surgical emergency.",
+    "hint": "The second bone of the lower back, just below where the spinal cord usually ends."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "The bundle of nerve roots below the end of the spinal cord is called what?",
+     "options": [
+      "Filum terminale",
+      "Cauda equina",
+      "Brachial plexus",
+      "Dura mater"
+     ],
+     "answer": 1,
+     "explanation": "Cauda equina means \"horse's tail\", the bundle of lumbar and sacral nerve roots below the cord."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_l3",
+   "concept": "l3",
+   "node": "s21",
+   "type": "bone",
+   "side": "midline",
+   "group": "lumbar",
+   "names": {
+    "preferred": "L3 vertebra",
+    "latin": "Vertebra lumbalis III",
+    "synonyms": [
+     "Third lumbar vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13074"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_l2"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_l4"
+    }
+   ],
+   "content": {
+    "pronunciation": "EL 3 (LUM-bar VER-tuh-bruh)",
+    "origin": "Latin lumbus, \"loin\" (lower back), and vertebra, from vertere, \"to turn\".",
+    "location": "The third lumbar vertebra, in the middle of the lumbar spine between L2 and L4, near the level of the umbilicus.",
+    "description": "A typical lumbar vertebra: a large, kidney-shaped body, a triangular vertebral foramen, thick, short, square (hatchet-shaped) spinous process and no transverse foramina or rib facets.",
+    "function": "Carries body weight in the middle of the lumbar curve. It usually has the longest transverse processes of the lumbar vertebrae, giving leverage to muscles such as quadratus lumborum.",
+    "mnemonic": "L3 = \"the middle of the lordosis\": the midpoint of the inward curve of the lower back.",
+    "clinical": "A lumbar puncture (spinal tap) is usually performed between L3 and L4 or L4 and L5, below the end of the spinal cord, to sample cerebrospinal fluid safely.",
+    "hint": "The middle bone of the five in the lower back, with the longest side processes."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "A lumbar puncture is usually done at which level?",
+     "options": [
+      "T12-L1",
+      "C6-C7",
+      "T4-T5",
+      "L3-L4 or L4-L5"
+     ],
+     "answer": 3,
+     "explanation": "L3-L4 or L4-L5 is below the end of the spinal cord, so the needle is unlikely to damage it."
+    },
+    {
+     "kind": "terminology",
+     "text": "The normal inward curve of the lumbar spine is called what?",
+     "options": [
+      "Kyphosis",
+      "Scoliosis",
+      "Lordosis",
+      "Spondylolysis"
+     ],
+     "answer": 2,
+     "explanation": "Lordosis is the normal inward (anteriorly convex) curve of the lumbar spine."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_l4",
+   "concept": "l4",
+   "node": "s22",
+   "type": "bone",
+   "side": "midline",
+   "group": "lumbar",
+   "names": {
+    "preferred": "L4 vertebra",
+    "latin": "Vertebra lumbalis IV",
+    "synonyms": [
+     "Fourth lumbar vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13075"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_l3"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_l5"
+    }
+   ],
+   "content": {
+    "pronunciation": "EL 4 (LUM-bar VER-tuh-bruh)",
+    "origin": "Latin lumbus, \"loin\" (lower back), and vertebra, from vertere, \"to turn\".",
+    "location": "The fourth lumbar vertebra, between L3 and L5 in the lower back. A line joining the highest points of the iliac crests (the supracristal plane) crosses at about the L4 spinous process or L4-L5.",
+    "description": "A typical lumbar vertebra: a large, kidney-shaped body, a triangular vertebral foramen, thick, short, square (hatchet-shaped) spinous process and no transverse foramina or rib facets.",
+    "function": "Carries body weight and allows lower back movement. The abdominal aorta divides into the common iliac arteries in front of L4.",
+    "mnemonic": "\"Hands on hips find L4\": thumbs on the tops of the iliac crests point to L4.",
+    "clinical": "The L4-L5 and L5-S1 discs are the most common sites of lumbar disc prolapse, which can compress a nerve root and cause sciatica (pain radiating down the leg).",
+    "hint": "The lower-back vertebra level with the tops of the hip bones, where the aorta splits in two."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "A line joining the tops of the iliac crests is used to locate which vertebra?",
+     "options": [
+      "T12",
+      "L1",
+      "L4",
+      "S1"
+     ],
+     "answer": 2,
+     "explanation": "The supracristal plane passes through about the L4 spinous process or L4-L5 interspace."
+    },
+    {
+     "kind": "relationship",
+     "text": "The abdominal aorta divides into the common iliac arteries at about which level?",
+     "options": [
+      "T8",
+      "T12",
+      "L1",
+      "L4"
+     ],
+     "answer": 3,
+     "explanation": "The aortic bifurcation usually lies in front of the L4 vertebral body."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_l5",
+   "concept": "l5",
+   "node": "s23",
+   "type": "bone",
+   "side": "midline",
+   "group": "lumbar",
+   "names": {
+    "preferred": "L5 vertebra",
+    "latin": "Vertebra lumbalis V",
+    "synonyms": [
+     "Fifth lumbar vertebra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13076"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_l4"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_sacrum"
+    }
+   ],
+   "content": {
+    "pronunciation": "EL 5 (LUM-bar VER-tuh-bruh)",
+    "origin": "Latin lumbus, \"loin\" (lower back), and vertebra, from vertere, \"to turn\".",
+    "location": "The last lumbar vertebra, at the bottom of the lower back, sitting on top of the sacrum at the lumbosacral joint.",
+    "description": "The largest vertebra. Its body is deeper at the front than at the back (wedge-shaped), which helps create the angle between the lumbar spine and the sacrum. Its transverse processes are thick and strong.",
+    "function": "Transfers the weight of the upper body to the sacrum and pelvis. Its thick transverse processes anchor the iliolumbar ligaments, which tie it to the pelvis.",
+    "mnemonic": "\"L5 is the largest and the last\": the biggest lumbar body carries the most weight.",
+    "clinical": "Spondylolysis (a stress defect in the pars interarticularis) and spondylolisthesis (the vertebra slipping forward) are most common at L5, often in young athletes who repeatedly arch the back, such as gymnasts and fast bowlers.",
+    "hint": "The largest and lowest bone of the lower back, sitting on the wedge of fused bones below."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Forward slipping of one vertebra on the one below (spondylolisthesis) most commonly involves which vertebra?",
+     "options": [
+      "C2",
+      "T6",
+      "L1",
+      "L5"
+     ],
+     "answer": 3,
+     "explanation": "Spondylolysis and spondylolisthesis are most common at L5, where shear forces on the lumbosacral junction are greatest."
+    },
+    {
+     "kind": "terminology",
+     "text": "Which is the largest vertebra in the vertebral column?",
+     "options": [
+      "Atlas (C1)",
+      "T12 vertebra",
+      "L5 vertebra",
+      "Axis (C2)"
+     ],
+     "answer": 2,
+     "explanation": "The L5 vertebra has the largest body, as it carries the most body weight above the sacrum."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_spine_sacrum",
+   "concept": "sacrum",
+   "node": "s24",
+   "type": "bone",
+   "side": "midline",
+   "group": "sacral",
+   "names": {
+    "preferred": "Sacrum",
+    "latin": "Os sacrum",
+    "synonyms": [
+     "Sacral bone",
+     "Sacral vertebrae (S1-S5, fused)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA16202"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_spine_l5"
+    }
+   ],
+   "content": {
+    "pronunciation": "SAY-krum",
+    "origin": "Latin os sacrum, \"sacred bone\", a translation of a Greek name; the reason for the name is uncertain.",
+    "location": "At the base of the vertebral column, below L5, wedged between the two hip bones at the back of the pelvis. The coccyx (tailbone) attaches to its lower tip.",
+    "description": "A large triangular bone formed by five fused sacral vertebrae. It has a forward-projecting upper edge (sacral promontory), four pairs of sacral foramina for nerves, ear-shaped auricular surfaces on each side, and an opening at the lower end (sacral hiatus).",
+    "function": "Transfers the weight of the upper body to the pelvis through the sacroiliac joints, forms the back wall of the pelvis, and lets the sacral nerves pass out through its foramina.",
+    "mnemonic": "\"Breakfast at 7, lunch at 12, dinner at 5, and 5 fused for dessert\": 7 cervical, 12 thoracic, 5 lumbar, 5 fused sacral.",
+    "clinical": "Pain from the sacroiliac joints is a common cause of low back and buttock pain. The sacral hiatus is used to inject anaesthetic into the epidural space (caudal epidural), often in children.",
+    "hint": "The large triangular wedge of fused bones at the back of the pelvis, below the last lumbar vertebra."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "How many vertebrae fuse to form the sacrum?",
+     "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Seven"
+     ],
+     "answer": 2,
+     "explanation": "The sacrum is formed by five fused sacral vertebrae (S1-S5)."
+    },
+    {
+     "kind": "relationship",
+     "text": "The sacrum joins the hip bones at which joints?",
+     "options": [
+      "Sacroiliac joints",
+      "Hip joints",
+      "Pubic symphysis",
+      "Lumbosacral facet joints"
+     ],
+     "answer": 0,
+     "explanation": "The auricular surfaces of the sacrum meet the ilia at the sacroiliac joints."
+    }
+   ]
+  }
+ ]
+}

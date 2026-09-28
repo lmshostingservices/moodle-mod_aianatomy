@@ -1,0 +1,18 @@
+Digestive system - 3D model attribution
+
+BodyParts3D, (c) The Database Center for Life Science, licensed under
+Creative Commons Attribution-Share Alike 2.1 Japan (CC BY-SA 2.1 JP).
+https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en
+Source: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/ (version 3.0, 20110915),
+via the STL mirror https://github.com/Kevin-Mattheus-Moerman/BodyParts3D
+Citation: Mitsuhashi N, et al. BodyParts3D: 3D structure database for anatomical concepts.
+Nucleic Acids Res. 2009;37:D782-5. doi:10.1093/nar/gkn613
+
+Modifications: converted from STL to glTF binary (GLB); vertices welded; meshes simplified
+(quadric decimation) for web delivery; normals recomputed; axes converted and recentred; some
+structures merged from several source meshes or split into connected components.
+The modified model (model.glb) is distributed under the same licence, CC BY-SA 2.1 JP.
+
+Teaching content (pack.json names, content and questions) is part of AI Anatomy (GPL v3 or later).
+
+Source meshes (FMA IDs): FMA14542, FMA14543nsn, FMA14544, FMA7131, FMA7148, FMA7196, FMA7197, FMA7198nsn, FMA7202, FMA7206, FMA7207, FMA7208

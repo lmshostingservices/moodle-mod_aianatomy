@@ -1,0 +1,150 @@
+{{!
+    This file is part of Moodle - https://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+}}
+{{!
+    @template mod_aianatomy/view
+
+    Activity landing page: mode chooser and mastery overview. The player is mounted into the player region.
+
+    Example context (json):
+    {
+        "uniqid": "aa-1",
+        "config": "{}",
+        "packname": "Hand and wrist bones (right)",
+        "targetcount": 8,
+        "ready": true,
+        "canmanage": true,
+        "editorurl": "#",
+        "reporturl": "#",
+        "guest": false,
+        "showmastery": true,
+        "mastery": {"mastered": 3, "learning": 2, "difficult": 1, "new": 2},
+        "difficult": "Triquetrum",
+        "hasdifficult": true,
+        "canweak": true,
+        "modes": [
+            {"key": "practice", "enabled": true, "title": "Practice", "bestfor": "Best for practising",
+             "rows": [{"label": "Feedback", "text": "Instant", "yes": true}],
+             "done": true, "status": "Practised"}
+        ]
+    }
+}}
+<div id="{{uniqid}}" class="aa-app" data-config="{{config}}">
+    <div class="aa-home" data-region="home">
+        <div class="aa-hero">
+            <div class="aa-hero-stats">
+                <span class="aa-stat">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg>
+                    {{packname}}
+                </span>
+                <span class="aa-stat">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/></svg>
+                    {{#str}} structurecount, mod_aianatomy, {{targetcount}} {{/str}}
+                </span>
+            </div>
+            <div class="aa-hero-actions">
+                {{#canmanage}}
+                <a class="aa-btn aa-btn-ghost" href="{{editorurl}}">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4l10-10-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>
+                    {{#str}} editanatomy, mod_aianatomy {{/str}}
+                </a>
+                {{/canmanage}}
+                {{#reporturl}}
+                <a class="aa-btn aa-btn-ghost" href="{{reporturl}}">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>
+                    {{#str}} reports, mod_aianatomy {{/str}}
+                </a>
+                {{/reporturl}}
+            </div>
+        </div>
+
+        {{^ready}}
+        <div class="aa-empty">
+            <div class="aa-empty-art" aria-hidden="true">
+                <svg viewBox="0 0 120 90"><rect x="8" y="10" width="104" height="70" rx="12"/><path d="M60 22l22 12v24L60 70 38 58V34z"/><path d="M60 46l22-12M60 46v24M60 46L38 34"/></svg>
+            </div>
+            <h3>{{#str}} notready, mod_aianatomy {{/str}}</h3>
+            <p>{{#canmanage}}{{#str}} notready_manager, mod_aianatomy {{/str}}{{/canmanage}}{{^canmanage}}{{#str}} notready_student, mod_aianatomy {{/str}}{{/canmanage}}</p>
+            {{#canmanage}}<a class="aa-btn aa-btn-primary" href="{{editorurl}}">{{#str}} editanatomy, mod_aianatomy {{/str}}</a>{{/canmanage}}
+        </div>
+        {{/ready}}
+
+        {{#ready}}
+        {{#showmastery}}
+        <div class="ax-masterypanel">
+            <div class="ax-masterypanel-head">
+                <h3>{{#str}} yourmastery, mod_aianatomy {{/str}}</h3>
+                {{#canweak}}
+                <button type="button" class="aa-btn aa-btn-primary aa-btn-sm" data-action="start" data-mode="practice" data-focus="weak">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+                    {{#str}} practiseweak, mod_aianatomy {{/str}}
+                </button>
+                {{/canweak}}
+            </div>
+            <div class="ax-mastery">
+                {{#mastery}}
+                <span class="ax-mchip is-mastered">{{#str}} mastered, mod_aianatomy {{/str}}: {{mastered}}</span>
+                <span class="ax-mchip is-learning">{{#str}} learning, mod_aianatomy {{/str}}: {{learning}}</span>
+                <span class="ax-mchip is-difficult">{{#str}} difficult, mod_aianatomy {{/str}}: {{difficult}}</span>
+                <span class="ax-mchip is-new">{{#str}} notyet, mod_aianatomy {{/str}}: {{new}}</span>
+                {{/mastery}}
+            </div>
+            {{#hasdifficult}}<p class="ax-difficult">{{#str}} difficultlist, mod_aianatomy, {{difficult}} {{/str}}</p>{{/hasdifficult}}
+        </div>
+        {{/showmastery}}
+        <div class="aa-modes">
+            {{#modes}}
+            <div class="aa-mode aa-mode-{{key}} {{#done}}is-done{{/done}}">
+                {{#done}}
+                <div class="aa-mode-done" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+                </div>
+                <span class="aa-badge aa-badge-done">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>{{status}}
+                </span>
+                {{/done}}
+                <div class="aa-mode-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="aa-i-study"><path d="M3 6.5C5.5 5 8.5 5 12 7c3.5-2 6.5-2 9-.5V19c-2.5-1.5-5.5-1.5-9 .5-3.5-2-6.5-2-9-.5z"/><path d="M12 7v12.5"/></svg>
+                    <svg viewBox="0 0 24 24" class="aa-i-practice"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>
+                    <svg viewBox="0 0 24 24" class="aa-i-test"><path d="M9 4h6l1 2h3v15H5V6h3z"/><path d="M9 13l2 2 4-4"/></svg>
+                </div>
+                <h3 class="aa-mode-title">{{title}}</h3>
+                <p class="aa-mode-bestfor">{{bestfor}}</p>
+                <ul class="aa-cmp">
+                    {{#rows}}
+                    <li class="{{#yes}}is-yes{{/yes}}{{^yes}}is-no{{/yes}}">
+                        <span class="aa-cmp-ic" aria-hidden="true">{{#yes}}<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>{{/yes}}{{^yes}}<svg viewBox="0 0 24 24"><path d="M6 12h12"/></svg>{{/yes}}</span>
+                        <span class="aa-cmp-label">{{label}}</span>
+                        <span class="aa-cmp-text">{{text}}</span>
+                    </li>
+                    {{/rows}}
+                </ul>
+                {{#meta}}<p class="aa-mode-meta">{{meta}}</p>{{/meta}}
+                {{#warn}}<p class="aa-mode-meta aa-warn">{{warn}}</p>{{/warn}}
+                {{#nomore}}<p class="aa-mode-meta aa-warn">{{#str}} nomoreattempts, mod_aianatomy {{/str}}</p>{{/nomore}}
+                <button type="button" class="aa-btn aa-btn-primary aa-mode-start" data-action="start" data-mode="{{key}}" {{^enabled}}disabled{{/enabled}}>
+                    {{#done}}{{#str}} startagain, mod_aianatomy {{/str}}{{/done}}{{^done}}{{#str}} start, mod_aianatomy {{/str}}{{/done}}
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+            </div>
+            {{/modes}}
+        </div>
+        {{#guest}}<p class="aa-note">{{#str}} guestnote, mod_aianatomy {{/str}}</p>{{/guest}}
+        {{/ready}}
+    </div>
+    <div class="aa-player" data-region="player" hidden></div>
+    <div class="aa-live visually-hidden sr-only" aria-live="polite" data-region="live"></div>
+</div>

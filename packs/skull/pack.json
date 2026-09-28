@@ -1,0 +1,1752 @@
+{
+ "id": "skull",
+ "version": "1.0.0",
+ "name": "Skull",
+ "description": "The 22 bones of the skull plus the hyoid: cranial bones, facial bones and the mandible.",
+ "system": "skeletal",
+ "region": "head",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "skull",
+ "rootframe": [
+  "cranial",
+  "facial",
+  "mandible_hyoid"
+ ],
+ "defaultgroups": [
+  "cranial",
+  "facial",
+  "mandible_hyoid"
+ ],
+ "presets": [
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "lateral",
+   "label": "Right lateral",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "superior",
+   "label": "Superior",
+   "dir": [
+    0,
+    1,
+    0.001
+   ],
+   "up": [
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "id": "inferior",
+   "label": "Inferior",
+   "dir": [
+    0,
+    -1,
+    0.001
+   ],
+   "up": [
+    0,
+    0,
+    1
+   ]
+  }
+ ],
+ "defaultpreset": "anterior",
+ "tissue": false,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "skull",
+   "label": "Skull",
+   "parent": null,
+   "tip": "The skull has 22 bones: 8 cranial and 14 facial. The hyoid is counted separately because it does not join the skull. Most skull bones meet at immovable joints called sutures."
+  },
+  {
+   "id": "cranial",
+   "label": "Cranial bones (neurocranium)",
+   "parent": "skull",
+   "tip": "The 8 cranial bones: \"Old People From Texas Eat Spiders\" - Occipital, Parietal (2), Frontal, Temporal (2), Ethmoid, Sphenoid."
+  },
+  {
+   "id": "facial",
+   "label": "Facial bones (viscerocranium)",
+   "parent": "skull",
+   "tip": "The 14 facial bones: \"Virgil Can Not Make My Pet Zebra Laugh\" - Vomer, Conchae (inferior nasal), Nasal, Maxilla, Mandible, Palatine, Zygomatic, Lacrimal. Only the vomer and mandible are single."
+  },
+  {
+   "id": "mandible_hyoid",
+   "label": "Mandible and hyoid",
+   "parent": "skull",
+   "tip": "The mandible is the only freely movable skull bone; the hyoid below it is the only bone that does not articulate with any other bone."
+  }
+ ],
+ "structures": [
+  {
+   "id": "skeletal_head_frontal",
+   "concept": "frontal",
+   "node": "s0",
+   "type": "bone",
+   "side": "midline",
+   "group": "cranial",
+   "names": {
+    "preferred": "Frontal bone",
+    "latin": "Os frontale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52734"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_parietal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_parietal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_nasal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_nasal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_lacrimal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_lacrimal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_zygomatic"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_zygomatic"
+    }
+   ],
+   "content": {
+    "pronunciation": "FRUN-tul",
+    "origin": "Latin frons, frontis, \"forehead\".",
+    "location": "The front of the cranium, forming the forehead and the roofs of the orbits (eye sockets). It meets the two parietal bones at the coronal suture.",
+    "description": "A shell-shaped bone with a flat, curved squamous part (the forehead) and two thin orbital plates. It contains the frontal sinuses, air spaces just above the eyebrows, and has supraorbital notches or foramina above each orbit.",
+    "function": "Protects the frontal lobes of the brain, shapes the forehead and forms the upper rim and roof of each orbit.",
+    "mnemonic": "Frontal = forehead: both start with \"F\", and it sits at the front.",
+    "clinical": "The frontal sinuses can become infected and blocked (frontal sinusitis), causing pain and tenderness above the eyes that is often worse when bending forward.",
+    "hint": "The single bone behind your forehead, forming the roof of both eye sockets."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Which suture joins the frontal bone to the two parietal bones?",
+     "options": [
+      "Sagittal suture",
+      "Lambdoid suture",
+      "Coronal suture",
+      "Squamous suture"
+     ],
+     "answer": 2,
+     "explanation": "The coronal suture runs across the top of the skull between the frontal bone and the parietal bones."
+    },
+    {
+     "kind": "clinical",
+     "text": "Pain and tenderness just above the eyebrows during a sinus infection most likely involves the sinus in which bone?",
+     "options": [
+      "Frontal bone",
+      "Sphenoid bone",
+      "Maxilla",
+      "Ethmoid bone"
+     ],
+     "answer": 0,
+     "explanation": "The frontal sinuses lie in the frontal bone just above the eyebrows."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_occipital",
+   "concept": "occipital",
+   "node": "s1",
+   "type": "bone",
+   "side": "midline",
+   "group": "cranial",
+   "names": {
+    "preferred": "Occipital bone",
+    "latin": "Os occipitale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52735"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_parietal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_parietal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_temporal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_temporal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    }
+   ],
+   "content": {
+    "pronunciation": "ok-SIP-it-ul",
+    "origin": "Latin occiput, \"back of the head\" (ob, \"against\", plus caput, \"head\").",
+    "location": "The back and base of the cranium. It meets the parietal bones at the lambdoid suture and sits on top of the first cervical vertebra (atlas).",
+    "description": "A curved, trapezoid-shaped bone with a large opening, the foramen magnum. On either side of the foramen are the occipital condyles, and on the outer surface is a bump called the external occipital protuberance.",
+    "function": "Protects the back of the brain (occipital lobes and cerebellum), lets the spinal cord pass through the foramen magnum, and forms the atlanto-occipital joints with the atlas for nodding the head.",
+    "mnemonic": "The occipital bone Occupies the back of the head and Opens into the foramen magnum.",
+    "clinical": "Raised pressure inside the skull can push part of the brain and brainstem down through the foramen magnum (coning), which is life-threatening.",
+    "hint": "The bone at the back and base of the skull with the large hole the spinal cord passes through."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "What is the large opening in the occipital bone called?",
+     "options": [
+      "Foramen ovale",
+      "Foramen magnum",
+      "Optic canal",
+      "Jugular notch"
+     ],
+     "answer": 1,
+     "explanation": "The foramen magnum (\"great hole\") in the occipital bone transmits the spinal cord where it joins the brainstem."
+    },
+    {
+     "kind": "function",
+     "text": "The occipital condyles form a joint with which bone?",
+     "options": [
+      "Axis (C2)",
+      "Mandible",
+      "Atlas (C1)",
+      "Temporal bone"
+     ],
+     "answer": 2,
+     "explanation": "The occipital condyles sit on the atlas (C1) at the atlanto-occipital joints, which allow nodding."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_sphenoid",
+   "concept": "sphenoid",
+   "node": "s2",
+   "type": "bone",
+   "side": "midline",
+   "group": "cranial",
+   "names": {
+    "preferred": "Sphenoid bone",
+    "latin": "Os sphenoidale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52736"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_occipital"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_vomer"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_parietal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_parietal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_temporal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_temporal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_zygomatic"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_zygomatic"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_palatine"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_palatine"
+    }
+   ],
+   "content": {
+    "pronunciation": "SFEE-noyd",
+    "origin": "Greek sphen, \"wedge\", plus -oeides, \"like\". It is wedged between the other bones of the skull base.",
+    "location": "In the middle of the skull base, behind the eyes, reaching out to the sides of the skull at the temples.",
+    "description": "Shaped like a butterfly or bat, with a central body, greater and lesser wings, and pterygoid plates pointing downwards. The body contains the sphenoid sinus and a saddle-shaped hollow on top, the sella turcica.",
+    "function": "Links the cranial and facial bones, forms part of the floor of the cranium and the walls of the orbits, and cradles the pituitary gland in the sella turcica. Its pterygoid plates give attachment to chewing muscles.",
+    "mnemonic": "Sphenoid = the \"keystone\" of the skull: a butterfly with the pituitary sitting in its saddle.",
+    "clinical": "Surgeons can reach pituitary tumours through the nose and the sphenoid sinus (transsphenoidal surgery), avoiding opening the skull.",
+    "hint": "A butterfly-shaped bone in the middle of the skull base, with a saddle that holds the pituitary gland."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which gland sits in the sella turcica of the sphenoid bone?",
+     "options": [
+      "Thyroid gland",
+      "Pineal gland",
+      "Parotid gland",
+      "Pituitary gland"
+     ],
+     "answer": 3,
+     "explanation": "The sella turcica is a saddle-shaped hollow on the sphenoid body that holds the pituitary gland."
+    },
+    {
+     "kind": "terminology",
+     "text": "The name sphenoid comes from the Greek for what?",
+     "options": [
+      "Wedge",
+      "Sieve",
+      "Ploughshare",
+      "Shell"
+     ],
+     "answer": 0,
+     "explanation": "Sphen means \"wedge\"; the sphenoid is wedged between the other bones of the skull base."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_ethmoid",
+   "concept": "ethmoid",
+   "node": "s3",
+   "type": "bone",
+   "side": "midline",
+   "group": "cranial",
+   "names": {
+    "preferred": "Ethmoid bone",
+    "latin": "Os ethmoidale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52740"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_vomer"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_nasal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_nasal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_lacrimal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_lacrimal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_palatine"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_palatine"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_inferior_nasal_concha"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_inferior_nasal_concha"
+    }
+   ],
+   "content": {
+    "pronunciation": "ETH-moyd",
+    "origin": "Greek ethmos, \"sieve\", plus -oeides, \"like\", after its sieve-like cribriform plate.",
+    "location": "Deep in the centre of the face, between the two orbits and behind the nose, forming the roof of the nasal cavity.",
+    "description": "A light, box-like bone full of air cells (ethmoidal sinuses). It has a horizontal cribriform plate full of small holes, a vertical perpendicular plate in the nasal septum, and the superior and middle nasal conchae on each side.",
+    "function": "Forms the roof, upper septum and side walls of the nasal cavity and part of the medial wall of each orbit. Olfactory (smell) nerve fibres pass through the holes of the cribriform plate.",
+    "mnemonic": "Ethmoid = sieve: the smell nerves \"sieve\" through its holes.",
+    "clinical": "A fracture of the cribriform plate can tear the meninges, causing cerebrospinal fluid to leak from the nose (CSF rhinorrhoea) and loss of smell.",
+    "hint": "A light, sieve-like bone between the eye sockets that forms the roof of the nasal cavity."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which nerve fibres pass through the cribriform plate of the ethmoid bone?",
+     "options": [
+      "Optic nerve fibres",
+      "Facial nerve fibres",
+      "Trigeminal nerve fibres",
+      "Olfactory nerve fibres"
+     ],
+     "answer": 3,
+     "explanation": "Olfactory (smell) nerve fibres pass from the nasal cavity to the brain through the holes in the cribriform plate."
+    },
+    {
+     "kind": "clinical",
+     "text": "Clear fluid leaking from the nose after a head injury suggests a fracture of which part?",
+     "options": [
+      "Mastoid process",
+      "Zygomatic arch",
+      "Cribriform plate",
+      "Mandibular condyle"
+     ],
+     "answer": 2,
+     "explanation": "A cribriform plate fracture can tear the meninges and let cerebrospinal fluid leak into the nose."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_right_parietal",
+   "concept": "parietal",
+   "node": "s4",
+   "type": "bone",
+   "side": "right",
+   "group": "cranial",
+   "names": {
+    "preferred": "Parietal bone (right)",
+    "latin": "Os parietale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52788"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_occipital"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_temporal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_parietal"
+    }
+   ],
+   "content": {
+    "pronunciation": "pa-RY-uh-tul",
+    "origin": "Latin paries, parietis, \"wall\". The parietal bones form the side walls of the cranium.",
+    "location": "The right upper side and roof of the cranium, behind the frontal bone, above the right temporal bone and in front of the occipital bone.",
+    "description": "A curved, roughly square plate of bone. It meets its partner at the sagittal suture, the frontal bone at the coronal suture, the occipital bone at the lambdoid suture and the temporal bone at the squamous suture.",
+    "function": "Forms much of the roof and side wall of the cranium, protecting the parietal lobe of the brain.",
+    "mnemonic": "Parietal = \"wall\": the two parietal bones are the walls and roof of the brain's house.",
+    "clinical": "In babies, the anterior fontanelle (soft spot) lies where the two parietal bones meet the frontal bone. A sunken fontanelle can suggest dehydration and a bulging one raised pressure inside the skull.",
+    "hint": "A large curved plate forming the roof and right side wall of the cranium, meeting its partner along the midline suture."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which suture joins the right and left parietal bones?",
+     "options": [
+      "Sagittal suture",
+      "Coronal suture",
+      "Lambdoid suture",
+      "Squamous suture"
+     ],
+     "answer": 0,
+     "explanation": "The sagittal suture runs along the midline of the skull roof between the two parietal bones."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_right_temporal",
+   "concept": "temporal",
+   "node": "s5",
+   "type": "bone",
+   "side": "right",
+   "group": "cranial",
+   "names": {
+    "preferred": "Temporal bone (right)",
+    "latin": "Os temporale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52738"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_occipital"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_parietal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_zygomatic"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_mandible"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEM-puh-rul",
+    "origin": "Latin tempus, temporis, \"time\". The hair at the temples is often the first to turn grey, showing the passing of time.",
+    "location": "The right side and base of the cranium, around the right ear, below the parietal bone.",
+    "description": "A complex bone with a thin, flat squamous part, a zygomatic process forming part of the cheekbone arch, a mastoid process behind the ear, a slender styloid process, and a dense petrous part inside the skull base. It has the mandibular fossa for the jaw joint and the external acoustic meatus (ear canal).",
+    "function": "Houses and protects the middle and inner ear (hearing and balance), forms the jaw joint (temporomandibular joint) with the mandible, and gives attachment to neck and chewing muscles.",
+    "mnemonic": "Temporal = temple and ear: \"time to listen\" - it holds the organs of hearing.",
+    "clinical": "The pterion, where the frontal, parietal, temporal and sphenoid bones meet, is thin. A blow here can tear the middle meningeal artery underneath and cause an extradural haematoma.",
+    "hint": "The bone around the right ear canal, with a bump behind the ear and a socket for the jaw joint."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "The temporal bone forms a joint with which bone to allow chewing?",
+     "options": [
+      "Maxilla",
+      "Zygomatic bone",
+      "Mandible",
+      "Sphenoid bone"
+     ],
+     "answer": 2,
+     "explanation": "The mandibular fossa of the temporal bone forms the temporomandibular joint with the mandible."
+    },
+    {
+     "kind": "clinical",
+     "text": "A blow to the pterion on the side of the head can tear which artery?",
+     "options": [
+      "Middle meningeal artery",
+      "Vertebral artery",
+      "Facial artery",
+      "Basilar artery"
+     ],
+     "answer": 0,
+     "explanation": "The middle meningeal artery runs just deep to the thin pterion, and tearing it causes an extradural haematoma."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_left_parietal",
+   "concept": "parietal",
+   "node": "s6",
+   "type": "bone",
+   "side": "left",
+   "group": "cranial",
+   "names": {
+    "preferred": "Parietal bone (left)",
+    "latin": "Os parietale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52789"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_occipital"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_temporal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_parietal"
+    }
+   ],
+   "content": {
+    "pronunciation": "pa-RY-uh-tul",
+    "origin": "Latin paries, parietis, \"wall\". The parietal bones form the side walls of the cranium.",
+    "location": "The left upper side and roof of the cranium, behind the frontal bone, above the left temporal bone and in front of the occipital bone.",
+    "description": "A curved, roughly square plate of bone. It meets its partner at the sagittal suture, the frontal bone at the coronal suture, the occipital bone at the lambdoid suture and the temporal bone at the squamous suture.",
+    "function": "Forms much of the roof and side wall of the cranium, protecting the parietal lobe of the brain.",
+    "mnemonic": "Parietal = \"wall\": the two parietal bones are the walls and roof of the brain's house.",
+    "clinical": "In babies, the anterior fontanelle (soft spot) lies where the two parietal bones meet the frontal bone. A sunken fontanelle can suggest dehydration and a bulging one raised pressure inside the skull.",
+    "hint": "A large curved plate forming the roof and left side wall of the cranium, meeting its partner along the midline suture."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_head_left_temporal",
+   "concept": "temporal",
+   "node": "s7",
+   "type": "bone",
+   "side": "left",
+   "group": "cranial",
+   "names": {
+    "preferred": "Temporal bone (left)",
+    "latin": "Os temporale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52739"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_occipital"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_parietal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_zygomatic"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_mandible"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEM-puh-rul",
+    "origin": "Latin tempus, temporis, \"time\". The hair at the temples is often the first to turn grey, showing the passing of time.",
+    "location": "The left side and base of the cranium, around the left ear, below the parietal bone.",
+    "description": "A complex bone with a thin, flat squamous part, a zygomatic process forming part of the cheekbone arch, a mastoid process behind the ear, a slender styloid process, and a dense petrous part inside the skull base. It has the mandibular fossa for the jaw joint and the external acoustic meatus (ear canal).",
+    "function": "Houses and protects the middle and inner ear (hearing and balance), forms the jaw joint (temporomandibular joint) with the mandible, and gives attachment to neck and chewing muscles.",
+    "mnemonic": "Temporal = temple and ear: \"time to listen\" - it holds the organs of hearing.",
+    "clinical": "The pterion, where the frontal, parietal, temporal and sphenoid bones meet, is thin. A blow here can tear the middle meningeal artery underneath and cause an extradural haematoma.",
+    "hint": "The bone around the left ear canal, with a bump behind the ear and a socket for the jaw joint."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_head_right_nasal",
+   "concept": "nasal",
+   "node": "s8",
+   "type": "bone",
+   "side": "right",
+   "group": "facial",
+   "names": {
+    "preferred": "Nasal bone (right)",
+    "latin": "Os nasale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA53647"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_nasal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_maxilla"
+    }
+   ],
+   "content": {
+    "pronunciation": "NAY-zul",
+    "origin": "Latin nasus, \"nose\".",
+    "location": "The upper part of the nose, on the right of the midline, between the frontal bone above and the right maxilla at the side.",
+    "description": "A small, thin, oblong bone. It meets its partner in the midline to form the bony bridge of the nose; the lower nose is shaped by cartilage.",
+    "function": "Forms the bridge of the nose and supports the nasal cartilages below it.",
+    "mnemonic": "Nasal = nose: the two small bones on the bridge where glasses rest.",
+    "clinical": "The nasal bones are the most commonly fractured facial bones, usually from a direct blow to the nose.",
+    "hint": "One of the two small bones forming the bony bridge of the nose, where glasses rest."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Which is the most commonly fractured facial bone?",
+     "options": [
+      "Zygomatic bone",
+      "Nasal bone",
+      "Mandible",
+      "Lacrimal bone"
+     ],
+     "answer": 1,
+     "explanation": "The nasal bones project forward and are thin, so they are the most commonly fractured facial bones."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_left_nasal",
+   "concept": "nasal",
+   "node": "s9",
+   "type": "bone",
+   "side": "left",
+   "group": "facial",
+   "names": {
+    "preferred": "Nasal bone (left)",
+    "latin": "Os nasale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA53648"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_nasal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_maxilla"
+    }
+   ],
+   "content": {
+    "pronunciation": "NAY-zul",
+    "origin": "Latin nasus, \"nose\".",
+    "location": "The upper part of the nose, on the left of the midline, between the frontal bone above and the left maxilla at the side.",
+    "description": "A small, thin, oblong bone. It meets its partner in the midline to form the bony bridge of the nose; the lower nose is shaped by cartilage.",
+    "function": "Forms the bridge of the nose and supports the nasal cartilages below it.",
+    "mnemonic": "Nasal = nose: the two small bones on the bridge where glasses rest.",
+    "clinical": "The nasal bones are the most commonly fractured facial bones, usually from a direct blow to the nose.",
+    "hint": "One of the two small bones forming the bony bridge of the nose, where glasses rest."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_head_right_lacrimal",
+   "concept": "lacrimal",
+   "node": "s10",
+   "type": "bone",
+   "side": "right",
+   "group": "facial",
+   "names": {
+    "preferred": "Lacrimal bone (right)",
+    "latin": "Os lacrimale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA53645"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_inferior_nasal_concha"
+    }
+   ],
+   "content": {
+    "pronunciation": "LAK-rim-ul",
+    "origin": "Latin lacrima, \"tear\".",
+    "location": "The front of the medial wall of the right orbit, just behind the frontal process of the maxilla.",
+    "description": "The smallest and most fragile bone of the face, about the size of a fingernail. It has a groove that forms the lacrimal fossa for the lacrimal (tear) sac.",
+    "function": "Forms part of the medial wall of the orbit and, with the maxilla, houses the lacrimal sac and the start of the nasolacrimal duct, which drains tears into the nose.",
+    "mnemonic": "Lacrimal = tears: a tiny bone where the tears drain away (think \"lacrimal = lachrymose\").",
+    "clinical": "A blocked nasolacrimal duct stops tears draining into the nose, causing a watery, sometimes sticky eye. It is common in newborns and usually settles on its own.",
+    "hint": "The smallest facial bone, a fingernail-sized plate in the inner wall of the eye socket where tears drain."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "The name lacrimal refers to what?",
+     "options": [
+      "Smell",
+      "Sight",
+      "Chewing",
+      "Tears"
+     ],
+     "answer": 3,
+     "explanation": "Lacrima is Latin for \"tear\"; the lacrimal bone houses the tear sac."
+    },
+    {
+     "kind": "location",
+     "text": "Where is the lacrimal bone found?",
+     "options": [
+      "In the hard palate",
+      "In the medial wall of the orbit",
+      "In the nasal septum",
+      "Behind the ear"
+     ],
+     "answer": 1,
+     "explanation": "The lacrimal bone lies at the front of the medial (inner) wall of the orbit."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_left_lacrimal",
+   "concept": "lacrimal",
+   "node": "s11",
+   "type": "bone",
+   "side": "left",
+   "group": "facial",
+   "names": {
+    "preferred": "Lacrimal bone (left)",
+    "latin": "Os lacrimale",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA53646"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_inferior_nasal_concha"
+    }
+   ],
+   "content": {
+    "pronunciation": "LAK-rim-ul",
+    "origin": "Latin lacrima, \"tear\".",
+    "location": "The front of the medial wall of the left orbit, just behind the frontal process of the maxilla.",
+    "description": "The smallest and most fragile bone of the face, about the size of a fingernail. It has a groove that forms the lacrimal fossa for the lacrimal (tear) sac.",
+    "function": "Forms part of the medial wall of the orbit and, with the maxilla, houses the lacrimal sac and the start of the nasolacrimal duct, which drains tears into the nose.",
+    "mnemonic": "Lacrimal = tears: a tiny bone where the tears drain away (think \"lacrimal = lachrymose\").",
+    "clinical": "A blocked nasolacrimal duct stops tears draining into the nose, causing a watery, sometimes sticky eye. It is common in newborns and usually settles on its own.",
+    "hint": "The smallest facial bone, a fingernail-sized plate in the inner wall of the eye socket where tears drain."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_head_right_zygomatic",
+   "concept": "zygomatic",
+   "node": "s12",
+   "type": "bone",
+   "side": "right",
+   "group": "facial",
+   "names": {
+    "preferred": "Zygomatic bone (right)",
+    "latin": "Os zygomaticum",
+    "synonyms": [
+     "Cheekbone",
+     "Malar bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52892"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_temporal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_maxilla"
+    }
+   ],
+   "content": {
+    "pronunciation": "zy-goh-MAT-ik",
+    "origin": "Greek zygon, \"yoke\". With the temporal bone it forms an arch that \"yokes\" the face to the side of the skull.",
+    "location": "The prominence of the right cheek, forming the lateral wall and lower outer rim of the right orbit.",
+    "description": "A roughly diamond-shaped bone. Its temporal process joins the zygomatic process of the temporal bone to form the zygomatic arch.",
+    "function": "Shapes the cheek, protects the eye from the side and below, and gives origin to the masseter muscle, a powerful chewing muscle.",
+    "mnemonic": "Zygomatic = \"yoke\": the cheekbone yokes the face to the temple via the zygomatic arch.",
+    "clinical": "A blow to the cheek can cause a zygomatic complex (tripod) fracture, giving a flattened cheek, numbness of the cheek and sometimes double vision.",
+    "hint": "The right cheekbone, forming the outer rim of the eye socket and the front of the arch at the side of the face."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The zygomatic arch is formed by the zygomatic bone and which other bone?",
+     "options": [
+      "Sphenoid bone",
+      "Maxilla",
+      "Parietal bone",
+      "Temporal bone"
+     ],
+     "answer": 3,
+     "explanation": "The temporal process of the zygomatic bone joins the zygomatic process of the temporal bone to form the arch."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_left_zygomatic",
+   "concept": "zygomatic",
+   "node": "s13",
+   "type": "bone",
+   "side": "left",
+   "group": "facial",
+   "names": {
+    "preferred": "Zygomatic bone (left)",
+    "latin": "Os zygomaticum",
+    "synonyms": [
+     "Cheekbone",
+     "Malar bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52893"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_temporal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_maxilla"
+    }
+   ],
+   "content": {
+    "pronunciation": "zy-goh-MAT-ik",
+    "origin": "Greek zygon, \"yoke\". With the temporal bone it forms an arch that \"yokes\" the face to the side of the skull.",
+    "location": "The prominence of the left cheek, forming the lateral wall and lower outer rim of the left orbit.",
+    "description": "A roughly diamond-shaped bone. Its temporal process joins the zygomatic process of the temporal bone to form the zygomatic arch.",
+    "function": "Shapes the cheek, protects the eye from the side and below, and gives origin to the masseter muscle, a powerful chewing muscle.",
+    "mnemonic": "Zygomatic = \"yoke\": the cheekbone yokes the face to the temple via the zygomatic arch.",
+    "clinical": "A blow to the cheek can cause a zygomatic complex (tripod) fracture, giving a flattened cheek, numbness of the cheek and sometimes double vision.",
+    "hint": "The left cheekbone, forming the outer rim of the eye socket and the front of the arch at the side of the face."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_head_right_maxilla",
+   "concept": "maxilla",
+   "node": "s14",
+   "type": "bone",
+   "side": "right",
+   "group": "facial",
+   "names": {
+    "preferred": "Maxilla (right)",
+    "latin": "Maxilla",
+    "synonyms": [
+     "Upper jaw bone",
+     "Maxillary bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA53649"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_vomer"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_nasal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_lacrimal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_zygomatic"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_palatine"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_inferior_nasal_concha"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_maxilla"
+    }
+   ],
+   "content": {
+    "pronunciation": "mak-SIL-uh",
+    "origin": "Latin maxilla, \"jaw\" or \"jawbone\".",
+    "location": "The right half of the upper jaw, in the middle of the face below the right orbit and beside the nasal cavity.",
+    "description": "The two maxillae fuse in the midline to form the upper jaw. Each has an alveolar process holding the upper teeth, a palatine process forming most of the hard palate, a frontal process beside the nose, and the large maxillary sinus in its body.",
+    "function": "Holds the upper teeth, forms most of the hard palate (roof of the mouth), the floor of the orbit and part of the walls of the nasal cavity. The facial bones are arranged around it, so it is often called the keystone of the face.",
+    "mnemonic": "Maxilla holds the upper teeth; Mandible Moves below it.",
+    "clinical": "The maxillary sinus is the largest paranasal sinus. Because the roots of the upper back teeth lie just below its floor, maxillary sinusitis can feel like upper toothache, and an upper tooth infection can spread into the sinus.",
+    "hint": "The right half of the upper jaw, holding the upper teeth and containing the largest air sinus of the face."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which bone holds the upper teeth?",
+     "options": [
+      "Mandible",
+      "Palatine bone",
+      "Maxilla",
+      "Vomer"
+     ],
+     "answer": 2,
+     "explanation": "The alveolar process of the maxilla holds the upper teeth."
+    },
+    {
+     "kind": "terminology",
+     "text": "What is the largest paranasal sinus?",
+     "options": [
+      "Frontal sinus",
+      "Sphenoid sinus",
+      "Ethmoidal air cells",
+      "Maxillary sinus"
+     ],
+     "answer": 3,
+     "explanation": "The maxillary sinus, inside the body of each maxilla, is the largest paranasal sinus."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_left_maxilla",
+   "concept": "maxilla",
+   "node": "s15",
+   "type": "bone",
+   "side": "left",
+   "group": "facial",
+   "names": {
+    "preferred": "Maxilla (left)",
+    "latin": "Maxilla",
+    "synonyms": [
+     "Upper jaw bone",
+     "Maxillary bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA53650"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_frontal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_vomer"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_nasal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_lacrimal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_zygomatic"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_palatine"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_inferior_nasal_concha"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_maxilla"
+    }
+   ],
+   "content": {
+    "pronunciation": "mak-SIL-uh",
+    "origin": "Latin maxilla, \"jaw\" or \"jawbone\".",
+    "location": "The left half of the upper jaw, in the middle of the face below the left orbit and beside the nasal cavity.",
+    "description": "The two maxillae fuse in the midline to form the upper jaw. Each has an alveolar process holding the upper teeth, a palatine process forming most of the hard palate, a frontal process beside the nose, and the large maxillary sinus in its body.",
+    "function": "Holds the upper teeth, forms most of the hard palate (roof of the mouth), the floor of the orbit and part of the walls of the nasal cavity. The facial bones are arranged around it, so it is often called the keystone of the face.",
+    "mnemonic": "Maxilla holds the upper teeth; Mandible Moves below it.",
+    "clinical": "The maxillary sinus is the largest paranasal sinus. Because the roots of the upper back teeth lie just below its floor, maxillary sinusitis can feel like upper toothache, and an upper tooth infection can spread into the sinus.",
+    "hint": "The left half of the upper jaw, holding the upper teeth and containing the largest air sinus of the face."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_head_right_palatine",
+   "concept": "palatine",
+   "node": "s16",
+   "type": "bone",
+   "side": "right",
+   "group": "facial",
+   "names": {
+    "preferred": "Palatine bone (right)",
+    "latin": "Os palatinum",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA53655"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_vomer"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_inferior_nasal_concha"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_palatine"
+    }
+   ],
+   "content": {
+    "pronunciation": "PAL-uh-tyne",
+    "origin": "Latin palatum, \"palate\" or \"roof of the mouth\".",
+    "location": "At the back of the nasal cavity and roof of the mouth, on the right, behind the right maxilla.",
+    "description": "An L-shaped bone. Its horizontal plate forms the back part of the hard palate, and its perpendicular plate rises up to form part of the lateral wall of the nasal cavity. A tiny orbital process reaches the floor of the orbit.",
+    "function": "Forms the back part of the hard palate, separating the mouth from the nasal cavity, and helps form the walls of the nasal cavity and orbit.",
+    "mnemonic": "Palatine = palate: the maxilla makes the front of the palate, the palatine bone \"finishes the back\".",
+    "clinical": "A cleft palate happens when the palatal shelves fail to join in the midline before birth, leaving a gap between mouth and nose that affects feeding and speech. It is repaired surgically.",
+    "hint": "An L-shaped bone forming the back part of the roof of the mouth, behind the upper jaw."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The palatine bones form which part of the hard palate?",
+     "options": [
+      "The back part",
+      "The front part",
+      "The whole palate",
+      "None of it; they are in the orbit"
+     ],
+     "answer": 0,
+     "explanation": "The horizontal plates of the palatine bones form the back part of the hard palate; the maxillae form the front."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_left_palatine",
+   "concept": "palatine",
+   "node": "s17",
+   "type": "bone",
+   "side": "left",
+   "group": "facial",
+   "names": {
+    "preferred": "Palatine bone (left)",
+    "latin": "Os palatinum",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA53656"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_vomer"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_inferior_nasal_concha"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_palatine"
+    }
+   ],
+   "content": {
+    "pronunciation": "PAL-uh-tyne",
+    "origin": "Latin palatum, \"palate\" or \"roof of the mouth\".",
+    "location": "At the back of the nasal cavity and roof of the mouth, on the left, behind the left maxilla.",
+    "description": "An L-shaped bone. Its horizontal plate forms the back part of the hard palate, and its perpendicular plate rises up to form part of the lateral wall of the nasal cavity. A tiny orbital process reaches the floor of the orbit.",
+    "function": "Forms the back part of the hard palate, separating the mouth from the nasal cavity, and helps form the walls of the nasal cavity and orbit.",
+    "mnemonic": "Palatine = palate: the maxilla makes the front of the palate, the palatine bone \"finishes the back\".",
+    "clinical": "A cleft palate happens when the palatal shelves fail to join in the midline before birth, leaving a gap between mouth and nose that affects feeding and speech. It is repaired surgically.",
+    "hint": "An L-shaped bone forming the back part of the roof of the mouth, behind the upper jaw."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_head_right_inferior_nasal_concha",
+   "concept": "inferior_nasal_concha",
+   "node": "s18",
+   "type": "bone",
+   "side": "right",
+   "group": "facial",
+   "names": {
+    "preferred": "Inferior nasal concha (right)",
+    "latin": "Concha nasalis inferior",
+    "synonyms": [
+     "Inferior turbinate"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA54737"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_lacrimal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_palatine"
+    }
+   ],
+   "content": {
+    "pronunciation": "in-FEER-ee-ur NAY-zul KONG-kuh",
+    "origin": "Latin concha, \"shell\", from its curled, shell-like shape.",
+    "location": "On the lateral wall of the right side of the nasal cavity, below the middle concha of the ethmoid bone.",
+    "description": "A thin, curled scroll of bone. Unlike the superior and middle conchae, which are parts of the ethmoid, it is a separate bone. The space under it is the inferior meatus.",
+    "function": "Increases the surface area of the nasal lining so inhaled air is warmed, moistened and filtered. The nasolacrimal duct opens into the inferior meatus beneath it.",
+    "mnemonic": "The lowest \"shell\" in the nose is the only one that stands alone as its own bone.",
+    "clinical": "The soft tissue covering it (the inferior turbinate) can swell with allergy or infection and block the nose; enlarged turbinates are sometimes reduced surgically.",
+    "hint": "A separate curled scroll of bone on the lower side wall of the nasal cavity."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What is the main role of the inferior nasal concha?",
+     "options": [
+      "It holds the lower teeth",
+      "It warms, moistens and filters air",
+      "It protects the pituitary gland",
+      "It forms the jaw joint"
+     ],
+     "answer": 1,
+     "explanation": "The concha increases the surface area of the nasal lining, which warms, moistens and filters inhaled air."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_left_inferior_nasal_concha",
+   "concept": "inferior_nasal_concha",
+   "node": "s19",
+   "type": "bone",
+   "side": "left",
+   "group": "facial",
+   "names": {
+    "preferred": "Inferior nasal concha (left)",
+    "latin": "Concha nasalis inferior",
+    "synonyms": [
+     "Inferior turbinate"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA54738"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_lacrimal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_palatine"
+    }
+   ],
+   "content": {
+    "pronunciation": "in-FEER-ee-ur NAY-zul KONG-kuh",
+    "origin": "Latin concha, \"shell\", from its curled, shell-like shape.",
+    "location": "On the lateral wall of the left side of the nasal cavity, below the middle concha of the ethmoid bone.",
+    "description": "A thin, curled scroll of bone. Unlike the superior and middle conchae, which are parts of the ethmoid, it is a separate bone. The space under it is the inferior meatus.",
+    "function": "Increases the surface area of the nasal lining so inhaled air is warmed, moistened and filtered. The nasolacrimal duct opens into the inferior meatus beneath it.",
+    "mnemonic": "The lowest \"shell\" in the nose is the only one that stands alone as its own bone.",
+    "clinical": "The soft tissue covering it (the inferior turbinate) can swell with allergy or infection and block the nose; enlarged turbinates are sometimes reduced surgically.",
+    "hint": "A separate curled scroll of bone on the lower side wall of the nasal cavity."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_head_vomer",
+   "concept": "vomer",
+   "node": "s20",
+   "type": "bone",
+   "side": "midline",
+   "group": "facial",
+   "names": {
+    "preferred": "Vomer",
+    "latin": "Vomer",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA9710"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_sphenoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_ethmoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_maxilla"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_palatine"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_palatine"
+    }
+   ],
+   "content": {
+    "pronunciation": "VOH-mer",
+    "origin": "Latin vomer, \"ploughshare\", from its thin, blade-like shape.",
+    "location": "In the midline of the nasal cavity, forming the lower and back part of the nasal septum.",
+    "description": "A thin, flat, roughly trapezoid bone. Its upper edge meets the sphenoid and the perpendicular plate of the ethmoid, and its lower edge sits on the maxillae and palatine bones.",
+    "function": "Forms the lower back part of the nasal septum, which divides the nasal cavity into right and left halves. The front of the septum is completed by septal cartilage.",
+    "mnemonic": "Vomer = ploughshare: a thin blade that ploughs down the middle of the nose.",
+    "clinical": "A deviated nasal septum, where the septum (bone and cartilage) bends to one side, can block one nostril and cause breathing problems. It can be corrected by septoplasty.",
+    "hint": "A thin midline blade of bone forming the lower back part of the wall between the two nostrils."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The vomer forms part of which structure?",
+     "options": [
+      "The hard palate",
+      "The orbit floor",
+      "The zygomatic arch",
+      "The nasal septum"
+     ],
+     "answer": 3,
+     "explanation": "The vomer forms the lower and back part of the nasal septum."
+    },
+    {
+     "kind": "relationship",
+     "text": "Together with the vomer, which part of the ethmoid bone forms the bony nasal septum?",
+     "options": [
+      "Cribriform plate",
+      "Middle concha",
+      "Perpendicular plate",
+      "Orbital plate"
+     ],
+     "answer": 2,
+     "explanation": "The bony nasal septum is formed by the perpendicular plate of the ethmoid above and the vomer below."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_mandible",
+   "concept": "mandible",
+   "node": "s21",
+   "type": "bone",
+   "side": "midline",
+   "group": "mandible_hyoid",
+   "names": {
+    "preferred": "Mandible",
+    "latin": "Mandibula",
+    "synonyms": [
+     "Lower jaw",
+     "Jawbone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52748"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_right_temporal"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_head_left_temporal"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_head_hyoid"
+    }
+   ],
+   "content": {
+    "pronunciation": "MAN-dib-ul",
+    "origin": "Latin mandere, \"to chew\".",
+    "location": "The lower jaw, forming the chin and lower face. Its condyles reach up to the temporal bones just in front of the ears.",
+    "description": "The largest and strongest facial bone. It is U-shaped, with a horizontal body holding the lower teeth and two vertical rami. Each ramus ends in a condyle (for the jaw joint) and a coronoid process (for the temporalis muscle). The mental foramen lies on the outer body below the premolar teeth.",
+    "function": "Holds the lower teeth and is the only skull bone that moves freely, at the temporomandibular joints, for chewing, speaking and swallowing. It gives attachment to the chewing muscles.",
+    "mnemonic": "Mandible = \"mand\" to chew: the Mandible Moves.",
+    "clinical": "The temporomandibular joint can dislocate forwards, for example during a wide yawn, locking the mouth open. Because the mandible is a ring with the skull, fractures often occur in two places.",
+    "hint": "The U-shaped bone that moves when you chew, holding the lower teeth."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which is the only bone of the skull that moves freely at a synovial joint for chewing?",
+     "options": [
+      "Maxilla",
+      "Hyoid bone",
+      "Zygomatic bone",
+      "Mandible"
+     ],
+     "answer": 3,
+     "explanation": "The mandible moves at the temporomandibular joints for chewing and speaking."
+    },
+    {
+     "kind": "relationship",
+     "text": "The condyle of the mandible forms a joint with which bone?",
+     "options": [
+      "Temporal bone",
+      "Occipital bone",
+      "Zygomatic bone",
+      "Sphenoid bone"
+     ],
+     "answer": 0,
+     "explanation": "The mandibular condyle sits in the mandibular fossa of the temporal bone at the temporomandibular joint."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_head_hyoid",
+   "concept": "hyoid",
+   "node": "s22",
+   "type": "bone",
+   "side": "midline",
+   "group": "mandible_hyoid",
+   "names": {
+    "preferred": "Hyoid bone",
+    "latin": "Os hyoideum",
+    "synonyms": [
+     "Hyoid"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA52749"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_head_mandible"
+    }
+   ],
+   "content": {
+    "pronunciation": "HY-oyd",
+    "origin": "Greek hyoeides, \"shaped like the letter upsilon (U)\".",
+    "location": "In the front of the neck, below the mandible and above the larynx (thyroid cartilage), usually at about the level of the third cervical vertebra.",
+    "description": "A small U-shaped bone with a central body and two pairs of horns (greater and lesser cornua). It does not form a joint with any other bone; it is held in place by muscles and ligaments.",
+    "function": "Anchors the tongue and the muscles of the floor of the mouth, and supports the larynx. It moves up and forward during swallowing.",
+    "mnemonic": "Hyoid = \"U-shaped\": a floating U that hangs under the jaw.",
+    "clinical": "Because it is well protected, a fractured hyoid is uncommon and suggests significant direct force to the front of the neck, such as compression of the neck.",
+    "hint": "A small U-shaped bone in the front of the neck, just under the jaw, that joins no other bone."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "What is unusual about the hyoid bone?",
+     "options": [
+      "It is the largest bone of the face",
+      "It does not form a joint with any other bone",
+      "It contains a large air sinus",
+      "It holds the lower teeth"
+     ],
+     "answer": 1,
+     "explanation": "The hyoid is held in place only by muscles and ligaments and does not articulate with another bone."
+    },
+    {
+     "kind": "function",
+     "text": "The hyoid bone mainly anchors which structure?",
+     "options": [
+      "The tongue",
+      "The eyeball",
+      "The ear ossicles",
+      "The pituitary gland"
+     ],
+     "answer": 0,
+     "explanation": "Muscles of the tongue and floor of the mouth attach to the hyoid."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<libraries>
+  <library>
+    <location>amd/src/three.js</location>
+    <name>three.js (with OrbitControls and GLTFLoader)</name>
+    <description>JavaScript 3D library used to render the anatomy models.</description>
+    <version>0.186.1</version>
+    <license>MIT</license>
+    <licenseversion></licenseversion>
+    <repository>https://github.com/mrdoob/three.js</repository>
+    <copyrights>
+      <copyright>2010-2026 three.js authors</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/brain</location>
+    <name>BodyParts3D anatomy models (Brain)</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/digestive</location>
+    <name>BodyParts3D anatomy models (Digestive system)</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/foot_right</location>
+    <name>BodyParts3D anatomy models (Foot and ankle bones (right))</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/hand_right</location>
+    <name>BodyParts3D anatomy models (Hand and wrist bones (right))</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/heart</location>
+    <name>BodyParts3D anatomy models (Heart and great vessels)</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/muscles_lower_limb_right</location>
+    <name>BodyParts3D anatomy models (Muscles of the hip and lower limb (right))</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/muscles_trunk</location>
+    <name>BodyParts3D anatomy models (Muscles of the trunk (abdominal wall and back))</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/muscles_upper_limb_right</location>
+    <name>BodyParts3D anatomy models (Muscles of the shoulder and upper limb (right))</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/pelvis_lower_limb_right</location>
+    <name>BodyParts3D anatomy models (Pelvis and lower limb bones (right))</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/respiratory</location>
+    <name>BodyParts3D anatomy models (Respiratory system)</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/skull</location>
+    <name>BodyParts3D anatomy models (Skull)</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/thoracic_cage</location>
+    <name>BodyParts3D anatomy models (Thoracic cage (ribs and sternum))</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/upper_limb_right</location>
+    <name>BodyParts3D anatomy models (Upper limb bones (right))</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/urinary</location>
+    <name>BodyParts3D anatomy models (Urinary system)</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>packs/vertebral_column</location>
+    <name>BodyParts3D anatomy models (Vertebral column)</name>
+    <description>Verified 3D anatomy geometry from BodyParts3D, converted from binary STL to GLB (vertices welded, meshes simplified for the web, smooth normals, axes normalised; some structures merged from several source meshes). Original FMA identifiers are kept in pack.json. Attribution in ATTRIBUTION.txt.</description>
+    <version>3.0 (20110915)</version>
+    <license>CC BY-SA 2.1 JP</license>
+    <licenseversion>2.1</licenseversion>
+    <repository>https://dbarchive.biosciencedbc.jp/en/bodyparts3d/</repository>
+    <copyrights>
+      <copyright>2008 Database Center for Life Science (DBCLS)</copyright>
+    </copyrights>
+  </library>
+</libraries>

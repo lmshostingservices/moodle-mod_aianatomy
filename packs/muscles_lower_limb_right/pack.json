@@ -1,0 +1,3202 @@
+{
+ "id": "muscles_lower_limb_right",
+ "version": "1.0.0",
+ "name": "Muscles of the hip and lower limb (right)",
+ "description": "Right gluteal, thigh and leg muscles, with the pelvis and lower-limb bones for context.",
+ "system": "muscular",
+ "region": "lower_limb",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "muscles_ll",
+ "rootframe": [
+  "gluteal",
+  "thigh_anterior",
+  "thigh_medial",
+  "thigh_posterior",
+  "leg"
+ ],
+ "defaultgroups": [
+  "gluteal",
+  "thigh_anterior",
+  "thigh_medial",
+  "thigh_posterior",
+  "leg"
+ ],
+ "presets": [
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "lateral",
+   "label": "Lateral",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "medial",
+   "label": "Medial",
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  }
+ ],
+ "defaultpreset": "anterior",
+ "tissue": true,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "muscles_ll",
+   "label": "Muscles of the lower limb",
+   "parent": null,
+   "tip": "Learn the lower limb by compartment: each has a main job and one main nerve (anterior thigh: femoral; medial thigh: obturator; posterior thigh: sciatic). Three tendons meet on the upper medial tibia at the pes anserinus: \"Say Grace before Tea\" (Sartorius, Gracilis, semiTendinosus)."
+  },
+  {
+   "id": "bones_context",
+   "label": "Bones (context)",
+   "parent": "muscles_ll",
+   "tip": "Muscles pull on bones: the origin is usually the more fixed, proximal attachment and the insertion the more mobile, distal one. Link each muscle to the bony landmarks it crosses to work out its action."
+  },
+  {
+   "id": "gluteal",
+   "label": "Gluteal region and hip",
+   "parent": "muscles_ll",
+   "tip": "Gluteus maximus extends the hip; gluteus medius and minimus abduct it and keep the pelvis level when you stand on one leg. The deep lateral rotators from top to bottom: \"Play Golf Or Go Out Quickly\" (Piriformis, Gemellus superior, Obturator internus, Gemellus inferior, Obturator externus, Quadratus femoris)."
+  },
+  {
+   "id": "thigh_anterior",
+   "label": "Thigh: anterior compartment",
+   "parent": "muscles_ll",
+   "tip": "Quadriceps = four heads: rectus femoris plus three vasti (lateralis, medialis, intermedius), all joining the patellar tendon and all supplied by the femoral nerve. Iliacus and psoas major join as iliopsoas, the strongest hip flexor."
+  },
+  {
+   "id": "thigh_medial",
+   "label": "Thigh: medial (adductor) compartment",
+   "parent": "muscles_ll",
+   "tip": "The adductors (pectineus, adductor longus, brevis and magnus, gracilis) pull the thigh towards the midline and are mainly supplied by the obturator nerve. Exceptions: pectineus is usually femoral, and the hamstring part of adductor magnus is supplied by the sciatic (tibial) nerve."
+  },
+  {
+   "id": "thigh_posterior",
+   "label": "Thigh: posterior compartment (hamstrings)",
+   "parent": "muscles_ll",
+   "tip": "True hamstrings arise from the ischial tuberosity, cross both hip and knee, and are supplied by the sciatic nerve: they extend the hip and flex the knee. Semitendinosus sits on Top of semimembranosus; biceps femoris goes to the lateral side (fibula)."
+  },
+  {
+   "id": "leg",
+   "label": "Leg muscles",
+   "parent": "muscles_ll",
+   "tip": "Leg compartments: anterior (dorsiflex, deep fibular nerve), lateral (evert, superficial fibular nerve), posterior (plantarflex, tibial nerve). Behind the medial malleolus: \"Tom, Dick And Very Nervous Harry\" (Tibialis posterior, flexor Digitorum longus, Artery, Vein, Nerve, flexor Hallucis longus)."
+  }
+ ],
+ "structures": [
+  {
+   "id": "muscular_lowerlimb_right_bones",
+   "concept": "bones",
+   "node": "s0",
+   "type": "bone",
+   "side": "right",
+   "group": "bones_context",
+   "names": {
+    "preferred": "Bones of the pelvis and lower limb",
+    "latin": "Ossa membri inferioris",
+    "synonyms": [
+     "Skeleton of the lower limb",
+     "Hip bone, femur, patella, tibia and fibula"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA16586"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA16202"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24474"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24486"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24477"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24480"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24482"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24497"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24500"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24528"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24521"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24523"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24525"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24507"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24509"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24511"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24513"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24515"
+    }
+   ],
+   "relationships": [],
+   "content": {
+    "pronunciation": "bohnz of the PEL-vis and LOH-er lim",
+    "origin": "Pelvis is Latin for \"basin\"; limb is from Old English lim, \"part of the body\".",
+    "location": "The right hip bone, sacrum and the bones of the thigh and leg, shown as a guide for muscle attachments.",
+    "description": "Includes the hip bone (ilium, ischium, pubis), sacrum, femur, patella, tibia and fibula. Key muscle landmarks are the iliac crest, ischial tuberosity, greater and lesser trochanters, linea aspera and tibial tuberosity.",
+    "function": "Provides the levers and attachment points that the hip, thigh and leg muscles pull on to move the hip, knee and ankle.",
+    "mnemonic": "Sit on your ischial tuberosities: that is where the hamstrings start.",
+    "clinical": "Avulsion fractures happen where strong muscles pull a piece of bone away, for example at the anterior inferior iliac spine (rectus femoris) in young athletes.",
+    "hint": "The framework of hip, thigh and leg that every muscle here attaches to."
+   },
+   "questions": [],
+   "merged": true,
+   "context": true
+  },
+  {
+   "id": "muscular_lowerlimb_right_gluteus_maximus",
+   "concept": "gluteus_maximus",
+   "node": "s1",
+   "type": "muscle",
+   "side": "right",
+   "group": "gluteal",
+   "names": {
+    "preferred": "Gluteus maximus",
+    "latin": "Musculus gluteus maximus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22328"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_biceps_femoris"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_iliacus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_psoas_major"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gluteus_medius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_piriformis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_quadratus_femoris"
+    }
+   ],
+   "content": {
+    "pronunciation": "GLOO-tee-us MAX-ih-mus",
+    "origin": "Greek gloutos, \"buttock\", and Latin maximus, \"largest\".",
+    "location": "Forms most of the rounded buttock, posterior to the hip joint and covering the smaller gluteal muscles.",
+    "description": "The largest and most superficial gluteal muscle; thick and quadrilateral with coarse fibres running down and laterally.",
+    "function": "Extends and laterally rotates the hip, e.g. climbing stairs or rising from sitting. Posterior ilium, sacrum, coccyx and sacrotuberous ligament -> iliotibial tract and gluteal tuberosity of femur. Inferior gluteal nerve (L5-S2).",
+    "mnemonic": "Maximus for maximum effort: running, climbing and standing up from a chair.",
+    "clinical": "Intramuscular injections are given in the upper outer quadrant of the buttock to avoid the sciatic nerve, which lies deep to the lower part of this muscle.",
+    "hint": "The big superficial buttock muscle you use to stand up from a squat."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What is the main action of gluteus maximus?",
+     "options": [
+      "Hip flexion",
+      "Hip extension",
+      "Knee extension",
+      "Ankle dorsiflexion"
+     ],
+     "answer": 1,
+     "explanation": "Gluteus maximus is the main extensor of the hip, used in climbing and rising from sitting."
+    },
+    {
+     "kind": "relationship",
+     "text": "Which nerve supplies gluteus maximus?",
+     "options": [
+      "Superior gluteal nerve",
+      "Femoral nerve",
+      "Obturator nerve",
+      "Inferior gluteal nerve"
+     ],
+     "answer": 3,
+     "explanation": "Gluteus maximus is the only muscle supplied by the inferior gluteal nerve (L5-S2)."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_gluteus_medius",
+   "concept": "gluteus_medius",
+   "node": "s2",
+   "type": "muscle",
+   "side": "right",
+   "group": "gluteal",
+   "names": {
+    "preferred": "Gluteus medius",
+    "latin": "Musculus gluteus medius",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22330"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gluteus_minimus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_tensor_fasciae_latae"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_adductor_longus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_adductor_brevis"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_adductor_magnus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gluteus_maximus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gluteus_minimus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_piriformis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_tensor_fasciae_latae"
+    }
+   ],
+   "content": {
+    "pronunciation": "GLOO-tee-us MEE-dee-us",
+    "origin": "Greek gloutos, \"buttock\", and Latin medius, \"middle\" (middle-sized).",
+    "location": "On the outer surface of the ilium, above and lateral to the hip joint; its back part lies deep to gluteus maximus.",
+    "description": "A thick fan-shaped muscle whose fibres converge from the ilium onto the greater trochanter.",
+    "function": "Abducts and medially rotates the hip and keeps the pelvis level when standing on one leg, so it is vital in walking. External ilium between anterior and posterior gluteal lines -> lateral greater trochanter. Superior gluteal nerve (L4-S1).",
+    "mnemonic": "Medius keeps the pelvis in the middle (level) when walking.",
+    "clinical": "Weakness or superior gluteal nerve injury gives a positive Trendelenburg sign: the pelvis drops on the opposite side when standing on the affected leg.",
+    "hint": "Fan-shaped hip abductor on the outer ilium that stops the pelvis dropping as you walk."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "A positive Trendelenburg sign (pelvis drops on the unsupported side) suggests weakness of which muscle?",
+     "options": [
+      "Gluteus medius",
+      "Piriformis",
+      "Iliacus",
+      "Sartorius"
+     ],
+     "answer": 0,
+     "explanation": "Gluteus medius (with minimus) keeps the pelvis level during single-leg stance."
+    },
+    {
+     "kind": "function",
+     "text": "Gluteus medius mainly moves the hip in which direction?",
+     "options": [
+      "Adduction",
+      "Flexion",
+      "Abduction",
+      "Lateral rotation only"
+     ],
+     "answer": 2,
+     "explanation": "It abducts and medially rotates the hip."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_gluteus_minimus",
+   "concept": "gluteus_minimus",
+   "node": "s3",
+   "type": "muscle",
+   "side": "right",
+   "group": "gluteal",
+   "names": {
+    "preferred": "Gluteus minimus",
+    "latin": "Musculus gluteus minimus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22332"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gluteus_medius"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_tensor_fasciae_latae"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_adductor_longus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_adductor_brevis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gluteus_medius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_piriformis"
+    }
+   ],
+   "content": {
+    "pronunciation": "GLOO-tee-us MIN-ih-mus",
+    "origin": "Greek gloutos, \"buttock\", and Latin minimus, \"smallest\".",
+    "location": "The deepest of the three gluteal muscles, lying directly deep to gluteus medius on the outer ilium.",
+    "description": "The smallest gluteal muscle; thin and fan-shaped, converging on the front of the greater trochanter.",
+    "function": "Abducts and medially rotates the hip and, with gluteus medius, holds the pelvis level in walking. External ilium between anterior and inferior gluteal lines -> anterior surface of greater trochanter. Superior gluteal nerve (L4-S1).",
+    "mnemonic": "Minimus is the smallest and deepest: \"minimum depth to the bone\".",
+    "clinical": "Tears of the gluteus minimus and medius tendons at the greater trochanter are a common cause of lateral hip pain (greater trochanteric pain syndrome).",
+    "hint": "The smallest, deepest buttock muscle, lying right on the ilium under the middle one."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Which is the deepest of the three gluteal muscles?",
+     "options": [
+      "Gluteus maximus",
+      "Gluteus medius",
+      "Tensor fasciae latae",
+      "Gluteus minimus"
+     ],
+     "answer": 3,
+     "explanation": "Gluteus minimus lies deep to gluteus medius, directly on the ilium."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_tensor_fasciae_latae",
+   "concept": "tensor_fasciae_latae",
+   "node": "s4",
+   "type": "muscle",
+   "side": "right",
+   "group": "gluteal",
+   "names": {
+    "preferred": "Tensor fasciae latae",
+    "latin": "Musculus tensor fasciae latae",
+    "synonyms": [
+     "TFL"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22425"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gluteus_medius"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gluteus_minimus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gluteus_maximus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_sartorius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gluteus_medius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_lateralis"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEN-sor FASH-ee-ee LAH-tee",
+    "origin": "Latin tensor, \"stretcher\", fascia, \"band\", and lata, \"broad\": the tightener of the broad band.",
+    "location": "At the front and side of the hip, just below and behind the anterior superior iliac spine, lateral to sartorius.",
+    "description": "A short, flat muscle enclosed in the fascia lata, ending in the long iliotibial tract that runs down the lateral thigh.",
+    "function": "Tenses the fascia lata and iliotibial tract to steady the knee and hip; helps flex, abduct and medially rotate the hip. Anterior superior iliac spine and iliac crest -> iliotibial tract (to the lateral condyle of tibia). Superior gluteal nerve (L4-S1).",
+    "mnemonic": "TFL = Tightens Fascia Lata.",
+    "clinical": "A tight iliotibial tract can rub over the lateral femoral condyle, causing lateral knee pain in runners and cyclists (iliotibial band syndrome).",
+    "hint": "Small muscle at the front edge of the hip that tightens the long band down the outside of the thigh."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Tensor fasciae latae inserts into which structure?",
+     "options": [
+      "Calcaneal tendon",
+      "Iliotibial tract",
+      "Pes anserinus",
+      "Patella"
+     ],
+     "answer": 1,
+     "explanation": "TFL ends in the iliotibial tract, part of the fascia lata."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_piriformis",
+   "concept": "piriformis",
+   "node": "s5",
+   "type": "muscle",
+   "side": "right",
+   "group": "gluteal",
+   "names": {
+    "preferred": "Piriformis",
+    "latin": "Musculus piriformis",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22340"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_obturator_internus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_quadratus_femoris"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gluteus_maximus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gluteus_medius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gluteus_minimus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_obturator_internus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gluteus_maximus"
+    }
+   ],
+   "content": {
+    "pronunciation": "pir-ih-FOR-mis",
+    "origin": "Latin pirum, \"pear\", and forma, \"shape\": pear-shaped.",
+    "location": "Deep in the buttock, running from the front of the sacrum through the greater sciatic foramen to the top of the greater trochanter.",
+    "description": "A flat, pear-shaped muscle; the key landmark of the gluteal region, with the sciatic nerve usually emerging just below it.",
+    "function": "Laterally rotates the extended hip and abducts the flexed hip; helps hold the femoral head in the acetabulum. Anterior surface of sacrum -> superior border of greater trochanter. Nerve to piriformis (S1-S2).",
+    "mnemonic": "Piriformis is the pear in the doorway of the greater sciatic foramen: vessels and nerves pass above and below it.",
+    "clinical": "In piriformis syndrome, a tight or irritated muscle can compress the sciatic nerve, causing buttock pain and sciatica-like symptoms.",
+    "hint": "Pear-shaped deep buttock muscle from the sacrum; the sciatic nerve usually appears just below it."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which nerve usually emerges just below piriformis and can be irritated by it?",
+     "options": [
+      "Femoral nerve",
+      "Obturator nerve",
+      "Sciatic nerve",
+      "Superficial fibular nerve"
+     ],
+     "answer": 2,
+     "explanation": "The sciatic nerve normally leaves the greater sciatic foramen below piriformis."
+    },
+    {
+     "kind": "function",
+     "text": "Piriformis mainly produces which movement of the extended hip?",
+     "options": [
+      "Lateral rotation",
+      "Flexion",
+      "Adduction",
+      "Medial rotation"
+     ],
+     "answer": 0,
+     "explanation": "Piriformis is a lateral rotator of the extended hip."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_obturator_internus",
+   "concept": "obturator_internus",
+   "node": "s6",
+   "type": "muscle",
+   "side": "right",
+   "group": "gluteal",
+   "names": {
+    "preferred": "Obturator internus",
+    "latin": "Musculus obturator internus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22324"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_piriformis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_quadratus_femoris"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_piriformis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_quadratus_femoris"
+    }
+   ],
+   "content": {
+    "pronunciation": "OB-too-ray-tor in-TER-nus",
+    "origin": "Latin obturare, \"to block up\" (it covers the obturator foramen), and internus, \"inner\".",
+    "location": "Arises inside the pelvis on the side wall, then turns sharply around the lesser sciatic notch to reach the greater trochanter.",
+    "description": "A fan-shaped muscle whose tendon bends almost 90 degrees around the ischium; flanked outside the pelvis by the two small gemelli.",
+    "function": "Laterally rotates the extended hip, abducts the flexed hip and steadies the femoral head. Inner surface of obturator membrane and surrounding bone -> medial surface of greater trochanter. Nerve to obturator internus (L5-S2).",
+    "mnemonic": "Internus starts inside the pelvis, then leaves through the lesser sciatic foramen.",
+    "clinical": "It forms part of the side wall of the pelvis and can be a source of deep pelvic or hip pain in some pelvic floor disorders.",
+    "hint": "Starts inside the pelvis on the side wall and bends around the lesser sciatic notch to reach the femur."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Where does obturator internus arise?",
+     "options": [
+      "Outer surface of the ilium",
+      "Inner surface of the obturator membrane, inside the pelvis",
+      "Ischial tuberosity only",
+      "Anterior surface of the sacrum"
+     ],
+     "answer": 1,
+     "explanation": "Obturator internus arises inside the pelvis from the obturator membrane and surrounding bone."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_quadratus_femoris",
+   "concept": "quadratus_femoris",
+   "node": "s7",
+   "type": "muscle",
+   "side": "right",
+   "group": "gluteal",
+   "names": {
+    "preferred": "Quadratus femoris",
+    "latin": "Musculus quadratus femoris",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22338"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_piriformis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_obturator_internus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_obturator_internus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_magnus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gluteus_maximus"
+    }
+   ],
+   "content": {
+    "pronunciation": "kwod-RAY-tus FEM-or-is",
+    "origin": "Latin quadratus, \"square\", and femoris, \"of the thigh\".",
+    "location": "Deep in the lower buttock, running horizontally from the ischial tuberosity to the back of the upper femur, below the obturator internus and gemelli.",
+    "description": "A short, flat, rectangular muscle, the lowest of the deep lateral rotators.",
+    "function": "Laterally rotates the hip and helps hold the femoral head in the acetabulum. Lateral border of ischial tuberosity -> quadrate tubercle on the intertrochanteric crest. Nerve to quadratus femoris (L4-S1).",
+    "mnemonic": "Quadratus = square: the square block at the bottom of the lateral rotator stack.",
+    "clinical": "Narrowing of the space between the ischium and femur can squeeze this muscle (ischiofemoral impingement), causing deep buttock pain.",
+    "hint": "Square, horizontal muscle at the bottom of the deep hip rotators, from the sitting bone to the femur."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Quadratus femoris is named for its:",
+     "options": [
+      "Four heads",
+      "Four tendons",
+      "Square shape",
+      "Four actions"
+     ],
+     "answer": 2,
+     "explanation": "Quadratus means square: the muscle is a flat rectangle."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_iliacus",
+   "concept": "iliacus",
+   "node": "s8",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_anterior",
+   "names": {
+    "preferred": "Iliacus",
+    "latin": "Musculus iliacus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22322"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_psoas_major"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_sartorius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_gluteus_maximus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_psoas_major"
+    }
+   ],
+   "content": {
+    "pronunciation": "ih-LY-ah-kus",
+    "origin": "Latin ilium, \"flank\": the muscle of the ilium.",
+    "location": "Lines the iliac fossa on the inner surface of the ilium, then passes under the inguinal ligament to the front of the hip.",
+    "description": "A fan-shaped muscle that joins the psoas major tendon; together they form iliopsoas.",
+    "function": "Flexes the hip (with psoas major, as iliopsoas) and stabilises the hip joint. Iliac fossa, iliac crest and ala of sacrum -> lesser trochanter of femur (with the psoas tendon). Femoral nerve (L2-L3).",
+    "mnemonic": "Iliacus + psoas = iliopsoas: \"I lift my leg\".",
+    "clinical": "Bleeding into the iliacus (e.g. with anticoagulants or haemophilia) can compress the femoral nerve, causing thigh weakness and numbness.",
+    "hint": "Fills the inner bowl of the hip bone and joins the lumbar muscle to reach the lesser trochanter."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Iliacus joins which muscle to form iliopsoas?",
+     "options": [
+      "Psoas major",
+      "Pectineus",
+      "Sartorius",
+      "Quadratus femoris"
+     ],
+     "answer": 0,
+     "explanation": "Iliacus and psoas major share an insertion on the lesser trochanter as iliopsoas."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_psoas_major",
+   "concept": "psoas_major",
+   "node": "s9",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_anterior",
+   "names": {
+    "preferred": "Psoas major",
+    "latin": "Musculus psoas major",
+    "synonyms": [
+     "Psoas"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22342"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_iliacus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_gluteus_maximus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_iliacus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_pectineus"
+    }
+   ],
+   "content": {
+    "pronunciation": "SOH-as MAY-jor",
+    "origin": "Greek psoa, \"loin muscle\" (the tenderloin), and Latin major, \"larger\".",
+    "location": "Beside the lumbar vertebrae on the posterior abdominal wall, running down across the pelvic brim and under the inguinal ligament to the femur.",
+    "description": "A long, thick spindle-shaped muscle; the only muscle directly joining the vertebral column to the lower limb.",
+    "function": "Flexes the hip (as iliopsoas) and helps flex the trunk and bend it sideways. Bodies, discs and transverse processes of T12-L5 -> lesser trochanter of femur. Anterior rami of lumbar nerves (L1-L3).",
+    "mnemonic": "Psoas = the \"tenderloin\" steak: it runs along the lower back.",
+    "clinical": "Pain on extending the hip (positive psoas sign) can indicate inflammation near the muscle, such as a retrocaecal appendicitis or psoas abscess.",
+    "hint": "The long loin muscle that runs from the lumbar spine to the lesser trochanter."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Psoas major arises from which part of the skeleton?",
+     "options": [
+      "Iliac fossa",
+      "Lumbar vertebrae (T12-L5)",
+      "Ischial tuberosity",
+      "Anterior sacrum"
+     ],
+     "answer": 1,
+     "explanation": "Psoas major arises from the bodies, discs and transverse processes of T12-L5."
+    },
+    {
+     "kind": "clinical",
+     "text": "Pain when the hip is extended (psoas sign) may point to inflammation near which muscle?",
+     "options": [
+      "Gluteus maximus",
+      "Vastus lateralis",
+      "Psoas major",
+      "Soleus"
+     ],
+     "answer": 2,
+     "explanation": "Inflammation touching psoas major makes stretching it painful."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_sartorius",
+   "concept": "sartorius",
+   "node": "s10",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_anterior",
+   "names": {
+    "preferred": "Sartorius",
+    "latin": "Musculus sartorius",
+    "synonyms": [
+     "Tailor's muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22354"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gracilis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_iliacus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_tensor_fasciae_latae"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_medialis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gracilis"
+    }
+   ],
+   "content": {
+    "pronunciation": "sar-TOR-ee-us",
+    "origin": "Latin sartor, \"tailor\": it helps produce the cross-legged tailor's sitting position.",
+    "location": "Crosses the front of the thigh diagonally from the anterior superior iliac spine to the medial side of the knee.",
+    "description": "The longest muscle in the body; a narrow strap. It forms the lateral border of the femoral triangle.",
+    "function": "Flexes, abducts and laterally rotates the hip and flexes the knee (the cross-legged position). Anterior superior iliac spine -> upper medial surface of tibia (pes anserinus). Femoral nerve (L2-L3).",
+    "mnemonic": "Pes anserinus: \"Say Grace before Tea\" (Sartorius, Gracilis, semiTendinosus) - sartorius is the S at the front.",
+    "clinical": "Irritation of the bursa under the pes anserinus tendons causes pain on the upper medial shin, common in runners and people with knee osteoarthritis.",
+    "hint": "Longest strap muscle in the body, crossing the thigh diagonally from the front of the pelvis to the inside of the knee."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Sartorius is named after a:",
+     "options": [
+      "Soldier",
+      "Tailor",
+      "Dancer",
+      "Sailor"
+     ],
+     "answer": 1,
+     "explanation": "Sartor is Latin for tailor, for the cross-legged position it helps produce."
+    },
+    {
+     "kind": "relationship",
+     "text": "Which three tendons form the pes anserinus?",
+     "options": [
+      "Sartorius, gracilis, semitendinosus",
+      "Sartorius, gracilis, semimembranosus",
+      "Rectus femoris, gracilis, biceps femoris",
+      "Sartorius, adductor longus, semitendinosus"
+     ],
+     "answer": 0,
+     "explanation": "\"Say Grace before Tea\": Sartorius, Gracilis and semiTendinosus."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_rectus_femoris",
+   "concept": "rectus_femoris",
+   "node": "s11",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_anterior",
+   "names": {
+    "preferred": "Rectus femoris",
+    "latin": "Musculus rectus femoris",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38928"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_vastus_lateralis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_vastus_medialis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_vastus_intermedius"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_iliacus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_biceps_femoris"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_lateralis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_medialis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_intermedius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_sartorius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_tensor_fasciae_latae"
+    }
+   ],
+   "content": {
+    "pronunciation": "REK-tus FEM-or-is",
+    "origin": "Latin rectus, \"straight\", and femoris, \"of the thigh\".",
+    "location": "Runs straight down the middle of the front of the thigh, superficial to vastus intermedius and between the other two vasti.",
+    "description": "A bipennate, spindle-shaped muscle; the only quadriceps head that crosses the hip as well as the knee.",
+    "function": "Extends the knee and flexes the hip, as in kicking. Anterior inferior iliac spine and ilium above the acetabulum -> patella via the quadriceps tendon, then tibial tuberosity via the patellar ligament. Femoral nerve (L2-L4).",
+    "mnemonic": "Rectus = straight down the middle, and it crosses two joints: kick a ball.",
+    "clinical": "In adolescents, a hard kick can pull its origin off the anterior inferior iliac spine (avulsion fracture).",
+    "hint": "The straight central quadriceps head, the only one that also crosses the hip."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which quadriceps muscle also flexes the hip?",
+     "options": [
+      "Vastus lateralis",
+      "Vastus intermedius",
+      "Rectus femoris",
+      "Vastus medialis"
+     ],
+     "answer": 2,
+     "explanation": "Rectus femoris arises from the pelvis, so it crosses and flexes the hip."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_vastus_lateralis",
+   "concept": "vastus_lateralis",
+   "node": "s12",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_anterior",
+   "names": {
+    "preferred": "Vastus lateralis",
+    "latin": "Musculus vastus lateralis",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38930"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_vastus_medialis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_vastus_intermedius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_biceps_femoris"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_intermedius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_tensor_fasciae_latae"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_biceps_femoris"
+    }
+   ],
+   "content": {
+    "pronunciation": "VAS-tus lat-er-AH-lis",
+    "origin": "Latin vastus, \"huge\", and lateralis, \"on the side\".",
+    "location": "Along the lateral side of the thigh, deep to the iliotibial tract.",
+    "description": "The largest quadriceps head; a broad, thick muscle.",
+    "function": "Extends the knee. Greater trochanter and lateral lip of the linea aspera -> patella via the quadriceps tendon, then tibial tuberosity via the patellar ligament. Femoral nerve (L2-L4).",
+    "mnemonic": "Lateral = largest: the big outer thigh muscle.",
+    "clinical": "A common intramuscular injection site, especially in infants, in the middle third of the anterolateral thigh.",
+    "hint": "Largest head of the thigh's front group, on the outer side under the iliotibial tract; a common injection site in babies."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Which thigh muscle is a common intramuscular injection site in infants?",
+     "options": [
+      "Vastus lateralis",
+      "Gracilis",
+      "Semitendinosus",
+      "Adductor longus"
+     ],
+     "answer": 0,
+     "explanation": "The anterolateral thigh over vastus lateralis is safe and well developed in infants."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_vastus_medialis",
+   "concept": "vastus_medialis",
+   "node": "s13",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_anterior",
+   "names": {
+    "preferred": "Vastus medialis",
+    "latin": "Musculus vastus medialis",
+    "synonyms": [
+     "VMO (oblique fibres)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38932"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_vastus_lateralis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_vastus_intermedius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_biceps_femoris"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_intermedius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_sartorius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_magnus"
+    }
+   ],
+   "content": {
+    "pronunciation": "VAS-tus mee-dee-AH-lis",
+    "origin": "Latin vastus, \"huge\", and medialis, \"towards the middle\".",
+    "location": "On the medial side of the front of the thigh, forming the teardrop bulge just above and medial to the patella.",
+    "description": "A large quadriceps head whose lower oblique fibres (VMO) pull the patella medially.",
+    "function": "Extends the knee and its lower fibres help keep the patella tracking centrally. Intertrochanteric line and medial lip of the linea aspera -> patella via the quadriceps tendon, then tibial tuberosity. Femoral nerve (L2-L4).",
+    "mnemonic": "Medialis makes the teardrop on the inside of the knee.",
+    "clinical": "Weak or wasted lower fibres are linked to kneecap maltracking and anterior knee pain; this part wastes quickly after knee injury.",
+    "hint": "Teardrop-shaped bulge of the thigh's front group just above and inside the kneecap."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The teardrop-shaped bulge above and medial to the patella is formed by:",
+     "options": [
+      "Sartorius",
+      "Vastus lateralis",
+      "Gracilis",
+      "Vastus medialis"
+     ],
+     "answer": 3,
+     "explanation": "The lower oblique fibres of vastus medialis form the teardrop."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_vastus_intermedius",
+   "concept": "vastus_intermedius",
+   "node": "s14",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_anterior",
+   "names": {
+    "preferred": "Vastus intermedius",
+    "latin": "Musculus vastus intermedius",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38934"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_vastus_lateralis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_vastus_medialis"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_biceps_femoris"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_lateralis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_medialis"
+    }
+   ],
+   "content": {
+    "pronunciation": "VAS-tus in-ter-MEE-dee-us",
+    "origin": "Latin vastus, \"huge\", and intermedius, \"in between\".",
+    "location": "Deepest quadriceps head, lying directly on the front and side of the femoral shaft, deep to rectus femoris.",
+    "description": "A broad muscle wrapped around the femur, hidden between the other vasti.",
+    "function": "Extends the knee. Anterior and lateral surfaces of the femoral shaft -> patella via the quadriceps tendon, then tibial tuberosity via the patellar ligament. Femoral nerve (L2-L4).",
+    "mnemonic": "Intermedius is in the middle and underneath: you cannot see it without lifting rectus femoris.",
+    "clinical": "A direct blow to the front of the thigh can crush it against the femur, causing a painful contusion (\"cork thigh\") and sometimes bone formation in the muscle.",
+    "hint": "Deepest part of the front thigh group, lying right on the femur under the straight central head."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Which quadriceps head lies deep to rectus femoris, directly on the femur?",
+     "options": [
+      "Vastus lateralis",
+      "Vastus intermedius",
+      "Vastus medialis",
+      "Sartorius"
+     ],
+     "answer": 1,
+     "explanation": "Vastus intermedius lies on the anterior and lateral femoral shaft, deep to rectus femoris."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_pectineus",
+   "concept": "pectineus",
+   "node": "s15",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_medial",
+   "names": {
+    "preferred": "Pectineus",
+    "latin": "Musculus pectineus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22450"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_adductor_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_adductor_brevis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_iliacus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_psoas_major"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_brevis"
+    }
+   ],
+   "content": {
+    "pronunciation": "pek-TIN-ee-us",
+    "origin": "Latin pecten, \"comb\": it arises from the pecten (pectineal line) of the pubis.",
+    "location": "At the upper medial thigh, forming part of the floor of the femoral triangle between iliopsoas and adductor longus.",
+    "description": "A flat, quadrangular muscle; the most superior of the adductor group.",
+    "function": "Adducts and flexes the hip. Pectineal line of the superior pubic ramus -> pectineal line of the femur, just below the lesser trochanter. Femoral nerve (L2-L3), sometimes with a branch of the obturator nerve.",
+    "mnemonic": "Pectineus = the comb at the top of the adductors, with two jobs (adduct and flex) and sometimes two nerves.",
+    "clinical": "It can be strained in groin injuries along with the other adductors.",
+    "hint": "Flat, square muscle in the floor of the femoral triangle, the highest of the inner thigh group."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Unlike most adductors, pectineus is usually supplied by which nerve?",
+     "options": [
+      "Obturator nerve",
+      "Sciatic nerve",
+      "Femoral nerve",
+      "Tibial nerve"
+     ],
+     "answer": 2,
+     "explanation": "Pectineus is usually supplied by the femoral nerve, sometimes also by the obturator nerve."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_adductor_longus",
+   "concept": "adductor_longus",
+   "node": "s16",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_medial",
+   "names": {
+    "preferred": "Adductor longus",
+    "latin": "Musculus adductor longus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22456"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_adductor_brevis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_adductor_magnus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gracilis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_pectineus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_gluteus_medius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_gluteus_minimus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_pectineus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_brevis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gracilis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_sartorius"
+    }
+   ],
+   "content": {
+    "pronunciation": "ad-DUK-tor LONG-us",
+    "origin": "Latin adducere, \"to bring towards\", and longus, \"long\".",
+    "location": "In the upper medial thigh, most anterior of the adductors; its medial border forms the medial edge of the femoral triangle.",
+    "description": "A large fan-shaped muscle with a strong tendon you can feel in the groin when the thigh is adducted against resistance.",
+    "function": "Adducts the hip and helps flex it. Body of the pubis below the pubic crest -> middle third of the linea aspera. Obturator nerve, anterior division (L2-L4).",
+    "mnemonic": "The femoral triangle borders: \"SAIL\" - Sartorius, Adductor longus, Inguinal Ligament.",
+    "clinical": "The most commonly strained adductor in \"groin strain\", typical in football, hockey and other kicking or cutting sports.",
+    "hint": "The most anterior inner-thigh muscle, whose tendon stands out in the groin and borders the femoral triangle."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Which muscle is most often injured in a groin strain?",
+     "options": [
+      "Adductor longus",
+      "Rectus femoris",
+      "Piriformis",
+      "Gluteus minimus"
+     ],
+     "answer": 0,
+     "explanation": "Adductor longus is the most commonly strained adductor."
+    },
+    {
+     "kind": "relationship",
+     "text": "Adductor longus forms the medial border of which region?",
+     "options": [
+      "Popliteal fossa",
+      "Femoral triangle",
+      "Greater sciatic foramen",
+      "Adductor hiatus"
+     ],
+     "answer": 1,
+     "explanation": "The femoral triangle is bounded by sartorius, adductor longus and the inguinal ligament."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_adductor_brevis",
+   "concept": "adductor_brevis",
+   "node": "s17",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_medial",
+   "names": {
+    "preferred": "Adductor brevis",
+    "latin": "Musculus adductor brevis",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22452"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_adductor_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_adductor_magnus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_pectineus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_gluteus_medius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_magnus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_pectineus"
+    }
+   ],
+   "content": {
+    "pronunciation": "ad-DUK-tor BREV-is",
+    "origin": "Latin adducere, \"to bring towards\", and brevis, \"short\".",
+    "location": "In the upper medial thigh, deep to pectineus and adductor longus and in front of adductor magnus.",
+    "description": "A short, triangular muscle; the obturator nerve splits into anterior and posterior divisions around it.",
+    "function": "Adducts the hip and helps flex it. Body and inferior ramus of the pubis -> pectineal line and upper part of the linea aspera. Obturator nerve (L2-L4).",
+    "mnemonic": "Brevis is brief and sandwiched: longus in front, magnus behind.",
+    "clinical": "It can be injured with adductor longus in groin strains.",
+    "hint": "Short triangular inner-thigh muscle sandwiched between the long and large ones, with the obturator nerve's branches on each face."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Adductor brevis lies between which two muscles?",
+     "options": [
+      "Sartorius and gracilis",
+      "Pectineus and iliacus",
+      "Adductor longus (in front) and adductor magnus (behind)",
+      "Vastus medialis and sartorius"
+     ],
+     "answer": 2,
+     "explanation": "Adductor brevis is sandwiched between adductor longus anteriorly and adductor magnus posteriorly."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_adductor_magnus",
+   "concept": "adductor_magnus",
+   "node": "s18",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_medial",
+   "names": {
+    "preferred": "Adductor magnus",
+    "latin": "Musculus adductor magnus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22459"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_adductor_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_adductor_brevis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gracilis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_gluteus_medius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_gluteus_minimus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_brevis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gracilis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_medialis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_quadratus_femoris"
+    }
+   ],
+   "content": {
+    "pronunciation": "ad-DUK-tor MAG-nus",
+    "origin": "Latin adducere, \"to bring towards\", and magnus, \"great\".",
+    "location": "The deepest and most posterior of the adductors, forming much of the medial and back of the thigh.",
+    "description": "A large triangular muscle with two parts; a gap near its lower end (adductor hiatus) lets the femoral vessels pass into the popliteal fossa.",
+    "function": "Adducts the hip; its adductor part flexes and its hamstring part extends the hip. Inferior pubic ramus, ischial ramus and ischial tuberosity -> linea aspera and adductor tubercle of femur. Obturator nerve (L2-L4) and tibial part of sciatic nerve (L4).",
+    "mnemonic": "Magnus has two parts and two nerves: adductor part (obturator) and hamstring part (sciatic).",
+    "clinical": "The adductor hiatus is where the femoral artery becomes the popliteal artery, a common site of narrowing in peripheral arterial disease.",
+    "hint": "The largest inner-thigh muscle, half adductor and half hamstring, with a gap for the femoral vessels near the knee."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The hamstring part of adductor magnus is supplied by which nerve?",
+     "options": [
+      "Femoral nerve",
+      "Obturator nerve",
+      "Superior gluteal nerve",
+      "Tibial part of the sciatic nerve"
+     ],
+     "answer": 3,
+     "explanation": "The hamstring part arises from the ischial tuberosity and is supplied by the tibial part of the sciatic nerve."
+    },
+    {
+     "kind": "terminology",
+     "text": "The gap in adductor magnus that lets the femoral vessels reach the back of the knee is the:",
+     "options": [
+      "Adductor hiatus",
+      "Greater sciatic foramen",
+      "Obturator foramen",
+      "Femoral triangle"
+     ],
+     "answer": 0,
+     "explanation": "The femoral vessels pass through the adductor hiatus into the popliteal fossa."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_gracilis",
+   "concept": "gracilis",
+   "node": "s19",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_medial",
+   "names": {
+    "preferred": "Gracilis",
+    "latin": "Musculus gracilis",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA43883"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_sartorius"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_adductor_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_magnus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_sartorius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    }
+   ],
+   "content": {
+    "pronunciation": "GRAS-ih-lis",
+    "origin": "Latin gracilis, \"slender\".",
+    "location": "The most superficial and medial muscle of the inner thigh, running from the pubis to the upper medial tibia.",
+    "description": "A long, thin strap muscle; the only adductor that crosses the knee.",
+    "function": "Adducts the hip, flexes the knee and helps medially rotate the leg. Body and inferior ramus of the pubis -> upper medial surface of tibia (pes anserinus). Obturator nerve (L2-L3).",
+    "mnemonic": "Gracilis is graceful and slender: the G in \"Say Grace before Tea\".",
+    "clinical": "Because it is expendable, its tendon (often with semitendinosus) is commonly used as a graft in anterior cruciate ligament reconstruction.",
+    "hint": "Slender, superficial strap down the inside of the thigh, the only inner-thigh muscle that crosses the knee."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which adductor also crosses and flexes the knee?",
+     "options": [
+      "Adductor brevis",
+      "Pectineus",
+      "Gracilis",
+      "Adductor longus"
+     ],
+     "answer": 2,
+     "explanation": "Gracilis inserts on the upper medial tibia, so it also flexes the knee."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_biceps_femoris",
+   "concept": "biceps_femoris",
+   "node": "s20",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_posterior",
+   "names": {
+    "preferred": "Biceps femoris",
+    "latin": "Musculus biceps femoris",
+    "synonyms": [
+     "Lateral hamstring"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA45888"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA45891"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gluteus_maximus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_vastus_lateralis"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_vastus_medialis"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_vastus_intermedius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_vastus_lateralis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    }
+   ],
+   "content": {
+    "pronunciation": "BY-seps FEM-or-is",
+    "origin": "Latin bi-, \"two\", caput, \"head\", and femoris, \"of the thigh\": two-headed thigh muscle.",
+    "location": "The lateral hamstring, on the back and outer side of the thigh; its tendon forms the upper lateral border of the popliteal fossa.",
+    "description": "Has a long head from the pelvis and a short head from the femur, joining in one tendon to the fibula.",
+    "function": "Flexes the knee and laterally rotates the leg when the knee is bent; the long head also extends the hip. Long head: ischial tuberosity; short head: linea aspera -> head of fibula. Long head: tibial part of sciatic nerve; short head: common fibular part (L5-S2).",
+    "mnemonic": "Biceps goes to the fibula: B and F sit together on the lateral side.",
+    "clinical": "Hamstring strains, often in the long head of biceps femoris, are common in sprinting sports.",
+    "hint": "Two-headed lateral muscle at the back of the thigh whose tendon runs to the head of the fibula."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Biceps femoris inserts onto which bone?",
+     "options": [
+      "Tibia (medial condyle)",
+      "Fibula (head)",
+      "Patella",
+      "Calcaneus"
+     ],
+     "answer": 1,
+     "explanation": "Both heads join into a tendon that inserts on the head of the fibula."
+    },
+    {
+     "kind": "terminology",
+     "text": "Which part of biceps femoris is NOT a true hamstring because it does not cross the hip?",
+     "options": [
+      "Long head",
+      "Tendon",
+      "Short head",
+      "Lateral head"
+     ],
+     "answer": 2,
+     "explanation": "The short head arises from the femur, so it acts only on the knee and is supplied by the common fibular nerve."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_lowerlimb_right_semitendinosus",
+   "concept": "semitendinosus",
+   "node": "s21",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_posterior",
+   "names": {
+    "preferred": "Semitendinosus",
+    "latin": "Musculus semitendinosus",
+    "synonyms": [
+     "Medial hamstring"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22358"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_biceps_femoris"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_sartorius"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gracilis"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_vastus_medialis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_biceps_femoris"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gracilis"
+    }
+   ],
+   "content": {
+    "pronunciation": "sem-ee-ten-dih-NOH-sus",
+    "origin": "Latin semi, \"half\", and tendinosus, \"tendinous\": its lower half is a long tendon.",
+    "location": "A medial hamstring on the back of the thigh, lying superficial to (on top of) semimembranosus.",
+    "description": "A fleshy upper part and a long, cord-like lower tendon that curves around the medial knee.",
+    "function": "Extends the hip, flexes the knee and medially rotates the leg when the knee is bent. Ischial tuberosity -> upper medial surface of tibia (pes anserinus). Tibial part of sciatic nerve (L5-S2).",
+    "mnemonic": "Semi-Tendinosus sits on Top and has a long Tendon; the T in \"Say Grace before Tea\".",
+    "clinical": "Its tendon is commonly harvested (often with gracilis) as a graft for anterior cruciate ligament reconstruction.",
+    "hint": "Medial hamstring with a long cord-like lower tendon, lying on top of its flatter partner and joining the pes anserinus."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Which hamstring lies superficial to semimembranosus?",
+     "options": [
+      "Biceps femoris short head",
+      "Gracilis",
+      "Adductor magnus",
+      "Semitendinosus"
+     ],
+     "answer": 3,
+     "explanation": "Semitendinosus lies on top of semimembranosus."
+    },
+    {
+     "kind": "function",
+     "text": "Semitendinosus produces all of these EXCEPT:",
+     "options": [
+      "Hip extension",
+      "Knee flexion",
+      "Knee extension",
+      "Medial rotation of the flexed knee"
+     ],
+     "answer": 2,
+     "explanation": "As a hamstring it flexes, not extends, the knee."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_semimembranosus",
+   "concept": "semimembranosus",
+   "node": "s22",
+   "type": "muscle",
+   "side": "right",
+   "group": "thigh_posterior",
+   "names": {
+    "preferred": "Semimembranosus",
+    "latin": "Musculus semimembranosus",
+    "synonyms": [
+     "Medial hamstring"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22448"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_biceps_femoris"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gluteus_maximus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_rectus_femoris"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_vastus_medialis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_adductor_magnus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gracilis"
+    }
+   ],
+   "content": {
+    "pronunciation": "sem-ee-mem-brah-NOH-sus",
+    "origin": "Latin semi, \"half\", and membranosus, \"membranous\": its upper part is a flat, membrane-like tendon.",
+    "location": "The deeper medial hamstring, deep to semitendinosus on the back of the thigh, ending at the back of the medial tibial condyle.",
+    "description": "A broad muscle with a flattened membranous upper tendon; bulkier than semitendinosus in its lower part.",
+    "function": "Extends the hip, flexes the knee and medially rotates the leg when the knee is bent. Ischial tuberosity -> posterior part of the medial condyle of tibia. Tibial part of sciatic nerve (L5-S2).",
+    "mnemonic": "Membranosus = membrane at the top, and it lies below (deep to) tendinosus.",
+    "clinical": "A Baker's (popliteal) cyst often forms from the bursa between semimembranosus and the medial head of gastrocnemius, causing a swelling behind the knee.",
+    "hint": "Deeper medial hamstring with a flat membrane-like upper tendon, ending on the back of the medial tibial condyle."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Semimembranosus inserts on the:",
+     "options": [
+      "Posterior medial condyle of the tibia",
+      "Head of the fibula",
+      "Tibial tuberosity",
+      "Lateral condyle of the femur"
+     ],
+     "answer": 0,
+     "explanation": "Semimembranosus inserts on the back of the medial condyle of the tibia."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_tibialis_anterior",
+   "concept": "tibialis_anterior",
+   "node": "s23",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Tibialis anterior",
+    "latin": "Musculus tibialis anterior",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22544"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_extensor_digitorum_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_extensor_hallucis_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_fibularis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_extensor_hallucis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_extensor_digitorum_longus"
+    }
+   ],
+   "content": {
+    "pronunciation": "tib-ee-AH-lis an-TEER-ee-or",
+    "origin": "Latin tibia, \"shin bone\" (originally \"flute\"), and anterior, \"in front\".",
+    "location": "In the anterior compartment of the leg, just lateral to the sharp front edge of the tibia (the shin).",
+    "description": "A thick, superficial muscle whose tendon is easily felt at the front of the ankle, the most medial tendon there.",
+    "function": "Dorsiflexes the ankle and inverts the foot; supports the medial arch. Lateral condyle and upper lateral surface of tibia and interosseous membrane -> medial cuneiform and base of first metatarsal. Deep fibular nerve (L4-L5).",
+    "mnemonic": "At the front of the ankle, medial to lateral: \"Tom Has A Very Nervous Disposition\" (Tibialis anterior, extensor Hallucis, Artery, Vein, Nerve, extensor Digitorum).",
+    "clinical": "Weakness from common or deep fibular nerve injury causes foot drop and a high-stepping gait; overuse causes anterior shin pain (\"shin splints\").",
+    "hint": "The main shin muscle beside the front edge of the tibia that lifts the foot up and turns the sole inwards."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which muscle is the main dorsiflexor and an invertor of the foot?",
+     "options": [
+      "Fibularis longus",
+      "Tibialis anterior",
+      "Soleus",
+      "Flexor hallucis longus"
+     ],
+     "answer": 1,
+     "explanation": "Tibialis anterior dorsiflexes the ankle and inverts the foot."
+    },
+    {
+     "kind": "clinical",
+     "text": "Foot drop after common fibular nerve injury is mainly due to weakness of:",
+     "options": [
+      "Tibialis anterior",
+      "Gastrocnemius",
+      "Tibialis posterior",
+      "Popliteus"
+     ],
+     "answer": 0,
+     "explanation": "Tibialis anterior, supplied by the deep fibular nerve, is the main dorsiflexor."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_extensor_digitorum_longus",
+   "concept": "extensor_digitorum_longus",
+   "node": "s24",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Extensor digitorum longus",
+    "latin": "Musculus extensor digitorum longus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22548"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_tibialis_anterior"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_extensor_hallucis_longus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_flexor_digitorum_longus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_tibialis_anterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_extensor_hallucis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_fibularis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_fibularis_brevis"
+    }
+   ],
+   "content": {
+    "pronunciation": "ex-TEN-sor dij-ih-TOR-um LONG-us",
+    "origin": "Latin extensor, \"straightener\", digitorum, \"of the toes\", and longus, \"long\".",
+    "location": "In the anterior compartment of the leg, lateral to tibialis anterior, with its tendons fanning out over the top of the foot.",
+    "description": "A pennate muscle whose tendon splits into four for the lateral four toes.",
+    "function": "Extends the lateral four toes and dorsiflexes the ankle. Lateral condyle of tibia, upper three-quarters of the medial fibula and interosseous membrane -> middle and distal phalanges of toes 2-5 via extensor expansions. Deep fibular nerve (L5-S1).",
+    "mnemonic": "Digitorum = digits (toes 2-5); hallucis = hallux (big toe).",
+    "clinical": "Loss of toe extension with foot drop helps localise a deep fibular or common fibular nerve injury.",
+    "hint": "Anterior leg muscle whose four tendons you can see on the top of the foot going to the small toes when you lift them."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Extensor digitorum longus extends which toes?",
+     "options": [
+      "Big toe only",
+      "All five toes",
+      "Lateral four toes",
+      "Little toe only"
+     ],
+     "answer": 2,
+     "explanation": "Its four tendons go to toes 2 to 5."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_extensor_hallucis_longus",
+   "concept": "extensor_hallucis_longus",
+   "node": "s25",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Extensor hallucis longus",
+    "latin": "Musculus extensor hallucis longus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22546"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_tibialis_anterior"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_extensor_digitorum_longus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_flexor_hallucis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_tibialis_anterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_extensor_digitorum_longus"
+    }
+   ],
+   "content": {
+    "pronunciation": "ex-TEN-sor HAL-uh-sis LONG-us",
+    "origin": "Latin extensor, \"straightener\", hallux, \"big toe\", and longus, \"long\".",
+    "location": "In the anterior compartment of the leg, deep between tibialis anterior and extensor digitorum longus; its tendon surfaces at the ankle.",
+    "description": "A thin muscle whose tendon stands out on top of the foot when you lift the big toe.",
+    "function": "Extends the big toe and dorsiflexes the ankle. Middle part of the anterior surface of the fibula and interosseous membrane -> base of the distal phalanx of the big toe. Deep fibular nerve (L5-S1).",
+    "mnemonic": "Hallux = big toe: extensor hallucis lifts the hallux.",
+    "clinical": "Testing big-toe extension strength is a quick check of the L5 nerve root.",
+    "hint": "The tendon that pops up on the top of the foot when you lift only your big toe."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Weak big-toe extension (extensor hallucis longus) is a useful test of which nerve root?",
+     "options": [
+      "L2",
+      "L5",
+      "S2",
+      "L3"
+     ],
+     "answer": 1,
+     "explanation": "Big-toe extension is a classic test of the L5 root."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_fibularis_longus",
+   "concept": "fibularis_longus",
+   "node": "s26",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Fibularis (peroneus) longus",
+    "latin": "Musculus fibularis longus",
+    "synonyms": [
+     "Peroneus longus"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22552"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_fibularis_brevis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_tibialis_anterior"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_fibularis_brevis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_extensor_digitorum_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_soleus"
+    }
+   ],
+   "content": {
+    "pronunciation": "fib-yoo-LAIR-is LONG-us",
+    "origin": "Latin fibula, \"pin\" or \"clasp\" (Greek perone, the same meaning, gives \"peroneus\"), and longus, \"long\".",
+    "location": "In the lateral compartment of the leg, superficial to fibularis brevis; its tendon passes behind the lateral malleolus and under the foot.",
+    "description": "A long muscle with a long tendon that crosses the sole in a groove under the cuboid to reach the medial side of the foot.",
+    "function": "Everts the foot, helps plantarflex the ankle and supports the arches. Head and upper two-thirds of the lateral fibula -> base of first metatarsal and medial cuneiform. Superficial fibular nerve (L5-S2).",
+    "mnemonic": "Longus goes a long way: behind the ankle, under the foot, to the big-toe side, forming a \"stirrup\" with tibialis anterior.",
+    "clinical": "It helps protect against ankle inversion sprains; its tendon can tear or dislocate behind the lateral malleolus.",
+    "hint": "Superficial lateral-leg muscle whose long tendon crosses under the sole to the base of the first metatarsal."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What is the main action of the fibularis (peroneus) muscles?",
+     "options": [
+      "Inversion",
+      "Eversion",
+      "Dorsiflexion of the toes",
+      "Knee flexion"
+     ],
+     "answer": 1,
+     "explanation": "The lateral compartment muscles evert the foot."
+    },
+    {
+     "kind": "relationship",
+     "text": "Which nerve supplies fibularis longus?",
+     "options": [
+      "Deep fibular nerve",
+      "Tibial nerve",
+      "Obturator nerve",
+      "Superficial fibular nerve"
+     ],
+     "answer": 3,
+     "explanation": "The lateral compartment is supplied by the superficial fibular nerve."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_fibularis_brevis",
+   "concept": "fibularis_brevis",
+   "node": "s27",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Fibularis (peroneus) brevis",
+    "latin": "Musculus fibularis brevis",
+    "synonyms": [
+     "Peroneus brevis"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22554"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_fibularis_longus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_tibialis_anterior"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_fibularis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_extensor_digitorum_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_flexor_hallucis_longus"
+    }
+   ],
+   "content": {
+    "pronunciation": "fib-yoo-LAIR-is BREV-is",
+    "origin": "Latin fibula, \"pin\" or \"clasp\" (Greek perone gives \"peroneus\"), and brevis, \"short\".",
+    "location": "In the lateral compartment of the leg, deep to fibularis longus; its tendon runs directly behind the lateral malleolus.",
+    "description": "A shorter, lower muscle whose tendon ends on the outer edge of the foot.",
+    "function": "Everts the foot and helps plantarflex the ankle. Lower two-thirds of the lateral surface of the fibula -> tuberosity at the base of the fifth metatarsal. Superficial fibular nerve (L5-S2).",
+    "mnemonic": "Brevis is brief and goes to the fifth (little toe) metatarsal.",
+    "clinical": "A sudden inversion injury can pull off the base of the fifth metatarsal where its tendon attaches (avulsion fracture).",
+    "hint": "Short lateral-leg muscle lying deep to its longer partner, ending on the base of the fifth metatarsal."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "An inversion injury can cause an avulsion fracture of the fifth metatarsal base, pulled by which muscle?",
+     "options": [
+      "Fibularis brevis",
+      "Tibialis posterior",
+      "Extensor hallucis longus",
+      "Soleus"
+     ],
+     "answer": 0,
+     "explanation": "Fibularis brevis inserts on the tuberosity of the fifth metatarsal base."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_gastrocnemius",
+   "concept": "gastrocnemius",
+   "node": "s28",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Gastrocnemius",
+    "latin": "Musculus gastrocnemius",
+    "synonyms": [
+     "Calf muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA45960"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA45957"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_flexor_digitorum_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_flexor_hallucis_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_tibialis_anterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_biceps_femoris"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_popliteus"
+    },
+    {
+     "type": "continuous_with",
+     "target": "muscular_lowerlimb_right_calcaneal_tendon"
+    }
+   ],
+   "content": {
+    "pronunciation": "gas-trok-NEE-mee-us",
+    "origin": "Greek gaster, \"belly\", and kneme, \"leg\": the belly of the leg.",
+    "location": "The most superficial calf muscle at the back of the leg; its two heads form the lower borders of the popliteal fossa.",
+    "description": "Has medial and lateral heads forming the calf bulge, joining the soleus in the calcaneal (Achilles) tendon.",
+    "function": "Plantarflexes the ankle (strongest with the knee straight) and flexes the knee; raises the heel in walking, running and jumping. Medial and lateral femoral condyles -> posterior calcaneus via the calcaneal tendon. Tibial nerve (S1-S2).",
+    "mnemonic": "Triceps surae = gastrocnemius (2 heads) + soleus: three heads, one tendon.",
+    "clinical": "A sudden push-off can tear the medial head (\"tennis leg\"), causing sharp calf pain.",
+    "hint": "Superficial two-headed calf muscle that crosses the back of the knee and forms the calf bulge."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Gastrocnemius acts on which two joints?",
+     "options": [
+      "Hip and knee",
+      "Knee and ankle",
+      "Ankle and toes only",
+      "Hip and ankle"
+     ],
+     "answer": 1,
+     "explanation": "It arises from the femur and inserts on the calcaneus, so it flexes the knee and plantarflexes the ankle."
+    },
+    {
+     "kind": "relationship",
+     "text": "Which nerve supplies gastrocnemius?",
+     "options": [
+      "Deep fibular nerve",
+      "Femoral nerve",
+      "Tibial nerve",
+      "Superficial fibular nerve"
+     ],
+     "answer": 2,
+     "explanation": "The posterior leg compartment is supplied by the tibial nerve (S1-S2)."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_lowerlimb_right_soleus",
+   "concept": "soleus",
+   "node": "s29",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Soleus",
+    "latin": "Musculus soleus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22558"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_flexor_hallucis_longus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_tibialis_anterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_flexor_hallucis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_flexor_digitorum_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    },
+    {
+     "type": "continuous_with",
+     "target": "muscular_lowerlimb_right_calcaneal_tendon"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_fibularis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_popliteus"
+    }
+   ],
+   "content": {
+    "pronunciation": "SOH-lee-us",
+    "origin": "Latin solea, \"sandal\" or \"sole\" (the flatfish), for its flat shape.",
+    "location": "Deep to gastrocnemius at the back of the leg, visible on each side of the lower calf.",
+    "description": "A broad, flat muscle; it does not cross the knee. Many veins within it form the calf pump.",
+    "function": "Plantarflexes the ankle whatever the knee position and steadies the leg on the foot when standing. Head and upper posterior fibula, soleal line and medial border of tibia -> posterior calcaneus via the calcaneal tendon. Tibial nerve (S1-S2).",
+    "mnemonic": "Soleus = sole-shaped, and it keeps you standing on your soles.",
+    "clinical": "Its contractions pump venous blood back to the heart (\"peripheral heart\"); inactivity allows stasis and raises the risk of deep vein thrombosis in its veins.",
+    "hint": "Flat, sandal-shaped calf muscle deep to the two-headed one, working even with the knee bent."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which calf muscle plantarflexes the ankle but does NOT cross the knee?",
+     "options": [
+      "Gastrocnemius",
+      "Soleus",
+      "Popliteus",
+      "Biceps femoris"
+     ],
+     "answer": 1,
+     "explanation": "Soleus arises from the tibia and fibula, below the knee."
+    },
+    {
+     "kind": "clinical",
+     "text": "The venous pump effect of soleus is important in preventing:",
+     "options": [
+      "Deep vein thrombosis",
+      "Foot drop",
+      "Groin strain",
+      "Trendelenburg gait"
+     ],
+     "answer": 0,
+     "explanation": "Soleus contractions push venous blood upwards, reducing stasis and DVT risk."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_calcaneal_tendon",
+   "concept": "calcaneal_tendon",
+   "node": "s30",
+   "type": "tendon",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Calcaneal (Achilles) tendon",
+    "latin": "Tendo calcaneus",
+    "synonyms": [
+     "Achilles tendon"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA258847"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "continuous_with",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    },
+    {
+     "type": "continuous_with",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_flexor_hallucis_longus"
+    }
+   ],
+   "content": {
+    "pronunciation": "kal-KAY-nee-al TEN-don",
+    "origin": "Latin calcaneus, \"heel\" (from calx). Achilles was the Greek hero whose only weak spot was his heel.",
+    "location": "At the back of the ankle, running from the lower calf to the back of the heel bone.",
+    "description": "The thickest and strongest tendon in the body, formed by the joined tendons of gastrocnemius and soleus.",
+    "function": "Transmits the pull of gastrocnemius and soleus to the calcaneus to plantarflex the ankle, e.g. rising on tiptoe and pushing off in walking. Tapping it tests the ankle jerk reflex (S1-S2).",
+    "mnemonic": "Achilles' heel: the hero's weak point is the heel tendon.",
+    "clinical": "Rupture often happens in middle-aged people during sudden push-off; squeezing the calf fails to plantarflex the foot (positive Thompson test).",
+    "hint": "The thick cord at the back of the ankle joining the calf to the heel; tapped for the ankle reflex."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "A positive Thompson (calf squeeze) test suggests rupture of the:",
+     "options": [
+      "Patellar ligament",
+      "Iliotibial tract",
+      "Calcaneal (Achilles) tendon",
+      "Fibularis longus tendon"
+     ],
+     "answer": 2,
+     "explanation": "If squeezing the calf does not plantarflex the foot, the calcaneal tendon is likely ruptured."
+    },
+    {
+     "kind": "relationship",
+     "text": "The calcaneal tendon is formed by which muscles?",
+     "options": [
+      "Gastrocnemius and soleus",
+      "Tibialis anterior and posterior",
+      "Fibularis longus and brevis",
+      "Popliteus and soleus"
+     ],
+     "answer": 0,
+     "explanation": "Gastrocnemius and soleus (triceps surae) share the calcaneal tendon."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_popliteus",
+   "concept": "popliteus",
+   "node": "s31",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Popliteus",
+    "latin": "Musculus popliteus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22591"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semitendinosus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_semimembranosus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    }
+   ],
+   "content": {
+    "pronunciation": "pop-LIT-ee-us",
+    "origin": "Latin poples, \"ham\" or back of the knee.",
+    "location": "Deep in the floor of the popliteal fossa at the back of the knee, above soleus.",
+    "description": "A thin, triangular muscle; its tendon runs inside the knee joint capsule and attaches near the lateral meniscus.",
+    "function": "Unlocks the fully extended knee by laterally rotating the femur on the fixed tibia (or medially rotating the tibia), allowing flexion to start. Lateral condyle of femur and lateral meniscus -> posterior tibia above the soleal line. Tibial nerve (L4-S1).",
+    "mnemonic": "Popliteus is the \"key\" that unlocks the knee.",
+    "clinical": "Its tendon can be injured with posterolateral knee ligament injuries, causing pain and instability at the back and outside of the knee.",
+    "hint": "Small triangular muscle in the floor of the back of the knee that unlocks the joint to start bending."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which muscle unlocks the fully extended knee to allow flexion?",
+     "options": [
+      "Popliteus",
+      "Rectus femoris",
+      "Gracilis",
+      "Tibialis posterior"
+     ],
+     "answer": 0,
+     "explanation": "Popliteus rotates the femur and tibia relative to each other to unlock the knee."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_tibialis_posterior",
+   "concept": "tibialis_posterior",
+   "node": "s32",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Tibialis posterior",
+    "latin": "Musculus tibialis posterior",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA65018"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_flexor_digitorum_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_flexor_hallucis_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_tibialis_anterior"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_fibularis_longus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_fibularis_brevis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_flexor_digitorum_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_flexor_hallucis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_popliteus"
+    }
+   ],
+   "content": {
+    "pronunciation": "tib-ee-AH-lis pos-TEER-ee-or",
+    "origin": "Latin tibia, \"shin bone\", and posterior, \"behind\".",
+    "location": "The deepest muscle of the posterior compartment, between the tibia and fibula; its tendon passes behind the medial malleolus.",
+    "description": "A flat muscle whose tendon spreads under the foot to many tarsal and metatarsal bones.",
+    "function": "Inverts the foot, plantarflexes the ankle and is the main support of the medial longitudinal arch. Interosseous membrane and posterior tibia and fibula -> navicular tuberosity, cuneiforms, cuboid and bases of metatarsals 2-4. Tibial nerve (L4-L5).",
+    "mnemonic": "Behind the medial malleolus the order is \"Tom, Dick And Very Nervous Harry\"; tibialis posterior is Tom, closest to the malleolus.",
+    "clinical": "Tibialis posterior tendon dysfunction is a leading cause of adult-acquired flat foot.",
+    "hint": "Deepest back-of-leg muscle, whose tendon hugs the inner ankle bone and holds up the inner arch."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Failure of which tendon is a common cause of adult-acquired flat foot?",
+     "options": [
+      "Fibularis brevis",
+      "Extensor digitorum longus",
+      "Tibialis posterior",
+      "Calcaneal tendon"
+     ],
+     "answer": 2,
+     "explanation": "Tibialis posterior is the main dynamic support of the medial longitudinal arch."
+    },
+    {
+     "kind": "location",
+     "text": "Which tendon lies closest behind the medial malleolus?",
+     "options": [
+      "Flexor hallucis longus",
+      "Tibialis posterior",
+      "Fibularis longus",
+      "Tibialis anterior"
+     ],
+     "answer": 1,
+     "explanation": "In \"Tom, Dick And Very Nervous Harry\", tibialis posterior (Tom) is first, nearest the malleolus."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_flexor_digitorum_longus",
+   "concept": "flexor_digitorum_longus",
+   "node": "s33",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Flexor digitorum longus",
+    "latin": "Musculus flexor digitorum longus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA65016"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_flexor_hallucis_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_gastrocnemius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_extensor_digitorum_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_flexor_hallucis_longus"
+    }
+   ],
+   "content": {
+    "pronunciation": "FLEX-or dij-ih-TOR-um LONG-us",
+    "origin": "Latin flexor, \"bender\", digitorum, \"of the toes\", and longus, \"long\".",
+    "location": "In the deep posterior compartment on the tibial (medial) side of the leg; its tendon passes behind the medial malleolus into the sole.",
+    "description": "A thin muscle whose tendon divides into four in the sole for the lateral four toes, crossing superficial to the flexor hallucis longus tendon.",
+    "function": "Flexes the lateral four toes, helps plantarflex the ankle and supports the longitudinal arches. Posterior surface of tibia below the soleal line -> bases of distal phalanges of toes 2-5. Tibial nerve (S2-S3).",
+    "mnemonic": "Tom, Dick And Very Nervous Harry: Dick (flexor Digitorum) is second behind the medial malleolus.",
+    "clinical": "Its tendon can be transferred to replace a failed tibialis posterior tendon in flat-foot surgery.",
+    "hint": "Deep calf muscle on the tibial side whose four tendons curl the small toes, running behind the inner ankle bone."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Flexor digitorum longus mainly flexes which toes?",
+     "options": [
+      "Big toe only",
+      "Lateral four toes",
+      "Little toe only",
+      "No toes; it only inverts the foot"
+     ],
+     "answer": 1,
+     "explanation": "Its four tendons insert on the distal phalanges of toes 2-5."
+    }
+   ]
+  },
+  {
+   "id": "muscular_lowerlimb_right_flexor_hallucis_longus",
+   "concept": "flexor_hallucis_longus",
+   "node": "s34",
+   "type": "muscle",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Flexor hallucis longus",
+    "latin": "Musculus flexor hallucis longus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA65014"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_lowerlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_flexor_digitorum_longus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_lowerlimb_right_extensor_hallucis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_soleus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_tibialis_posterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_flexor_digitorum_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_fibularis_brevis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_lowerlimb_right_calcaneal_tendon"
+    }
+   ],
+   "content": {
+    "pronunciation": "FLEX-or HAL-uh-sis LONG-us",
+    "origin": "Latin flexor, \"bender\", hallux, \"big toe\", and longus, \"long\".",
+    "location": "In the deep posterior compartment on the fibular (lateral) side of the leg; its tendon crosses to pass behind the medial malleolus, under the sustentaculum tali.",
+    "description": "A strong pennate muscle; surprisingly it arises on the lateral side but serves the big toe on the medial side.",
+    "function": "Flexes the big toe, giving the final push-off in walking, and helps plantarflex the ankle and support the medial arch. Lower two-thirds of the posterior fibula and interosseous membrane -> base of distal phalanx of big toe. Tibial nerve (S2-S3).",
+    "mnemonic": "Harry is last in \"Tom, Dick And Very Nervous Harry\": flexor Hallucis is the most posterior tendon behind the medial malleolus.",
+    "clinical": "Inflammation of its tendon behind the ankle is common in ballet dancers who work on pointe (\"dancer's tendinitis\").",
+    "hint": "Deep calf muscle from the fibula whose tendon crosses to the inner ankle to bend the big toe for push-off."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Flexor hallucis longus arises from which bone?",
+     "options": [
+      "Tibia",
+      "Femur",
+      "Fibula",
+      "Calcaneus"
+     ],
+     "answer": 2,
+     "explanation": "It arises from the posterior surface of the fibula, then its tendon crosses medially to the big toe."
+    },
+    {
+     "kind": "clinical",
+     "text": "\"Dancer's tendinitis\" behind the ankle affects the tendon of:",
+     "options": [
+      "Tibialis anterior",
+      "Fibularis longus",
+      "Extensor hallucis longus",
+      "Flexor hallucis longus"
+     ],
+     "answer": 3,
+     "explanation": "Repeated pointe work irritates the flexor hallucis longus tendon behind the ankle."
+    }
+   ]
+  }
+ ]
+}

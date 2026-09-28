@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/aianatomy/db" VERSION="20260927" COMMENT="XMLDB file for Moodle mod_aianatomy"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="aianatomy" COMMENT="AI Anatomy activity instances">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="intro" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="introformat" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="pack" TYPE="char" LENGTH="64" NOTNULL="true" DEFAULT="hand_right" SEQUENCE="false" COMMENT="Anatomy pack id (folder in packs/)"/>
+        <FIELD NAME="level" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="diploma" SEQUENCE="false" COMMENT="Learner level used for AI content"/>
+        <FIELD NAME="studyfields" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Comma separated content fields shown to students"/>
+        <FIELD NAME="explode" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="100" SEQUENCE="false" COMMENT="Explode distance, percent"/>
+        <FIELD NAME="showcontext" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="1" SEQUENCE="false" COMMENT="Non-selected anatomy: 0 hidden, 1 faded, 2 shown"/>
+        <FIELD NAME="studytip" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Activity-wide study tip or group mnemonic"/>
+        <FIELD NAME="grade" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="100" SEQUENCE="false" COMMENT="Maximum grade (0 = not graded)"/>
+        <FIELD NAME="grademethod" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="1" SEQUENCE="false" COMMENT="1 highest, 2 average, 3 first, 4 last"/>
+        <FIELD NAME="maxattempts" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="0 = unlimited"/>
+        <FIELD NAME="allowstudy" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="allowpractice" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="allowtest" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="timelimit" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Test time limit in seconds, 0 = none"/>
+        <FIELD NAME="identweight" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="60" SEQUENCE="false" COMMENT="Percent of the test grade from identification (rest from questions)"/>
+        <FIELD NAME="quizcount" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="10" SEQUENCE="false" COMMENT="Knowledge questions per test attempt, 0 = none"/>
+        <FIELD NAME="sounds" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="completionfinish" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="language" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="en" SEQUENCE="false" COMMENT="Activity language (Moodle language code): interface, content, questions and voice"/>
+        <FIELD NAME="grouptext" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="JSON translated group labels and tips {groupid: {label, tip}}"/>
+        <FIELD NAME="voice" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 = voiceover on (LMS Labs text to speech)"/>
+        <FIELD NAME="voicename" TYPE="char" LENGTH="30" NOTNULL="true" DEFAULT="Kore" SEQUENCE="false" COMMENT="Chirp 3 HD voice"/>
+        <FIELD NAME="voiceplaces" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="cards,questions,feedback,prompts" SEQUENCE="false" COMMENT="Where voiceover is offered"/>
+        <FIELD NAME="voiceauto" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 = read prompts and questions automatically"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="course" TYPE="foreign" FIELDS="course" REFTABLE="course" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="aianatomy_structure" COMMENT="Per-activity settings and teaching content for one anatomical structure">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="aianatomyid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="structureid" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" COMMENT="Stable anatomical id from the pack"/>
+        <FIELD NAME="enabled" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 = studied and assessed, 0 = context only"/>
+        <FIELD NAME="sortorder" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="label" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Label text override, empty = pack name"/>
+        <FIELD NAME="anchor" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Mesh-local anchor x,y,z; empty = structure centre"/>
+        <FIELD NAME="labelpos" TYPE="char" LENGTH="50" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Label box position x,y (0-1 of the viewer); empty = automatic"/>
+        <FIELD NAME="content" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="JSON teaching content students see"/>
+        <FIELD NAME="contentstatus" TYPE="char" LENGTH="16" NOTNULL="true" DEFAULT="library" SEQUENCE="false" COMMENT="library, approved or edited"/>
+        <FIELD NAME="contentlang" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="en" SEQUENCE="false" COMMENT="Language of the live content"/>
+        <FIELD NAME="draft" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="JSON AI draft waiting for teacher review"/>
+        <FIELD NAME="draftlang" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Language of the draft"/>
+        <FIELD NAME="aigenerated" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 if the live content came from AI"/>
+        <FIELD NAME="aimodel" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="timegenerated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="approvedby" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timeapproved" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="aianatomyid" TYPE="foreign" FIELDS="aianatomyid" REFTABLE="aianatomy" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="structure" UNIQUE="true" FIELDS="aianatomyid, structureid"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="aianatomy_question" COMMENT="Knowledge questions about a structure">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="aianatomyid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="structureid" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="sortorder" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="kind" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="function" SEQUENCE="false" COMMENT="function, location, relationship, terminology, clinical"/>
+        <FIELD NAME="questiontext" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="options" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="JSON array of option texts"/>
+        <FIELD NAME="answer" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Index of the correct option"/>
+        <FIELD NAME="explanation" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="status" TYPE="char" LENGTH="16" NOTNULL="true" DEFAULT="draft" SEQUENCE="false" COMMENT="library, approved or draft"/>
+        <FIELD NAME="lang" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="en" SEQUENCE="false" COMMENT="Language of the question"/>
+        <FIELD NAME="aigenerated" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="aianatomyid" TYPE="foreign" FIELDS="aianatomyid" REFTABLE="aianatomy" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="structure" UNIQUE="false" FIELDS="aianatomyid, structureid"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="aianatomy_attempt" COMMENT="User attempts">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="aianatomyid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="attempt" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="mode" TYPE="char" LENGTH="16" NOTNULL="true" DEFAULT="test" SEQUENCE="false"/>
+        <FIELD NAME="state" TYPE="char" LENGTH="16" NOTNULL="true" DEFAULT="inprogress" SEQUENCE="false"/>
+        <FIELD NAME="focus" TYPE="char" LENGTH="16" NOTNULL="true" DEFAULT="all" SEQUENCE="false" COMMENT="all or weak (practice)"/>
+        <FIELD NAME="tokenmap" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="JSON map of per-attempt tokens"/>
+        <FIELD NAME="timestart" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timefinish" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="identcorrect" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="identtotal" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="quizcorrect" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="quiztotal" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="grade" TYPE="number" LENGTH="10" NOTNULL="false" SEQUENCE="false" DECIMALS="5" COMMENT="Percentage 0-100"/>
+        <FIELD NAME="duration" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="aianatomyid" TYPE="foreign" FIELDS="aianatomyid" REFTABLE="aianatomy" REFFIELDS="id"/>
+        <KEY NAME="userid" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="userattempt" UNIQUE="false" FIELDS="aianatomyid, userid, mode"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="aianatomy_response" COMMENT="Responses within an attempt">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="attemptid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="kind" TYPE="char" LENGTH="10" NOTNULL="true" DEFAULT="label" SEQUENCE="false" COMMENT="label, find or quiz"/>
+        <FIELD NAME="structureid" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Target structure"/>
+        <FIELD NAME="questionid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="answer" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Structure placed or option chosen"/>
+        <FIELD NAME="correct" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="tries" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="roundno" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="attemptid" TYPE="foreign" FIELDS="attemptid" REFTABLE="aianatomy_attempt" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="attemptkind" UNIQUE="false" FIELDS="attemptid, kind"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="aianatomy_mastery" COMMENT="Per-student mastery of each structure (drives adaptive practice)">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="aianatomyid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="structureid" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="correct" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="wrong" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="streak" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Consecutive first-try correct answers"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="aianatomyid" TYPE="foreign" FIELDS="aianatomyid" REFTABLE="aianatomy" REFFIELDS="id"/>
+        <KEY NAME="userid" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="userstructure" UNIQUE="true" FIELDS="aianatomyid, userid, structureid"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="aianatomy_voice" COMMENT="Voiceover clips generated by LMS Labs text to speech (audio in the voice file area)">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="aianatomyid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="hash" TYPE="char" LENGTH="64" NOTNULL="true" SEQUENCE="false" COMMENT="sha256 of locale, voice, speed and text"/>
+        <FIELD NAME="locale" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="voicename" TYPE="char" LENGTH="30" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="speed" TYPE="char" LENGTH="10" NOTNULL="true" DEFAULT="normal" SEQUENCE="false"/>
+        <FIELD NAME="textlength" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="credits" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="X-Credits-Charged reported by LMS Labs"/>
+        <FIELD NAME="requestid" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="aianatomyid" TYPE="foreign" FIELDS="aianatomyid" REFTABLE="aianatomy" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="clip" UNIQUE="true" FIELDS="aianatomyid, hash"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="aianatomy_job" COMMENT="LMS Labs requests in progress: the persisted Idempotency-Key and exact body, so a request can be polled or recovered with the same key">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="aianatomyid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="operation" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="content, questions, translation, grouptranslation or speech"/>
+        <FIELD NAME="target" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" COMMENT="Structure id, _groups or the clip hash"/>
+        <FIELD NAME="idemkey" TYPE="char" LENGTH="128" NOTNULL="true" SEQUENCE="false" COMMENT="Idempotency-Key sent to LMS Labs"/>
+        <FIELD NAME="body" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="Exact JSON body sent (re-sent unchanged when polling)"/>
+        <FIELD NAME="meta" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="JSON needed to use the result (e.g. question ids by translation ref)"/>
+        <FIELD NAME="retryafter" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Do not poll before this time"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="aianatomyid" TYPE="foreign" FIELDS="aianatomyid" REFTABLE="aianatomy" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="job" UNIQUE="true" FIELDS="aianatomyid, operation, target"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

@@ -1,0 +1,2081 @@
+{
+ "id": "heart",
+ "version": "1.0.0",
+ "name": "Heart and great vessels",
+ "description": "The heart wall, valves and papillary muscles, the coronary arteries and cardiac veins, and the great vessels.",
+ "system": "cardiovascular",
+ "region": "thorax",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "heart",
+ "rootframe": [
+  "heart_wall",
+  "valves",
+  "coronary",
+  "great_vessels"
+ ],
+ "defaultgroups": [
+  "heart_wall",
+  "valves",
+  "coronary",
+  "great_vessels"
+ ],
+ "presets": [
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "left",
+   "label": "Left lateral",
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "superior",
+   "label": "Superior",
+   "dir": [
+    0,
+    1,
+    0.001
+   ],
+   "up": [
+    0,
+    0,
+    1
+   ]
+  }
+ ],
+ "defaultpreset": "anterior",
+ "tissue": true,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "heart",
+   "label": "Heart and great vessels",
+   "parent": null,
+   "tip": "Follow one drop of blood: body veins, right atrium, right ventricle, lungs, left atrium, left ventricle, aorta. Right side = deoxygenated blood to the lungs; left side = oxygenated blood to the body."
+  },
+  {
+   "id": "heart_wall",
+   "label": "Heart wall",
+   "parent": "heart",
+   "tip": "Heart wall layers from inside out: endocardium, myocardium, epicardium (\"End My Epic\"). The pericardium is a separate sac around the whole heart."
+  },
+  {
+   "id": "valves",
+   "label": "Valves and papillary muscles",
+   "parent": "heart",
+   "tip": "\"Try Pulling My Aorta\" gives the order blood passes the valves: Tricuspid, Pulmonary, Mitral, Aortic. \"LAB RAT\": Left Atrioventricular = Bicuspid, Right Atrioventricular = Tricuspid."
+  },
+  {
+   "id": "coronary",
+   "label": "Coronary arteries and cardiac veins",
+   "parent": "heart",
+   "tip": "Coronary arteries run in the grooves (sulci) of the heart with a cardiac vein beside them. Most cardiac veins drain into the coronary sinus, which empties into the right atrium."
+  },
+  {
+   "id": "great_vessels",
+   "label": "Great vessels",
+   "parent": "heart",
+   "tip": "Aortic arch branches, right to left: \"ABC'S\" - Aortic arch gives the Brachiocephalic trunk, left Common carotid and left Subclavian. Arteries carry blood away from the heart; veins carry it back, whatever its oxygen level."
+  }
+ ],
+ "structures": [
+  {
+   "id": "cardio_heart_heart_wall",
+   "concept": "wall",
+   "node": "s0",
+   "type": "organ",
+   "side": "midline",
+   "group": "heart_wall",
+   "names": {
+    "preferred": "Heart (wall of heart)",
+    "latin": "Cor",
+    "synonyms": [
+     "Heart",
+     "Paries cordis",
+     "Myocardium"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7274"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "contains",
+     "target": "cardio_heart_tricuspid_valve"
+    },
+    {
+     "type": "contains",
+     "target": "cardio_heart_mitral_valve"
+    },
+    {
+     "type": "contains",
+     "target": "cardio_heart_pulmonary_valve"
+    },
+    {
+     "type": "contains",
+     "target": "cardio_heart_papillary_rv"
+    },
+    {
+     "type": "contains",
+     "target": "cardio_heart_papillary_lv"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_ascending_aorta"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_pulmonary_arteries"
+    }
+   ],
+   "content": {
+    "pronunciation": "HART",
+    "origin": "Old English heorte; the Latin cor and Greek kardia (as in cardiac) also mean heart.",
+    "location": "In the middle mediastinum of the chest, behind the sternum and between the lungs, inside the pericardium. About two-thirds lies left of the midline, with the apex near the left 5th intercostal space at the midclavicular line.",
+    "description": "This model shows the heart as one wall mesh. Inside are four chambers: right and left atria above, right and left ventricles below. The interatrial septum (with the fossa ovalis) and the interventricular septum divide left from right. The wall has three layers: endocardium, myocardium and epicardium.",
+    "function": "Pumps blood in two circuits. Right atrium -> tricuspid valve -> right ventricle -> pulmonary valve -> lungs -> pulmonary veins -> left atrium -> mitral valve -> left ventricle -> aortic valve -> aorta. The left ventricle has the thickest myocardium because it pumps to the whole body.",
+    "mnemonic": "Blood order: \"Right Atrium, Right Ventricle, Lungs, Left Atrium, Left Ventricle\" - the right side receives from the body, the left side sends to the body. Wall layers: \"End My Epic\" (endocardium, myocardium, epicardium).",
+    "clinical": "A myocardial infarction (heart attack) is death of myocardium when a coronary artery is blocked; the affected wall can no longer contract properly.",
+    "hint": "The large muscular pump in the middle mediastinum, apex pointing down and to the left, with the great vessels leaving its top."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which chamber receives deoxygenated blood from the superior and inferior venae cavae?",
+     "options": [
+      "Right atrium",
+      "Left ventricle",
+      "Left atrium",
+      "Right ventricle"
+     ],
+     "answer": 0,
+     "explanation": "Both venae cavae empty into the right atrium."
+    },
+    {
+     "kind": "function",
+     "text": "Which is the correct order of blood flow through the heart?",
+     "options": [
+      "Right atrium, left atrium, lungs, right ventricle, left ventricle",
+      "Right atrium, right ventricle, lungs, left atrium, left ventricle",
+      "Left atrium, left ventricle, lungs, right atrium, right ventricle",
+      "Right ventricle, right atrium, lungs, left ventricle, left atrium"
+     ],
+     "answer": 1,
+     "explanation": "Blood passes through the right side to the lungs, then returns to the left side to be pumped to the body."
+    },
+    {
+     "kind": "location",
+     "text": "Which chamber has the thickest myocardium?",
+     "options": [
+      "Left atrium",
+      "Right ventricle",
+      "Left ventricle",
+      "Right atrium"
+     ],
+     "answer": 2,
+     "explanation": "The left ventricle pumps blood around the whole body, so it has the thickest muscular wall."
+    },
+    {
+     "kind": "terminology",
+     "text": "What is the middle, muscular layer of the heart wall called?",
+     "options": [
+      "Epicardium",
+      "Pericardium",
+      "Endocardium",
+      "Myocardium"
+     ],
+     "answer": 3,
+     "explanation": "The myocardium is the cardiac muscle layer between the endocardium and epicardium."
+    },
+    {
+     "kind": "relationship",
+     "text": "Which structure separates the right and left ventricles?",
+     "options": [
+      "Interventricular septum",
+      "Mitral valve",
+      "Interatrial septum",
+      "Coronary sinus"
+     ],
+     "answer": 0,
+     "explanation": "The interventricular septum is the wall between the two ventricles."
+    },
+    {
+     "kind": "location",
+     "text": "Where is the apex of the heart normally found?",
+     "options": [
+      "Right 2nd intercostal space",
+      "Left 5th intercostal space, midclavicular line",
+      "Behind the manubrium",
+      "Left 2nd intercostal space, next to the sternum"
+     ],
+     "answer": 1,
+     "explanation": "The apex points down and to the left, near the left 5th intercostal space in the midclavicular line."
+    },
+    {
+     "kind": "relationship",
+     "text": "Which chamber receives oxygenated blood from the pulmonary veins?",
+     "options": [
+      "Right ventricle",
+      "Left ventricle",
+      "Left atrium",
+      "Right atrium"
+     ],
+     "answer": 2,
+     "explanation": "The four pulmonary veins bring oxygenated blood from the lungs into the left atrium."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_tricuspid_valve",
+   "concept": "valve",
+   "node": "s1",
+   "type": "valve",
+   "side": "right",
+   "group": "valves",
+   "names": {
+    "preferred": "Tricuspid valve",
+    "latin": "Valva tricuspidalis",
+    "synonyms": [
+     "Right atrioventricular valve",
+     "Valva atrioventricularis dextra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7234"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "part_of",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "attaches_to",
+     "target": "cardio_heart_papillary_rv"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_pulmonary_valve"
+    }
+   ],
+   "content": {
+    "pronunciation": "try-KUS-pid",
+    "origin": "Latin tri- \"three\" + cuspis \"point\": a valve with three cusps.",
+    "location": "Between the right atrium and the right ventricle, on the right side of the heart.",
+    "description": "Three thin cusps (anterior, posterior and septal) tied to papillary muscles by cord-like chordae tendineae.",
+    "function": "Opens to let blood flow from the right atrium into the right ventricle, then closes when the ventricle contracts to stop backflow. Its closure, with the mitral valve, makes the first heart sound (\"lub\").",
+    "mnemonic": "\"LAB RAT\": Right AtrioVentricular valve = Tricuspid. Also \"tRIcuspid on the RIght\".",
+    "clinical": "Infective endocarditis in people who inject drugs most often affects the tricuspid valve, which can then leak (tricuspid regurgitation).",
+    "hint": "The three-cusped gate between the two right-side chambers."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The tricuspid valve lies between which two chambers?",
+     "options": [
+      "Right ventricle and pulmonary trunk",
+      "Left ventricle and aorta",
+      "Left atrium and left ventricle",
+      "Right atrium and right ventricle"
+     ],
+     "answer": 3,
+     "explanation": "The tricuspid valve is the right atrioventricular valve."
+    },
+    {
+     "kind": "function",
+     "text": "Closure of the tricuspid and mitral valves produces which heart sound?",
+     "options": [
+      "The first heart sound (lub)",
+      "The second heart sound (dub)",
+      "A murmur",
+      "The third heart sound"
+     ],
+     "answer": 0,
+     "explanation": "The first heart sound is made by the atrioventricular valves closing as the ventricles contract."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_pulmonary_valve",
+   "concept": "valve",
+   "node": "s2",
+   "type": "valve",
+   "side": "right",
+   "group": "valves",
+   "names": {
+    "preferred": "Pulmonary valve",
+    "latin": "Valva trunci pulmonalis",
+    "synonyms": [
+     "Pulmonic valve",
+     "Pulmonary semilunar valve"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7246"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "part_of",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_pulmonary_arteries"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_tricuspid_valve"
+    }
+   ],
+   "content": {
+    "pronunciation": "PUL-mon-air-ee VALV",
+    "origin": "Latin pulmo, \"lung\": the valve leading to the lungs.",
+    "location": "At the exit of the right ventricle, where it opens into the pulmonary trunk. It sits in front of and slightly left of the aortic valve.",
+    "description": "A semilunar valve with three half-moon shaped cusps and no chordae tendineae.",
+    "function": "Opens when the right ventricle contracts so blood enters the pulmonary trunk, then closes to stop blood falling back. Its closure, with the aortic valve, makes the second heart sound (\"dub\").",
+    "mnemonic": "Semilunar valves (pulmonary and aortic) guard the exits; atrioventricular valves (tricuspid and mitral) guard the entrances to the ventricles.",
+    "clinical": "Pulmonary valve stenosis is a common congenital heart defect that makes the right ventricle work harder.",
+    "hint": "The half-moon cusps guarding the outflow from the right ventricle to the lungs."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Blood passes through the pulmonary valve as it moves from where to where?",
+     "options": [
+      "Left ventricle to aorta",
+      "Right ventricle to pulmonary trunk",
+      "Left atrium to left ventricle",
+      "Right atrium to right ventricle"
+     ],
+     "answer": 1,
+     "explanation": "The pulmonary valve guards the outflow from the right ventricle into the pulmonary trunk."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_mitral_valve",
+   "concept": "valve",
+   "node": "s3",
+   "type": "valve",
+   "side": "left",
+   "group": "valves",
+   "names": {
+    "preferred": "Mitral valve",
+    "latin": "Valva mitralis",
+    "synonyms": [
+     "Bicuspid valve",
+     "Left atrioventricular valve",
+     "Valva atrioventricularis sinistra"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7235"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "part_of",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "attaches_to",
+     "target": "cardio_heart_papillary_lv"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_ascending_aorta"
+    }
+   ],
+   "content": {
+    "pronunciation": "MY-trul",
+    "origin": "Named after the bishop's mitre (hat), which its two cusps resemble.",
+    "location": "Between the left atrium and the left ventricle. The aortic valve (not modelled separately) sits just in front and to the right of it, at the start of the ascending aorta.",
+    "description": "Two cusps (anterior and posterior) tied by chordae tendineae to the papillary muscles of the left ventricle.",
+    "function": "Lets oxygenated blood flow from the left atrium into the left ventricle and closes during ventricular contraction so blood leaves only through the aortic valve into the aorta.",
+    "mnemonic": "\"LAB RAT\": Left AtrioVentricular valve = Bicuspid (mitral). A mitre has two points, and so does the mitral valve.",
+    "clinical": "Mitral valve prolapse and mitral regurgitation let blood leak back into the left atrium, heard as a murmur best at the apex.",
+    "hint": "The two-cusped valve on the left side, shaped like a bishop's hat."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Which is another name for the mitral valve?",
+     "options": [
+      "Tricuspid valve",
+      "Semilunar valve",
+      "Bicuspid valve",
+      "Pulmonary valve"
+     ],
+     "answer": 2,
+     "explanation": "The mitral valve has two cusps, so it is also called the bicuspid valve."
+    },
+    {
+     "kind": "relationship",
+     "text": "After passing the mitral valve and filling the left ventricle, blood leaves the heart through which valve?",
+     "options": [
+      "Pulmonary valve",
+      "Tricuspid valve",
+      "Mitral valve again",
+      "Aortic valve"
+     ],
+     "answer": 3,
+     "explanation": "The left ventricle pumps blood through the aortic valve into the ascending aorta."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_papillary_rv",
+   "concept": "rv",
+   "node": "s4",
+   "type": "muscle",
+   "side": "right",
+   "group": "valves",
+   "names": {
+    "preferred": "Papillary muscles of right ventricle",
+    "latin": "Musculi papillares ventriculi dextri",
+    "synonyms": [
+     "Right papillary muscles"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7260"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA7261"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA7262"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "part_of",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "attaches_to",
+     "target": "cardio_heart_tricuspid_valve"
+    }
+   ],
+   "content": {
+    "pronunciation": "PAP-ih-lair-ee MUS-uls",
+    "origin": "Latin papilla, \"nipple\": they are nipple-shaped projections of muscle.",
+    "location": "Inside the right ventricle, projecting from its inner wall.",
+    "description": "Usually three cone-shaped muscles (anterior, posterior and septal) whose tips give off chordae tendineae to the tricuspid valve cusps.",
+    "function": "Contract with the ventricle to tighten the chordae tendineae, stopping the tricuspid cusps turning inside out (prolapsing) into the right atrium.",
+    "mnemonic": "Three papillary muscles on the right for the three-cusped tricuspid valve.",
+    "clinical": "Damage to papillary muscles or their chordae tendineae lets the attached valve leak (regurgitation).",
+    "hint": "Small muscular cones inside the right lower chamber, tied to the three-cusped valve by fine cords."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What is the main job of papillary muscles?",
+     "options": [
+      "Stop atrioventricular valve cusps prolapsing into the atria",
+      "Open the semilunar valves",
+      "Conduct electrical impulses to the atria",
+      "Pump blood into the aorta"
+     ],
+     "answer": 0,
+     "explanation": "Papillary muscles pull on chordae tendineae so the cusps do not turn back into the atria."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "cardio_heart_papillary_lv",
+   "concept": "lv",
+   "node": "s5",
+   "type": "muscle",
+   "side": "left",
+   "group": "valves",
+   "names": {
+    "preferred": "Papillary muscles of left ventricle",
+    "latin": "Musculi papillares ventriculi sinistri",
+    "synonyms": [
+     "Left papillary muscles"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA9352nsn"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "part_of",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "attaches_to",
+     "target": "cardio_heart_mitral_valve"
+    }
+   ],
+   "content": {
+    "pronunciation": "PAP-ih-lair-ee MUS-uls",
+    "origin": "Latin papilla, \"nipple\": nipple-shaped muscular projections.",
+    "location": "Inside the left ventricle, projecting from its thick inner wall.",
+    "description": "Two large muscles (anterior and posterior) connected by chordae tendineae to both cusps of the mitral valve.",
+    "function": "Contract with the left ventricle to keep the mitral cusps closed and stop them prolapsing into the left atrium.",
+    "mnemonic": "Two papillary muscles on the left for the two-cusped mitral valve.",
+    "clinical": "Rupture of a papillary muscle after a myocardial infarction causes sudden, severe mitral regurgitation.",
+    "hint": "Two muscular cones inside the thick-walled left lower chamber, anchoring the two-cusped valve."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The papillary muscles of the left ventricle attach via chordae tendineae to which valve?",
+     "options": [
+      "Aortic valve",
+      "Mitral valve",
+      "Tricuspid valve",
+      "Pulmonary valve"
+     ],
+     "answer": 1,
+     "explanation": "The left papillary muscles anchor the two cusps of the mitral valve."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_rca",
+   "concept": "rca",
+   "node": "s6",
+   "type": "artery",
+   "side": "right",
+   "group": "coronary",
+   "names": {
+    "preferred": "Right coronary artery",
+    "latin": "Arteria coronaria dextra",
+    "synonyms": [
+     "RCA"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA3802"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "supplies",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "supplies",
+     "target": "cardio_heart_papillary_rv"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_rca_marginal"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_pda"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_ascending_aorta"
+    }
+   ],
+   "content": {
+    "pronunciation": "RITE KOR-oh-nair-ee AR-ter-ee",
+    "origin": "Latin corona, \"crown\": the coronary arteries encircle the heart like a crown.",
+    "location": "Arises from the right aortic sinus just above the aortic valve and runs in the right coronary (atrioventricular) groove around to the back of the heart.",
+    "description": "A medium artery that gives off the right marginal artery and, in most people, the posterior interventricular artery.",
+    "function": "Supplies the right atrium, most of the right ventricle and, in most people, the sinoatrial (SA) and atrioventricular (AV) nodes.",
+    "mnemonic": "Right coronary for the right side and the rhythm: it usually feeds both the SA and AV nodes.",
+    "clinical": "A blockage of the RCA can cause an inferior myocardial infarction and slow heart rhythms, because it usually supplies the conducting nodes.",
+    "hint": "The vessel from the right aortic sinus that runs in the groove between the right atrium and right ventricle."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "In most people the sinoatrial and atrioventricular nodes are supplied by which artery?",
+     "options": [
+      "Left subclavian artery",
+      "Circumflex artery",
+      "Right coronary artery",
+      "Anterior interventricular artery"
+     ],
+     "answer": 2,
+     "explanation": "The right coronary artery usually supplies both conducting nodes."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_rca_marginal",
+   "concept": "marginal",
+   "node": "s7",
+   "type": "artery",
+   "side": "right",
+   "group": "coronary",
+   "names": {
+    "preferred": "Right marginal artery",
+    "latin": "Ramus marginalis dexter",
+    "synonyms": [
+     "Right marginal branch",
+     "Acute marginal artery"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA3818"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_rca"
+    },
+    {
+     "type": "supplies",
+     "target": "cardio_heart_heart_wall"
+    }
+   ],
+   "content": {
+    "pronunciation": "RITE MAR-jin-ul AR-ter-ee",
+    "origin": "Latin margo, \"edge\": it runs along the edge of the heart.",
+    "location": "Runs along the sharp inferior (right) border of the heart, over the right ventricle.",
+    "description": "A branch of the right coronary artery that runs toward the apex.",
+    "function": "Supplies the right ventricle wall near the inferior border of the heart.",
+    "mnemonic": "Marginal = margin: it follows the heart's right edge.",
+    "clinical": "It may be involved in a right coronary artery occlusion, adding to right ventricular damage.",
+    "hint": "A branch of the right coronary vessel following the sharp lower edge of the right ventricle."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The right marginal artery is a branch of which artery?",
+     "options": [
+      "Brachiocephalic trunk",
+      "Left main coronary artery",
+      "Circumflex artery",
+      "Right coronary artery"
+     ],
+     "answer": 3,
+     "explanation": "The right marginal artery branches from the right coronary artery."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_pda",
+   "concept": "pda",
+   "node": "s8",
+   "type": "artery",
+   "side": "midline",
+   "group": "coronary",
+   "names": {
+    "preferred": "Posterior interventricular artery",
+    "latin": "Ramus interventricularis posterior",
+    "synonyms": [
+     "Posterior descending artery",
+     "PDA"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA3840nsn"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_rca"
+    },
+    {
+     "type": "supplies",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "supplies",
+     "target": "cardio_heart_papillary_lv"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_middle_cardiac_vein"
+    }
+   ],
+   "content": {
+    "pronunciation": "pos-TEER-ee-er in-ter-ven-TRIK-yoo-lar AR-ter-ee",
+    "origin": "Latin inter \"between\" + ventriculus \"little belly\" (ventricle): it runs between the ventricles at the back.",
+    "location": "Runs in the posterior interventricular groove on the inferior (diaphragmatic) surface of the heart, toward the apex.",
+    "description": "In most people (right-dominant circulation) it is a branch of the right coronary artery; in others it comes from the circumflex artery.",
+    "function": "Supplies the posterior third of the interventricular septum and the adjacent walls of both ventricles.",
+    "mnemonic": "Posterior descending = the back version of the LAD; whichever artery gives it decides \"dominance\".",
+    "clinical": "Coronary dominance is named after the artery that gives rise to the posterior interventricular artery, usually the right coronary artery.",
+    "hint": "The vessel running down the groove between the ventricles on the underside of the heart, beside the middle cardiac vein."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Where does the posterior interventricular artery run?",
+     "options": [
+      "In the posterior interventricular groove",
+      "Inside the interatrial septum",
+      "In the anterior interventricular groove",
+      "Along the left border of the heart"
+     ],
+     "answer": 0,
+     "explanation": "It runs in the posterior interventricular groove on the diaphragmatic surface."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_lca",
+   "concept": "lca",
+   "node": "s9",
+   "type": "artery",
+   "side": "left",
+   "group": "coronary",
+   "names": {
+    "preferred": "Left main coronary artery",
+    "latin": "Arteria coronaria sinistra",
+    "synonyms": [
+     "Left coronary artery",
+     "LCA",
+     "Left main stem"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA4685"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_lad"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_circumflex"
+    },
+    {
+     "type": "supplies",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_ascending_aorta"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_pulmonary_arteries"
+    }
+   ],
+   "content": {
+    "pronunciation": "LEFT MAYN KOR-oh-nair-ee AR-ter-ee",
+    "origin": "Latin corona, \"crown\", as the coronary vessels encircle the heart.",
+    "location": "Arises from the left aortic sinus just above the aortic valve and passes between the pulmonary trunk and the left auricle.",
+    "description": "A short, wide trunk (about 1-2 cm) that divides into the anterior interventricular (LAD) and circumflex arteries.",
+    "function": "Through its two branches it supplies most of the left ventricle, the left atrium and the anterior two-thirds of the interventricular septum.",
+    "mnemonic": "Left main splits like a \"Y\": LAD goes down the front, circumflex goes around the side.",
+    "clinical": "A blockage of the left main coronary artery threatens most of the left ventricle and is a medical emergency.",
+    "hint": "A short trunk from the left aortic sinus that quickly splits into two, hidden behind the pulmonary trunk."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The left main coronary artery divides into which two branches?",
+     "options": [
+      "Right marginal and posterior interventricular",
+      "Anterior interventricular and circumflex",
+      "Brachiocephalic and left subclavian",
+      "Great and middle cardiac veins"
+     ],
+     "answer": 1,
+     "explanation": "The left main coronary artery divides into the anterior interventricular (LAD) and circumflex arteries."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_lad",
+   "concept": "lad",
+   "node": "s10",
+   "type": "artery",
+   "side": "left",
+   "group": "coronary",
+   "names": {
+    "preferred": "Anterior interventricular artery (LAD)",
+    "latin": "Ramus interventricularis anterior",
+    "synonyms": [
+     "Left anterior descending artery",
+     "LAD"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA3862nsn"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_lca"
+    },
+    {
+     "type": "supplies",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "supplies",
+     "target": "cardio_heart_papillary_lv"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_great_cardiac_vein"
+    }
+   ],
+   "content": {
+    "pronunciation": "an-TEER-ee-er in-ter-ven-TRIK-yoo-lar AR-ter-ee",
+    "origin": "Latin inter \"between\" + ventriculus \"ventricle\": it runs between the ventricles on the front.",
+    "location": "Runs down the anterior interventricular groove on the front of the heart toward the apex, alongside the great cardiac vein.",
+    "description": "A branch of the left main coronary artery that gives diagonal branches to the left ventricle and septal branches into the septum.",
+    "function": "Supplies the anterior two-thirds of the interventricular septum, the front of the left ventricle and the apex.",
+    "mnemonic": "LAD = Left Anterior Descending: left, on the front, going down.",
+    "clinical": "Sudden blockage of the LAD causes a large anterior myocardial infarction; it is nicknamed the \"widow maker\".",
+    "hint": "The vessel running straight down the front groove between the ventricles toward the apex."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Which coronary artery is nicknamed the \"widow maker\"?",
+     "options": [
+      "Right coronary artery",
+      "Right marginal artery",
+      "Anterior interventricular artery (LAD)",
+      "Posterior interventricular artery"
+     ],
+     "answer": 2,
+     "explanation": "Blockage of the LAD causes a large anterior infarction, so it is called the widow maker."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_circumflex",
+   "concept": "circumflex",
+   "node": "s11",
+   "type": "artery",
+   "side": "left",
+   "group": "coronary",
+   "names": {
+    "preferred": "Circumflex artery",
+    "latin": "Ramus circumflexus arteriae coronariae sinistrae",
+    "synonyms": [
+     "Left circumflex artery",
+     "LCx"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA3895"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_lca"
+    },
+    {
+     "type": "supplies",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_great_cardiac_vein"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_coronary_sinus"
+    }
+   ],
+   "content": {
+    "pronunciation": "SER-kum-fleks AR-ter-ee",
+    "origin": "Latin circum \"around\" + flectere \"to bend\": it bends around the heart.",
+    "location": "Runs in the left coronary (atrioventricular) groove, curving around the left border to the back of the heart.",
+    "description": "A branch of the left main coronary artery that gives off the left marginal artery.",
+    "function": "Supplies the left atrium and the lateral and posterior walls of the left ventricle.",
+    "mnemonic": "Circumflex = circles around the left side, like a circumference.",
+    "clinical": "In some people (left-dominant circulation) the circumflex gives the posterior interventricular artery, so its blockage affects the back of the septum too.",
+    "hint": "The branch that curves around the left side of the heart in the groove between left atrium and left ventricle."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The circumflex artery runs in which groove?",
+     "options": [
+      "Anterior interventricular groove",
+      "Posterior interventricular groove",
+      "Right coronary groove",
+      "Left coronary (atrioventricular) groove"
+     ],
+     "answer": 3,
+     "explanation": "The circumflex artery curves around the heart in the left atrioventricular groove."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_coronary_sinus",
+   "concept": "sinus",
+   "node": "s12",
+   "type": "vein",
+   "side": "midline",
+   "group": "coronary",
+   "names": {
+    "preferred": "Coronary sinus",
+    "latin": "Sinus coronarius",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA4706"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_circumflex"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_ivc"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOR-oh-nair-ee SY-nus",
+    "origin": "Latin sinus, \"cavity\" or \"channel\"; corona, \"crown\".",
+    "location": "On the posterior surface of the heart, in the coronary groove between the left atrium and left ventricle.",
+    "description": "A wide venous channel about 2-5 cm long that receives the great, middle and small cardiac veins.",
+    "function": "Collects most of the venous blood from the heart wall and empties it into the right atrium, between the opening of the inferior vena cava and the tricuspid valve.",
+    "mnemonic": "Sinus = sink: the heart's own veins drain into it.",
+    "clinical": "The coronary sinus is used to place pacing leads for cardiac resynchronisation therapy.",
+    "hint": "The wide venous channel on the back of the heart that most cardiac veins empty into."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Into which chamber does the coronary sinus empty?",
+     "options": [
+      "Right atrium",
+      "Left ventricle",
+      "Right ventricle",
+      "Left atrium"
+     ],
+     "answer": 0,
+     "explanation": "The coronary sinus opens into the right atrium, near the opening of the inferior vena cava."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_great_cardiac_vein",
+   "concept": "cardiac_vein",
+   "node": "s13",
+   "type": "vein",
+   "side": "left",
+   "group": "coronary",
+   "names": {
+    "preferred": "Great cardiac vein",
+    "latin": "Vena cardiaca magna",
+    "synonyms": [
+     "Vena cordis magna"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA4707"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_coronary_sinus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_lad"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_circumflex"
+    }
+   ],
+   "content": {
+    "pronunciation": "GRAYT KAR-dee-ak VAYN",
+    "origin": "Latin magna, \"great\"; Greek kardia, \"heart\".",
+    "location": "Starts near the apex and runs up the anterior interventricular groove beside the anterior interventricular artery, then turns left in the coronary groove to the back of the heart.",
+    "description": "The largest tributary of the coronary sinus; it becomes the coronary sinus on the posterior surface.",
+    "function": "Drains blood from the areas supplied by the left coronary artery: the front of both ventricles and the septum.",
+    "mnemonic": "The great vein follows the LAD up and the circumflex around.",
+    "clinical": "During heart rhythm studies, a catheter is often passed from the right atrium into the coronary sinus and great cardiac vein to record electrical activity from the left side of the heart.",
+    "hint": "The vein climbing the front groove beside the LAD before curving around the left side."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The great cardiac vein runs alongside which artery on the front of the heart?",
+     "options": [
+      "Posterior interventricular artery",
+      "Anterior interventricular artery (LAD)",
+      "Right marginal artery",
+      "Right coronary artery"
+     ],
+     "answer": 1,
+     "explanation": "The great cardiac vein ascends in the anterior interventricular groove with the LAD."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_middle_cardiac_vein",
+   "concept": "cardiac_vein",
+   "node": "s14",
+   "type": "vein",
+   "side": "midline",
+   "group": "coronary",
+   "names": {
+    "preferred": "Middle cardiac vein",
+    "latin": "Vena cardiaca media",
+    "synonyms": [
+     "Vena cordis media",
+     "Posterior interventricular vein"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA4713"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_coronary_sinus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_pda"
+    }
+   ],
+   "content": {
+    "pronunciation": "MID-ul KAR-dee-ak VAYN",
+    "origin": "Latin media, \"middle\"; Greek kardia, \"heart\".",
+    "location": "Runs in the posterior interventricular groove on the inferior surface of the heart, beside the posterior interventricular artery.",
+    "description": "A vein that begins near the apex and ends in the coronary sinus near its opening.",
+    "function": "Drains blood from the posterior walls of both ventricles and the back of the interventricular septum.",
+    "mnemonic": "Middle vein, middle of the back: it follows the posterior interventricular artery.",
+    "clinical": "It is shown on coronary sinus venography, which maps the cardiac veins before a left ventricular pacing lead is placed.",
+    "hint": "The vein in the back groove between the ventricles, running with the posterior descending vessel."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The middle cardiac vein drains into which structure?",
+     "options": [
+      "Inferior vena cava",
+      "Superior vena cava",
+      "Coronary sinus",
+      "Left atrium"
+     ],
+     "answer": 2,
+     "explanation": "The middle cardiac vein empties into the coronary sinus."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_ascending_aorta",
+   "concept": "aorta",
+   "node": "s15",
+   "type": "artery",
+   "side": "midline",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Ascending aorta",
+    "latin": "Aorta ascendens",
+    "synonyms": [
+     "Pars ascendens aortae"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA3736"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_aortic_arch"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_rca"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_lca"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_pulmonary_arteries"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_svc"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_mitral_valve"
+    }
+   ],
+   "content": {
+    "pronunciation": "ah-SEN-ding ay-OR-tah",
+    "origin": "Greek aorte, from aeirein \"to lift\": the great artery raised from the heart.",
+    "location": "Begins at the aortic valve of the left ventricle and rises about 5 cm upward and to the right, behind the sternum, inside the pericardium.",
+    "description": "Just above the aortic valve are three bulges (aortic sinuses); the right and left coronary arteries arise from two of them. The aortic valve has three semilunar cusps and is not modelled separately.",
+    "function": "Carries oxygenated blood from the left ventricle through the aortic valve to the arch of the aorta, and feeds the coronary arteries.",
+    "mnemonic": "The heart feeds itself first: the coronary arteries are the first branches of the ascending aorta.",
+    "clinical": "Aortic stenosis (narrowing of the aortic valve) makes the left ventricle work harder and can cause chest pain, fainting and breathlessness.",
+    "hint": "The first part of the body's main artery, rising from the left ventricle and giving off the two coronary vessels."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which are the only branches of the ascending aorta?",
+     "options": [
+      "Pulmonary arteries",
+      "Right and left common carotid arteries",
+      "Brachiocephalic trunk and left subclavian",
+      "Right and left coronary arteries"
+     ],
+     "answer": 3,
+     "explanation": "The coronary arteries arise from the aortic sinuses just above the aortic valve."
+    },
+    {
+     "kind": "location",
+     "text": "The aortic valve lies between which structures?",
+     "options": [
+      "Left ventricle and ascending aorta",
+      "Right atrium and right ventricle",
+      "Right ventricle and pulmonary trunk",
+      "Left atrium and left ventricle"
+     ],
+     "answer": 0,
+     "explanation": "The aortic valve guards the outflow from the left ventricle into the ascending aorta."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_aortic_arch",
+   "concept": "arch",
+   "node": "s16",
+   "type": "artery",
+   "side": "midline",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Arch of aorta",
+    "latin": "Arcus aortae",
+    "synonyms": [
+     "Aortic arch"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA3768"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_ascending_aorta"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_descending_aorta"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_brachiocephalic_trunk"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_left_common_carotid"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_left_subclavian"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_pulmonary_arteries"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_left_brachiocephalic_vein"
+    }
+   ],
+   "content": {
+    "pronunciation": "ARCH uv ay-OR-tah",
+    "origin": "Latin arcus, \"bow\" or \"arch\"; Greek aorte, the great artery.",
+    "location": "In the superior mediastinum, behind the manubrium. It arches backward and to the left over the left pulmonary artery and left main bronchus, starting and ending at the level of the sternal angle (T4/T5).",
+    "description": "A curved segment with three branches from its upper surface: brachiocephalic trunk, left common carotid artery and left subclavian artery. The ligamentum arteriosum links it to the left pulmonary artery.",
+    "function": "Carries blood from the ascending to the descending aorta and sends blood to the head, neck and upper limbs.",
+    "mnemonic": "\"ABC'S\": Aortic arch -> Brachiocephalic trunk, left Common carotid, left Subclavian.",
+    "clinical": "Coarctation of the aorta is a congenital narrowing, usually near the ligamentum arteriosum, causing high blood pressure in the arms and weak pulses in the legs.",
+    "hint": "The curved part of the main artery behind the manubrium, with three branches rising from its top."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "What is the correct order of branches from the arch of the aorta, from right to left?",
+     "options": [
+      "Left subclavian, left common carotid, brachiocephalic trunk",
+      "Brachiocephalic trunk, left common carotid, left subclavian",
+      "Right coronary, left coronary, brachiocephalic trunk",
+      "Left common carotid, brachiocephalic trunk, left subclavian"
+     ],
+     "answer": 1,
+     "explanation": "The arch gives off the brachiocephalic trunk, then the left common carotid, then the left subclavian artery."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_descending_aorta",
+   "concept": "aorta",
+   "node": "s17",
+   "type": "artery",
+   "side": "midline",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Descending aorta",
+    "latin": "Aorta descendens",
+    "synonyms": [
+     "Pars descendens aortae",
+     "Thoracic and abdominal aorta"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA3784"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_aortic_arch"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_ivc"
+    }
+   ],
+   "content": {
+    "pronunciation": "dee-SEN-ding ay-OR-tah",
+    "origin": "Greek aorte, the great artery; Latin descendere, \"to go down\".",
+    "location": "Begins at T4/T5 after the arch and runs down in the posterior mediastinum, left of the vertebral bodies. It passes through the aortic hiatus of the diaphragm at T12 to become the abdominal aorta.",
+    "description": "The longest part of the aorta, divided into a thoracic part and an abdominal part. The abdominal aorta divides into the common iliac arteries at about L4.",
+    "function": "Carries oxygenated blood to the chest wall, abdominal organs, pelvis and lower limbs through its many branches.",
+    "mnemonic": "Descending aorta goes down beside the spine: thoracic above the diaphragm, abdominal below.",
+    "clinical": "An abdominal aortic aneurysm is a dangerous widening of the abdominal aorta that can rupture and cause life-threatening haemorrhage.",
+    "hint": "The long straight continuation of the main artery running down beside the vertebral column."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "At which level does the descending aorta pass through the diaphragm?",
+     "options": [
+      "T4",
+      "T8",
+      "T12",
+      "L4"
+     ],
+     "answer": 2,
+     "explanation": "The aorta passes through the aortic hiatus at T12 to become the abdominal aorta."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_brachiocephalic_trunk",
+   "concept": "trunk",
+   "node": "s18",
+   "type": "artery",
+   "side": "right",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Brachiocephalic trunk",
+    "latin": "Truncus brachiocephalicus",
+    "synonyms": [
+     "Innominate artery"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA3932nsn"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_aortic_arch"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_left_brachiocephalic_vein"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_left_common_carotid"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_right_brachiocephalic_vein"
+    }
+   ],
+   "content": {
+    "pronunciation": "BRAY-kee-oh-seh-FAL-ik TRUNK",
+    "origin": "Greek brachion \"arm\" + kephale \"head\": it supplies the arm and head.",
+    "location": "The first and largest branch of the aortic arch. It rises up and to the right behind the manubrium to the right sternoclavicular joint.",
+    "description": "A short, wide artery (about 4-5 cm) with no branches of its own before it divides into the right subclavian and right common carotid arteries.",
+    "function": "Carries blood to the right side of the head and neck and to the right upper limb.",
+    "mnemonic": "Only one brachiocephalic trunk (on the right), but two brachiocephalic veins.",
+    "clinical": "It crosses in front of the trachea, so it is a landmark and a bleeding risk in tracheostomy low in the neck.",
+    "hint": "The first, widest branch off the top of the arch, heading to the right sternoclavicular joint."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "The brachiocephalic trunk divides into which two arteries?",
+     "options": [
+      "Left subclavian and left common carotid",
+      "Right and left pulmonary arteries",
+      "Right and left coronary arteries",
+      "Right subclavian and right common carotid"
+     ],
+     "answer": 3,
+     "explanation": "Behind the right sternoclavicular joint it divides into the right subclavian and right common carotid arteries."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_left_common_carotid",
+   "concept": "common_carotid",
+   "node": "s19",
+   "type": "artery",
+   "side": "left",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Left common carotid artery",
+    "latin": "Arteria carotis communis sinistra",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA4058"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_aortic_arch"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_brachiocephalic_trunk"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_left_subclavian"
+    }
+   ],
+   "content": {
+    "pronunciation": "LEFT KOM-on kah-ROT-id AR-ter-ee",
+    "origin": "Greek karotides, from karoun \"to stupefy\": pressure on these arteries can cause fainting.",
+    "location": "Arises directly from the aortic arch (second branch) and rises into the left side of the neck beside the trachea.",
+    "description": "Has no branches in the neck until it divides into internal and external carotid arteries at about the upper border of the thyroid cartilage (C3/C4).",
+    "function": "Supplies the left side of the head and neck; the internal carotid supplies much of the brain.",
+    "mnemonic": "Left common carotid comes straight off the arch; the right one comes from the brachiocephalic trunk.",
+    "clinical": "Narrowing of the carotid arteries by atherosclerosis is a common cause of stroke; the carotid pulse is felt beside the larynx.",
+    "hint": "The middle of the three branches on top of the arch, heading up the left side of the neck."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Where does the left common carotid artery arise?",
+     "options": [
+      "Directly from the arch of the aorta",
+      "From the left subclavian artery",
+      "From the ascending aorta",
+      "From the brachiocephalic trunk"
+     ],
+     "answer": 0,
+     "explanation": "The left common carotid is the second branch directly off the aortic arch."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_left_subclavian",
+   "concept": "subclavian",
+   "node": "s20",
+   "type": "artery",
+   "side": "left",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Left subclavian artery",
+    "latin": "Arteria subclavia sinistra",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA4694"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_aortic_arch"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_left_common_carotid"
+    }
+   ],
+   "content": {
+    "pronunciation": "LEFT sub-KLAY-vee-an AR-ter-ee",
+    "origin": "Latin sub \"under\" + clavis \"key\" (clavicle): it runs under the collarbone.",
+    "location": "The third and last branch of the aortic arch. It arches over the first rib, under the clavicle, toward the left upper limb.",
+    "description": "Gives off the vertebral artery and other branches, then becomes the axillary artery at the lateral border of the first rib.",
+    "function": "Supplies the left upper limb and, through the vertebral artery, part of the brain, spinal cord and neck.",
+    "mnemonic": "Sub-clavian = under the clavicle.",
+    "clinical": "In subclavian steal syndrome, narrowing of the subclavian artery before the vertebral artery lets the arm \"steal\" blood from the brain during arm exercise.",
+    "hint": "The last branch off the top of the arch, curving over the first rib toward the left arm."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "The left subclavian artery mainly supplies which region?",
+     "options": [
+      "Left side of the head only",
+      "Left upper limb",
+      "Left lung",
+      "Left kidney"
+     ],
+     "answer": 1,
+     "explanation": "The left subclavian artery continues as the axillary artery to the left upper limb."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_pulmonary_arteries",
+   "concept": "arteries",
+   "node": "s21",
+   "type": "artery",
+   "side": "midline",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Pulmonary trunk and arteries",
+    "latin": "Truncus pulmonalis et arteriae pulmonales",
+    "synonyms": [
+     "Pulmonary trunk",
+     "Right and left pulmonary arteries"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA66326"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "continuous_with",
+     "target": "cardio_heart_pulmonary_valve"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_ascending_aorta"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_aortic_arch"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_lca"
+    }
+   ],
+   "content": {
+    "pronunciation": "PUL-mon-air-ee TRUNK",
+    "origin": "Latin pulmo, \"lung\": vessels to the lungs.",
+    "location": "The pulmonary trunk leaves the right ventricle at the front of the heart, left of the ascending aorta, and divides under the aortic arch into right and left pulmonary arteries.",
+    "description": "A short, wide trunk and its two branches; the right pulmonary artery passes behind the ascending aorta and superior vena cava.",
+    "function": "Carry deoxygenated blood from the right ventricle to the lungs for gas exchange. They are the only arteries in the adult that carry deoxygenated blood.",
+    "mnemonic": "Arteries go Away from the heart, even when the blood is deoxygenated.",
+    "clinical": "A pulmonary embolism is a clot, usually from a deep leg vein, that lodges in the pulmonary arteries and blocks blood flow to the lungs.",
+    "hint": "The trunk from the right ventricle that splits in two under the arch, carrying blood to the lungs."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What type of blood do the pulmonary arteries carry?",
+     "options": [
+      "Deoxygenated blood to the coronary sinus",
+      "Oxygenated blood to the body",
+      "Deoxygenated blood to the lungs",
+      "Oxygenated blood to the left atrium"
+     ],
+     "answer": 2,
+     "explanation": "The pulmonary arteries take deoxygenated blood from the right ventricle to the lungs."
+    },
+    {
+     "kind": "clinical",
+     "text": "A clot from a deep leg vein that lodges in these vessels is called what?",
+     "options": [
+      "Aortic aneurysm",
+      "Coarctation",
+      "Myocardial infarction",
+      "Pulmonary embolism"
+     ],
+     "answer": 3,
+     "explanation": "A pulmonary embolism blocks the pulmonary arteries."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_rspv",
+   "concept": "rspv",
+   "node": "s22",
+   "type": "vein",
+   "side": "right",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Right superior pulmonary vein",
+    "latin": "Vena pulmonalis dextra superior",
+    "synonyms": [
+     "Right superior pulmonary vein"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA66643"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_svc"
+    }
+   ],
+   "content": {
+    "pronunciation": "PUL-mon-air-ee VAYN",
+    "origin": "Latin pulmo \"lung\" + vena \"vein\".",
+    "location": "Leaves the superior part of the right lung hilum and runs medially to open into the right side of the back of the left atrium. It passes behind the superior vena cava and right atrium.",
+    "description": "One of four pulmonary veins (two on each side) with no valves. This one drains the superior part of the right lung.",
+    "function": "Carries oxygenated blood from the lung to the left atrium. The pulmonary veins are the only veins in the adult that carry oxygenated blood.",
+    "mnemonic": "Four pulmonary veins, four corners of the left atrium: two right, two left, one superior and one inferior on each side.",
+    "clinical": "Abnormal electrical activity near the pulmonary vein openings often triggers atrial fibrillation; catheter ablation isolates these veins.",
+    "hint": "One of the four vessels entering the back of the left atrium, the superior one on the right side."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What do the pulmonary veins carry?",
+     "options": [
+      "Oxygenated blood to the left atrium",
+      "Deoxygenated blood to the lungs",
+      "Oxygenated blood to the right ventricle",
+      "Deoxygenated blood to the right atrium"
+     ],
+     "answer": 0,
+     "explanation": "Pulmonary veins return oxygenated blood from the lungs to the left atrium."
+    }
+   ],
+   "component": "right_superior"
+  },
+  {
+   "id": "cardio_heart_ripv",
+   "concept": "ripv",
+   "node": "s23",
+   "type": "vein",
+   "side": "right",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Right inferior pulmonary vein",
+    "latin": "Vena pulmonalis dextra inferior",
+    "synonyms": [
+     "Right inferior pulmonary vein"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA66643"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_heart_wall"
+    }
+   ],
+   "content": {
+    "pronunciation": "PUL-mon-air-ee VAYN",
+    "origin": "Latin pulmo \"lung\" + vena \"vein\".",
+    "location": "Leaves the inferior part of the right lung hilum and runs medially to open into the right side of the back of the left atrium. It passes behind the superior vena cava and right atrium.",
+    "description": "One of four pulmonary veins (two on each side) with no valves. This one drains the inferior part of the right lung.",
+    "function": "Carries oxygenated blood from the lung to the left atrium. The pulmonary veins are the only veins in the adult that carry oxygenated blood.",
+    "mnemonic": "Four pulmonary veins, four corners of the left atrium: two right, two left, one superior and one inferior on each side.",
+    "clinical": "Abnormal electrical activity near the pulmonary vein openings often triggers atrial fibrillation; catheter ablation isolates these veins.",
+    "hint": "One of the four vessels entering the back of the left atrium, the inferior one on the right side."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "How many pulmonary veins usually enter the left atrium?",
+     "options": [
+      "Three",
+      "Four",
+      "Six",
+      "Two"
+     ],
+     "answer": 1,
+     "explanation": "There are usually four pulmonary veins, a superior and an inferior from each lung."
+    }
+   ],
+   "component": "right_inferior"
+  },
+  {
+   "id": "cardio_heart_lspv",
+   "concept": "lspv",
+   "node": "s24",
+   "type": "vein",
+   "side": "left",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Left superior pulmonary vein",
+    "latin": "Vena pulmonalis sinistra superior",
+    "synonyms": [
+     "Left superior pulmonary vein"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA66643"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_heart_wall"
+    }
+   ],
+   "content": {
+    "pronunciation": "PUL-mon-air-ee VAYN",
+    "origin": "Latin pulmo \"lung\" + vena \"vein\".",
+    "location": "Leaves the superior part of the left lung hilum and runs medially to open into the left side of the back of the left atrium.",
+    "description": "One of four pulmonary veins (two on each side) with no valves. This one drains the superior part of the left lung.",
+    "function": "Carries oxygenated blood from the lung to the left atrium. The pulmonary veins are the only veins in the adult that carry oxygenated blood.",
+    "mnemonic": "Four pulmonary veins, four corners of the left atrium: two right, two left, one superior and one inferior on each side.",
+    "clinical": "Abnormal electrical activity near the pulmonary vein openings often triggers atrial fibrillation; catheter ablation isolates these veins.",
+    "hint": "One of the four vessels entering the back of the left atrium, the superior one on the left side."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Catheter ablation around the pulmonary vein openings is used to treat which condition?",
+     "options": [
+      "Pulmonary embolism",
+      "Coarctation of the aorta",
+      "Atrial fibrillation",
+      "Aortic stenosis"
+     ],
+     "answer": 2,
+     "explanation": "Abnormal impulses near the pulmonary veins often trigger atrial fibrillation, so ablation isolates them."
+    }
+   ],
+   "component": "left_superior"
+  },
+  {
+   "id": "cardio_heart_lipv",
+   "concept": "lipv",
+   "node": "s25",
+   "type": "vein",
+   "side": "left",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Left inferior pulmonary vein",
+    "latin": "Vena pulmonalis sinistra inferior",
+    "synonyms": [
+     "Left inferior pulmonary vein"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA66643"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_heart_wall"
+    }
+   ],
+   "content": {
+    "pronunciation": "PUL-mon-air-ee VAYN",
+    "origin": "Latin pulmo \"lung\" + vena \"vein\".",
+    "location": "Leaves the inferior part of the left lung hilum and runs medially to open into the left side of the back of the left atrium.",
+    "description": "One of four pulmonary veins (two on each side) with no valves. This one drains the inferior part of the left lung.",
+    "function": "Carries oxygenated blood from the lung to the left atrium. The pulmonary veins are the only veins in the adult that carry oxygenated blood.",
+    "mnemonic": "Four pulmonary veins, four corners of the left atrium: two right, two left, one superior and one inferior on each side.",
+    "clinical": "Abnormal electrical activity near the pulmonary vein openings often triggers atrial fibrillation; catheter ablation isolates these veins.",
+    "hint": "One of the four vessels entering the back of the left atrium, the inferior one on the left side."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The pulmonary veins are unusual because they are veins that carry what?",
+     "options": [
+      "Lymph",
+      "Blood away from the heart",
+      "Blood with no valves to the brain",
+      "Oxygenated blood"
+     ],
+     "answer": 3,
+     "explanation": "In the adult, pulmonary veins are the only veins carrying oxygenated blood."
+    }
+   ],
+   "component": "left_inferior"
+  },
+  {
+   "id": "cardio_heart_svc",
+   "concept": "svc",
+   "node": "s26",
+   "type": "vein",
+   "side": "right",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Superior vena cava",
+    "latin": "Vena cava superior",
+    "synonyms": [
+     "SVC"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA4720"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_ascending_aorta"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_rspv"
+    }
+   ],
+   "content": {
+    "pronunciation": "soo-PEER-ee-er VEE-nah KAY-vah",
+    "origin": "Latin vena cava, \"hollow vein\"; superior, \"upper\".",
+    "location": "In the superior and middle mediastinum, on the right, beside the ascending aorta. It forms behind the right 1st costal cartilage and descends to the right atrium.",
+    "description": "A large, valveless vein about 7 cm long formed by the union of the right and left brachiocephalic veins.",
+    "function": "Returns deoxygenated blood from the head, neck, upper limbs and chest wall to the right atrium.",
+    "mnemonic": "Superior vena cava = blood from above the heart; inferior vena cava = blood from below.",
+    "clinical": "Superior vena cava obstruction (often from lung cancer or lymphoma) causes swelling of the face, neck and arms with distended neck veins.",
+    "hint": "The large vein on the right of the ascending aorta, formed by two veins joining and emptying downward into the right atrium."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The superior vena cava is formed by the union of which veins?",
+     "options": [
+      "Right and left brachiocephalic veins",
+      "Right and left pulmonary veins",
+      "Great and middle cardiac veins",
+      "Right and left common iliac veins"
+     ],
+     "answer": 0,
+     "explanation": "The two brachiocephalic veins join behind the right 1st costal cartilage to form the SVC."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_ivc",
+   "concept": "ivc",
+   "node": "s27",
+   "type": "vein",
+   "side": "right",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Inferior vena cava",
+    "latin": "Vena cava inferior",
+    "synonyms": [
+     "IVC"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA10951"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_heart_wall"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_descending_aorta"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_coronary_sinus"
+    }
+   ],
+   "content": {
+    "pronunciation": "in-FEER-ee-er VEE-nah KAY-vah",
+    "origin": "Latin vena cava, \"hollow vein\"; inferior, \"lower\".",
+    "location": "Runs up the posterior abdominal wall to the right of the aorta, passes through the caval opening of the diaphragm at T8 and enters the lower part of the right atrium.",
+    "description": "The largest vein in the body, formed by the union of the common iliac veins at about L5.",
+    "function": "Returns deoxygenated blood from the lower limbs, pelvis and abdomen to the right atrium.",
+    "mnemonic": "\"I 8 10 Eggs At 12\": IVC through the diaphragm at T8, oesophagus at T10, aorta at T12.",
+    "clinical": "In late pregnancy, lying flat on the back lets the uterus compress this vein, reducing return to the heart and causing low blood pressure (supine hypotension).",
+    "hint": "The largest vein, rising through the diaphragm at T8 to enter the right atrium from below."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "At which vertebral level does the inferior vena cava pass through the diaphragm?",
+     "options": [
+      "L1",
+      "T8",
+      "T10",
+      "T12"
+     ],
+     "answer": 1,
+     "explanation": "The IVC passes through the caval opening in the central tendon at T8."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_right_brachiocephalic_vein",
+   "concept": "brachiocephalic_vein",
+   "node": "s28",
+   "type": "vein",
+   "side": "right",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Right brachiocephalic vein",
+    "latin": "Vena brachiocephalica dextra",
+    "synonyms": [
+     "Right innominate vein"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA4751"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_svc"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_brachiocephalic_trunk"
+    }
+   ],
+   "content": {
+    "pronunciation": "RITE BRAY-kee-oh-seh-FAL-ik VAYN",
+    "origin": "Greek brachion \"arm\" + kephale \"head\": it drains the arm and head.",
+    "location": "Behind the right sternoclavicular joint, descending almost vertically on the right side of the superior mediastinum.",
+    "description": "A short vein (about 2.5 cm) formed by the union of the right internal jugular and right subclavian veins.",
+    "function": "Drains the right side of the head, neck and right upper limb, joining the left brachiocephalic vein to form the superior vena cava.",
+    "mnemonic": "Right is short and straight; left is long and crosses over.",
+    "clinical": "Central venous catheters placed in the right internal jugular vein pass down through this vein into the superior vena cava.",
+    "hint": "The short vertical vein behind the right sternoclavicular joint, formed where the jugular and subclavian veins meet."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Each brachiocephalic vein is formed by the union of which two veins?",
+     "options": [
+      "Pulmonary and cardiac veins",
+      "Common iliac veins",
+      "Internal jugular and subclavian veins",
+      "External jugular and axillary veins"
+     ],
+     "answer": 2,
+     "explanation": "The internal jugular and subclavian veins join behind the sternoclavicular joint."
+    },
+    {
+     "kind": "location",
+     "text": "Which brachiocephalic vein is longer and crosses behind the manubrium?",
+     "options": [
+      "Both are the same length",
+      "Neither crosses the midline",
+      "The right one",
+      "The left one"
+     ],
+     "answer": 3,
+     "explanation": "The left brachiocephalic vein crosses obliquely behind the manubrium to reach the right side."
+    }
+   ]
+  },
+  {
+   "id": "cardio_heart_left_brachiocephalic_vein",
+   "concept": "brachiocephalic_vein",
+   "node": "s29",
+   "type": "vein",
+   "side": "left",
+   "group": "great_vessels",
+   "names": {
+    "preferred": "Left brachiocephalic vein",
+    "latin": "Vena brachiocephalica sinistra",
+    "synonyms": [
+     "Left innominate vein"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA4761"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "drains_to",
+     "target": "cardio_heart_svc"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_aortic_arch"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "cardio_heart_brachiocephalic_trunk"
+    }
+   ],
+   "content": {
+    "pronunciation": "LEFT BRAY-kee-oh-seh-FAL-ik VAYN",
+    "origin": "Greek brachion \"arm\" + kephale \"head\": it drains the arm and head.",
+    "location": "Starts behind the left sternoclavicular joint and crosses obliquely to the right behind the manubrium, in front of the branches of the aortic arch.",
+    "description": "About 6 cm long, more than twice the length of the right one, formed by the union of the left internal jugular and left subclavian veins.",
+    "function": "Drains the left side of the head, neck and left upper limb into the superior vena cava.",
+    "mnemonic": "Left brachiocephalic vein = the long diagonal bridge across the top of the arch.",
+    "clinical": "Because it lies just behind the manubrium, it can be injured in sternal trauma or during surgery through the sternum.",
+    "hint": "The long diagonal vein crossing from left to right behind the manubrium, above the arch."
+   },
+   "questions": []
+  }
+ ]
+}

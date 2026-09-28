@@ -1,0 +1,1010 @@
+{
+ "id": "digestive",
+ "version": "1.0.0",
+ "name": "Digestive system",
+ "description": "The alimentary canal from the oesophagus to the rectum, plus the liver, gallbladder, pancreas and spleen.",
+ "system": "digestive",
+ "region": "abdomen",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "digestive",
+ "rootframe": [
+  "upper_gi",
+  "intestines",
+  "accessory"
+ ],
+ "defaultgroups": [
+  "upper_gi",
+  "intestines",
+  "accessory"
+ ],
+ "presets": [
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "right",
+   "label": "Right lateral",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "left",
+   "label": "Left lateral",
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  }
+ ],
+ "defaultpreset": "anterior",
+ "tissue": true,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "digestive",
+   "label": "Digestive system",
+   "parent": null,
+   "tip": "Follow the food: oesophagus, stomach, duodenum, jejunum, ileum, caecum and colon, rectum. The liver, gallbladder and pancreas empty into the duodenum; the spleen is a lymphoid organ included for location."
+  },
+  {
+   "id": "upper_gi",
+   "label": "Oesophagus and stomach",
+   "parent": "digestive",
+   "tip": "Remember the stomach parts with \"Can Fred Bake Pies?\": Cardia, Fundus, Body, Pylorus. The oesophagus passes through the diaphragm at T10."
+  },
+  {
+   "id": "intestines",
+   "label": "Small and large intestine",
+   "parent": "digestive",
+   "tip": "\"Dow Jones Industrial\" gives the small intestine order (duodenum, jejunum, ileum); \"Can A Tired Dog Stay Relaxed?\" gives the large intestine (caecum, ascending, transverse, descending, sigmoid, rectum)."
+  },
+  {
+   "id": "accessory",
+   "label": "Accessory organs (and spleen)",
+   "parent": "digestive",
+   "tip": "Liver makes bile, gallbladder stores it, pancreas adds enzymes: all three drain into the duodenum. The spleen sits under the left ribs and filters blood."
+  }
+ ],
+ "structures": [
+  {
+   "id": "digestive_oesophagus",
+   "concept": "oesophagus",
+   "node": "s0",
+   "type": "organ",
+   "side": "midline",
+   "group": "upper_gi",
+   "names": {
+    "preferred": "Oesophagus",
+    "latin": "Oesophagus",
+    "synonyms": [
+     "Esophagus (US spelling)",
+     "Gullet",
+     "Food pipe"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7131"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "digestive_stomach"
+    }
+   ],
+   "content": {
+    "pronunciation": "ee-SOF-uh-gus",
+    "origin": "Greek oisophagos, from oisein, \"to carry\", and phagein, \"to eat\": the tube that carries what is eaten.",
+    "location": "Runs down the neck and chest behind (posterior to) the trachea and in front of the vertebral column. It passes through the diaphragm at about the level of T10 and joins the stomach just below.",
+    "description": "A muscular tube about 25 cm long that is flattened when empty. Its upper third has skeletal (voluntary) muscle, its lower third smooth muscle, and it is lined by tough stratified squamous epithelium.",
+    "function": "Carries swallowed food and fluid to the stomach by peristalsis (waves of muscle contraction). A lower oesophageal sphincter at the junction with the stomach helps stop stomach contents flowing back up.",
+    "mnemonic": "Oesophagus = \"eat-sophagus\": the eating tube, sitting behind the windpipe.",
+    "clinical": "Gastro-oesophageal reflux disease (GORD) is when stomach acid repeatedly flows back up and irritates the lining, causing heartburn. Long-term reflux can change the lining (Barrett's oesophagus), which increases cancer risk.",
+    "hint": "A narrow tube running down behind the windpipe and through the diaphragm, ending at the top of the digestive sac."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Where does the oesophagus lie in the neck and chest?",
+     "options": [
+      "In front of the trachea",
+      "Behind the trachea, in front of the vertebral column",
+      "Behind the vertebral column",
+      "Inside the pericardium"
+     ],
+     "answer": 1,
+     "explanation": "The oesophagus runs posterior to the trachea and anterior to the vertebral column."
+    },
+    {
+     "kind": "clinical",
+     "text": "What is the name for repeated backflow of stomach acid into the oesophagus?",
+     "options": [
+      "Peptic ulcer",
+      "Appendicitis",
+      "Gastro-oesophageal reflux disease (GORD)",
+      "Pancreatitis"
+     ],
+     "answer": 2,
+     "explanation": "GORD is the repeated reflux of acidic stomach contents into the oesophagus."
+    }
+   ]
+  },
+  {
+   "id": "digestive_stomach",
+   "concept": "stomach",
+   "node": "s1",
+   "type": "organ",
+   "side": "midline",
+   "group": "upper_gi",
+   "names": {
+    "preferred": "Stomach",
+    "latin": "Gaster",
+    "synonyms": [
+     "Ventriculus (older Latin)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7148"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "digestive_oesophagus"
+    },
+    {
+     "type": "continuous_with",
+     "target": "digestive_duodenum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_liver"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_spleen"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_pancreas"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_colon"
+    }
+   ],
+   "content": {
+    "pronunciation": "STUM-uk",
+    "origin": "English stomach comes via Latin stomachus from Greek stomachos, \"throat\" or \"opening\" (from stoma, \"mouth\"). The Greek gaster, \"belly\", gives the word gastric.",
+    "location": "In the upper abdomen, mostly in the left upper quadrant and epigastric region, just below the diaphragm. The liver lies to its right and the spleen behind and to its left; the pancreas lies behind it.",
+    "description": "A J-shaped muscular sac with four parts: cardia (where the oesophagus enters), fundus (dome at the top), body and pyloric part (antrum and pylorus). It has a short lesser curvature and a long greater curvature, and folds called rugae line the inside when it is empty.",
+    "function": "Stores food and churns it with gastric juice into a semi-liquid called chyme. It makes hydrochloric acid, pepsin (starts protein digestion) and intrinsic factor (needed to absorb vitamin B12), and the pyloric sphincter releases chyme slowly into the duodenum.",
+    "mnemonic": "\"Can Fred Bake Pies?\" gives the parts in order: Cardia, Fundus, Body, Pylorus.",
+    "clinical": "Peptic ulcers are sores in the lining of the stomach or duodenum. Most are caused by Helicobacter pylori infection or anti-inflammatory drugs (NSAIDs) such as ibuprofen.",
+    "hint": "A J-shaped sac under the left dome of the diaphragm, between the food pipe above and the first part of the small intestine."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which substance made by the stomach is needed to absorb vitamin B12?",
+     "options": [
+      "Bile",
+      "Intrinsic factor",
+      "Insulin",
+      "Amylase"
+     ],
+     "answer": 1,
+     "explanation": "The stomach makes intrinsic factor, which is required for vitamin B12 absorption in the ileum."
+    },
+    {
+     "kind": "terminology",
+     "text": "Which part of the stomach is the dome that rises above the entry of the oesophagus?",
+     "options": [
+      "Pylorus",
+      "Antrum",
+      "Fundus",
+      "Lesser curvature"
+     ],
+     "answer": 2,
+     "explanation": "The fundus is the dome-shaped top of the stomach, above the cardia."
+    }
+   ]
+  },
+  {
+   "id": "digestive_duodenum",
+   "concept": "duodenum",
+   "node": "s2",
+   "type": "organ",
+   "side": "midline",
+   "group": "intestines",
+   "names": {
+    "preferred": "Duodenum",
+    "latin": "Duodenum",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7206"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "digestive_stomach"
+    },
+    {
+     "type": "continuous_with",
+     "target": "digestive_jejunum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_pancreas"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_gallbladder"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_liver"
+    }
+   ],
+   "content": {
+    "pronunciation": "dew-oh-DEE-num",
+    "origin": "Medieval Latin, short for intestinum duodenum digitorum, \"intestine of twelve finger-widths\", describing its length.",
+    "location": "The first part of the small intestine, starting at the pylorus of the stomach. It curves in a C shape around the head of the pancreas in the upper abdomen, and most of it is retroperitoneal (fixed to the back wall).",
+    "description": "A C-shaped tube about 25 cm long with four parts: superior, descending, horizontal and ascending. It ends at the duodenojejunal flexure. The bile duct and main pancreatic duct open into the descending part at the major duodenal papilla.",
+    "function": "Receives acidic chyme from the stomach and mixes it with bile from the liver and gallbladder and enzymes and bicarbonate from the pancreas. The bicarbonate neutralises the acid so digestion can continue.",
+    "mnemonic": "Duodenum = \"dozen\": twelve finger-widths long, and the first stop after the stomach.",
+    "clinical": "Most duodenal ulcers occur in the first (superior) part, where acidic chyme first arrives. A peptic ulcer here can bleed or perforate.",
+    "hint": "The short C-shaped first loop of the small intestine that wraps around the head of the pancreas."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which organ's head sits in the C-shaped curve of the duodenum?",
+     "options": [
+      "Liver",
+      "Spleen",
+      "Stomach",
+      "Pancreas"
+     ],
+     "answer": 3,
+     "explanation": "The duodenum curves around the head of the pancreas."
+    },
+    {
+     "kind": "function",
+     "text": "What two secretions enter the duodenum through the major duodenal papilla?",
+     "options": [
+      "Saliva and mucus",
+      "Bile and pancreatic juice",
+      "Gastric acid and pepsin",
+      "Insulin and glucagon"
+     ],
+     "answer": 1,
+     "explanation": "The bile duct and main pancreatic duct open together at the major duodenal papilla."
+    }
+   ]
+  },
+  {
+   "id": "digestive_jejunum",
+   "concept": "jejunum",
+   "node": "s3",
+   "type": "organ",
+   "side": "midline",
+   "group": "intestines",
+   "names": {
+    "preferred": "Jejunum",
+    "latin": "Jejunum",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7207"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "digestive_duodenum"
+    },
+    {
+     "type": "continuous_with",
+     "target": "digestive_ileum"
+    }
+   ],
+   "content": {
+    "pronunciation": "jeh-JOO-num",
+    "origin": "Latin jejunus, \"empty\" or \"fasting\". Early anatomists usually found this part empty after death.",
+    "location": "The middle part of the small intestine, from the duodenojejunal flexure onwards. Its coils lie mainly in the upper left part of the abdomen, hung from the posterior wall by the mesentery.",
+    "description": "Makes up about the first two-fifths of the small intestine after the duodenum. Compared with the ileum it is wider, has a thicker wall, is redder (more blood supply) and has tall, closely packed circular folds (plicae circulares).",
+    "function": "The main site for absorbing digested nutrients such as sugars, amino acids and fats. Its circular folds and villi give a huge surface area for absorption.",
+    "mnemonic": "Duodenum, Jejunum, Ileum: \"Dow Jones Industrial\" gives the order of the small intestine.",
+    "clinical": "A feeding tube can be placed directly into this part (a feeding jejunostomy) when a person cannot be fed through the stomach.",
+    "hint": "The thick-walled, red, upper-left coils of small intestine that follow the C-shaped first loop."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What is the main role of the jejunum?",
+     "options": [
+      "Absorbing digested nutrients",
+      "Storing faeces",
+      "Making bile",
+      "Absorbing mostly water"
+     ],
+     "answer": 0,
+     "explanation": "The jejunum is the main site of nutrient absorption, helped by its folds and villi."
+    },
+    {
+     "kind": "terminology",
+     "text": "The name jejunum comes from a Latin word meaning what?",
+     "options": [
+      "Twisted",
+      "Empty or fasting",
+      "Blind",
+      "Straight"
+     ],
+     "answer": 1,
+     "explanation": "Latin jejunus means empty; this part was often found empty after death."
+    }
+   ]
+  },
+  {
+   "id": "digestive_ileum",
+   "concept": "ileum",
+   "node": "s4",
+   "type": "organ",
+   "side": "midline",
+   "group": "intestines",
+   "names": {
+    "preferred": "Ileum",
+    "latin": "Ileum",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7208"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "digestive_jejunum"
+    },
+    {
+     "type": "continuous_with",
+     "target": "digestive_colon"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_appendix"
+    }
+   ],
+   "content": {
+    "pronunciation": "ILL-ee-um",
+    "origin": "Latin ileum, usually linked to Greek eilein, \"to roll or twist\", from its many coils. Do not confuse it with the ilium, the hip bone.",
+    "location": "The last part of the small intestine. Its coils lie mainly in the lower right abdomen and pelvis, and it ends at the ileocaecal junction, where it opens into the caecum.",
+    "description": "Makes up about the last three-fifths of the small intestine after the duodenum. It is narrower and thinner-walled than the jejunum, with fewer circular folds and patches of lymphoid tissue in its wall called Peyer's patches.",
+    "function": "Absorbs remaining nutrients and, in its last part (terminal ileum), vitamin B12 and bile salts. The ileocaecal valve helps control flow into the large intestine and limits backflow.",
+    "mnemonic": "ileum with an E = entErics (gut); ilium with an I = hIp bone.",
+    "clinical": "Crohn's disease, a chronic inflammatory bowel disease, most often affects the terminal ileum. Damage or removal of this part can cause vitamin B12 deficiency.",
+    "hint": "The final coils of small intestine in the lower right abdomen, ending where they open into the blind pouch of the large bowel."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which vitamin is mainly absorbed in the terminal ileum?",
+     "options": [
+      "Vitamin C",
+      "Vitamin K",
+      "Vitamin B12",
+      "Vitamin D"
+     ],
+     "answer": 2,
+     "explanation": "Vitamin B12 (with intrinsic factor) and bile salts are absorbed in the terminal ileum."
+    },
+    {
+     "kind": "relationship",
+     "text": "Where does the ileum end?",
+     "options": [
+      "At the pylorus",
+      "At the duodenojejunal flexure",
+      "At the rectum",
+      "At the ileocaecal junction with the caecum"
+     ],
+     "answer": 3,
+     "explanation": "The ileum opens into the caecum at the ileocaecal junction."
+    }
+   ]
+  },
+  {
+   "id": "digestive_appendix",
+   "concept": "appendix",
+   "node": "s5",
+   "type": "organ",
+   "side": "midline",
+   "group": "intestines",
+   "names": {
+    "preferred": "Vermiform appendix",
+    "latin": "Appendix vermiformis",
+    "synonyms": [
+     "Appendix"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA14542"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "digestive_colon"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_ileum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_colon"
+    }
+   ],
+   "content": {
+    "pronunciation": "uh-PEN-diks",
+    "origin": "Latin appendix, \"something attached\", and vermiformis, \"worm-shaped\" (vermis, worm).",
+    "location": "In the right lower quadrant (right iliac fossa). It hangs from the posteromedial wall of the caecum, below the ileocaecal junction. Its position varies; behind the caecum (retrocaecal) is most common.",
+    "description": "A narrow, blind-ended tube, usually about 6-10 cm long, with a lot of lymphoid tissue in its wall. The three bands of longitudinal muscle on the large intestine (taeniae coli) meet at its base.",
+    "function": "It has no essential digestive role. Its lymphoid tissue may take part in gut immunity, and it may act as a reservoir for normal gut bacteria.",
+    "mnemonic": "McBurney's point marks its base: one-third of the way along a line from the right anterior superior iliac spine (ASIS) to the umbilicus.",
+    "clinical": "Appendicitis is inflammation of the appendix, usually from blockage. Pain typically starts around the umbilicus and moves to the right lower quadrant (McBurney's point). It is usually treated by removing it (appendicectomy).",
+    "hint": "A small worm-shaped tube hanging from the blind pouch at the start of the large bowel, in the right lower quadrant."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "In appendicitis, where does pain typically move to?",
+     "options": [
+      "Left upper quadrant",
+      "Right lower quadrant",
+      "Left lower quadrant",
+      "Between the shoulder blades"
+     ],
+     "answer": 1,
+     "explanation": "Appendicitis pain often starts around the umbilicus and settles in the right lower quadrant."
+    },
+    {
+     "kind": "location",
+     "text": "The vermiform appendix is attached to which part of the large intestine?",
+     "options": [
+      "Caecum",
+      "Sigmoid colon",
+      "Transverse colon",
+      "Rectum"
+     ],
+     "answer": 0,
+     "explanation": "The appendix hangs from the posteromedial wall of the caecum."
+    }
+   ]
+  },
+  {
+   "id": "digestive_colon",
+   "concept": "colon",
+   "node": "s6",
+   "type": "organ",
+   "side": "midline",
+   "group": "intestines",
+   "names": {
+    "preferred": "Colon (with caecum)",
+    "latin": "Colon; caecum",
+    "synonyms": [
+     "Large bowel",
+     "Large intestine (with the rectum and anal canal)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA14543nsn"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "digestive_ileum"
+    },
+    {
+     "type": "continuous_with",
+     "target": "digestive_rectum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_appendix"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_stomach"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_liver"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_spleen"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOH-lon; SEE-kum",
+    "origin": "Greek kolon, the name for the large intestine. Caecum is from Latin caecus, \"blind\", because it is a blind-ended pouch. Sigmoid is from the Greek letter sigma (S-shaped).",
+    "location": "Frames the small intestine on three sides. It starts as the caecum in the right lower quadrant, rises up the right side (ascending), crosses the upper abdomen (transverse), runs down the left side (descending) and forms an S-loop in the pelvis (sigmoid) before joining the rectum.",
+    "description": "This model shows the caecum and colon as one structure: caecum, ascending colon, right colic (hepatic) flexure, transverse colon, left colic (splenic) flexure, descending colon and sigmoid colon. Three muscle bands (taeniae coli) gather the wall into pouches (haustra), with small fat tags (omental appendices).",
+    "function": "Absorbs water and electrolytes, turning liquid contents into solid faeces, and moves them towards the rectum. Its bacteria ferment fibre and make some vitamins such as vitamin K. The ascending and descending parts are retroperitoneal; the transverse and sigmoid parts hang on a mesentery (mesocolon).",
+    "mnemonic": "Order from start to finish: Caecum, Ascending, Transverse, Descending, Sigmoid, then Rectum: \"Can A Tired Dog Stay Relaxed?\"",
+    "clinical": "Diverticular disease (small pouches pushing out through the wall) is most common in the sigmoid colon. Bowel (colorectal) cancer is common, which is why screening with a faecal test is offered from middle age.",
+    "hint": "The wide, pouched tube with three muscle bands that begins as a blind pouch in the lower right and forms a frame around the small intestine."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Which part of the large intestine is the blind-ended pouch in the right lower quadrant?",
+     "options": [
+      "Sigmoid colon",
+      "Transverse colon",
+      "Caecum",
+      "Descending colon"
+     ],
+     "answer": 2,
+     "explanation": "Caecum means blind; it is the blind-ended pouch where the large intestine starts."
+    },
+    {
+     "kind": "function",
+     "text": "What is the main job of the colon?",
+     "options": [
+      "Absorbing water and electrolytes to form faeces",
+      "Making digestive enzymes",
+      "Absorbing vitamin B12",
+      "Storing bile"
+     ],
+     "answer": 0,
+     "explanation": "The colon absorbs water and electrolytes, turning liquid contents into faeces."
+    },
+    {
+     "kind": "clinical",
+     "text": "In which part of the colon is diverticular disease most common?",
+     "options": [
+      "Caecum",
+      "Ascending colon",
+      "Transverse colon",
+      "Sigmoid colon"
+     ],
+     "answer": 3,
+     "explanation": "Diverticula are most common in the sigmoid colon."
+    }
+   ]
+  },
+  {
+   "id": "digestive_rectum",
+   "concept": "rectum",
+   "node": "s7",
+   "type": "organ",
+   "side": "midline",
+   "group": "intestines",
+   "names": {
+    "preferred": "Rectum",
+    "latin": "Rectum",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA14544"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "digestive_colon"
+    }
+   ],
+   "content": {
+    "pronunciation": "REK-tum",
+    "origin": "Latin intestinum rectum, \"straight intestine\". It was named from animal dissections; in humans it is actually curved.",
+    "location": "In the pelvis, in front of (anterior to) the sacrum and coccyx. It continues from the sigmoid colon at about the level of S3 and ends at the anal canal, where the puborectalis sling bends it forwards.",
+    "description": "About 12-15 cm long. It follows the curve of the sacrum and has no taeniae coli or haustra, because the muscle bands spread out into a complete layer. Its lower part widens into the rectal ampulla.",
+    "function": "Holds faeces until a suitable time. Stretching of its wall triggers the urge to defecate (the defecation reflex).",
+    "mnemonic": "Rectum = \"rest-um\": faeces rest here before leaving through the anal canal.",
+    "clinical": "A digital rectal examination (DRE) lets a clinician feel the rectum and nearby structures such as the prostate. Rectal bleeding or a change in bowel habit should be checked for bowel cancer.",
+    "hint": "The final segment of the large bowel, lying in the pelvis in front of the sacrum and leading to the anal canal."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The rectum lies in front of which bones?",
+     "options": [
+      "Lumbar vertebrae",
+      "Pubic bones",
+      "Sacrum and coccyx",
+      "Femurs"
+     ],
+     "answer": 2,
+     "explanation": "The rectum follows the curve of the sacrum and coccyx in the pelvis."
+    },
+    {
+     "kind": "function",
+     "text": "What triggers the urge to defecate?",
+     "options": [
+      "Stretching of the rectal wall",
+      "Contraction of the gallbladder",
+      "Emptying of the stomach",
+      "Relaxation of the diaphragm"
+     ],
+     "answer": 0,
+     "explanation": "Distension of the rectum starts the defecation reflex."
+    }
+   ]
+  },
+  {
+   "id": "digestive_liver",
+   "concept": "liver",
+   "node": "s8",
+   "type": "organ",
+   "side": "midline",
+   "group": "accessory",
+   "names": {
+    "preferred": "Liver",
+    "latin": "Hepar",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7197"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "digestive_gallbladder"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_stomach"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_duodenum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_colon"
+    }
+   ],
+   "content": {
+    "pronunciation": "LIV-er",
+    "origin": "Old English lifer. The Greek word hepar gives terms such as hepatic and hepatitis.",
+    "location": "In the right upper quadrant, under the right dome of the diaphragm and mostly protected by the lower ribs. It extends across the midline towards the left, above the stomach.",
+    "description": "The largest internal organ, weighing about 1.5 kg. It has a large right lobe and smaller left lobe (plus the small caudate and quadrate lobes), separated in front by the falciform ligament. The portal vein, hepatic artery and bile ducts pass at the porta hepatis on its underside.",
+    "function": "Makes bile, processes nutrients arriving from the gut via the hepatic portal vein, stores glycogen, iron and some vitamins, makes plasma proteins such as albumin and clotting factors, and breaks down drugs, alcohol and old blood pigment (bilirubin).",
+    "mnemonic": "The liver is a chemical factory: it makes (bile, proteins), stores (glycogen, vitamins) and cleans (drugs, alcohol).",
+    "clinical": "Cirrhosis is scarring of the liver, commonly from long-term alcohol use, hepatitis B or C, or fatty liver disease. Liver disease can cause jaundice (yellow skin and eyes) from build-up of bilirubin.",
+    "hint": "The largest organ in the abdomen, tucked under the right dome of the diaphragm with a green sac on its underside."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which of these is a function of the liver?",
+     "options": [
+      "Producing insulin",
+      "Producing bile",
+      "Absorbing water from faeces",
+      "Storing faeces"
+     ],
+     "answer": 1,
+     "explanation": "The liver makes bile, which is stored in the gallbladder."
+    },
+    {
+     "kind": "location",
+     "text": "In which region of the abdomen is most of the liver found?",
+     "options": [
+      "Left lower quadrant",
+      "Left upper quadrant",
+      "Right upper quadrant",
+      "Right lower quadrant"
+     ],
+     "answer": 2,
+     "explanation": "The liver lies mostly in the right upper quadrant under the right dome of the diaphragm."
+    }
+   ]
+  },
+  {
+   "id": "digestive_gallbladder",
+   "concept": "gallbladder",
+   "node": "s9",
+   "type": "organ",
+   "side": "midline",
+   "group": "accessory",
+   "names": {
+    "preferred": "Gallbladder",
+    "latin": "Vesica biliaris",
+    "synonyms": [
+     "Vesica fellea (older Latin)",
+     "Cholecyst"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7202"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "digestive_liver"
+    },
+    {
+     "type": "drains_to",
+     "target": "digestive_duodenum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_duodenum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_liver"
+    }
+   ],
+   "content": {
+    "pronunciation": "GAWL-blad-er",
+    "origin": "Old English gealla, \"bile\", plus bladder. The Greek chole (bile) and kystis (bladder) give words such as cholecystitis.",
+    "location": "On the underside (visceral surface) of the right lobe of the liver, in the right upper quadrant. Its tip (fundus) lies behind the ninth right costal cartilage, near the lateral edge of the rectus abdominis.",
+    "description": "A pear-shaped sac about 7-10 cm long with a fundus, body and neck. Its cystic duct joins the common hepatic duct from the liver to form the bile duct, which runs to the duodenum.",
+    "function": "Stores and concentrates bile made by the liver. After a fatty meal the hormone cholecystokinin (CCK) makes it contract, squeezing bile into the duodenum to help digest fats.",
+    "mnemonic": "Traditional gallstone risk factors: the Fs - female, forty, fertile, fat (and fair). Gallstones can still occur in anyone.",
+    "clinical": "Gallstones are common. A stone blocking the cystic duct can cause biliary colic or inflammation (cholecystitis), with right upper quadrant pain after fatty meals. Treatment is often removal (cholecystectomy).",
+    "hint": "A small green pear-shaped sac tucked under the right lobe of the largest abdominal organ."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What does the gallbladder do?",
+     "options": [
+      "Makes bile",
+      "Stores and concentrates bile",
+      "Makes insulin",
+      "Filters old red blood cells"
+     ],
+     "answer": 1,
+     "explanation": "The liver makes bile; the gallbladder stores and concentrates it."
+    },
+    {
+     "kind": "function",
+     "text": "Which hormone makes the gallbladder contract after a fatty meal?",
+     "options": [
+      "Insulin",
+      "Glucagon",
+      "Cholecystokinin (CCK)",
+      "Adrenaline"
+     ],
+     "answer": 2,
+     "explanation": "Cholecystokinin released from the duodenum makes the gallbladder contract."
+    }
+   ]
+  },
+  {
+   "id": "digestive_pancreas",
+   "concept": "pancreas",
+   "node": "s10",
+   "type": "organ",
+   "side": "midline",
+   "group": "accessory",
+   "names": {
+    "preferred": "Pancreas",
+    "latin": "Pancreas",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7198nsn"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "digestive_duodenum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_stomach"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_spleen"
+    },
+    {
+     "type": "drains_to",
+     "target": "digestive_duodenum"
+    }
+   ],
+   "content": {
+    "pronunciation": "PAN-kree-us",
+    "origin": "Greek pan, \"all\", and kreas, \"flesh\": it is soft and fleshy all through, with no bone or cartilage.",
+    "location": "Lies across the back wall of the upper abdomen behind the stomach (retroperitoneal), at about the level of L1-L2. Its head sits in the C-curve of the duodenum and its tail reaches the spleen.",
+    "description": "A soft, lobulated gland about 15 cm long with a head, neck, body and tail. The main pancreatic duct runs along it and joins the bile duct to open into the duodenum.",
+    "function": "Exocrine: makes digestive enzymes (amylase, lipase and protease precursors such as trypsinogen) and bicarbonate, sent to the duodenum. Endocrine: its islets (of Langerhans) release insulin and glucagon into the blood to control blood glucose.",
+    "mnemonic": "Head in the duodenum, tail in the spleen: the pancreas lies like a fish across the back of the abdomen.",
+    "clinical": "Acute pancreatitis is painful inflammation, most often caused by gallstones or alcohol. Type 1 diabetes results from destruction of the insulin-making beta cells in the islets.",
+    "hint": "A soft, fish-shaped gland lying across the back wall behind the digestive sac, its head in the C-shaped duodenal loop and its tail near the spleen."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which hormones are made by the islets of the pancreas?",
+     "options": [
+      "Insulin and glucagon",
+      "Bile and bilirubin",
+      "Pepsin and gastrin",
+      "Adrenaline and cortisol"
+     ],
+     "answer": 0,
+     "explanation": "Pancreatic islets release insulin and glucagon to control blood glucose."
+    },
+    {
+     "kind": "clinical",
+     "text": "What are the two most common causes of acute pancreatitis?",
+     "options": [
+      "Smoking and obesity",
+      "Gallstones and alcohol",
+      "Appendicitis and hernia",
+      "Vitamin deficiency and anaemia"
+     ],
+     "answer": 1,
+     "explanation": "Gallstones and alcohol are the most common causes of acute pancreatitis."
+    }
+   ]
+  },
+  {
+   "id": "digestive_spleen",
+   "concept": "spleen",
+   "node": "s11",
+   "type": "organ",
+   "side": "midline",
+   "group": "accessory",
+   "names": {
+    "preferred": "Spleen",
+    "latin": "Splen",
+    "synonyms": [
+     "Lien (Latin)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7196"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "digestive_stomach"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_pancreas"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "digestive_colon"
+    }
+   ],
+   "content": {
+    "pronunciation": "SPLEEN",
+    "origin": "Greek splen, the name of the organ. The Latin lien gives the older term lienal.",
+    "location": "In the left upper quadrant (left hypochondrium), behind and to the left of the stomach, under the diaphragm and protected by the 9th to 11th ribs. The tail of the pancreas reaches its hilum.",
+    "description": "A soft, purple, fist-sized organ with a notched front edge. Blood vessels enter and leave at its hilum on the inner surface. It is not a digestive organ but a lymphoid organ.",
+    "function": "Filters the blood: removes old and damaged red blood cells and recycles their iron, and helps fight infection (especially bacteria with capsules) using its white pulp. It also stores some blood cells and platelets.",
+    "mnemonic": "The 1-3-5-7-9-11 rule: about 1 by 3 by 5 inches, weighs about 7 ounces, and lies under ribs 9 to 11.",
+    "clinical": "It can rupture after a blow to the left lower ribs, causing serious internal bleeding. After removal (splenectomy) people have a higher risk of severe infection and need extra vaccinations.",
+    "hint": "A fist-sized, purple lymphoid organ tucked under the left lower ribs behind the digestive sac, touched by the tail of the pancreas."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What is a main function of the spleen?",
+     "options": [
+      "Making bile",
+      "Absorbing fats",
+      "Removing old red blood cells from the blood",
+      "Producing insulin"
+     ],
+     "answer": 2,
+     "explanation": "The spleen filters blood and removes old or damaged red blood cells."
+    },
+    {
+     "kind": "clinical",
+     "text": "Why is the spleen at risk in a blow to the left lower ribs?",
+     "options": [
+      "It lies under ribs 9 to 11 on the left and can rupture",
+      "It is in the pelvis",
+      "It is behind the right kidney",
+      "It is attached to the appendix"
+     ],
+     "answer": 0,
+     "explanation": "The spleen lies under the left 9th to 11th ribs and can rupture and bleed after trauma."
+    }
+   ]
+  }
+ ]
+}

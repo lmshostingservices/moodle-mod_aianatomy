@@ -1,0 +1,181 @@
+{{!
+    This file is part of Moodle - https://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+}}
+{{!
+    @template mod_aianatomy/report
+
+    Teacher report: summary figures, per-structure difficulty and attempt management.
+
+    Context variables required for this template:
+    * tabs - Report tabs (url, label, active).
+    * modes - Mode switch (url, label, active).
+    * groupmenu - Rendered group selector HTML (may be empty).
+    * kpis - Summary figures (label, value).
+    * parts - Per-part tab data, or false.
+    * attempts - Attempts tab data, or false.
+
+    Example context (json):
+    {
+        "tabs": [{"url": "#", "label": "Structure difficulty", "active": true}, {"url": "#", "label": "Attempts", "active": false}],
+        "modes": [{"url": "#", "label": "Test", "active": true}, {"url": "#", "label": "Practice", "active": false}],
+        "groupmenu": "",
+        "kpis": [{"label": "Students", "value": "2"}, {"label": "Average score", "value": "62.9%"}],
+        "parts": {
+            "help": "The percentage of responses that were wrong for each part.",
+            "test": true,
+            "groups": [{
+                "title": "Carpal bones",
+                "rows": [
+                    {"num": 1, "name": "Scaphoid", "color": "#6366F1", "responses": 5, "hasdata": true, "quiz": false, "difficult": 1,
+                     "wrong": {"pct": 20, "label": 20, "class": ""},
+                     "studentswrong": {"pct": 50, "label": 50, "class": " is-mid"}, "studentsof": "1 of 2 students",
+                     "blank": 0, "confused": "Lunate (1)"},
+                    {"num": 2, "name": "Lunate", "color": "#0EA5E9", "responses": 0, "hasdata": false, "quiz": false, "difficult": 0}
+                ]
+            }]
+        },
+        "attempts": false
+    }
+}}
+<div class="aa-report">
+    <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center">
+        <div class="aa-tabs">
+            {{#tabs}}<a href="{{{url}}}" class="{{#active}}is-on{{/active}}"{{#active}} aria-current="page"{{/active}}>{{label}}</a>{{/tabs}}
+        </div>
+        <div class="aa-tabs">
+            {{#modes}}<a href="{{{url}}}" class="{{#active}}is-on{{/active}}"{{#active}} aria-current="page"{{/active}}>{{label}}</a>{{/modes}}
+        </div>
+    </div>
+    {{{groupmenu}}}
+    <div class="aa-kpis">
+        {{#kpis}}
+        <div class="aa-kpi"><span>{{label}}</span><strong>{{value}}</strong></div>
+        {{/kpis}}
+    </div>
+
+    {{#parts}}
+    <h3>{{#str}} reportparts, mod_aianatomy {{/str}}</h3>
+    <div class="aa-help">{{help}}</div>
+    {{#groups}}
+    <h3>{{{title}}}</h3>
+    <div class="table-responsive">
+        <table class="aa-table generaltable">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">{{#str}} structure, mod_aianatomy {{/str}}</th>
+                    <th scope="col">{{#str}} responses, mod_aianatomy {{/str}}</th>
+                    {{#test}}
+                    <th scope="col">{{#str}} pctwrong, mod_aianatomy {{/str}}</th>
+                    <th scope="col">{{#str}} pctstudentswrong, mod_aianatomy {{/str}}</th>
+                    <th scope="col">{{#str}} leftblank, mod_aianatomy {{/str}}</th>
+                    <th scope="col">{{#str}} mostconfused, mod_aianatomy {{/str}}</th>
+                    {{/test}}
+                    {{^test}}
+                    <th scope="col">{{#str}} firsttry, mod_aianatomy {{/str}}</th>
+                    <th scope="col">{{#str}} avgtries, mod_aianatomy {{/str}}</th>
+                    <th scope="col">{{#str}} maxtries, mod_aianatomy {{/str}}</th>
+                    {{/test}}
+                    <th scope="col">{{#str}} quizcorrect, mod_aianatomy {{/str}}</th>
+                    <th scope="col">{{#str}} studentsdifficult, mod_aianatomy {{/str}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#rows}}
+                <tr>
+                    <td>{{num}}</td>
+                    <td><span class="aa-dotcolor" style="background: {{color}}"></span>{{{name}}}</td>
+                    <td>{{responses}}</td>
+                    {{#hasdata}}
+                    {{#test}}
+                    <td>{{#wrong}}{{> mod_aianatomy/report_bar }}{{/wrong}}</td>
+                    <td>{{#studentswrong}}{{> mod_aianatomy/report_bar }}{{/studentswrong}}<div class="aa-mini">{{studentsof}}</div></td>
+                    <td>{{blank}}</td>
+                    <td>{{{confused}}}</td>
+                    {{/test}}
+                    {{^test}}
+                    <td>{{#firsttry}}{{> mod_aianatomy/report_bar }}{{/firsttry}}</td>
+                    <td>{{avgtries}}</td>
+                    <td>{{maxtries}}</td>
+                    {{/test}}
+                    {{/hasdata}}
+                    {{^hasdata}}
+                    <td>-</td><td>-</td><td>-</td>{{#test}}<td>-</td>{{/test}}
+                    {{/hasdata}}
+                    <td>{{#quiz}}{{> mod_aianatomy/report_bar }}{{/quiz}}{{^quiz}}-{{/quiz}}</td>
+                    <td>{{difficult}}</td>
+                </tr>
+                {{/rows}}
+            </tbody>
+        </table>
+    </div>
+    {{/groups}}
+    {{/parts}}
+
+    {{#attempts}}
+    <h3>{{#str}} reportattempts, mod_aianatomy {{/str}}</h3>
+    {{#regradebutton}}<div class="aa-report-actions">{{{regradebutton}}}</div>{{/regradebutton}}
+    {{^rows}}{{{noattempts}}}{{/rows}}
+    {{#hasrows}}
+    {{{pagingbar}}}
+    <form method="post" action="{{{actionurl}}}">
+        <input type="hidden" name="sesskey" value="{{sesskey}}">
+        <input type="hidden" name="action" value="delete">
+        <div class="table-responsive">
+            <table class="aa-table generaltable">
+                <thead>
+                    <tr>
+                        <th scope="col">{{#canmanage}}<input type="checkbox" value="1" data-action="toggle" data-toggle="{{togglemaster}}" data-togglegroup="aa-attempts" aria-label="{{#str}} selectall {{/str}}">{{/canmanage}}</th>
+                        <th scope="col">{{#str}} fullname {{/str}}</th>
+                        {{#identityheads}}<th scope="col">{{.}}</th>{{/identityheads}}
+                        <th scope="col">{{#str}} attempt, mod_aianatomy {{/str}}</th>
+                        <th scope="col">{{#str}} state, mod_aianatomy {{/str}}</th>
+                        <th scope="col">{{#str}} started, mod_aianatomy {{/str}}</th>
+                        <th scope="col">{{#str}} duration, mod_aianatomy {{/str}}</th>
+                        <th scope="col">{{#str}} identification, mod_aianatomy {{/str}}</th>
+                        <th scope="col">{{#str}} questions, mod_aianatomy {{/str}}</th>
+                        <th scope="col">{{#str}} percentage, grades {{/str}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#rows}}
+                    <tr>
+                        <td>{{#canmanage}}<input type="checkbox" name="attemptids[]" value="{{id}}" data-action="toggle" data-toggle="{{toggletarget}}" data-togglegroup="aa-attempts" aria-label="{{fullname}}">{{/canmanage}}</td>
+                        <td><a href="{{{profileurl}}}">{{fullname}}</a></td>
+                        {{#identity}}<td>{{.}}</td>{{/identity}}
+                        <td><span class="aa-pill is-{{mode}}">{{modename}} #{{attempt}}</span></td>
+                        <td>{{state}}</td>
+                        <td>{{started}}</td>
+                        <td>{{duration}}</td>
+                        <td>{{ident}}</td>
+                        <td>{{quiz}}</td>
+                        <td>{{#grade}}{{> mod_aianatomy/report_bar }}{{/grade}}{{^grade}}-{{/grade}}</td>
+                    </tr>
+                    {{/rows}}
+                </tbody>
+            </table>
+        </div>
+        {{#canmanage}}
+        <button type="submit" class="aa-btn aa-btn-danger mt-2" data-modal="confirmation" data-modal-type="delete"
+            data-modal-title-str='["delete", "core"]' data-modal-content-str='["confirmdeleteattempts", "mod_aianatomy"]'
+            data-modal-yes-button-str='["delete", "core"]'>{{#str}} deleteselected, mod_aianatomy {{/str}}</button>
+        {{/canmanage}}
+    </form>
+    {{{pagingbar}}}
+    {{{download}}}
+    {{/hasrows}}
+    {{/attempts}}
+</div>

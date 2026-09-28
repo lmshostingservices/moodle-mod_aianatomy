@@ -1,0 +1,18 @@
+Brain - 3D model attribution
+
+BodyParts3D, (c) The Database Center for Life Science, licensed under
+Creative Commons Attribution-Share Alike 2.1 Japan (CC BY-SA 2.1 JP).
+https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en
+Source: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/ (version 3.0, 20110915),
+via the STL mirror https://github.com/Kevin-Mattheus-Moerman/BodyParts3D
+Citation: Mitsuhashi N, et al. BodyParts3D: 3D structure database for anatomical concepts.
+Nucleic Acids Res. 2009;37:D782-5. doi:10.1093/nar/gkn613
+
+Modifications: converted from STL to glTF binary (GLB); vertices welded; meshes simplified
+(quadric decimation) for web delivery; normals recomputed; axes converted and recentred; some
+structures merged from several source meshes or split into connected components.
+The modified model (model.glb) is distributed under the same licence, CC BY-SA 2.1 JP.
+
+Teaching content (pack.json names, content and questions) is part of AI Anatomy (GPL v3 or later).
+
+Source meshes (FMA IDs): BP49, BP50, FMA13889, FMA258714, FMA258716, FMA61993nsn, FMA62004, FMA62008nsn, FMA62033, FMA62045, FMA67943, FMA67944, FMA72653, FMA72654, FMA72655, FMA72656, FMA72661, FMA72662, FMA72665, FMA72666, FMA72667, FMA72668, FMA72669, FMA72670, FMA72685, FMA72686, FMA72687, FMA72688, FMA72689, FMA72690, FMA72705, FMA72706, FMA72714, FMA72717, FMA72718, FMA72800, FMA72801, FMA72804, FMA72805, FMA72827, FMA72829, FMA72831, FMA72833, FMA72925, FMA72975, FMA72976, FMA72977, FMA72978, FMA78449, FMA78450, FMA78454, FMA78467, FMA78469, FMA86464

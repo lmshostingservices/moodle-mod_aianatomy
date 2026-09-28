@@ -1,0 +1,2531 @@
+{
+ "id": "thoracic_cage",
+ "version": "1.0.0",
+ "name": "Thoracic cage (ribs and sternum)",
+ "description": "The sternum (manubrium, body, xiphoid process), 12 pairs of ribs and the costal cartilages.",
+ "system": "skeletal",
+ "region": "thorax",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "thorax",
+ "rootframe": [
+  "sternum",
+  "ribs_right",
+  "ribs_left",
+  "costal_cartilages"
+ ],
+ "defaultgroups": [
+  "sternum",
+  "ribs_right",
+  "ribs_left",
+  "costal_cartilages"
+ ],
+ "presets": [
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "lateral",
+   "label": "Right lateral",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "superior",
+   "label": "Superior",
+   "dir": [
+    0,
+    1,
+    0.001
+   ],
+   "up": [
+    0,
+    0,
+    1
+   ]
+  }
+ ],
+ "defaultpreset": "anterior",
+ "tissue": false,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "thorax",
+   "label": "Thoracic cage",
+   "parent": null,
+   "tip": "Think of the thoracic cage as a birdcage: sternum in front, 12 pairs of ribs curving round, and flexible costal cartilages linking them so the cage can expand with each breath."
+  },
+  {
+   "id": "sternum",
+   "label": "Sternum",
+   "parent": "thorax",
+   "tip": "The sternum is shaped like a sword: manubrium (handle), body (blade) and xiphoid process (tip). The sternal angle between handle and blade marks the second rib."
+  },
+  {
+   "id": "ribs_right",
+   "label": "Ribs (right)",
+   "parent": "thorax",
+   "tip": "Remember 7-3-2: seven true ribs (own cartilage to sternum), three false ribs (8-10, join the cartilage above) and two floating ribs (11-12, free front ends)."
+  },
+  {
+   "id": "ribs_left",
+   "label": "Ribs (left)",
+   "parent": "thorax",
+   "tip": "Count ribs from the sternal angle: slide sideways onto the second costal cartilage, then count down the ribs and the spaces between them."
+  },
+  {
+   "id": "costal_cartilages",
+   "label": "Costal cartilages",
+   "parent": "thorax",
+   "tip": "Cartilages 1-7 reach the sternum directly (1 by a fixed synchondrosis, 2-7 by small synovial joints); cartilages 8-10 join the one above to form the costal margin."
+  }
+ ],
+ "structures": [
+  {
+   "id": "skeletal_thorax_manubrium",
+   "concept": "manubrium",
+   "node": "s0",
+   "type": "bone",
+   "side": "midline",
+   "group": "sternum",
+   "names": {
+    "preferred": "Manubrium of sternum",
+    "latin": "Manubrium sterni",
+    "synonyms": [
+     "Manubrium"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7486"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_1"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_1"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_2"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "mah-NOO-bree-um",
+    "origin": "Latin manubrium, \"handle\". It is the handle of the sword-shaped sternum.",
+    "location": "The uppermost part of the sternum, at the front and centre of the upper chest, just below the base of the neck.",
+    "description": "A roughly four-sided flat bone. Its upper border has the jugular (suprasternal) notch, with a clavicular notch on each side; the first costal cartilages join its sides and the second join at its lower corners.",
+    "function": "Anchors the clavicles at the sternoclavicular joints (the only bony link between the upper limb and the trunk) and the first and second costal cartilages. It joins the body of the sternum at the manubriosternal joint.",
+    "mnemonic": "Manubrium = handle: the sword is held at the top.",
+    "clinical": "The manubriosternal joint forms a palpable ridge, the sternal angle (angle of Louis). The second costal cartilage joins here, so it is the starting point for counting ribs and intercostal spaces.",
+    "hint": "The top, handle-shaped part of the breastbone, with a notch you can feel at the base of the throat."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Which part of the sternum has the jugular (suprasternal) notch on its upper border?",
+     "options": [
+      "Body of sternum",
+      "Manubrium",
+      "Xiphoid process",
+      "Seventh costal cartilage"
+     ],
+     "answer": 1,
+     "explanation": "The jugular notch is the dip on the upper border of the manubrium."
+    },
+    {
+     "kind": "relationship",
+     "text": "The sternal angle marks the joint between the manubrium and which structure?",
+     "options": [
+      "Tenth costal cartilage",
+      "Xiphoid process",
+      "First costal cartilage",
+      "Body of sternum"
+     ],
+     "answer": 3,
+     "explanation": "The sternal angle is the manubriosternal joint, where the manubrium meets the body of the sternum."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_sternal_body",
+   "concept": "body",
+   "node": "s1",
+   "type": "bone",
+   "side": "midline",
+   "group": "sternum",
+   "names": {
+    "preferred": "Body of sternum",
+    "latin": "Corpus sterni",
+    "synonyms": [
+     "Sternal body",
+     "Gladiolus"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7487"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_manubrium"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_xiphoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_2"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_2"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_3"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_3"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_4"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_4"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_5"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_5"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_6"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_6"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_7"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_7"
+    }
+   ],
+   "content": {
+    "pronunciation": "BOD-ee of STER-num",
+    "origin": "Sternum is from Greek sternon, \"chest\". The body is also called the gladiolus, Latin for \"small sword\".",
+    "location": "The middle and longest part of the sternum, in the midline of the front of the chest, between the manubrium above and the xiphoid process below.",
+    "description": "A long, flat bone formed by fusion of four segments (sternebrae). Each side edge has notches for the costal cartilages: half of the second, and the third to seventh.",
+    "function": "Forms the front centre of the thoracic cage, protects the heart, and anchors costal cartilages 2 to 7 so the true ribs are joined directly to the sternum.",
+    "mnemonic": "The blade of the sword: long and flat, with the rib cartilages lined up down its edges.",
+    "clinical": "CPR chest compressions are given on the lower half of the sternum. Heart surgery is often done through a median sternotomy, a cut down the length of the sternum.",
+    "hint": "The long flat middle section of the breastbone, where most of the upper rib cartilages attach."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which costal cartilages join the body of the sternum?",
+     "options": [
+      "Second (in part) to seventh",
+      "First only",
+      "Eighth to tenth",
+      "Eleventh and twelfth"
+     ],
+     "answer": 0,
+     "explanation": "The body has notches for half of the second and all of the third to seventh costal cartilages."
+    },
+    {
+     "kind": "clinical",
+     "text": "Where on the sternum are CPR chest compressions given?",
+     "options": [
+      "On the jugular notch",
+      "On the manubrium",
+      "On the lower half of the sternum",
+      "On the xiphoid process tip"
+     ],
+     "answer": 2,
+     "explanation": "Compressions are given over the lower half of the sternum, above the xiphoid process."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_xiphoid",
+   "concept": "xiphoid",
+   "node": "s2",
+   "type": "bone",
+   "side": "midline",
+   "group": "sternum",
+   "names": {
+    "preferred": "Xiphoid process",
+    "latin": "Processus xiphoideus",
+    "synonyms": [
+     "Xiphisternum",
+     "Xiphoid"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7488"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_costal_cartilage_7"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_costal_cartilage_7"
+    }
+   ],
+   "content": {
+    "pronunciation": "ZY-foyd PROH-ses",
+    "origin": "Greek xiphos, \"sword\", and -oid, \"like\": the sword-shaped tip.",
+    "location": "The small lower tip of the sternum, in the midline at the top of the abdomen, between the lower costal margins.",
+    "description": "The smallest and most variable part of the sternum. It is cartilage in young people and usually ossifies in adults; it may be pointed, split or have a hole.",
+    "function": "Provides attachment for the diaphragm and the linea alba and abdominal muscles. It joins the body of the sternum at the xiphisternal joint.",
+    "mnemonic": "Xiphoid = sword tip: the point at the bottom of the sternum sword.",
+    "clinical": "Hands must stay above the xiphoid during CPR, because pressing on it can break it and injure the liver underneath.",
+    "hint": "The small pointed tip at the very bottom of the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Why should CPR hand position stay above the xiphoid process?",
+     "options": [
+      "It holds the heart valves",
+      "Pressing it may break it and injure the liver",
+      "It contains the sternal angle",
+      "It is where the first rib joins"
+     ],
+     "answer": 1,
+     "explanation": "The xiphoid can fracture and be pushed into the liver below."
+    },
+    {
+     "kind": "terminology",
+     "text": "What does xiphoid mean?",
+     "options": [
+      "Handle-like",
+      "Key-shaped",
+      "Rib-like",
+      "Sword-like"
+     ],
+     "answer": 3,
+     "explanation": "From Greek xiphos, sword, plus -oid, like."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_1",
+   "concept": "rib_1",
+   "node": "s3",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "First rib (right)",
+    "latin": "Costa prima [I]",
+    "synonyms": [
+     "Rib 1"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7857"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_costal_cartilage_1"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\"; prima, \"first\". A true rib that reaches the sternum with its own cartilage.",
+    "location": "Right side. The highest and most curved rib, lying mostly under the clavicle at the top of the chest, curving around the upper opening of the thorax. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "The shortest, broadest and most curved rib, flattened with upper and lower surfaces. Its head has a single facet, and its upper surface has the scalene tubercle with grooves for the subclavian vein in front and the subclavian artery behind.",
+    "function": "A true rib: its short costal cartilage joins the manubrium directly. It forms the rim of the superior thoracic aperture (thoracic inlet) and gives attachment to scalenus anterior and scalenus medius.",
+    "mnemonic": "Rib 1 is the flat, tight hoop around the top of the chest: shortest and most curved.",
+    "clinical": "Because it is short and well protected, a fractured first rib signals high-energy trauma, and nearby vessels and the brachial plexus may be injured. An extra cervical rib above it can cause thoracic outlet syndrome.",
+    "hint": "The short, flat, tightly curved hoop at the very top of the rib cage, tucked under the collarbone."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The costal cartilage of the first rib joins which part of the sternum?",
+     "options": [
+      "Manubrium",
+      "Xiphoid process",
+      "Body of sternum",
+      "Seventh costal cartilage"
+     ],
+     "answer": 0,
+     "explanation": "The first costal cartilage joins the manubrium directly."
+    },
+    {
+     "kind": "location",
+     "text": "Which rib is the shortest, broadest and most curved?",
+     "options": [
+      "Seventh rib",
+      "Second rib",
+      "First rib",
+      "Twelfth rib"
+     ],
+     "answer": 2,
+     "explanation": "The first rib is short, broad, flat and tightly curved around the top of the thorax."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_2",
+   "concept": "rib_2",
+   "node": "s4",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Second rib (right)",
+    "latin": "Costa secunda [II]",
+    "synonyms": [
+     "Rib 2"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7882"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_costal_cartilage_2"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_1"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_3"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Right side. The second rib from the top, below the first rib. Its costal cartilage reaches the sternum at the level of the sternal angle. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "Thinner, longer and less curved than the first rib. Its outer surface has a rough tuberosity for serratus anterior.",
+    "function": "A true rib. Its costal cartilage joins the sternum at the sternal angle, touching both the manubrium and the body. It gives origin to part of serratus anterior.",
+    "mnemonic": "Second rib, sternal angle: feel the ridge, slide sideways, and you are on rib 2.",
+    "clinical": "The second rib is found by feeling the sternal angle, making it the reference point for counting ribs. The space below it (2nd intercostal space) is a classic landmark, for example for needle decompression of a tension pneumothorax in the midclavicular line.",
+    "hint": "The rib whose cartilage meets the breastbone at the palpable ridge between its top and middle parts."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Feeling sideways from the sternal angle leads you to which rib's cartilage?",
+     "options": [
+      "First",
+      "Second",
+      "Fourth",
+      "Seventh"
+     ],
+     "answer": 1,
+     "explanation": "The second costal cartilage joins the sternum at the sternal angle."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_3",
+   "concept": "rib_3",
+   "node": "s5",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Third rib (right)",
+    "latin": "Costa tertia [III]",
+    "synonyms": [
+     "Rib 3"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7909"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_costal_cartilage_3"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_2"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_4"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Right side. The third rib from the top, in the upper chest below the second rib. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
+    "function": "A true rib: its own costal cartilage joins the body of the sternum. Like other ribs, it helps protect the heart and lungs and moves up and out during breathing to enlarge the chest.",
+    "mnemonic": "True ribs 1 to 7 go \"straight to the sternum\" with their own cartilage.",
+    "clinical": "The intercostal vein, artery and nerve (VAN, from top to bottom) run in the costal groove under each rib, so needles are passed just above the rib below, not under the rib above.",
+    "hint": "A typical upper true rib, two below the top one, joining the middle section of the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What runs in the costal groove on the lower inner edge of a typical rib such as the third?",
+     "options": [
+      "The phrenic nerve",
+      "The internal jugular vein",
+      "The subclavian artery",
+      "The intercostal vein, artery and nerve"
+     ],
+     "answer": 3,
+     "explanation": "The intercostal neurovascular bundle (VAN) lies in the costal groove."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_4",
+   "concept": "rib_4",
+   "node": "s6",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Fourth rib (right)",
+    "latin": "Costa quarta [IV]",
+    "synonyms": [
+     "Rib 4"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7957"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_costal_cartilage_4"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_3"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_5"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Right side. The fourth rib from the top, in the upper-middle chest. In males the nipple usually lies near the 4th intercostal space, just below it. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
+    "function": "A true rib: its costal cartilage joins the body of the sternum. It is part of the cage protecting the heart and lungs and moves with breathing.",
+    "mnemonic": "4 and 4: ECG leads V1 and V2 go in the 4th intercostal space.",
+    "clinical": "ECG lead V1 is placed in the 4th intercostal space (just below this rib) at the right sternal border.",
+    "hint": "The true rib whose space below is used for the first two chest ECG electrodes beside the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "ECG lead V1 is placed in which intercostal space at the right sternal border?",
+     "options": [
+      "4th",
+      "3rd",
+      "2nd",
+      "6th"
+     ],
+     "answer": 0,
+     "explanation": "V1 goes in the 4th intercostal space, just below the fourth rib, at the right sternal border."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_5",
+   "concept": "rib_5",
+   "node": "s7",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Fifth rib (right)",
+    "latin": "Costa quinta [V]",
+    "synonyms": [
+     "Rib 5"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8066"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_costal_cartilage_5"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_4"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_6"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Right side. The fifth rib from the top, in the middle of the chest, roughly at the level of the lower part of the heart. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
+    "function": "A true rib: its costal cartilage joins the body of the sternum. Middle ribs like this one take the most force from chest impacts.",
+    "mnemonic": "Fifth space, midclavicular line: think \"high five\" for the heartbeat on the left.",
+    "clinical": "The middle ribs are the most often fractured. If several neighbouring ribs break in two places, a flail segment can move in with breathing (flail chest).",
+    "hint": "A mid-chest true rib, one above the rib that chest drains pass over, in the zone most often broken in chest injuries."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "If several neighbouring ribs break in two places and the segment moves in with breathing, this is called what?",
+     "options": [
+      "Pectus excavatum",
+      "Costochondritis",
+      "Flail chest",
+      "Thoracic outlet syndrome"
+     ],
+     "answer": 2,
+     "explanation": "A flail segment moves paradoxically with breathing: flail chest."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_6",
+   "concept": "rib_6",
+   "node": "s8",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Sixth rib (right)",
+    "latin": "Costa sexta [VI]",
+    "synonyms": [
+     "Rib 6"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8175"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_costal_cartilage_6"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_5"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_7"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Right side. The sixth rib from the top, in the lower chest; its cartilage reaches the lower body of the sternum. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
+    "function": "A true rib: its costal cartilage joins the lower body of the sternum. It also gives attachment to the diaphragm and upper abdominal wall muscles near the front.",
+    "mnemonic": "Triangle of safety: go in above rib 6, in the 5th space, in the mid-axillary line.",
+    "clinical": "Chest drains are placed in the triangle of safety, usually in the 5th intercostal space in the mid-axillary line, passing over the upper border of the sixth rib to avoid the neurovascular bundle.",
+    "hint": "The second-lowest true rib; drains in the side of the chest are passed over its upper border."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "A chest drain in the triangle of safety is passed over the upper border of which rib?",
+     "options": [
+      "Second",
+      "Sixth",
+      "Fourth",
+      "Twelfth"
+     ],
+     "answer": 1,
+     "explanation": "The drain goes through the 5th intercostal space over the upper border of the sixth rib, avoiding the bundle under the fifth."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_7",
+   "concept": "rib_7",
+   "node": "s9",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Seventh rib (right)",
+    "latin": "Costa septima [VII]",
+    "synonyms": [
+     "Rib 7",
+     "Last true rib"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8229"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_costal_cartilage_7"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_6"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_8"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Right side. The seventh rib from the top and the lowest true rib. Its cartilage curves up to the sternum near the xiphisternal joint. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Ribs lengthen from the first to the seventh, so it is usually the longest rib.",
+    "function": "The last true rib: its own costal cartilage reaches the sternum near the junction of the body and xiphoid process. Its cartilage forms the top of the costal margin.",
+    "mnemonic": "7 - 3 - 2: seven true ribs, three false, two floating. Rib 7 is the last of the seven true ribs.",
+    "clinical": "The seventh costal cartilage starts the costal margin, which is traced from the xiphoid down and out when examining the upper abdomen.",
+    "hint": "The lowest and usually longest rib that still has its own cartilage reaching the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Rib 7 is described as which type of rib?",
+     "options": [
+      "False rib",
+      "Floating rib",
+      "Atypical rib with no cartilage",
+      "The last true rib"
+     ],
+     "answer": 3,
+     "explanation": "Ribs 1 to 7 are true ribs; the seventh is the last one with its own cartilage reaching the sternum."
+    },
+    {
+     "kind": "location",
+     "text": "Which rib is usually the longest?",
+     "options": [
+      "Seventh",
+      "Fourth",
+      "First",
+      "Twelfth"
+     ],
+     "answer": 0,
+     "explanation": "Ribs increase in length from 1 to 7, then get shorter."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_8",
+   "concept": "rib_8",
+   "node": "s10",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Eighth rib (right)",
+    "latin": "Costa octava [VIII]",
+    "synonyms": [
+     "Rib 8"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8283"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_costal_cartilage_8_10"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_7"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_9"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
+    "location": "Right side. The eighth rib from the top and the first false rib, in the lower chest; its front end continues into cartilage that joins the seventh costal cartilage. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Its front end turns into cartilage that angles upwards.",
+    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. The lower ribs also protect upper abdominal organs such as the liver and spleen.",
+    "mnemonic": "False ribs 8, 9 and 10 \"borrow\" the cartilage above to reach the sternum.",
+    "clinical": "Fractures of the lower right ribs can injure the liver underneath.",
+    "hint": "The first rib whose cartilage does not reach the breastbone, joining the cartilage above instead."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The costal cartilage of the eighth rib joins what?",
+     "options": [
+      "The manubrium",
+      "The xiphoid process only",
+      "The seventh costal cartilage",
+      "Nothing - it floats free"
+     ],
+     "answer": 2,
+     "explanation": "False ribs join the cartilage above; the eighth joins the seventh."
+    },
+    {
+     "kind": "terminology",
+     "text": "Ribs 8, 9 and 10 are called what?",
+     "options": [
+      "True ribs",
+      "False ribs",
+      "Floating ribs",
+      "Cervical ribs"
+     ],
+     "answer": 1,
+     "explanation": "Their cartilages reach the sternum only indirectly, so they are false (vertebrochondral) ribs."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_9",
+   "concept": "rib_9",
+   "node": "s11",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Ninth rib (right)",
+    "latin": "Costa nona [IX]",
+    "synonyms": [
+     "Rib 9"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8364"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_costal_cartilage_8_10"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_8"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_10"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
+    "location": "Right side. The ninth rib from the top, a false rib in the lower chest, over the upper abdominal organs. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Its cartilage joins the eighth costal cartilage.",
+    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. It also guards the liver on the right and the spleen on the left.",
+    "mnemonic": "7 - 3 - 2: rib 9 is in the middle of the three false ribs.",
+    "clinical": "Fractures of the right lower ribs (roughly 8 to 11) can tear the liver, causing internal haemorrhage.",
+    "hint": "The middle one of the three lower ribs whose cartilage joins the cartilage above."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Fractures of the left 9th to 11th ribs are especially dangerous because they may injure which organ?",
+     "options": [
+      "Liver",
+      "Oesophagus",
+      "Heart",
+      "Spleen"
+     ],
+     "answer": 3,
+     "explanation": "The spleen lies under the left 9th to 11th ribs."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_10",
+   "concept": "rib_10",
+   "node": "s12",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Tenth rib (right)",
+    "latin": "Costa decima [X]",
+    "synonyms": [
+     "Rib 10"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8445"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_costal_cartilage_8_10"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_9"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_11"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
+    "location": "Right side. The tenth rib from the top, the lowest false rib; its cartilage forms the lowest part of the costal margin at the side of the upper abdomen. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "An atypical rib: like ribs 1, 11 and 12, its head usually has only one facet for a single vertebra. Its cartilage joins the ninth costal cartilage.",
+    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. The lowest point of the costal margin, at the tenth costal cartilage, is a landmark for the upper abdomen.",
+    "mnemonic": "Ten is the end: rib 10 is the last false rib before the two floating ribs.",
+    "clinical": "The lowest point of the costal margin, at the tenth costal cartilage, is used as a landmark for dividing the abdomen into regions (subcostal plane).",
+    "hint": "The lowest rib whose cartilage still joins the costal margin; below it are only the free-ended ribs."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Which is the lowest rib whose cartilage forms part of the costal margin?",
+     "options": [
+      "Tenth",
+      "Eighth",
+      "Seventh",
+      "Twelfth"
+     ],
+     "answer": 0,
+     "explanation": "The tenth is the lowest false rib; ribs 11 and 12 float free."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_11",
+   "concept": "rib_11",
+   "node": "s13",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Eleventh rib (right)",
+    "latin": "Costa undecima [XI]",
+    "synonyms": [
+     "Rib 11",
+     "Floating rib"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8531"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_10"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_12"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". A floating (vertebral) rib: its front end is free.",
+    "location": "Right side. The eleventh rib from the top, a short floating rib at the lower back and side of the chest. Its tip ends free in the muscles of the abdominal wall. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "An atypical rib: short, with a single facet on its head and no neck or tubercle. Its front tip is capped with a small piece of cartilage that does not join any other cartilage.",
+    "function": "A floating (free) rib: it has no attachment at the front. It protects the back of the kidney and gives attachment to the diaphragm and abdominal wall muscles.",
+    "mnemonic": "7 - 3 - 2: ribs 11 and 12 are the two floating ribs, their front ends float free.",
+    "clinical": "Fractures of the right lower ribs can injure the liver and right kidney.",
+    "hint": "The upper of the two short ribs whose front tips float free with no link to the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Why are ribs 11 and 12 called floating ribs?",
+     "options": [
+      "They have no bony head",
+      "They are made only of cartilage",
+      "Their front ends do not attach to the sternum or other cartilages",
+      "They move freely inside the lungs"
+     ],
+     "answer": 2,
+     "explanation": "Floating ribs end free in the abdominal wall with no front attachment."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_rib_12",
+   "concept": "rib_12",
+   "node": "s14",
+   "type": "bone",
+   "side": "right",
+   "group": "ribs_right",
+   "names": {
+    "preferred": "Twelfth rib (right)",
+    "latin": "Costa duodecima [XII]",
+    "synonyms": [
+     "Rib 12",
+     "Floating rib"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8533"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_right_rib_11"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". A floating (vertebral) rib: its front end is free.",
+    "location": "Right side. The lowest rib, at the back of the lower thorax, above the kidney. It is short and angles down and out; its tip ends free in the back muscles. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "An atypical rib: the shortest of the lower ribs (length varies a lot), with a single facet on its head and no neck or tubercle.",
+    "function": "A floating rib: it has no front attachment. It gives attachment to the diaphragm, quadratus lumborum and other back and abdominal wall muscles, and helps protect the kidney.",
+    "mnemonic": "Twelve at the bottom: the last and shortest floating rib, at kidney level.",
+    "clinical": "The kidney lies against the 12th rib, so it is a landmark for kidney surgery and biopsy, and the pleura can dip below it near the spine.",
+    "hint": "The lowest and shortest rib of the cage, lying behind the kidney with a free front tip."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The twelfth rib is an important landmark for which organ lying against it at the back?",
+     "options": [
+      "Spleen only",
+      "Kidney",
+      "Heart",
+      "Thyroid"
+     ],
+     "answer": 1,
+     "explanation": "The kidney lies against the twelfth rib at the back."
+    },
+    {
+     "kind": "location",
+     "text": "Which rib is the lowest in the thoracic cage?",
+     "options": [
+      "Tenth rib",
+      "Eleventh rib",
+      "Seventh rib",
+      "Twelfth rib"
+     ],
+     "answer": 3,
+     "explanation": "The twelfth rib is the lowest, a short floating rib."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_left_rib_1",
+   "concept": "rib_1",
+   "node": "s15",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "First rib (left)",
+    "latin": "Costa prima [I]",
+    "synonyms": [
+     "Rib 1"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7987"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_costal_cartilage_1"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\"; prima, \"first\". A true rib that reaches the sternum with its own cartilage.",
+    "location": "Left side. The highest and most curved rib, lying mostly under the clavicle at the top of the chest, curving around the upper opening of the thorax. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "The shortest, broadest and most curved rib, flattened with upper and lower surfaces. Its head has a single facet, and its upper surface has the scalene tubercle with grooves for the subclavian vein in front and the subclavian artery behind.",
+    "function": "A true rib: its short costal cartilage joins the manubrium directly. It forms the rim of the superior thoracic aperture (thoracic inlet) and gives attachment to scalenus anterior and scalenus medius.",
+    "mnemonic": "Rib 1 is the flat, tight hoop around the top of the chest: shortest and most curved.",
+    "clinical": "A fractured first rib signals high-energy trauma, with possible injury to the subclavian vessels and brachial plexus that cross it.",
+    "hint": "The short, flat, tightly curved hoop at the very top of the rib cage, tucked under the collarbone."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_2",
+   "concept": "rib_2",
+   "node": "s16",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Second rib (left)",
+    "latin": "Costa secunda [II]",
+    "synonyms": [
+     "Rib 2"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8012"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_costal_cartilage_2"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_1"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_3"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Left side. The second rib from the top, below the first rib. Its costal cartilage reaches the sternum at the level of the sternal angle. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "Thinner, longer and less curved than the first rib. Its outer surface has a rough tuberosity for serratus anterior.",
+    "function": "A true rib. Its costal cartilage joins the sternum at the sternal angle, touching both the manubrium and the body. It gives origin to part of serratus anterior.",
+    "mnemonic": "Second rib, sternal angle: feel the ridge, slide sideways, and you are on rib 2.",
+    "clinical": "Found from the sternal angle, the second rib is the reference point for counting ribs. The 2nd intercostal space at the left sternal edge is where the pulmonary valve is best heard.",
+    "hint": "The rib whose cartilage meets the breastbone at the palpable ridge between its top and middle parts."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_3",
+   "concept": "rib_3",
+   "node": "s17",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Third rib (left)",
+    "latin": "Costa tertia [III]",
+    "synonyms": [
+     "Rib 3"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8039"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_costal_cartilage_3"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_2"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_4"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Left side. The third rib from the top, in the upper chest below the second rib. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
+    "function": "A true rib: its own costal cartilage joins the body of the sternum. Like other ribs, it helps protect the heart and lungs and moves up and out during breathing to enlarge the chest.",
+    "mnemonic": "True ribs 1 to 7 go \"straight to the sternum\" with their own cartilage.",
+    "clinical": "The intercostal vein, artery and nerve run in the costal groove under each rib, so needles and drains are passed just above the upper border of a rib.",
+    "hint": "A typical upper true rib, two below the top one, joining the middle section of the breastbone."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_4",
+   "concept": "rib_4",
+   "node": "s18",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Fourth rib (left)",
+    "latin": "Costa quarta [IV]",
+    "synonyms": [
+     "Rib 4"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8148"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_costal_cartilage_4"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_3"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_5"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Left side. The fourth rib from the top, in the upper-middle chest. In males the nipple usually lies near the 4th intercostal space, just below it. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
+    "function": "A true rib: its costal cartilage joins the body of the sternum. It is part of the cage protecting the heart and lungs and moves with breathing.",
+    "mnemonic": "4 and 4: ECG leads V1 and V2 go in the 4th intercostal space.",
+    "clinical": "ECG lead V2 is placed in the 4th intercostal space (just below this rib) at the left sternal border.",
+    "hint": "The true rib whose space below is used for the first two chest ECG electrodes beside the breastbone."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_5",
+   "concept": "rib_5",
+   "node": "s19",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Fifth rib (left)",
+    "latin": "Costa quinta [V]",
+    "synonyms": [
+     "Rib 5"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8093"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_costal_cartilage_5"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_4"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_6"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Left side. The fifth rib from the top, in the middle of the chest, roughly at the level of the lower part of the heart. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
+    "function": "A true rib: its costal cartilage joins the body of the sternum. Middle ribs like this one take the most force from chest impacts.",
+    "mnemonic": "Fifth space, midclavicular line: think \"high five\" for the heartbeat on the left.",
+    "clinical": "The apex beat of the heart is normally felt in the left 5th intercostal space, midclavicular line, just below this rib; ECG lead V4 goes there too.",
+    "hint": "A mid-chest true rib, one above the rib that chest drains pass over, in the zone most often broken in chest injuries."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_6",
+   "concept": "rib_6",
+   "node": "s20",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Sixth rib (left)",
+    "latin": "Costa sexta [VI]",
+    "synonyms": [
+     "Rib 6"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8202"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_costal_cartilage_6"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_5"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_7"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Left side. The sixth rib from the top, in the lower chest; its cartilage reaches the lower body of the sternum. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
+    "function": "A true rib: its costal cartilage joins the lower body of the sternum. It also gives attachment to the diaphragm and upper abdominal wall muscles near the front.",
+    "mnemonic": "Triangle of safety: go in above rib 6, in the 5th space, in the mid-axillary line.",
+    "clinical": "Chest drains are placed in the triangle of safety, usually in the 5th intercostal space in the mid-axillary line, over the upper border of the sixth rib.",
+    "hint": "The second-lowest true rib; drains in the side of the chest are passed over its upper border."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_7",
+   "concept": "rib_7",
+   "node": "s21",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Seventh rib (left)",
+    "latin": "Costa septima [VII]",
+    "synonyms": [
+     "Rib 7",
+     "Last true rib"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8256"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_costal_cartilage_7"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_6"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_8"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
+    "location": "Left side. The seventh rib from the top and the lowest true rib. Its cartilage curves up to the sternum near the xiphisternal joint. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Ribs lengthen from the first to the seventh, so it is usually the longest rib.",
+    "function": "The last true rib: its own costal cartilage reaches the sternum near the junction of the body and xiphoid process. Its cartilage forms the top of the costal margin.",
+    "mnemonic": "7 - 3 - 2: seven true ribs, three false, two floating. Rib 7 is the last of the seven true ribs.",
+    "clinical": "The seventh costal cartilage starts the costal margin, which is traced from the xiphoid down and out when examining the upper abdomen.",
+    "hint": "The lowest and usually longest rib that still has its own cartilage reaching the breastbone."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_8",
+   "concept": "rib_8",
+   "node": "s22",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Eighth rib (left)",
+    "latin": "Costa octava [VIII]",
+    "synonyms": [
+     "Rib 8"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8310"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_costal_cartilage_8_10"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_7"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_9"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
+    "location": "Left side. The eighth rib from the top and the first false rib, in the lower chest; its front end continues into cartilage that joins the seventh costal cartilage. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Its front end turns into cartilage that angles upwards.",
+    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. The lower ribs also protect upper abdominal organs such as the liver and spleen.",
+    "mnemonic": "False ribs 8, 9 and 10 \"borrow\" the cartilage above to reach the sternum.",
+    "clinical": "Fractures of the lower left ribs can injure the spleen underneath.",
+    "hint": "The first rib whose cartilage does not reach the breastbone, joining the cartilage above instead."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_9",
+   "concept": "rib_9",
+   "node": "s23",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Ninth rib (left)",
+    "latin": "Costa nona [IX]",
+    "synonyms": [
+     "Rib 9"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8391"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_costal_cartilage_8_10"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_8"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_10"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
+    "location": "Left side. The ninth rib from the top, a false rib in the lower chest, over the upper abdominal organs. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Its cartilage joins the eighth costal cartilage.",
+    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. It also guards the liver on the right and the spleen on the left.",
+    "mnemonic": "7 - 3 - 2: rib 9 is in the middle of the three false ribs.",
+    "clinical": "The spleen lies under the left 9th to 11th ribs, so fractures there can rupture it and cause serious internal haemorrhage.",
+    "hint": "The middle one of the three lower ribs whose cartilage joins the cartilage above."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_10",
+   "concept": "rib_10",
+   "node": "s24",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Tenth rib (left)",
+    "latin": "Costa decima [X]",
+    "synonyms": [
+     "Rib 10"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8472"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_costal_cartilage_8_10"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_9"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_11"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
+    "location": "Left side. The tenth rib from the top, the lowest false rib; its cartilage forms the lowest part of the costal margin at the side of the upper abdomen. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "An atypical rib: like ribs 1, 11 and 12, its head usually has only one facet for a single vertebra. Its cartilage joins the ninth costal cartilage.",
+    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. The lowest point of the costal margin, at the tenth costal cartilage, is a landmark for the upper abdomen.",
+    "mnemonic": "Ten is the end: rib 10 is the last false rib before the two floating ribs.",
+    "clinical": "The lowest point of the costal margin, at the tenth costal cartilage, is used as a landmark for dividing the abdomen into regions (subcostal plane).",
+    "hint": "The lowest rib whose cartilage still joins the costal margin; below it are only the free-ended ribs."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_11",
+   "concept": "rib_11",
+   "node": "s25",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Eleventh rib (left)",
+    "latin": "Costa undecima [XI]",
+    "synonyms": [
+     "Rib 11",
+     "Floating rib"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8532"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_10"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_12"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". A floating (vertebral) rib: its front end is free.",
+    "location": "Left side. The eleventh rib from the top, a short floating rib at the lower back and side of the chest. Its tip ends free in the muscles of the abdominal wall. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "An atypical rib: short, with a single facet on its head and no neck or tubercle. Its front tip is capped with a small piece of cartilage that does not join any other cartilage.",
+    "function": "A floating (free) rib: it has no attachment at the front. It protects the back of the kidney and gives attachment to the diaphragm and abdominal wall muscles.",
+    "mnemonic": "7 - 3 - 2: ribs 11 and 12 are the two floating ribs, their front ends float free.",
+    "clinical": "Fractures of the left lower ribs can injure the spleen and left kidney.",
+    "hint": "The upper of the two short ribs whose front tips float free with no link to the breastbone."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_rib_12",
+   "concept": "rib_12",
+   "node": "s26",
+   "type": "bone",
+   "side": "left",
+   "group": "ribs_left",
+   "names": {
+    "preferred": "Twelfth rib (left)",
+    "latin": "Costa duodecima [XII]",
+    "synonyms": [
+     "Rib 12",
+     "Floating rib"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8534"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_left_rib_11"
+    }
+   ],
+   "content": {
+    "pronunciation": "RIB",
+    "origin": "Latin costa, \"rib\". A floating (vertebral) rib: its front end is free.",
+    "location": "Left side. The lowest rib, at the back of the lower thorax, above the kidney. It is short and angles down and out; its tip ends free in the back muscles. At the back it joins the thoracic vertebrae (not shown in this pack).",
+    "description": "An atypical rib: the shortest of the lower ribs (length varies a lot), with a single facet on its head and no neck or tubercle.",
+    "function": "A floating rib: it has no front attachment. It gives attachment to the diaphragm, quadratus lumborum and other back and abdominal wall muscles, and helps protect the kidney.",
+    "mnemonic": "Twelve at the bottom: the last and shortest floating rib, at kidney level.",
+    "clinical": "The kidney lies against the 12th rib, so it is a landmark for kidney surgery and biopsy, and the pleura can dip below it near the spine.",
+    "hint": "The lowest and shortest rib of the cage, lying behind the kidney with a free front tip."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_right_costal_cartilage_1",
+   "concept": "costal_cartilage_1",
+   "node": "s27",
+   "type": "cartilage",
+   "side": "right",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "First costal cartilage (right)",
+    "latin": "Cartilago costalis prima",
+    "synonyms": [
+     "Costal cartilage 1"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7875"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_manubrium"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_rib_1"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Right side. Joins the front end of the first rib to the side of the manubrium, just below the clavicle.",
+    "description": "A short, thick bar of hyaline cartilage. It is joined to the manubrium by a primary cartilaginous joint (synchondrosis) that allows no movement.",
+    "function": "Anchors the first rib firmly to the manubrium, giving a stable base for the thoracic inlet and the clavicle above.",
+    "mnemonic": "Cartilage 1 is \"fixed\": the only sternocostal joint that is not synovial.",
+    "clinical": "The first costal cartilage often calcifies with age, which can show on chest X-rays and be mistaken for a lung lesion.",
+    "hint": "The short, stiff cartilage bar joining the top rib to the handle of the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "How is the first costal cartilage joined to the manubrium?",
+     "options": [
+      "By a synchondrosis that allows no movement",
+      "By a synovial joint that glides freely",
+      "By a ligament only, with a gap",
+      "It does not reach the sternum"
+     ],
+     "answer": 0,
+     "explanation": "The first sternocostal joint is a primary cartilaginous joint (synchondrosis)."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_costal_cartilage_2",
+   "concept": "costal_cartilage_2",
+   "node": "s28",
+   "type": "cartilage",
+   "side": "right",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Second costal cartilage (right)",
+    "latin": "Cartilago costalis secunda",
+    "synonyms": [
+     "Costal cartilage 2"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7886"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_manubrium"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_rib_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Right side. Joins the front end of the second rib to the sternum at the sternal angle, where the manubrium meets the body.",
+    "description": "A bar of hyaline cartilage whose end fits into a notch shared by the lower manubrium and the upper body of the sternum, at a small synovial joint.",
+    "function": "Links the second rib to both the manubrium and the body of the sternum while allowing slight gliding for breathing.",
+    "mnemonic": "Two parts of the sternum for cartilage two.",
+    "clinical": "Being next to the sternal angle, it is the starting point for counting ribs. Costochondritis (painful inflamed costal cartilages) often affects the 2nd to 5th cartilages and can mimic heart pain.",
+    "hint": "The cartilage that meets the breastbone right at the ridge between its top and middle parts."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The second costal cartilage articulates with which parts of the sternum?",
+     "options": [
+      "Manubrium only",
+      "Body and xiphoid process",
+      "Manubrium and body",
+      "Xiphoid process only"
+     ],
+     "answer": 2,
+     "explanation": "It fits into a notch shared by the manubrium and body at the sternal angle."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_costal_cartilage_3",
+   "concept": "costal_cartilage_3",
+   "node": "s29",
+   "type": "cartilage",
+   "side": "right",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Third costal cartilage (right)",
+    "latin": "Cartilago costalis tertia",
+    "synonyms": [
+     "Costal cartilage 3"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7913"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_rib_3"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Right side. Joins the front end of the third rib to the side of the body of the sternum.",
+    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint. The cartilages get longer from the upper to the lower ribs.",
+    "function": "Connects the third rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
+    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
+    "clinical": "Costochondritis is painful inflammation of costal cartilages (often 2 to 5), causing tender chest wall pain that can be mistaken for heart pain.",
+    "hint": "The cartilage bar linking the third true rib to the middle section of the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The third costal cartilage joins which part of the sternum?",
+     "options": [
+      "Manubrium",
+      "Body of sternum",
+      "Xiphoid process",
+      "Eighth costal cartilage"
+     ],
+     "answer": 1,
+     "explanation": "Costal cartilages 3 to 6 join the body of the sternum."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_costal_cartilage_4",
+   "concept": "costal_cartilage_4",
+   "node": "s30",
+   "type": "cartilage",
+   "side": "right",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Fourth costal cartilage (right)",
+    "latin": "Cartilago costalis quarta",
+    "synonyms": [
+     "Costal cartilage 4"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7976"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_rib_4"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Right side. Joins the front end of the fourth rib to the side of the body of the sternum.",
+    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
+    "function": "Connects the fourth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
+    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
+    "clinical": "Costochondritis commonly affects the 2nd to 5th cartilages; pressing on the cartilage reproduces the pain, unlike most heart pain.",
+    "hint": "The cartilage bar on the rib whose space below is used for the first two ECG chest electrodes."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Chest wall pain that is reproduced by pressing on the upper costal cartilages suggests which condition?",
+     "options": [
+      "Flail chest",
+      "Thoracic outlet syndrome",
+      "Winged scapula",
+      "Costochondritis"
+     ],
+     "answer": 3,
+     "explanation": "Costochondritis is inflammation of the costal cartilages, tender to press."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_costal_cartilage_5",
+   "concept": "costal_cartilage_5",
+   "node": "s31",
+   "type": "cartilage",
+   "side": "right",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Fifth costal cartilage (right)",
+    "latin": "Cartilago costalis quinta",
+    "synonyms": [
+     "Costal cartilage 5"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8070"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_rib_5"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Right side. Joins the front end of the fifth rib to the side of the body of the sternum.",
+    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
+    "function": "Connects the fifth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
+    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
+    "clinical": "Costochondral separation (the rib pulling away from its cartilage) can follow a blow to the chest and does not show on a plain X-ray.",
+    "hint": "The cartilage bar linking the fifth rib to the middle section of the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What is the main mechanical benefit of the costal cartilages being made of cartilage rather than bone?",
+     "options": [
+      "Their flexibility lets the chest expand and absorb blows",
+      "They produce blood cells",
+      "They attach the clavicle",
+      "They house the intercostal nerves"
+     ],
+     "answer": 0,
+     "explanation": "Hyaline cartilage is flexible, so the cage can spring outwards and resist fracture."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_costal_cartilage_6",
+   "concept": "costal_cartilage_6",
+   "node": "s32",
+   "type": "cartilage",
+   "side": "right",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Sixth costal cartilage (right)",
+    "latin": "Cartilago costalis sexta",
+    "synonyms": [
+     "Costal cartilage 6"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8194"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_rib_6"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_7"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Right side. Joins the front end of the sixth rib to the side of the body of the sternum.",
+    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
+    "function": "Connects the sixth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
+    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
+    "clinical": "In CPR, the flexible cartilages let the sternum be pressed down; they may still fracture or separate, especially in older people whose cartilages have calcified.",
+    "hint": "The cartilage bar of the second-lowest true rib, joining the lower breastbone body."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which structure does the sixth costal cartilage join at the front?",
+     "options": [
+      "The seventh rib",
+      "The manubrium",
+      "The body of the sternum",
+      "The first costal cartilage"
+     ],
+     "answer": 2,
+     "explanation": "The sixth is a true rib, joined by its own cartilage to the body of the sternum."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_costal_cartilage_7",
+   "concept": "costal_cartilage_7",
+   "node": "s33",
+   "type": "cartilage",
+   "side": "right",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Seventh costal cartilage (right)",
+    "latin": "Cartilago costalis septima",
+    "synonyms": [
+     "Costal cartilage 7"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8248"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_rib_7"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_6"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_8_10"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_xiphoid"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Right side. Joins the front end of the seventh rib to the lower sternum near the xiphisternal joint, where the body of the sternum meets the xiphoid process.",
+    "description": "The longest cartilage that reaches the sternum. It curves upwards from the rib and joins the sternum at a small synovial joint; the cartilages below join its lower edge.",
+    "function": "Makes the seventh rib the last true rib. It forms the upper end of the costal margin and receives the eighth costal cartilage at an interchondral joint.",
+    "mnemonic": "Seven is the last to reach the sternum; everything below hangs on to seven.",
+    "clinical": "The costal margin begins at the seventh costal cartilage; the angle between the right and left margins at the xiphoid (the subcostal or infrasternal angle) is felt during abdominal examination.",
+    "hint": "The lowest cartilage bar that reaches the breastbone itself, near its pointed tip."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The eighth costal cartilage joins which structure?",
+     "options": [
+      "Manubrium",
+      "Seventh costal cartilage",
+      "First costal cartilage",
+      "Xiphoid process only"
+     ],
+     "answer": 1,
+     "explanation": "The eighth cartilage joins the lower edge of the seventh at an interchondral joint."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_right_costal_cartilage_8_10",
+   "concept": "costal_cartilage_8_10",
+   "node": "s34",
+   "type": "cartilage",
+   "side": "right",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Costal cartilages 8 to 10 (right)",
+    "latin": "Cartilagines costales VIII-X",
+    "synonyms": [
+     "Costal cartilages VIII-X"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "BP28"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_rib_8"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_rib_9"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_right_rib_10"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_right_costal_cartilage_7"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Right side. The lowest cartilages of the costal margin, running up and inwards from the front ends of ribs 8, 9 and 10 at the lower edge of the chest.",
+    "description": "In this model the 8th, 9th and 10th costal cartilages are shown as one piece. Each joins the cartilage above (8 to 7, 9 to 8, 10 to 9) instead of reaching the sternum.",
+    "function": "Link the false ribs indirectly to the sternum via the seventh costal cartilage and form most of the costal margin (arch), where abdominal muscles and the diaphragm attach.",
+    "mnemonic": "8, 9 and 10 climb the ladder: each holds the rung above to reach the sternum.",
+    "clinical": "Slipping rib syndrome occurs when the loose joints between these lower cartilages allow one to slip under the other, causing lower chest or upper abdominal pain.",
+    "hint": "The combined lower cartilage piece forming the edge of the rib cage above the abdomen, not reaching the breastbone."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "The curved edge formed by costal cartilages 7 to 10 is called what?",
+     "options": [
+      "Sternal angle",
+      "Superior thoracic aperture",
+      "Jugular notch",
+      "Costal margin"
+     ],
+     "answer": 3,
+     "explanation": "The joined lower cartilages form the costal margin (costal arch)."
+    },
+    {
+     "kind": "clinical",
+     "text": "Pain from a lower costal cartilage slipping under the one above is called what?",
+     "options": [
+      "Slipping rib syndrome",
+      "Costochondral separation",
+      "Flail chest",
+      "Colles fracture"
+     ],
+     "answer": 0,
+     "explanation": "Slipping rib syndrome involves the hypermobile joints between cartilages 8 to 10."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_thorax_left_costal_cartilage_1",
+   "concept": "costal_cartilage_1",
+   "node": "s35",
+   "type": "cartilage",
+   "side": "left",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "First costal cartilage (left)",
+    "latin": "Cartilago costalis prima",
+    "synonyms": [
+     "Costal cartilage 1"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8005"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_manubrium"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_rib_1"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Left side. Joins the front end of the first rib to the side of the manubrium, just below the clavicle.",
+    "description": "A short, thick bar of hyaline cartilage. It is joined to the manubrium by a primary cartilaginous joint (synchondrosis) that allows no movement.",
+    "function": "Anchors the first rib firmly to the manubrium, giving a stable base for the thoracic inlet and the clavicle above.",
+    "mnemonic": "Cartilage 1 is \"fixed\": the only sternocostal joint that is not synovial.",
+    "clinical": "The first costal cartilage often calcifies with age, which can show on chest X-rays and be mistaken for a lung lesion.",
+    "hint": "The short, stiff cartilage bar joining the top rib to the handle of the breastbone."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_costal_cartilage_2",
+   "concept": "costal_cartilage_2",
+   "node": "s36",
+   "type": "cartilage",
+   "side": "left",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Second costal cartilage (left)",
+    "latin": "Cartilago costalis secunda",
+    "synonyms": [
+     "Costal cartilage 2"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8031"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_manubrium"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_rib_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Left side. Joins the front end of the second rib to the sternum at the sternal angle, where the manubrium meets the body.",
+    "description": "A bar of hyaline cartilage whose end fits into a notch shared by the lower manubrium and the upper body of the sternum, at a small synovial joint.",
+    "function": "Links the second rib to both the manubrium and the body of the sternum while allowing slight gliding for breathing.",
+    "mnemonic": "Two parts of the sternum for cartilage two.",
+    "clinical": "Being next to the sternal angle, it is the starting point for counting ribs. Costochondritis (painful inflamed costal cartilages) often affects the 2nd to 5th cartilages and can mimic heart pain.",
+    "hint": "The cartilage that meets the breastbone right at the ridge between its top and middle parts."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_costal_cartilage_3",
+   "concept": "costal_cartilage_3",
+   "node": "s37",
+   "type": "cartilage",
+   "side": "left",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Third costal cartilage (left)",
+    "latin": "Cartilago costalis tertia",
+    "synonyms": [
+     "Costal cartilage 3"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8058"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_rib_3"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Left side. Joins the front end of the third rib to the side of the body of the sternum.",
+    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint. The cartilages get longer from the upper to the lower ribs.",
+    "function": "Connects the third rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
+    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
+    "clinical": "Costochondritis is painful inflammation of costal cartilages (often 2 to 5), causing tender chest wall pain that can be mistaken for heart pain.",
+    "hint": "The cartilage bar linking the third true rib to the middle section of the breastbone."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_costal_cartilage_4",
+   "concept": "costal_cartilage_4",
+   "node": "s38",
+   "type": "cartilage",
+   "side": "left",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Fourth costal cartilage (left)",
+    "latin": "Cartilago costalis quarta",
+    "synonyms": [
+     "Costal cartilage 4"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8167"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_rib_4"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Left side. Joins the front end of the fourth rib to the side of the body of the sternum.",
+    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
+    "function": "Connects the fourth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
+    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
+    "clinical": "Costochondritis commonly affects the 2nd to 5th cartilages; pressing on the cartilage reproduces the pain, unlike most heart pain.",
+    "hint": "The cartilage bar on the rib whose space below is used for the first two ECG chest electrodes."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_costal_cartilage_5",
+   "concept": "costal_cartilage_5",
+   "node": "s39",
+   "type": "cartilage",
+   "side": "left",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Fifth costal cartilage (left)",
+    "latin": "Cartilago costalis quinta",
+    "synonyms": [
+     "Costal cartilage 5"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8112"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_rib_5"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Left side. Joins the front end of the fifth rib to the side of the body of the sternum.",
+    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
+    "function": "Connects the fifth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
+    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
+    "clinical": "Costochondral separation (the rib pulling away from its cartilage) can follow a blow to the chest and does not show on a plain X-ray.",
+    "hint": "The cartilage bar linking the fifth rib to the middle section of the breastbone."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_costal_cartilage_6",
+   "concept": "costal_cartilage_6",
+   "node": "s40",
+   "type": "cartilage",
+   "side": "left",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Sixth costal cartilage (left)",
+    "latin": "Cartilago costalis sexta",
+    "synonyms": [
+     "Costal cartilage 6"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8221"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_rib_6"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_7"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Left side. Joins the front end of the sixth rib to the side of the body of the sternum.",
+    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
+    "function": "Connects the sixth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
+    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
+    "clinical": "In CPR, the flexible cartilages let the sternum be pressed down; they may still fracture or separate, especially in older people whose cartilages have calcified.",
+    "hint": "The cartilage bar of the second-lowest true rib, joining the lower breastbone body."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_costal_cartilage_7",
+   "concept": "costal_cartilage_7",
+   "node": "s41",
+   "type": "cartilage",
+   "side": "left",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Seventh costal cartilage (left)",
+    "latin": "Cartilago costalis septima",
+    "synonyms": [
+     "Costal cartilage 7"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA8275"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_sternal_body"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_rib_7"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_6"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_8_10"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_thorax_xiphoid"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Left side. Joins the front end of the seventh rib to the lower sternum near the xiphisternal joint, where the body of the sternum meets the xiphoid process.",
+    "description": "The longest cartilage that reaches the sternum. It curves upwards from the rib and joins the sternum at a small synovial joint; the cartilages below join its lower edge.",
+    "function": "Makes the seventh rib the last true rib. It forms the upper end of the costal margin and receives the eighth costal cartilage at an interchondral joint.",
+    "mnemonic": "Seven is the last to reach the sternum; everything below hangs on to seven.",
+    "clinical": "The costal margin begins at the seventh costal cartilage; the angle between the right and left margins at the xiphoid (the subcostal or infrasternal angle) is felt during abdominal examination.",
+    "hint": "The lowest cartilage bar that reaches the breastbone itself, near its pointed tip."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_thorax_left_costal_cartilage_8_10",
+   "concept": "costal_cartilage_8_10",
+   "node": "s42",
+   "type": "cartilage",
+   "side": "left",
+   "group": "costal_cartilages",
+   "names": {
+    "preferred": "Costal cartilages 8 to 10 (left)",
+    "latin": "Cartilagines costales VIII-X",
+    "synonyms": [
+     "Costal cartilages VIII-X"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "BP24"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_rib_8"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_rib_9"
+    },
+    {
+     "type": "continuous_with",
+     "target": "skeletal_thorax_left_rib_10"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_thorax_left_costal_cartilage_7"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOS-tal KAR-tih-lij",
+    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
+    "location": "Left side. The lowest cartilages of the costal margin, running up and inwards from the front ends of ribs 8, 9 and 10 at the lower edge of the chest.",
+    "description": "In this model the 8th, 9th and 10th costal cartilages are shown as one piece. Each joins the cartilage above (8 to 7, 9 to 8, 10 to 9) instead of reaching the sternum.",
+    "function": "Link the false ribs indirectly to the sternum via the seventh costal cartilage and form most of the costal margin (arch), where abdominal muscles and the diaphragm attach.",
+    "mnemonic": "8, 9 and 10 climb the ladder: each holds the rung above to reach the sternum.",
+    "clinical": "Slipping rib syndrome occurs when the loose joints between these lower cartilages allow one to slip under the other, causing lower chest or upper abdominal pain.",
+    "hint": "The combined lower cartilage piece forming the edge of the rib cage above the abdomen, not reaching the breastbone."
+   },
+   "questions": []
+  }
+ ]
+}

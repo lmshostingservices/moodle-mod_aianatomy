@@ -1,0 +1,2931 @@
+{
+ "id": "muscles_upper_limb_right",
+ "version": "1.0.0",
+ "name": "Muscles of the shoulder and upper limb (right)",
+ "description": "Right shoulder, arm and forearm muscles, with the bones of the upper limb for context.",
+ "system": "muscular",
+ "region": "upper_limb",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "muscles_ul",
+ "rootframe": [
+  "shoulder",
+  "arm",
+  "forearm_flexors",
+  "forearm_extensors"
+ ],
+ "defaultgroups": [
+  "shoulder",
+  "arm",
+  "forearm_flexors",
+  "forearm_extensors"
+ ],
+ "presets": [
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "lateral",
+   "label": "Lateral",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  }
+ ],
+ "defaultpreset": "anterior",
+ "tissue": true,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "muscles_ul",
+   "label": "Muscles of the upper limb",
+   "parent": null,
+   "tip": "Nerve summary: anterior arm muscles are musculocutaneous, forearm flexors mostly median (FCU and half of FDP ulnar), and all posterior arm and forearm muscles radial."
+  },
+  {
+   "id": "bones_context",
+   "label": "Bones (context)",
+   "parent": "muscles_ul",
+   "tip": "Use the bones to locate attachments: most forearm flexors start at the medial epicondyle, most extensors at the lateral epicondyle."
+  },
+  {
+   "id": "shoulder",
+   "label": "Shoulder and pectoral muscles",
+   "parent": "muscles_ul",
+   "tip": "Rotator cuff mnemonic SITS: Supraspinatus, Infraspinatus, Teres minor, Subscapularis. The first three insert on the greater tubercle, subscapularis on the lesser tubercle."
+  },
+  {
+   "id": "arm",
+   "label": "Arm muscles",
+   "parent": "muscles_ul",
+   "tip": "Anterior arm \"BBC\": Biceps, Brachialis, Coracobrachialis, all supplied by the musculocutaneous nerve. The posterior arm (triceps, with anconeus) is supplied by the radial nerve."
+  },
+  {
+   "id": "forearm_flexors",
+   "label": "Forearm: anterior (flexor) compartment",
+   "parent": "muscles_ul",
+   "tip": "Lay your opposite hand on the forearm, thumb lateral: thumb, index, middle and ring fingers mark pronator teres, FCR, palmaris longus and FCU. Only FCU and the medial half of FDP use the ulnar nerve; the rest are median."
+  },
+  {
+   "id": "forearm_extensors",
+   "label": "Forearm: posterior (extensor) compartment",
+   "parent": "muscles_ul",
+   "tip": "Most arise from the lateral epicondyle and all are supplied by the radial nerve or its posterior interosseous branch. The three outcropping thumb muscles (APL, EPB, EPL) border the anatomical snuffbox."
+  }
+ ],
+ "structures": [
+  {
+   "id": "muscular_upperlimb_right_bones",
+   "concept": "bones",
+   "node": "s0",
+   "type": "bone",
+   "side": "right",
+   "group": "bones_context",
+   "names": {
+    "preferred": "Bones of the upper limb",
+    "latin": "Ossa membri superioris",
+    "synonyms": [
+     "Upper limb skeleton"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13322"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA13395"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA23130"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA23464"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA23467"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24435"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24437"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24439"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24441"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24443"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA23725"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24446"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24448"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24464"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24466"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24468"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24470"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24472"
+    }
+   ],
+   "relationships": [],
+   "content": {
+    "pronunciation": "bones of the UP-er limb",
+    "origin": "Limb from Old English lim, a part or member of the body.",
+    "location": "The right shoulder girdle (clavicle and scapula), humerus, radius, ulna and hand bones, shown here for context.",
+    "description": "Pale context mesh that shows where the muscles in this pack take their origins and insertions.",
+    "function": "Provides the levers and attachment points that the shoulder, arm and forearm muscles pull on to move the limb.",
+    "mnemonic": "Muscles usually start (origin) on the more fixed, proximal bone and insert on the bone they move.",
+    "clinical": "Muscle pull explains how many fractures displace, for example the fragments of a broken clavicle or humerus.",
+    "hint": "The pale framework under the muscles: collarbone, shoulder blade, arm and forearm bones."
+   },
+   "questions": [],
+   "merged": true,
+   "context": true
+  },
+  {
+   "id": "muscular_upperlimb_right_deltoid",
+   "concept": "deltoid",
+   "node": "s1",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Deltoid",
+    "latin": "Musculus deltoideus",
+    "synonyms": [
+     "Deltoid muscle",
+     "Deltoideus"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA34680"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA34682"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA34684"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_supraspinatus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_latissimus_dorsi"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_trapezius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_pectoralis_major"
+    }
+   ],
+   "content": {
+    "pronunciation": "DEL-toyd",
+    "origin": "Greek delta, the triangular letter, plus -oid, \"like\": shaped like an upside-down triangle.",
+    "location": "Forms the rounded contour of the shoulder, covering the shoulder joint from the front, side and back.",
+    "description": "A thick triangular muscle with anterior, middle (acromial) and posterior parts that converge on the lateral side of the humerus.",
+    "function": "Abducts the arm (middle fibres) after supraspinatus starts the movement; anterior fibres flex and medially rotate, posterior fibres extend and laterally rotate. Lateral clavicle, acromion and spine of scapula -> deltoid tuberosity of humerus. Axillary nerve (C5-C6).",
+    "mnemonic": "Delta = triangle: the triangle on top of your shoulder.",
+    "clinical": "A fracture of the surgical neck of the humerus or a shoulder dislocation can injure the axillary nerve, weakening abduction and leaving a patch of numb skin over the lower deltoid (\"regimental badge\" area).",
+    "hint": "The shoulder \"cap\" muscle often used for intramuscular injections, about three fingerbreadths below the acromion."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which nerve supplies the deltoid?",
+     "options": [
+      "Radial nerve",
+      "Axillary nerve",
+      "Musculocutaneous nerve",
+      "Suprascapular nerve"
+     ],
+     "answer": 1,
+     "explanation": "The deltoid is supplied by the axillary nerve (C5-C6), which also supplies teres minor."
+    },
+    {
+     "kind": "clinical",
+     "text": "A fracture of the surgical neck of the humerus most often weakens which movement by damaging the axillary nerve?",
+     "options": [
+      "Shoulder abduction",
+      "Wrist extension",
+      "Elbow flexion",
+      "Finger flexion"
+     ],
+     "answer": 0,
+     "explanation": "The axillary nerve supplies the deltoid, the main abductor of the arm beyond the first 15 degrees or so."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_upperlimb_right_trapezius",
+   "concept": "trapezius",
+   "node": "s2",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Trapezius",
+    "latin": "Musculus trapezius",
+    "synonyms": [
+     "Trapezius muscle",
+     "Traps"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA33586"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA33584"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA33581"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_levator_scapulae"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_serratus_anterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_rhomboid_major"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_deltoid"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_supraspinatus"
+    }
+   ],
+   "content": {
+    "pronunciation": "trah-PEE-zee-us",
+    "origin": "Greek trapezion, \"little table\": the left and right muscles together form a trapezium (four-sided) shape.",
+    "location": "Superficial muscle of the back of the neck and upper back, running from the skull and spine out to the shoulder.",
+    "description": "A large flat muscle with descending (upper), transverse (middle) and ascending (lower) fibres.",
+    "function": "Upper fibres elevate the scapula, middle fibres retract it, lower fibres depress it; upper and lower fibres together rotate it upward. Skull, ligamentum nuchae and spinous processes C7-T12 -> lateral clavicle, acromion and spine of scapula. Spinal accessory nerve (CN XI), with C3-C4 sensory fibres.",
+    "mnemonic": "Shrug your shoulders: the \"traps\" do the lifting.",
+    "clinical": "Injury to the spinal accessory nerve (for example in neck surgery) weakens shoulder shrugging and causes the shoulder to droop.",
+    "hint": "The broad, diamond-shaped sheet (with its partner) on the upper back that you use to shrug."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which nerve provides motor supply to the trapezius?",
+     "options": [
+      "Dorsal scapular nerve",
+      "Long thoracic nerve",
+      "Thoracodorsal nerve",
+      "Spinal accessory nerve (CN XI)"
+     ],
+     "answer": 3,
+     "explanation": "The trapezius gets its motor supply from the spinal accessory nerve (cranial nerve XI)."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_upperlimb_right_pectoralis_major",
+   "concept": "pectoralis_major",
+   "node": "s3",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Pectoralis major",
+    "latin": "Musculus pectoralis major",
+    "synonyms": [
+     "Pecs",
+     "Greater pectoral muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA34690"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA79979"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA45874"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_latissimus_dorsi"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_pectoralis_minor"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_deltoid"
+    }
+   ],
+   "content": {
+    "pronunciation": "pek-tor-AH-lis MAY-jor",
+    "origin": "Latin pectus, \"chest\", and major, \"larger\".",
+    "location": "The large fan-shaped muscle of the upper front of the chest; its lower border forms the anterior fold of the armpit (axilla).",
+    "description": "A thick fan with a clavicular head and a larger sternocostal head that converge on a flat tendon to the humerus.",
+    "function": "Adducts and medially rotates the arm; clavicular head flexes it. Medial clavicle, sternum and upper six costal cartilages -> lateral lip of intertubercular sulcus of humerus. Lateral and medial pectoral nerves (clavicular head C5-C6, sternocostal head C7-C8, T1).",
+    "mnemonic": "Pec major hugs: adduction and medial rotation bring the arms across the chest in a hug.",
+    "clinical": "Congenital absence of part of the muscle (Poland syndrome) is well known; the muscle can also rupture at its humeral tendon during heavy bench pressing.",
+    "hint": "The big chest muscle forming the front wall of the armpit."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The anterior fold of the axilla (armpit) is formed mainly by which muscle?",
+     "options": [
+      "Latissimus dorsi",
+      "Serratus anterior",
+      "Pectoralis major",
+      "Teres major"
+     ],
+     "answer": 2,
+     "explanation": "The lower border of pectoralis major forms the anterior axillary fold."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_upperlimb_right_pectoralis_minor",
+   "concept": "pectoralis_minor",
+   "node": "s4",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Pectoralis minor",
+    "latin": "Musculus pectoralis minor",
+    "synonyms": [
+     "Lesser pectoral muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13375"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_pectoralis_major"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_serratus_anterior"
+    }
+   ],
+   "content": {
+    "pronunciation": "pek-tor-AH-lis MY-nor",
+    "origin": "Latin pectus, \"chest\", and minor, \"smaller\".",
+    "location": "Deep to pectoralis major on the upper front of the chest wall.",
+    "description": "A thin triangular muscle running upward and outward from the ribs to the coracoid process of the scapula.",
+    "function": "Stabilises the scapula by pulling it forward and downward against the chest wall. Ribs 3-5 near their costal cartilages -> coracoid process of scapula. Medial pectoral nerve (C8, T1).",
+    "mnemonic": "Ribs 3, 4, 5 up to the coracoid: \"3-4-5 to the beak\" (coracoid means \"like a crow's beak\").",
+    "clinical": "It is a key landmark: it divides the axillary artery into three parts, and a tight pectoralis minor can compress the brachial plexus.",
+    "hint": "The smaller chest muscle hidden beneath the big one, running from ribs to the scapula's beak-like process."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Pectoralis minor inserts onto which part of the scapula?",
+     "options": [
+      "Acromion",
+      "Coracoid process",
+      "Glenoid cavity",
+      "Inferior angle"
+     ],
+     "answer": 1,
+     "explanation": "Pectoralis minor runs from ribs 3-5 to the coracoid process."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_serratus_anterior",
+   "concept": "serratus_anterior",
+   "node": "s5",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Serratus anterior",
+    "latin": "Musculus serratus anterior",
+    "synonyms": [
+     "Boxer's muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13398"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_trapezius"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_rhomboid_major"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_rhomboid_minor"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_pectoralis_minor"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_subscapularis"
+    }
+   ],
+   "content": {
+    "pronunciation": "seh-RAY-tus an-TEER-ee-or",
+    "origin": "Latin serratus, \"saw-toothed\", from its jagged rib attachments, and anterior, \"in front\".",
+    "location": "On the lateral wall of the chest, between the ribs and the scapula; its lower digitations show on the side of the chest.",
+    "description": "A broad sheet arising by saw-tooth slips from the upper eight ribs and wrapping back around the chest to the scapula.",
+    "function": "Protracts the scapula (pushing, punching) and rotates it upward for raising the arm above the head; holds it against the chest wall. Outer surfaces of ribs 1-8 -> anterior surface of medial border of scapula. Long thoracic nerve (C5-C7).",
+    "mnemonic": "Long thoracic nerve roots \"C5, 6, 7 raise your wings to heaven\": they stop the scapula winging.",
+    "clinical": "Damage to the long thoracic nerve (for example during axillary surgery) causes a \"winged scapula\": the medial border lifts off the chest when pushing against a wall.",
+    "hint": "The saw-toothed muscle on the side of the chest that holds the shoulder blade flat when you push."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "A winged scapula after axillary surgery suggests injury to the nerve of which muscle?",
+     "options": [
+      "Serratus anterior",
+      "Trapezius",
+      "Latissimus dorsi",
+      "Rhomboid major"
+     ],
+     "answer": 0,
+     "explanation": "The long thoracic nerve supplies serratus anterior, which holds the scapula against the chest wall."
+    },
+    {
+     "kind": "function",
+     "text": "Which movement of the scapula is the main action of serratus anterior?",
+     "options": [
+      "Retraction",
+      "Elevation",
+      "Depression",
+      "Protraction"
+     ],
+     "answer": 3,
+     "explanation": "Serratus anterior pulls the scapula forward around the chest (protraction), as in punching."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_latissimus_dorsi",
+   "concept": "latissimus_dorsi",
+   "node": "s6",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Latissimus dorsi",
+    "latin": "Musculus latissimus dorsi",
+    "synonyms": [
+     "Lats",
+     "Latissimus"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13358"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_teres_major"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_pectoralis_major"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_deltoid"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_teres_major"
+    }
+   ],
+   "content": {
+    "pronunciation": "lah-TISS-ih-mus DOR-sy",
+    "origin": "Latin latissimus, \"widest\", and dorsi, \"of the back\".",
+    "location": "The broad flat muscle of the lower and middle back; it sweeps up to the armpit, forming the posterior axillary fold with teres major.",
+    "description": "A very wide triangular sheet that narrows into a flat tendon twisting around teres major to reach the front of the humerus.",
+    "function": "Extends, adducts and medially rotates the arm (climbing, rowing, swimming). Spinous processes T7-T12, thoracolumbar fascia, iliac crest and lower 3-4 ribs -> floor of intertubercular sulcus of humerus. Thoracodorsal nerve (C6-C8).",
+    "mnemonic": "The \"swimmer's muscle\": pulls the arm down and back as in a swimming stroke or chin-up.",
+    "clinical": "Because it is large and has a reliable blood supply, it is often used as a flap in breast reconstruction surgery.",
+    "hint": "The widest muscle of the back, pulling the arm down and back, as in a chin-up."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which nerve supplies latissimus dorsi?",
+     "options": [
+      "Long thoracic nerve",
+      "Axillary nerve",
+      "Thoracodorsal nerve",
+      "Lower subscapular nerve"
+     ],
+     "answer": 2,
+     "explanation": "Latissimus dorsi is supplied by the thoracodorsal nerve (C6-C8)."
+    },
+    {
+     "kind": "function",
+     "text": "Which set of arm movements does latissimus dorsi produce?",
+     "options": [
+      "Flexion, abduction and lateral rotation",
+      "Extension, adduction and medial rotation",
+      "Abduction and lateral rotation only",
+      "Elbow flexion and supination"
+     ],
+     "answer": 1,
+     "explanation": "Latissimus dorsi extends, adducts and medially rotates the humerus."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_supraspinatus",
+   "concept": "supraspinatus",
+   "node": "s7",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Supraspinatus",
+    "latin": "Musculus supraspinatus",
+    "synonyms": [
+     "Supraspinatus muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA32544"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_deltoid"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_infraspinatus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_trapezius"
+    }
+   ],
+   "content": {
+    "pronunciation": "SOO-prah-spy-NAY-tus",
+    "origin": "Latin supra, \"above\", and spina, \"spine\": it lies above the spine of the scapula.",
+    "location": "In the supraspinous fossa of the scapula, above the scapular spine; its tendon passes under the acromion over the top of the shoulder joint.",
+    "description": "A rotator cuff muscle that fills the fossa above the spine and runs laterally in a tendon to the top of the humerus.",
+    "function": "Starts abduction of the arm (about the first 15 degrees) and helps deltoid, while holding the humeral head in the glenoid. Supraspinous fossa -> superior facet of greater tubercle of humerus. Suprascapular nerve (C5-C6).",
+    "mnemonic": "S of SITS: the first rotator cuff muscle, sitting \"super\" (above) the spine and \"starting\" abduction.",
+    "clinical": "Its tendon is the most commonly torn or impinged rotator cuff tendon, as it is pinched under the acromion in a painful arc of abduction.",
+    "hint": "The rotator cuff muscle in the fossa above the scapular spine that begins lifting the arm sideways."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which rotator cuff muscle initiates abduction of the arm?",
+     "options": [
+      "Supraspinatus",
+      "Teres minor",
+      "Subscapularis",
+      "Infraspinatus"
+     ],
+     "answer": 0,
+     "explanation": "Supraspinatus starts abduction, then deltoid takes over."
+    },
+    {
+     "kind": "clinical",
+     "text": "Which rotator cuff tendon is most often impinged under the acromion?",
+     "options": [
+      "Infraspinatus",
+      "Subscapularis",
+      "Teres minor",
+      "Supraspinatus"
+     ],
+     "answer": 3,
+     "explanation": "The supraspinatus tendon runs under the acromion and is the most commonly impinged and torn."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_infraspinatus",
+   "concept": "infraspinatus",
+   "node": "s8",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Infraspinatus",
+    "latin": "Musculus infraspinatus",
+    "synonyms": [
+     "Infraspinatus muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA32547"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_teres_minor"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_subscapularis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_supraspinatus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_teres_minor"
+    }
+   ],
+   "content": {
+    "pronunciation": "IN-frah-spy-NAY-tus",
+    "origin": "Latin infra, \"below\", and spina, \"spine\": it lies below the spine of the scapula.",
+    "location": "In the infraspinous fossa on the back of the scapula, below the scapular spine.",
+    "description": "A thick triangular rotator cuff muscle covering most of the back of the scapula, with a tendon passing behind the shoulder joint.",
+    "function": "Laterally rotates the arm and helps hold the humeral head in the glenoid. Infraspinous fossa -> middle facet of greater tubercle of humerus. Suprascapular nerve (C5-C6).",
+    "mnemonic": "I of SITS: \"infra\" = under the spine, and it turns the arm out (lateral rotation).",
+    "clinical": "Wasting of this muscle can be seen at the back of the shoulder when the suprascapular nerve is compressed, for example at the spinoglenoid notch.",
+    "hint": "The rotator cuff muscle filling the back of the scapula below its spine; it turns the arm outward."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Infraspinatus and supraspinatus share which nerve supply?",
+     "options": [
+      "Axillary nerve",
+      "Upper subscapular nerve",
+      "Suprascapular nerve",
+      "Dorsal scapular nerve"
+     ],
+     "answer": 2,
+     "explanation": "Both are supplied by the suprascapular nerve (C5-C6)."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_teres_minor",
+   "concept": "teres_minor",
+   "node": "s9",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Teres minor",
+    "latin": "Musculus teres minor",
+    "synonyms": [
+     "Teres minor muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA32553"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_infraspinatus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_subscapularis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_teres_major"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_infraspinatus"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEH-reez MY-nor",
+    "origin": "Latin teres, \"round\" or \"rounded\", and minor, \"smaller\".",
+    "location": "Along the lateral border of the scapula on its back surface, just below infraspinatus.",
+    "description": "A narrow, rounded rotator cuff muscle running up and out to the back of the humeral head.",
+    "function": "Laterally rotates the arm and helps hold the humeral head in the glenoid. Middle part of lateral border of scapula -> inferior facet of greater tubercle of humerus. Axillary nerve (C5-C6).",
+    "mnemonic": "T of SITS: teres minor is in the cuff, teres major is not (\"minor is in, major is out\").",
+    "clinical": "It shares the axillary nerve with the deltoid, so axillary nerve injury weakens both.",
+    "hint": "The small rounded cuff muscle on the lateral border of the scapula that shares a nerve with the shoulder cap muscle."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Which of these is a rotator cuff muscle?",
+     "options": [
+      "Teres major",
+      "Teres minor",
+      "Latissimus dorsi",
+      "Deltoid"
+     ],
+     "answer": 1,
+     "explanation": "Teres minor is part of the rotator cuff (SITS); teres major is not."
+    },
+    {
+     "kind": "function",
+     "text": "Which nerve supplies teres minor?",
+     "options": [
+      "Axillary nerve",
+      "Suprascapular nerve",
+      "Lower subscapular nerve",
+      "Radial nerve"
+     ],
+     "answer": 0,
+     "explanation": "Teres minor is supplied by the axillary nerve (C5-C6), like the deltoid."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_subscapularis",
+   "concept": "subscapularis",
+   "node": "s10",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Subscapularis",
+    "latin": "Musculus subscapularis",
+    "synonyms": [
+     "Subscapularis muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13414"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_infraspinatus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_teres_minor"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_teres_major"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_serratus_anterior"
+    }
+   ],
+   "content": {
+    "pronunciation": "sub-skap-yoo-LAIR-iss",
+    "origin": "Latin sub, \"under\", and scapula, \"shoulder blade\": it lies on the underside (front) of the scapula.",
+    "location": "On the anterior (rib-facing) surface of the scapula, forming part of the posterior wall of the armpit.",
+    "description": "The largest rotator cuff muscle, filling the subscapular fossa, with a tendon crossing the front of the shoulder joint.",
+    "function": "Medially rotates the arm and holds the humeral head in the glenoid. Subscapular fossa -> lesser tubercle of humerus. Upper and lower subscapular nerves (C5-C6).",
+    "mnemonic": "The last S of SITS, and the only cuff muscle on the \"S\"ide facing the ribs; it goes to the lesser tubercle, the other three to the greater.",
+    "clinical": "Its tendon helps prevent anterior dislocation of the shoulder and can be torn when the shoulder dislocates forwards.",
+    "hint": "The rotator cuff muscle on the front of the scapula, against the ribs, that turns the arm inward."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which rotator cuff muscle inserts on the lesser tubercle of the humerus?",
+     "options": [
+      "Supraspinatus",
+      "Infraspinatus",
+      "Teres minor",
+      "Subscapularis"
+     ],
+     "answer": 3,
+     "explanation": "Subscapularis inserts on the lesser tubercle; the other three insert on the greater tubercle."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_teres_major",
+   "concept": "teres_major",
+   "node": "s11",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Teres major",
+    "latin": "Musculus teres major",
+    "synonyms": [
+     "Teres major muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA32551"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_latissimus_dorsi"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_subscapularis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_teres_minor"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_triceps_brachii"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_latissimus_dorsi"
+    }
+   ],
+   "content": {
+    "pronunciation": "TEH-reez MAY-jor",
+    "origin": "Latin teres, \"round\", and major, \"larger\".",
+    "location": "Along the lower lateral border and inferior angle of the scapula, below teres minor; with latissimus dorsi it forms the posterior fold of the armpit.",
+    "description": "A thick rounded muscle running up and out to the front of the humerus; it is not part of the rotator cuff.",
+    "function": "Adducts and medially rotates the arm, and helps extend it. Posterior surface of inferior angle of scapula -> medial lip of intertubercular sulcus of humerus. Lower subscapular nerve (C5-C6).",
+    "mnemonic": "Called \"lat's little helper\": it does the same jobs as latissimus dorsi.",
+    "clinical": "Teres major, teres minor, the long head of triceps and the humerus bound small spaces through which the axillary nerve and blood vessels pass.",
+    "hint": "The thick round muscle from the scapula's lower corner to the front of the humerus, helping the widest back muscle."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which muscle is known as \"lat's little helper\" because it adducts and medially rotates the arm?",
+     "options": [
+      "Teres minor",
+      "Infraspinatus",
+      "Teres major",
+      "Rhomboid minor"
+     ],
+     "answer": 2,
+     "explanation": "Teres major shares the actions of latissimus dorsi."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_rhomboid_major",
+   "concept": "rhomboid_major",
+   "node": "s12",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Rhomboid major",
+    "latin": "Musculus rhomboideus major",
+    "synonyms": [
+     "Greater rhomboid"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13381"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_rhomboid_minor"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_levator_scapulae"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_serratus_anterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_rhomboid_minor"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_trapezius"
+    }
+   ],
+   "content": {
+    "pronunciation": "ROM-boyd MAY-jor",
+    "origin": "Greek rhombos, a diamond (rhombus) shape.",
+    "location": "Deep to trapezius, between the thoracic spine and the medial border of the scapula.",
+    "description": "A flat, quadrilateral muscle with fibres running down and out, just below rhomboid minor.",
+    "function": "Retracts the scapula (squeezes the shoulder blades together) and rotates it downward, holding it to the chest wall. Spinous processes T2-T5 -> medial border of scapula from the spine to the inferior angle. Dorsal scapular nerve (C4-C5).",
+    "mnemonic": "Rhomboids \"row the boat\": they pull the shoulder blades together as in rowing.",
+    "clinical": "Weakness from dorsal scapular nerve injury lets the scapula drift away from the spine; the muscles are also a common site of upper back pain in desk workers.",
+    "hint": "The larger diamond-shaped muscle under the trapezius that squeezes the shoulder blades together."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which scapular movement do the rhomboids produce?",
+     "options": [
+      "Protraction",
+      "Retraction",
+      "Upward rotation",
+      "Elevation only"
+     ],
+     "answer": 1,
+     "explanation": "The rhomboids retract the scapula, pulling it toward the spine."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_rhomboid_minor",
+   "concept": "rhomboid_minor",
+   "node": "s13",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Rhomboid minor",
+    "latin": "Musculus rhomboideus minor",
+    "synonyms": [
+     "Lesser rhomboid"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13383"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_rhomboid_major"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_serratus_anterior"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_levator_scapulae"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_rhomboid_major"
+    }
+   ],
+   "content": {
+    "pronunciation": "ROM-boyd MY-nor",
+    "origin": "Greek rhombos, a diamond (rhombus) shape; minor, \"smaller\".",
+    "location": "Deep to trapezius, just above rhomboid major, between the lower neck/upper thoracic spine and the scapula.",
+    "description": "A narrow band-like muscle lying above and parallel to rhomboid major.",
+    "function": "Retracts the scapula and rotates it downward, holding it to the chest wall. Ligamentum nuchae and spinous processes C7-T1 -> medial border of scapula at the level of its spine. Dorsal scapular nerve (C4-C5).",
+    "mnemonic": "Minor sits higher: \"minor on top, major below\".",
+    "clinical": "It is supplied by the same nerve as rhomboid major and levator scapulae, so dorsal scapular nerve injury weakens all three.",
+    "hint": "The small upper diamond-shaped muscle linking C7-T1 to the scapula at the level of its spine."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Compared with rhomboid major, rhomboid minor lies:",
+     "options": [
+      "Superior to it",
+      "Inferior to it",
+      "Anterior to the scapula",
+      "Lateral to the scapula"
+     ],
+     "answer": 0,
+     "explanation": "Rhomboid minor runs from C7-T1 and lies just above rhomboid major (T2-T5)."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_levator_scapulae",
+   "concept": "levator_scapulae",
+   "node": "s14",
+   "type": "muscle",
+   "side": "right",
+   "group": "shoulder",
+   "names": {
+    "preferred": "Levator scapulae",
+    "latin": "Musculus levator scapulae",
+    "synonyms": [
+     "Levator scapulae muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA32540"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_trapezius"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_rhomboid_major"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_rhomboid_minor"
+    }
+   ],
+   "content": {
+    "pronunciation": "leh-VAY-tor SKAP-yoo-lee",
+    "origin": "Latin levator, \"lifter\", and scapulae, \"of the shoulder blade\".",
+    "location": "At the side and back of the neck, deep to trapezius and sternocleidomastoid, running down to the upper corner of the scapula.",
+    "description": "A strap-like muscle that twists slightly as it descends from the upper cervical vertebrae.",
+    "function": "Elevates the scapula and rotates it downward; with the scapula fixed it can bend the neck to the side. Transverse processes of C1-C4 -> medial border of scapula from the superior angle to the spine. Dorsal scapular nerve (C5) and cervical nerves C3-C4.",
+    "mnemonic": "It does what its name says: \"lifter of the scapula\".",
+    "clinical": "It is a common source of neck and shoulder stiffness (\"stiff neck\") and trigger-point pain near the upper corner of the scapula.",
+    "hint": "The neck muscle that lifts the upper corner of the shoulder blade, running from the top four neck vertebrae."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Levator scapulae arises from which vertebrae?",
+     "options": [
+      "Bodies of T1-T4",
+      "Spinous processes T2-T5",
+      "Spinous processes C7-T1",
+      "Transverse processes of C1-C4"
+     ],
+     "answer": 3,
+     "explanation": "Levator scapulae arises from the transverse processes of the upper four cervical vertebrae."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_biceps_brachii",
+   "concept": "biceps_brachii",
+   "node": "s15",
+   "type": "muscle",
+   "side": "right",
+   "group": "arm",
+   "names": {
+    "preferred": "Biceps brachii",
+    "latin": "Musculus biceps brachii",
+    "synonyms": [
+     "Biceps"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA37686"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA37684"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_brachialis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_supinator"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_triceps_brachii"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_coracobrachialis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_brachialis"
+    }
+   ],
+   "content": {
+    "pronunciation": "BY-seps BRAY-kee-eye",
+    "origin": "Latin bi-, \"two\", caput, \"head\", and brachium, \"arm\": the two-headed muscle of the arm.",
+    "location": "The superficial muscle on the front of the arm, between the shoulder and the elbow.",
+    "description": "A two-headed muscle: the long head's tendon runs through the shoulder joint in the intertubercular sulcus; the short head arises beside coracobrachialis.",
+    "function": "Supinates the forearm and flexes the elbow (strongest when the forearm is supinated); weakly flexes the shoulder. Long head: supraglenoid tubercle; short head: coracoid process -> radial tuberosity and bicipital aponeurosis. Musculocutaneous nerve (C5-C6).",
+    "mnemonic": "The biceps \"pulls the cork out\": it supinates to turn the corkscrew, then flexes to pull.",
+    "clinical": "The long head tendon can rupture, producing a \"Popeye\" bulge in the arm; the biceps reflex tests C5-C6.",
+    "hint": "The two-headed muscle on the front of the arm that turns the palm up and bends the elbow."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Apart from flexing the elbow, what is a main action of biceps brachii?",
+     "options": [
+      "Pronation of the forearm",
+      "Extension of the wrist",
+      "Supination of the forearm",
+      "Abduction of the arm"
+     ],
+     "answer": 2,
+     "explanation": "Biceps is a powerful supinator of the forearm as well as an elbow flexor."
+    },
+    {
+     "kind": "relationship",
+     "text": "Where does the tendon of biceps brachii mainly insert?",
+     "options": [
+      "Coronoid process of ulna",
+      "Radial tuberosity",
+      "Olecranon",
+      "Deltoid tuberosity"
+     ],
+     "answer": 1,
+     "explanation": "Biceps inserts on the radial tuberosity (plus the bicipital aponeurosis)."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_upperlimb_right_brachialis",
+   "concept": "brachialis",
+   "node": "s16",
+   "type": "muscle",
+   "side": "right",
+   "group": "arm",
+   "names": {
+    "preferred": "Brachialis",
+    "latin": "Musculus brachialis",
+    "synonyms": [
+     "Brachialis muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA37668"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_biceps_brachii"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_brachioradialis"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_triceps_brachii"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_biceps_brachii"
+    }
+   ],
+   "content": {
+    "pronunciation": "bray-kee-AH-lis",
+    "origin": "Latin brachium, \"arm\": \"of the arm\".",
+    "location": "On the front of the lower arm, deep to biceps brachii, crossing the front of the elbow joint.",
+    "description": "A broad, flat muscle covering the lower half of the front of the humerus.",
+    "function": "The main flexor of the elbow in all forearm positions. Distal half of anterior humerus -> coronoid process and tuberosity of ulna. Musculocutaneous nerve (C5-C6), with a small radial nerve contribution.",
+    "mnemonic": "Brachialis is the \"workhorse\" of elbow flexion: it pulls on the ulna, which cannot rotate, so it works whatever the palm is doing.",
+    "clinical": "After elbow injuries, bleeding into this muscle can calcify (myositis ossificans), limiting movement.",
+    "hint": "The deep workhorse elbow flexor lying under the two-headed arm muscle, attaching to the ulna."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which muscle flexes the elbow equally well whether the forearm is pronated or supinated, because it inserts on the ulna?",
+     "options": [
+      "Brachialis",
+      "Biceps brachii",
+      "Pronator teres",
+      "Anconeus"
+     ],
+     "answer": 0,
+     "explanation": "Brachialis inserts on the ulna, which does not rotate, so it flexes the elbow in all positions."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_coracobrachialis",
+   "concept": "coracobrachialis",
+   "node": "s17",
+   "type": "muscle",
+   "side": "right",
+   "group": "arm",
+   "names": {
+    "preferred": "Coracobrachialis",
+    "latin": "Musculus coracobrachialis",
+    "synonyms": [
+     "Coracobrachialis muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA37665"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_pectoralis_major"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_biceps_brachii"
+    }
+   ],
+   "content": {
+    "pronunciation": "KOR-ah-koh-bray-kee-AH-lis",
+    "origin": "Coracoid (Greek korax, \"crow\", like a crow's beak) plus brachium, \"arm\": from the coracoid to the arm.",
+    "location": "In the upper medial arm, deep and medial to the short head of biceps.",
+    "description": "A slender muscle that is pierced by the musculocutaneous nerve.",
+    "function": "Flexes and adducts the arm at the shoulder. Tip of coracoid process -> middle of medial surface of humerus. Musculocutaneous nerve (C5-C7).",
+    "mnemonic": "Its name gives its attachments: coraco (coracoid) -> brachialis (arm).",
+    "clinical": "It is a landmark for the musculocutaneous nerve, which pierces it, and for the brachial artery running along its medial side.",
+    "hint": "The slender upper-arm muscle from the scapula's beak to the humerus that its own nerve passes through."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Which nerve pierces coracobrachialis?",
+     "options": [
+      "Median nerve",
+      "Ulnar nerve",
+      "Axillary nerve",
+      "Musculocutaneous nerve"
+     ],
+     "answer": 3,
+     "explanation": "The musculocutaneous nerve pierces coracobrachialis and then supplies the anterior arm muscles."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_triceps_brachii",
+   "concept": "triceps_brachii",
+   "node": "s18",
+   "type": "muscle",
+   "side": "right",
+   "group": "arm",
+   "names": {
+    "preferred": "Triceps brachii",
+    "latin": "Musculus triceps brachii",
+    "synonyms": [
+     "Triceps"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA37699"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA37697"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA37695"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_biceps_brachii"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_brachialis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_anconeus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_teres_major"
+    }
+   ],
+   "content": {
+    "pronunciation": "TRY-seps BRAY-kee-eye",
+    "origin": "Latin tri-, \"three\", and caput, \"head\": the three-headed muscle of the arm.",
+    "location": "Fills the whole back (posterior compartment) of the arm.",
+    "description": "A three-headed muscle (long, lateral and medial heads) joining in one tendon at the point of the elbow.",
+    "function": "The main extensor of the elbow; the long head also helps extend and adduct the arm. Long head: infraglenoid tubercle; lateral and medial heads: posterior humerus above and below the radial groove -> olecranon of ulna. Radial nerve (C6-C8).",
+    "mnemonic": "Tri = three heads; \"triceps straightens\" (extends) the elbow.",
+    "clinical": "The triceps reflex tests C7; a midshaft humerus fracture can injure the radial nerve in the radial groove, between the lateral and medial heads.",
+    "hint": "The three-headed muscle on the back of the arm that straightens the elbow."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which nerve supplies triceps brachii?",
+     "options": [
+      "Musculocutaneous nerve",
+      "Axillary nerve",
+      "Radial nerve",
+      "Ulnar nerve"
+     ],
+     "answer": 2,
+     "explanation": "All three heads of triceps are supplied by the radial nerve (C6-C8)."
+    },
+    {
+     "kind": "relationship",
+     "text": "Where does triceps brachii insert?",
+     "options": [
+      "Coronoid process",
+      "Olecranon",
+      "Radial tuberosity",
+      "Lateral epicondyle"
+     ],
+     "answer": 1,
+     "explanation": "Triceps inserts on the olecranon of the ulna, the point of the elbow."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_upperlimb_right_anconeus",
+   "concept": "anconeus",
+   "node": "s19",
+   "type": "muscle",
+   "side": "right",
+   "group": "arm",
+   "names": {
+    "preferred": "Anconeus",
+    "latin": "Musculus anconeus",
+    "synonyms": [
+     "Anconeus muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA37705"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_triceps_brachii"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_ecu"
+    }
+   ],
+   "content": {
+    "pronunciation": "an-KOH-nee-us",
+    "origin": "Greek ankon, \"elbow\".",
+    "location": "A small muscle on the back of the elbow, on the lateral side, just below the triceps tendon.",
+    "description": "A small triangular muscle, partly blended with the medial head of triceps.",
+    "function": "Assists triceps in extending the elbow and stabilises the elbow joint. Lateral epicondyle of humerus -> lateral surface of olecranon and upper posterior ulna. Radial nerve (C7-C8).",
+    "mnemonic": "Ankon = elbow: the little elbow muscle.",
+    "clinical": "It is used as a landmark in the lateral surgical approach to the elbow and radial head.",
+    "hint": "The small triangular muscle at the back of the elbow, from the lateral epicondyle to the ulna."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Anconeus assists which muscle?",
+     "options": [
+      "Triceps brachii",
+      "Biceps brachii",
+      "Brachialis",
+      "Pronator teres"
+     ],
+     "answer": 0,
+     "explanation": "Anconeus helps triceps extend the elbow."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_pronator_teres",
+   "concept": "pronator_teres",
+   "node": "s20",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_flexors",
+   "names": {
+    "preferred": "Pronator teres",
+    "latin": "Musculus pronator teres",
+    "synonyms": [
+     "Pronator teres muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38560"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA38562"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_pronator_quadratus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_supinator"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_biceps_brachii"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_flexor_carpi_radialis"
+    }
+   ],
+   "content": {
+    "pronunciation": "PROH-nay-tor TEH-reez",
+    "origin": "Latin pronare, \"to bend forward\" (face down), and teres, \"round\".",
+    "location": "In the upper anterior forearm, running obliquely from the medial elbow across to the middle of the radius; it forms the medial border of the cubital fossa.",
+    "description": "A round two-headed muscle (humeral and ulnar heads); the median nerve passes between the heads.",
+    "function": "Pronates the forearm and helps flex the elbow. Medial epicondyle (humeral head) and coronoid process (ulnar head) -> middle of lateral surface of radius. Median nerve (C6-C7).",
+    "mnemonic": "Place your hand on your forearm: the thumb lies over pronator teres, the first of the superficial flexors (lateral to medial).",
+    "clinical": "The median nerve can be compressed between its two heads (pronator syndrome), causing forearm pain and tingling in the thumb side of the hand.",
+    "hint": "The round, oblique muscle that turns the palm down and forms the medial edge of the elbow pit."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Which muscle forms the medial border of the cubital fossa?",
+     "options": [
+      "Brachioradialis",
+      "Flexor carpi ulnaris",
+      "Brachialis",
+      "Pronator teres"
+     ],
+     "answer": 3,
+     "explanation": "Pronator teres forms the medial border and brachioradialis the lateral border of the cubital fossa."
+    },
+    {
+     "kind": "clinical",
+     "text": "Pronator syndrome is compression of which nerve between the heads of pronator teres?",
+     "options": [
+      "Ulnar nerve",
+      "Radial nerve",
+      "Median nerve",
+      "Musculocutaneous nerve"
+     ],
+     "answer": 2,
+     "explanation": "The median nerve passes between the humeral and ulnar heads of pronator teres."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_upperlimb_right_flexor_carpi_radialis",
+   "concept": "flexor_carpi_radialis",
+   "node": "s21",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_flexors",
+   "names": {
+    "preferred": "Flexor carpi radialis",
+    "latin": "Musculus flexor carpi radialis",
+    "synonyms": [
+     "FCR"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38460"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_flexor_carpi_ulnaris"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_ecrl"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_ecrb"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_palmaris_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_pronator_teres"
+    }
+   ],
+   "content": {
+    "pronunciation": "FLEK-sor KAR-pee ray-dee-AH-lis",
+    "origin": "Latin flexor, \"bender\", carpi, \"of the wrist\", radialis, \"on the radius side\".",
+    "location": "In the superficial layer of the anterior forearm, medial to pronator teres; its tendon is felt at the wrist on the thumb side of palmaris longus.",
+    "description": "A superficial flexor with a long tendon that passes through its own groove in the trapezium.",
+    "function": "Flexes the wrist and abducts it (radial deviation). Medial epicondyle (common flexor origin) -> base of 2nd metacarpal (and 3rd). Median nerve (C6-C7).",
+    "mnemonic": "Second finger of the \"hand on forearm\" mnemonic: index finger over FCR.",
+    "clinical": "Its tendon is a landmark at the wrist: the radial artery pulse is felt just lateral to it.",
+    "hint": "The superficial wrist flexor on the thumb side; the radial pulse lies just lateral to its tendon."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The radial pulse is felt just lateral to the tendon of which muscle?",
+     "options": [
+      "Palmaris longus",
+      "Flexor carpi radialis",
+      "Flexor carpi ulnaris",
+      "Flexor digitorum superficialis"
+     ],
+     "answer": 1,
+     "explanation": "The radial artery lies just lateral to the flexor carpi radialis tendon at the wrist."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_palmaris_longus",
+   "concept": "palmaris_longus",
+   "node": "s22",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_flexors",
+   "names": {
+    "preferred": "Palmaris longus",
+    "latin": "Musculus palmaris longus",
+    "synonyms": [
+     "Palmaris longus muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38463"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_flexor_carpi_radialis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_flexor_carpi_radialis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_flexor_carpi_ulnaris"
+    }
+   ],
+   "content": {
+    "pronunciation": "pal-MAIR-iss LONG-gus",
+    "origin": "Latin palma, \"palm\", and longus, \"long\".",
+    "location": "In the superficial layer of the anterior forearm between FCR and FCU; its tendon runs down the middle of the front of the wrist.",
+    "description": "A small muscle belly with a very long thin tendon passing superficial to the flexor retinaculum.",
+    "function": "Flexes the wrist and tenses the palmar aponeurosis. Medial epicondyle (common flexor origin) -> flexor retinaculum and palmar aponeurosis. Median nerve (C7-C8).",
+    "mnemonic": "Middle finger of the \"hand on forearm\" mnemonic; touch thumb to little finger and flex the wrist to make its tendon stand out.",
+    "clinical": "It is absent in about 1 in 7 people and is a common donor tendon for grafts; the median nerve lies just deep to its tendon at the wrist.",
+    "hint": "The thin central wrist tendon that pops up when you pinch thumb and little finger together and flex the wrist; not everyone has it."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Which forearm muscle is absent in a notable minority of people and is often used as a tendon graft?",
+     "options": [
+      "Palmaris longus",
+      "Flexor carpi radialis",
+      "Flexor pollicis longus",
+      "Pronator quadratus"
+     ],
+     "answer": 0,
+     "explanation": "Palmaris longus is missing in roughly 1 in 7 people and its tendon is a common graft source."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_flexor_carpi_ulnaris",
+   "concept": "flexor_carpi_ulnaris",
+   "node": "s23",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_flexors",
+   "names": {
+    "preferred": "Flexor carpi ulnaris",
+    "latin": "Musculus flexor carpi ulnaris",
+    "synonyms": [
+     "FCU"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38617"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA38619"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_flexor_carpi_radialis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_ecu"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_palmaris_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_fdp"
+    }
+   ],
+   "content": {
+    "pronunciation": "FLEK-sor KAR-pee ul-NAIR-iss",
+    "origin": "Latin flexor, \"bender\", carpi, \"of the wrist\", ulnaris, \"on the ulna side\".",
+    "location": "The most medial muscle of the superficial anterior forearm, along the ulna on the little-finger side.",
+    "description": "A two-headed superficial flexor; its tendon contains the pisiform bone at the wrist.",
+    "function": "Flexes the wrist and adducts it (ulnar deviation). Medial epicondyle and olecranon/posterior border of ulna -> pisiform, hook of hamate and base of 5th metacarpal. Ulnar nerve (C7-C8).",
+    "mnemonic": "Ring finger of the \"hand on forearm\" mnemonic; it is the one superficial flexor on the ulnar nerve.",
+    "clinical": "The ulnar nerve enters the forearm between its two heads (cubital tunnel), a common site of ulnar nerve compression.",
+    "hint": "The little-finger-side wrist flexor that ends at the pea-shaped carpal bone and is supplied by the \"funny bone\" nerve."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which superficial forearm flexor is supplied by the ulnar nerve rather than the median nerve?",
+     "options": [
+      "Flexor carpi radialis",
+      "Palmaris longus",
+      "Pronator teres",
+      "Flexor carpi ulnaris"
+     ],
+     "answer": 3,
+     "explanation": "Flexor carpi ulnaris is supplied by the ulnar nerve; the other superficial flexors are supplied by the median nerve."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_upperlimb_right_fds",
+   "concept": "fds",
+   "node": "s24",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_flexors",
+   "names": {
+    "preferred": "Flexor digitorum superficialis",
+    "latin": "Musculus flexor digitorum superficialis",
+    "synonyms": [
+     "FDS",
+     "Flexor digitorum sublimis"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38638"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA38640"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_fdp"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_extensor_digitorum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_fdp"
+    }
+   ],
+   "content": {
+    "pronunciation": "FLEK-sor dij-ih-TOR-um soo-per-fish-ee-AH-lis",
+    "origin": "Latin flexor, \"bender\", digitorum, \"of the fingers\", superficialis, \"near the surface\".",
+    "location": "The intermediate layer of the anterior forearm, deep to the superficial wrist flexors and superficial to FDP.",
+    "description": "A broad muscle with four tendons that pass through the carpal tunnel; each tendon splits to let an FDP tendon through.",
+    "function": "Flexes the proximal interphalangeal joints of the four fingers, and helps flex the knuckles and wrist. Medial epicondyle, coronoid process and anterior radius -> sides of the middle phalanges of the medial four digits. Median nerve (C7-C8, T1).",
+    "mnemonic": "\"Superficialis splits in two to let profundus through\": FDS goes to the middle phalanx, FDP to the distal.",
+    "clinical": "It is tested by holding the other fingers straight and asking the patient to bend one finger at the middle joint; cut tendons at the palm are common in hand injuries.",
+    "hint": "The intermediate-layer finger flexor whose split tendons reach the middle phalanges."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Tendons of flexor digitorum superficialis insert on which bones?",
+     "options": [
+      "Distal phalanges",
+      "Metacarpal bases",
+      "Middle phalanges",
+      "Proximal phalanges"
+     ],
+     "answer": 2,
+     "explanation": "FDS tendons split and insert on the sides of the middle phalanges."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_upperlimb_right_fdp",
+   "concept": "fdp",
+   "node": "s25",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_flexors",
+   "names": {
+    "preferred": "Flexor digitorum profundus",
+    "latin": "Musculus flexor digitorum profundus",
+    "synonyms": [
+     "FDP"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38479"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_fds"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_flexor_pollicis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_pronator_quadratus"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_extensor_digitorum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_flexor_carpi_ulnaris"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_fds"
+    }
+   ],
+   "content": {
+    "pronunciation": "FLEK-sor dij-ih-TOR-um proh-FUN-dus",
+    "origin": "Latin flexor, \"bender\", digitorum, \"of the fingers\", profundus, \"deep\".",
+    "location": "In the deep layer of the anterior forearm, lying on the ulna and interosseous membrane, deep to FDS.",
+    "description": "A large deep muscle with four tendons that pass through the carpal tunnel and through the split FDS tendons to the fingertips.",
+    "function": "The only muscle that flexes the distal interphalangeal (fingertip) joints; also helps flex the other finger joints and wrist. Anterior and medial ulna and interosseous membrane -> bases of distal phalanges of digits 2-5. Medial part: ulnar nerve; lateral part: anterior interosseous nerve (median) (C8, T1).",
+    "mnemonic": "\"Profundus = deep and to the tips\": the deep muscle reaches the distal phalanx.",
+    "clinical": "A tendon avulsion from the distal phalanx (\"jersey finger\", often the ring finger) stops the fingertip bending; its split nerve supply explains findings in ulnar and median nerve injuries.",
+    "hint": "The deep finger flexor with a split nerve supply that is the only muscle bending the fingertips."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which muscle is the only one that flexes the distal interphalangeal joints of the fingers?",
+     "options": [
+      "Flexor digitorum superficialis",
+      "Flexor digitorum profundus",
+      "Flexor carpi ulnaris",
+      "Palmaris longus"
+     ],
+     "answer": 1,
+     "explanation": "Only flexor digitorum profundus inserts on the distal phalanges of the fingers."
+    },
+    {
+     "kind": "function",
+     "text": "The medial part of flexor digitorum profundus (to the ring and little fingers) is supplied by which nerve?",
+     "options": [
+      "Ulnar nerve",
+      "Radial nerve",
+      "Anterior interosseous nerve",
+      "Musculocutaneous nerve"
+     ],
+     "answer": 0,
+     "explanation": "The medial part of FDP is supplied by the ulnar nerve; the lateral part by the anterior interosseous branch of the median nerve."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_flexor_pollicis_longus",
+   "concept": "flexor_pollicis_longus",
+   "node": "s26",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_flexors",
+   "names": {
+    "preferred": "Flexor pollicis longus",
+    "latin": "Musculus flexor pollicis longus",
+    "synonyms": [
+     "FPL"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38482"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_fdp"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_epl"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_pronator_quadratus"
+    }
+   ],
+   "content": {
+    "pronunciation": "FLEK-sor POL-ih-sis LONG-gus",
+    "origin": "Latin flexor, \"bender\", pollicis, \"of the thumb\", longus, \"long\".",
+    "location": "In the deep layer of the anterior forearm, on the front of the radius, lateral to FDP.",
+    "description": "A deep muscle whose single tendon passes through the carpal tunnel to the tip of the thumb.",
+    "function": "Flexes the interphalangeal joint of the thumb, and helps flex its other joints. Anterior surface of radius and interosseous membrane -> base of distal phalanx of thumb. Anterior interosseous nerve, a branch of the median nerve (C8, T1).",
+    "mnemonic": "\"Long flexor of the thumb\" goes the whole length to the thumb tip.",
+    "clinical": "Anterior interosseous nerve injury weakens this muscle and the index part of FDP, so the patient cannot make an \"OK\" sign (makes a pinch instead).",
+    "hint": "The deep forearm muscle on the radius that bends the tip of the thumb."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Inability to make a round \"OK\" sign (flexing the thumb tip and index tip) suggests injury to the nerve supplying:",
+     "options": [
+      "Brachioradialis",
+      "Extensor pollicis longus",
+      "Abductor pollicis longus",
+      "Flexor pollicis longus"
+     ],
+     "answer": 3,
+     "explanation": "The anterior interosseous nerve supplies flexor pollicis longus and the index part of FDP."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_pronator_quadratus",
+   "concept": "pronator_quadratus",
+   "node": "s27",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_flexors",
+   "names": {
+    "preferred": "Pronator quadratus",
+    "latin": "Musculus pronator quadratus",
+    "synonyms": [
+     "Pronator quadratus muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38454"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_pronator_teres"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_supinator"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_fdp"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_flexor_pollicis_longus"
+    }
+   ],
+   "content": {
+    "pronunciation": "PROH-nay-tor kwod-RAY-tus",
+    "origin": "Latin pronare, \"to turn face down\", and quadratus, \"square\".",
+    "location": "The deepest muscle of the distal anterior forearm, just above the wrist, lying directly on the radius and ulna.",
+    "description": "A flat, square muscle running across between the lower ends of the ulna and radius.",
+    "function": "The main pronator of the forearm; it also holds the lower radius and ulna together. Distal quarter of anterior ulna -> distal quarter of anterior radius. Anterior interosseous nerve (median) (C8, T1).",
+    "mnemonic": "Quadratus = square: the square pronator at the bottom of the forearm.",
+    "clinical": "It lies close to the site of a common distal radius fracture and is often lifted during surgical plating of the radius.",
+    "hint": "The small square muscle deep in the lower forearm that turns the palm down."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Where is pronator quadratus found?",
+     "options": [
+      "Upper lateral forearm",
+      "Back of the elbow",
+      "Deep in the distal anterior forearm",
+      "On the front of the humerus"
+     ],
+     "answer": 2,
+     "explanation": "Pronator quadratus is the deepest muscle of the lower anterior forearm, just above the wrist."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_brachioradialis",
+   "concept": "brachioradialis",
+   "node": "s28",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Brachioradialis",
+    "latin": "Musculus brachioradialis",
+    "synonyms": [
+     "Brachioradialis muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38486"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_brachialis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_biceps_brachii"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_ecrl"
+    }
+   ],
+   "content": {
+    "pronunciation": "BRAY-kee-oh-ray-dee-AH-lis",
+    "origin": "Latin brachium, \"arm\", and radius: running from the arm to the radius.",
+    "location": "The most superficial muscle on the lateral (thumb) side of the forearm; it forms the lateral border of the cubital fossa.",
+    "description": "A long superficial muscle with a flat tendon to the lower radius; it lies in the posterior compartment but acts as a flexor.",
+    "function": "Flexes the elbow, most strongly with the forearm midway between pronation and supination (the \"hammer\" position). Lateral supracondylar ridge of humerus -> lateral side of distal radius just above the styloid. Radial nerve (C5-C6).",
+    "mnemonic": "The \"beer-drinking muscle\": it flexes the elbow with the thumb up, as when lifting a glass.",
+    "clinical": "The brachioradialis reflex (tap near the wrist on the thumb side) tests C5-C6.",
+    "hint": "The superficial muscle on the thumb side of the forearm that bends the elbow with the thumb pointing up."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Brachioradialis is a flexor of the elbow, but which nerve supplies it?",
+     "options": [
+      "Musculocutaneous nerve",
+      "Radial nerve",
+      "Median nerve",
+      "Ulnar nerve"
+     ],
+     "answer": 1,
+     "explanation": "Although it flexes the elbow, brachioradialis lies with the extensors and is supplied by the radial nerve."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_ecrl",
+   "concept": "ecrl",
+   "node": "s29",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Extensor carpi radialis longus",
+    "latin": "Musculus extensor carpi radialis longus",
+    "synonyms": [
+     "ECRL"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38495"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_ecrb"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_ecu"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_flexor_carpi_radialis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_brachioradialis"
+    }
+   ],
+   "content": {
+    "pronunciation": "eks-TEN-sor KAR-pee ray-dee-AH-lis LONG-gus",
+    "origin": "Latin extensor, \"straightener\", carpi, \"of the wrist\", radialis, \"radius side\", longus, \"long\".",
+    "location": "In the lateral part of the posterior forearm, just behind brachioradialis.",
+    "description": "A long wrist extensor whose tendon runs on the back of the radius, beside ECRB, to the index metacarpal.",
+    "function": "Extends the wrist and abducts it (radial deviation); helps make a firm fist. Lateral supracondylar ridge of humerus -> dorsal base of 2nd metacarpal. Radial nerve (C6-C7).",
+    "mnemonic": "The two radial extensors go to fingers 2 and 3: \"longus to 2, brevis to 3\".",
+    "clinical": "Wrist extensors must hold the wrist back for a strong grip; radial nerve palsy causes wrist drop, weakening grip.",
+    "hint": "The long wrist extensor beside the thumb-side elbow flexor, going to the index metacarpal."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Extensor carpi radialis longus inserts on the base of which metacarpal?",
+     "options": [
+      "1st",
+      "2nd",
+      "3rd",
+      "5th"
+     ],
+     "answer": 1,
+     "explanation": "ECRL inserts on the base of the 2nd metacarpal; ECRB on the 3rd."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_ecrb",
+   "concept": "ecrb",
+   "node": "s30",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Extensor carpi radialis brevis",
+    "latin": "Musculus extensor carpi radialis brevis",
+    "synonyms": [
+     "ECRB"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38498"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_ecrl"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_ecu"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_flexor_carpi_radialis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_extensor_digitorum"
+    }
+   ],
+   "content": {
+    "pronunciation": "eks-TEN-sor KAR-pee ray-dee-AH-lis BREV-iss",
+    "origin": "Latin extensor, \"straightener\", carpi, \"of the wrist\", radialis, \"radius side\", brevis, \"short\".",
+    "location": "In the posterior forearm, deep and medial to ECRL.",
+    "description": "A shorter wrist extensor arising from the common extensor origin; its tendon runs with ECRL to the middle metacarpal.",
+    "function": "Extends and abducts the wrist. Lateral epicondyle of humerus (common extensor origin) -> dorsal base of 3rd metacarpal. Deep branch of radial nerve (C7-C8).",
+    "mnemonic": "Brevis goes to the middle (3rd) metacarpal, in the centre of the wrist.",
+    "clinical": "Lateral epicondylitis (\"tennis elbow\") most often involves the origin of this muscle at the lateral epicondyle.",
+    "hint": "The short radial wrist extensor from the lateral epicondyle; its origin is the usual site of tennis elbow."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Tennis elbow (lateral epicondylitis) most often involves the origin of which muscle?",
+     "options": [
+      "Pronator teres",
+      "Flexor carpi ulnaris",
+      "Brachialis",
+      "Extensor carpi radialis brevis"
+     ],
+     "answer": 3,
+     "explanation": "The common extensor origin, especially ECRB, is the usual site of tennis elbow."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_extensor_digitorum",
+   "concept": "extensor_digitorum",
+   "node": "s31",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Extensor digitorum",
+    "latin": "Musculus extensor digitorum",
+    "synonyms": [
+     "Extensor digitorum communis",
+     "EDC"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38501"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_fds"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_fdp"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_extensor_indicis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_extensor_digiti_minimi"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_ecrb"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_extensor_digiti_minimi"
+    }
+   ],
+   "content": {
+    "pronunciation": "eks-TEN-sor dij-ih-TOR-um",
+    "origin": "Latin extensor, \"straightener\", and digitorum, \"of the fingers\".",
+    "location": "In the middle of the superficial layer of the posterior forearm.",
+    "description": "A superficial muscle dividing into four tendons that fan across the back of the hand, linked by bands and ending in extensor expansions.",
+    "function": "Extends the four fingers at the knuckles (and, via the extensor expansions, the finger joints) and helps extend the wrist. Lateral epicondyle (common extensor origin) -> extensor expansions of digits 2-5. Posterior interosseous nerve, from the radial nerve (C7-C8).",
+    "mnemonic": "The \"common\" finger extensor: one muscle, four tendons for the four fingers.",
+    "clinical": "Its tendons are visible on the back of the hand when the fingers are straightened; they can be cut in hand injuries or rupture in rheumatoid arthritis.",
+    "hint": "The central superficial muscle on the back of the forearm whose four tendons straighten the fingers."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Extensor digitorum is supplied by which nerve?",
+     "options": [
+      "Anterior interosseous nerve",
+      "Ulnar nerve",
+      "Posterior interosseous nerve",
+      "Axillary nerve"
+     ],
+     "answer": 2,
+     "explanation": "Extensor digitorum is supplied by the posterior interosseous nerve, the deep branch of the radial nerve."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_extensor_digiti_minimi",
+   "concept": "extensor_digiti_minimi",
+   "node": "s32",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Extensor digiti minimi",
+    "latin": "Musculus extensor digiti minimi",
+    "synonyms": [
+     "EDM",
+     "Extensor digiti quinti"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38504"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_extensor_digitorum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_ecu"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_extensor_digitorum"
+    }
+   ],
+   "content": {
+    "pronunciation": "eks-TEN-sor DIJ-ih-tee MIN-ih-mee",
+    "origin": "Latin extensor, \"straightener\", digiti minimi, \"of the smallest finger\".",
+    "location": "In the superficial posterior forearm, between extensor digitorum and ECU.",
+    "description": "A slender muscle, often partly joined to extensor digitorum, with a tendon to the little finger.",
+    "function": "Extends the little finger, allowing it to straighten on its own. Lateral epicondyle (common extensor origin) -> extensor expansion of little finger. Posterior interosseous nerve (C7-C8).",
+    "mnemonic": "Minimi = smallest: the extensor of the smallest finger.",
+    "clinical": "With extensor indicis, it lets the index and little fingers be raised independently (the \"horns\" gesture).",
+    "hint": "The slender extra extensor that lets the smallest finger straighten independently."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Which finger does extensor digiti minimi extend?",
+     "options": [
+      "Thumb",
+      "Little finger",
+      "Middle finger",
+      "Index finger"
+     ],
+     "answer": 1,
+     "explanation": "Digiti minimi means \"of the smallest finger\", the little finger."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_ecu",
+   "concept": "ecu",
+   "node": "s33",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Extensor carpi ulnaris",
+    "latin": "Musculus extensor carpi ulnaris",
+    "synonyms": [
+     "ECU"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "BP45"
+    },
+    {
+     "system": "FMA",
+     "id": "BP47"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_flexor_carpi_ulnaris"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_ecrl"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_ecrb"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_anconeus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_extensor_digiti_minimi"
+    }
+   ],
+   "content": {
+    "pronunciation": "eks-TEN-sor KAR-pee ul-NAIR-iss",
+    "origin": "Latin extensor, \"straightener\", carpi, \"of the wrist\", ulnaris, \"ulna side\".",
+    "location": "The most medial muscle of the superficial posterior forearm, along the back of the ulna.",
+    "description": "A long superficial extensor whose tendon runs in a groove beside the ulnar styloid to the little-finger metacarpal.",
+    "function": "Extends the wrist and adducts it (ulnar deviation). Lateral epicondyle and posterior border of ulna -> base of 5th metacarpal. Posterior interosseous nerve (C7-C8).",
+    "mnemonic": "Works with FCU to adduct the wrist: \"the two ulnar muscles pull toward the ulna\".",
+    "clinical": "Its tendon can slip out of its groove (subluxate) in sports that twist the wrist, such as tennis and golf.",
+    "hint": "The little-finger-side wrist extensor running along the back of the ulna to the 5th metacarpal."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which pair of muscles together adduct (ulnar deviate) the wrist?",
+     "options": [
+      "FCU and ECU",
+      "FCR and ECRL",
+      "Palmaris longus and ECRB",
+      "FDS and extensor digitorum"
+     ],
+     "answer": 0,
+     "explanation": "Flexor carpi ulnaris and extensor carpi ulnaris both pull the hand toward the ulnar side."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_upperlimb_right_supinator",
+   "concept": "supinator",
+   "node": "s34",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Supinator",
+    "latin": "Musculus supinator",
+    "synonyms": [
+     "Supinator muscle"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38513"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_biceps_brachii"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_pronator_teres"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_pronator_quadratus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_apl"
+    }
+   ],
+   "content": {
+    "pronunciation": "SOO-pin-ay-tor",
+    "origin": "Latin supinare, \"to lay on the back\" (turn face up).",
+    "location": "Deep in the upper posterior and lateral forearm, wrapping around the upper third of the radius.",
+    "description": "A sheet-like deep muscle that curls around the radius; the deep branch of the radial nerve passes through it.",
+    "function": "Supinates the forearm (turns the palm up), especially when the elbow is straight. Lateral epicondyle, radial collateral and anular ligaments and supinator crest of ulna -> lateral, posterior and anterior surfaces of upper third of radius. Deep branch of radial nerve.",
+    "mnemonic": "It does what it says: the supinator supinates, with biceps as its powerful partner.",
+    "clinical": "The deep radial nerve can be compressed as it enters the muscle (at the arcade of Frohse), weakening finger and thumb extension.",
+    "hint": "The deep muscle wrapping around the upper radius that turns the palm up; a radial nerve branch passes through it."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Supinator works with which muscle to turn the palm upward?",
+     "options": [
+      "Pronator teres",
+      "Triceps brachii",
+      "Brachioradialis",
+      "Biceps brachii"
+     ],
+     "answer": 3,
+     "explanation": "Biceps brachii is the powerful synergist of supinator in supination."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_apl",
+   "concept": "apl",
+   "node": "s35",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Abductor pollicis longus",
+    "latin": "Musculus abductor pollicis longus",
+    "synonyms": [
+     "APL"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38516"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_epb"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_epb"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_supinator"
+    }
+   ],
+   "content": {
+    "pronunciation": "ab-DUK-tor POL-ih-sis LONG-gus",
+    "origin": "Latin abductor, \"one that leads away\", pollicis, \"of the thumb\", longus, \"long\".",
+    "location": "In the deep layer of the posterior forearm; its tendon \"outcrops\" around the lateral side of the forearm to the thumb.",
+    "description": "A deep muscle whose tendon, with EPB, forms the lateral (front) border of the anatomical snuffbox.",
+    "function": "Abducts the thumb and extends it at the carpometacarpal joint; helps abduct the wrist. Posterior surfaces of ulna, radius and interosseous membrane -> base of 1st metacarpal. Posterior interosseous nerve (C7-C8).",
+    "mnemonic": "APL and EPB travel together: \"the two thumb tendons that share a tunnel\".",
+    "clinical": "Inflammation of the APL and EPB tendon sheath at the wrist is De Quervain tenosynovitis (positive Finkelstein test).",
+    "hint": "The deep outcropping thumb muscle that moves the thumb away from the palm and borders the snuffbox with its short-extensor partner."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "De Quervain tenosynovitis involves the tendons of abductor pollicis longus and:",
+     "options": [
+      "Extensor pollicis longus",
+      "Flexor pollicis longus",
+      "Extensor pollicis brevis",
+      "Extensor indicis"
+     ],
+     "answer": 2,
+     "explanation": "APL and EPB share a tendon sheath at the wrist, which becomes inflamed in De Quervain tenosynovitis."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_epb",
+   "concept": "epb",
+   "node": "s36",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Extensor pollicis brevis",
+    "latin": "Musculus extensor pollicis brevis",
+    "synonyms": [
+     "EPB"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38519"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_apl"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_epl"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_epl"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_apl"
+    }
+   ],
+   "content": {
+    "pronunciation": "eks-TEN-sor POL-ih-sis BREV-iss",
+    "origin": "Latin extensor, \"straightener\", pollicis, \"of the thumb\", brevis, \"short\".",
+    "location": "In the deep layer of the posterior forearm, just below APL; its tendon runs beside APL to the thumb.",
+    "description": "A short deep muscle whose tendon forms part of the lateral border of the anatomical snuffbox.",
+    "function": "Extends the thumb at the metacarpophalangeal joint and carpometacarpal joint. Posterior surface of radius and interosseous membrane -> base of proximal phalanx of thumb. Posterior interosseous nerve (C7-C8).",
+    "mnemonic": "Brevis = short, so it stops short at the proximal phalanx; longus goes all the way to the distal phalanx.",
+    "clinical": "It is involved with APL in De Quervain tenosynovitis.",
+    "hint": "The short thumb extensor that stops at the proximal phalanx and travels with the long thumb abductor."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Extensor pollicis brevis inserts on which bone?",
+     "options": [
+      "Base of distal phalanx of thumb",
+      "Base of proximal phalanx of thumb",
+      "Base of 1st metacarpal",
+      "Trapezium"
+     ],
+     "answer": 1,
+     "explanation": "EPB inserts on the base of the proximal phalanx of the thumb."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_epl",
+   "concept": "epl",
+   "node": "s37",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Extensor pollicis longus",
+    "latin": "Musculus extensor pollicis longus",
+    "synonyms": [
+     "EPL"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38522"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_epb"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_upperlimb_right_flexor_pollicis_longus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_extensor_indicis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_epb"
+    }
+   ],
+   "content": {
+    "pronunciation": "eks-TEN-sor POL-ih-sis LONG-gus",
+    "origin": "Latin extensor, \"straightener\", pollicis, \"of the thumb\", longus, \"long\".",
+    "location": "In the deep layer of the posterior forearm; its tendon hooks around the dorsal tubercle of the radius and forms the medial (back) border of the anatomical snuffbox.",
+    "description": "A deep muscle with a long tendon that changes direction around the dorsal (Lister) tubercle of the radius.",
+    "function": "Extends all joints of the thumb, including the tip (interphalangeal joint). Posterior surface of middle ulna and interosseous membrane -> base of distal phalanx of thumb. Posterior interosseous nerve (C7-C8).",
+    "mnemonic": "Longus goes the long way: around Lister's tubercle to the thumb tip.",
+    "clinical": "Its tendon can rupture weeks after a distal radius fracture as it rubs over the tubercle, so the thumb tip cannot be lifted.",
+    "hint": "The long thumb extensor that hooks around the bump on the back of the radius and forms the back border of the snuffbox."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Which tendon forms the medial (posterior) border of the anatomical snuffbox?",
+     "options": [
+      "Extensor pollicis longus",
+      "Abductor pollicis longus",
+      "Extensor pollicis brevis",
+      "Extensor carpi radialis longus"
+     ],
+     "answer": 0,
+     "explanation": "EPL forms the posterior/medial border; APL and EPB form the anterior/lateral border."
+    }
+   ]
+  },
+  {
+   "id": "muscular_upperlimb_right_extensor_indicis",
+   "concept": "extensor_indicis",
+   "node": "s38",
+   "type": "muscle",
+   "side": "right",
+   "group": "forearm_extensors",
+   "names": {
+    "preferred": "Extensor indicis",
+    "latin": "Musculus extensor indicis",
+    "synonyms": [
+     "Extensor indicis proprius"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA38525"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_upperlimb_right_bones"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_upperlimb_right_extensor_digitorum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_upperlimb_right_epl"
+    }
+   ],
+   "content": {
+    "pronunciation": "eks-TEN-sor IN-dih-sis",
+    "origin": "Latin extensor, \"straightener\", and indicis, \"of the index (pointing) finger\".",
+    "location": "The most distal muscle in the deep layer of the posterior forearm, on the lower ulna.",
+    "description": "A narrow deep muscle whose tendon joins the extensor digitorum tendon to the index finger on its medial side.",
+    "function": "Extends the index finger independently (pointing) and helps extend the wrist. Posterior surface of distal ulna and interosseous membrane -> extensor expansion of index finger. Posterior interosseous nerve (C7-C8).",
+    "mnemonic": "Indicis = index: the \"pointing\" muscle.",
+    "clinical": "Its tendon is a common donor for tendon transfer, for example to replace a ruptured extensor pollicis longus.",
+    "hint": "The deep muscle on the lower ulna that lets you point with the index finger independently."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which muscle allows the index finger to extend independently of the others?",
+     "options": [
+      "Extensor digiti minimi",
+      "Flexor digitorum superficialis",
+      "Extensor pollicis brevis",
+      "Extensor indicis"
+     ],
+     "answer": 3,
+     "explanation": "Extensor indicis gives the index finger its own extensor for pointing."
+    }
+   ]
+  }
+ ]
+}

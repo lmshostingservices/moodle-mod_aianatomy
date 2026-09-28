@@ -1,0 +1,741 @@
+{
+ "id": "respiratory",
+ "version": "1.0.0",
+ "name": "Respiratory system",
+ "description": "Larynx (thyroid cartilage), trachea, bronchial trees, the five lung lobes and the diaphragm.",
+ "system": "respiratory",
+ "region": "thorax",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "respiratory",
+ "rootframe": [
+  "airways",
+  "lungs",
+  "diaphragm_group"
+ ],
+ "defaultgroups": [
+  "airways",
+  "lungs",
+  "diaphragm_group"
+ ],
+ "presets": [
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "right",
+   "label": "Right lateral",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "left",
+   "label": "Left lateral",
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  }
+ ],
+ "defaultpreset": "anterior",
+ "tissue": true,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "respiratory",
+   "label": "Respiratory system",
+   "parent": null,
+   "tip": "Follow the air: larynx, trachea, main bronchi, lobar bronchi, segmental bronchi, bronchioles, then alveoli in the lung lobes."
+  },
+  {
+   "id": "airways",
+   "label": "Airways",
+   "parent": "respiratory",
+   "tip": "The right main bronchus is wider, shorter and more vertical, so inhaled objects usually go right."
+  },
+  {
+   "id": "lungs",
+   "label": "Lungs (lobes)",
+   "parent": "respiratory",
+   "tip": "Right lung: 3 lobes and 2 fissures. Left lung: 2 lobes, 1 fissure, a cardiac notch and the lingula."
+  },
+  {
+   "id": "diaphragm_group",
+   "label": "Diaphragm",
+   "parent": "respiratory",
+   "tip": "\"C3, 4, 5 keeps the diaphragm alive\": the phrenic nerve comes from spinal nerves C3 to C5."
+  }
+ ],
+ "structures": [
+  {
+   "id": "resp_thyroid_cartilage",
+   "concept": "cartilage",
+   "node": "s0",
+   "type": "cartilage",
+   "side": "midline",
+   "group": "airways",
+   "names": {
+    "preferred": "Thyroid cartilage (larynx)",
+    "latin": "Cartilago thyroidea",
+    "synonyms": [
+     "Adam's apple (laryngeal prominence)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA55099"
+    }
+   ],
+   "relationships": [],
+   "content": {
+    "pronunciation": "THY-royd KAR-ti-lij",
+    "origin": "Greek thyreos, \"oblong shield\", plus eidos, \"shape\": a shield-shaped cartilage. Larynx is Greek for the voice box.",
+    "location": "At the front of the neck in the midline, above the trachea. It is the largest cartilage of the larynx (voice box); the cricoid, arytenoid and epiglottic cartilages of the larynx are not shown in this model.",
+    "description": "Two flat plates (laminae) meet at the front in a V-shaped ridge, the laryngeal prominence or Adam's apple, which is larger in adult males. Horns (cornua) project up and down from the back edge of each plate.",
+    "function": "Shields the vocal folds, which attach to the inside of its front angle. The larynx as a whole keeps the airway open, closes it during swallowing and produces the voice.",
+    "mnemonic": "Thyroid = shield: it shields the voice box like a shield on the front of the neck.",
+    "clinical": "In an airway emergency, a cricothyroidotomy is an opening made through the membrane just below this cartilage, between it and the cricoid cartilage.",
+    "hint": "The shield-shaped cartilage forming the Adam's apple at the front of the neck, above the windpipe."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "The laryngeal prominence (Adam's apple) is formed by which structure?",
+     "options": [
+      "Trachea",
+      "Thyroid cartilage",
+      "Diaphragm",
+      "Right bronchial tree"
+     ],
+     "answer": 1,
+     "explanation": "The two plates of the thyroid cartilage meet at the front to form the laryngeal prominence."
+    },
+    {
+     "kind": "function",
+     "text": "What structures does the thyroid cartilage shield?",
+     "options": [
+      "The vocal folds",
+      "The lung lobes",
+      "The oesophagus",
+      "The main bronchi"
+     ],
+     "answer": 0,
+     "explanation": "The vocal folds attach to the inner surface of the thyroid cartilage, which protects them."
+    }
+   ]
+  },
+  {
+   "id": "resp_trachea",
+   "concept": "trachea",
+   "node": "s1",
+   "type": "organ",
+   "side": "midline",
+   "group": "airways",
+   "names": {
+    "preferred": "Trachea",
+    "latin": "Trachea",
+    "synonyms": [
+     "Windpipe"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7394"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "resp_right_bronchial_tree"
+    },
+    {
+     "type": "continuous_with",
+     "target": "resp_left_bronchial_tree"
+    }
+   ],
+   "content": {
+    "pronunciation": "TRAY-kee-ah",
+    "origin": "Greek tracheia arteria, \"rough air tube\", from its ridged rings.",
+    "location": "In the midline of the neck and upper chest, below the larynx and in front of the oesophagus. It ends at about the level of the sternal angle, where it divides into the right and left main bronchi.",
+    "description": "A tube about 10 to 12 cm long, held open by 16 to 20 C-shaped rings of cartilage. The gap at the back of each ring is closed by smooth muscle (trachealis). A ridge at its split, the carina, marks the division.",
+    "function": "Carries air between the larynx and the bronchi. Its lining has mucus and cilia that trap dust and sweep it up to the throat. The C-shaped rings keep it open but let the oesophagus behind it expand when swallowing.",
+    "mnemonic": "C-rings keep the airway open; the open side of the C faces the oesophagus.",
+    "clinical": "A tracheostomy is a surgical opening in the front of the trachea for breathing support. The trachea can be pushed to one side by a tension pneumothorax.",
+    "hint": "The ringed midline tube running down from the voice box and splitting in two in the chest."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "What shape are the cartilage rings of the trachea?",
+     "options": [
+      "Complete circles",
+      "Spiral bands",
+      "C-shaped, open at the back",
+      "Flat plates"
+     ],
+     "answer": 2,
+     "explanation": "The tracheal cartilages are C-shaped, with the gap at the back closed by trachealis muscle."
+    },
+    {
+     "kind": "location",
+     "text": "Which structure lies directly behind the trachea?",
+     "options": [
+      "Oesophagus",
+      "Thyroid cartilage",
+      "Diaphragm",
+      "Middle lobe of right lung"
+     ],
+     "answer": 0,
+     "explanation": "The oesophagus lies behind the trachea, against the open back of the C-shaped rings."
+    }
+   ]
+  },
+  {
+   "id": "resp_right_bronchial_tree",
+   "concept": "bronchial_tree",
+   "node": "s2",
+   "type": "organ",
+   "side": "right",
+   "group": "airways",
+   "names": {
+    "preferred": "Right bronchial tree",
+    "latin": "Arbor bronchialis dextra",
+    "synonyms": [
+     "Right main bronchus and branches",
+     "Right bronchi"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7409"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "resp_trachea"
+    },
+    {
+     "type": "connects",
+     "target": "resp_right_upper_lobe"
+    },
+    {
+     "type": "connects",
+     "target": "resp_right_middle_lobe"
+    },
+    {
+     "type": "connects",
+     "target": "resp_right_lower_lobe"
+    }
+   ],
+   "content": {
+    "pronunciation": "BRONG-kee-al tree",
+    "origin": "Greek bronchos, \"windpipe\"; tree because it branches like an upside-down tree.",
+    "location": "In the right side of the chest, from the end of the trachea into the right lung. This one model shows the right main bronchus and all its branches.",
+    "description": "The right main (primary) bronchus is wider, shorter and more vertical than the left. It splits into three lobar (secondary) bronchi, one for each right lobe, then into segmental (tertiary) bronchi for the 10 bronchopulmonary segments, and on into ever smaller bronchioles.",
+    "function": "Conducts air from the trachea to every part of the right lung. Cartilage and smooth muscle in the walls keep the larger airways open and control their width.",
+    "mnemonic": "Right is wider, shorter, straighter: \"swallow a bite, it goes right\". Right lung = 3 lobar bronchi for 3 lobes.",
+    "clinical": "Inhaled foreign bodies and aspirated fluid enter the right main bronchus more often than the left because it is wider and more vertical. In asthma, smooth muscle in the bronchial walls narrows the airways.",
+    "hint": "The branching airway on the right, wider and more vertical than its partner, with three lobar branches."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "An inhaled peanut is most likely to lodge in which airway?",
+     "options": [
+      "Left main bronchus",
+      "Trachea above the larynx",
+      "Right main bronchus",
+      "Left lobar bronchus"
+     ],
+     "answer": 2,
+     "explanation": "The right main bronchus is wider, shorter and more vertical, so inhaled objects tend to go right."
+    },
+    {
+     "kind": "terminology",
+     "text": "How many lobar (secondary) bronchi does the right main bronchus give off?",
+     "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Ten"
+     ],
+     "answer": 1,
+     "explanation": "The right main bronchus divides into three lobar bronchi, one for each lobe of the right lung."
+    }
+   ],
+   "component": "right"
+  },
+  {
+   "id": "resp_left_bronchial_tree",
+   "concept": "bronchial_tree",
+   "node": "s3",
+   "type": "organ",
+   "side": "left",
+   "group": "airways",
+   "names": {
+    "preferred": "Left bronchial tree",
+    "latin": "Arbor bronchialis sinistra",
+    "synonyms": [
+     "Left main bronchus and branches",
+     "Left bronchi"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7409"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "continuous_with",
+     "target": "resp_trachea"
+    },
+    {
+     "type": "connects",
+     "target": "resp_left_upper_lobe"
+    },
+    {
+     "type": "connects",
+     "target": "resp_left_lower_lobe"
+    }
+   ],
+   "content": {
+    "pronunciation": "BRONG-kee-al tree",
+    "origin": "Greek bronchos, \"windpipe\"; tree because it branches like an upside-down tree.",
+    "location": "In the left side of the chest, from the end of the trachea into the left lung. It passes below the arch of the aorta and in front of the oesophagus. This one model shows the left main bronchus and all its branches.",
+    "description": "The left main bronchus is narrower, longer and more horizontal than the right. It splits into two lobar bronchi (upper and lower), then into segmental bronchi for about 8 to 10 bronchopulmonary segments, and on into bronchioles.",
+    "function": "Conducts air from the trachea to every part of the left lung. Cartilage and smooth muscle in the walls keep the larger airways open and control their width.",
+    "mnemonic": "Left is longer and leans more horizontal, to make room for the heart. Left lung = 2 lobar bronchi for 2 lobes.",
+    "clinical": "Because it is longer and more horizontal, inhaled objects enter it less often than the right. Bronchitis is inflammation of the bronchial lining, causing cough and mucus.",
+    "hint": "The branching airway on the left, longer and more horizontal than its partner, with two lobar branches."
+   },
+   "questions": [],
+   "component": "left"
+  },
+  {
+   "id": "resp_right_upper_lobe",
+   "concept": "lobe",
+   "node": "s4",
+   "type": "organ",
+   "side": "right",
+   "group": "lungs",
+   "names": {
+    "preferred": "Upper lobe of right lung",
+    "latin": "Lobus superior pulmonis dextri",
+    "synonyms": [
+     "Right upper lobe",
+     "RUL",
+     "Right superior lobe"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7333"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "resp_right_middle_lobe"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "resp_right_lower_lobe"
+    }
+   ],
+   "content": {
+    "pronunciation": "LOBE",
+    "origin": "Greek lobos, \"rounded projection\" (as in an ear lobe). Latin pulmo, \"lung\".",
+    "location": "The top part of the right lung. Its rounded apex rises above the clavicle into the root of the neck. The horizontal fissure separates it from the middle lobe and the oblique fissure from the lower lobe.",
+    "description": "A wedge-shaped lobe containing three bronchopulmonary segments (apical, posterior and anterior). The right lung has three lobes: upper, middle and lower.",
+    "function": "Like every lobe, it is spongy tissue full of alveoli where oxygen enters the blood and carbon dioxide leaves it.",
+    "mnemonic": "Right lung: three lobes (upper, middle, lower) and two fissures (horizontal and oblique).",
+    "clinical": "A Pancoast tumour is a lung cancer at the apex that can press on nerves to the arm. Reactivated tuberculosis (TB) typically affects the upper lobes.",
+    "hint": "The top lobe of the right lung, whose tip reaches above the collarbone."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "How many lobes does the right lung have?",
+     "options": [
+      "Two",
+      "Four",
+      "Three",
+      "Five"
+     ],
+     "answer": 2,
+     "explanation": "The right lung has three lobes: upper, middle and lower."
+    },
+    {
+     "kind": "location",
+     "text": "Which fissure separates the upper and middle lobes of the right lung?",
+     "options": [
+      "Oblique fissure",
+      "Horizontal fissure",
+      "Cardiac notch",
+      "Carina"
+     ],
+     "answer": 1,
+     "explanation": "The horizontal fissure, found only in the right lung, separates the upper and middle lobes."
+    }
+   ]
+  },
+  {
+   "id": "resp_right_middle_lobe",
+   "concept": "lobe",
+   "node": "s5",
+   "type": "organ",
+   "side": "right",
+   "group": "lungs",
+   "names": {
+    "preferred": "Middle lobe of right lung",
+    "latin": "Lobus medius pulmonis dextri",
+    "synonyms": [
+     "Right middle lobe",
+     "RML"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7383"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "resp_right_upper_lobe"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "resp_right_lower_lobe"
+    }
+   ],
+   "content": {
+    "pronunciation": "LOBE",
+    "origin": "Greek lobos, \"rounded projection\"; Latin medius, \"middle\", pulmo, \"lung\".",
+    "location": "At the front of the right lung, below the horizontal fissure and above and in front of the oblique fissure. It lies against the right side of the heart.",
+    "description": "The smallest lobe of the right lung, wedge-shaped, with two bronchopulmonary segments (medial and lateral). Only the right lung has a middle lobe; in the left lung the lingula of the upper lobe is its equivalent.",
+    "function": "Gas exchange like the other lobes. It is best heard with a stethoscope on the front of the right chest, not the back.",
+    "mnemonic": "Middle lobe = right side only; the left lung has the lingula (\"little tongue\") instead.",
+    "clinical": "Pneumonia in the middle lobe can blur the outline of the right border of the heart on a chest X-ray (the silhouette sign).",
+    "hint": "The small front lobe found only in the right lung, lying against the right side of the heart."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which part of the left lung is the equivalent of the right middle lobe?",
+     "options": [
+      "The lingula of the upper lobe",
+      "The apex of the lower lobe",
+      "The cardiac notch",
+      "The left main bronchus"
+     ],
+     "answer": 0,
+     "explanation": "The left lung has no middle lobe; the lingula of its upper lobe is the equivalent."
+    },
+    {
+     "kind": "clinical",
+     "text": "Pneumonia in the right middle lobe may blur which outline on a chest X-ray?",
+     "options": [
+      "The left dome of the diaphragm",
+      "The right border of the heart",
+      "The trachea",
+      "The apex of the lung"
+     ],
+     "answer": 1,
+     "explanation": "The middle lobe touches the right heart border, so consolidation there blurs its outline (silhouette sign)."
+    }
+   ]
+  },
+  {
+   "id": "resp_right_lower_lobe",
+   "concept": "lobe",
+   "node": "s6",
+   "type": "organ",
+   "side": "right",
+   "group": "lungs",
+   "names": {
+    "preferred": "Lower lobe of right lung",
+    "latin": "Lobus inferior pulmonis dextri",
+    "synonyms": [
+     "Right lower lobe",
+     "RLL",
+     "Right inferior lobe"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7337"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "resp_right_upper_lobe"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "resp_right_middle_lobe"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "resp_diaphragm"
+    }
+   ],
+   "content": {
+    "pronunciation": "LOBE",
+    "origin": "Greek lobos, \"rounded projection\"; Latin inferior, \"lower\", pulmo, \"lung\".",
+    "location": "The lower and back part of the right lung, below and behind the oblique fissure. Its base rests on the right dome of the diaphragm.",
+    "description": "A large lobe with five bronchopulmonary segments (one superior and four basal). It makes up most of the back of the right lung.",
+    "function": "Gas exchange. Its breath sounds are best heard on the lower back of the chest.",
+    "mnemonic": "Lower lobes live at the back: listen to them from behind.",
+    "clinical": "Aspirated food or fluid in an upright person most often ends up in the right lower lobe, following the straight right main bronchus.",
+    "hint": "The large back-and-bottom lobe on the right, sitting on the diaphragm behind the oblique fissure."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "In a person sitting upright, aspirated fluid most commonly enters which lobe?",
+     "options": [
+      "Upper lobe of left lung",
+      "Middle lobe of right lung",
+      "Lower lobe of left lung",
+      "Lower lobe of right lung"
+     ],
+     "answer": 3,
+     "explanation": "Aspirated material follows the wide, vertical right main bronchus down into the right lower lobe."
+    },
+    {
+     "kind": "relationship",
+     "text": "The base of the right lower lobe rests on which structure?",
+     "options": [
+      "Diaphragm",
+      "Thyroid cartilage",
+      "Trachea",
+      "Clavicle"
+     ],
+     "answer": 0,
+     "explanation": "The lower lobes sit on the domes of the diaphragm."
+    }
+   ]
+  },
+  {
+   "id": "resp_left_upper_lobe",
+   "concept": "lobe",
+   "node": "s7",
+   "type": "organ",
+   "side": "left",
+   "group": "lungs",
+   "names": {
+    "preferred": "Upper lobe of left lung",
+    "latin": "Lobus superior pulmonis sinistri",
+    "synonyms": [
+     "Left upper lobe",
+     "LUL",
+     "Left superior lobe"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7370"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "resp_left_lower_lobe"
+    }
+   ],
+   "content": {
+    "pronunciation": "LOBE (lingula: LING-yoo-lah)",
+    "origin": "Greek lobos, \"rounded projection\"; Latin pulmo, \"lung\"; lingula, \"little tongue\".",
+    "location": "The top and front of the left lung, above and in front of the oblique fissure. Its apex rises above the clavicle. Its front edge has a hollow for the heart, the cardiac notch.",
+    "description": "The left lung has only two lobes, upper and lower, because the heart takes up room on the left. The upper lobe includes the lingula, a tongue-like flap below the cardiac notch that matches the right middle lobe.",
+    "function": "Gas exchange, like every lobe. Its lingula lies over the front of the heart.",
+    "mnemonic": "Left lung: two lobes, one fissure (oblique), plus a notch for the heart and a little tongue (lingula).",
+    "clinical": "Pneumonia in the lingula can blur the left border of the heart on a chest X-ray (the silhouette sign).",
+    "hint": "The top and front lobe of the left lung, with a notch for the heart and a tongue-shaped flap below it."
+   },
+   "questions": []
+  },
+  {
+   "id": "resp_left_lower_lobe",
+   "concept": "lobe",
+   "node": "s8",
+   "type": "organ",
+   "side": "left",
+   "group": "lungs",
+   "names": {
+    "preferred": "Lower lobe of left lung",
+    "latin": "Lobus inferior pulmonis sinistri",
+    "synonyms": [
+     "Left lower lobe",
+     "LLL",
+     "Left inferior lobe"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA7371"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "resp_left_upper_lobe"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "resp_diaphragm"
+    }
+   ],
+   "content": {
+    "pronunciation": "LOBE",
+    "origin": "Greek lobos, \"rounded projection\"; Latin inferior, \"lower\", pulmo, \"lung\".",
+    "location": "The lower and back part of the left lung, below and behind the oblique fissure. Its base rests on the left dome of the diaphragm.",
+    "description": "Makes up most of the back of the left lung and most of its base. Like the right lower lobe, it has a superior segment and several basal segments.",
+    "function": "Gas exchange. Its breath sounds are best heard on the lower back of the chest.",
+    "mnemonic": "Lower lobes live at the back: listen to them from behind.",
+    "clinical": "Fluid around the lungs (pleural effusion) collects first at the lung bases, so the lower back of the chest sounds dull when tapped (percussed).",
+    "hint": "The back-and-bottom lobe on the left, sitting on the diaphragm behind the only fissure of that lung."
+   },
+   "questions": []
+  },
+  {
+   "id": "resp_diaphragm",
+   "concept": "diaphragm",
+   "node": "s9",
+   "type": "muscle",
+   "side": "midline",
+   "group": "diaphragm_group",
+   "names": {
+    "preferred": "Diaphragm",
+    "latin": "Diaphragma",
+    "synonyms": [
+     "Thoracic diaphragm"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13295"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "adjacent_to",
+     "target": "resp_right_lower_lobe"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "resp_left_lower_lobe"
+    }
+   ],
+   "content": {
+    "pronunciation": "DY-ah-fram",
+    "origin": "Greek diaphragma, \"partition\" or \"barrier\".",
+    "location": "A dome-shaped sheet between the chest and the abdomen, under the lungs and heart. The right dome sits a little higher than the left because the liver lies beneath it.",
+    "description": "Muscle fibres around the edge converge on a central tendon. It has openings for the inferior vena cava (T8), the oesophagus (T10) and the aorta (T12).",
+    "function": "The main muscle of breathing in: it contracts, flattens and moves down, enlarging the chest so air flows into the lungs. It arises from the xiphoid process, lower six ribs and their cartilages, and the upper lumbar vertebrae (crura), and inserts into the central tendon. Nerve: phrenic nerve (C3-C5).",
+    "mnemonic": "\"C3, 4, 5 keeps the diaphragm alive.\" Openings: \"I 8 10 Eggs At 12\" (IVC T8, oesophagus T10, aorta T12).",
+    "clinical": "A hiatus hernia is when part of the stomach pushes up through the oesophageal opening. Hiccups are sudden involuntary contractions of this muscle.",
+    "hint": "The dome-shaped muscle under the lungs, separating the chest from the abdomen."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What does the diaphragm do when it contracts?",
+     "options": [
+      "Rises, pushing air out",
+      "Flattens and moves down, drawing air in",
+      "Narrows the bronchi",
+      "Closes the larynx"
+     ],
+     "answer": 1,
+     "explanation": "Contraction flattens the diaphragm, enlarging the chest cavity so air flows in (inspiration)."
+    },
+    {
+     "kind": "function",
+     "text": "Which nerve supplies the diaphragm?",
+     "options": [
+      "Vagus nerve",
+      "Intercostal nerves only",
+      "Phrenic nerve",
+      "Femoral nerve"
+     ],
+     "answer": 2,
+     "explanation": "The phrenic nerve (C3-C5) is the motor nerve of the diaphragm: \"C3, 4, 5 keeps the diaphragm alive\"."
+    }
+   ]
+  }
+ ]
+}

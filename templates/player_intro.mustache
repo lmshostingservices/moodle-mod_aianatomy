@@ -1,0 +1,82 @@
+{{!
+    This file is part of Moodle - https://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+}}
+{{!
+    @template mod_aianatomy/player_intro
+
+    Start screen for a mode: what to expect (or the Test requirements) and how to play.
+    Rendered by amd/src/player.js; strings are passed in already resolved.
+
+    Context variables required for this template:
+    * mode - study, practice or test.
+    * badgeicon - Static SVG icon markup from the plugin.
+    * modename, title, sub - Hero texts.
+    * heading - Heading of the list.
+    * items - List items (icon, text, key).
+    * howtoheading, howto - How to play.
+    * study - True in Study mode (changes the demo animation).
+    * handicon - Static SVG icon markup.
+    * back, go - Button labels and icons.
+
+    Example context (json):
+    {
+        "mode": "test",
+        "badgeicon": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"></svg>",
+        "modename": "Test",
+        "title": "Test yourself",
+        "sub": "Place every label, then submit.",
+        "heading": "To pass",
+        "items": [{"icon": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"></svg>", "text": "You need 70% to pass", "key": true}],
+        "howtoheading": "How to play",
+        "study": false,
+        "handicon": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"></svg>",
+        "howto": "Drag each label onto its numbered point.",
+        "back": {"label": "Back", "icon": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"></svg>"},
+        "go": {"label": "Start", "icon": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"></svg>"}
+    }
+}}
+<div class="aa-intro aa-intro-{{mode}}">
+    <div class="aa-intro-hero">
+        <div class="aa-intro-badge">{{{badgeicon}}}</div>
+        <span class="aa-modetag aa-modetag-{{mode}}">{{modename}}</span>
+        <h3 class="aa-intro-title">{{title}}</h3>
+        <p class="aa-intro-sub">{{sub}}</p>
+    </div>
+    <div class="aa-intro-grid">
+        <div class="aa-intro-col">
+            <h4>{{heading}}</h4>
+            <ul class="aa-intro-list">
+                {{#items}}
+                <li class="{{#key}}is-key{{/key}}"><span class="aa-intro-ic">{{{icon}}}</span><span>{{text}}</span></li>
+                {{/items}}
+            </ul>
+        </div>
+        <div class="aa-intro-col aa-intro-how">
+            <h4>{{howtoheading}}</h4>
+            <div class="aa-intro-demo{{#study}} is-study{{/study}}" aria-hidden="true">
+                <span class="aa-demo-chip">Aa</span>
+                <svg class="aa-demo-path" viewBox="0 0 160 60"><path d="M20 44 C60 44 90 16 140 16"/></svg>
+                <span class="aa-demo-pin">1</span>
+                <span class="aa-demo-hand">{{{handicon}}}</span>
+            </div>
+            <p>{{howto}}</p>
+        </div>
+    </div>
+    <div class="aa-intro-actions">
+        <button type="button" class="aa-btn aa-btn-ghost" data-action="back">{{{back.icon}}}<span>{{back.label}}</span></button>
+        <button type="button" class="aa-btn aa-btn-primary aa-btn-lg" data-action="go"><span>{{go.label}}</span>{{{go.icon}}}</button>
+    </div>
+</div>

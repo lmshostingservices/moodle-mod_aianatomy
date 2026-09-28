@@ -1,0 +1,1753 @@
+{
+ "id": "muscles_trunk",
+ "version": "1.0.0",
+ "name": "Muscles of the trunk (abdominal wall and back)",
+ "description": "Anterior abdominal wall, posterior abdominal wall, breathing and deep back muscles (right side), with the axial skeleton for context.",
+ "system": "muscular",
+ "region": "trunk",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "muscles_trunk",
+ "rootframe": [
+  "abdominal_wall",
+  "posterior_wall",
+  "back",
+  "neck"
+ ],
+ "defaultgroups": [
+  "abdominal_wall",
+  "posterior_wall",
+  "back",
+  "neck"
+ ],
+ "presets": [
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "lateral",
+   "label": "Right lateral",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  }
+ ],
+ "defaultpreset": "anterior",
+ "tissue": true,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "muscles_trunk",
+   "label": "Muscles of the trunk",
+   "parent": null,
+   "tip": "Think in layers: flat abdominal muscles in front, posterior wall and pelvic floor deep, and long extensor columns at the back. Front muscles flex the trunk; back muscles extend it."
+  },
+  {
+   "id": "bones_context",
+   "label": "Skeleton (context)",
+   "parent": "muscles_trunk",
+   "tip": "Most trunk muscles run between ribs, vertebral processes and the pelvis: find the bony points first, then the muscle between them."
+  },
+  {
+   "id": "abdominal_wall",
+   "label": "Anterolateral abdominal wall",
+   "parent": "muscles_trunk",
+   "tip": "The three flat muscles from outside in: external oblique (hands in pockets), internal oblique (at right angles), transversus abdominis (horizontal corset). Rectus abdominis runs vertically in front."
+  },
+  {
+   "id": "posterior_wall",
+   "label": "Posterior abdominal wall and pelvic floor",
+   "parent": "muscles_trunk",
+   "tip": "\"C3, 4, 5 keeps the diaphragm alive\". Psoas major and quadratus lumborum lie side by side in the posterior abdominal wall; levator ani forms the pelvic floor below."
+  },
+  {
+   "id": "back",
+   "label": "Back muscles",
+   "parent": "muscles_trunk",
+   "tip": "Erector spinae from lateral to medial: \"I Love Spaghetti\" (Iliocostalis, Longissimus, Spinalis). Deeper, multifidus and semispinalis run from transverse to spinous processes."
+  },
+  {
+   "id": "neck",
+   "label": "Neck muscles",
+   "parent": "muscles_trunk",
+   "tip": "Sternocleidomastoid turns the face to the opposite side; splenius turns it to the same side; scalenes raise the first two ribs."
+  }
+ ],
+ "structures": [
+  {
+   "id": "muscular_trunk_right_skeleton",
+   "concept": "skeleton",
+   "node": "s0",
+   "type": "bone",
+   "side": "midline",
+   "group": "bones_context",
+   "names": {
+    "preferred": "Axial skeleton and pelvis",
+    "latin": "Skeleton axiale et pelvis",
+    "synonyms": [
+     "Vertebral column, ribs, sternum and pelvis"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA16202"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA16586"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA16587"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA7486"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA7487"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA7488"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA7857"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA7882"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA7909"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA7957"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8066"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8175"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8229"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8283"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8364"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8445"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8531"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8533"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA7987"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8012"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8039"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8148"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8093"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8202"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8256"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8310"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8391"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8472"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8532"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA8534"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA13072"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA13073"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA13074"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA13075"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA13076"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA9165"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA9187"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA9209"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA9248"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA9922"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA9945"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA9968"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA9991"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA10014"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA10037"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA10059"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA10081"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA12519"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA12520"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA12521"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA12522"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA12523"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA12524"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA12525"
+    }
+   ],
+   "relationships": [],
+   "content": {
+    "pronunciation": "AK-see-al SKEL-eh-ton",
+    "origin": "Latin axis, \"axle\" or central line; skeleton from Greek skeletos, \"dried up\".",
+    "location": "The central bony framework of the trunk: the vertebral column, ribs, sternum and the pelvis (hip bones and sacrum). Shown here for context.",
+    "description": "Gives the bony attachments for the trunk muscles: ribs, vertebral spinous and transverse processes, the iliac crest, pubis, sacrum and coccyx.",
+    "function": "Supports the body, protects the chest and abdominal organs and spinal cord, and anchors the muscles of the abdominal wall and back.",
+    "mnemonic": "Axial = along the axis: skull, spine, ribs and sternum.",
+    "clinical": "Osteoporosis commonly causes vertebral compression fractures, which can lead to height loss and a forward-curved upper back.",
+    "hint": "The bony framework behind and around all the trunk muscles."
+   },
+   "questions": [],
+   "merged": true,
+   "context": true
+  },
+  {
+   "id": "muscular_trunk_right_rectus_abdominis",
+   "concept": "rectus_abdominis",
+   "node": "s1",
+   "type": "muscle",
+   "side": "right",
+   "group": "abdominal_wall",
+   "names": {
+    "preferred": "Rectus abdominis",
+    "latin": "Musculus rectus abdominis",
+    "synonyms": [
+     "Six-pack muscle",
+     "Abs"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13377"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_external_oblique"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_internal_oblique"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_trunk_right_iliocostalis"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_trunk_right_longissimus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_pyramidalis"
+    }
+   ],
+   "content": {
+    "pronunciation": "REK-tus ab-DOM-ih-nis",
+    "origin": "Latin rectus, \"straight\", and abdominis, \"of the abdomen\": the straight muscle of the abdomen.",
+    "location": "A long vertical strap on the front of the abdomen, one on each side of the midline (linea alba), running from the pubis up to the lower chest. It lies inside the rectus sheath formed by the aponeuroses of the three flat abdominal muscles.",
+    "description": "Long and flat, wider above than below. Usually three tendinous intersections cross it, dividing it into the segments seen as a \"six-pack\" in lean people.",
+    "function": "Flexes the trunk (as in a sit-up or crunch), compresses the abdominal contents and helps tilt the pelvis backwards. Origin: pubic symphysis and pubic crest -> insertion: xiphoid process and costal cartilages 5-7. Nerve supply: thoraco-abdominal nerves and subcostal nerve (anterior rami T7-T12).",
+    "mnemonic": "Rectus = right up the middle: a straight muscle for a straight crunch.",
+    "clinical": "Diastasis recti is widening of the linea alba between the two recti, common in pregnancy and after birth, which can cause a midline bulge.",
+    "hint": "The straight, segmented strap either side of the midline at the front of the abdomen, running from pubis to lower ribs."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What is the main action of the rectus abdominis?",
+     "options": [
+      "Extending the trunk",
+      "Flexing the trunk",
+      "Rotating the head",
+      "Elevating the first rib"
+     ],
+     "answer": 1,
+     "explanation": "The rectus abdominis flexes the trunk, as in a sit-up."
+    },
+    {
+     "kind": "terminology",
+     "text": "What divides the rectus abdominis into its \"six-pack\" segments?",
+     "options": [
+      "Tendinous intersections",
+      "Taeniae coli",
+      "Linea alba",
+      "Inguinal ligament"
+     ],
+     "answer": 0,
+     "explanation": "Tendinous intersections cross the muscle and create the six-pack appearance."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_external_oblique",
+   "concept": "external_oblique",
+   "node": "s2",
+   "type": "muscle",
+   "side": "right",
+   "group": "abdominal_wall",
+   "names": {
+    "preferred": "External oblique",
+    "latin": "Musculus obliquus externus abdominis",
+    "synonyms": [
+     "Obliquus externus abdominis"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13336"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_internal_oblique"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_rectus_abdominis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_internal_oblique"
+    }
+   ],
+   "content": {
+    "pronunciation": "ek-STER-nal oh-BLEEK",
+    "origin": "Latin obliquus, \"slanting\", and externus, \"outer\": the outer slanting muscle.",
+    "location": "The most superficial and largest of the three flat muscles of the side (anterolateral) abdominal wall, wrapping from the lower ribs around to the front of the abdomen.",
+    "description": "A broad, thin sheet whose fibres run down and forwards (inferomedially), like hands in the front pockets. Its aponeurosis forms the front of the rectus sheath, and its lower edge folds under to form the inguinal ligament.",
+    "function": "Compresses the abdomen and flexes the trunk; one side bends the trunk to the same side and rotates it to the opposite side. Origin: external surfaces of ribs 5-12 -> insertion: linea alba, pubic tubercle and anterior half of the iliac crest. Nerve supply: thoraco-abdominal nerves (T7-T11) and subcostal nerve (T12).",
+    "mnemonic": "External oblique = hands in your front pockets: fibres run down and in.",
+    "clinical": "Its aponeurosis contains the superficial inguinal ring, the outer opening of the inguinal canal, where inguinal hernias can bulge through.",
+    "hint": "The outermost flat sheet on the side of the abdomen, with fibres slanting down and in like hands in front pockets."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "The right external oblique rotates the trunk to which side?",
+     "options": [
+      "The right",
+      "It does not rotate the trunk",
+      "The left",
+      "Only when the arm is raised"
+     ],
+     "answer": 2,
+     "explanation": "The external oblique rotates the trunk to the opposite side."
+    },
+    {
+     "kind": "relationship",
+     "text": "Which ligament is formed by the lower edge of the external oblique aponeurosis?",
+     "options": [
+      "Nuchal ligament",
+      "Inguinal ligament",
+      "Iliolumbar ligament",
+      "Falciform ligament"
+     ],
+     "answer": 1,
+     "explanation": "The folded lower border of the external oblique aponeurosis forms the inguinal ligament."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_internal_oblique",
+   "concept": "internal_oblique",
+   "node": "s3",
+   "type": "muscle",
+   "side": "right",
+   "group": "abdominal_wall",
+   "names": {
+    "preferred": "Internal oblique",
+    "latin": "Musculus obliquus internus abdominis",
+    "synonyms": [
+     "Obliquus internus abdominis"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13892"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_external_oblique"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_transversus_abdominis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_external_oblique"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_transversus_abdominis"
+    }
+   ],
+   "content": {
+    "pronunciation": "in-TER-nal oh-BLEEK",
+    "origin": "Latin obliquus, \"slanting\", and internus, \"inner\": the inner slanting muscle.",
+    "location": "The middle of the three flat muscles of the side abdominal wall, lying deep to the external oblique and superficial to the transversus abdominis.",
+    "description": "A thin sheet whose fibres fan upwards and forwards (superomedially), at right angles to the external oblique. Its aponeurosis helps form the rectus sheath. In males some of its lowest fibres continue into the cremaster muscle around the spermatic cord.",
+    "function": "Compresses the abdomen, flexes the trunk, and bends and rotates it to the same side. Origin: thoracolumbar fascia, anterior two-thirds of the iliac crest and deep to the lateral inguinal ligament -> insertion: lower borders of ribs 10-12, linea alba and pubis (via the conjoint tendon). Nerve supply: thoraco-abdominal nerves (T7-T11), subcostal nerve (T12) and first lumbar nerve (L1).",
+    "mnemonic": "Internal oblique = the opposite of external: fibres run up and in, like hands on your lower ribs.",
+    "clinical": "The cremaster muscle, derived from its lowest fibres, produces the cremasteric reflex (raising of the testis when the inner thigh is stroked), which is tested in some examinations.",
+    "hint": "The middle flat layer of the side abdominal wall, with fibres fanning up and in at right angles to the outer layer."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Where does the internal oblique lie?",
+     "options": [
+      "Superficial to the external oblique",
+      "Deep to the transversus abdominis",
+      "Inside the rectus sheath only",
+      "Between the external oblique and the transversus abdominis"
+     ],
+     "answer": 3,
+     "explanation": "The internal oblique is the middle of the three flat abdominal muscles."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_transversus_abdominis",
+   "concept": "transversus_abdominis",
+   "node": "s4",
+   "type": "muscle",
+   "side": "right",
+   "group": "abdominal_wall",
+   "names": {
+    "preferred": "Transversus abdominis",
+    "latin": "Musculus transversus abdominis",
+    "synonyms": [
+     "Transverse abdominal muscle",
+     "TA",
+     "TrA"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22344"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_internal_oblique"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_internal_oblique"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_multifidus"
+    }
+   ],
+   "content": {
+    "pronunciation": "trans-VER-sus ab-DOM-ih-nis",
+    "origin": "Latin transversus, \"lying across\", and abdominis, \"of the abdomen\".",
+    "location": "The deepest of the three flat muscles of the side abdominal wall, lying deep to the internal oblique and wrapping around from the back to the front of the abdomen.",
+    "description": "A thin sheet whose fibres run mostly horizontally, like a corset or weightlifting belt. Its aponeurosis joins the rectus sheath and linea alba.",
+    "function": "Compresses the abdomen and helps stabilise the trunk and lumbar spine. Origin: internal surfaces of costal cartilages 7-12, thoracolumbar fascia, iliac crest and deep to the lateral inguinal ligament -> insertion: linea alba and pubis (pubic crest via the conjoint tendon). Nerve supply: thoraco-abdominal nerves (T7-T11), subcostal nerve (T12) and first lumbar nerve (L1).",
+    "mnemonic": "Transversus = transverse fibres: the body's own corset.",
+    "clinical": "A transversus abdominis plane (TAP) block injects local anaesthetic between this muscle and the internal oblique, where the nerves of the abdominal wall run, to reduce pain after abdominal surgery.",
+    "hint": "The deepest flat layer of the side abdominal wall, with horizontal fibres that wrap the abdomen like a corset."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which abdominal muscle has horizontal fibres and acts like a corset to support the abdominal organs?",
+     "options": [
+      "Rectus abdominis",
+      "External oblique",
+      "Transversus abdominis",
+      "Pyramidalis"
+     ],
+     "answer": 2,
+     "explanation": "The transversus abdominis has horizontal fibres and compresses the abdomen like a corset."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_pyramidalis",
+   "concept": "pyramidalis",
+   "node": "s5",
+   "type": "muscle",
+   "side": "right",
+   "group": "abdominal_wall",
+   "names": {
+    "preferred": "Pyramidalis",
+    "latin": "Musculus pyramidalis",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22346"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_rectus_abdominis"
+    }
+   ],
+   "content": {
+    "pronunciation": "pi-RAM-ih-DAH-lis",
+    "origin": "Latin pyramidalis, \"pyramid-shaped\", describing its small triangular shape.",
+    "location": "At the very bottom of the front abdominal wall, just above the pubis, in front of the lower part of the rectus abdominis and inside the rectus sheath.",
+    "description": "A small triangular muscle, broad at its base on the pubis and narrowing to a point on the linea alba. It is often absent on one or both sides.",
+    "function": "Tenses the linea alba. Origin: front of the pubis (pubic crest) -> insertion: linea alba. Nerve supply: subcostal nerve (T12).",
+    "mnemonic": "Pyramidalis = a tiny pyramid sitting on the pubis.",
+    "clinical": "Because it is often absent and has only a minor role, its absence causes no noticeable weakness of the abdominal wall.",
+    "hint": "A tiny triangle at the lowest part of the front abdominal wall, sitting on the pubis in front of the segmented strap muscle."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What does the pyramidalis do?",
+     "options": [
+      "Tenses the linea alba",
+      "Flexes the hip",
+      "Raises the first rib",
+      "Supports the pelvic floor"
+     ],
+     "answer": 0,
+     "explanation": "The pyramidalis tenses the linea alba."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_quadratus_lumborum",
+   "concept": "quadratus_lumborum",
+   "node": "s6",
+   "type": "muscle",
+   "side": "right",
+   "group": "posterior_wall",
+   "names": {
+    "preferred": "Quadratus lumborum",
+    "latin": "Musculus quadratus lumborum",
+    "synonyms": [
+     "QL"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22348"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_psoas_major"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_iliocostalis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_diaphragm"
+    }
+   ],
+   "content": {
+    "pronunciation": "kwod-RAY-tus lum-BOR-um",
+    "origin": "Latin quadratus, \"square\", and lumborum, \"of the loins\": the square muscle of the lower back.",
+    "location": "In the posterior abdominal wall, between the 12th rib and the iliac crest, lateral to the lumbar vertebrae and the psoas major. It lies deep to the erector spinae.",
+    "description": "A flat, roughly four-sided muscle filling the gap between the lowest rib and the top of the pelvis.",
+    "function": "Bends the trunk to the same side (lateral flexion), helps extend the lumbar spine, can hitch the hip up, and fixes the 12th rib during breathing. Origin: iliolumbar ligament and inner lip of the iliac crest -> insertion: lower border of the 12th rib and tips of the lumbar transverse processes. Nerve supply: anterior rami of T12 and L1-L4.",
+    "mnemonic": "Quadratus = quadrilateral: a square block between the last rib and the hip bone.",
+    "clinical": "Tightness or spasm of this muscle is a common contributor to low back pain and is often treated in massage and physiotherapy.",
+    "hint": "A flat square muscle filling the gap between the lowest rib and the iliac crest, beside the lumbar spine."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Between which bony landmarks does the quadratus lumborum lie?",
+     "options": [
+      "First rib and clavicle",
+      "12th rib and iliac crest",
+      "Sacrum and coccyx",
+      "Mastoid process and sternum"
+     ],
+     "answer": 1,
+     "explanation": "The quadratus lumborum fills the space between the 12th rib and the iliac crest."
+    },
+    {
+     "kind": "function",
+     "text": "Which movement does the quadratus lumborum produce when one side contracts?",
+     "options": [
+      "Rotation of the head",
+      "Flexion of the knee",
+      "Lateral flexion of the trunk to the same side",
+      "Elevation of the scapula"
+     ],
+     "answer": 2,
+     "explanation": "One side bends the trunk to the same side."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_psoas_major",
+   "concept": "psoas_major",
+   "node": "s7",
+   "type": "muscle",
+   "side": "right",
+   "group": "posterior_wall",
+   "names": {
+    "preferred": "Psoas major",
+    "latin": "Musculus psoas major",
+    "synonyms": [
+     "Psoas"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22342"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_quadratus_lumborum"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_diaphragm"
+    }
+   ],
+   "content": {
+    "pronunciation": "SO-as MAY-jor",
+    "origin": "Greek psoa, \"loin muscles\"; Latin major, \"larger\" (there is sometimes a small psoas minor).",
+    "location": "In the posterior abdominal wall, alongside the lumbar vertebrae. It runs down along the pelvic brim, passes under the inguinal ligament and reaches the thigh.",
+    "description": "A long, thick, spindle-shaped muscle. It joins the iliacus to form the iliopsoas. The lumbar plexus forms within it.",
+    "function": "The strongest flexor of the hip; it also helps flex and side-bend the lumbar spine and helps sitting up from lying. Origin: sides of the bodies of T12-L5, their intervertebral discs and the lumbar transverse processes -> insertion: lesser trochanter of the femur (with iliacus). Nerve supply: anterior rami of lumbar nerves (L1-L3).",
+    "mnemonic": "Psoas links spine to thigh: \"so-as to lift your knee\".",
+    "clinical": "In appendicitis (especially a retrocaecal appendix), extending the right hip stretches the inflamed area over the psoas and causes pain (the psoas sign).",
+    "hint": "A long, thick muscle beside the lumbar vertebral bodies that runs down over the pelvic brim to the thigh."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What is the main action of the psoas major?",
+     "options": [
+      "Flexing the hip",
+      "Extending the hip",
+      "Elevating the ribs",
+      "Tensing the linea alba"
+     ],
+     "answer": 0,
+     "explanation": "The psoas major (with iliacus as iliopsoas) is the strongest hip flexor."
+    },
+    {
+     "kind": "relationship",
+     "text": "Where does the psoas major insert?",
+     "options": [
+      "Greater trochanter of the femur",
+      "Iliac crest",
+      "Lesser trochanter of the femur",
+      "12th rib"
+     ],
+     "answer": 2,
+     "explanation": "The psoas major inserts, with the iliacus, on the lesser trochanter of the femur."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_diaphragm",
+   "concept": "diaphragm",
+   "node": "s8",
+   "type": "muscle",
+   "side": "midline",
+   "group": "posterior_wall",
+   "names": {
+    "preferred": "Diaphragm",
+    "latin": "Diaphragma",
+    "synonyms": [
+     "Thoracic diaphragm"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13295"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_psoas_major"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_quadratus_lumborum"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_scalenes"
+    }
+   ],
+   "content": {
+    "pronunciation": "DY-uh-fram",
+    "origin": "Greek diaphragma, \"partition\" or \"barrier\" (dia, across, and phragma, fence).",
+    "location": "A dome-shaped sheet between the chest (thoracic cavity) and the abdomen, attached around the lower edge of the rib cage, the xiphoid process and the upper lumbar vertebrae. The right dome sits higher than the left because of the liver.",
+    "description": "Muscle fibres arise from three parts (sternal, costal and lumbar) and insert into a central tendon. Its lumbar part forms two crura on the vertebrae and arches (arcuate ligaments) over the psoas major and quadratus lumborum. It has openings for the inferior vena cava (T8), oesophagus (T10) and aorta (T12).",
+    "function": "The main muscle of breathing in (inspiration): it contracts and flattens, increasing the height of the chest so air flows in. Origin: xiphoid process, lower six costal cartilages and ribs, and lumbar vertebrae (crura, L1-L3) and arcuate ligaments -> insertion: central tendon. Nerve supply: phrenic nerves (C3-C5).",
+    "mnemonic": "\"C3, 4, 5 keeps the diaphragm alive\" (phrenic nerve). Openings: \"I 8 10 Eggs At 12\" - IVC T8, oesophagus T10, aorta T12.",
+    "clinical": "In a hiatus hernia, part of the stomach slides up through the oesophageal opening into the chest. Irritation of the diaphragm can cause pain referred to the shoulder tip, because its nerve comes from C3-C5.",
+    "hint": "A dome-shaped sheet of muscle and tendon forming the floor of the chest and roof of the abdomen."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which nerve supplies the diaphragm?",
+     "options": [
+      "Vagus nerve",
+      "Intercostal nerves",
+      "Accessory nerve",
+      "Phrenic nerve (C3-C5)"
+     ],
+     "answer": 3,
+     "explanation": "The phrenic nerves (C3-C5) supply the diaphragm: \"C3, 4, 5 keeps the diaphragm alive\"."
+    },
+    {
+     "kind": "location",
+     "text": "At what vertebral level does the oesophagus pass through the diaphragm?",
+     "options": [
+      "T8",
+      "T10",
+      "T12",
+      "L3"
+     ],
+     "answer": 1,
+     "explanation": "The oesophageal opening is at T10 (IVC T8, aorta T12)."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_levator_ani",
+   "concept": "levator_ani",
+   "node": "s9",
+   "type": "muscle",
+   "side": "right",
+   "group": "posterior_wall",
+   "names": {
+    "preferred": "Levator ani (pubococcygeus, puborectalis, iliococcygeus)",
+    "latin": "Musculus levator ani",
+    "synonyms": [
+     "Pelvic floor muscles"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA45854"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA45856"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA45858"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_transversus_abdominis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_diaphragm"
+    }
+   ],
+   "content": {
+    "pronunciation": "leh-VAY-tor AY-nye",
+    "origin": "Latin levator, \"lifter\", and ani, \"of the anus\": the muscle that lifts the anus.",
+    "location": "Forms most of the pelvic floor, stretching across the bottom of the pelvis from the pubis in front to the coccyx behind, and from side wall to side wall. With the small coccygeus muscle it forms the pelvic diaphragm.",
+    "description": "A broad, thin sheet made of three parts, shown here together: puborectalis (a U-shaped sling around the back of the anorectal junction), pubococcygeus (the main middle part, pubis to coccyx) and iliococcygeus (the thin back part from the side wall to the coccyx).",
+    "function": "Supports the pelvic organs and resists rises in abdominal pressure. Puborectalis keeps the anorectal angle for faecal continence. Origin: body of the pubis, tendinous arch of the obturator fascia and ischial spine -> insertion: perineal body, coccyx, anococcygeal body and walls of the pelvic organs. Nerve supply: nerve to levator ani (S4), inferior anal nerve and coccygeal plexus.",
+    "mnemonic": "Levator ani = the pelvic hammock: puborectalis, pubococcygeus, iliococcygeus (front to back: P, P, I).",
+    "clinical": "Stretching or damage during childbirth can weaken it, contributing to stress urinary incontinence and pelvic organ prolapse. Pelvic floor (Kegel) exercises strengthen it.",
+    "hint": "The muscular hammock forming the floor of the pelvis, between the pubis in front and the coccyx behind."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Which of these is NOT a part of the levator ani?",
+     "options": [
+      "Puborectalis",
+      "Pubococcygeus",
+      "Iliococcygeus",
+      "Iliocostalis"
+     ],
+     "answer": 3,
+     "explanation": "Levator ani consists of puborectalis, pubococcygeus and iliococcygeus; iliocostalis is a back muscle."
+    },
+    {
+     "kind": "clinical",
+     "text": "What is a common cause of weakness of the levator ani?",
+     "options": [
+      "Childbirth",
+      "Appendicitis",
+      "Whiplash",
+      "Hiatus hernia"
+     ],
+     "answer": 0,
+     "explanation": "Stretching or injury during childbirth can weaken the pelvic floor."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_trunk_right_iliocostalis",
+   "concept": "iliocostalis",
+   "node": "s10",
+   "type": "muscle",
+   "side": "right",
+   "group": "back",
+   "names": {
+    "preferred": "Iliocostalis",
+    "latin": "Musculus iliocostalis",
+    "synonyms": [
+     "Lateral column of erector spinae"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22740"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA22742"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA22744"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_longissimus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_spinalis"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_trunk_right_rectus_abdominis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_longissimus"
+    }
+   ],
+   "content": {
+    "pronunciation": "IL-ee-oh-kos-TAH-lis",
+    "origin": "Latin ilium (hip bone) and costa (rib): the muscle running from the hip bone to the ribs.",
+    "location": "The lateral (outer) column of the erector spinae, running up the back beside the longissimus, over the angles of the ribs.",
+    "description": "Shown as one structure with three parts: iliocostalis lumborum (lower back), thoracis (chest) and cervicis (neck). Each part runs up and inserts a few levels higher.",
+    "function": "Both sides together extend the vertebral column; one side bends the spine to the same side. Origin: common tendon from the iliac crest, sacrum and lumbar spinous processes -> insertion: angles of the ribs and transverse processes of the lower cervical vertebrae. Nerve supply: posterior rami of spinal nerves.",
+    "mnemonic": "Erector spinae columns from lateral to medial: \"I Love Spaghetti\" - Iliocostalis, Longissimus, Spinalis. Iliocostalis is outermost and goes to the ribs.",
+    "clinical": "Like the other erector spinae muscles it is commonly strained when lifting with a bent back, causing low back pain and muscle spasm.",
+    "hint": "The outermost of the three vertical columns of the back extensor muscles, attaching to the angles of the ribs."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Which column of the erector spinae is the most lateral?",
+     "options": [
+      "Spinalis",
+      "Longissimus",
+      "Iliocostalis",
+      "Multifidus"
+     ],
+     "answer": 2,
+     "explanation": "From lateral to medial the columns are iliocostalis, longissimus and spinalis (\"I Love Spaghetti\")."
+    },
+    {
+     "kind": "function",
+     "text": "What is the action of both iliocostalis muscles contracting together?",
+     "options": [
+      "Flexing the vertebral column",
+      "Extending the vertebral column",
+      "Rotating the head to the opposite side",
+      "Elevating the first rib"
+     ],
+     "answer": 1,
+     "explanation": "Acting together, the erector spinae columns extend the vertebral column."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_trunk_right_longissimus",
+   "concept": "longissimus",
+   "node": "s11",
+   "type": "muscle",
+   "side": "right",
+   "group": "back",
+   "names": {
+    "preferred": "Longissimus",
+    "latin": "Musculus longissimus",
+    "synonyms": [
+     "Intermediate column of erector spinae"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22751"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA22757"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA22754"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_iliocostalis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_spinalis"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_trunk_right_rectus_abdominis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_iliocostalis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_spinalis"
+    }
+   ],
+   "content": {
+    "pronunciation": "lon-JIS-ih-mus",
+    "origin": "Latin longissimus, \"longest\": the longest of the back muscles.",
+    "location": "The intermediate (middle) column of the erector spinae, between the iliocostalis laterally and the spinalis medially, running from the sacrum all the way up to the skull.",
+    "description": "Shown as one structure with three parts: longissimus thoracis (the largest part), cervicis and capitis. Longissimus capitis reaches the mastoid process behind the ear.",
+    "function": "Both sides extend the spine and head; one side bends the spine and turns the head to the same side. Origin: common tendon from the iliac crest, sacrum and lumbar spinous processes -> insertion: ribs, thoracic and cervical transverse processes, and mastoid process. Nerve supply: posterior rami of spinal nerves.",
+    "mnemonic": "\"I Love Spaghetti\": L for Longissimus, the Long one in the middle.",
+    "clinical": "It is the thickest part of the erector spinae in the lower back, which is where most mechanical back strains are felt.",
+    "hint": "The middle and longest of the three vertical back-extensor columns, reaching from the sacrum up to the bone behind the ear."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Longissimus capitis attaches to which part of the skull?",
+     "options": [
+      "Mastoid process",
+      "External occipital protuberance",
+      "Mandible",
+      "Zygomatic arch"
+     ],
+     "answer": 0,
+     "explanation": "Longissimus capitis inserts on the mastoid process."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_trunk_right_spinalis",
+   "concept": "spinalis",
+   "node": "s12",
+   "type": "muscle",
+   "side": "right",
+   "group": "back",
+   "names": {
+    "preferred": "Spinalis",
+    "latin": "Musculus spinalis",
+    "synonyms": [
+     "Medial column of erector spinae"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22779"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA22781"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_longissimus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_iliocostalis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_longissimus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_semispinalis"
+    }
+   ],
+   "content": {
+    "pronunciation": "spy-NAH-lis",
+    "origin": "Latin spina, \"thorn\" or spine: it runs between the spinous processes.",
+    "location": "The medial (innermost) and smallest column of the erector spinae, lying right next to the spinous processes, mainly in the thoracic region.",
+    "description": "Shown as one structure with two parts: spinalis thoracis and spinalis cervicis (spinalis capitis, when present, blends with semispinalis capitis). It connects spinous processes to spinous processes.",
+    "function": "Both sides together extend the vertebral column; one side bends it to the same side. Origin: spinous processes of the upper lumbar and lower thoracic vertebrae (and lower cervical for the neck part) -> insertion: spinous processes of the upper thoracic and cervical vertebrae. Nerve supply: posterior rami of spinal nerves.",
+    "mnemonic": "\"I Love Spaghetti\": Spinalis is closest to the Spine.",
+    "clinical": "Being small and close to the midline, it is rarely injured on its own, but it tightens with the rest of the erector spinae in back spasm.",
+    "hint": "The innermost and smallest back-extensor column, joining spinous process to spinous process right beside the midline."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "What does the spinalis attach to?",
+     "options": [
+      "Angles of the ribs",
+      "Spinous processes of vertebrae",
+      "The iliac crest only",
+      "The mastoid process"
+     ],
+     "answer": 1,
+     "explanation": "Spinalis runs from spinous processes to spinous processes."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_trunk_right_multifidus",
+   "concept": "multifidus",
+   "node": "s13",
+   "type": "muscle",
+   "side": "right",
+   "group": "back",
+   "names": {
+    "preferred": "Multifidus",
+    "latin": "Musculus multifidus",
+    "synonyms": [
+     "Multifidi"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22878"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_semispinalis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_semispinalis"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_transversus_abdominis"
+    }
+   ],
+   "content": {
+    "pronunciation": "mul-TIF-ih-dus",
+    "origin": "Latin multus, \"many\", and findere, \"to split\": split into many parts.",
+    "location": "Deep in the back, in the groove beside the spinous processes, under the erector spinae. It is part of the deep transversospinalis group and is thickest in the lumbar region.",
+    "description": "Many short, triangular bundles, each crossing two to four vertebrae and running up and inwards from a lower attachment to a spinous process above.",
+    "function": "Stabilises the vertebrae during movement and helps extend, side-bend and rotate the spine to the opposite side. Origin: back of the sacrum, posterior iliac spine region, lumbar mammillary processes, thoracic transverse processes and lower cervical articular processes -> insertion: spinous processes two to four vertebrae higher. Nerve supply: posterior rami of spinal nerves.",
+    "mnemonic": "Multi-fidus = many fingers: many small bundles, each gripping a spinous process a few levels up.",
+    "clinical": "Wasting and poor activation of its lumbar part are often found in people with persistent low back pain, so it is a common target of spinal stabilisation exercises.",
+    "hint": "Many short deep bundles in the groove next to the spinous processes, thickest in the lower back beneath the long extensor columns."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What is a key role of the multifidus?",
+     "options": [
+      "Stabilising the vertebrae during movement",
+      "Flexing the hip",
+      "Breathing in",
+      "Tensing the linea alba"
+     ],
+     "answer": 0,
+     "explanation": "Multifidus stabilises individual vertebrae and helps extend and rotate the spine."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_semispinalis",
+   "concept": "semispinalis",
+   "node": "s14",
+   "type": "muscle",
+   "side": "right",
+   "group": "back",
+   "names": {
+    "preferred": "Semispinalis",
+    "latin": "Musculus semispinalis",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22872"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA22874"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA22876"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_multifidus"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_splenius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_multifidus"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_splenius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_spinalis"
+    }
+   ],
+   "content": {
+    "pronunciation": "SEM-ee-spy-NAH-lis",
+    "origin": "Latin semi, \"half\", and spinalis, \"of the spine\": it covers only the upper half of the spine.",
+    "location": "Deep in the upper back and neck, part of the transversospinalis group, lying superficial to the multifidus and deep to the splenius and trapezius.",
+    "description": "Shown as one structure with three parts: semispinalis thoracis, cervicis and capitis. Semispinalis capitis is the largest and forms the thick vertical bulge either side of the midline at the back of the neck.",
+    "function": "Extends the head and the thoracic and cervical spine, and one side rotates the spine to the opposite side. Origin: transverse processes of about C4-T10 -> insertion: spinous processes of cervical and thoracic vertebrae four to six levels higher, and (capitis) the occipital bone between the nuchal lines. Nerve supply: posterior rami of spinal nerves.",
+    "mnemonic": "Semi-spinalis = half the spine: only in the upper (neck and chest) half.",
+    "clinical": "The greater occipital nerve pierces semispinalis capitis, so tension here is linked with occipital headaches and occipital neuralgia.",
+    "hint": "The thick deep ropes either side of the midline at the back of the neck, running up to the occipital bone."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Which nerve pierces semispinalis capitis and may be involved in occipital headaches?",
+     "options": [
+      "Phrenic nerve",
+      "Accessory nerve",
+      "Greater occipital nerve",
+      "Subcostal nerve"
+     ],
+     "answer": 2,
+     "explanation": "The greater occipital nerve pierces semispinalis capitis."
+    },
+    {
+     "kind": "location",
+     "text": "In which part of the spine is the semispinalis found?",
+     "options": [
+      "The upper half (thoracic and cervical)",
+      "Only the lumbar region",
+      "Only the sacrum",
+      "The whole length from sacrum to skull"
+     ],
+     "answer": 0,
+     "explanation": "Semispinalis spans only the thoracic and cervical regions - the upper half of the spine."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_trunk_right_serratus_posterior_superior",
+   "concept": "serratus_posterior_superior",
+   "node": "s15",
+   "type": "muscle",
+   "side": "right",
+   "group": "back",
+   "names": {
+    "preferred": "Serratus posterior superior",
+    "latin": "Musculus serratus posterior superior",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13403"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_trunk_right_serratus_posterior_inferior"
+    }
+   ],
+   "content": {
+    "pronunciation": "ser-AY-tus pos-TEER-ee-or soo-PEER-ee-or",
+    "origin": "Latin serratus, \"saw-toothed\", posterior, \"at the back\", and superior, \"upper\".",
+    "location": "In the upper back, deep to the rhomboids, running from the lower neck and upper thoracic spine out to the upper ribs.",
+    "description": "A thin, four-sided muscle with saw-tooth slips attaching to the ribs.",
+    "function": "Traditionally described as elevating the upper ribs (helping inspiration), although it may act mainly as a sensor (proprioceptive) rather than a strong mover. Origin: nuchal ligament and spinous processes of C7-T3 -> insertion: upper borders of ribs 2-4. Nerve supply: second to fifth intercostal nerves.",
+    "mnemonic": "Superior serratus pulls the upper ribs up; inferior pulls the lower ribs down.",
+    "clinical": "It lies under the rhomboids and scapula and is sometimes considered a source of upper back and shoulder blade pain in massage practice.",
+    "hint": "A thin saw-toothed sheet in the upper back running from the lower neck spines to ribs 2-4, beneath the shoulder-blade muscles."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "What action is traditionally given for serratus posterior superior?",
+     "options": [
+      "Depresses the lower ribs",
+      "Elevates the upper ribs",
+      "Extends the hip",
+      "Rotates the head to the same side"
+     ],
+     "answer": 1,
+     "explanation": "Serratus posterior superior is traditionally said to elevate ribs 2-4."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_serratus_posterior_inferior",
+   "concept": "serratus_posterior_inferior",
+   "node": "s16",
+   "type": "muscle",
+   "side": "right",
+   "group": "back",
+   "names": {
+    "preferred": "Serratus posterior inferior",
+    "latin": "Musculus serratus posterior inferior",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13405"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "opposes",
+     "target": "muscular_trunk_right_serratus_posterior_superior"
+    }
+   ],
+   "content": {
+    "pronunciation": "ser-AY-tus pos-TEER-ee-or in-FEER-ee-or",
+    "origin": "Latin serratus, \"saw-toothed\", posterior, \"at the back\", and inferior, \"lower\".",
+    "location": "In the lower back, deep to the latissimus dorsi, running from the thoracolumbar spine out to the lowest ribs.",
+    "description": "A thin, four-sided muscle whose slips run up and out to attach to the lower ribs.",
+    "function": "Traditionally described as pulling the lower ribs down and back (depressing them), though it may act mainly as a sensor (proprioceptive). Origin: spinous processes of T11-L2 -> insertion: lower borders of ribs 8-12. Nerve supply: anterior rami of T9-T12 (lower intercostal and subcostal nerves).",
+    "mnemonic": "Inferior serratus pulls the lower ribs down.",
+    "clinical": "It lies under the latissimus dorsi and can be strained along with it, giving pain over the lower ribs at the back.",
+    "hint": "A thin saw-toothed sheet in the lower back running from the lower thoracic and upper lumbar spines to the lowest ribs."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Serratus posterior inferior attaches to which ribs?",
+     "options": [
+      "Ribs 2-4",
+      "Rib 1 only",
+      "Ribs 8-12",
+      "Ribs 5-7"
+     ],
+     "answer": 2,
+     "explanation": "Serratus posterior inferior inserts on ribs 8-12."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_splenius",
+   "concept": "splenius",
+   "node": "s17",
+   "type": "muscle",
+   "side": "right",
+   "group": "neck",
+   "names": {
+    "preferred": "Splenius capitis and cervicis",
+    "latin": "Musculi splenius capitis et splenius cervicis",
+    "synonyms": [
+     "Splenius"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA22728"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA22726"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_semispinalis"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_semispinalis"
+    }
+   ],
+   "content": {
+    "pronunciation": "SPLEE-nee-us KAP-ih-tis and SER-vih-sis",
+    "origin": "Latin splenius, from Greek splenion, \"bandage\": it wraps around the deeper neck muscles like a bandage.",
+    "location": "At the back of the neck and upper back, deep to the trapezius and sternocleidomastoid, covering the deeper neck muscles such as semispinalis.",
+    "description": "Shown as one structure with two parts: splenius capitis (to the skull) and splenius cervicis (to the upper cervical vertebrae). Its fibres run up and outwards like a bandage.",
+    "function": "Both sides together extend the head and neck; one side bends the neck and turns the head to the same side. Origin: nuchal ligament and spinous processes of C7-T6 -> insertion: capitis to the mastoid process and lateral superior nuchal line; cervicis to the transverse processes of C1-C3 (or C4). Nerve supply: posterior rami of spinal nerves.",
+    "mnemonic": "Splenius = splint or bandage wrapped around the back of the neck.",
+    "clinical": "It is commonly strained in whiplash injuries, causing neck pain and stiffness.",
+    "hint": "A bandage-like sheet wrapping upwards and outwards over the deep muscles at the back of the neck, reaching the bone behind the ear."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "When one side contracts, the splenius turns the head to which side?",
+     "options": [
+      "The same side",
+      "The opposite side",
+      "It cannot turn the head",
+      "Only downwards"
+     ],
+     "answer": 0,
+     "explanation": "One splenius turns the head to the same side."
+    },
+    {
+     "kind": "terminology",
+     "text": "The name splenius comes from a word meaning what?",
+     "options": [
+      "Spleen",
+      "Bandage",
+      "Spine",
+      "Saw-toothed"
+     ],
+     "answer": 1,
+     "explanation": "Splenius comes from Greek splenion, bandage."
+    }
+   ],
+   "merged": true
+  },
+  {
+   "id": "muscular_trunk_right_sternocleidomastoid",
+   "concept": "sternocleidomastoid",
+   "node": "s18",
+   "type": "muscle",
+   "side": "right",
+   "group": "neck",
+   "names": {
+    "preferred": "Sternocleidomastoid",
+    "latin": "Musculus sternocleidomastoideus",
+    "synonyms": [
+     "SCM",
+     "Sternomastoid"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13408"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_scalenes"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_scalenes"
+    }
+   ],
+   "content": {
+    "pronunciation": "STER-noh-KLY-doh-MAS-toyd",
+    "origin": "Named from its attachments: sternum, cleido (Greek kleis, \"clavicle\") and mastoid process.",
+    "location": "On the side of the neck, running diagonally from the top of the sternum and inner clavicle up to the mastoid process behind the ear. It divides the neck into anterior and posterior triangles.",
+    "description": "A thick strap with two heads below (sternal and clavicular) that join into one belly running up and back.",
+    "function": "One side bends the neck to the same side and turns the face to the opposite side; both together flex the neck and help breathe in when the head is fixed. Origin: manubrium of sternum and medial third of clavicle -> insertion: mastoid process and lateral superior nuchal line. Nerve supply: accessory nerve (CN XI), with sensory fibres from C2-C3.",
+    "mnemonic": "To turn your face to the left, use your right SCM: \"look away from it\".",
+    "clinical": "Torticollis (wry neck) is when the head is tilted and turned from a shortened muscle; congenital torticollis in babies is linked to a fibrous lump in it.",
+    "hint": "The prominent diagonal strap on the side of the neck, from the top of the breastbone and collarbone to the bump behind the ear."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "The right sternocleidomastoid turns the face towards which side?",
+     "options": [
+      "The right",
+      "Straight up",
+      "The left",
+      "It does not rotate the head"
+     ],
+     "answer": 2,
+     "explanation": "One sternocleidomastoid turns the face to the opposite side."
+    },
+    {
+     "kind": "function",
+     "text": "Which nerve supplies the sternocleidomastoid?",
+     "options": [
+      "Phrenic nerve",
+      "Accessory nerve (CN XI)",
+      "Facial nerve",
+      "Greater occipital nerve"
+     ],
+     "answer": 1,
+     "explanation": "Motor supply is from the accessory nerve (cranial nerve XI)."
+    }
+   ]
+  },
+  {
+   "id": "muscular_trunk_right_scalenes",
+   "concept": "scalenes",
+   "node": "s19",
+   "type": "muscle",
+   "side": "right",
+   "group": "neck",
+   "names": {
+    "preferred": "Scalene muscles (anterior, middle, posterior)",
+    "latin": "Musculi scaleni",
+    "synonyms": [
+     "Scalenus anterior, medius and posterior"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13392"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA13390"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA13388"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "attaches_to",
+     "target": "muscular_trunk_right_skeleton"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_diaphragm"
+    },
+    {
+     "type": "works_with",
+     "target": "muscular_trunk_right_sternocleidomastoid"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "muscular_trunk_right_sternocleidomastoid"
+    }
+   ],
+   "content": {
+    "pronunciation": "SKAY-leenz",
+    "origin": "Greek skalenos, \"uneven\" (like a scalene triangle, with unequal sides).",
+    "location": "Deep on the side of the neck, behind the sternocleidomastoid, running from the cervical transverse processes down to the first two ribs.",
+    "description": "Shown as one structure with three parts: anterior scalene (to the first rib), middle scalene (the largest, to the first rib behind the subclavian artery) and posterior scalene (to the second rib).",
+    "function": "Raise the first and second ribs during forced breathing in, and bend the neck to the same side. Origin: transverse processes of the cervical vertebrae (about C2-C7) -> insertion: anterior and middle to the first rib, posterior to the second rib. Nerve supply: anterior rami of cervical spinal nerves.",
+    "mnemonic": "Anterior and middle go to rib 1, posterior to rib 2; the brachial plexus squeezes between the anterior and middle.",
+    "clinical": "The brachial plexus and subclavian artery pass between the anterior and middle scalenes. Tight scalenes or an extra cervical rib can compress them (thoracic outlet syndrome), causing arm pain, tingling or weakness.",
+    "hint": "Three deep bands on the side of the neck, behind the prominent diagonal strap, running from the neck vertebrae down to the first two ribs."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which structures pass between the anterior and middle scalenes?",
+     "options": [
+      "The oesophagus and trachea",
+      "The brachial plexus and subclavian artery",
+      "The phrenic and vagus nerves only",
+      "The carotid artery and jugular vein"
+     ],
+     "answer": 1,
+     "explanation": "The brachial plexus and subclavian artery pass between the anterior and middle scalene."
+    },
+    {
+     "kind": "function",
+     "text": "In breathing, what do the scalenes do?",
+     "options": [
+      "Depress the lower ribs",
+      "Relax the diaphragm",
+      "Close the airway",
+      "Raise the first and second ribs in forced inspiration"
+     ],
+     "answer": 3,
+     "explanation": "The scalenes elevate ribs 1 and 2, assisting forced inspiration."
+    }
+   ],
+   "merged": true
+  }
+ ]
+}

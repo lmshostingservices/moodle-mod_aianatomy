@@ -1,0 +1,1727 @@
+{
+ "id": "hand_right",
+ "version": "1.0.0",
+ "name": "Hand and wrist bones (right)",
+ "description": "Right hand and wrist skeleton: 8 carpals, 5 metacarpals, 14 phalanges, with the distal radius and ulna for context.",
+ "system": "skeletal",
+ "region": "upper_limb",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "hand",
+ "defaultgroup": "carpals",
+ "rootframe": [
+  "carpals",
+  "metacarpals",
+  "phalanges"
+ ],
+ "presets": [
+  {
+   "id": "palmar",
+   "label": "Palmar",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "dorsal",
+   "label": "Dorsal",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "radial",
+   "label": "Radial (thumb side)",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "ulnar",
+   "label": "Ulnar (little-finger side)",
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  }
+ ],
+ "defaultpreset": "palmar",
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, smooth normals, axes converted to Y-up/Z-anterior, recentred on the hand, one node per structure. Geometry otherwise unchanged.",
+  "anatomy_verified": "Geometry and identity taken unchanged from BodyParts3D (FMA IDs preserved)."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "hand",
+   "label": "Hand and wrist",
+   "parent": null
+  },
+  {
+   "id": "forearm",
+   "label": "Forearm (distal)",
+   "parent": "hand"
+  },
+  {
+   "id": "carpals",
+   "label": "Carpal bones",
+   "parent": "hand",
+   "tip": "Carpal mnemonic: \"So Long To Pinky, Here Comes The Thumb\" - Scaphoid, Lunate, Triquetrum, Pisiform (proximal row, thumb to pinky), then Hamate, Capitate, Trapezoid, Trapezium (distal row, pinky to thumb)."
+  },
+  {
+   "id": "carpals_proximal",
+   "label": "Proximal carpal row",
+   "parent": "carpals"
+  },
+  {
+   "id": "carpals_distal",
+   "label": "Distal carpal row",
+   "parent": "carpals"
+  },
+  {
+   "id": "metacarpals",
+   "label": "Metacarpals",
+   "parent": "hand",
+   "tip": "Metacarpals are numbered I to V starting at the thumb. Their heads form your knuckles."
+  },
+  {
+   "id": "phalanges",
+   "label": "Phalanges",
+   "parent": "hand",
+   "tip": "Each finger has three phalanges (proximal, middle, distal). The thumb has two: 14 in total."
+  },
+  {
+   "id": "phalanges_proximal",
+   "label": "Proximal phalanges",
+   "parent": "phalanges"
+  },
+  {
+   "id": "phalanges_middle",
+   "label": "Middle phalanges",
+   "parent": "phalanges"
+  },
+  {
+   "id": "phalanges_distal",
+   "label": "Distal phalanges",
+   "parent": "phalanges"
+  }
+ ],
+ "structures": [
+  {
+   "id": "skeletal_forearm_right_radius",
+   "concept": "radius",
+   "node": "s0",
+   "type": "bone",
+   "side": "right",
+   "group": "forearm",
+   "names": {
+    "preferred": "Radius",
+    "latin": "Radius",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA23464"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_scaphoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_lunate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_forearm_right_ulna"
+    }
+   ],
+   "content": {
+    "pronunciation": "RAY-dee-us",
+    "origin": "Latin radius, \"spoke of a wheel\" or \"ray\". The radius turns around the ulna like a spoke.",
+    "location": "The lateral (thumb-side) bone of the forearm. Its wide lower end forms most of the wrist joint.",
+    "description": "A long bone that is narrow at the elbow and broad at the wrist.",
+    "function": "Carries most of the load from the hand to the forearm and rotates around the ulna to turn the palm up and down (supination and pronation).",
+    "mnemonic": "Radius sits by the thumb: \"thumbs up for the radius\".",
+    "clinical": "A Colles fracture is a break of the distal radius, usually from a fall on an outstretched hand.",
+    "hint": "The big forearm bone on the thumb side, meeting the scaphoid and lunate."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which movement depends on the radius rotating around the ulna?",
+     "options": [
+      "Flexing the fingers",
+      "Turning the palm up and down",
+      "Spreading the fingers apart",
+      "Bending the elbow only"
+     ],
+     "answer": 1,
+     "explanation": "The radius rotates around the ulna during pronation and supination."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_forearm_right_ulna",
+   "concept": "ulna",
+   "node": "s1",
+   "type": "bone",
+   "side": "right",
+   "group": "forearm",
+   "names": {
+    "preferred": "Ulna",
+    "latin": "Ulna",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA23467"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_forearm_right_radius"
+    }
+   ],
+   "content": {
+    "pronunciation": "UL-nah",
+    "origin": "Latin ulna, \"elbow\" or \"forearm\".",
+    "location": "The medial (little-finger side) bone of the forearm.",
+    "description": "A long bone that is large at the elbow and small at the wrist, ending in the ulnar styloid process.",
+    "function": "Forms the main hinge of the elbow and acts as the fixed bone the radius rotates around. At the wrist it is separated from the carpal bones by a cartilage disc.",
+    "mnemonic": "Ulna is by the little finger: \"U and the little finger point the same way\".",
+    "clinical": "The ulnar styloid is often broken together with a distal radius fracture.",
+    "hint": "The forearm bone on the little-finger side."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "At the wrist, the ulna is separated from the carpal bones by what?",
+     "options": [
+      "A cartilage disc",
+      "The pisiform",
+      "The capitate",
+      "Nothing - it joins the lunate directly"
+     ],
+     "answer": 0,
+     "explanation": "An articular disc (part of the triangular fibrocartilage complex) sits between the ulna and the carpal bones."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_scaphoid",
+   "concept": "scaphoid",
+   "node": "s2",
+   "type": "bone",
+   "side": "right",
+   "group": "carpals_proximal",
+   "names": {
+    "preferred": "Scaphoid",
+    "latin": "Os scaphoideum",
+    "synonyms": [
+     "Navicular of the hand (older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24435"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_forearm_right_radius"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_lunate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_trapezium"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_trapezoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_capitate"
+    }
+   ],
+   "content": {
+    "pronunciation": "SKAF-oyd",
+    "origin": "Greek skaphe, \"boat\", plus -oeides, \"like\". It is shaped a little like a boat.",
+    "location": "Proximal row of the carpal bones, on the thumb (lateral) side, next to the radius.",
+    "description": "The largest bone of the proximal carpal row. It is long and curved and bridges the two carpal rows.",
+    "function": "Links the proximal and distal carpal rows, helping the wrist move smoothly and stay stable. It also carries force from the thumb side of the hand to the radius.",
+    "mnemonic": "\"Scaphoid sails beside the thumb\" - a little boat on the thumb side.",
+    "clinical": "The most commonly fractured carpal bone, usually from a fall on an outstretched hand. Tenderness in the anatomical snuffbox is a warning sign. Its blood supply enters at the far end, so the near part can lose its blood supply after a fracture.",
+    "hint": "Look in the first row of wrist bones, on the thumb side, right next to the radius."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Which is the most commonly fractured carpal bone?",
+     "options": [
+      "Hamate",
+      "Scaphoid",
+      "Pisiform",
+      "Trapezoid"
+     ],
+     "answer": 1,
+     "explanation": "The scaphoid is the most commonly fractured carpal bone, usually after a fall on an outstretched hand."
+    },
+    {
+     "kind": "function",
+     "text": "What is an important role of the scaphoid?",
+     "options": [
+      "It forms the elbow joint",
+      "It links the two rows of carpal bones",
+      "It is a sesamoid bone in a tendon",
+      "It forms the knuckle of the index finger"
+     ],
+     "answer": 1,
+     "explanation": "The scaphoid bridges the proximal and distal carpal rows, helping wrist movement and stability."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_lunate",
+   "concept": "lunate",
+   "node": "s3",
+   "type": "bone",
+   "side": "right",
+   "group": "carpals_proximal",
+   "names": {
+    "preferred": "Lunate",
+    "latin": "Os lunatum",
+    "synonyms": [
+     "Semilunar bone (older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24437"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_forearm_right_radius"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_scaphoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_triquetrum"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_capitate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_hamate"
+    }
+   ],
+   "content": {
+    "pronunciation": "LOO-nate",
+    "origin": "Latin luna, \"moon\". Seen from the side it has a crescent-moon shape.",
+    "location": "Centre of the proximal carpal row, between the scaphoid and the triquetrum.",
+    "description": "A crescent-shaped bone that sits in the middle of the wrist, directly beyond the radius.",
+    "function": "Forms part of the main wrist joint with the radius and passes force from the capitate to the forearm.",
+    "mnemonic": "\"Lunate is the moon in the middle of the wrist.\"",
+    "clinical": "The most commonly dislocated carpal bone. Loss of its blood supply causes Kienbock disease.",
+    "hint": "The middle bone of the first row of wrist bones."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Which carpal bone is most commonly dislocated?",
+     "options": [
+      "Lunate",
+      "Capitate",
+      "Trapezium",
+      "Pisiform"
+     ],
+     "answer": 0,
+     "explanation": "The lunate is the most commonly dislocated carpal bone."
+    },
+    {
+     "kind": "location",
+     "text": "Where is the lunate?",
+     "options": [
+      "Middle of the proximal carpal row",
+      "Base of the thumb",
+      "Little-finger side of the distal row",
+      "Inside a tendon on the palm"
+     ],
+     "answer": 0,
+     "explanation": "The lunate sits in the centre of the proximal row, between the scaphoid and triquetrum."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_triquetrum",
+   "concept": "triquetrum",
+   "node": "s4",
+   "type": "bone",
+   "side": "right",
+   "group": "carpals_proximal",
+   "names": {
+    "preferred": "Triquetrum",
+    "latin": "Os triquetrum",
+    "synonyms": [
+     "Triquetral bone",
+     "Cuneiform bone of the hand (older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24439"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_lunate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_pisiform"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_hamate"
+    }
+   ],
+   "content": {
+    "pronunciation": "try-KWEE-trum",
+    "origin": "Latin triquetrus, \"three-cornered\". It is roughly pyramid-shaped.",
+    "location": "Proximal carpal row on the little-finger (medial) side, beside the lunate. The pisiform sits on its palm side.",
+    "description": "A pyramid-shaped bone with a small oval facet on its front for the pisiform.",
+    "function": "Helps form the ulnar side of the wrist and moves with the other proximal row bones. It transfers load through the cartilage disc to the ulna.",
+    "mnemonic": "\"Tri = three corners, on the pinky side.\"",
+    "clinical": "The second most commonly fractured carpal bone, often as a small chip off its back surface.",
+    "hint": "First row of wrist bones, on the little-finger side, with the pea-shaped pisiform sitting on it."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which bone sits on the palm side of the triquetrum?",
+     "options": [
+      "Hamate",
+      "Pisiform",
+      "Lunate",
+      "Capitate"
+     ],
+     "answer": 1,
+     "explanation": "The pisiform articulates with the front (palmar) surface of the triquetrum."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_pisiform",
+   "concept": "pisiform",
+   "node": "s5",
+   "type": "bone",
+   "side": "right",
+   "group": "carpals_proximal",
+   "names": {
+    "preferred": "Pisiform",
+    "latin": "Os pisiforme",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24441"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_triquetrum"
+    }
+   ],
+   "content": {
+    "pronunciation": "PIZ-ih-form (or PY-sih-form)",
+    "origin": "Latin pisum, \"pea\", plus forma, \"shape\". It is small and pea-shaped.",
+    "location": "On the palm side of the triquetrum, at the little-finger side of the wrist crease.",
+    "description": "The smallest carpal bone. It sits inside the tendon of flexor carpi ulnaris.",
+    "function": "Acts as a sesamoid bone, giving the flexor carpi ulnaris tendon better leverage. It is also an attachment point for the flexor retinaculum.",
+    "mnemonic": "\"Pisiform is the pea you can feel at the pinky side of the wrist.\"",
+    "clinical": "It forms one wall of Guyon canal, through which the ulnar nerve and artery pass into the hand.",
+    "hint": "The tiny pea-shaped bone on the palm side of the little-finger edge of the wrist."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Why is the pisiform called a sesamoid bone?",
+     "options": [
+      "It is the largest carpal bone",
+      "It develops within a tendon",
+      "It has a hook",
+      "It forms the thumb joint"
+     ],
+     "answer": 1,
+     "explanation": "The pisiform develops within the tendon of flexor carpi ulnaris, which makes it a sesamoid bone."
+    }
+   ],
+   "explode": [
+    0.8,
+    -0.75,
+    0.5
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_trapezium",
+   "concept": "trapezium",
+   "node": "s6",
+   "type": "bone",
+   "side": "right",
+   "group": "carpals_distal",
+   "names": {
+    "preferred": "Trapezium",
+    "latin": "Os trapezium",
+    "synonyms": [
+     "Greater multangular (older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24443"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_scaphoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_trapezoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_1"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "trah-PEE-zee-um",
+    "origin": "Greek trapezion, \"little table\", a four-sided figure.",
+    "location": "Distal carpal row on the thumb side, at the base of the first metacarpal.",
+    "description": "An irregular bone with a saddle-shaped surface for the thumb and a groove for the flexor carpi radialis tendon.",
+    "function": "Forms the saddle joint at the base of the thumb, which allows the thumb to move across the palm (opposition).",
+    "mnemonic": "\"TrapeziUM sits under the thUMb.\"",
+    "clinical": "The thumb base joint (trapezium and first metacarpal) is a very common site of osteoarthritis.",
+    "hint": "Second row of wrist bones, directly below the thumb metacarpal."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which movement is made possible by the saddle joint between the trapezium and the first metacarpal?",
+     "options": [
+      "Thumb opposition",
+      "Wrist extension only",
+      "Elbow flexion",
+      "Little-finger abduction"
+     ],
+     "answer": 0,
+     "explanation": "The saddle-shaped trapezium lets the thumb move across the palm to touch the other fingers."
+    },
+    {
+     "kind": "terminology",
+     "text": "How can you tell the trapezium from the trapezoid?",
+     "options": [
+      "The trapezium is under the thumb",
+      "The trapezium is under the little finger",
+      "The trapezium is in the proximal row",
+      "The trapezium is inside a tendon"
+     ],
+     "answer": 0,
+     "explanation": "Remember \"trapeziUM under the thUMb\". The trapezoid sits next to it, under the index finger."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_trapezoid",
+   "concept": "trapezoid",
+   "node": "s7",
+   "type": "bone",
+   "side": "right",
+   "group": "carpals_distal",
+   "names": {
+    "preferred": "Trapezoid",
+    "latin": "Os trapezoideum",
+    "synonyms": [
+     "Lesser multangular (older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA23725"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_scaphoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_trapezium"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_capitate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "TRAP-eh-zoyd",
+    "origin": "Greek trapezoeides, \"table-shaped\".",
+    "location": "Distal carpal row, between the trapezium and the capitate, at the base of the second metacarpal.",
+    "description": "A small wedge-shaped bone, the smallest bone of the distal row.",
+    "function": "Holds the base of the index finger metacarpal firmly in place, making the index finger a stable pillar of the hand.",
+    "mnemonic": "\"TrapezOID is the Other one - beside the trapezium, under the index finger.\"",
+    "clinical": "Rarely injured on its own because it is well protected and tightly bound to its neighbours.",
+    "hint": "Second row of wrist bones, between the thumb-side bone and the big central bone."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which metacarpal does the trapezoid mainly support?",
+     "options": [
+      "First",
+      "Second",
+      "Fourth",
+      "Fifth"
+     ],
+     "answer": 1,
+     "explanation": "The trapezoid sits at the base of the second (index finger) metacarpal."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_capitate",
+   "concept": "capitate",
+   "node": "s8",
+   "type": "bone",
+   "side": "right",
+   "group": "carpals_distal",
+   "names": {
+    "preferred": "Capitate",
+    "latin": "Os capitatum",
+    "synonyms": [
+     "Os magnum (older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24446"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_scaphoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_lunate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_trapezoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_hamate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_2"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_3"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_4"
+    }
+   ],
+   "content": {
+    "pronunciation": "KAP-ih-tate",
+    "origin": "Latin caput, \"head\". It has a rounded head that fits into the proximal row.",
+    "location": "Centre of the distal carpal row, at the base of the third metacarpal.",
+    "description": "The largest carpal bone, with a rounded head that sits in a hollow formed by the scaphoid and lunate.",
+    "function": "Acts as the keystone of the wrist. It carries force from the middle finger to the lunate and radius and is the centre of wrist movement.",
+    "mnemonic": "\"Capitate is the Captain - biggest and in the centre.\"",
+    "clinical": "It is the first carpal bone to ossify, which makes it useful when estimating bone age on X-ray.",
+    "hint": "The biggest wrist bone, in the middle of the second row, below the middle finger."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "Which is the largest carpal bone?",
+     "options": [
+      "Capitate",
+      "Scaphoid",
+      "Hamate",
+      "Lunate"
+     ],
+     "answer": 0,
+     "explanation": "The capitate is the largest carpal bone and sits in the centre of the distal row."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_hamate",
+   "concept": "hamate",
+   "node": "s9",
+   "type": "bone",
+   "side": "right",
+   "group": "carpals_distal",
+   "names": {
+    "preferred": "Hamate",
+    "latin": "Os hamatum",
+    "synonyms": [
+     "Unciform bone (older term)"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24448"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_lunate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_triquetrum"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_capitate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_4"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_5"
+    }
+   ],
+   "content": {
+    "pronunciation": "HAM-ate",
+    "origin": "Latin hamus, \"hook\". It has a hook-like projection on its palm side.",
+    "location": "Distal carpal row on the little-finger side, at the base of the fourth and fifth metacarpals.",
+    "description": "A wedge-shaped bone with a hook (the hook of hamate) that projects towards the palm.",
+    "function": "Supports the ring and little finger metacarpals. Its hook anchors the flexor retinaculum, which forms the roof of the carpal tunnel.",
+    "mnemonic": "\"Hamate has a hook - hang your ring and pinky on it.\"",
+    "clinical": "The hook can break in golf, tennis and baseball when the handle presses into the palm. It is also a boundary of Guyon canal (ulnar nerve).",
+    "hint": "Second row of wrist bones, on the little-finger side. Look for the hook."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Which feature gives the hamate its name?",
+     "options": [
+      "A groove",
+      "A hook",
+      "A crescent shape",
+      "A saddle-shaped surface"
+     ],
+     "answer": 1,
+     "explanation": "Hamate comes from the Latin hamus, \"hook\", after the hook of hamate."
+    },
+    {
+     "kind": "clinical",
+     "text": "In which sport is a fracture of the hook of hamate typically seen?",
+     "options": [
+      "Swimming",
+      "Golf",
+      "Running",
+      "Diving"
+     ],
+     "answer": 1,
+     "explanation": "A club, racquet or bat handle pressing into the palm can fracture the hook of hamate."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_metacarpal_1",
+   "concept": "metacarpal_1",
+   "node": "s10",
+   "type": "bone",
+   "side": "right",
+   "group": "metacarpals",
+   "names": {
+    "preferred": "First metacarpal",
+    "latin": "Os metacarpi I",
+    "synonyms": [
+     "Metacarpal I",
+     "Thumb metacarpal"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24464"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_trapezium"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_proximal_phalanx_1"
+    }
+   ],
+   "content": {
+    "pronunciation": "met-ah-KAR-pul",
+    "origin": "Greek meta, \"beyond\", plus karpos, \"wrist\": the bones beyond the wrist.",
+    "location": "In the palm, between the carpal bones and the thumb. Metacarpals are numbered from the thumb (I) to the little finger (V).",
+    "description": "A long bone with a base (near the wrist), a shaft and a head (the knuckle). The shortest and thickest metacarpal. It sits at an angle to the others so the thumb can oppose.",
+    "function": "Lets the thumb move independently and powerfully, especially in gripping and pinching.",
+    "mnemonic": "Count from the thumb: thumb = I, so the thumb = I. The heads are your knuckles.",
+    "clinical": "A Bennett fracture is a break into the joint at the base of the first metacarpal.",
+    "hint": "In the palm, in line with the thumb."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which metacarpal is shortest and thickest?",
+     "options": [
+      "First",
+      "Second",
+      "Third",
+      "Fifth"
+     ],
+     "answer": 0,
+     "explanation": "The first (thumb) metacarpal is the shortest and thickest."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_metacarpal_2",
+   "concept": "metacarpal_2",
+   "node": "s11",
+   "type": "bone",
+   "side": "right",
+   "group": "metacarpals",
+   "names": {
+    "preferred": "Second metacarpal",
+    "latin": "Os metacarpi II",
+    "synonyms": [
+     "Metacarpal II",
+     "Index finger metacarpal"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24466"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_trapezium"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_trapezoid"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_capitate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_3"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_proximal_phalanx_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "met-ah-KAR-pul",
+    "origin": "Greek meta, \"beyond\", plus karpos, \"wrist\": the bones beyond the wrist.",
+    "location": "In the palm, between the carpal bones and the index finger. Metacarpals are numbered from the thumb (I) to the little finger (V).",
+    "description": "A long bone with a base (near the wrist), a shaft and a head (the knuckle). Usually the longest metacarpal, with a notched base that locks against the trapezoid.",
+    "function": "Forms a stable, fixed pillar for the index finger, which is important for precision grip.",
+    "mnemonic": "Count from the thumb: thumb = I, so the index finger = II. The heads are your knuckles.",
+    "clinical": "Because it is firmly fixed at the base, force is often transmitted along it to the carpal bones.",
+    "hint": "In the palm, in line with the index finger."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which carpal bone does the second metacarpal articulate with?",
+     "options": [
+      "Trapezoid",
+      "Pisiform",
+      "Radius",
+      "Lunate"
+     ],
+     "answer": 0,
+     "explanation": "The second metacarpal articulates with the trapezoid."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_metacarpal_3",
+   "concept": "metacarpal_3",
+   "node": "s12",
+   "type": "bone",
+   "side": "right",
+   "group": "metacarpals",
+   "names": {
+    "preferred": "Third metacarpal",
+    "latin": "Os metacarpi III",
+    "synonyms": [
+     "Metacarpal III",
+     "Middle finger metacarpal"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24468"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_capitate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_2"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_4"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_proximal_phalanx_3"
+    }
+   ],
+   "content": {
+    "pronunciation": "met-ah-KAR-pul",
+    "origin": "Greek meta, \"beyond\", plus karpos, \"wrist\": the bones beyond the wrist.",
+    "location": "In the palm, between the carpal bones and the middle finger. Metacarpals are numbered from the thumb (I) to the little finger (V).",
+    "description": "A long bone with a base (near the wrist), a shaft and a head (the knuckle). Has a small styloid process at the back of its base.",
+    "function": "Forms the central, most stable pillar of the hand, in line with the capitate.",
+    "mnemonic": "Count from the thumb: thumb = I, so the middle finger = III. The heads are your knuckles.",
+    "clinical": "The styloid process at its base can form an extra bony lump (carpal boss) on the back of the hand.",
+    "hint": "In the palm, in line with the middle finger."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which carpal bone does the third metacarpal articulate with?",
+     "options": [
+      "Capitate",
+      "Pisiform",
+      "Radius",
+      "Lunate"
+     ],
+     "answer": 0,
+     "explanation": "The third metacarpal articulates with the capitate."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_metacarpal_4",
+   "concept": "metacarpal_4",
+   "node": "s13",
+   "type": "bone",
+   "side": "right",
+   "group": "metacarpals",
+   "names": {
+    "preferred": "Fourth metacarpal",
+    "latin": "Os metacarpi IV",
+    "synonyms": [
+     "Metacarpal IV",
+     "Ring finger metacarpal"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24470"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_capitate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_hamate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_3"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_5"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_proximal_phalanx_4"
+    }
+   ],
+   "content": {
+    "pronunciation": "met-ah-KAR-pul",
+    "origin": "Greek meta, \"beyond\", plus karpos, \"wrist\": the bones beyond the wrist.",
+    "location": "In the palm, between the carpal bones and the ring finger. Metacarpals are numbered from the thumb (I) to the little finger (V).",
+    "description": "A long bone with a base (near the wrist), a shaft and a head (the knuckle). Thinner than the second and third metacarpals and more mobile at its base.",
+    "function": "Supports the ring finger and allows a little movement that helps cup the palm.",
+    "mnemonic": "Count from the thumb: thumb = I, so the ring finger = IV. The heads are your knuckles.",
+    "clinical": "Its neck may break together with the fifth in a punch injury.",
+    "hint": "In the palm, in line with the ring finger."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "Which carpal bone does the fourth metacarpal articulate with?",
+     "options": [
+      "Hamate",
+      "Pisiform",
+      "Radius",
+      "Lunate"
+     ],
+     "answer": 0,
+     "explanation": "The fourth metacarpal articulates with the hamate (and also the capitate)."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_metacarpal_5",
+   "concept": "metacarpal_5",
+   "node": "s14",
+   "type": "bone",
+   "side": "right",
+   "group": "metacarpals",
+   "names": {
+    "preferred": "Fifth metacarpal",
+    "latin": "Os metacarpi V",
+    "synonyms": [
+     "Metacarpal V",
+     "Little finger metacarpal"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24472"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_hamate"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_4"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_proximal_phalanx_5"
+    }
+   ],
+   "content": {
+    "pronunciation": "met-ah-KAR-pul",
+    "origin": "Greek meta, \"beyond\", plus karpos, \"wrist\": the bones beyond the wrist.",
+    "location": "In the palm, between the carpal bones and the little finger. Metacarpals are numbered from the thumb (I) to the little finger (V).",
+    "description": "A long bone with a base (near the wrist), a shaft and a head (the knuckle). The most mobile metacarpal at its base, where it meets the hamate.",
+    "function": "Supports the little finger and lets the ulnar side of the palm cup around objects for a firm grip.",
+    "mnemonic": "Count from the thumb: thumb = I, so the little finger = V. The heads are your knuckles.",
+    "clinical": "A boxer fracture is a break of the neck of the fifth metacarpal, often from punching a hard surface.",
+    "hint": "In the palm, in line with the little finger."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "A \"boxer fracture\" most commonly involves which bone?",
+     "options": [
+      "Fifth metacarpal",
+      "Scaphoid",
+      "First metacarpal",
+      "Distal radius"
+     ],
+     "answer": 0,
+     "explanation": "A boxer fracture is a break of the neck of the fifth metacarpal."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_proximal_phalanx_1",
+   "concept": "proximal_phalanx_1",
+   "node": "s15",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_proximal",
+   "names": {
+    "preferred": "Proximal phalanx of thumb",
+    "latin": "Phalanx proximalis digiti I manus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24450"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_1"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_distal_phalanx_1"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The first bone of the thumb, just beyond the knuckle (metacarpal head).",
+    "description": "The longest phalanx of each digit, with a concave base that fits the rounded metacarpal head.",
+    "function": "Forms the knuckle joint with the metacarpal, which allows the finger to bend, straighten and spread.",
+    "mnemonic": "Proximal = closest to the palm.",
+    "clinical": "Fractures of the proximal phalanx can twist the finger (rotational deformity) if not aligned correctly.",
+    "hint": "The thumb bone closest to the palm."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "How many phalanges does the thumb have?",
+     "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+     ],
+     "answer": 1,
+     "explanation": "The thumb has only a proximal and a distal phalanx. The other fingers have three."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_proximal_phalanx_2",
+   "concept": "proximal_phalanx_2",
+   "node": "s16",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_proximal",
+   "names": {
+    "preferred": "Proximal phalanx of index finger",
+    "latin": "Phalanx proximalis digiti II manus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24451"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_2"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_middle_phalanx_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The first bone of the index finger, just beyond the knuckle (metacarpal head).",
+    "description": "The longest phalanx of each digit, with a concave base that fits the rounded metacarpal head.",
+    "function": "Forms the knuckle joint with the metacarpal, which allows the finger to bend, straighten and spread.",
+    "mnemonic": "Proximal = closest to the palm.",
+    "clinical": "Fractures of the proximal phalanx can twist the finger (rotational deformity) if not aligned correctly.",
+    "hint": "The index finger bone closest to the palm."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_hand_right_proximal_phalanx_3",
+   "concept": "proximal_phalanx_3",
+   "node": "s17",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_proximal",
+   "names": {
+    "preferred": "Proximal phalanx of middle finger",
+    "latin": "Phalanx proximalis digiti III manus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24452"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_3"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_middle_phalanx_3"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The first bone of the middle finger, just beyond the knuckle (metacarpal head).",
+    "description": "The longest phalanx of each digit, with a concave base that fits the rounded metacarpal head.",
+    "function": "Forms the knuckle joint with the metacarpal, which allows the finger to bend, straighten and spread.",
+    "mnemonic": "Proximal = closest to the palm.",
+    "clinical": "Fractures of the proximal phalanx can twist the finger (rotational deformity) if not aligned correctly.",
+    "hint": "The middle finger bone closest to the palm."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_hand_right_proximal_phalanx_4",
+   "concept": "proximal_phalanx_4",
+   "node": "s18",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_proximal",
+   "names": {
+    "preferred": "Proximal phalanx of ring finger",
+    "latin": "Phalanx proximalis digiti IV manus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24453"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_4"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_middle_phalanx_4"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The first bone of the ring finger, just beyond the knuckle (metacarpal head).",
+    "description": "The longest phalanx of each digit, with a concave base that fits the rounded metacarpal head.",
+    "function": "Forms the knuckle joint with the metacarpal, which allows the finger to bend, straighten and spread.",
+    "mnemonic": "Proximal = closest to the palm.",
+    "clinical": "Fractures of the proximal phalanx can twist the finger (rotational deformity) if not aligned correctly.",
+    "hint": "The ring finger bone closest to the palm."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_hand_right_proximal_phalanx_5",
+   "concept": "proximal_phalanx_5",
+   "node": "s19",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_proximal",
+   "names": {
+    "preferred": "Proximal phalanx of little finger",
+    "latin": "Phalanx proximalis digiti V manus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24454"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_metacarpal_5"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_middle_phalanx_5"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The first bone of the little finger, just beyond the knuckle (metacarpal head).",
+    "description": "The longest phalanx of each digit, with a concave base that fits the rounded metacarpal head.",
+    "function": "Forms the knuckle joint with the metacarpal, which allows the finger to bend, straighten and spread.",
+    "mnemonic": "Proximal = closest to the palm.",
+    "clinical": "Fractures of the proximal phalanx can twist the finger (rotational deformity) if not aligned correctly.",
+    "hint": "The little finger bone closest to the palm."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_hand_right_middle_phalanx_2",
+   "concept": "middle_phalanx_2",
+   "node": "s20",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_middle",
+   "names": {
+    "preferred": "Middle phalanx of index finger",
+    "latin": "Phalanx media digiti II manus",
+    "synonyms": [
+     "Intermediate phalanx"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24455"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_proximal_phalanx_2"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_distal_phalanx_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The middle bone of the index finger. The thumb has no middle phalanx.",
+    "description": "Shorter than the proximal phalanx, with joints at both ends.",
+    "function": "Adds a second bending joint to the finger. The flexor digitorum superficialis tendon attaches here to bend the middle finger joint.",
+    "mnemonic": "Middle = in the middle, and the thumb skips it.",
+    "clinical": "Injury to the middle finger joint can cause a boutonniere or swan-neck deformity.",
+    "hint": "The middle bone of the index finger."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_hand_right_middle_phalanx_3",
+   "concept": "middle_phalanx_3",
+   "node": "s21",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_middle",
+   "names": {
+    "preferred": "Middle phalanx of middle finger",
+    "latin": "Phalanx media digiti III manus",
+    "synonyms": [
+     "Intermediate phalanx"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24456"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_proximal_phalanx_3"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_distal_phalanx_3"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The middle bone of the middle finger. The thumb has no middle phalanx.",
+    "description": "Shorter than the proximal phalanx, with joints at both ends.",
+    "function": "Adds a second bending joint to the finger. The flexor digitorum superficialis tendon attaches here to bend the middle finger joint.",
+    "mnemonic": "Middle = in the middle, and the thumb skips it.",
+    "clinical": "Injury to the middle finger joint can cause a boutonniere or swan-neck deformity.",
+    "hint": "The middle bone of the middle finger."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which digit has no middle phalanx?",
+     "options": [
+      "Thumb",
+      "Index finger",
+      "Ring finger",
+      "Little finger"
+     ],
+     "answer": 0,
+     "explanation": "The thumb has only proximal and distal phalanges."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_middle_phalanx_4",
+   "concept": "middle_phalanx_4",
+   "node": "s22",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_middle",
+   "names": {
+    "preferred": "Middle phalanx of ring finger",
+    "latin": "Phalanx media digiti IV manus",
+    "synonyms": [
+     "Intermediate phalanx"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24457"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_proximal_phalanx_4"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_distal_phalanx_4"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The middle bone of the ring finger. The thumb has no middle phalanx.",
+    "description": "Shorter than the proximal phalanx, with joints at both ends.",
+    "function": "Adds a second bending joint to the finger. The flexor digitorum superficialis tendon attaches here to bend the middle finger joint.",
+    "mnemonic": "Middle = in the middle, and the thumb skips it.",
+    "clinical": "Injury to the middle finger joint can cause a boutonniere or swan-neck deformity.",
+    "hint": "The middle bone of the ring finger."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_hand_right_middle_phalanx_5",
+   "concept": "middle_phalanx_5",
+   "node": "s23",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_middle",
+   "names": {
+    "preferred": "Middle phalanx of little finger",
+    "latin": "Phalanx media digiti V manus",
+    "synonyms": [
+     "Intermediate phalanx"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24458"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_proximal_phalanx_5"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_distal_phalanx_5"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The middle bone of the little finger. The thumb has no middle phalanx.",
+    "description": "Shorter than the proximal phalanx, with joints at both ends.",
+    "function": "Adds a second bending joint to the finger. The flexor digitorum superficialis tendon attaches here to bend the middle finger joint.",
+    "mnemonic": "Middle = in the middle, and the thumb skips it.",
+    "clinical": "Injury to the middle finger joint can cause a boutonniere or swan-neck deformity.",
+    "hint": "The middle bone of the little finger."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_hand_right_distal_phalanx_1",
+   "concept": "distal_phalanx_1",
+   "node": "s24",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_distal",
+   "names": {
+    "preferred": "Distal phalanx of thumb",
+    "latin": "Phalanx distalis digiti I manus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24459"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_proximal_phalanx_1"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The fingertip bone of the thumb.",
+    "description": "A small bone with a rough, flattened tip (the tuberosity) that supports the fingertip pulp and nail.",
+    "function": "Supports the fingertip and nail for fine touch and pinch. The deep flexor tendon attaches here to bend the fingertip.",
+    "mnemonic": "Distal = distant from the palm: the fingertip.",
+    "clinical": "Crush injuries often break the tip (tuft fracture). Mallet finger is an injury to the extensor tendon at the base of this bone.",
+    "hint": "The tip bone of the thumb."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_hand_right_distal_phalanx_2",
+   "concept": "distal_phalanx_2",
+   "node": "s25",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_distal",
+   "names": {
+    "preferred": "Distal phalanx of index finger",
+    "latin": "Phalanx distalis digiti II manus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24460"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_middle_phalanx_2"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The fingertip bone of the index finger.",
+    "description": "A small bone with a rough, flattened tip (the tuberosity) that supports the fingertip pulp and nail.",
+    "function": "Supports the fingertip and nail for fine touch and pinch. The deep flexor tendon attaches here to bend the fingertip.",
+    "mnemonic": "Distal = distant from the palm: the fingertip.",
+    "clinical": "Crush injuries often break the tip (tuft fracture). Mallet finger is an injury to the extensor tendon at the base of this bone.",
+    "hint": "The tip bone of the index finger."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "What is \"mallet finger\"?",
+     "options": [
+      "A tendon injury at the distal phalanx so the fingertip droops",
+      "A break of the fifth metacarpal",
+      "Arthritis at the thumb base",
+      "A dislocated lunate"
+     ],
+     "answer": 0,
+     "explanation": "Mallet finger is an injury to the extensor tendon where it attaches to the distal phalanx, so the fingertip cannot straighten."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_hand_right_distal_phalanx_3",
+   "concept": "distal_phalanx_3",
+   "node": "s26",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_distal",
+   "names": {
+    "preferred": "Distal phalanx of middle finger",
+    "latin": "Phalanx distalis digiti III manus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24461"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_middle_phalanx_3"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The fingertip bone of the middle finger.",
+    "description": "A small bone with a rough, flattened tip (the tuberosity) that supports the fingertip pulp and nail.",
+    "function": "Supports the fingertip and nail for fine touch and pinch. The deep flexor tendon attaches here to bend the fingertip.",
+    "mnemonic": "Distal = distant from the palm: the fingertip.",
+    "clinical": "Crush injuries often break the tip (tuft fracture). Mallet finger is an injury to the extensor tendon at the base of this bone.",
+    "hint": "The tip bone of the middle finger."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_hand_right_distal_phalanx_4",
+   "concept": "distal_phalanx_4",
+   "node": "s27",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_distal",
+   "names": {
+    "preferred": "Distal phalanx of ring finger",
+    "latin": "Phalanx distalis digiti IV manus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24462"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_middle_phalanx_4"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The fingertip bone of the ring finger.",
+    "description": "A small bone with a rough, flattened tip (the tuberosity) that supports the fingertip pulp and nail.",
+    "function": "Supports the fingertip and nail for fine touch and pinch. The deep flexor tendon attaches here to bend the fingertip.",
+    "mnemonic": "Distal = distant from the palm: the fingertip.",
+    "clinical": "Crush injuries often break the tip (tuft fracture). Mallet finger is an injury to the extensor tendon at the base of this bone.",
+    "hint": "The tip bone of the ring finger."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_hand_right_distal_phalanx_5",
+   "concept": "distal_phalanx_5",
+   "node": "s28",
+   "type": "bone",
+   "side": "right",
+   "group": "phalanges_distal",
+   "names": {
+    "preferred": "Distal phalanx of little finger",
+    "latin": "Phalanx distalis digiti V manus",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24463"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_hand_right_middle_phalanx_5"
+    }
+   ],
+   "content": {
+    "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
+    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
+    "location": "The fingertip bone of the little finger.",
+    "description": "A small bone with a rough, flattened tip (the tuberosity) that supports the fingertip pulp and nail.",
+    "function": "Supports the fingertip and nail for fine touch and pinch. The deep flexor tendon attaches here to bend the fingertip.",
+    "mnemonic": "Distal = distant from the palm: the fingertip.",
+    "clinical": "Crush injuries often break the tip (tuft fracture). Mallet finger is an injury to the extensor tendon at the base of this bone.",
+    "hint": "The tip bone of the little finger."
+   },
+   "questions": []
+  }
+ ]
+}

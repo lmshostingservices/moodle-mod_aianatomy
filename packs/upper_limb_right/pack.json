@@ -1,0 +1,568 @@
+{
+ "id": "upper_limb_right",
+ "version": "1.0.0",
+ "name": "Upper limb bones (right)",
+ "description": "Right pectoral girdle, arm and forearm: clavicle, scapula, humerus, radius and ulna, with the hand for context.",
+ "system": "skeletal",
+ "region": "upper_limb",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "upper_limb",
+ "rootframe": [
+  "girdle",
+  "arm",
+  "forearm"
+ ],
+ "defaultgroups": [
+  "girdle",
+  "arm",
+  "forearm"
+ ],
+ "presets": [
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "lateral",
+   "label": "Lateral",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "medial",
+   "label": "Medial",
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  }
+ ],
+ "defaultpreset": "anterior",
+ "tissue": false,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "upper_limb",
+   "label": "Upper limb",
+   "parent": null,
+   "tip": "Work from the trunk outwards: shoulder girdle (clavicle and scapula), arm (humerus), forearm (radius and ulna), then hand."
+  },
+  {
+   "id": "girdle",
+   "label": "Pectoral (shoulder) girdle",
+   "parent": "upper_limb",
+   "tip": "The pectoral girdle is the clavicle and scapula. It joins the trunk only at the sternoclavicular joint; the scapula is held on mainly by muscles, giving the shoulder its great range of movement."
+  },
+  {
+   "id": "arm",
+   "label": "Arm",
+   "parent": "upper_limb",
+   "tip": "In anatomy, the arm is only the part between shoulder and elbow, so it has just one bone: the humerus."
+  },
+  {
+   "id": "forearm",
+   "label": "Forearm",
+   "parent": "upper_limb",
+   "tip": "Radius by the thumb, ulna by the little finger. In pronation the radius crosses over the ulna; the ulna stays still."
+  },
+  {
+   "id": "hand_context",
+   "label": "Hand (context)",
+   "parent": "upper_limb",
+   "tip": "Carpals: Some Lovers Try Positions That They Can't Handle (scaphoid, lunate, triquetrum, pisiform; trapezium, trapezoid, capitate, hamate)."
+  }
+ ],
+ "structures": [
+  {
+   "id": "skeletal_upperlimb_right_clavicle",
+   "concept": "clavicle",
+   "node": "s0",
+   "type": "bone",
+   "side": "right",
+   "group": "girdle",
+   "names": {
+    "preferred": "Clavicle",
+    "latin": "Clavicula",
+    "synonyms": [
+     "Collarbone",
+     "Collar bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13322"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_scapula"
+    }
+   ],
+   "content": {
+    "pronunciation": "KLAV-ih-kul",
+    "origin": "Latin clavicula, \"little key\", from its S-shaped curve, like an old-fashioned key.",
+    "location": "Lies horizontally across the top of the chest at the front, just under the skin, from the sternum (medially) to the acromion of the scapula (laterally).",
+    "description": "A long, S-shaped bone: the medial two-thirds curve forwards (convex anteriorly) and the lateral third curves backwards and is flattened. It can be felt along its whole length.",
+    "function": "Acts as a strut holding the shoulder out from the trunk so the arm can move freely, and is the only bony link between the upper limb and the axial skeleton (at the sternoclavicular joint). It passes forces from the arm to the trunk.",
+    "mnemonic": "Clavicle = little key: an S-shaped key that locks the shoulder to the chest.",
+    "clinical": "One of the most commonly fractured bones, usually in its middle third, from a fall onto the shoulder or an outstretched hand. The shoulder then drops forwards and down.",
+    "hint": "The S-shaped bone you can feel running across the top of the chest from the breastbone to the point of the shoulder."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which bone forms the only bony connection between the upper limb and the axial skeleton?",
+     "options": [
+      "Scapula",
+      "Clavicle",
+      "Humerus",
+      "Ulna"
+     ],
+     "answer": 1,
+     "explanation": "The clavicle joins the sternum at the sternoclavicular joint; the scapula is held on by muscles."
+    },
+    {
+     "kind": "clinical",
+     "text": "Where is the clavicle most commonly fractured?",
+     "options": [
+      "At the coracoid process",
+      "At the sternal end",
+      "Through the acromion",
+      "Its middle third"
+     ],
+     "answer": 3,
+     "explanation": "Most clavicle fractures occur in the middle third."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_upperlimb_right_scapula",
+   "concept": "scapula",
+   "node": "s1",
+   "type": "bone",
+   "side": "right",
+   "group": "girdle",
+   "names": {
+    "preferred": "Scapula",
+    "latin": "Scapula",
+    "synonyms": [
+     "Shoulder blade"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA13395"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_clavicle"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_humerus"
+    }
+   ],
+   "content": {
+    "pronunciation": "SKAP-yoo-lah",
+    "origin": "Latin scapula, \"shoulder blade\" (plural scapulae).",
+    "location": "A flat bone on the upper back, lying over the back of the rib cage roughly from the second to the seventh ribs, on each side of the spine.",
+    "description": "A flat triangular bone. The back has a ridge, the spine, ending in the acromion (point of the shoulder); above and below it are the supraspinous and infraspinous fossae. The front has the subscapular fossa and the hook-like coracoid process, and the lateral angle has the shallow glenoid cavity.",
+    "function": "Forms the shoulder (glenohumeral) joint with the humerus at the glenoid cavity and the acromioclavicular joint with the clavicle. It anchors many muscles, including the rotator cuff, and glides over the rib cage to widen the arm's range of movement.",
+    "mnemonic": "Spine, acromion, coracoid, glenoid: the blade's ridge, its roof, its hook and its socket.",
+    "clinical": "Damage to the long thoracic nerve paralyses serratus anterior, so the medial border of the scapula lifts off the chest wall (winged scapula), best seen when pushing against a wall.",
+    "hint": "The flat triangular bone on the upper back with a ridge across it, a hook at the front and a shallow socket for the arm."
+   },
+   "questions": [
+    {
+     "kind": "relationship",
+     "text": "The head of the humerus articulates with which part of the scapula?",
+     "options": [
+      "Glenoid cavity",
+      "Coracoid process",
+      "Acromion",
+      "Spine"
+     ],
+     "answer": 0,
+     "explanation": "The glenoid cavity is the shallow socket of the shoulder joint."
+    },
+    {
+     "kind": "clinical",
+     "text": "A winged scapula is usually caused by injury to which nerve?",
+     "options": [
+      "Radial nerve",
+      "Axillary nerve",
+      "Long thoracic nerve",
+      "Ulnar nerve"
+     ],
+     "answer": 2,
+     "explanation": "The long thoracic nerve supplies serratus anterior, which holds the scapula against the chest wall."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_upperlimb_right_humerus",
+   "concept": "humerus",
+   "node": "s2",
+   "type": "bone",
+   "side": "right",
+   "group": "arm",
+   "names": {
+    "preferred": "Humerus",
+    "latin": "Humerus",
+    "synonyms": [
+     "Upper arm bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA23130"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_scapula"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_radius"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_ulna"
+    }
+   ],
+   "content": {
+    "pronunciation": "HYOO-mer-us",
+    "origin": "Latin umerus, \"shoulder\" or \"upper arm\".",
+    "location": "The only bone of the arm (between the shoulder and the elbow), running from the scapula above to the radius and ulna below.",
+    "description": "A long bone. The upper end has a rounded head, the anatomical and surgical necks, and the greater and lesser tubercles with the intertubercular groove between them. The shaft has the deltoid tuberosity and radial groove; the lower end has the medial and lateral epicondyles, the trochlea (for the ulna) and capitulum (for the radius).",
+    "function": "Forms the shoulder joint with the scapula and the elbow joint with the radius and ulna, and acts as the lever for most arm movements. It anchors major muscles such as deltoid, the rotator cuff, pectoralis major and the elbow and wrist muscles.",
+    "mnemonic": "Nerves at risk from top to bottom, A-R-U: Axillary at the surgical neck, Radial at the shaft, Ulnar behind the medial epicondyle.",
+    "clinical": "A surgical neck fracture can injure the axillary nerve; a shaft fracture can injure the radial nerve (wrist drop); and the ulnar nerve behind the medial epicondyle is the tingling \"funny bone\".",
+    "hint": "The single long bone of the upper arm, with a ball at the shoulder end and a pulley-like lower end at the elbow."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "A fracture of the shaft of the humerus in the radial groove may cause which problem?",
+     "options": [
+      "Winged scapula",
+      "Wrist drop",
+      "Loss of shoulder abduction only",
+      "Loss of sensation over the little finger only"
+     ],
+     "answer": 1,
+     "explanation": "The radial nerve runs in the radial groove and supplies the wrist extensors, so injury causes wrist drop."
+    },
+    {
+     "kind": "terminology",
+     "text": "Which part of the distal humerus articulates with the ulna?",
+     "options": [
+      "Capitulum",
+      "Deltoid tuberosity",
+      "Greater tubercle",
+      "Trochlea"
+     ],
+     "answer": 3,
+     "explanation": "The pulley-shaped trochlea fits the trochlear notch of the ulna; the capitulum meets the radius."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_upperlimb_right_radius",
+   "concept": "radius",
+   "node": "s3",
+   "type": "bone",
+   "side": "right",
+   "group": "forearm",
+   "names": {
+    "preferred": "Radius",
+    "latin": "Radius",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA23464"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_humerus"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_ulna"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_hand"
+    }
+   ],
+   "content": {
+    "pronunciation": "RAY-dee-us",
+    "origin": "Latin radius, \"spoke of a wheel\" or \"ray\". It turns around the ulna like a spoke.",
+    "location": "The lateral (thumb-side) bone of the forearm, running from the elbow to the wrist, alongside the ulna.",
+    "description": "A long bone, narrow at the elbow and broad at the wrist. The upper end has a disc-shaped head and the radial tuberosity (where biceps brachii inserts); the lower end has the radial styloid process and a surface for the carpal bones.",
+    "function": "Its head meets the capitulum of the humerus and the ulna at the elbow, and it rotates around the ulna to turn the palm up and down (supination and pronation). Its broad lower end forms most of the wrist joint and carries load from the hand.",
+    "mnemonic": "Radius by the thumb: thumbs up for the radius.",
+    "clinical": "A Colles fracture is a break of the distal radius, usually from a fall on an outstretched hand. In young children, a sudden pull on the arm can slip the radial head out of its ring ligament (pulled elbow).",
+    "hint": "The forearm bone on the thumb side, with a disc-shaped head at the elbow and a wide lower end at the wrist."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which movement depends on the radius rotating around the ulna?",
+     "options": [
+      "Turning the palm up and down",
+      "Flexing the fingers",
+      "Shrugging the shoulder",
+      "Straightening the elbow"
+     ],
+     "answer": 0,
+     "explanation": "The radius rotates around the ulna during pronation and supination."
+    },
+    {
+     "kind": "relationship",
+     "text": "The head of the radius articulates with which part of the humerus?",
+     "options": [
+      "Trochlea",
+      "Glenoid cavity",
+      "Capitulum",
+      "Olecranon fossa"
+     ],
+     "answer": 2,
+     "explanation": "The capitulum is the rounded lateral part of the distal humerus that meets the radial head."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_upperlimb_right_ulna",
+   "concept": "ulna",
+   "node": "s4",
+   "type": "bone",
+   "side": "right",
+   "group": "forearm",
+   "names": {
+    "preferred": "Ulna",
+    "latin": "Ulna",
+    "synonyms": []
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA23467"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_humerus"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_radius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_upperlimb_right_hand"
+    }
+   ],
+   "content": {
+    "pronunciation": "UL-nah",
+    "origin": "Latin ulna, \"elbow\" or \"forearm\".",
+    "location": "The medial (little-finger side) bone of the forearm, running from the elbow to the wrist, alongside the radius.",
+    "description": "A long bone, large at the elbow and small at the wrist. The upper end has the olecranon (the point of the elbow), the coronoid process and the C-shaped trochlear notch; the lower end has a small head and the ulnar styloid process.",
+    "function": "Its trochlear notch grips the trochlea of the humerus to form the main hinge of the elbow, and it is the stable bone the radius rotates around. Triceps brachii inserts on the olecranon. At the wrist it is separated from the carpal bones by a cartilage disc.",
+    "mnemonic": "Ulna is by the little finger: the olecranon is the elbow you lean on.",
+    "clinical": "A Monteggia fracture is a fracture of the ulna shaft with dislocation of the radial head. A fall onto the point of the elbow can fracture the olecranon.",
+    "hint": "The forearm bone on the little-finger side, whose upper end forms the bony point of the elbow."
+   },
+   "questions": [
+    {
+     "kind": "location",
+     "text": "The olecranon, the bony point of the elbow, belongs to which bone?",
+     "options": [
+      "Humerus",
+      "Ulna",
+      "Radius",
+      "Scapula"
+     ],
+     "answer": 1,
+     "explanation": "The olecranon is the upper end of the ulna."
+    },
+    {
+     "kind": "relationship",
+     "text": "Which muscle inserts on the olecranon of the ulna?",
+     "options": [
+      "Biceps brachii",
+      "Serratus anterior",
+      "Deltoid",
+      "Triceps brachii"
+     ],
+     "answer": 3,
+     "explanation": "Triceps brachii inserts on the olecranon and straightens the elbow."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_upperlimb_right_hand",
+   "concept": "hand",
+   "node": "s5",
+   "type": "bone",
+   "side": "right",
+   "group": "hand_context",
+   "names": {
+    "preferred": "Bones of the hand (carpals and metacarpals)",
+    "latin": "Ossa carpi et ossa metacarpi",
+    "synonyms": [
+     "Carpals and metacarpals"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24435"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24437"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24439"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24441"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24443"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA23725"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24446"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24448"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24464"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24466"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24468"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24470"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24472"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_upperlimb_right_radius"
+    },
+    {
+     "type": "adjacent_to",
+     "target": "skeletal_upperlimb_right_ulna"
+    }
+   ],
+   "content": {
+    "pronunciation": "KAR-pulz and MET-ah-KAR-pulz",
+    "origin": "Greek karpos, \"wrist\"; meta-, \"beyond\": the metacarpals lie beyond the wrist.",
+    "location": "Distal to the radius and ulna: the eight carpal bones form the wrist and the five metacarpals form the palm. Shown here for context only.",
+    "description": "Eight small carpal bones in two rows of four, and five long metacarpals, one leading to each digit. The finger bones (phalanges) are not included in this model.",
+    "function": "The wrist bones meet the radius at the wrist joint and give the hand a flexible base; the metacarpals form the framework of the palm.",
+    "mnemonic": "Carpals, lateral to medial, proximal then distal row: Some Lovers Try Positions That They Can't Handle (scaphoid, lunate, triquetrum, pisiform, trapezium, trapezoid, capitate, hamate).",
+    "clinical": "A fall on an outstretched hand can fracture the scaphoid; tenderness in the anatomical snuffbox is a key sign.",
+    "hint": "The small wrist bones and palm bones beyond the lower ends of the forearm bones."
+   },
+   "questions": [],
+   "merged": true,
+   "context": true
+  }
+ ]
+}

@@ -1,0 +1,693 @@
+{
+ "id": "pelvis_lower_limb_right",
+ "version": "1.0.0",
+ "name": "Pelvis and lower limb bones (right)",
+ "description": "The bony pelvis (both hip bones and the sacrum) and the right thigh and leg: femur, patella, tibia and fibula, with the foot for context.",
+ "system": "skeletal",
+ "region": "lower_limb",
+ "model": "model.glb",
+ "units": "mm",
+ "axes": {
+  "x": "towards patient left",
+  "y": "superior",
+  "z": "anterior"
+ },
+ "reference_body": "BodyParts3D adult male reference model",
+ "root": "lower_limb",
+ "rootframe": [
+  "pelvis",
+  "thigh",
+  "leg"
+ ],
+ "defaultgroups": [
+  "pelvis",
+  "thigh",
+  "leg"
+ ],
+ "presets": [
+  {
+   "id": "anterior",
+   "label": "Anterior",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "posterior",
+   "label": "Posterior",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "lateral",
+   "label": "Right lateral",
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "id": "medial",
+   "label": "Medial",
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ]
+  }
+ ],
+ "defaultpreset": "anterior",
+ "tissue": false,
+ "source": {
+  "dataset": "BodyParts3D",
+  "version": "3.0 (20110915)",
+  "source_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
+  "mirror_url": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 JP",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "attribution": "BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan",
+  "commercial_use": true,
+  "share_alike": true,
+  "modified": true,
+  "anatomy_verified": "Geometry and identity taken from BodyParts3D (FMA IDs preserved). Shapes simplified for the web only.",
+  "conversion_notes": "Binary STL converted to GLB: vertices welded, meshes simplified with quadric decimation for web delivery, smooth normals, axes converted to Y-up/Z-anterior, recentred, one node per structure. Structures marked \"merged\" are the union of several BodyParts3D meshes (e.g. the parts of one muscle); structures with a \"component\" take one connected part of a BodyParts3D mesh, chosen by position."
+ },
+ "content_level": "diploma",
+ "groups": [
+  {
+   "id": "lower_limb",
+   "label": "Pelvis and lower limb",
+   "parent": null,
+   "tip": "Follow the weight path: spine, sacrum, hip bones, femur, tibia, then the foot. The fibula and patella sit beside this path."
+  },
+  {
+   "id": "pelvis",
+   "label": "Bony pelvis",
+   "parent": "lower_limb",
+   "tip": "The bony pelvis is a ring of three bones: two hip bones and the sacrum. Each hip bone is made of the ilium, ischium and pubis (\"I Is Pubic\")."
+  },
+  {
+   "id": "thigh",
+   "label": "Thigh and knee",
+   "parent": "lower_limb",
+   "tip": "The femur is the longest bone in the body and the patella is the largest sesamoid bone."
+  },
+  {
+   "id": "leg",
+   "label": "Leg",
+   "parent": "lower_limb",
+   "tip": "Tibia is Thick and medial; fibuLa is Little and Lateral. Their lower ends are the medial and lateral malleoli."
+  },
+  {
+   "id": "foot_context",
+   "label": "Foot (context)",
+   "parent": "lower_limb",
+   "tip": "Tarsal mnemonic \"Tiger Cubs Need MILC\": Talus, Calcaneus, Navicular, Medial, Intermediate and Lateral cuneiforms, Cuboid."
+  }
+ ],
+ "structures": [
+  {
+   "id": "skeletal_lowerlimb_right_hip_bone",
+   "concept": "hip_bone",
+   "node": "s0",
+   "type": "bone",
+   "side": "right",
+   "group": "pelvis",
+   "names": {
+    "preferred": "Hip bone (right)",
+    "latin": "Os coxae",
+    "synonyms": [
+     "Innominate bone",
+     "Pelvic bone",
+     "Coxal bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA16586"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_sacrum"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_left_hip_bone"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_femur"
+    }
+   ],
+   "content": {
+    "pronunciation": "HIP bone (os KOK-see)",
+    "origin": "Latin os coxae, \"bone of the hip\". Its three parts: ilium (Latin, \"flank\"), ischium (Greek ischion, \"hip joint\") and pubis (Latin pubes, \"groin hair\").",
+    "location": "The right side of the bony pelvis. It meets the sacrum at the back (sacroiliac joint), the left hip bone at the front (pubic symphysis) and the right femur at the side (hip joint).",
+    "description": "A large, flat, twisted bone made of three bones, the ilium, ischium and pubis, which fuse at the cup-shaped acetabulum by early adulthood. Key landmarks: the iliac crest, the anterior superior iliac spine (ASIS), the ischial tuberosity and the obturator foramen.",
+    "function": "Joins the lower limb to the trunk and carries body weight to the leg. Forms the hip joint with the femur, and gives attachment to many trunk, gluteal and thigh muscles.",
+    "mnemonic": "\"I Is Pubic\": Ilium on top, Ischium below (you sit on it), Pubis at the front, all meeting in the acetabulum.",
+    "clinical": "The iliac crest is a common site for bone marrow sampling and bone grafts. Pelvic fractures can cause severe internal bleeding (haemorrhage).",
+    "hint": "The large, flat, winged bone on the right side of the pelvis, with a deep socket for the thigh bone."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Which three bones fuse to form each hip bone?",
+     "options": [
+      "Sacrum, coccyx and pubis",
+      "Ilium, ischium and pubis",
+      "Ilium, sacrum and femur",
+      "Ischium, patella and pubis"
+     ],
+     "answer": 1,
+     "explanation": "The ilium, ischium and pubis fuse at the acetabulum to form the hip bone."
+    },
+    {
+     "kind": "relationship",
+     "text": "The acetabulum of the hip bone articulates with which bone?",
+     "options": [
+      "Femur",
+      "Sacrum",
+      "Tibia",
+      "Patella"
+     ],
+     "answer": 0,
+     "explanation": "The head of the femur sits in the acetabulum to form the hip joint."
+    },
+    {
+     "kind": "location",
+     "text": "Where do the two hip bones meet each other?",
+     "options": [
+      "At the sacroiliac joint",
+      "At the acetabulum",
+      "At the pubic symphysis",
+      "At the iliac crest"
+     ],
+     "answer": 2,
+     "explanation": "The two hip bones meet at the front of the pelvis at the pubic symphysis."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_lowerlimb_left_hip_bone",
+   "concept": "hip_bone",
+   "node": "s1",
+   "type": "bone",
+   "side": "left",
+   "group": "pelvis",
+   "names": {
+    "preferred": "Hip bone (left)",
+    "latin": "Os coxae",
+    "synonyms": [
+     "Innominate bone",
+     "Pelvic bone",
+     "Coxal bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA16587"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_sacrum"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_hip_bone"
+    }
+   ],
+   "content": {
+    "pronunciation": "HIP bone (os KOK-see)",
+    "origin": "Latin os coxae, \"bone of the hip\". Its three parts: ilium (Latin, \"flank\"), ischium (Greek ischion, \"hip joint\") and pubis (Latin pubes, \"groin hair\").",
+    "location": "The left side of the bony pelvis. It meets the sacrum at the back, the right hip bone at the front (pubic symphysis) and the left femur (not shown) at the hip joint.",
+    "description": "A large, flat, twisted bone made of three bones, the ilium, ischium and pubis, which fuse at the cup-shaped acetabulum by early adulthood. Key landmarks: the iliac crest, the anterior superior iliac spine (ASIS), the ischial tuberosity and the obturator foramen.",
+    "function": "Joins the lower limb to the trunk and carries body weight to the leg. Forms the hip joint with the femur, and gives attachment to many trunk, gluteal and thigh muscles.",
+    "mnemonic": "\"I Is Pubic\": Ilium on top, Ischium below (you sit on it), Pubis at the front, all meeting in the acetabulum.",
+    "clinical": "The ASIS is a key surface landmark used to locate other structures and to measure leg length.",
+    "hint": "The large, flat, winged bone on the left side of the pelvis, with a socket but no thigh bone shown in it."
+   },
+   "questions": []
+  },
+  {
+   "id": "skeletal_lowerlimb_sacrum",
+   "concept": "sacrum",
+   "node": "s2",
+   "type": "bone",
+   "side": "midline",
+   "group": "pelvis",
+   "names": {
+    "preferred": "Sacrum",
+    "latin": "Os sacrum",
+    "synonyms": [
+     "Sacral bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA16202"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_hip_bone"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_left_hip_bone"
+    }
+   ],
+   "content": {
+    "pronunciation": "SAY-krum",
+    "origin": "Latin os sacrum, \"sacred bone\", possibly because it was offered in animal sacrifices.",
+    "location": "At the back of the pelvis, in the midline, wedged between the two hip bones. It sits below the fifth lumbar vertebra and above the coccyx.",
+    "description": "A triangular bone formed from five fused sacral vertebrae. It has four pairs of sacral foramina for nerves and a gap at its lower end, the sacral hiatus.",
+    "function": "Passes the weight of the upper body from the spine to the hip bones through the sacroiliac joints and forms the back wall of the pelvis.",
+    "mnemonic": "Sacrum = five fused (S1 to S5), like a solid keystone at the back of the pelvic ring.",
+    "clinical": "The sacroiliac joints can be a source of low back and buttock pain. A caudal epidural injection is given through the sacral hiatus.",
+    "hint": "The triangular midline bone at the back of the pelvis, made of fused vertebrae."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "How many fused vertebrae form the sacrum?",
+     "options": [
+      "Three",
+      "Four",
+      "Seven",
+      "Five"
+     ],
+     "answer": 3,
+     "explanation": "The sacrum is formed from five fused sacral vertebrae (S1 to S5)."
+    },
+    {
+     "kind": "relationship",
+     "text": "The sacrum articulates with the hip bones at which joints?",
+     "options": [
+      "Sacroiliac joints",
+      "Hip joints",
+      "Pubic symphysis",
+      "Acetabular joints"
+     ],
+     "answer": 0,
+     "explanation": "The sacrum meets each ilium at a sacroiliac joint."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_lowerlimb_right_femur",
+   "concept": "femur",
+   "node": "s3",
+   "type": "bone",
+   "side": "right",
+   "group": "thigh",
+   "names": {
+    "preferred": "Femur",
+    "latin": "Femur",
+    "synonyms": [
+     "Thigh bone",
+     "Os femoris"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24474"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_hip_bone"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_patella"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_tibia"
+    }
+   ],
+   "content": {
+    "pronunciation": "FEE-mur",
+    "origin": "Latin femur, \"thigh\".",
+    "location": "The bone of the thigh, running from the hip joint above to the knee joint below.",
+    "description": "The longest and strongest bone in the body. Its rounded head sits on an angled neck; the greater and lesser trochanters are bumps for muscles; a ridge on the back (linea aspera) anchors thigh muscles; the lower end has two condyles.",
+    "function": "Carries body weight from the hip to the knee. It forms the hip joint with the acetabulum and the knee joint with the tibia and patella. Gluteus medius and minimus attach to the greater trochanter.",
+    "mnemonic": "Femur = the Fabulously long, strong bone of the thigh.",
+    "clinical": "Fractures of the femoral neck are common in older people with osteoporosis after a fall. The leg often looks shortened and turned outward, and the head can lose its blood supply.",
+    "hint": "The longest bone in the body, running from the hip socket to the knee."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "Which is the longest and strongest bone in the body?",
+     "options": [
+      "Tibia",
+      "Femur",
+      "Fibula",
+      "Hip bone"
+     ],
+     "answer": 1,
+     "explanation": "The femur (thigh bone) is the longest and strongest bone in the body."
+    },
+    {
+     "kind": "clinical",
+     "text": "An older person falls and their leg looks shortened and turned outward. Which injury is most likely?",
+     "options": [
+      "Fractured patella",
+      "Fractured fibular neck",
+      "Fractured neck of femur",
+      "Sprained ankle"
+     ],
+     "answer": 2,
+     "explanation": "A fractured neck of femur typically causes a shortened, externally rotated leg."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_lowerlimb_right_patella",
+   "concept": "patella",
+   "node": "s4",
+   "type": "bone",
+   "side": "right",
+   "group": "thigh",
+   "names": {
+    "preferred": "Patella",
+    "latin": "Patella",
+    "synonyms": [
+     "Kneecap"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24486"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_femur"
+    }
+   ],
+   "content": {
+    "pronunciation": "pah-TEL-ah",
+    "origin": "Latin patella, \"small dish\" or \"shallow pan\".",
+    "location": "At the front of the knee, sitting in the groove at the lower end of the femur.",
+    "description": "A flat, triangular bone with its point (apex) facing down. It is the largest sesamoid bone in the body, lying inside the quadriceps tendon.",
+    "function": "Protects the front of the knee and increases the leverage of the quadriceps. Below it, the patellar ligament runs to the tibial tuberosity, so quadriceps can straighten the knee.",
+    "mnemonic": "Patella = a little Plate that Protects the knee.",
+    "clinical": "Tapping the patellar ligament below the patella tests the knee-jerk reflex. Patellofemoral pain (pain behind the kneecap) is common in runners.",
+    "hint": "The flat triangular bone at the front of the knee, set inside the quadriceps tendon."
+   },
+   "questions": [
+    {
+     "kind": "terminology",
+     "text": "The patella is the largest example of which type of bone?",
+     "options": [
+      "Sesamoid bone",
+      "Flat skull bone",
+      "Irregular bone",
+      "Long bone"
+     ],
+     "answer": 0,
+     "explanation": "The patella develops within the quadriceps tendon and is the largest sesamoid bone."
+    },
+    {
+     "kind": "relationship",
+     "text": "Which bone does the patella articulate with?",
+     "options": [
+      "Tibia",
+      "Fibula",
+      "Hip bone",
+      "Femur"
+     ],
+     "answer": 3,
+     "explanation": "The patella glides in the groove at the lower end of the femur; it does not articulate with the tibia."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_lowerlimb_right_tibia",
+   "concept": "tibia",
+   "node": "s5",
+   "type": "bone",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Tibia",
+    "latin": "Tibia",
+    "synonyms": [
+     "Shin bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24477"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_femur"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_fibula"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_foot"
+    }
+   ],
+   "content": {
+    "pronunciation": "TIB-ee-ah",
+    "origin": "Latin tibia, \"shin bone\" (also a flute, once made from animal shin bones).",
+    "location": "The larger, medial bone of the leg, between the knee and the ankle. Its front edge and inner surface lie just under the skin of the shin.",
+    "description": "A thick long bone with a broad upper end (medial and lateral condyles), a bump at the front below the knee (tibial tuberosity) and a lower end that forms the medial malleolus.",
+    "function": "The main weight-bearing bone of the leg. It forms the knee joint with the femur and the ankle joint with the talus.",
+    "mnemonic": "Tibia = Thick and Tough, on the big toe side of the leg.",
+    "clinical": "Because it lies just under the skin, the tibial shaft is often broken in open (compound) fractures. Pain along its inner edge in runners is called shin splints.",
+    "hint": "The thick bone of the shin, on the big toe side of the leg."
+   },
+   "questions": [
+    {
+     "kind": "function",
+     "text": "Which bone of the leg carries most of the body weight?",
+     "options": [
+      "Fibula",
+      "Patella",
+      "Tibia",
+      "Femur"
+     ],
+     "answer": 2,
+     "explanation": "The tibia is the main weight-bearing bone of the leg; the fibula carries little weight."
+    },
+    {
+     "kind": "location",
+     "text": "The medial malleolus (inner ankle bump) belongs to which bone?",
+     "options": [
+      "Tibia",
+      "Fibula",
+      "Talus",
+      "Calcaneus"
+     ],
+     "answer": 0,
+     "explanation": "The medial malleolus is the lower end of the tibia."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_lowerlimb_right_fibula",
+   "concept": "fibula",
+   "node": "s6",
+   "type": "bone",
+   "side": "right",
+   "group": "leg",
+   "names": {
+    "preferred": "Fibula",
+    "latin": "Fibula",
+    "synonyms": [
+     "Calf bone"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24480"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_tibia"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_foot"
+    }
+   ],
+   "content": {
+    "pronunciation": "FIB-yoo-lah",
+    "origin": "Latin fibula, \"clasp\" or \"brooch pin\": it is thin like the pin of a brooch.",
+    "location": "The thin, lateral bone of the leg, beside the tibia. Its head lies just below the outer side of the knee; its lower end forms the lateral malleolus.",
+    "description": "A long, slender bone with a head, a narrow neck, a thin shaft and the lateral malleolus at the ankle. It does not reach the knee joint.",
+    "function": "Carries little body weight. It anchors leg muscles and ligaments (biceps femoris and the lateral collateral ligament attach to its head) and forms the outer wall of the ankle joint.",
+    "mnemonic": "FibuLa is Lateral and Little.",
+    "clinical": "The common fibular (peroneal) nerve wraps around the fibular neck. Injury here, from a fracture or a tight cast, can cause foot drop.",
+    "hint": "The thin bone on the outer side of the leg, ending at the outer ankle bump."
+   },
+   "questions": [
+    {
+     "kind": "clinical",
+     "text": "Which nerve wraps around the neck of the fibula and can be injured there, causing foot drop?",
+     "options": [
+      "Femoral nerve",
+      "Tibial nerve",
+      "Sciatic nerve",
+      "Common fibular nerve"
+     ],
+     "answer": 3,
+     "explanation": "The common fibular (peroneal) nerve winds around the fibular neck; injury weakens the muscles that lift the foot."
+    },
+    {
+     "kind": "relationship",
+     "text": "The head of the fibula lies just below the outer side of which joint, without forming part of it?",
+     "options": [
+      "Knee joint",
+      "Hip joint",
+      "Ankle joint",
+      "Sacroiliac joint"
+     ],
+     "answer": 0,
+     "explanation": "The fibular head sits below the outer knee but the fibula does not reach the femur or form part of the knee joint."
+    }
+   ]
+  },
+  {
+   "id": "skeletal_lowerlimb_right_foot",
+   "concept": "foot",
+   "node": "s7",
+   "type": "bone",
+   "side": "right",
+   "group": "foot_context",
+   "names": {
+    "preferred": "Bones of the foot (tarsals and metatarsals)",
+    "latin": "Ossa tarsi et metatarsi",
+    "synonyms": [
+     "Tarsals and metatarsals"
+    ]
+   },
+   "ontology": [
+    {
+     "system": "FMA",
+     "id": "FMA24482"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24497"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24500"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24528"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24521"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24523"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24525"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24507"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24509"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24511"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24513"
+    },
+    {
+     "system": "FMA",
+     "id": "FMA24515"
+    }
+   ],
+   "relationships": [
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_tibia"
+    },
+    {
+     "type": "articulates_with",
+     "target": "skeletal_lowerlimb_right_fibula"
+    }
+   ],
+   "content": {
+    "pronunciation": "TAR-sulz and met-ah-TAR-sulz",
+    "origin": "Greek tarsos, the flat of the foot; meta, \"beyond\": the metatarsals lie beyond the tarsus.",
+    "location": "The skeleton of the right foot below the ankle, shown for context. The toe bones are not included here.",
+    "description": "Seven tarsal bones (including the talus and calcaneus) and five metatarsals, arranged in arches.",
+    "function": "Supports body weight, absorbs shock and acts as a lever for walking. The talus forms the ankle joint with the tibia and fibula.",
+    "mnemonic": "Tarsals: \"Tiger Cubs Need MILC\" (Talus, Calcaneus, Navicular, Medial, Intermediate and Lateral cuneiforms, Cuboid).",
+    "clinical": "The ankle sprain, usually a tear of ligaments on the outer side of the ankle, is one of the most common sports injuries.",
+    "hint": "The bones below the ankle, forming the heel, arches and front of the sole."
+   },
+   "questions": [],
+   "merged": true,
+   "context": true
+  }
+ ]
+}

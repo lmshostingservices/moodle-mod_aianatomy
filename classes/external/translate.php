@@ -61,6 +61,9 @@ class translate extends base {
         );
         [$instance, , , $context] = self::load_cm($params['cmid'], ['mod/aianatomy:manage', 'mod/aianatomy:useai']);
         \core_php_time_limit::raise(180);
+        // Release the session lock before calling LMS Labs, so the student's or teacher's other requests
+        // (saving answers, finishing an attempt) are not blocked while audio or text is generated.
+        \core\session\manager::write_close();
         $result = ['structureid' => $params['structureid'], 'name' => '', 'questions' => [], 'groups' => [],
             'pending' => false, 'retryafter' => 0, 'credits' => '', 'balance' => ''];
         // A translation already in progress is resumed (same Idempotency-Key and body).

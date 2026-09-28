@@ -1,5 +1,40 @@
 # Changelog
 
+## 1.2.7 (2026-10-07)
+Fail closed on incomplete release metadata (`zipExists` must be true). Verification only settles a pending unlock when `unlocked` is a JSON boolean; malformed values leave the outcome uncertain. Unlock success, already-unlocked and explicit refusal flags must also be genuine JSON booleans. No generation, speech, media, database or pricing changes.
+
+## 1.2.6 (2026-10-06)
+Activation corrections after LMS Labs inspected 1.2.5 (1.2.5 is kept unchanged, SHA-256 39e33d08a35e969ec0bb179587e0579e04187d09400bef8e3266622e37293a63). No database changes; generation, speech, viewer and AMD files are unchanged apart from one HTTP option (below).
+- Unlock replies are read from the real LMS Labs fields: `success`, `alreadyUnlocked`, `creditsConsumed`, `entitlementSource`, `remainingCredits`, `message` (`downloadUrl` is ignored). The non-existent `creditsCharged`/`charged` are no longer read.
+  - New unlock: "LMS Labs recorded N credits for this unlock" from `creditsConsumed`.
+  - Recognised purchase (`creditsConsumed` 0 with `entitlementSource` marketplace or purchase): reported as activated from the existing purchase at 0 credits.
+  - `alreadyUnlocked`: access granted; `creditsConsumed` is shown only as the original purchase, never as a new debit.
+  - The balance LMS Labs reports and its escaped `message` are shown with the result.
+- Balances per route: verify `credits` (-1 = unlimited), unlock success `remainingCredits` (may be "unlimited"), insufficient-credit errors `currentCredits`.
+- 409 responses are no longer all treated as a changed price: `stale_credit_price` asks the admin to review the new price, `marketplace_entitlement_ambiguous` asks them to contact LMS Labs support (retrying will not help), and other conflicts show the server's message. The escaped server code and message are always displayed.
+- Stricter eligibility: only `acquisitionMode` exactly "credit-unlock", a positive whole `creditsRequired`, a valid SHA-256, an available status (the live manifest uses "ready") and `zipExists` true may be bought. A USD-purchase release never enters the credit flow.
+- Server-side HTTP requests no longer follow redirects (`allow_redirects` false), both for the activation routes (credential-bearing bodies) and for the generation routes (credential headers).
+- The live release SHA and price are always read at runtime; nothing is hard-coded.
+- Strings: 8 new, 2 removed, all 25 languages (607 strings each). Tests rewritten with the real response fields and the live manifest shape.
+
+## 1.2.5 (2026-10-05)
+Adds the Moodle-side activation (one-time unlock) interface. Built from the owner-supplied 1.2.4 ZIP (SHA-256 116202a58e06c2d50fa278e22245dd4350edcde4b0cb636f52a520a10221fd1d), which is kept unchanged. No database changes; AI Anatomy content, speech and text contracts and operation prices (text 3 credits, speech 1 credit) are unchanged.
+- New administrator-only page **Site administration > Plugins > Activity modules > AI Anatomy activation** (`mod/aianatomy/activation.php`, capability `moodle/site:config`), also linked from the AI Anatomy settings page. It shows the credential source (Central Config or a complete standalone pair, with a link to configure Central Config), access (Not checked / Locked / Unlocked / Unable to verify), the balance (including unlimited), and the live one-time activation price with the release SHA-256 read from the LMS Labs release catalogue.
+- **Check access** calls `POST /api/plugin-unlock/verify` (free). **Unlock…** first shows a confirmation with the live price; only the confirmed POST calls `POST /api/plugin-unlock` with `releaseSha256` and a numeric `expectedCredits` equal to the price shown. Immediately before buying, the plugin checks access again (never buys twice) and re-reads the catalogue; if the price or release changed, nothing is bought.
+- Unlocking is disabled when the catalogue entry is missing, has no valid SHA-256 or price, is not available, or its acquisition mode does not allow credits. A balance below the price is shown as a warning (LMS Labs may recognise an existing purchase at zero credits; otherwise it refuses with 402).
+- Outcomes: already unlocked, activation from an existing entitlement at 0 credits, insufficient credits, refused, and changed price are reported plainly. A charge is only reported when LMS Labs states it for this request; `creditsConsumed` is shown as history, never as a new debit. If the purchase gets no clear answer (network error, timeout, 5xx, unreadable reply), a pending marker keeps Unlock disabled until a free access check settles it.
+- Every action is a POST with sesskey; nothing is bought on page load. Credentials are sent only in the server-side request bodies the contract requires and never appear in HTML, JavaScript, URLs, stored state or logs.
+- The credentials status on the settings page now says that configured credentials are not proof of activation, and the missing `credentials_local` string (shown when a standalone pair is used) is added.
+- New strings in all 25 languages (601 strings each). New PHPUnit test `tests/activation_test.php` (mocked LMS Labs, no credits spent).
+
+## 1.2.4 (2026-10-04)
+Fixes and improvements from classroom testing (1.2.3 is kept unchanged as a separate release). No database changes.
+- Fixed "sessioncannotobtainlock" when a student moved quickly through questions with voiceover on. The voiceover, AI fill and translation services now release the Moodle session lock before calling LMS Labs, so saving answers is never blocked while audio is generated. Practice answers that fail to save are retried quietly (and sent before the attempt finishes) instead of showing an error and being lost.
+- Colours: each structure on the 3D model is now tinted to match its numbered label (a lighter shade of the label colour), in Study, Practice and Test, and keeps that colour once labelled correctly (with a green glow). The label palette is new: 24 colours with white-text contrast of at least 4.6:1, neighbouring numbers far apart in hue, and no repeats until number 25 (previously 12 colours with near-duplicates, repeating from 13).
+- Practice: after a correct label, a card shows the structure's name, Latin name and two key facts (function, how to remember it, clinical note or location; only fields the teacher shows students), with Listen when voiceover is on. It never blocks dragging or clicking a label box.
+- Activity language: the whole activity (buttons, messages, library names) now switches to the activity language using the plugin's own translations, even when the site has no Moodle language pack for it. Teachers see a notice with a link to translate the content when structures are still in English. Library names are translated into all 24 languages.
+- New strings: `lang_teachernotice` and `pack_*` (15 library names); `activitylanguage_note` and `lang_notinstalled` reworded; all 25 languages updated (538 strings each).
+
 ## 1.2.3 (2026-10-03)
 Integration hardening against the LMS Labs AI Anatomy server contract (1.2.2 is kept unchanged as a separate release).
 - A result that LMS Labs returned but Moodle could not store (e.g. a database error) keeps its Idempotency-Key, so the next attempt replays it within 24 hours without another debit. Only an unusable reply retires the key.

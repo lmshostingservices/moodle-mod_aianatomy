@@ -1,6 +1,6 @@
 # AI Anatomy (mod_aianatomy) and LMS Labs: client implementation of the server contract
 
-Plugin version **1.2.3**. This document describes what the plugin sends and how it handles every response, matching the LMS Labs "AI Anatomy server contract". It does not claim the routes are live: LMS Labs still has to publish them, and installed-Moodle acceptance against the real service has not been done yet.
+Plugin version **1.2.7**. This document describes what the plugin sends and how it handles every response, matching the LMS Labs "AI Anatomy server contract". Installed-Moodle acceptance against the real service has not been done yet.
 
 ## 1. Routes (built in, no admin setting)
 
@@ -123,9 +123,40 @@ Everything else — approving, editing, deleting, and all student activity excep
   - Attempt services need `mod/aianatomy:attempt`.
 - **Pages:** `editor.php` requires `mod/aianatomy:manage`, and `model.php` requires login plus `mod/aianatomy:view`.
 - **Credentials:** they never leave PHP. No credential appears in JavaScript, templates or web service responses.
+- **Session lock:** `speak`, `generate` and `translate` release the Moodle session lock (`\core\session\manager::write_close()`) after the capability checks and before calling LMS Labs, so a slow generation never blocks the user's other requests.
 
 ## 10. Licence materials in the release ZIP
 - `packs/<pack>/ATTRIBUTION.txt` (15 packs): BodyParts3D, CC BY-SA 2.1 JP, citation, modifications and FMA IDs.
 - `packs/<pack>/pack.json` → `source` metadata.
 - `thirdpartylibs.xml`: three.js (MIT) and the BodyParts3D packs.
 - `LICENSE`: GPL v3.
+
+## 11. Activation (one-time unlock)
+Administrator-only page `mod/aianatomy/activation.php` (capability `moodle/site:config`); code in `classes/local/unlock.php`. All requests are made from PHP, never follow redirects, and send the credentials only in the JSON bodies below.
+
+| Step | Request | Cost |
+|---|---|---|
+| Check access | `POST https://lms-labs.com/api/plugin-unlock/verify` `{"pluginId":"aianatomy","siteId","apiKey"}` → `unlocked, credits (-1 = unlimited), unlockedAt, entitlementSource` | free |
+| Live price | `GET https://lms-labs.com/api/plugin-versions` → `plugins["mod_aianatomy"]`: `sha256`, `acquisitionMode`, `status`, `zipExists`, `creditsRequired`, `version` | free |
+| Unlock (after confirmation) | `POST https://lms-labs.com/api/plugin-unlock` `{"pluginId":"aianatomy","pluginComponent":"mod_aianatomy","siteId","apiKey","releaseSha256":"<live SHA>","expectedCredits":<live price>}` | the live price |
+
+**Eligibility** (otherwise Unlock is disabled with the reason): `acquisitionMode` exactly `credit-unlock`; `creditsRequired` a positive whole number; `sha256` 64 hex characters; `status` one of ready, available, published, public; `zipExists` true.
+
+**Unlock replies**
+
+| Reply | Shown to the admin |
+|---|---|
+| `success`, `creditsConsumed` > 0 | Unlocked; "LMS Labs recorded N credits for this unlock"; balance from `remainingCredits` |
+| `success`, `creditsConsumed` 0, `entitlementSource` marketplace/purchase | Unlocked from the existing purchase, 0 credits |
+| `success`, `alreadyUnlocked` | Already unlocked; `creditsConsumed` shown as the original purchase, never as a new debit |
+| 402 / `insufficient_credits` | Not unlocked; server code and message; balance from `currentCredits` |
+| 409 `stale_credit_price` | Not unlocked; review the new price and confirm again |
+| 409 `marketplace_entitlement_ambiguous` | Not unlocked; contact LMS Labs support to link the purchase (retrying will not help) |
+| other 409 | Not unlocked; server message; contact support if it does not say what to do |
+| other 4xx, or 2xx with `success:false` and an error code | Refused; server code and message |
+| no answer, timeout, 408, 5xx, unreadable 2xx | Unknown outcome: pending marker; Unlock disabled until a free check returns locked or unlocked |
+
+- Page load reads the catalogue only; the access check and the purchase are POST + sesskey actions. The purchase needs the confirmation screen and re-checks access and the live catalogue immediately before sending; if the live price or SHA differs from what was confirmed, nothing is sent.
+- Server messages are shown as plain text (tags stripped, then escaped). `downloadUrl` is not used.
+- Staging: `$CFG->forced_plugin_settings['mod_aianatomy']['lmslabs_unlock_base']` replaces `https://lms-labs.com` for these three routes.
+- Activation does not change the generation routes, prices (text 3, speech 1) or their handling.

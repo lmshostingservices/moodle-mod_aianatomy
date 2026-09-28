@@ -184,7 +184,7 @@ $config = [
 ];
 
 $packinfo = \mod_aianatomy\local\pack::get($instance->pack);
-$packname = $packinfo['name'];
+$packname = \mod_aianatomy\local\pack::name($instance->pack);
 foreach ($packinfo['groups'] as $g) {
     if ($g['id'] === $packinfo['root'] && !empty($instance->grouptext)) {
         $packname = manager::group_text($instance, $g)[0];
@@ -214,5 +214,24 @@ $templatedata = [
 $PAGE->requires->js_call_amd('mod_aianatomy/player', 'init', ['#aa-' . $cm->id]);
 
 echo $OUTPUT->header();
+// Teachers: say plainly when the activity language is not English but the content still is.
+$activitylang = \mod_aianatomy\local\language::normalise($instance->language ?? 'en');
+if ($canmanage && !\mod_aianatomy\local\language::same($activitylang, 'en')) {
+    $enabledrows = array_filter($rows, fn($r) => $r->enabled);
+    $untranslated = array_filter(
+        $enabledrows,
+        fn($r) => !\mod_aianatomy\local\language::same((string)($r->contentlang ?? 'en'), $activitylang)
+    );
+    if ($untranslated) {
+        $notice = $str('lang_teachernotice', ['n' => count($untranslated), 'total' => count($enabledrows),
+            'lang' => \mod_aianatomy\local\language::native_name($activitylang)]);
+        $link = html_writer::link(
+            new moodle_url('/mod/aianatomy/editor.php', ['id' => $cm->id]),
+            $str('editanatomy'),
+            ['class' => 'btn btn-primary btn-sm ms-2']
+        );
+        echo $OUTPUT->notification($notice . ' ' . $link, \core\output\notification::NOTIFY_WARNING, false);
+    }
+}
 echo $OUTPUT->render_from_template('mod_aianatomy/view', $templatedata);
 echo $OUTPUT->footer();

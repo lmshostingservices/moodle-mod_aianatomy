@@ -74,13 +74,26 @@ class pack {
                 continue;
             }
             try {
-                $list[$id] = self::get($id)['name'];
+                $list[$id] = self::name($id);
             } catch (\Throwable $e) {
                 debugging('Invalid anatomy pack ' . $id . ': ' . $e->getMessage(), DEBUG_DEVELOPER);
             }
         }
         asort($list);
         return $list;
+    }
+
+    /**
+     * Pack name in the current language (a translated string when the plugin has one, else the pack's own name).
+     *
+     * @param string $id
+     * @return string
+     */
+    public static function name(string $id): string {
+        if (get_string_manager()->string_exists('pack_' . $id, 'mod_aianatomy')) {
+            return get_string('pack_' . $id, 'mod_aianatomy');
+        }
+        return self::get($id)['name'];
     }
 
     /**

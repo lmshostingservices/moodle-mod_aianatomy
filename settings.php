@@ -24,7 +24,31 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+// Activation (one-time unlock at LMS Labs): its own admin page, site administrators only.
+$ADMIN->add(
+    'modsettings',
+    new admin_externalpage(
+        'mod_aianatomy_activation', get_string('activation', 'mod_aianatomy'),
+        new moodle_url('/mod/aianatomy/activation.php'), 'moodle/site:config'
+    )
+);
+
 if ($ADMIN->fulltree) {
+    // Activation summary from the last access check (no LMS Labs request is made when this page loads).
+    $unlockstate = \mod_aianatomy\local\unlock::state();
+    $settings->add(
+        new admin_setting_heading(
+            'mod_aianatomy/activationheading', get_string('activation', 'mod_aianatomy'),
+            html_writer::div(
+                s(get_string('act_settings_status', 'mod_aianatomy',
+                    get_string('act_status_' . $unlockstate['status'], 'mod_aianatomy'))) . ' '
+                . html_writer::link(new moodle_url('/mod/aianatomy/activation.php'),
+                    get_string('act_settings_link', 'mod_aianatomy'), ['class' => 'btn btn-secondary btn-sm ms-2']),
+                $unlockstate['status'] === 'unlocked' ? 'alert alert-success' : 'alert alert-warning'
+            )
+        )
+    );
+
     $settings->add(
         new admin_setting_heading(
             'mod_aianatomy/aiheading', get_string('aisettings', 'mod_aianatomy'),
@@ -37,6 +61,10 @@ if ($ADMIN->fulltree) {
     $status = get_string('credentials_' . $source, 'mod_aianatomy');
     if (!\mod_aianatomy\local\credentials::central_installed()) {
         $status .= ' ' . get_string('credentials_nocentral', 'mod_aianatomy');
+    }
+    if ($source !== 'missing') {
+        // Credentials being set is not the same as AI Anatomy being unlocked for this site.
+        $status .= ' ' . get_string('act_notproof', 'mod_aianatomy');
     }
     $settings->add(
         new admin_setting_heading(

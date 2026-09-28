@@ -56,7 +56,7 @@ const STRING_KEYS = [
     'intro_content', 'intro_graded', 'intro_feedback_practice', 'intro_feedback_test', 'intro_practice_nograde',
     'intro_study_nopressure', 'intro_study_next', 'intro_requirements', 'intro_expect', 'intro_howto',
     'intro_howto_study', 'intro_howto_practice', 'intro_howto_test', 'intro_go', 'intro_back', 'intro_weights',
-    'intro_weak', 'firsttryscore', 'attribution', 'hintfor', 'hintpick', 'nexttask', 'yourchoice',
+    'intro_weak', 'firsttryscore', 'attribution', 'hintfor', 'hintpick', 'nexttask', 'yourchoice', 'close',
 ];
 
 let S = {};
@@ -224,6 +224,7 @@ class Player {
             this.startStudy();
         } else {
             this.results = {label: {}, find: {}, quiz: {}};
+            this.unsent = [];
             this.firstTry = 0;
             this.totalItems = data.rounds.reduce((n, r) => n + r.pins.length * (mode === 'practice' ? 2 : 1), 0) +
                 data.questions.length;
@@ -458,6 +459,62 @@ class Player {
         this.status.className = 'ax-status is-' + tone + (text ? ' is-on' : '');
         if (text) {
             this.say(text);
+        }
+    }
+
+    /**
+     * Practice: after a correct label, shows a card with the structure's key facts (and Listen when voiceover is
+     * on). It stays until the student closes it or labels the next structure.
+     *
+     * @param {string} pin
+     * @param {string} colour
+     */
+    showInfo(pin, colour) {
+        const info = this.infos && this.infos.get(pin);
+        this.hideInfo();
+        if (!info || !info.facts || !info.facts.length) {
+            return;
+        }
+        const card = el('div', 'ax-info', {role: 'dialog', 'aria-label': info.name});
+        card.style.setProperty('--c', colour || 'var(--aa-primary)');
+        const head = el('div', 'ax-info-head');
+        const title = el('div', 'ax-info-title');
+        title.appendChild(el('span', 'ax-info-check', {html: icon('check')}));
+        title.appendChild(el('strong', '', {formatted: info.name}));
+        if (info.latin) {
+            title.appendChild(el('em', 'ax-latin', {formatted: info.latin}));
+        }
+        head.appendChild(title);
+        if (info.voice && this.voice.has('cards')) {
+            const listen = iconButton('speak', S.listen, 'ax-info-listen');
+            listen.addEventListener('click', () => this.voice.play(info.voice, true));
+            head.appendChild(listen);
+        }
+        const close = iconButton('cross', S.close, 'ax-info-close');
+        close.addEventListener('click', () => this.hideInfo());
+        head.appendChild(close);
+        card.appendChild(head);
+        const list = el('dl', 'ax-info-facts');
+        info.facts.forEach((f) => {
+            list.appendChild(el('dt', '', {formatted: f.label}));
+            list.appendChild(el('dd', '', {formatted: f.text}));
+        });
+        card.appendChild(list);
+        this.view.appendChild(card);
+        this.infoEl = card;
+        window.requestAnimationFrame(() => card.classList.add('is-on'));
+        if (info.voice && this.voice.auto) {
+            this.voice.play(info.voice);
+        }
+    }
+
+    /**
+     * Removes the practice info card.
+     */
+    hideInfo() {
+        if (this.infoEl) {
+            this.infoEl.remove();
+            this.infoEl = null;
         }
     }
 
@@ -957,11 +1014,13 @@ class Player {
         if (this.mode !== 'study' || !this.overlay) {
             return;
         }
+        const shown = this.config.study.structures.filter((s) => s.top === this.level);
+        this.viewer.setTints(Object.fromEntries(shown.map((s) => [s.node, s.colour])));
         if (!this.labelsOn || !this.level) {
             this.overlay.clear();
             return;
         }
-        const items = this.config.study.structures.filter((s) => s.top === this.level).map((s) => {
+        const items = shown.map((s) => {
             const box = el('button', 'ax-label', {type: 'button', formatted: s.name});
             box.addEventListener('click', () => this.selectStructure(s.id));
             return {key: s.id, node: s.node, anchor: s.anchor, pos: s.labelpos, box, colour: s.colour};
@@ -1012,6 +1071,8 @@ class Player {
         this.hinted = new Set();
         this.answers = new Map((round.answers || []).map((a) => [a.pin, a.label]));
         this.hints = new Map((round.hints || []).map((h) => [h.pin, h.text]));
+        this.infos = new Map((round.infos || []).map((i) => [i.pin, i]));
+        this.hideInfo();
         this.viewer.setPickable([]);
 
         // Tray.
@@ -1054,6 +1115,7 @@ class Player {
                 number: p.number};
         });
         this.overlay.set(items);
+        this.viewer.setTints(Object.fromEntries(round.pins.map((p) => [p.node, p.colour])));
 
         // Actions.
         this.actions.replaceChildren();
@@ -1249,6 +1311,7 @@ class Player {
                 }
                 this.updateScore();
                 this.setStatus(fmt(S.correctfeedback, chip.text), 'good');
+                this.showInfo(pin, slot.pin.colour);
                 this.checkLabelsDone();
             } else {
                 slot.el.classList.add('is-wrong');
@@ -1419,8 +1482,47 @@ class Player {
         if (!items.length || this.mode !== 'practice') {
             return;
         }
-        Ajax.call([{methodname: 'mod_aianatomy_record_practice', args: {attemptid: this.attemptid, items}}])[0]
-            .catch(Notification.exception);
+        this.unsent = (this.unsent || []).concat(items);
+        this.flushPractice();
+    }
+
+    /**
+     * Sends practice results not yet saved. A failed save (for example while the session is briefly busy) is
+     * retried quietly and the answers are kept, so a fast student never loses one; the server ignores repeats.
+     *
+     * @returns {Promise}
+     */
+    flushPractice() {
+        if (this.flushing) {
+            return this.flushing;
+        }
+        if (!this.unsent || !this.unsent.length) {
+            return Promise.resolve();
+        }
+        const items = this.unsent.splice(0);
+        const attemptid = this.attemptid;
+        this.flushing = Ajax.call([{methodname: 'mod_aianatomy_record_practice', args: {attemptid, items}}])[0]
+            .then(() => {
+                this.flushing = null;
+                this.saveFailures = 0;
+                return this.flushPractice();
+            })
+            .catch((e) => {
+                this.flushing = null;
+                if (attemptid !== this.attemptid) {
+                    return null;
+                }
+                this.unsent = items.concat(this.unsent);
+                this.saveFailures = (this.saveFailures || 0) + 1;
+                if (this.saveFailures > 4) {
+                    this.saveFailures = 0;
+                    Notification.exception(e);
+                    return null;
+                }
+                return new Promise((resolve) => window.setTimeout(resolve, 1500 * this.saveFailures))
+                    .then(() => this.flushPractice());
+            });
+        return this.flushing;
     }
 
     /**
@@ -1469,6 +1571,7 @@ class Player {
      * Starts "Find it": click the named structure on the model.
      */
     startFind() {
+        this.hideInfo();
         this.phase = 'find';
         this.overlay.clear();
         this.viewer.clearStates();
@@ -1863,6 +1966,9 @@ class Player {
         this.phase = 'results';
         let res;
         try {
+            if (this.mode === 'practice') {
+                await this.flushPractice();
+            }
             res = await Ajax.call([{methodname: 'mod_aianatomy_finish_attempt', args: {attemptid: this.attemptid}}])[0];
         } catch (e) {
             Notification.exception(e);

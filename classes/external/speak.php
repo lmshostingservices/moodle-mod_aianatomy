@@ -73,6 +73,9 @@ class speak extends base {
         // Students may trigger generation of a missing clip unless the site only plays pre-generated audio.
         $generate = $teacher || (bool)get_config('mod_aianatomy', 'lmslabs_tts_studentgenerate');
         \core_php_time_limit::raise(120);
+        // Release the session lock before calling LMS Labs, so the student's or teacher's other requests
+        // (saving answers, finishing an attempt) are not blocked while audio or text is generated.
+        \core\session\manager::write_close();
         $result = voice::speak(
             $instance, $context, $params['text'], $params['sig'], $params['speed'], $generate,
             $teacher && $params['prefetch']

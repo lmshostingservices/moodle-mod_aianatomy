@@ -88,8 +88,9 @@ class lmslabs {
         $timeout = $timeout ?? max(30, (int)(get_config('mod_aianatomy', 'lmslabs_timeout') ?: 100));
         try {
             $client = new \core\http_client();
+            // Redirects are never followed, so the credential headers cannot be re-sent to another host.
             $options = ['headers' => $request['headers'], 'timeout' => $timeout, 'connect_timeout' => 15,
-                'http_errors' => false];
+                'http_errors' => false, 'allow_redirects' => false];
             if ($body !== null) {
                 $options['body'] = $body;
             }

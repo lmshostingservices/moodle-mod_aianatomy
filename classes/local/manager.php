@@ -31,8 +31,9 @@ class manager {
     public const TIME_GRACE = 30;
 
     /** @var string[] Label colour palette (readable with white text). */
-    public const PALETTE = ['#4f46e5', '#0369a1', '#047857', '#b45309', '#b91c1c', '#be185d', '#7c3aed', '#0f766e',
-        '#c2410c', '#4d7c0f', '#0e7490', '#a21caf'];
+    public const PALETTE = ['#0e8181', '#ae6113', '#47810e', '#9947eb', '#e61919', '#0f850f', '#5151ec', '#dc187a',
+        '#77770d', '#1775d3', '#ca16ca', '#0f854a', '#0d4a4a', '#714214', '#2b4a0d', '#7523c7', '#ad1f1f', '#0e4e0e',
+        '#2525d4', '#a01c5e', '#40400b', '#19548f', '#8f198f', '#0e4e2e'];
 
     /** @var string[] Statuses of live content that students can see. */
     public const VISIBLE_QUESTION = ['library', 'approved'];
@@ -152,6 +153,53 @@ class manager {
     public static function content(stdClass $row): array {
         $c = json_decode((string)$row->content, true);
         return pack::clean_content(is_array($c) ? $c : []);
+    }
+
+    /**
+     * The "did you know" card shown in Practice after a structure is labelled correctly: its name and up to two
+     * facts from its teaching content (only fields the teacher shows students).
+     *
+     * @param stdClass $instance
+     * @param \context $context
+     * @param string $pin pin token
+     * @param stdClass $row structure row
+     * @param array $s pack structure
+     * @param array $content live content
+     * @return array
+     */
+    public static function pin_info(stdClass $instance, \context $context, string $pin, stdClass $row, array $s,
+            array $content): array {
+        $shown = self::studyfields($instance);
+        $facts = [];
+        foreach (['function', 'mnemonic', 'clinical', 'location', 'description'] as $field) {
+            $text = trim((string)($content[$field] ?? ''));
+            if ($text === '' || !in_array($field, $shown, true)) {
+                continue;
+            }
+            if (\core_text::strlen($text) > 220) {
+                $text = rtrim(\core_text::substr($text, 0, 217)) . '…';
+            }
+            $facts[] = ['field' => $field, 'label' => get_string('field_' . $field, 'mod_aianatomy'),
+                'text' => format_string($text, true, ['context' => $context])];
+            if (count($facts) >= 2) {
+                break;
+            }
+        }
+        $name = self::display_name($row, $s);
+        $info = [
+            'pin' => $pin,
+            'name' => format_string($name, true, ['context' => $context]),
+            'latin' => in_array('latin', $shown, true) ? format_string((string)($s['names']['latin'] ?? ''), true,
+                ['context' => $context]) : '',
+            'facts' => $facts,
+        ];
+        if (voice::on($instance, 'cards') && $facts) {
+            $spoken = voice::plain($name) . '. ' . voice::plain(strip_tags($facts[0]['text']));
+            if ($item = voice::item($instance, $spoken)) {
+                $info['voice'] = $item;
+            }
+        }
+        return $info;
     }
 
     /**
@@ -325,7 +373,7 @@ class manager {
         }
         return [
             'id' => $pack['id'],
-            'name' => $pack['name'],
+            'name' => pack::name($instance->pack),
             'explodedirs' => (object)$explodedirs,
             'rootframe' => array_values($pack['rootframe'] ?? []),
             'root' => $pack['root'],
@@ -489,7 +537,7 @@ class manager {
             'studytip' => (string)$instance->studytip,
             'ai' => ai\generator::status(),
             'language' => ['code' => $lang, 'name' => language::english_name($lang),
-                'english' => language::same($lang, 'en'), 'installed' => language::installed($lang)],
+                'english' => language::same($lang, 'en'), 'installed' => language::can_switch($lang)],
             'groups' => $groups,
             'grouptranslated' => !empty(json_decode((string)($instance->grouptext ?? ''), true)),
             'jobs' => ai\jobs::pending_text((int)$instance->id),
@@ -519,8 +567,8 @@ class manager {
     public static function voice_items(stdClass $instance, \context $context): array {
         $prev = null;
         $code = language::normalise($instance->language ?? 'en');
-        if (current_language() !== $code && ($code === 'en' || language::installed($code))) {
-            $prev = force_current_language($code);
+        if (current_language() !== $code && language::can_switch($code)) {
+            $prev = language::force($code);
         }
         try {
             $items = [];
@@ -570,7 +618,7 @@ class manager {
             return array_values($items);
         } finally {
             if ($prev !== null) {
-                force_current_language($prev);
+                language::restore($prev);
             }
         }
     }
@@ -793,6 +841,7 @@ class manager {
             $labels = [];
             $answers = [];
             $hints = [];
+            $infos = [];
             $n = 0;
             foreach ($members as $s) {
                 if (!isset($targets[$s['id']])) {
@@ -832,6 +881,7 @@ class manager {
                     ['context' => $context]
                 )];
                 if ($mode === 'practice') {
+                    $infos[] = self::pin_info($instance, $context, $pt, $row, $s, $content);
                     $answers[] = ['pin' => $pt, 'label' => $lt];
                     $hints[] = ['pin' => $pt, 'text' => format_string(
                         $content['hint'] ?: $content['location'], true,
@@ -861,6 +911,7 @@ class manager {
                 'labels' => $labels,
                 'answers' => $answers,
                 'hints' => $hints,
+                'infos' => $infos,
             ];
         }
 

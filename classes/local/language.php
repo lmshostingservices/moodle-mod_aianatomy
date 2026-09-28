@@ -118,6 +118,16 @@ class language {
     }
 
     /**
+     * Native name ("ไทย", "Deutsch").
+     *
+     * @param string $code
+     * @return string
+     */
+    public static function native_name(string $code): string {
+        return self::LANGUAGES[self::normalise($code)][2];
+    }
+
+    /**
      * Whether two codes are the same content language (en, en_us and en_au all count as English).
      *
      * @param string $a
@@ -140,6 +150,65 @@ class language {
     }
 
     /**
+     * Whether this plugin ships its own translation of its texts for a language.
+     *
+     * @param string $code
+     * @return bool
+     */
+    public static function bundled(string $code): bool {
+        $code = self::normalise($code);
+        return $code === 'en' || is_readable(__DIR__ . '/../../lang/' . $code . '/aianatomy.php');
+    }
+
+    /**
+     * Whether the activity's texts can be shown in a language: the plugin's own translation or a Moodle
+     * language pack.
+     *
+     * @param string $code
+     * @return bool
+     */
+    public static function can_switch(string $code): bool {
+        return self::bundled($code) || self::installed($code);
+    }
+
+    /**
+     * Switches the current request to a language, also when only this plugin's translation exists
+     * (Moodle's own buttons and menus then stay in English; everything this plugin shows is translated).
+     *
+     * @param string $code
+     * @return string the previous forced language, to restore with {@see restore()}
+     */
+    public static function force(string $code): string {
+        global $SESSION;
+        $code = self::normalise($code);
+        $prev = isset($SESSION->forcelang) ? (string)$SESSION->forcelang : '';
+        if (self::installed($code) || $code === 'en') {
+            force_current_language($code);
+        } else if (self::bundled($code)) {
+            // Moodle's force_current_language() ignores languages without a language pack; the plugin's
+            // strings for this language load from its own lang folder, so set it directly.
+            $SESSION->forcelang = $code;
+            moodle_setlocale();
+        }
+        return $prev;
+    }
+
+    /**
+     * Restores the language saved by {@see force()}.
+     *
+     * @param string $prev
+     */
+    public static function restore(string $prev): void {
+        global $SESSION;
+        if ($prev === '' || self::installed($prev)) {
+            force_current_language($prev);
+        } else {
+            $SESSION->forcelang = $prev;
+            moodle_setlocale();
+        }
+    }
+
+    /**
      * Options for the activity settings: "Deutsch - German".
      *
      * @return array
@@ -148,7 +217,7 @@ class language {
         $out = [];
         foreach (self::LANGUAGES as $code => [$locale, $english, $native]) {
             $label = $native === $english ? $english : $native . ' - ' . $english;
-            if ($code !== 'en' && !self::installed($code)) {
+            if (!self::can_switch($code)) {
                 $label .= ' *';
             }
             $out[$code] = $label;
@@ -157,18 +226,18 @@ class language {
     }
 
     /**
-     * Switches the interface to the activity language for this request, when its language pack is installed.
-     * (English variants without their own pack keep the user's English interface.)
+     * Switches the interface to the activity language for this request: this plugin's own translation, or the
+     * Moodle language pack when installed. (English variants without their own pack keep the user's English.)
      *
      * @param \stdClass $instance
      * @return bool true if switched
      */
     public static function apply(\stdClass $instance): bool {
         $code = self::normalise($instance->language ?? 'en');
-        if (current_language() === $code || ($code !== 'en' && !self::installed($code))) {
+        if (current_language() === $code || !self::can_switch($code)) {
             return false;
         }
-        force_current_language($code);
+        self::force($code);
         return true;
     }
 }

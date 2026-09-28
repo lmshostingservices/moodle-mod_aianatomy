@@ -4499,3 +4499,94 @@ html.aa-lock-scroll body {
         opacity: .35;
     }
 }
+
+/* Practice: facts about a structure after it is labelled correctly. */
+.path-mod-aianatomy .ax-info {
+    position: absolute;
+    left: 50%;
+    bottom: 64px;
+    z-index: 10;
+    width: min(360px, calc(100% - 24px));
+    max-height: 42%;
+    overflow-y: auto;
+    transform: translate(-50%, 12px);
+    padding: 12px 14px 12px 16px;
+    border-radius: 16px;
+    border-left: 6px solid var(--c);
+    background: #fff;
+    color: #1e293b;
+    box-shadow: 0 18px 40px -12px rgba(15, 23, 42, .45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s, transform .35s var(--aa-spring);
+}
+/* The card never blocks dragging or clicking a label box underneath; only its buttons take clicks. */
+.path-mod-aianatomy .ax-info button {
+    pointer-events: auto;
+}
+.path-mod-aianatomy .ax-info.is-on {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+.path-mod-aianatomy .ax-info-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+.path-mod-aianatomy .ax-info-title {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 8px;
+    font-size: 1.02rem;
+}
+.path-mod-aianatomy .ax-info-title .ax-latin {
+    flex-basis: 100%;
+    margin-left: 30px;
+    color: #475569;
+    font-size: .88rem;
+}
+.path-mod-aianatomy .ax-info-check {
+    display: inline-flex;
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+    border-radius: 50%;
+    background: var(--c);
+    color: #fff;
+}
+.path-mod-aianatomy .ax-info-check svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+}
+.path-mod-aianatomy .ax-info .aa-iconbtn {
+    width: 32px;
+    height: 32px;
+}
+.path-mod-aianatomy .ax-info-facts {
+    margin: 6px 0 0;
+    font-size: .86rem;
+    line-height: 1.4;
+}
+.path-mod-aianatomy .ax-info-facts dt {
+    margin-top: 6px;
+    color: var(--c);
+    font-size: .74rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+.path-mod-aianatomy .ax-info-facts dd {
+    margin: 1px 0 0;
+}
+@media (max-width: 600px) {
+    .path-mod-aianatomy .ax-info {
+        bottom: 56px;
+        max-height: 45%;
+        font-size: .88rem;
+    }
+}

@@ -139,6 +139,25 @@ class start_attempt extends base {
                                     ]
                                 )
                             ),
+                            'infos' => new external_multiple_structure(
+                                new external_single_structure(
+                                    [
+                                        'pin' => new external_value(PARAM_ALPHANUM, 'Pin'),
+                                        'name' => new external_value(PARAM_TEXT, 'Structure name'),
+                                        'latin' => new external_value(PARAM_TEXT, 'Latin name'),
+                                        'facts' => new external_multiple_structure(
+                                            new external_single_structure(
+                                                [
+                                                    'field' => new external_value(PARAM_ALPHA, 'Content field'),
+                                                    'label' => new external_value(PARAM_TEXT, 'Field label'),
+                                                    'text' => new external_value(PARAM_TEXT, 'Fact'),
+                                                ]
+                                            )
+                                        ),
+                                        'voice' => self::voice_item_structure(),
+                                    ]
+                                ), 'Practice: facts shown after a correct label', VALUE_OPTIONAL
+                            ),
                         ]
                     )
                 ),

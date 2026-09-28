@@ -63,6 +63,9 @@ class generate extends base {
             'balance' => ''];
         [$instance, , , $context] = self::load_cm($params['cmid'], ['mod/aianatomy:manage', 'mod/aianatomy:useai']);
         \core_php_time_limit::raise(180);
+        // Release the session lock before calling LMS Labs, so the student's or teacher's other requests
+        // (saving answers, finishing an attempt) are not blocked while audio or text is generated.
+        \core\session\manager::write_close();
         // One structure per call keeps each request short; the editor loops for "Generate all".
         $sid = $params['structureids'][0] ?? '';
         // A request already in progress for this structure is resumed (same Idempotency-Key and body).

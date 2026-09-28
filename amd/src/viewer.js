@@ -389,9 +389,14 @@ export default class Viewer {
             }
             n.state = state;
             const s = STATES[state] || STATES.default;
-            if (n.base && (state === 'default' || state === 'hover' || state === 'muted')) {
-                // Keep tissue colour; hover lightens it, muted greys it.
-                n.mesh.material.color.copy(n.base);
+            const own = n.tint || n.base;
+            if (n.tint && state === 'correct') {
+                // Labelled correctly: keep its own colour (so structures stay distinguishable) with a green glow.
+                n.mesh.material.color.copy(n.tint);
+            } else if (own && (state === 'default' || state === 'hover' || state === 'muted')) {
+                // Keep the structure's own colour (its number colour, or tissue colour); hover lightens it,
+                // muted greys it.
+                n.mesh.material.color.copy(own);
                 if (state === 'hover') {
                     n.mesh.material.color.lerp(new THREE.Color(0xffffff), 0.18);
                 } else if (state === 'muted') {
@@ -401,9 +406,33 @@ export default class Viewer {
                 n.mesh.material.color.setHex(s.color);
             }
             n.mesh.material.emissive.setHex(s.emissive);
-            n.mesh.material.emissiveIntensity = s.ei;
+            n.mesh.material.emissiveIntensity = n.tint && state === 'correct' ? 0.15 : s.ei;
         });
         this.dirty = true;
+    }
+
+    /**
+     * Colours structures to match their numbered label, as a lighter shade of the label colour, so neighbouring
+     * structures are easy to tell apart. Structures not listed go back to their tissue or bone colour.
+     *
+     * @param {Object} colours node name => CSS hex colour
+     */
+    setTints(colours) {
+        const map = colours || {};
+        this.nodes.forEach((n, name) => {
+            const hex = map[name];
+            if (hex) {
+                const c = new THREE.Color(hex);
+                const hsl = {};
+                c.getHSL(hsl, THREE.SRGBColorSpace);
+                // Lighter than the label so the 3D shading still reads; darker labels (13+) stay darker here too.
+                c.setHSL(hsl.h, Math.min(hsl.s, 0.6), Math.min(0.7, hsl.l * 0.9 + 0.3), THREE.SRGBColorSpace);
+                n.tint = c;
+            } else {
+                n.tint = null;
+            }
+            this.setState(name, n.state);
+        });
     }
 
     /**

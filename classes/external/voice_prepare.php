@@ -67,7 +67,8 @@ class voice_prepare extends base {
             $message = $teacher && get_string_manager()->string_exists($r['error'], 'mod_aianatomy')
                 ? get_string($r['error'], 'mod_aianatomy') : get_string('voiceprep_failed', 'mod_aianatomy');
         }
-        if (!$allowed && $r['state'] === 'preparing') {
+        if ($r['state'] === 'preparing') {
+            // Keep preparing in the background too (for example after LMS Labs credentials were added later).
             voice::queue($instance);
         }
         return ['state' => $r['state'], 'total' => $r['total'], 'ready' => $r['ready'],
@@ -82,7 +83,7 @@ class voice_prepare extends base {
     public static function execute_returns(): external_single_structure {
         return new external_single_structure(
             [
-                'state' => new external_value(PARAM_ALPHA, 'off, ready, preparing or failed'),
+                'state' => new external_value(PARAM_ALPHA, 'off, ready, incomplete, preparing or failed'),
                 'total' => new external_value(PARAM_INT, 'Clips needed'),
                 'ready' => new external_value(PARAM_INT, 'Clips ready'),
                 'retryafter' => new external_value(PARAM_INT, 'Seconds to wait before asking again'),

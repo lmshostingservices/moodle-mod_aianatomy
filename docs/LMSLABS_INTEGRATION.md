@@ -1,6 +1,6 @@
 # AI Anatomy (mod_aianatomy) and LMS Labs: client implementation of the server contract
 
-Plugin version **1.2.10**. This document describes what the plugin sends and how it handles every response, matching the LMS Labs "AI Anatomy server contract". Installed-Moodle acceptance against the real service has not been done yet.
+Plugin version **1.2.11**. This document describes what the plugin sends and how it handles every response, matching the LMS Labs "AI Anatomy server contract". Installed-Moodle acceptance against the real service has not been done yet.
 
 ## 1. Routes (built in, no admin setting)
 
@@ -161,12 +161,15 @@ Administrator-only page `mod/aianatomy/activation.php` (capability `moodle/site:
 - Staging: `$CFG->forced_plugin_settings['mod_aianatomy']['lmslabs_unlock_base']` replaces `https://lms-labs.com` for these three routes.
 - Activation does not change the generation routes, prices (text 3, speech 1) or their handling.
 
-## 12. Voiceover preparation (1.2.10)
+## 12. Voiceover preparation (1.2.10, fixes in 1.2.11)
 Voiceover is part of every activity and is created before students need it. Nothing changes in the speech request, its headers, idempotency or status handling (sections 3–5).
 
 - **When:** a background task (`\mod_aianatomy\task\prepare_voice`, cron) runs when an activity is created or saved, when its texts change (content, questions, group names, structure selection), and once after the 1.2.10 upgrade. It works for up to 10 minutes per run and queues itself again while clips are missing or LMS Labs answers 202.
 - **Waiting screen:** when a student starts a mode before all clips exist, `mod_aianatomy_voice_prepare` first reports progress (`generate=false`, no requests), then, if students may generate audio (admin setting), creates the next clips for about 20 seconds per call. The mode starts when all clips are ready.
 - **What is voiced:** every study card (the same text for the Practice card), structure names (slow), find prompts, questions and each answer option, practice feedback, and the fixed phrases. Each text is split into clips of at most 200 characters; identical clips are created once per activity.
 - **Cost:** 1 LMS Labs credit per clip, once per activity. A full library with the default settings needs roughly: upper limb bones 96, pelvis 123, respiratory 149, urinary 191, digestive 231, hand 287, skull 289, trunk muscles 319, vertebral column 331, foot 337, heart 428, thoracic cage 473, upper limb muscles 486, lower limb muscles 493, brain 632 clips. Changing a text re-voices only that text.
-- **Errors:** 401, 402, 403 and 404 stop preparation (stored in `aianatomy.voiceerror`); students may continue without voiceover and teachers see the reason. Other failures skip that text and continue.
+- **Errors:** 401, 402, 403 and 404 stop preparation (state *failed*, stored in `aianatomy.voiceerror`); students may continue without voiceover and teachers see the reason. A clip that ends in 409, 410, 413 or 422 keeps a failed marker and is never re-sent automatically; when all other clips exist the state is *incomplete*, the background task stops, and students get the voiceover that exists. Network errors and 5xx are retried later with the same key.
+- **Retry-After:** a clip LMS Labs is still creating (202/429) is not re-sent before its Retry-After time, whoever asks (cron or students).
+- **Lost results:** unresolved speech jobs are never deleted; after 2 days they become failed markers, so no automatic request can create a new key and pay twice for the same clip.
+- **Throughput:** at about 30 new clips a minute per site, a 632-clip activity takes over 20 minutes. Students can start after a minute; the voiceover keeps being prepared and plays wherever it is ready.
 - **Never partial:** a text plays only when every one of its clips exists.

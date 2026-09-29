@@ -404,4 +404,105 @@ final class voice_test extends \advanced_testcase {
         $this->assertSame(1, (int)$DB->get_field('aianatomy', 'voice', ['id' => $module->id]));
         $this->assertSame(implode(',', voice::PLACES), $DB->get_field('aianatomy', 'voiceplaces', ['id' => $module->id]));
     }
+
+    /**
+     * A clip that fails for good (410 here) never keeps preparation running: the activity becomes "incomplete",
+     * nothing is re-sent automatically, and the next run makes no requests.
+     */
+    public function test_permanent_failure_stops_preparation(): void {
+        global $DB;
+        $this->resetAfterTest();
+        set_config('ttscapabilities', json_encode(['time' => time(), 'locales' => null]), 'mod_aianatomy');
+        [$instance, $context] = $this->setup_voice(['quizcount' => 3]);
+        $calls = 0;
+        lmslabs::$transport = function (array $req) use (&$calls) {
+            $calls++;
+            // The first clip expires at LMS Labs (410); every other clip works.
+            return $calls === 1 ? [410, [], '{"code":"EXPIRED"}']
+                : [200, ['Content-Type' => ['audio/mpeg'], 'X-Credits-Charged' => ['1']], 'ID3audio'];
+        };
+        $r = voice::prepare($instance, $context, 600);
+        $this->assertSame('incomplete', $r['state']);
+        $this->assertSame(1, $r['blocked']);
+        $this->assertSame($r['total'] - 1, $r['ready']);
+        $this->assertSame('lmslabsexpired', $r['error']);
+        $this->assertSame('lmslabsexpired', $DB->get_field('aianatomy', 'voiceerror', ['id' => $instance->id]));
+        $before = $calls;
+        $this->assertSame('incomplete', voice::prepare($instance, $context, 600)['state']);
+        $this->assertSame($before, $calls);
+    }
+
+    /**
+     * 422 (invalid text) is also final for that text: no new key on the next run.
+     */
+    public function test_invalid_text_not_retried(): void {
+        $this->resetAfterTest();
+        set_config('ttscapabilities', json_encode(['time' => time(), 'locales' => null]), 'mod_aianatomy');
+        [$instance, $context] = $this->setup_voice(['quizcount' => 3]);
+        $calls = 0;
+        lmslabs::$transport = function (array $req) use (&$calls) {
+            $calls++;
+            return $calls === 1 ? [422, [], '{"code":"INVALID_INPUT","message":"bad text"}']
+                : [200, ['Content-Type' => ['audio/mpeg'], 'X-Credits-Charged' => ['1']], 'ID3audio'];
+        };
+        $this->assertSame('incomplete', voice::prepare($instance, $context, 600)['state']);
+        $before = $calls;
+        voice::prepare($instance, $context, 600);
+        $this->assertSame($before, $calls);
+    }
+
+    /**
+     * Retry-After is honoured: a pending clip is not re-sent before LMS Labs said to ask again.
+     */
+    public function test_retry_after_respected(): void {
+        $this->resetAfterTest();
+        set_config('ttscapabilities', json_encode(['time' => time(), 'locales' => null]), 'mod_aianatomy');
+        [$instance, $context] = $this->setup_voice();
+        $calls = 0;
+        lmslabs::$transport = function (array $req) use (&$calls) {
+            $calls++;
+            return [202, ['Retry-After' => ['60']], '{"code":"PENDING"}'];
+        };
+        $item = voice::item($instance, 'The scaphoid');
+        $r = voice::speak($instance, $context, $item['text'], $item['sig'], 'normal', true);
+        $this->assertTrue($r['pending']);
+        $r = voice::speak($instance, $context, $item['text'], $item['sig'], 'normal', true);
+        $this->assertTrue($r['pending']);
+        $this->assertGreaterThan(0, $r['retryafter']);
+        $this->assertSame(1, $calls);
+    }
+
+    /**
+     * The spoken card includes everything the card shows, pronunciation included.
+     */
+    public function test_card_text_reads_pronunciation(): void {
+        $this->resetAfterTest();
+        $text = voice::card_text(
+            'Scaphoid', 'Os scaphoideum', ['pronunciation' => 'SKAF-oyd', 'function' => 'It links the rows.'],
+            [['type' => 'articulates_with', 'name' => 'Lunate']]
+        );
+        $this->assertStringContainsString('SKAF-oyd', $text);
+        $this->assertStringContainsString('Os scaphoideum', $text);
+        $this->assertStringContainsString('It links the rows', $text);
+        $this->assertStringContainsString('Lunate', $text);
+    }
+
+    /**
+     * An unresolved speech job past retention is kept as a failed marker (never deleted), so no automatic request
+     * can pay for the same clip again.
+     */
+    public function test_cleanup_keeps_stale_speech_jobs(): void {
+        global $DB;
+        $this->resetAfterTest();
+        [$instance] = $this->setup_voice();
+        $id = $DB->insert_record(
+            'aianatomy_job', (object)['aianatomyid' => $instance->id, 'operation' => 'speech',
+            'target' => 'abc', 'idemkey' => 'aa-' . str_repeat('x', 40), 'body' => '{}', 'meta' => null, 'retryafter' => 0,
+            'timecreated' => time() - 5 * DAYSECS, 'timemodified' => time() - 5 * DAYSECS]
+        );
+        \mod_aianatomy\local\ai\jobs::cleanup();
+        $job = $DB->get_record('aianatomy_job', ['id' => $id]);
+        $this->assertNotFalse($job);
+        $this->assertSame('lmslabsexpired', \mod_aianatomy\local\ai\jobs::is_failed($job));
+    }
 }

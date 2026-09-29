@@ -132,6 +132,25 @@ class jobs {
     }
 
     /**
+     * Speech clips that failed for good: clip hash => error code.
+     *
+     * @param int $instanceid
+     * @return array
+     */
+    public static function failed_targets(int $instanceid): array {
+        global $DB;
+        $out = [];
+        $rows = $DB->get_records_select(
+            'aianatomy_job', 'aianatomyid = :aid AND operation = :op AND ' . $DB->sql_like('meta', ':failed'),
+            ['aid' => $instanceid, 'op' => 'speech', 'failed' => '%"failed"%'], '', 'id, target, meta'
+        );
+        foreach ($rows as $r) {
+            $out[$r->target] = self::is_failed($r) ?? 'lmslabsexpired';
+        }
+        return $out;
+    }
+
+    /**
      * Number of speech clips that failed terminally and wait for an explicit teacher action.
      *
      * @param int $instanceid
@@ -180,6 +199,16 @@ class jobs {
      */
     public static function cleanup(): void {
         global $DB;
+        // An unresolved speech job older than LMS Labs' retention may have been charged but never stored. Deleting it
+        // would let an automatic request create a new key and pay again, so it becomes a failed marker instead.
+        $stale = $DB->get_records_select(
+            'aianatomy_job', 'operation = :op AND timecreated < :cutoff AND (meta IS NULL OR ' .
+            $DB->sql_like('meta', ':failed', true, true, true) . ')',
+            ['op' => 'speech', 'cutoff' => time() - self::MAXAGE, 'failed' => '%"failed"%']
+        );
+        foreach ($stale as $job) {
+            self::fail($job, 'lmslabsexpired');
+        }
         // Pending jobs past LMS Labs' retention are removed; failed speech markers stay until a teacher acts.
         $DB->delete_records_select(
             'aianatomy_job', 'timecreated < :cutoff AND (meta IS NULL OR ' .

@@ -313,11 +313,18 @@ class voice {
                         fn() => [ai\tts_lmslabs::body($chunk, $locale, $voicename, $speed), null]
                     );
                 }
+                if ((int)$job->retryafter > time()) {
+                    // LMS Labs asked us to wait (202/429 Retry-After): do not re-send before then.
+                    $out['pending'] = true;
+                    $out['retryafter'] = max($out['retryafter'], (int)$job->retryafter - time());
+                    continue;
+                }
                 try {
                     $result = ai\tts_lmslabs::request($job);
                 } catch (moodle_exception $e) {
-                    if (in_array($e->errorcode, ['lmslabsconflict', 'lmslabsexpired'], true)) {
-                        // 409/410: keep a marker so automatic plays do not create a new billable key.
+                    if (in_array($e->errorcode, self::PERMANENT, true)) {
+                        // 409/410 (and 413/422, rejected unchanged text): keep a marker so automatic requests never
+                        // re-send it with a new key. A changed text is a new clip; a teacher can retry explicitly.
                         ai\jobs::fail($job, $e->errorcode);
                     } else {
                         // 401/402/403/404/413/422 are not charged; the next attempt starts a new request.
@@ -387,6 +394,9 @@ class voice {
         return ['clips' => count($rows), 'credits' => round($credits, 2)];
     }
 
+    /** Errors of one clip that automatic preparation never retries (conflict, expired, invalid text). */
+    const PERMANENT = ['lmslabsconflict', 'lmslabsexpired', 'lmslabsinvalid'];
+
     /** Errors that stop preparation until something changes (credentials, entitlement, credits, service). */
     const STOPPERS = ['aiauth', 'voicenoentitlement', 'ainocredits', 'voicenotavailable', 'voicenotconfigured',
         'lmslabscredentialsmissing'];
@@ -396,7 +406,8 @@ class voice {
      *
      * @param stdClass $instance
      * @param \context_module $context
-     * @return array ['total' => clips needed, 'ready' => clips stored, 'items' => [[item, missing clip count]]]
+     * @return array ['total' => clips needed, 'ready' => clips stored, 'blocked' => clips that failed for good,
+     *               'blockedcode' => their most common error, 'items' => [[item, clips still to create]]]
      */
     public static function status(stdClass $instance, \context_module $context): array {
         $locale = language::locale($instance->language ?? 'en');
@@ -405,25 +416,34 @@ class voice {
         foreach (get_file_storage()->get_area_files($context->id, 'mod_aianatomy', 'voice', 0, 'id', false) as $file) {
             $have[$file->get_filename()] = true;
         }
+        $failed = ai\jobs::failed_targets((int)$instance->id);
         $seen = [];
         $items = [];
+        $blocked = [];
         foreach (manager::voice_items($instance, $context) as $item) {
             $missing = 0;
             foreach (self::chunks($item['text']) as $chunk) {
-                $name = self::hash($locale, $voicename, $item['speed'], $chunk) . '.mp3';
-                if (isset($seen[$name])) {
+                $hash = self::hash($locale, $voicename, $item['speed'], $chunk);
+                if (isset($seen[$hash])) {
                     continue;
                 }
-                $seen[$name] = true;
-                if (!isset($have[$name])) {
+                $seen[$hash] = true;
+                if (isset($have[$hash . '.mp3'])) {
+                    continue;
+                }
+                if (isset($failed[$hash])) {
+                    // Failed for good (409/410/413/422): never re-sent automatically; a teacher can retry it.
+                    $blocked[$hash] = $failed[$hash];
+                } else {
                     $missing++;
                 }
             }
             $items[] = [$item, $missing];
         }
         $total = count($seen);
-        $ready = $total - array_sum(array_column($items, 1));
-        return ['total' => $total, 'ready' => $ready, 'items' => $items];
+        $ready = $total - array_sum(array_column($items, 1)) - count($blocked);
+        return ['total' => $total, 'ready' => $ready, 'blocked' => count($blocked), 'items' => $items,
+            'blockedcode' => $blocked ? array_search(max(array_count_values($blocked)), array_count_values($blocked)) : ''];
     }
 
     /**
@@ -434,18 +454,20 @@ class voice {
      * @param stdClass $instance
      * @param \context_module $context
      * @param int $budget seconds of generation (0 = only report)
-     * @return array ['state' => off|ready|preparing|failed, 'total', 'ready', 'retryafter', 'error' => string code]
+     * @return array ['state' => off|ready|incomplete|preparing|failed, 'total', 'ready', 'blocked', 'retryafter',
+     *               'error' => string code]
      */
     public static function prepare(stdClass $instance, \context_module $context, int $budget): array {
         global $DB;
         if (!self::enabled($instance)) {
-            return ['state' => 'off', 'total' => 0, 'ready' => 0, 'retryafter' => 0, 'error' => ''];
+            return ['state' => 'off', 'total' => 0, 'ready' => 0, 'blocked' => 0, 'retryafter' => 0, 'error' => ''];
         }
         $status = self::status($instance, $context);
         $error = (string)($instance->voiceerror ?? '');
         $retry = 0;
         $deadline = time() + $budget;
-        if ($budget > 0 && $status['ready'] < $status['total']) {
+        $todo = $status['total'] - $status['ready'] - $status['blocked'];
+        if ($budget > 0 && $todo > 0) {
             $error = '';
             foreach ($status['items'] as [$item, $missing]) {
                 if (!$missing) {
@@ -465,20 +487,31 @@ class voice {
                         $error = $e->errorcode;
                         break;
                     }
-                    // One text failed (for example 409/410): keep going with the others.
-                    $error = $error ?: $e->errorcode;
+                    // One text failed (409/410/413/422 leave a marker; others are retried later): go on.
                 }
-            }
-            if ((string)($instance->voiceerror ?? '') !== $error) {
-                $DB->set_field('aianatomy', 'voiceerror', $error, ['id' => $instance->id]);
-                $instance->voiceerror = $error;
             }
             $status = self::status($instance, $context);
         }
-        $state = $status['ready'] >= $status['total'] ? 'ready'
-            : (in_array($error, self::STOPPERS, true) ? 'failed' : 'preparing');
-        return ['state' => $state, 'total' => $status['total'], 'ready' => $status['ready'], 'retryafter' => $retry,
-            'error' => $state === 'ready' ? '' : $error];
+        if ($status['ready'] >= $status['total']) {
+            $state = 'ready';
+            $error = '';
+        } else if (in_array($error, self::STOPPERS, true)) {
+            $state = 'failed';
+        } else if ($status['ready'] + $status['blocked'] >= $status['total']) {
+            // Everything that can be created exists; the rest failed for good. Stop here (no endless retries):
+            // students get the voiceover that exists, and the teacher sees why the rest is missing.
+            $state = 'incomplete';
+            $error = $status['blockedcode'];
+        } else {
+            $state = 'preparing';
+            $error = in_array($error, self::STOPPERS, true) ? $error : '';
+        }
+        if ($budget > 0 && (string)($instance->voiceerror ?? '') !== $error) {
+            $DB->set_field('aianatomy', 'voiceerror', $error, ['id' => $instance->id]);
+            $instance->voiceerror = $error;
+        }
+        return ['state' => $state, 'total' => $status['total'], 'ready' => $status['ready'],
+            'blocked' => $status['blocked'], 'retryafter' => $retry, 'error' => $error];
     }
 
     /**
@@ -487,8 +520,13 @@ class voice {
      * @param stdClass $instance
      */
     public static function queue(stdClass $instance): void {
+        global $DB;
         if (!self::enabled($instance)) {
             return;
+        }
+        if ((string)($instance->voiceerror ?? '') !== '') {
+            // Something changed (texts, settings): try again; the reason is recorded again if it still applies.
+            $DB->set_field('aianatomy', 'voiceerror', '', ['id' => $instance->id]);
         }
         $task = new \mod_aianatomy\task\prepare_voice();
         $task->set_custom_data(['instanceid' => (int)$instance->id]);
@@ -522,6 +560,10 @@ class voice {
         $parts = [rtrim(self::plain($name), '.') . '.'];
         if ($latin !== '' && self::plain($latin) !== self::plain($name)) {
             $parts[] = rtrim(self::plain($latin), '.') . '.';
+        }
+        if (!empty($content['pronunciation'])) {
+            $say = rtrim(self::plain($content['pronunciation']), '.');
+            $parts[] = get_string('field_pronunciation', 'mod_aianatomy') . ': ' . $say . '.';
         }
         foreach (self::CARDFIELDS as $f) {
             if (!empty($content[$f])) {

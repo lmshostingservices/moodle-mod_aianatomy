@@ -124,8 +124,10 @@ function xmldb_aianatomy_upgrade($oldversion) {
         // Voiceover is part of every activity, in every place.
         $DB->set_field('aianatomy', 'voice', 1);
         $DB->set_field('aianatomy', 'voiceplaces', implode(',', \mod_aianatomy\local\voice::PLACES));
-        // The library texts were rewritten in plain, memorable language. Refresh what teachers have not changed:
-        // structures still on the English library content, and library questions (edited ones became "approved").
+        // The library texts were rewritten in plain, memorable language. Only texts that are still exactly what the
+        // plugin shipped before 1.2.10 are replaced (checked against fingerprints of those texts), so anything a
+        // teacher changed is kept, whatever its status.
+        $before = json_decode((string)file_get_contents(__DIR__ . '/library_before_1_2_10.json'), true) ?: [];
         $packs = [];
         $instances = $DB->get_records('aianatomy', null, '', 'id, pack');
         foreach ($instances as $inst) {
@@ -140,21 +142,33 @@ function xmldb_aianatomy_upgrade($oldversion) {
             if (!$pack) {
                 continue;
             }
+            $rows = $DB->get_records('aianatomy_structure', ['aianatomyid' => $inst->id], '', 'id, structureid, content');
+            $bysid = [];
+            foreach ($rows as $row) {
+                $bysid[$row->structureid] = $row;
+            }
             foreach ($pack['structures'] as $s) {
-                $DB->set_field_select(
-                    'aianatomy_structure', 'content',
-                    json_encode(\mod_aianatomy\local\pack::library_content($s)),
-                    "aianatomyid = :aid AND structureid = :sid AND contentstatus = 'library' AND contentlang = 'en'",
-                    ['aid' => $inst->id, 'sid' => $s['id']]
-                );
+                $key = $inst->pack . '/' . $s['id'];
+                $row = $bysid[$s['id']] ?? null;
+                if ($row && isset($before['content'][$key]) && sha1((string)$row->content) === $before['content'][$key]) {
+                    $DB->set_field(
+                        'aianatomy_structure',
+                        'content',
+                        json_encode(\mod_aianatomy\local\pack::library_content($s)),
+                        ['id' => $row->id]
+                    );
+                }
                 $questions = $DB->get_records(
-                    'aianatomy_question', ['aianatomyid' => $inst->id, 'structureid' => $s['id'],
-                    'status' => 'library', 'lang' => 'en', 'aigenerated' => 0], 'sortorder'
+                    'aianatomy_question',
+                    ['aianatomyid' => $inst->id, 'structureid' => $s['id'], 'aigenerated' => 0],
+                    'sortorder'
                 );
                 foreach ($questions as $q) {
                     $src = $s['questions'][$q->sortorder] ?? null;
-                    if (!$src || (int)$src['answer'] !== (int)$q->answer
-                            || count($src['options']) !== count(json_decode($q->options, true) ?: [])) {
+                    $qkey = $key . '/' . $q->sortorder;
+                    $was = sha1($q->questiontext . "\n" . $q->options . "\n" . $q->explanation);
+                    if (!$src || !isset($before['questions'][$qkey]) || $was !== $before['questions'][$qkey]
+                            || (int)$src['answer'] !== (int)$q->answer) {
                         continue;
                     }
                     $DB->update_record(
@@ -170,6 +184,14 @@ function xmldb_aianatomy_upgrade($oldversion) {
             \core\task\manager::queue_adhoc_task($task, true);
         }
         upgrade_mod_savepoint(true, 2026100900, 'aianatomy');
+    }
+
+    if ($oldversion < 2026101000) {
+        // Voiceover is part of every activity: the column default follows (install.xml).
+        $table = new xmldb_table('aianatomy');
+        $field = new xmldb_field('voice', XMLDB_TYPE_INTEGER, '2', null, XMLDB_NOTNULL, null, '1', 'grouptext');
+        $dbman->change_field_default($table, $field);
+        upgrade_mod_savepoint(true, 2026101000, 'aianatomy');
     }
     return true;
 }

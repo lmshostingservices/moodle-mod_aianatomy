@@ -422,7 +422,7 @@ final class unlock {
                 ? (int)$data['creditsConsumed'] : null;
             $result['source'] = self::text($data['entitlementSource'] ?? '', 60);
             if ($already) {
-                // creditsConsumed is the original purchase: history, never a new debit.
+                // The creditsConsumed value is the original purchase: history, never a new debit.
                 $result['outcome'] = 'already';
                 $result['historic'] = $consumed;
             } else if ($consumed === 0 && in_array(strtolower($result['source']), ['marketplace', 'purchase'], true)) {

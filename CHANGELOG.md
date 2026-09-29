@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.11 (2026-10-10)
+Fixes from the LMS Labs review of 1.2.10 (1.2.10 is kept unchanged, SHA-256 223211bc61ac003ee6bd32ae4758a967c05627e21e3d79f546c0d138584552d4).
+- **Preparation always ends.** A clip that fails for good (409 conflict, 410 expired, 413/422 invalid text) keeps a failed marker and is never re-sent automatically. When every other clip is ready the activity is *incomplete*: the background task stops (no endless re-queuing), students start with the voiceover that exists, and the reason is recorded for the teacher (who can retry explicitly with Generate all voiceover). Changing texts or saving the activity clears the reason and prepares again.
+- **The spoken card includes the pronunciation** shown on the card, so the voiceover reads every field the card shows.
+- **Retry-After is honoured** for clips LMS Labs is still creating (202/429): Moodle does not re-send them before that time, even when several students and cron prepare at once.
+- **No second charge after lost results.** An unresolved speech job older than LMS Labs' retention becomes a failed marker instead of being deleted, so no automatic request can create a new key and pay again for the same clip.
+- **Upgrade keeps every teacher change.** The library refresh replaces a text only when it is still exactly what the plugin shipped before 1.2.10 (checked against fingerprints in `db/library_before_1_2_10.json`), whatever its status.
+- **Large activities:** after a minute on the Preparing your voiceover screen, students can choose Start now; the voiceover keeps being prepared in the background and plays wherever it is ready. Opening an activity whose voiceover is not ready also queues background preparation (for example when LMS Labs credentials were added after the upgrade).
+- Schema: `voice` defaults to 1 (upgrade step 2026101000); install.xml comments updated for `level` and `voiceplaces`. Source maps include their `file` name again. One comment in unlock.php starts with a capital (reviewer style warning); no code change there.
+- Strings: `voiceprep_startnow`, `voiceprep_start` added and `voiceprep_slow` removed, all 25 languages (602 each).
+
 ## 1.2.10 (2026-10-09)
 Content and voiceover review, merged onto LMS Labs' 1.2.9 (SHA-256 c8a29e03bd00a5e56ad526844d107d68b045a74cd646324833d6e5d320ca8113; its unlock, credit and playback changes are kept unchanged). Database: new field `aianatomy.voiceerror` (upgrade step 2026100900, so sites on 1.2.7 to 1.2.9 also receive it).
 - **Library rewritten for every learner.** All teaching content (374 structures), all 442 questions and all 74 group tips were rewritten in simple, clear, interesting language that builds long-term memory and reads well aloud: short sentences, everyday comparisons, links to the learner's own body, no textbook lists, no symbols or abbreviations. Facts, answer positions and question counts are unchanged. A school-unsuitable wrist-bone mnemonic was replaced. Existing activities get the new text for everything teachers have not edited (edited or approved content and questions are kept).

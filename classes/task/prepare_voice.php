@@ -65,6 +65,7 @@ class prepare_voice extends \core\task\adhoc_task {
         );
         if ($r['state'] === 'preparing') {
             // More to do (or LMS Labs is still generating): run again shortly with the same persisted jobs.
+            // Ready, incomplete (the rest failed for good) and failed (site setup) all stop here.
             $next = new self();
             $next->set_custom_data(['instanceid' => (int)$instance->id]);
             $next->set_next_run_time(time() + max(30, (int)$r['retryafter']));

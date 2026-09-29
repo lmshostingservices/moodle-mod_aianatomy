@@ -57,7 +57,7 @@ const STRING_KEYS = [
     'intro_study_nopressure', 'intro_study_next', 'intro_requirements', 'intro_expect', 'intro_howto',
     'intro_howto_study', 'intro_howto_practice', 'intro_howto_test', 'intro_go', 'intro_back', 'intro_weights',
     'intro_weak', 'firsttryscore', 'attribution', 'hintfor', 'hintpick', 'nexttask', 'yourchoice', 'close',
-    'voiceprep_title', 'voiceprep_text', 'voiceprep_progress', 'voiceprep_failed', 'voiceprep_continue', 'voiceprep_slow',
+    'voiceprep_title', 'voiceprep_text', 'voiceprep_progress', 'voiceprep_failed', 'voiceprep_continue', 'voiceprep_startnow', 'voiceprep_start',
 ];
 
 let S = {};
@@ -215,7 +215,8 @@ class Player {
             args: {cmid: this.config.cmid, generate}}])[0];
         // A quick check first, so the waiting screen appears at once if anything still has to be created.
         let r = await ask(false);
-        if (r.state === 'ready' || r.state === 'off') {
+        if (r.state === 'ready' || r.state === 'off' || r.state === 'incomplete') {
+            // Incomplete: everything that can be created exists (the teacher sees why the rest is missing).
             this.voiceReady = true;
             return;
         }
@@ -234,6 +235,7 @@ class Player {
         const skip = button(S.voiceprep_continue, 'next');
         skip.hidden = true;
         panel.appendChild(skip);
+        const started = Date.now();
         shell.appendChild(panel);
         shell.classList.add('is-preparing');
         const show = (res) => {
@@ -264,14 +266,20 @@ class Player {
                 if (r.ready > best) {
                     best = r.ready;
                     stalledsince = Date.now();
-                } else if (Date.now() - stalledsince > 180000) {
-                    // No progress for three minutes: let the student go on; the voiceover keeps being prepared.
-                    note.textContent = S.voiceprep_slow;
+                }
+                if (skip.hidden && r.state === 'preparing' && (Date.now() - started > 60000
+                        || Date.now() - stalledsince > 60000)) {
+                    // A large activity can take a while (LMS Labs creates about 30 clips a minute). After a minute the
+                    // student may start: the voiceover keeps being prepared and plays wherever it is ready.
+                    note.textContent = S.voiceprep_startnow;
+                    skip.textContent = '';
+                    skip.appendChild(el('span', '', {text: S.voiceprep_start}));
                     skip.hidden = false;
                 }
             }
             if (!skipped && r.state === 'failed') {
                 note.textContent = r.message || S.voiceprep_failed;
+                skip.textContent = S.voiceprep_continue;
                 skip.hidden = false;
                 await skipPromise;
                 // Nothing can be created right now: no voice this session (no repeated errors on every card).
@@ -281,7 +289,7 @@ class Player {
             panel.remove();
             shell.classList.remove('is-preparing');
         }
-        if (r.state === 'ready') {
+        if (r.state === 'ready' || r.state === 'incomplete') {
             this.voiceReady = true;
         }
     }

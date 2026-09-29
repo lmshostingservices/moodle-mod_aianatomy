@@ -33,21 +33,18 @@ use mod_aianatomy\local\unlock;
 use mod_aianatomy\local\credentials;
 
 require_login(null, false);
-admin_externalpage_setup('mod_aianatomy_activation');
 require_capability('moodle/site:config', context_system::instance());
 
 $action = optional_param('action', '', PARAM_ALPHA);
-$pageurl = new moodle_url('/mod/aianatomy/activation.php');
+$pageurl = new moodle_url('/admin/settings.php', ['section' => 'modsettingaianatomy']);
 $PAGE->set_url($pageurl);
 $str = fn($k, $a = null) => get_string($k, 'mod_aianatomy', $a);
 
-if ($action !== '') {
-    // Every action is a POST with a valid sesskey; nothing happens on a GET.
-    if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
-        throw new moodle_exception('invalidrequest');
-    }
-    require_sesskey();
+// This is a POST-only settings action, not a standalone activation page.
+if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST' || !in_array($action, ['check', 'unlock'], true)) {
+    redirect($pageurl);
 }
+require_sesskey();
 
 /**
  * A balance for display.

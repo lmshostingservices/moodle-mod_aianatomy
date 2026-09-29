@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.9 (2026-10-08)
+The one-time 50-credit site unlock is reviewed and confirmed inside normal plugin settings rather than on a separate activation page. Central Config remains the default credential source on new and existing installations. A GET or settings save never spends credits; the server entitlement check, release SHA/price validation, pending-request protection and separately billed AI usage remain in force.
+
 ## 1.2.8 (2026-10-08)
 Voiceover playback failures now reach the existing student-visible error message instead of being silently treated as successful playback. Empty clip responses are rejected, explicit retries can report failures again, and cancelled playback does not report stale errors. No speech requests, charging, permissions or database contracts change.
 

@@ -274,7 +274,7 @@ final class unlock {
             $out['reason'] = 'nozip';
         } else if ($out['sha'] === '') {
             $out['reason'] = 'nosha';
-        } else if ($out['price'] === null) {
+        } else if ($out['price'] !== 50) {
             $out['reason'] = 'noprice';
         } else if (!in_array(strtolower($avail), self::AVAILABLE, true)) {
             $out['reason'] = 'notavailable';

@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.8 (2026-10-08)
+Voiceover playback failures now reach the existing student-visible error message instead of being silently treated as successful playback. Empty clip responses are rejected, explicit retries can report failures again, and cancelled playback does not report stale errors. No speech requests, charging, permissions or database contracts change.
+
 ## 1.2.7 (2026-10-07)
 Fail closed on incomplete release metadata (`zipExists` must be true). Verification only settles a pending unlock when `unlocked` is a JSON boolean; malformed values leave the outcome uncertain. Unlock success, already-unlocked and explicit refusal flags must also be genuine JSON booleans. No generation, speech, media, database or pricing changes.
 

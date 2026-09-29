@@ -162,6 +162,10 @@ export default class Voice {
             const r = await Ajax.call([{methodname: 'mod_aianatomy_speak', args: {cmid: this.cmid, text: item.text,
                 sig: item.sig, speed: item.speed || 'normal'}}])[0];
             if (!r.pending) {
+                if (!Array.isArray(r.clips) || !r.clips.length ||
+                        r.clips.some((url) => typeof url !== 'string' || !url.trim())) {
+                    throw new Error('voicenotready');
+                }
                 return r.clips;
             }
             this.preparing = true;
@@ -186,6 +190,7 @@ export default class Voice {
             return;
         }
         this.stop();
+        this.failed = false;
         const token = ++this.token;
         this.listeners.forEach((fn) => fn());
         try {
@@ -201,7 +206,7 @@ export default class Voice {
                 }
             }
         } catch (err) {
-            if (!this.failed) {
+            if (token === this.token && !this.failed) {
                 this.failed = true;
                 this.onError(err);
             }
@@ -222,22 +227,30 @@ export default class Voice {
      * @returns {Promise<void>}
      */
     playUrl(url, token) {
-        return new Promise((resolve) => {
+        return new Promise((resolve, reject) => {
             if (token !== this.token) {
                 resolve();
                 return;
             }
             const a = new Audio(url);
             this.audio = a;
-            const done = () => {
-                a.onended = a.onerror = a.onpause = null;
-                resolve();
+            const done = (error) => {
+                a.onended = a.onerror = a.onpause = a.onplaying = null;
+                if (error && token === this.token) {
+                    reject(error);
+                } else {
+                    resolve();
+                }
             };
-            a.onended = done;
-            a.onerror = done;
-            a.onpause = done;
+            a.onended = () => done();
+            a.onerror = () => done(new Error('voiceaudioerror:' + (a.error ? a.error.code : 'unknown')));
+            a.onpause = () => done();
             a.onplaying = () => this.listeners.forEach((fn) => fn());
-            a.play().catch(done);
+            try {
+                a.play().catch((error) => done(error));
+            } catch (error) {
+                done(error);
+            }
         });
     }
 

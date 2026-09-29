@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.10 (2026-10-09)
+Content and voiceover review, merged onto LMS Labs' 1.2.9 (SHA-256 c8a29e03bd00a5e56ad526844d107d68b045a74cd646324833d6e5d320ca8113; its unlock, credit and playback changes are kept unchanged). Database: new field `aianatomy.voiceerror` (upgrade step 2026100900, so sites on 1.2.7 to 1.2.9 also receive it).
+- **Library rewritten for every learner.** All teaching content (374 structures), all 442 questions and all 74 group tips were rewritten in simple, clear, interesting language that builds long-term memory and reads well aloud: short sentences, everyday comparisons, links to the learner's own body, no textbook lists, no symbols or abbreviations. Facts, answer positions and question counts are unchanged. A school-unsuitable wrist-bone mnemonic was replaced. Existing activities get the new text for everything teachers have not edited (edited or approved content and questions are kept).
+- **No learner level.** The Learner level setting (school, vocational, diploma, university, medicine) only changed AI prompts and is removed. AI content, questions and translations now use the same simple, memorable style as the library.
+- **Cards show and read every ticked field.** The Practice card after a correct label now shows all fields the teacher ticked (word origin, location, description, function, memory trick, clinical note, related structures, Latin name and pronunciation), in the same order as the Study card. The voiceover reads exactly what the card shows, in that order, including related structures, and both cards share the same audio.
+- **A card is never read out in part.** If some clips of a text were missing and could not be created, the voice used to play only the ones it had. Now nothing plays until the whole text is ready.
+- **Voiceover is part of every activity.** The on/off setting and the "Read aloud" places are removed: cards, prompts, questions and feedback are always voiced (the teacher still picks the voice and automatic reading; students can still mute). Existing activities are switched on by the upgrade.
+- **Voiceover is prepared before students start.** A background task (`\mod_aianatomy\task\prepare_voice`) creates all clips when an activity is created, saved or its texts change, and after this upgrade. If a student opens a mode before it is finished, a *Preparing your voiceover* screen shows progress and (when students may generate audio) creates the next clips; the mode starts when everything is ready. If LMS Labs cannot create audio, the screen says so (teachers see the reason) and students can continue without voiceover. Clips use the persisted jobs and Idempotency-Keys, so none is paid twice.
+- Layout-only tidy of multi-line calls in activation.php, settings.php, unlock.php and tests (no code change).
+- New web service `mod_aianatomy_voice_prepare`. Strings: 9 new or changed, 14 unused removed, all 25 languages (601 each).
+
 ## 1.2.9 (2026-10-08)
 The one-time 50-credit site unlock is reviewed and confirmed inside normal plugin settings rather than on a separate activation page. Central Config remains the default credential source on new and existing installations. A GET or settings save never spends credits; the server entitlement check, release SHA/price validation, pending-request protection and separately billed AI usage remain in force.
 

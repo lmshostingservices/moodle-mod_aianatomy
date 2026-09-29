@@ -104,31 +104,31 @@
    "id": "lower_limb",
    "label": "Pelvis and lower limb",
    "parent": null,
-   "tip": "Follow the weight path: spine, sacrum, hip bones, femur, tibia, then the foot. The fibula and patella sit beside this path."
+   "tip": "Follow your weight down: spine, sacrum, hip bones, thigh bone, shin bone, then the foot. The fibula and kneecap sit beside this path."
   },
   {
    "id": "pelvis",
    "label": "Bony pelvis",
    "parent": "lower_limb",
-   "tip": "The bony pelvis is a ring of three bones: two hip bones and the sacrum. Each hip bone is made of the ilium, ischium and pubis (\"I Is Pubic\")."
+   "tip": "The pelvis is a ring of three bones: two hip bones and the sacrum. Each hip bone is built from three parts, I Is Pubic: ilium, ischium and pubis."
   },
   {
    "id": "thigh",
    "label": "Thigh and knee",
    "parent": "lower_limb",
-   "tip": "The femur is the longest bone in the body and the patella is the largest sesamoid bone."
+   "tip": "The femur is the longest bone in your body. The patella, your kneecap, is the largest bone that grows inside a tendon."
   },
   {
    "id": "leg",
    "label": "Leg",
    "parent": "lower_limb",
-   "tip": "Tibia is Thick and medial; fibuLa is Little and Lateral. Their lower ends are the medial and lateral malleoli."
+   "tip": "The tibia is Thick and on the inside, and the fibula is Little and Lateral. Their lower ends make your two ankle bumps."
   },
   {
    "id": "foot_context",
    "label": "Foot (context)",
    "parent": "lower_limb",
-   "tip": "Tarsal mnemonic \"Tiger Cubs Need MILC\": Talus, Calcaneus, Navicular, Medial, Intermediate and Lateral cuneiforms, Cuboid."
+   "tip": "Tiger Cubs Need MILC names the tarsals: talus, calcaneus, navicular, the medial, intermediate and lateral cuneiforms, and cuboid."
   }
  ],
  "structures": [
@@ -170,18 +170,18 @@
    ],
    "content": {
     "pronunciation": "HIP bone (os KOK-see)",
-    "origin": "Latin os coxae, \"bone of the hip\". Its three parts: ilium (Latin, \"flank\"), ischium (Greek ischion, \"hip joint\") and pubis (Latin pubes, \"groin hair\").",
-    "location": "The right side of the bony pelvis. It meets the sacrum at the back (sacroiliac joint), the left hip bone at the front (pubic symphysis) and the right femur at the side (hip joint).",
-    "description": "A large, flat, twisted bone made of three bones, the ilium, ischium and pubis, which fuse at the cup-shaped acetabulum by early adulthood. Key landmarks: the iliac crest, the anterior superior iliac spine (ASIS), the ischial tuberosity and the obturator foramen.",
-    "function": "Joins the lower limb to the trunk and carries body weight to the leg. Forms the hip joint with the femur, and gives attachment to many trunk, gluteal and thigh muscles.",
-    "mnemonic": "\"I Is Pubic\": Ilium on top, Ischium below (you sit on it), Pubis at the front, all meeting in the acetabulum.",
-    "clinical": "The iliac crest is a common site for bone marrow sampling and bone grafts. Pelvic fractures can cause severe internal bleeding (haemorrhage).",
-    "hint": "The large, flat, winged bone on the right side of the pelvis, with a deep socket for the thigh bone."
+    "origin": "From the Latin for bone of the hip. Its three parts are the ilium, meaning flank, the ischium, meaning hip joint, and the pubis, from the word for groin hair.",
+    "location": "The right side of your bony pelvis. It meets the sacrum at the back, the left hip bone at the front and the right thigh bone at the hip joint.",
+    "description": "A big, flat, twisted bone made from three bones, the ilium, ischium and pubis. They fuse at the deep, cup-shaped hip socket, the acetabulum, by early adulthood.",
+    "function": "It joins your leg to your body and passes your weight down into the thigh. It holds the hip socket and anchors many muscles of the trunk, buttock and thigh.",
+    "mnemonic": "I Is Pubic: ilium on top, ischium below, which you sit on, and pubis at the front. All three meet in the hip socket.",
+    "clinical": "The iliac crest, the top edge of your hip where you rest your hands, is often used to take bone marrow or bone for grafts. A broken pelvis can bleed heavily inside.",
+    "hint": "The big winged bone on the right side of the pelvis, with a deep cup where the thigh bone sits."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "Which three bones fuse to form each hip bone?",
+     "text": "Which three bones fuse to make each hip bone?",
      "options": [
       "Sacrum, coccyx and pubis",
       "Ilium, ischium and pubis",
@@ -189,11 +189,11 @@
       "Ischium, patella and pubis"
      ],
      "answer": 1,
-     "explanation": "The ilium, ischium and pubis fuse at the acetabulum to form the hip bone."
+     "explanation": "The ilium, ischium and pubis grow together at the hip socket. Together they make one hip bone."
     },
     {
      "kind": "relationship",
-     "text": "The acetabulum of the hip bone articulates with which bone?",
+     "text": "The hip socket, called the acetabulum, holds which bone?",
      "options": [
       "Femur",
       "Sacrum",
@@ -201,7 +201,7 @@
       "Patella"
      ],
      "answer": 0,
-     "explanation": "The head of the femur sits in the acetabulum to form the hip joint."
+     "explanation": "The ball-shaped head of the femur sits in this socket. Together they make your hip joint, a ball and socket."
     },
     {
      "kind": "location",
@@ -213,7 +213,7 @@
       "At the iliac crest"
      ],
      "answer": 2,
-     "explanation": "The two hip bones meet at the front of the pelvis at the pubic symphysis."
+     "explanation": "The two hip bones meet at the front of the pelvis, at a joint called the pubic symphysis."
     }
    ]
   },
@@ -251,13 +251,13 @@
    ],
    "content": {
     "pronunciation": "HIP bone (os KOK-see)",
-    "origin": "Latin os coxae, \"bone of the hip\". Its three parts: ilium (Latin, \"flank\"), ischium (Greek ischion, \"hip joint\") and pubis (Latin pubes, \"groin hair\").",
-    "location": "The left side of the bony pelvis. It meets the sacrum at the back, the right hip bone at the front (pubic symphysis) and the left femur (not shown) at the hip joint.",
-    "description": "A large, flat, twisted bone made of three bones, the ilium, ischium and pubis, which fuse at the cup-shaped acetabulum by early adulthood. Key landmarks: the iliac crest, the anterior superior iliac spine (ASIS), the ischial tuberosity and the obturator foramen.",
-    "function": "Joins the lower limb to the trunk and carries body weight to the leg. Forms the hip joint with the femur, and gives attachment to many trunk, gluteal and thigh muscles.",
-    "mnemonic": "\"I Is Pubic\": Ilium on top, Ischium below (you sit on it), Pubis at the front, all meeting in the acetabulum.",
-    "clinical": "The ASIS is a key surface landmark used to locate other structures and to measure leg length.",
-    "hint": "The large, flat, winged bone on the left side of the pelvis, with a socket but no thigh bone shown in it."
+    "origin": "From the Latin for bone of the hip. Its three parts are the ilium, meaning flank, the ischium, meaning hip joint, and the pubis, from the word for groin hair.",
+    "location": "The left side of your bony pelvis. It meets the sacrum at the back and the right hip bone at the front, and its socket would hold the left thigh bone, which is not shown.",
+    "description": "A big, flat, twisted bone made from three bones, the ilium, ischium and pubis. They fuse at the deep, cup-shaped hip socket, the acetabulum, by early adulthood.",
+    "function": "It joins your leg to your body and passes your weight down into the thigh. It holds the hip socket and anchors many muscles of the trunk, buttock and thigh.",
+    "mnemonic": "I Is Pubic: ilium on top, ischium below, which you sit on, and pubis at the front. All three meet in the hip socket.",
+    "clinical": "The bony bump at the front of your hip, the anterior superior iliac spine, is a key landmark. Clinicians use it to find other structures and to measure leg length.",
+    "hint": "The large, flat, winged bone on the left side of the pelvis, with an empty socket and no thigh bone shown."
    },
    "questions": []
   },
@@ -293,18 +293,18 @@
    ],
    "content": {
     "pronunciation": "SAY-krum",
-    "origin": "Latin os sacrum, \"sacred bone\", possibly because it was offered in animal sacrifices.",
-    "location": "At the back of the pelvis, in the midline, wedged between the two hip bones. It sits below the fifth lumbar vertebra and above the coccyx.",
-    "description": "A triangular bone formed from five fused sacral vertebrae. It has four pairs of sacral foramina for nerves and a gap at its lower end, the sacral hiatus.",
-    "function": "Passes the weight of the upper body from the spine to the hip bones through the sacroiliac joints and forms the back wall of the pelvis.",
-    "mnemonic": "Sacrum = five fused (S1 to S5), like a solid keystone at the back of the pelvic ring.",
-    "clinical": "The sacroiliac joints can be a source of low back and buttock pain. A caudal epidural injection is given through the sacral hiatus.",
-    "hint": "The triangular midline bone at the back of the pelvis, made of fused vertebrae."
+    "origin": "From the Latin for sacred bone. It may have earned the name because it was offered in animal sacrifices.",
+    "location": "At the back of your pelvis in the middle, wedged between the two hip bones. It sits below the fifth lumbar vertebra and above the tailbone.",
+    "description": "A triangle-shaped bone made of five vertebrae fused together. Four pairs of holes let nerves out, and a gap at the lower end is called the sacral hiatus.",
+    "function": "It passes the weight of your upper body from the spine to the hip bones, through the sacroiliac joints. It also forms the back wall of the pelvis.",
+    "mnemonic": "Remember five fused, S1 to S5. Picture the sacrum as the solid keystone locking the back of the pelvic ring.",
+    "clinical": "The sacroiliac joints can cause pain in the low back and buttock. Doctors can give a caudal epidural injection through the gap at its lower end.",
+    "hint": "The triangle-shaped bone in the middle at the back of the pelvis, made of fused vertebrae."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "How many fused vertebrae form the sacrum?",
+     "text": "How many fused vertebrae make up the sacrum?",
      "options": [
       "Three",
       "Four",
@@ -312,11 +312,11 @@
       "Five"
      ],
      "answer": 3,
-     "explanation": "The sacrum is formed from five fused sacral vertebrae (S1 to S5)."
+     "explanation": "Five sacral vertebrae, S1 to S5, fuse together to form the sacrum."
     },
     {
      "kind": "relationship",
-     "text": "The sacrum articulates with the hip bones at which joints?",
+     "text": "The sacrum joins the hip bones at which joints?",
      "options": [
       "Sacroiliac joints",
       "Hip joints",
@@ -324,7 +324,7 @@
       "Acetabular joints"
      ],
      "answer": 0,
-     "explanation": "The sacrum meets each ilium at a sacroiliac joint."
+     "explanation": "The sacrum meets each ilium at a sacroiliac joint, one on each side."
     }
    ]
   },
@@ -365,13 +365,13 @@
    ],
    "content": {
     "pronunciation": "FEE-mur",
-    "origin": "Latin femur, \"thigh\".",
-    "location": "The bone of the thigh, running from the hip joint above to the knee joint below.",
-    "description": "The longest and strongest bone in the body. Its rounded head sits on an angled neck; the greater and lesser trochanters are bumps for muscles; a ridge on the back (linea aspera) anchors thigh muscles; the lower end has two condyles.",
-    "function": "Carries body weight from the hip to the knee. It forms the hip joint with the acetabulum and the knee joint with the tibia and patella. Gluteus medius and minimus attach to the greater trochanter.",
-    "mnemonic": "Femur = the Fabulously long, strong bone of the thigh.",
-    "clinical": "Fractures of the femoral neck are common in older people with osteoporosis after a fall. The leg often looks shortened and turned outward, and the head can lose its blood supply.",
-    "hint": "The longest bone in the body, running from the hip socket to the knee."
+    "origin": "From the Latin word for thigh.",
+    "location": "The bone of your thigh, running from the hip joint down to the knee joint.",
+    "description": "The longest and strongest bone in your body. A round head sits on an angled neck, with bony bumps for muscles and two rounded knuckles at the knee end.",
+    "function": "It carries your weight from the hip to the knee. It forms the hip joint above, and the knee joint below with the tibia and kneecap.",
+    "mnemonic": "Think of the femur as the Fabulously long, strong bone of the thigh.",
+    "clinical": "Older people with thin bones often break the femoral neck in a fall. The leg looks shorter and turned out, and the head can lose its blood supply.",
+    "hint": "The longest bone in the body, running from the hip socket down to the knee."
    },
    "questions": [
     {
@@ -384,19 +384,19 @@
       "Hip bone"
      ],
      "answer": 1,
-     "explanation": "The femur (thigh bone) is the longest and strongest bone in the body."
+     "explanation": "The femur, your thigh bone, is the longest and strongest bone you have."
     },
     {
      "kind": "clinical",
-     "text": "An older person falls and their leg looks shortened and turned outward. Which injury is most likely?",
+     "text": "An older person falls and their leg looks shorter and turned outward. Which injury is most likely?",
      "options": [
-      "Fractured patella",
-      "Fractured fibular neck",
-      "Fractured neck of femur",
+      "Broken kneecap",
+      "Broken neck of fibula",
+      "Broken neck of femur",
       "Sprained ankle"
      ],
      "answer": 2,
-     "explanation": "A fractured neck of femur typically causes a shortened, externally rotated leg."
+     "explanation": "A broken neck of femur typically makes the leg look shorter and rolled outward."
     }
    ]
   },
@@ -428,18 +428,18 @@
    ],
    "content": {
     "pronunciation": "pah-TEL-ah",
-    "origin": "Latin patella, \"small dish\" or \"shallow pan\".",
-    "location": "At the front of the knee, sitting in the groove at the lower end of the femur.",
-    "description": "A flat, triangular bone with its point (apex) facing down. It is the largest sesamoid bone in the body, lying inside the quadriceps tendon.",
-    "function": "Protects the front of the knee and increases the leverage of the quadriceps. Below it, the patellar ligament runs to the tibial tuberosity, so quadriceps can straighten the knee.",
-    "mnemonic": "Patella = a little Plate that Protects the knee.",
-    "clinical": "Tapping the patellar ligament below the patella tests the knee-jerk reflex. Patellofemoral pain (pain behind the kneecap) is common in runners.",
-    "hint": "The flat triangular bone at the front of the knee, set inside the quadriceps tendon."
+    "origin": "From the Latin for a small dish or shallow pan.",
+    "location": "At the front of your knee, sitting in a groove at the lower end of the thigh bone. With your leg relaxed, you can slide it gently from side to side.",
+    "description": "A flat, triangle-shaped bone with its point facing down. It grows inside the quadriceps tendon, and it is the largest bone in the body to do so.",
+    "function": "It shields the front of the knee and gives your thigh muscle extra leverage, like a pulley. A strong ligament below it pulls on the shin so you can straighten your knee.",
+    "mnemonic": "Patella is a little Plate that Protects the knee.",
+    "clinical": "Tapping the ligament just below it tests your knee-jerk reflex. Pain behind the kneecap is common in runners.",
+    "hint": "The flat, triangle-shaped bone at the front of the knee, sitting inside the big thigh tendon."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "The patella is the largest example of which type of bone?",
+     "text": "The kneecap is the largest example of which type of bone?",
      "options": [
       "Sesamoid bone",
       "Flat skull bone",
@@ -447,11 +447,11 @@
       "Long bone"
      ],
      "answer": 0,
-     "explanation": "The patella develops within the quadriceps tendon and is the largest sesamoid bone."
+     "explanation": "A sesamoid bone grows inside a tendon. The patella grows inside the quadriceps tendon and is the largest one."
     },
     {
      "kind": "relationship",
-     "text": "Which bone does the patella articulate with?",
+     "text": "Which bone does the patella glide against?",
      "options": [
       "Tibia",
       "Fibula",
@@ -459,7 +459,7 @@
       "Femur"
      ],
      "answer": 3,
-     "explanation": "The patella glides in the groove at the lower end of the femur; it does not articulate with the tibia."
+     "explanation": "The patella glides in a groove at the lower end of the femur. It does not touch the tibia."
     }
    ]
   },
@@ -499,18 +499,18 @@
    ],
    "content": {
     "pronunciation": "TIB-ee-ah",
-    "origin": "Latin tibia, \"shin bone\" (also a flute, once made from animal shin bones).",
-    "location": "The larger, medial bone of the leg, between the knee and the ankle. Its front edge and inner surface lie just under the skin of the shin.",
-    "description": "A thick long bone with a broad upper end (medial and lateral condyles), a bump at the front below the knee (tibial tuberosity) and a lower end that forms the medial malleolus.",
-    "function": "The main weight-bearing bone of the leg. It forms the knee joint with the femur and the ankle joint with the talus.",
-    "mnemonic": "Tibia = Thick and Tough, on the big toe side of the leg.",
-    "clinical": "Because it lies just under the skin, the tibial shaft is often broken in open (compound) fractures. Pain along its inner edge in runners is called shin splints.",
-    "hint": "The thick bone of the shin, on the big toe side of the leg."
+    "origin": "From the Latin for shin bone. The same word meant a flute, once made from animal shin bones.",
+    "location": "The bigger, inner bone of your lower leg, between knee and ankle. Run your fingers down your shin and you are feeling its front edge.",
+    "description": "A thick long bone with a broad top, a bump at the front just below the knee, and a lower end that makes the bump on the inside of your ankle.",
+    "function": "It carries most of your weight in the lower leg. It forms the knee joint with the femur and the ankle joint with the talus.",
+    "mnemonic": "Tibia is Thick and Tough, on the big toe side of the leg.",
+    "clinical": "It lies just under the skin, so a broken shin bone often breaks through, called an open fracture. Pain along its inner edge in runners is called shin splints.",
+    "hint": "The thick bone you can feel down the front of your shin, on the big toe side."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which bone of the leg carries most of the body weight?",
+     "text": "Which bone of the lower leg carries most of the body weight?",
      "options": [
       "Fibula",
       "Patella",
@@ -518,11 +518,11 @@
       "Femur"
      ],
      "answer": 2,
-     "explanation": "The tibia is the main weight-bearing bone of the leg; the fibula carries little weight."
+     "explanation": "The tibia carries most of your weight. The thin fibula beside it carries very little."
     },
     {
      "kind": "location",
-     "text": "The medial malleolus (inner ankle bump) belongs to which bone?",
+     "text": "The inner ankle bump, the medial malleolus, belongs to which bone?",
      "options": [
       "Tibia",
       "Fibula",
@@ -530,7 +530,7 @@
       "Calcaneus"
      ],
      "answer": 0,
-     "explanation": "The medial malleolus is the lower end of the tibia."
+     "explanation": "The bump on the inside of your ankle is the lower end of the tibia."
     }
    ]
   },
@@ -566,13 +566,13 @@
    ],
    "content": {
     "pronunciation": "FIB-yoo-lah",
-    "origin": "Latin fibula, \"clasp\" or \"brooch pin\": it is thin like the pin of a brooch.",
-    "location": "The thin, lateral bone of the leg, beside the tibia. Its head lies just below the outer side of the knee; its lower end forms the lateral malleolus.",
-    "description": "A long, slender bone with a head, a narrow neck, a thin shaft and the lateral malleolus at the ankle. It does not reach the knee joint.",
-    "function": "Carries little body weight. It anchors leg muscles and ligaments (biceps femoris and the lateral collateral ligament attach to its head) and forms the outer wall of the ankle joint.",
-    "mnemonic": "FibuLa is Lateral and Little.",
-    "clinical": "The common fibular (peroneal) nerve wraps around the fibular neck. Injury here, from a fracture or a tight cast, can cause foot drop.",
-    "hint": "The thin bone on the outer side of the leg, ending at the outer ankle bump."
+    "origin": "From the Latin for clasp or brooch pin. It is thin like the pin of a brooch.",
+    "location": "The thin, outer bone of your lower leg, beside the tibia. Its head sits just below the outside of the knee, and its lower end makes your outer ankle bump.",
+    "description": "A long, slender bone with a head, a narrow neck and a thin shaft. It stops short of the knee joint.",
+    "function": "It carries little weight, but anchors leg muscles and ligaments, including a hamstring at its head. It also forms the outer wall of the ankle joint.",
+    "mnemonic": "FibuLa is Lateral and Little: the thin bone on the outside of your leg.",
+    "clinical": "The common fibular nerve wraps around the neck of this bone. A break or a tight cast here can injure it and cause foot drop.",
+    "hint": "The thin bone on the outer side of the lower leg, ending at the outer ankle bump."
    },
    "questions": [
     {
@@ -585,11 +585,11 @@
       "Common fibular nerve"
      ],
      "answer": 3,
-     "explanation": "The common fibular (peroneal) nerve winds around the fibular neck; injury weakens the muscles that lift the foot."
+     "explanation": "The common fibular nerve winds around the fibular neck. Damage here weakens the muscles that lift the foot."
     },
     {
      "kind": "relationship",
-     "text": "The head of the fibula lies just below the outer side of which joint, without forming part of it?",
+     "text": "The head of the fibula sits just below the outside of which joint, without being part of it?",
      "options": [
       "Knee joint",
       "Hip joint",
@@ -597,7 +597,7 @@
       "Sacroiliac joint"
      ],
      "answer": 0,
-     "explanation": "The fibular head sits below the outer knee but the fibula does not reach the femur or form part of the knee joint."
+     "explanation": "The fibular head sits below the outer knee. The fibula does not reach the femur, so it is not part of the knee joint."
     }
    ]
   },
@@ -677,13 +677,13 @@
    ],
    "content": {
     "pronunciation": "TAR-sulz and met-ah-TAR-sulz",
-    "origin": "Greek tarsos, the flat of the foot; meta, \"beyond\": the metatarsals lie beyond the tarsus.",
-    "location": "The skeleton of the right foot below the ankle, shown for context. The toe bones are not included here.",
-    "description": "Seven tarsal bones (including the talus and calcaneus) and five metatarsals, arranged in arches.",
-    "function": "Supports body weight, absorbs shock and acts as a lever for walking. The talus forms the ankle joint with the tibia and fibula.",
-    "mnemonic": "Tarsals: \"Tiger Cubs Need MILC\" (Talus, Calcaneus, Navicular, Medial, Intermediate and Lateral cuneiforms, Cuboid).",
-    "clinical": "The ankle sprain, usually a tear of ligaments on the outer side of the ankle, is one of the most common sports injuries.",
-    "hint": "The bones below the ankle, forming the heel, arches and front of the sole."
+    "origin": "From the Greek tarsos, the flat of the foot, and meta, meaning beyond. The metatarsals lie beyond the tarsal bones.",
+    "location": "Below the right ankle, shown here for context. The toe bones are not included in this model.",
+    "description": "Seven tarsal bones, including the talus and heel bone, and five long metatarsals. Together they form arches, like a springy bridge.",
+    "function": "Your foot bones carry your weight, soak up shock and act as a lever when you walk. The talus forms the ankle joint with the tibia and fibula.",
+    "mnemonic": "Tiger Cubs Need MILC names the tarsals: talus, calcaneus, navicular, the medial, intermediate and lateral cuneiforms, and cuboid.",
+    "clinical": "A sprained ankle, usually torn ligaments on the outer side, is one of the most common sports injuries.",
+    "hint": "The bones below the ankle, making the heel, the arches and the front of the sole."
    },
    "questions": [],
    "merged": true,

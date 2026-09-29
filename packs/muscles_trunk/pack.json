@@ -92,37 +92,37 @@
    "id": "muscles_trunk",
    "label": "Muscles of the trunk",
    "parent": null,
-   "tip": "Think in layers: flat abdominal muscles in front, posterior wall and pelvic floor deep, and long extensor columns at the back. Front muscles flex the trunk; back muscles extend it."
+   "tip": "Think in layers: flat belly muscles in front, a deep back wall and pelvic floor, and long columns up your back. Front muscles bend you forward, back muscles straighten you."
   },
   {
    "id": "bones_context",
    "label": "Skeleton (context)",
    "parent": "muscles_trunk",
-   "tip": "Most trunk muscles run between ribs, vertebral processes and the pelvis: find the bony points first, then the muscle between them."
+   "tip": "Most trunk muscles stretch between your ribs, spine and pelvis. Find the bony points first, then the muscle between them."
   },
   {
    "id": "abdominal_wall",
    "label": "Anterolateral abdominal wall",
    "parent": "muscles_trunk",
-   "tip": "The three flat muscles from outside in: external oblique (hands in pockets), internal oblique (at right angles), transversus abdominis (horizontal corset). Rectus abdominis runs vertically in front."
+   "tip": "Three flat muscles, outside in: external oblique like hands in your pockets, internal oblique across it, and transversus like a corset. Rectus abdominis runs straight down the front."
   },
   {
    "id": "posterior_wall",
    "label": "Posterior abdominal wall and pelvic floor",
    "parent": "muscles_trunk",
-   "tip": "\"C3, 4, 5 keeps the diaphragm alive\". Psoas major and quadratus lumborum lie side by side in the posterior abdominal wall; levator ani forms the pelvic floor below."
+   "tip": "C three, four, five keeps the diaphragm alive. Psoas and quadratus lumborum lie side by side at the back of the belly, and levator ani forms the pelvic floor below."
   },
   {
    "id": "back",
    "label": "Back muscles",
    "parent": "muscles_trunk",
-   "tip": "Erector spinae from lateral to medial: \"I Love Spaghetti\" (Iliocostalis, Longissimus, Spinalis). Deeper, multifidus and semispinalis run from transverse to spinous processes."
+   "tip": "The back columns, outside in, are I Love Spaghetti: iliocostalis, longissimus, spinalis. Deeper still, multifidus and semispinalis tie the vertebrae together like short straps."
   },
   {
    "id": "neck",
    "label": "Neck muscles",
    "parent": "muscles_trunk",
-   "tip": "Sternocleidomastoid turns the face to the opposite side; splenius turns it to the same side; scalenes raise the first two ribs."
+   "tip": "Sternocleidomastoid turns your face to the opposite side, while splenius turns it to the same side. The scalenes lift your top two ribs."
   }
  ],
  "structures": [
@@ -361,13 +361,13 @@
    "relationships": [],
    "content": {
     "pronunciation": "AK-see-al SKEL-eh-ton",
-    "origin": "Latin axis, \"axle\" or central line; skeleton from Greek skeletos, \"dried up\".",
-    "location": "The central bony framework of the trunk: the vertebral column, ribs, sternum and the pelvis (hip bones and sacrum). Shown here for context.",
-    "description": "Gives the bony attachments for the trunk muscles: ribs, vertebral spinous and transverse processes, the iliac crest, pubis, sacrum and coccyx.",
-    "function": "Supports the body, protects the chest and abdominal organs and spinal cord, and anchors the muscles of the abdominal wall and back.",
-    "mnemonic": "Axial = along the axis: skull, spine, ribs and sternum.",
-    "clinical": "Osteoporosis commonly causes vertebral compression fractures, which can lead to height loss and a forward-curved upper back.",
-    "hint": "The bony framework behind and around all the trunk muscles."
+    "origin": "Axial comes from axis, the central line of the body. Skeleton comes from a Greek word meaning dried up.",
+    "location": "The bony core of your trunk: the spine, ribs, breastbone and pelvis. It is shown here so you can see where the muscles attach.",
+    "description": "A frame of bones that the trunk muscles hold on to, from the ribs and spine down to the hip bones, sacrum and tailbone.",
+    "function": "It holds you upright and guards your heart, lungs, belly organs and spinal cord. It also gives the belly and back muscles something to pull on.",
+    "mnemonic": "Axial means along the axis. Think of the skull, spine, ribs and breastbone as the pole down the middle of you.",
+    "clinical": "Fragile bones in osteoporosis can make vertebrae collapse. People may lose height and develop a forward stoop.",
+    "hint": "The bony frame behind and around all the trunk muscles."
    },
    "questions": [],
    "merged": true,
@@ -422,30 +422,30 @@
    ],
    "content": {
     "pronunciation": "REK-tus ab-DOM-ih-nis",
-    "origin": "Latin rectus, \"straight\", and abdominis, \"of the abdomen\": the straight muscle of the abdomen.",
-    "location": "A long vertical strap on the front of the abdomen, one on each side of the midline (linea alba), running from the pubis up to the lower chest. It lies inside the rectus sheath formed by the aponeuroses of the three flat abdominal muscles.",
-    "description": "Long and flat, wider above than below. Usually three tendinous intersections cross it, dividing it into the segments seen as a \"six-pack\" in lean people.",
-    "function": "Flexes the trunk (as in a sit-up or crunch), compresses the abdominal contents and helps tilt the pelvis backwards. Origin: pubic symphysis and pubic crest -> insertion: xiphoid process and costal cartilages 5-7. Nerve supply: thoraco-abdominal nerves and subcostal nerve (anterior rami T7-T12).",
-    "mnemonic": "Rectus = right up the middle: a straight muscle for a straight crunch.",
-    "clinical": "Diastasis recti is widening of the linea alba between the two recti, common in pregnancy and after birth, which can cause a midline bulge.",
-    "hint": "The straight, segmented strap either side of the midline at the front of the abdomen, running from pubis to lower ribs."
+    "origin": "From the Latin rectus, meaning straight. It is the straight muscle of the belly.",
+    "location": "A long strap down the front of your belly, one on each side of the middle line. It runs from the pubic bone up to the lower ribs, inside a sheath.",
+    "description": "Long and flat, wider at the top. Bands of tendon cross it, splitting it into the blocks you see as a six-pack in lean people.",
+    "function": "It curls your trunk forward, like in a sit-up or crunch. It also squeezes your belly and helps tip your pelvis back.",
+    "mnemonic": "Rectus runs right up the middle, a straight muscle for a straight crunch.",
+    "clinical": "In pregnancy, the two straps can drift apart along the middle line. This is called diastasis recti and can leave a bulge down the belly.",
+    "hint": "The straight, segmented strap on either side of the middle at the front of the belly, from pubic bone to lower ribs."
    },
    "questions": [
     {
      "kind": "function",
      "text": "What is the main action of the rectus abdominis?",
      "options": [
-      "Extending the trunk",
-      "Flexing the trunk",
-      "Rotating the head",
-      "Elevating the first rib"
+      "Straightening the trunk",
+      "Curling the trunk forward",
+      "Turning the head",
+      "Raising the first rib"
      ],
      "answer": 1,
-     "explanation": "The rectus abdominis flexes the trunk, as in a sit-up."
+     "explanation": "The rectus abdominis curls your trunk forward, just like in a sit-up."
     },
     {
      "kind": "terminology",
-     "text": "What divides the rectus abdominis into its \"six-pack\" segments?",
+     "text": "What splits the rectus abdominis into its six-pack blocks?",
      "options": [
       "Tendinous intersections",
       "Taeniae coli",
@@ -453,7 +453,7 @@
       "Inguinal ligament"
      ],
      "answer": 0,
-     "explanation": "Tendinous intersections cross the muscle and create the six-pack appearance."
+     "explanation": "Bands of tendon, called tendinous intersections, cross the muscle and make the six-pack blocks."
     }
    ]
   },
@@ -497,30 +497,30 @@
    ],
    "content": {
     "pronunciation": "ek-STER-nal oh-BLEEK",
-    "origin": "Latin obliquus, \"slanting\", and externus, \"outer\": the outer slanting muscle.",
-    "location": "The most superficial and largest of the three flat muscles of the side (anterolateral) abdominal wall, wrapping from the lower ribs around to the front of the abdomen.",
-    "description": "A broad, thin sheet whose fibres run down and forwards (inferomedially), like hands in the front pockets. Its aponeurosis forms the front of the rectus sheath, and its lower edge folds under to form the inguinal ligament.",
-    "function": "Compresses the abdomen and flexes the trunk; one side bends the trunk to the same side and rotates it to the opposite side. Origin: external surfaces of ribs 5-12 -> insertion: linea alba, pubic tubercle and anterior half of the iliac crest. Nerve supply: thoraco-abdominal nerves (T7-T11) and subcostal nerve (T12).",
-    "mnemonic": "External oblique = hands in your front pockets: fibres run down and in.",
-    "clinical": "Its aponeurosis contains the superficial inguinal ring, the outer opening of the inguinal canal, where inguinal hernias can bulge through.",
-    "hint": "The outermost flat sheet on the side of the abdomen, with fibres slanting down and in like hands in front pockets."
+    "origin": "From the Latin words for slanting and outer. It is the outer slanting muscle.",
+    "location": "The outermost and biggest of the three flat muscles on the side of your belly. It wraps from the lower ribs around to the front.",
+    "description": "A wide, thin sheet with fibres running down and in, like hands in your front pockets. Its lower edge rolls under to make the inguinal ligament in the groin.",
+    "function": "It squeezes your belly and bends your trunk. The right one twists your trunk to the left, and it also bends you to the right.",
+    "mnemonic": "External oblique fibres run like hands in your front pockets, down and in.",
+    "clinical": "Its flat tendon has an opening near the groin, the outer end of the inguinal canal. An inguinal hernia can bulge out through it.",
+    "hint": "The outermost flat sheet on the side of the belly, with fibres slanting down and in like hands in front pockets."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "The right external oblique rotates the trunk to which side?",
+     "text": "The right external oblique twists the trunk toward which side?",
      "options": [
       "The right",
-      "It does not rotate the trunk",
+      "It does not twist the trunk",
       "The left",
       "Only when the arm is raised"
      ],
      "answer": 2,
-     "explanation": "The external oblique rotates the trunk to the opposite side."
+     "explanation": "The external oblique twists your trunk toward the opposite side, so the right one turns you left."
     },
     {
      "kind": "relationship",
-     "text": "Which ligament is formed by the lower edge of the external oblique aponeurosis?",
+     "text": "Which ligament is made by the lower edge of the external oblique?",
      "options": [
       "Nuchal ligament",
       "Inguinal ligament",
@@ -528,7 +528,7 @@
       "Falciform ligament"
      ],
      "answer": 1,
-     "explanation": "The folded lower border of the external oblique aponeurosis forms the inguinal ligament."
+     "explanation": "Its flat tendon folds under at the bottom to form the inguinal ligament in your groin."
     }
    ]
   },
@@ -576,26 +576,26 @@
    ],
    "content": {
     "pronunciation": "in-TER-nal oh-BLEEK",
-    "origin": "Latin obliquus, \"slanting\", and internus, \"inner\": the inner slanting muscle.",
-    "location": "The middle of the three flat muscles of the side abdominal wall, lying deep to the external oblique and superficial to the transversus abdominis.",
-    "description": "A thin sheet whose fibres fan upwards and forwards (superomedially), at right angles to the external oblique. Its aponeurosis helps form the rectus sheath. In males some of its lowest fibres continue into the cremaster muscle around the spermatic cord.",
-    "function": "Compresses the abdomen, flexes the trunk, and bends and rotates it to the same side. Origin: thoracolumbar fascia, anterior two-thirds of the iliac crest and deep to the lateral inguinal ligament -> insertion: lower borders of ribs 10-12, linea alba and pubis (via the conjoint tendon). Nerve supply: thoraco-abdominal nerves (T7-T11), subcostal nerve (T12) and first lumbar nerve (L1).",
-    "mnemonic": "Internal oblique = the opposite of external: fibres run up and in, like hands on your lower ribs.",
-    "clinical": "The cremaster muscle, derived from its lowest fibres, produces the cremasteric reflex (raising of the testis when the inner thigh is stroked), which is tested in some examinations.",
-    "hint": "The middle flat layer of the side abdominal wall, with fibres fanning up and in at right angles to the outer layer."
+    "origin": "From the Latin words for slanting and inner. It is the inner slanting muscle.",
+    "location": "The middle of the three flat muscles on the side of your belly. It lies under the external oblique and on top of the transversus abdominis.",
+    "description": "A thin sheet whose fibres fan up and in, crossing the outer layer at right angles. In males, some of its lowest fibres carry on around the cord to the testis.",
+    "function": "It squeezes your belly and bends your trunk. It twists and bends you toward its own side.",
+    "mnemonic": "Internal oblique is the opposite of external. Its fibres run up and in, like hands resting on your lower ribs.",
+    "clinical": "Its lowest fibres form the cremaster muscle. Stroking the inner thigh makes the testis lift, a reflex doctors sometimes test.",
+    "hint": "The middle flat layer on the side of the belly, with fibres fanning up and in at right angles to the outer layer."
    },
    "questions": [
     {
      "kind": "location",
      "text": "Where does the internal oblique lie?",
      "options": [
-      "Superficial to the external oblique",
-      "Deep to the transversus abdominis",
+      "On top of the external oblique",
+      "Under the transversus abdominis",
       "Inside the rectus sheath only",
-      "Between the external oblique and the transversus abdominis"
+      "Between the external oblique and transversus"
      ],
      "answer": 3,
-     "explanation": "The internal oblique is the middle of the three flat abdominal muscles."
+     "explanation": "The internal oblique is the middle layer, sandwiched between the other two flat belly muscles."
     }
    ]
   },
@@ -641,18 +641,18 @@
    ],
    "content": {
     "pronunciation": "trans-VER-sus ab-DOM-ih-nis",
-    "origin": "Latin transversus, \"lying across\", and abdominis, \"of the abdomen\".",
-    "location": "The deepest of the three flat muscles of the side abdominal wall, lying deep to the internal oblique and wrapping around from the back to the front of the abdomen.",
-    "description": "A thin sheet whose fibres run mostly horizontally, like a corset or weightlifting belt. Its aponeurosis joins the rectus sheath and linea alba.",
-    "function": "Compresses the abdomen and helps stabilise the trunk and lumbar spine. Origin: internal surfaces of costal cartilages 7-12, thoracolumbar fascia, iliac crest and deep to the lateral inguinal ligament -> insertion: linea alba and pubis (pubic crest via the conjoint tendon). Nerve supply: thoraco-abdominal nerves (T7-T11), subcostal nerve (T12) and first lumbar nerve (L1).",
-    "mnemonic": "Transversus = transverse fibres: the body's own corset.",
-    "clinical": "A transversus abdominis plane (TAP) block injects local anaesthetic between this muscle and the internal oblique, where the nerves of the abdominal wall run, to reduce pain after abdominal surgery.",
-    "hint": "The deepest flat layer of the side abdominal wall, with horizontal fibres that wrap the abdomen like a corset."
+    "origin": "From the Latin transversus, meaning lying across. Its fibres run across your belly.",
+    "location": "The deepest of the three flat muscles on the side of your belly, under the internal oblique. It wraps around from your back to the front.",
+    "description": "A thin sheet with fibres running mostly side to side, like a corset or a weightlifting belt.",
+    "function": "It pulls your belly in tight and steadies your trunk and lower back. Draw your belly button in toward your spine and you are using it.",
+    "mnemonic": "Transversus means fibres going across. It is your body's own corset.",
+    "clinical": "The nerves of the belly wall run between this muscle and the internal oblique. Doctors inject numbing medicine there, a TAP block, to ease pain after surgery.",
+    "hint": "The deepest flat layer on the side of the belly, with side-to-side fibres that wrap it like a corset."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which abdominal muscle has horizontal fibres and acts like a corset to support the abdominal organs?",
+     "text": "Which belly muscle has side-to-side fibres and works like a corset?",
      "options": [
       "Rectus abdominis",
       "External oblique",
@@ -660,7 +660,7 @@
       "Pyramidalis"
      ],
      "answer": 2,
-     "explanation": "The transversus abdominis has horizontal fibres and compresses the abdomen like a corset."
+     "explanation": "The transversus abdominis wraps around your belly with across-running fibres and pulls it in like a corset."
     }
    ]
   },
@@ -694,26 +694,26 @@
    ],
    "content": {
     "pronunciation": "pi-RAM-ih-DAH-lis",
-    "origin": "Latin pyramidalis, \"pyramid-shaped\", describing its small triangular shape.",
-    "location": "At the very bottom of the front abdominal wall, just above the pubis, in front of the lower part of the rectus abdominis and inside the rectus sheath.",
-    "description": "A small triangular muscle, broad at its base on the pubis and narrowing to a point on the linea alba. It is often absent on one or both sides.",
-    "function": "Tenses the linea alba. Origin: front of the pubis (pubic crest) -> insertion: linea alba. Nerve supply: subcostal nerve (T12).",
-    "mnemonic": "Pyramidalis = a tiny pyramid sitting on the pubis.",
-    "clinical": "Because it is often absent and has only a minor role, its absence causes no noticeable weakness of the abdominal wall.",
-    "hint": "A tiny triangle at the lowest part of the front abdominal wall, sitting on the pubis in front of the segmented strap muscle."
+    "origin": "From the Latin word for pyramid-shaped. It is a small triangle of muscle.",
+    "location": "At the very bottom of the front of your belly, just above the pubic bone. It sits in front of the lower rectus abdominis.",
+    "description": "A small triangle, wide at its base on the pubic bone and narrowing to a point on the middle line. Many people do not have one on one or both sides.",
+    "function": "It tightens the linea alba, the tough white line of tendon running down the middle of your belly.",
+    "mnemonic": "Pyramidalis is a tiny pyramid sitting on the pubic bone.",
+    "clinical": "It is often missing, and nobody notices. Its job is so small that its absence causes no weakness of the belly wall.",
+    "hint": "A tiny triangle at the lowest part of the front belly wall, sitting on the pubic bone in front of the segmented strap."
    },
    "questions": [
     {
      "kind": "function",
      "text": "What does the pyramidalis do?",
      "options": [
-      "Tenses the linea alba",
-      "Flexes the hip",
+      "Tightens the linea alba",
+      "Bends the hip",
       "Raises the first rib",
       "Supports the pelvic floor"
      ],
      "answer": 0,
-     "explanation": "The pyramidalis tenses the linea alba."
+     "explanation": "The pyramidalis pulls tight on the linea alba, the white line of tendon down the middle of your belly."
     }
    ]
   },
@@ -757,38 +757,38 @@
    ],
    "content": {
     "pronunciation": "kwod-RAY-tus lum-BOR-um",
-    "origin": "Latin quadratus, \"square\", and lumborum, \"of the loins\": the square muscle of the lower back.",
-    "location": "In the posterior abdominal wall, between the 12th rib and the iliac crest, lateral to the lumbar vertebrae and the psoas major. It lies deep to the erector spinae.",
-    "description": "A flat, roughly four-sided muscle filling the gap between the lowest rib and the top of the pelvis.",
-    "function": "Bends the trunk to the same side (lateral flexion), helps extend the lumbar spine, can hitch the hip up, and fixes the 12th rib during breathing. Origin: iliolumbar ligament and inner lip of the iliac crest -> insertion: lower border of the 12th rib and tips of the lumbar transverse processes. Nerve supply: anterior rami of T12 and L1-L4.",
-    "mnemonic": "Quadratus = quadrilateral: a square block between the last rib and the hip bone.",
-    "clinical": "Tightness or spasm of this muscle is a common contributor to low back pain and is often treated in massage and physiotherapy.",
-    "hint": "A flat square muscle filling the gap between the lowest rib and the iliac crest, beside the lumbar spine."
+    "origin": "From the Latin words for square and of the loins. It is the square muscle of the lower back.",
+    "location": "Deep in the back wall of your belly, filling the gap between the twelfth rib and the top of the hip bone, beside the lower spine.",
+    "description": "A flat, roughly square block of muscle between your lowest rib and the top of your pelvis.",
+    "function": "It bends your trunk to its own side and helps arch your lower back. It can hitch one hip up and holds the twelfth rib steady when you breathe.",
+    "mnemonic": "Quadratus means square. Picture a square block between your last rib and your hip bone.",
+    "clinical": "Tightness or spasm here is a common part of low back pain. Massage therapists and physiotherapists often work on it.",
+    "hint": "A flat square muscle filling the gap between the lowest rib and the top of the hip bone, beside the lower spine."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Between which bony landmarks does the quadratus lumborum lie?",
+     "text": "Between which two bony landmarks does the quadratus lumborum lie?",
      "options": [
-      "First rib and clavicle",
-      "12th rib and iliac crest",
-      "Sacrum and coccyx",
-      "Mastoid process and sternum"
+      "First rib and collarbone",
+      "Twelfth rib and iliac crest",
+      "Sacrum and tailbone",
+      "Mastoid process and breastbone"
      ],
      "answer": 1,
-     "explanation": "The quadratus lumborum fills the space between the 12th rib and the iliac crest."
+     "explanation": "The quadratus lumborum fills the gap between your twelfth rib and the top of your hip bone, the iliac crest."
     },
     {
      "kind": "function",
-     "text": "Which movement does the quadratus lumborum produce when one side contracts?",
+     "text": "What movement happens when one quadratus lumborum contracts?",
      "options": [
-      "Rotation of the head",
-      "Flexion of the knee",
-      "Lateral flexion of the trunk to the same side",
-      "Elevation of the scapula"
+      "Turning the head",
+      "Bending the knee",
+      "Bending the trunk to the same side",
+      "Lifting the shoulder blade"
      ],
      "answer": 2,
-     "explanation": "One side bends the trunk to the same side."
+     "explanation": "One side on its own pulls your trunk over sideways toward that side."
     }
    ]
   },
@@ -828,38 +828,38 @@
    ],
    "content": {
     "pronunciation": "SO-as MAY-jor",
-    "origin": "Greek psoa, \"loin muscles\"; Latin major, \"larger\" (there is sometimes a small psoas minor).",
-    "location": "In the posterior abdominal wall, alongside the lumbar vertebrae. It runs down along the pelvic brim, passes under the inguinal ligament and reaches the thigh.",
-    "description": "A long, thick, spindle-shaped muscle. It joins the iliacus to form the iliopsoas. The lumbar plexus forms within it.",
-    "function": "The strongest flexor of the hip; it also helps flex and side-bend the lumbar spine and helps sitting up from lying. Origin: sides of the bodies of T12-L5, their intervertebral discs and the lumbar transverse processes -> insertion: lesser trochanter of the femur (with iliacus). Nerve supply: anterior rami of lumbar nerves (L1-L3).",
-    "mnemonic": "Psoas links spine to thigh: \"so-as to lift your knee\".",
-    "clinical": "In appendicitis (especially a retrocaecal appendix), extending the right hip stretches the inflamed area over the psoas and causes pain (the psoas sign).",
-    "hint": "A long, thick muscle beside the lumbar vertebral bodies that runs down over the pelvic brim to the thigh."
+    "origin": "From the Greek word for the loin muscles. Major means larger, because a small psoas minor is sometimes present.",
+    "location": "Deep in the back of your belly, running down beside the lower spine. It crosses the rim of the pelvis and passes under the groin to reach the thigh.",
+    "description": "A long, thick muscle, fat in the middle like a spindle. It joins the iliacus to form the iliopsoas, and a network of lower back nerves forms inside it.",
+    "function": "It is the strongest muscle for lifting your thigh forward at the hip. It pulls on the lesser trochanter, a bump near the top of the thigh bone.",
+    "mnemonic": "Psoas links your spine to your thigh, so as to lift your knee.",
+    "clinical": "In appendicitis, stretching the right hip back can pull on the swollen area over the psoas and cause pain. Doctors call this the psoas sign.",
+    "hint": "A long, thick muscle beside the lower spine that runs down over the rim of the pelvis to the thigh."
    },
    "questions": [
     {
      "kind": "function",
      "text": "What is the main action of the psoas major?",
      "options": [
-      "Flexing the hip",
-      "Extending the hip",
-      "Elevating the ribs",
-      "Tensing the linea alba"
+      "Lifting the thigh at the hip",
+      "Pushing the thigh back",
+      "Raising the ribs",
+      "Tightening the linea alba"
      ],
      "answer": 0,
-     "explanation": "The psoas major (with iliacus as iliopsoas) is the strongest hip flexor."
+     "explanation": "Together with the iliacus, the psoas major is the strongest muscle for bending the hip."
     },
     {
      "kind": "relationship",
-     "text": "Where does the psoas major insert?",
+     "text": "Where does the psoas major attach on the thigh bone?",
      "options": [
       "Greater trochanter of the femur",
       "Iliac crest",
       "Lesser trochanter of the femur",
-      "12th rib"
+      "Twelfth rib"
      ],
      "answer": 2,
-     "explanation": "The psoas major inserts, with the iliacus, on the lesser trochanter of the femur."
+     "explanation": "The psoas major joins the iliacus and grips the lesser trochanter, a small bump near the top of the femur."
     }
    ]
   },
@@ -903,13 +903,13 @@
    ],
    "content": {
     "pronunciation": "DY-uh-fram",
-    "origin": "Greek diaphragma, \"partition\" or \"barrier\" (dia, across, and phragma, fence).",
-    "location": "A dome-shaped sheet between the chest (thoracic cavity) and the abdomen, attached around the lower edge of the rib cage, the xiphoid process and the upper lumbar vertebrae. The right dome sits higher than the left because of the liver.",
-    "description": "Muscle fibres arise from three parts (sternal, costal and lumbar) and insert into a central tendon. Its lumbar part forms two crura on the vertebrae and arches (arcuate ligaments) over the psoas major and quadratus lumborum. It has openings for the inferior vena cava (T8), oesophagus (T10) and aorta (T12).",
-    "function": "The main muscle of breathing in (inspiration): it contracts and flattens, increasing the height of the chest so air flows in. Origin: xiphoid process, lower six costal cartilages and ribs, and lumbar vertebrae (crura, L1-L3) and arcuate ligaments -> insertion: central tendon. Nerve supply: phrenic nerves (C3-C5).",
-    "mnemonic": "\"C3, 4, 5 keeps the diaphragm alive\" (phrenic nerve). Openings: \"I 8 10 Eggs At 12\" - IVC T8, oesophagus T10, aorta T12.",
-    "clinical": "In a hiatus hernia, part of the stomach slides up through the oesophageal opening into the chest. Irritation of the diaphragm can cause pain referred to the shoulder tip, because its nerve comes from C3-C5.",
-    "hint": "A dome-shaped sheet of muscle and tendon forming the floor of the chest and roof of the abdomen."
+    "origin": "From the Greek word for a partition or fence. It is the wall between your chest and your belly.",
+    "location": "A dome between your chest and belly, fixed around the bottom of the rib cage and to the upper lower-back bones. The right dome sits higher, pushed up by the liver.",
+    "description": "Muscle fibres run in from the edges to a flat central tendon, like a parachute. It has openings for the big vein, the food pipe and the aorta.",
+    "function": "It is your main breathing muscle. As it tightens, the dome flattens, the chest gets taller and air rushes in.",
+    "mnemonic": "C3, 4, 5 keeps the diaphragm alive, that is its phrenic nerve. For the openings, I 8 10 Eggs At 12: vena cava T8, oesophagus T10, aorta T12.",
+    "clinical": "In a hiatus hernia, part of the stomach slides up through the food pipe opening. An irritated diaphragm can cause pain in the shoulder tip, because its nerve comes from C3 to C5.",
+    "hint": "A dome-shaped sheet of muscle and tendon forming the floor of the chest and the roof of the belly."
    },
    "questions": [
     {
@@ -919,14 +919,14 @@
       "Vagus nerve",
       "Intercostal nerves",
       "Accessory nerve",
-      "Phrenic nerve (C3-C5)"
+      "Phrenic nerve (C3 to C5)"
      ],
      "answer": 3,
-     "explanation": "The phrenic nerves (C3-C5) supply the diaphragm: \"C3, 4, 5 keeps the diaphragm alive\"."
+     "explanation": "The phrenic nerves, from C3, C4 and C5, drive the diaphragm. C3, 4, 5 keeps the diaphragm alive."
     },
     {
      "kind": "location",
-     "text": "At what vertebral level does the oesophagus pass through the diaphragm?",
+     "text": "At what level does the oesophagus pass through the diaphragm?",
      "options": [
       "T8",
       "T10",
@@ -934,7 +934,7 @@
       "L3"
      ],
      "answer": 1,
-     "explanation": "The oesophageal opening is at T10 (IVC T8, aorta T12)."
+     "explanation": "The food pipe goes through at T10. The big vein goes through at T8 and the aorta at T12."
     }
    ]
   },
@@ -982,13 +982,13 @@
    ],
    "content": {
     "pronunciation": "leh-VAY-tor AY-nye",
-    "origin": "Latin levator, \"lifter\", and ani, \"of the anus\": the muscle that lifts the anus.",
-    "location": "Forms most of the pelvic floor, stretching across the bottom of the pelvis from the pubis in front to the coccyx behind, and from side wall to side wall. With the small coccygeus muscle it forms the pelvic diaphragm.",
-    "description": "A broad, thin sheet made of three parts, shown here together: puborectalis (a U-shaped sling around the back of the anorectal junction), pubococcygeus (the main middle part, pubis to coccyx) and iliococcygeus (the thin back part from the side wall to the coccyx).",
-    "function": "Supports the pelvic organs and resists rises in abdominal pressure. Puborectalis keeps the anorectal angle for faecal continence. Origin: body of the pubis, tendinous arch of the obturator fascia and ischial spine -> insertion: perineal body, coccyx, anococcygeal body and walls of the pelvic organs. Nerve supply: nerve to levator ani (S4), inferior anal nerve and coccygeal plexus.",
-    "mnemonic": "Levator ani = the pelvic hammock: puborectalis, pubococcygeus, iliococcygeus (front to back: P, P, I).",
-    "clinical": "Stretching or damage during childbirth can weaken it, contributing to stress urinary incontinence and pelvic organ prolapse. Pelvic floor (Kegel) exercises strengthen it.",
-    "hint": "The muscular hammock forming the floor of the pelvis, between the pubis in front and the coccyx behind."
+    "origin": "From the Latin words for lifter and of the anus. It is the muscle that lifts the anus.",
+    "location": "Across the bottom of your pelvis, from the pubic bone in front to the tailbone behind. With the small coccygeus it forms the pelvic floor.",
+    "description": "A wide, thin sheet like a hammock, made of three parts shown together. The front part forms a U-shaped sling around the back of the rectum.",
+    "function": "It holds up your pelvic organs and braces against pressure when you cough or lift. Its sling keeps a bend in the bowel that helps you stay continent.",
+    "mnemonic": "Levator ani is the pelvic hammock. Its parts from front to back are puborectalis, pubococcygeus and iliococcygeus, so P, P, I.",
+    "clinical": "Stretching or damage in childbirth can weaken it, leading to leaks of urine or sagging pelvic organs. Pelvic floor exercises help make it stronger.",
+    "hint": "The muscular hammock forming the floor of the pelvis, between the pubic bone in front and the tailbone behind."
    },
    "questions": [
     {
@@ -1001,11 +1001,11 @@
       "Iliocostalis"
      ],
      "answer": 3,
-     "explanation": "Levator ani consists of puborectalis, pubococcygeus and iliococcygeus; iliocostalis is a back muscle."
+     "explanation": "The levator ani has three parts, puborectalis, pubococcygeus and iliococcygeus. Iliocostalis is a back muscle."
     },
     {
      "kind": "clinical",
-     "text": "What is a common cause of weakness of the levator ani?",
+     "text": "What is a common cause of weakness in the levator ani?",
      "options": [
       "Childbirth",
       "Appendicitis",
@@ -1070,18 +1070,18 @@
    ],
    "content": {
     "pronunciation": "IL-ee-oh-kos-TAH-lis",
-    "origin": "Latin ilium (hip bone) and costa (rib): the muscle running from the hip bone to the ribs.",
-    "location": "The lateral (outer) column of the erector spinae, running up the back beside the longissimus, over the angles of the ribs.",
-    "description": "Shown as one structure with three parts: iliocostalis lumborum (lower back), thoracis (chest) and cervicis (neck). Each part runs up and inserts a few levels higher.",
-    "function": "Both sides together extend the vertebral column; one side bends the spine to the same side. Origin: common tendon from the iliac crest, sacrum and lumbar spinous processes -> insertion: angles of the ribs and transverse processes of the lower cervical vertebrae. Nerve supply: posterior rami of spinal nerves.",
-    "mnemonic": "Erector spinae columns from lateral to medial: \"I Love Spaghetti\" - Iliocostalis, Longissimus, Spinalis. Iliocostalis is outermost and goes to the ribs.",
-    "clinical": "Like the other erector spinae muscles it is commonly strained when lifting with a bent back, causing low back pain and muscle spasm.",
-    "hint": "The outermost of the three vertical columns of the back extensor muscles, attaching to the angles of the ribs."
+    "origin": "From the Latin words for the hip bone and a rib. It runs from the hip bone up to the ribs.",
+    "location": "The outer column of the three long muscles that run up either side of your spine. It climbs over the bends of the ribs, beside the longissimus.",
+    "description": "Shown here as one muscle with three parts, for the lower back, chest and neck. Each part climbs a few levels and grips higher up.",
+    "function": "Both sides together straighten and arch your spine. One side alone bends your spine toward that side.",
+    "mnemonic": "The back columns from outside in are I Love Spaghetti, iliocostalis, longissimus, spinalis. Iliocostalis is outermost and goes to the ribs.",
+    "clinical": "Like the other long back muscles, it is often strained when you lift with a bent back. This causes low back pain and spasm.",
+    "hint": "The outermost of the three upright columns of back muscles, attaching to the bends of the ribs."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which column of the erector spinae is the most lateral?",
+     "text": "Which column of the erector spinae is furthest out to the side?",
      "options": [
       "Spinalis",
       "Longissimus",
@@ -1089,19 +1089,19 @@
       "Multifidus"
      ],
      "answer": 2,
-     "explanation": "From lateral to medial the columns are iliocostalis, longissimus and spinalis (\"I Love Spaghetti\")."
+     "explanation": "From outside in, the columns are iliocostalis, longissimus and spinalis. Remember I Love Spaghetti."
     },
     {
      "kind": "function",
-     "text": "What is the action of both iliocostalis muscles contracting together?",
+     "text": "What happens when both iliocostalis muscles contract together?",
      "options": [
-      "Flexing the vertebral column",
-      "Extending the vertebral column",
-      "Rotating the head to the opposite side",
-      "Elevating the first rib"
+      "The spine bends forward",
+      "The spine straightens and arches back",
+      "The head turns to the opposite side",
+      "The first rib rises"
      ],
      "answer": 1,
-     "explanation": "Acting together, the erector spinae columns extend the vertebral column."
+     "explanation": "Working together, the long back columns straighten your spine and arch it backward."
     }
    ],
    "merged": true
@@ -1162,18 +1162,18 @@
    ],
    "content": {
     "pronunciation": "lon-JIS-ih-mus",
-    "origin": "Latin longissimus, \"longest\": the longest of the back muscles.",
-    "location": "The intermediate (middle) column of the erector spinae, between the iliocostalis laterally and the spinalis medially, running from the sacrum all the way up to the skull.",
-    "description": "Shown as one structure with three parts: longissimus thoracis (the largest part), cervicis and capitis. Longissimus capitis reaches the mastoid process behind the ear.",
-    "function": "Both sides extend the spine and head; one side bends the spine and turns the head to the same side. Origin: common tendon from the iliac crest, sacrum and lumbar spinous processes -> insertion: ribs, thoracic and cervical transverse processes, and mastoid process. Nerve supply: posterior rami of spinal nerves.",
-    "mnemonic": "\"I Love Spaghetti\": L for Longissimus, the Long one in the middle.",
-    "clinical": "It is the thickest part of the erector spinae in the lower back, which is where most mechanical back strains are felt.",
-    "hint": "The middle and longest of the three vertical back-extensor columns, reaching from the sacrum up to the bone behind the ear."
+    "origin": "From the Latin word for the longest. It is the longest of the back muscles.",
+    "location": "The middle column of the three long back muscles, between the iliocostalis and the spinalis. It runs from the sacrum all the way up to the skull.",
+    "description": "Shown here as one muscle with three parts. The chest part is the biggest, and the top part reaches the bump behind your ear.",
+    "function": "Both sides together straighten your spine and tip your head back. One side alone bends your spine and turns your head toward that side.",
+    "mnemonic": "In I Love Spaghetti, L is for Longissimus, the long one in the middle.",
+    "clinical": "It is the thickest of the long back muscles in the lower back. That is where most back strains are felt.",
+    "hint": "The middle and longest of the three upright back columns, reaching from the sacrum up to the bump behind the ear."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Longissimus capitis attaches to which part of the skull?",
+     "text": "The top part of longissimus attaches to which part of the skull?",
      "options": [
       "Mastoid process",
       "External occipital protuberance",
@@ -1181,7 +1181,7 @@
       "Zygomatic arch"
      ],
      "answer": 0,
-     "explanation": "Longissimus capitis inserts on the mastoid process."
+     "explanation": "Longissimus capitis grips the mastoid process, the bump you can feel behind your ear."
     }
    ],
    "merged": true
@@ -1234,26 +1234,26 @@
    ],
    "content": {
     "pronunciation": "spy-NAH-lis",
-    "origin": "Latin spina, \"thorn\" or spine: it runs between the spinous processes.",
-    "location": "The medial (innermost) and smallest column of the erector spinae, lying right next to the spinous processes, mainly in the thoracic region.",
-    "description": "Shown as one structure with two parts: spinalis thoracis and spinalis cervicis (spinalis capitis, when present, blends with semispinalis capitis). It connects spinous processes to spinous processes.",
-    "function": "Both sides together extend the vertebral column; one side bends it to the same side. Origin: spinous processes of the upper lumbar and lower thoracic vertebrae (and lower cervical for the neck part) -> insertion: spinous processes of the upper thoracic and cervical vertebrae. Nerve supply: posterior rami of spinal nerves.",
-    "mnemonic": "\"I Love Spaghetti\": Spinalis is closest to the Spine.",
-    "clinical": "Being small and close to the midline, it is rarely injured on its own, but it tightens with the rest of the erector spinae in back spasm.",
-    "hint": "The innermost and smallest back-extensor column, joining spinous process to spinous process right beside the midline."
+    "origin": "From the Latin word spina, meaning a thorn or the spine. It runs between the pointed spines of the vertebrae.",
+    "location": "The innermost and smallest of the three long back columns. It lies right beside the bony bumps down the middle of your back, mostly in the chest region.",
+    "description": "Shown here as one muscle with a chest part and a neck part. It links the spine of one vertebra to the spines of others above.",
+    "function": "Both sides together straighten your spine. One side alone bends it toward that side.",
+    "mnemonic": "In I Love Spaghetti, Spinalis is the one closest to the Spine.",
+    "clinical": "It is small and close to the middle, so it is rarely hurt on its own. It does tighten up with the other back muscles in back spasm.",
+    "hint": "The innermost and smallest upright back column, linking the bony bumps right beside the middle line."
    },
    "questions": [
     {
      "kind": "relationship",
      "text": "What does the spinalis attach to?",
      "options": [
-      "Angles of the ribs",
-      "Spinous processes of vertebrae",
+      "The bends of the ribs",
+      "The spinous processes of vertebrae",
       "The iliac crest only",
       "The mastoid process"
      ],
      "answer": 1,
-     "explanation": "Spinalis runs from spinous processes to spinous processes."
+     "explanation": "Spinalis runs from one spinous process to another, the bony bumps down the middle of your back."
     }
    ],
    "merged": true
@@ -1298,26 +1298,26 @@
    ],
    "content": {
     "pronunciation": "mul-TIF-ih-dus",
-    "origin": "Latin multus, \"many\", and findere, \"to split\": split into many parts.",
-    "location": "Deep in the back, in the groove beside the spinous processes, under the erector spinae. It is part of the deep transversospinalis group and is thickest in the lumbar region.",
-    "description": "Many short, triangular bundles, each crossing two to four vertebrae and running up and inwards from a lower attachment to a spinous process above.",
-    "function": "Stabilises the vertebrae during movement and helps extend, side-bend and rotate the spine to the opposite side. Origin: back of the sacrum, posterior iliac spine region, lumbar mammillary processes, thoracic transverse processes and lower cervical articular processes -> insertion: spinous processes two to four vertebrae higher. Nerve supply: posterior rami of spinal nerves.",
-    "mnemonic": "Multi-fidus = many fingers: many small bundles, each gripping a spinous process a few levels up.",
-    "clinical": "Wasting and poor activation of its lumbar part are often found in people with persistent low back pain, so it is a common target of spinal stabilisation exercises.",
-    "hint": "Many short deep bundles in the groove next to the spinous processes, thickest in the lower back beneath the long extensor columns."
+    "origin": "From the Latin words for many and to split. It is split into many small parts.",
+    "location": "Deep in your back, in the groove right beside the bony bumps of the spine, under the long back muscles. It is thickest in the lower back.",
+    "description": "Lots of short bundles, each crossing two to four vertebrae. They run up and in from a lower anchor to the spine of a vertebra above.",
+    "function": "It holds each vertebra steady as you move, like guy ropes on a tent pole. It also helps straighten, side-bend and twist the spine.",
+    "mnemonic": "Multifidus means many fingers. Many small bundles each grip a spine a few levels up.",
+    "clinical": "In people with long-lasting low back pain, the lower part is often weak or shrunken. So it is a key target of core stability exercises.",
+    "hint": "Many short deep bundles in the groove next to the spine, thickest in the lower back beneath the long back columns."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "What is a key role of the multifidus?",
+     "text": "What is a key job of the multifidus?",
      "options": [
-      "Stabilising the vertebrae during movement",
-      "Flexing the hip",
+      "Holding the vertebrae steady during movement",
+      "Lifting the thigh at the hip",
       "Breathing in",
-      "Tensing the linea alba"
+      "Tightening the linea alba"
      ],
      "answer": 0,
-     "explanation": "Multifidus stabilises individual vertebrae and helps extend and rotate the spine."
+     "explanation": "Multifidus holds each vertebra steady and helps straighten and twist the spine."
     }
    ]
   },
@@ -1375,18 +1375,18 @@
    ],
    "content": {
     "pronunciation": "SEM-ee-spy-NAH-lis",
-    "origin": "Latin semi, \"half\", and spinalis, \"of the spine\": it covers only the upper half of the spine.",
-    "location": "Deep in the upper back and neck, part of the transversospinalis group, lying superficial to the multifidus and deep to the splenius and trapezius.",
-    "description": "Shown as one structure with three parts: semispinalis thoracis, cervicis and capitis. Semispinalis capitis is the largest and forms the thick vertical bulge either side of the midline at the back of the neck.",
-    "function": "Extends the head and the thoracic and cervical spine, and one side rotates the spine to the opposite side. Origin: transverse processes of about C4-T10 -> insertion: spinous processes of cervical and thoracic vertebrae four to six levels higher, and (capitis) the occipital bone between the nuchal lines. Nerve supply: posterior rami of spinal nerves.",
-    "mnemonic": "Semi-spinalis = half the spine: only in the upper (neck and chest) half.",
-    "clinical": "The greater occipital nerve pierces semispinalis capitis, so tension here is linked with occipital headaches and occipital neuralgia.",
-    "hint": "The thick deep ropes either side of the midline at the back of the neck, running up to the occipital bone."
+    "origin": "From the Latin words for half and of the spine. It only covers the upper half of the spine.",
+    "location": "Deep in your upper back and neck, under the splenius and trapezius and on top of the multifidus.",
+    "description": "Shown here as one muscle with three parts. The top part is the biggest, forming the thick rope on each side of the middle at the back of your neck.",
+    "function": "It tips your head back and straightens your neck and upper back. One side alone twists the spine toward the other side.",
+    "mnemonic": "Semispinalis covers half the spine, only the neck and chest half.",
+    "clinical": "The greater occipital nerve pierces its top part. Tension here is linked to headaches at the back of the head.",
+    "hint": "The thick deep ropes on each side of the middle at the back of the neck, running up to the base of the skull."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Which nerve pierces semispinalis capitis and may be involved in occipital headaches?",
+     "text": "Which nerve pierces semispinalis capitis and may cause headaches at the back of the head?",
      "options": [
       "Phrenic nerve",
       "Accessory nerve",
@@ -1394,19 +1394,19 @@
       "Subcostal nerve"
      ],
      "answer": 2,
-     "explanation": "The greater occipital nerve pierces semispinalis capitis."
+     "explanation": "The greater occipital nerve passes through semispinalis capitis. Squeezing it here can cause headaches at the back of the head."
     },
     {
      "kind": "location",
      "text": "In which part of the spine is the semispinalis found?",
      "options": [
-      "The upper half (thoracic and cervical)",
-      "Only the lumbar region",
+      "The upper half, neck and chest",
+      "Only the lower back",
       "Only the sacrum",
-      "The whole length from sacrum to skull"
+      "The whole spine from sacrum to skull"
      ],
      "answer": 0,
-     "explanation": "Semispinalis spans only the thoracic and cervical regions - the upper half of the spine."
+     "explanation": "Semi means half. Semispinalis covers only the upper half of the spine, in the neck and chest."
     }
    ],
    "merged": true
@@ -1441,26 +1441,26 @@
    ],
    "content": {
     "pronunciation": "ser-AY-tus pos-TEER-ee-or soo-PEER-ee-or",
-    "origin": "Latin serratus, \"saw-toothed\", posterior, \"at the back\", and superior, \"upper\".",
-    "location": "In the upper back, deep to the rhomboids, running from the lower neck and upper thoracic spine out to the upper ribs.",
-    "description": "A thin, four-sided muscle with saw-tooth slips attaching to the ribs.",
-    "function": "Traditionally described as elevating the upper ribs (helping inspiration), although it may act mainly as a sensor (proprioceptive) rather than a strong mover. Origin: nuchal ligament and spinous processes of C7-T3 -> insertion: upper borders of ribs 2-4. Nerve supply: second to fifth intercostal nerves.",
-    "mnemonic": "Superior serratus pulls the upper ribs up; inferior pulls the lower ribs down.",
-    "clinical": "It lies under the rhomboids and scapula and is sometimes considered a source of upper back and shoulder blade pain in massage practice.",
-    "hint": "A thin saw-toothed sheet in the upper back running from the lower neck spines to ribs 2-4, beneath the shoulder-blade muscles."
+    "origin": "From the Latin words for saw-toothed, at the back and upper. It is the upper saw-toothed muscle at the back.",
+    "location": "In your upper back, under the rhomboids. It runs from the bottom of the neck and top of the chest spine out to the upper ribs.",
+    "description": "A thin, four-sided sheet with saw-tooth fingers that grip the ribs.",
+    "function": "It is said to lift ribs two to four and help you breathe in. It may work more as a sensor that tracks rib position than as a strong mover.",
+    "mnemonic": "The superior one pulls the upper ribs up. The inferior one pulls the lower ribs down.",
+    "clinical": "It sits under the rhomboids and shoulder blade. Massage therapists sometimes see it as a source of pain around the shoulder blade.",
+    "hint": "A thin saw-toothed sheet in the upper back, running from the lower neck spines to ribs two to four under the shoulder blade muscles."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "What action is traditionally given for serratus posterior superior?",
+     "text": "What action is usually given for serratus posterior superior?",
      "options": [
-      "Depresses the lower ribs",
-      "Elevates the upper ribs",
-      "Extends the hip",
-      "Rotates the head to the same side"
+      "Pulls the lower ribs down",
+      "Lifts the upper ribs",
+      "Pushes the hip back",
+      "Turns the head to the same side"
      ],
      "answer": 1,
-     "explanation": "Serratus posterior superior is traditionally said to elevate ribs 2-4."
+     "explanation": "Serratus posterior superior is said to lift ribs two to four, helping you breathe in."
     }
    ]
   },
@@ -1494,26 +1494,26 @@
    ],
    "content": {
     "pronunciation": "ser-AY-tus pos-TEER-ee-or in-FEER-ee-or",
-    "origin": "Latin serratus, \"saw-toothed\", posterior, \"at the back\", and inferior, \"lower\".",
-    "location": "In the lower back, deep to the latissimus dorsi, running from the thoracolumbar spine out to the lowest ribs.",
-    "description": "A thin, four-sided muscle whose slips run up and out to attach to the lower ribs.",
-    "function": "Traditionally described as pulling the lower ribs down and back (depressing them), though it may act mainly as a sensor (proprioceptive). Origin: spinous processes of T11-L2 -> insertion: lower borders of ribs 8-12. Nerve supply: anterior rami of T9-T12 (lower intercostal and subcostal nerves).",
-    "mnemonic": "Inferior serratus pulls the lower ribs down.",
-    "clinical": "It lies under the latissimus dorsi and can be strained along with it, giving pain over the lower ribs at the back.",
-    "hint": "A thin saw-toothed sheet in the lower back running from the lower thoracic and upper lumbar spines to the lowest ribs."
+    "origin": "From the Latin words for saw-toothed, at the back and lower. It is the lower saw-toothed muscle at the back.",
+    "location": "In your lower back, under the latissimus dorsi. It runs from the spine around T11 to L2 out to the lowest ribs.",
+    "description": "A thin, four-sided sheet whose fingers run up and out to grip ribs eight to twelve.",
+    "function": "It is said to pull the lower ribs down and back. It may work more as a sensor that tracks rib position than as a strong mover.",
+    "mnemonic": "Inferior means lower. The inferior serratus pulls the lower ribs down.",
+    "clinical": "It lies under the latissimus dorsi and can be strained with it. This gives pain over the lower ribs at the back.",
+    "hint": "A thin saw-toothed sheet in the lower back, running from the lower chest and upper lumbar spines to the lowest ribs."
    },
    "questions": [
     {
      "kind": "relationship",
      "text": "Serratus posterior inferior attaches to which ribs?",
      "options": [
-      "Ribs 2-4",
+      "Ribs 2 to 4",
       "Rib 1 only",
-      "Ribs 8-12",
-      "Ribs 5-7"
+      "Ribs 8 to 12",
+      "Ribs 5 to 7"
      ],
      "answer": 2,
-     "explanation": "Serratus posterior inferior inserts on ribs 8-12."
+     "explanation": "Serratus posterior inferior grips the lowest five ribs, eight to twelve."
     }
    ]
   },
@@ -1557,26 +1557,26 @@
    ],
    "content": {
     "pronunciation": "SPLEE-nee-us KAP-ih-tis and SER-vih-sis",
-    "origin": "Latin splenius, from Greek splenion, \"bandage\": it wraps around the deeper neck muscles like a bandage.",
-    "location": "At the back of the neck and upper back, deep to the trapezius and sternocleidomastoid, covering the deeper neck muscles such as semispinalis.",
-    "description": "Shown as one structure with two parts: splenius capitis (to the skull) and splenius cervicis (to the upper cervical vertebrae). Its fibres run up and outwards like a bandage.",
-    "function": "Both sides together extend the head and neck; one side bends the neck and turns the head to the same side. Origin: nuchal ligament and spinous processes of C7-T6 -> insertion: capitis to the mastoid process and lateral superior nuchal line; cervicis to the transverse processes of C1-C3 (or C4). Nerve supply: posterior rami of spinal nerves.",
-    "mnemonic": "Splenius = splint or bandage wrapped around the back of the neck.",
-    "clinical": "It is commonly strained in whiplash injuries, causing neck pain and stiffness.",
-    "hint": "A bandage-like sheet wrapping upwards and outwards over the deep muscles at the back of the neck, reaching the bone behind the ear."
+    "origin": "From a Greek word for a bandage. It wraps around the deeper neck muscles like a bandage.",
+    "location": "At the back of your neck and upper back, under the trapezius. It covers the deeper neck muscles, such as semispinalis.",
+    "description": "Shown here as one muscle with a head part and a neck part. Its fibres run up and out like a wrapped bandage, reaching the bump behind the ear.",
+    "function": "Both sides together tip your head and neck back. One side alone bends your neck and turns your head toward that same side.",
+    "mnemonic": "Splenius is a splint or bandage wrapped around the back of your neck.",
+    "clinical": "It is often strained in whiplash, when the head snaps back and forth in a car crash. This causes neck pain and stiffness.",
+    "hint": "A bandage-like sheet wrapping up and out over the deep muscles at the back of the neck, reaching the bump behind the ear."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "When one side contracts, the splenius turns the head to which side?",
+     "text": "When one splenius contracts, it turns the head toward which side?",
      "options": [
       "The same side",
       "The opposite side",
       "It cannot turn the head",
-      "Only downwards"
+      "Only downward"
      ],
      "answer": 0,
-     "explanation": "One splenius turns the head to the same side."
+     "explanation": "One splenius turns your head toward its own side."
     },
     {
      "kind": "terminology",
@@ -1588,7 +1588,7 @@
       "Saw-toothed"
      ],
      "answer": 1,
-     "explanation": "Splenius comes from Greek splenion, bandage."
+     "explanation": "Splenius comes from the Greek for a bandage, because it wraps around the neck."
     }
    ],
    "merged": true
@@ -1630,30 +1630,30 @@
    ],
    "content": {
     "pronunciation": "STER-noh-KLY-doh-MAS-toyd",
-    "origin": "Named from its attachments: sternum, cleido (Greek kleis, \"clavicle\") and mastoid process.",
-    "location": "On the side of the neck, running diagonally from the top of the sternum and inner clavicle up to the mastoid process behind the ear. It divides the neck into anterior and posterior triangles.",
-    "description": "A thick strap with two heads below (sternal and clavicular) that join into one belly running up and back.",
-    "function": "One side bends the neck to the same side and turns the face to the opposite side; both together flex the neck and help breathe in when the head is fixed. Origin: manubrium of sternum and medial third of clavicle -> insertion: mastoid process and lateral superior nuchal line. Nerve supply: accessory nerve (CN XI), with sensory fibres from C2-C3.",
-    "mnemonic": "To turn your face to the left, use your right SCM: \"look away from it\".",
-    "clinical": "Torticollis (wry neck) is when the head is tilted and turned from a shortened muscle; congenital torticollis in babies is linked to a fibrous lump in it.",
-    "hint": "The prominent diagonal strap on the side of the neck, from the top of the breastbone and collarbone to the bump behind the ear."
+    "origin": "Named after where it attaches: the sternum or breastbone, the clavicle or collarbone, and the mastoid bump behind the ear.",
+    "location": "On the side of your neck, running on a slant from the top of the breastbone and collarbone up to the bump behind your ear.",
+    "description": "A thick strap with two heads at the bottom, one on the breastbone and one on the collarbone. They join into one belly running up and back.",
+    "function": "One side tilts your head to its own side and turns your face the other way. Both together bend your neck forward. The accessory nerve drives it.",
+    "mnemonic": "To turn your face to the left, you use your right one. Your face looks away from the muscle that is working.",
+    "clinical": "In wry neck, or torticollis, a shortened muscle keeps the head tilted and turned. Babies can be born with a firm lump in it that causes this.",
+    "hint": "The big slanting strap on the side of the neck, from the top of the breastbone and collarbone to the bump behind the ear."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "The right sternocleidomastoid turns the face towards which side?",
+     "text": "The right sternocleidomastoid turns the face toward which side?",
      "options": [
       "The right",
       "Straight up",
       "The left",
-      "It does not rotate the head"
+      "It does not turn the head"
      ],
      "answer": 2,
-     "explanation": "One sternocleidomastoid turns the face to the opposite side."
+     "explanation": "Each sternocleidomastoid turns your face to the opposite side, so the right one turns it left."
     },
     {
      "kind": "function",
-     "text": "Which nerve supplies the sternocleidomastoid?",
+     "text": "Which nerve makes the sternocleidomastoid move?",
      "options": [
       "Phrenic nerve",
       "Accessory nerve (CN XI)",
@@ -1661,7 +1661,7 @@
       "Greater occipital nerve"
      ],
      "answer": 1,
-     "explanation": "Motor supply is from the accessory nerve (cranial nerve XI)."
+     "explanation": "The accessory nerve, cranial nerve eleven, drives this muscle."
     }
    ]
   },
@@ -1713,38 +1713,38 @@
    ],
    "content": {
     "pronunciation": "SKAY-leenz",
-    "origin": "Greek skalenos, \"uneven\" (like a scalene triangle, with unequal sides).",
-    "location": "Deep on the side of the neck, behind the sternocleidomastoid, running from the cervical transverse processes down to the first two ribs.",
-    "description": "Shown as one structure with three parts: anterior scalene (to the first rib), middle scalene (the largest, to the first rib behind the subclavian artery) and posterior scalene (to the second rib).",
-    "function": "Raise the first and second ribs during forced breathing in, and bend the neck to the same side. Origin: transverse processes of the cervical vertebrae (about C2-C7) -> insertion: anterior and middle to the first rib, posterior to the second rib. Nerve supply: anterior rami of cervical spinal nerves.",
-    "mnemonic": "Anterior and middle go to rib 1, posterior to rib 2; the brachial plexus squeezes between the anterior and middle.",
-    "clinical": "The brachial plexus and subclavian artery pass between the anterior and middle scalenes. Tight scalenes or an extra cervical rib can compress them (thoracic outlet syndrome), causing arm pain, tingling or weakness.",
-    "hint": "Three deep bands on the side of the neck, behind the prominent diagonal strap, running from the neck vertebrae down to the first two ribs."
+    "origin": "From the Greek word for uneven, like a scalene triangle with sides of different lengths.",
+    "location": "Deep on the side of your neck, behind the sternocleidomastoid. They run from the neck bones down to the first two ribs.",
+    "description": "Shown here as one muscle with three parts. The front and middle parts reach the first rib, and the back part reaches the second rib.",
+    "function": "They lift the first and second ribs when you breathe in hard, like after a sprint. They also bend your neck to the side.",
+    "mnemonic": "Front and middle go to rib one, back goes to rib two. The arm nerves squeeze through between the front and middle ones.",
+    "clinical": "The arm nerves and main arm artery pass between the front and middle scalenes. If they get squeezed here, the arm can ache, tingle or feel weak.",
+    "hint": "Three deep bands on the side of the neck, behind the big slanting strap, running from the neck bones down to the first two ribs."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which structures pass between the anterior and middle scalenes?",
+     "text": "What passes between the front and middle scalene muscles?",
      "options": [
-      "The oesophagus and trachea",
+      "The food pipe and windpipe",
       "The brachial plexus and subclavian artery",
       "The phrenic and vagus nerves only",
       "The carotid artery and jugular vein"
      ],
      "answer": 1,
-     "explanation": "The brachial plexus and subclavian artery pass between the anterior and middle scalene."
+     "explanation": "The brachial plexus, the nerves to your arm, and the subclavian artery slip through the gap between these two muscles."
     },
     {
      "kind": "function",
-     "text": "In breathing, what do the scalenes do?",
+     "text": "What do the scalenes do when you breathe?",
      "options": [
-      "Depress the lower ribs",
+      "Pull the lower ribs down",
       "Relax the diaphragm",
       "Close the airway",
-      "Raise the first and second ribs in forced inspiration"
+      "Lift ribs one and two when you breathe in hard"
      ],
      "answer": 3,
-     "explanation": "The scalenes elevate ribs 1 and 2, assisting forced inspiration."
+     "explanation": "The scalenes lift the first two ribs to help you take a big, deep breath."
     }
    ],
    "merged": true

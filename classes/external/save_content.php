@@ -83,6 +83,8 @@ class save_content extends base {
         if ($result['draft'] === null) {
             unset($result['draft']);
         }
+        // Texts students hear may have changed: prepare their voiceover in the background.
+        \mod_aianatomy\local\voice::queue($instance);
         return $result;
     }
 

@@ -25,8 +25,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_aianatomy';
-$plugin->version   = 2026100801;
-$plugin->release   = '1.2.9';
+$plugin->version   = 2026100900;
+$plugin->release   = '1.2.10';
 $plugin->requires  = 2024042200; // Moodle 4.4.
 $plugin->supported = [404, 503];
 $plugin->maturity  = MATURITY_BETA;

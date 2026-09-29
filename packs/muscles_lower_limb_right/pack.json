@@ -108,43 +108,43 @@
    "id": "muscles_ll",
    "label": "Muscles of the lower limb",
    "parent": null,
-   "tip": "Learn the lower limb by compartment: each has a main job and one main nerve (anterior thigh: femoral; medial thigh: obturator; posterior thigh: sciatic). Three tendons meet on the upper medial tibia at the pes anserinus: \"Say Grace before Tea\" (Sartorius, Gracilis, semiTendinosus)."
+   "tip": "Each thigh section has its own nerve: femoral in front, obturator inside, sciatic behind. Say Grace before Tea names three tendons below the inner knee."
   },
   {
    "id": "bones_context",
    "label": "Bones (context)",
    "parent": "muscles_ll",
-   "tip": "Muscles pull on bones: the origin is usually the more fixed, proximal attachment and the insertion the more mobile, distal one. Link each muscle to the bony landmarks it crosses to work out its action."
+   "tip": "Muscles pull on bones. The origin is usually the steadier end nearer your trunk, and the insertion is the end that moves."
   },
   {
    "id": "gluteal",
    "label": "Gluteal region and hip",
    "parent": "muscles_ll",
-   "tip": "Gluteus maximus extends the hip; gluteus medius and minimus abduct it and keep the pelvis level when you stand on one leg. The deep lateral rotators from top to bottom: \"Play Golf Or Go Out Quickly\" (Piriformis, Gemellus superior, Obturator internus, Gemellus inferior, Obturator externus, Quadratus femoris)."
+   "tip": "Gluteus maximus pushes your hip back, while medius and minimus keep your pelvis level on one leg. Play Golf Or Go Out Quickly names the six deep rotators, top to bottom."
   },
   {
    "id": "thigh_anterior",
    "label": "Thigh: anterior compartment",
    "parent": "muscles_ll",
-   "tip": "Quadriceps = four heads: rectus femoris plus three vasti (lateralis, medialis, intermedius), all joining the patellar tendon and all supplied by the femoral nerve. Iliacus and psoas major join as iliopsoas, the strongest hip flexor."
+   "tip": "The quadriceps has four heads that share one tendon over the kneecap, all run by the femoral nerve. Iliacus and psoas join as iliopsoas, your strongest hip lifter."
   },
   {
    "id": "thigh_medial",
    "label": "Thigh: medial (adductor) compartment",
    "parent": "muscles_ll",
-   "tip": "The adductors (pectineus, adductor longus, brevis and magnus, gracilis) pull the thigh towards the midline and are mainly supplied by the obturator nerve. Exceptions: pectineus is usually femoral, and the hamstring part of adductor magnus is supplied by the sciatic (tibial) nerve."
+   "tip": "The adductors pull your thigh inwards, like squeezing a ball between your knees. Most use the obturator nerve, but pectineus and part of adductor magnus are exceptions."
   },
   {
    "id": "thigh_posterior",
    "label": "Thigh: posterior compartment (hamstrings)",
    "parent": "muscles_ll",
-   "tip": "True hamstrings arise from the ischial tuberosity, cross both hip and knee, and are supplied by the sciatic nerve: they extend the hip and flex the knee. Semitendinosus sits on Top of semimembranosus; biceps femoris goes to the lateral side (fibula)."
+   "tip": "The hamstrings start at your sitting bone and cross hip and knee, so they swing your leg back and bend your knee. Semitendinosus sits on Top of semimembranosus."
   },
   {
    "id": "leg",
    "label": "Leg muscles",
    "parent": "muscles_ll",
-   "tip": "Leg compartments: anterior (dorsiflex, deep fibular nerve), lateral (evert, superficial fibular nerve), posterior (plantarflex, tibial nerve). Behind the medial malleolus: \"Tom, Dick And Very Nervous Harry\" (Tibialis posterior, flexor Digitorum longus, Artery, Vein, Nerve, flexor Hallucis longus)."
+   "tip": "The front of the leg lifts your foot, the outer side turns it out, and the back points it down. Behind the inner ankle, think Tom, Dick And Very Nervous Harry."
   }
  ],
  "structures": [
@@ -240,12 +240,12 @@
    "relationships": [],
    "content": {
     "pronunciation": "bohnz of the PEL-vis and LOH-er lim",
-    "origin": "Pelvis is Latin for \"basin\"; limb is from Old English lim, \"part of the body\".",
-    "location": "The right hip bone, sacrum and the bones of the thigh and leg, shown as a guide for muscle attachments.",
-    "description": "Includes the hip bone (ilium, ischium, pubis), sacrum, femur, patella, tibia and fibula. Key muscle landmarks are the iliac crest, ischial tuberosity, greater and lesser trochanters, linea aspera and tibial tuberosity.",
-    "function": "Provides the levers and attachment points that the hip, thigh and leg muscles pull on to move the hip, knee and ankle.",
-    "mnemonic": "Sit on your ischial tuberosities: that is where the hamstrings start.",
-    "clinical": "Avulsion fractures happen where strong muscles pull a piece of bone away, for example at the anterior inferior iliac spine (rectus femoris) in young athletes.",
+    "origin": "Pelvis is Latin for basin, and limb comes from an old English word for a part of the body.",
+    "location": "This pale frame is the right hip bone, the base of the spine, and the bones of the thigh and leg. It shows where the muscles attach.",
+    "description": "It shows the hip bone, thigh bone, kneecap, and the two leg bones, the tibia and fibula. Muscles grip bumps like the sitting bone and the hip crest.",
+    "function": "The bones are the levers. Muscles pull on them to move your hip, knee and ankle with every step.",
+    "mnemonic": "Sit on your hands and feel your sitting bones. That is where the hamstrings start.",
+    "clinical": "A strong muscle can yank a chip of bone off where it attaches. This happens in young athletes, for example at the front of the hip after a hard kick.",
     "hint": "The framework of hip, thigh and leg that every muscle here attaches to."
    },
    "questions": [],
@@ -310,30 +310,30 @@
    ],
    "content": {
     "pronunciation": "GLOO-tee-us MAX-ih-mus",
-    "origin": "Greek gloutos, \"buttock\", and Latin maximus, \"largest\".",
-    "location": "Forms most of the rounded buttock, posterior to the hip joint and covering the smaller gluteal muscles.",
-    "description": "The largest and most superficial gluteal muscle; thick and quadrilateral with coarse fibres running down and laterally.",
-    "function": "Extends and laterally rotates the hip, e.g. climbing stairs or rising from sitting. Posterior ilium, sacrum, coccyx and sacrotuberous ligament -> iliotibial tract and gluteal tuberosity of femur. Inferior gluteal nerve (L5-S2).",
-    "mnemonic": "Maximus for maximum effort: running, climbing and standing up from a chair.",
-    "clinical": "Intramuscular injections are given in the upper outer quadrant of the buttock to avoid the sciatic nerve, which lies deep to the lower part of this muscle.",
-    "hint": "The big superficial buttock muscle you use to stand up from a squat."
+    "origin": "From the Greek word for buttock and the Latin for largest. It is the biggest buttock muscle.",
+    "location": "It forms most of the rounded buttock, behind the hip joint. It covers the smaller buttock muscles underneath.",
+    "description": "The largest buttock muscle and the one nearest the surface. It is thick and square, with coarse fibres running down and out.",
+    "function": "It straightens your hip and turns it outward, powering you up stairs and out of a chair. The inferior gluteal nerve powers it.",
+    "mnemonic": "Maximus means maximum effort. You need it for running, climbing and standing up from a chair.",
+    "clinical": "Injections go in the upper outer part of the buttock. This avoids the sciatic nerve, which runs under the lower part of this muscle.",
+    "hint": "The big surface buttock muscle you use to stand up from a squat."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "What is the main action of gluteus maximus?",
+     "text": "What is the main job of gluteus maximus?",
      "options": [
-      "Hip flexion",
-      "Hip extension",
-      "Knee extension",
-      "Ankle dorsiflexion"
+      "Lifting the thigh forward",
+      "Straightening the hip",
+      "Straightening the knee",
+      "Pulling the foot up"
      ],
      "answer": 1,
-     "explanation": "Gluteus maximus is the main extensor of the hip, used in climbing and rising from sitting."
+     "explanation": "Gluteus maximus is the main hip straightener. It drives you up stairs and out of a chair."
     },
     {
      "kind": "relationship",
-     "text": "Which nerve supplies gluteus maximus?",
+     "text": "Which nerve powers gluteus maximus?",
      "options": [
       "Superior gluteal nerve",
       "Femoral nerve",
@@ -341,7 +341,7 @@
       "Inferior gluteal nerve"
      ],
      "answer": 3,
-     "explanation": "Gluteus maximus is the only muscle supplied by the inferior gluteal nerve (L5-S2)."
+     "explanation": "The inferior gluteal nerve powers gluteus maximus, and this is the only muscle it supplies."
     }
    ]
   },
@@ -407,18 +407,18 @@
    ],
    "content": {
     "pronunciation": "GLOO-tee-us MEE-dee-us",
-    "origin": "Greek gloutos, \"buttock\", and Latin medius, \"middle\" (middle-sized).",
-    "location": "On the outer surface of the ilium, above and lateral to the hip joint; its back part lies deep to gluteus maximus.",
-    "description": "A thick fan-shaped muscle whose fibres converge from the ilium onto the greater trochanter.",
-    "function": "Abducts and medially rotates the hip and keeps the pelvis level when standing on one leg, so it is vital in walking. External ilium between anterior and posterior gluteal lines -> lateral greater trochanter. Superior gluteal nerve (L4-S1).",
-    "mnemonic": "Medius keeps the pelvis in the middle (level) when walking.",
-    "clinical": "Weakness or superior gluteal nerve injury gives a positive Trendelenburg sign: the pelvis drops on the opposite side when standing on the affected leg.",
-    "hint": "Fan-shaped hip abductor on the outer ilium that stops the pelvis dropping as you walk."
+    "origin": "From the Greek word for buttock and the Latin for middle. It is the middle-sized buttock muscle.",
+    "location": "It sits on the outer side of the hip bone, above the hip joint. Put your hand on the side of your hip, just below the crest, to feel it.",
+    "description": "A thick fan whose fibres gather from the hip bone onto the big bump at the top of the thigh bone, the greater trochanter.",
+    "function": "It swings your leg out to the side and turns it inward. Most of all, it keeps your pelvis level when you stand on one leg, so every step stays steady.",
+    "mnemonic": "Medius keeps your pelvis in the middle, nice and level, as you walk.",
+    "clinical": "If it is weak, or its superior gluteal nerve is hurt, the other side of the pelvis drops when you stand on one leg. This is the Trendelenburg sign.",
+    "hint": "The fan-shaped muscle on the outer hip that stops your pelvis dropping as you walk."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "A positive Trendelenburg sign (pelvis drops on the unsupported side) suggests weakness of which muscle?",
+     "text": "Standing on one leg, the other side of the pelvis drops. Which muscle is weak?",
      "options": [
       "Gluteus medius",
       "Piriformis",
@@ -426,19 +426,19 @@
       "Sartorius"
      ],
      "answer": 0,
-     "explanation": "Gluteus medius (with minimus) keeps the pelvis level during single-leg stance."
+     "explanation": "Gluteus medius, helped by gluteus minimus, holds the pelvis level when you stand on one leg."
     },
     {
      "kind": "function",
-     "text": "Gluteus medius mainly moves the hip in which direction?",
+     "text": "Which way does gluteus medius mainly move the hip?",
      "options": [
-      "Adduction",
-      "Flexion",
-      "Abduction",
-      "Lateral rotation only"
+      "In toward the other leg",
+      "Forward",
+      "Out to the side",
+      "Turning outward only"
      ],
      "answer": 2,
-     "explanation": "It abducts and medially rotates the hip."
+     "explanation": "Gluteus medius swings the thigh out to the side and turns it inward."
     }
    ]
   },
@@ -492,18 +492,18 @@
    ],
    "content": {
     "pronunciation": "GLOO-tee-us MIN-ih-mus",
-    "origin": "Greek gloutos, \"buttock\", and Latin minimus, \"smallest\".",
-    "location": "The deepest of the three gluteal muscles, lying directly deep to gluteus medius on the outer ilium.",
-    "description": "The smallest gluteal muscle; thin and fan-shaped, converging on the front of the greater trochanter.",
-    "function": "Abducts and medially rotates the hip and, with gluteus medius, holds the pelvis level in walking. External ilium between anterior and inferior gluteal lines -> anterior surface of greater trochanter. Superior gluteal nerve (L4-S1).",
-    "mnemonic": "Minimus is the smallest and deepest: \"minimum depth to the bone\".",
-    "clinical": "Tears of the gluteus minimus and medius tendons at the greater trochanter are a common cause of lateral hip pain (greater trochanteric pain syndrome).",
-    "hint": "The smallest, deepest buttock muscle, lying right on the ilium under the middle one."
+    "origin": "From the Greek word for buttock and the Latin for smallest. It is the smallest buttock muscle.",
+    "location": "It is the deepest of the three buttock muscles, lying right under gluteus medius on the outer hip bone.",
+    "description": "A thin fan that gathers onto the front of the big bump at the top of the thigh bone.",
+    "function": "It swings your leg out to the side and turns it inward. With gluteus medius, it keeps your pelvis level as you walk.",
+    "mnemonic": "Minimus is the smallest and the deepest, sitting at minimum distance from the bone.",
+    "clinical": "Tears in its tendon and the gluteus medius tendon are a common cause of pain on the outer side of the hip.",
+    "hint": "The smallest, deepest buttock muscle, lying right on the hip bone under the middle one."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which is the deepest of the three gluteal muscles?",
+     "text": "Which is the deepest of the three buttock muscles?",
      "options": [
       "Gluteus maximus",
       "Gluteus medius",
@@ -511,7 +511,7 @@
       "Gluteus minimus"
      ],
      "answer": 3,
-     "explanation": "Gluteus minimus lies deep to gluteus medius, directly on the ilium."
+     "explanation": "Gluteus minimus lies under gluteus medius, right on the hip bone."
     }
    ]
   },
@@ -571,26 +571,26 @@
    ],
    "content": {
     "pronunciation": "TEN-sor FASH-ee-ee LAH-tee",
-    "origin": "Latin tensor, \"stretcher\", fascia, \"band\", and lata, \"broad\": the tightener of the broad band.",
-    "location": "At the front and side of the hip, just below and behind the anterior superior iliac spine, lateral to sartorius.",
-    "description": "A short, flat muscle enclosed in the fascia lata, ending in the long iliotibial tract that runs down the lateral thigh.",
-    "function": "Tenses the fascia lata and iliotibial tract to steady the knee and hip; helps flex, abduct and medially rotate the hip. Anterior superior iliac spine and iliac crest -> iliotibial tract (to the lateral condyle of tibia). Superior gluteal nerve (L4-S1).",
-    "mnemonic": "TFL = Tightens Fascia Lata.",
-    "clinical": "A tight iliotibial tract can rub over the lateral femoral condyle, causing lateral knee pain in runners and cyclists (iliotibial band syndrome).",
-    "hint": "Small muscle at the front edge of the hip that tightens the long band down the outside of the thigh."
+    "origin": "From the Latin for tightener of the broad band. It pulls on a long strap down your thigh.",
+    "location": "It sits at the front and side of the hip, just below and behind the bony point at the front of the pelvis.",
+    "description": "A short flat muscle that runs into the iliotibial tract, a long tough band down the outside of the thigh.",
+    "function": "It tightens the band down your outer thigh to steady your hip and knee. It also helps lift the thigh forward and out to the side.",
+    "mnemonic": "TFL stands for Tightens Fascia Lata, the broad band of the thigh.",
+    "clinical": "If the band is tight, it rubs on the outside of the knee. Runners and cyclists feel this as iliotibial band syndrome.",
+    "hint": "The small muscle at the front edge of the hip that tightens the long band down the outside of the thigh."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "Tensor fasciae latae inserts into which structure?",
+     "text": "Tensor fasciae latae pulls on which structure?",
      "options": [
-      "Calcaneal tendon",
+      "Achilles tendon",
       "Iliotibial tract",
       "Pes anserinus",
-      "Patella"
+      "Kneecap"
      ],
      "answer": 1,
-     "explanation": "TFL ends in the iliotibial tract, part of the fascia lata."
+     "explanation": "Tensor fasciae latae runs into the iliotibial tract, the tough band down the outside of the thigh."
     }
    ]
   },
@@ -648,18 +648,18 @@
    ],
    "content": {
     "pronunciation": "pir-ih-FOR-mis",
-    "origin": "Latin pirum, \"pear\", and forma, \"shape\": pear-shaped.",
-    "location": "Deep in the buttock, running from the front of the sacrum through the greater sciatic foramen to the top of the greater trochanter.",
-    "description": "A flat, pear-shaped muscle; the key landmark of the gluteal region, with the sciatic nerve usually emerging just below it.",
-    "function": "Laterally rotates the extended hip and abducts the flexed hip; helps hold the femoral head in the acetabulum. Anterior surface of sacrum -> superior border of greater trochanter. Nerve to piriformis (S1-S2).",
-    "mnemonic": "Piriformis is the pear in the doorway of the greater sciatic foramen: vessels and nerves pass above and below it.",
-    "clinical": "In piriformis syndrome, a tight or irritated muscle can compress the sciatic nerve, causing buttock pain and sciatica-like symptoms.",
-    "hint": "Pear-shaped deep buttock muscle from the sacrum; the sciatic nerve usually appears just below it."
+    "origin": "From the Latin for pear-shaped.",
+    "location": "It lies deep in the buttock. It runs from the front of the sacrum, out through a gap in the pelvis, to the top of the thigh bone.",
+    "description": "A flat, pear-shaped muscle. It is the key landmark of the buttock, because the sciatic nerve usually comes out just below it.",
+    "function": "It turns your thigh outward, like when you point your toes out. It also helps hold the ball of the hip in its socket.",
+    "mnemonic": "Picture a pear stuck in a doorway. Nerves and vessels squeeze past above and below it.",
+    "clinical": "A tight piriformis can press on the sciatic nerve. This causes buttock pain that can run down the leg, like sciatica.",
+    "hint": "The pear-shaped deep buttock muscle from the sacrum, with the body's biggest nerve appearing just below it."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which nerve usually emerges just below piriformis and can be irritated by it?",
+     "text": "Which nerve usually comes out just below piriformis and can be irritated by it?",
      "options": [
       "Femoral nerve",
       "Obturator nerve",
@@ -667,19 +667,19 @@
       "Superficial fibular nerve"
      ],
      "answer": 2,
-     "explanation": "The sciatic nerve normally leaves the greater sciatic foramen below piriformis."
+     "explanation": "The sciatic nerve normally leaves the pelvis just below piriformis, so a tight muscle can press on it."
     },
     {
      "kind": "function",
-     "text": "Piriformis mainly produces which movement of the extended hip?",
+     "text": "Piriformis mainly turns the straight hip which way?",
      "options": [
-      "Lateral rotation",
-      "Flexion",
-      "Adduction",
-      "Medial rotation"
+      "Turns it outward",
+      "Lifts it forward",
+      "Pulls it inward",
+      "Turns it inward"
      ],
      "answer": 0,
-     "explanation": "Piriformis is a lateral rotator of the extended hip."
+     "explanation": "Piriformis turns the straight hip outward, so your toes point out."
     }
    ]
   },
@@ -725,26 +725,26 @@
    ],
    "content": {
     "pronunciation": "OB-too-ray-tor in-TER-nus",
-    "origin": "Latin obturare, \"to block up\" (it covers the obturator foramen), and internus, \"inner\".",
-    "location": "Arises inside the pelvis on the side wall, then turns sharply around the lesser sciatic notch to reach the greater trochanter.",
-    "description": "A fan-shaped muscle whose tendon bends almost 90 degrees around the ischium; flanked outside the pelvis by the two small gemelli.",
-    "function": "Laterally rotates the extended hip, abducts the flexed hip and steadies the femoral head. Inner surface of obturator membrane and surrounding bone -> medial surface of greater trochanter. Nerve to obturator internus (L5-S2).",
-    "mnemonic": "Internus starts inside the pelvis, then leaves through the lesser sciatic foramen.",
-    "clinical": "It forms part of the side wall of the pelvis and can be a source of deep pelvic or hip pain in some pelvic floor disorders.",
-    "hint": "Starts inside the pelvis on the side wall and bends around the lesser sciatic notch to reach the femur."
+    "origin": "From the Latin for to block up, because it covers a hole in the hip bone, and internus, meaning inner.",
+    "location": "It starts inside the pelvis on the side wall. Then it turns a sharp corner round the back of the hip bone to reach the top of the thigh bone.",
+    "description": "A fan-shaped muscle whose tendon bends almost at a right angle, like a rope over a pulley. Two tiny muscles, the gemelli, run alongside it.",
+    "function": "It turns your thigh outward and keeps the ball of the hip steady in its socket.",
+    "mnemonic": "Internus starts inside. It begins within the pelvis, then slips out through the lesser sciatic gap.",
+    "clinical": "It forms part of the pelvic side wall. In some pelvic floor problems it can cause deep pelvic or hip pain.",
+    "hint": "The muscle that starts inside the pelvis on its side wall and bends round a notch to reach the thigh bone."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Where does obturator internus arise?",
+     "text": "Where does obturator internus start?",
      "options": [
-      "Outer surface of the ilium",
-      "Inner surface of the obturator membrane, inside the pelvis",
-      "Ischial tuberosity only",
-      "Anterior surface of the sacrum"
+      "Outer surface of the hip bone",
+      "Inside the pelvis, on the membrane over a hole",
+      "Sitting bone only",
+      "Front of the sacrum"
      ],
      "answer": 1,
-     "explanation": "Obturator internus arises inside the pelvis from the obturator membrane and surrounding bone."
+     "explanation": "Obturator internus starts inside the pelvis, on the membrane covering the obturator hole and the bone around it."
     }
    ]
   },
@@ -794,26 +794,26 @@
    ],
    "content": {
     "pronunciation": "kwod-RAY-tus FEM-or-is",
-    "origin": "Latin quadratus, \"square\", and femoris, \"of the thigh\".",
-    "location": "Deep in the lower buttock, running horizontally from the ischial tuberosity to the back of the upper femur, below the obturator internus and gemelli.",
-    "description": "A short, flat, rectangular muscle, the lowest of the deep lateral rotators.",
-    "function": "Laterally rotates the hip and helps hold the femoral head in the acetabulum. Lateral border of ischial tuberosity -> quadrate tubercle on the intertrochanteric crest. Nerve to quadratus femoris (L4-S1).",
-    "mnemonic": "Quadratus = square: the square block at the bottom of the lateral rotator stack.",
-    "clinical": "Narrowing of the space between the ischium and femur can squeeze this muscle (ischiofemoral impingement), causing deep buttock pain.",
-    "hint": "Square, horizontal muscle at the bottom of the deep hip rotators, from the sitting bone to the femur."
+    "origin": "From the Latin for square, and femoris, meaning of the thigh.",
+    "location": "It lies deep in the lower buttock. It runs straight across from the sitting bone to the back of the upper thigh bone.",
+    "description": "A short, flat, rectangular muscle. It is the lowest of the deep hip turners.",
+    "function": "It turns your thigh outward and helps hold the ball of the hip in its socket.",
+    "mnemonic": "Quadratus means square. It is the square block at the bottom of the stack of hip turners.",
+    "clinical": "If the gap between the sitting bone and the thigh bone narrows, this muscle gets pinched. This causes deep buttock pain.",
+    "hint": "The square, flat muscle at the bottom of the deep hip turners, from the sitting bone to the thigh bone."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "Quadratus femoris is named for its:",
+     "text": "What is quadratus femoris named for?",
      "options": [
       "Four heads",
       "Four tendons",
       "Square shape",
-      "Four actions"
+      "Four jobs"
      ],
      "answer": 2,
-     "explanation": "Quadratus means square: the muscle is a flat rectangle."
+     "explanation": "Quadratus means square, and this muscle is a flat rectangle."
     }
    ]
   },
@@ -863,13 +863,13 @@
    ],
    "content": {
     "pronunciation": "ih-LY-ah-kus",
-    "origin": "Latin ilium, \"flank\": the muscle of the ilium.",
-    "location": "Lines the iliac fossa on the inner surface of the ilium, then passes under the inguinal ligament to the front of the hip.",
-    "description": "A fan-shaped muscle that joins the psoas major tendon; together they form iliopsoas.",
-    "function": "Flexes the hip (with psoas major, as iliopsoas) and stabilises the hip joint. Iliac fossa, iliac crest and ala of sacrum -> lesser trochanter of femur (with the psoas tendon). Femoral nerve (L2-L3).",
-    "mnemonic": "Iliacus + psoas = iliopsoas: \"I lift my leg\".",
-    "clinical": "Bleeding into the iliacus (e.g. with anticoagulants or haemophilia) can compress the femoral nerve, causing thigh weakness and numbness.",
-    "hint": "Fills the inner bowl of the hip bone and joins the lumbar muscle to reach the lesser trochanter."
+    "origin": "Named after the ilium, the wide upper part of the hip bone.",
+    "location": "It lines the inside of the bowl of your hip bone. Then it passes under the groin crease to the front of the hip.",
+    "description": "A fan-shaped muscle that joins the psoas tendon. Together they are called iliopsoas.",
+    "function": "With psoas major, it lifts your thigh forward, like marching or climbing a step. The femoral nerve powers it.",
+    "mnemonic": "Iliacus and psoas together make iliopsoas. Think: I lift my leg.",
+    "clinical": "Bleeding into this muscle, for example in people on blood thinners, can press on the femoral nerve. The thigh then gets weak and numb.",
+    "hint": "The muscle filling the inner bowl of the hip bone that joins the lower back muscle to reach the thigh bone."
    },
    "questions": [
     {
@@ -882,7 +882,7 @@
       "Quadratus femoris"
      ],
      "answer": 0,
-     "explanation": "Iliacus and psoas major share an insertion on the lesser trochanter as iliopsoas."
+     "explanation": "Iliacus and psoas major share one tendon on the thigh bone, so together they are called iliopsoas."
     }
    ]
   },
@@ -934,30 +934,30 @@
    ],
    "content": {
     "pronunciation": "SOH-as MAY-jor",
-    "origin": "Greek psoa, \"loin muscle\" (the tenderloin), and Latin major, \"larger\".",
-    "location": "Beside the lumbar vertebrae on the posterior abdominal wall, running down across the pelvic brim and under the inguinal ligament to the femur.",
-    "description": "A long, thick spindle-shaped muscle; the only muscle directly joining the vertebral column to the lower limb.",
-    "function": "Flexes the hip (as iliopsoas) and helps flex the trunk and bend it sideways. Bodies, discs and transverse processes of T12-L5 -> lesser trochanter of femur. Anterior rami of lumbar nerves (L1-L3).",
-    "mnemonic": "Psoas = the \"tenderloin\" steak: it runs along the lower back.",
-    "clinical": "Pain on extending the hip (positive psoas sign) can indicate inflammation near the muscle, such as a retrocaecal appendicitis or psoas abscess.",
-    "hint": "The long loin muscle that runs from the lumbar spine to the lesser trochanter."
+    "origin": "From the Greek word for loin muscle. In a cow, it is the tenderloin steak.",
+    "location": "It runs beside your lower spine, deep inside the belly. It passes down over the rim of the pelvis and under the groin to the thigh bone.",
+    "description": "A long, thick, spindle-shaped muscle. It is the only muscle that joins your spine directly to your leg.",
+    "function": "It lifts your thigh forward, like marching up stairs. It also helps you bend forward and sideways at the waist.",
+    "mnemonic": "Think of the tenderloin steak. It runs along the lower back, right beside the spine.",
+    "clinical": "If something inflamed lies against it, such as an appendix or an abscess, stretching the hip back hurts. This is called the psoas sign.",
+    "hint": "The long loin muscle that runs from the lower spine to the inner upper thigh bone."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Psoas major arises from which part of the skeleton?",
+     "text": "Where does psoas major start?",
      "options": [
-      "Iliac fossa",
-      "Lumbar vertebrae (T12-L5)",
-      "Ischial tuberosity",
-      "Anterior sacrum"
+      "Bowl of the hip bone",
+      "Lower spine, T12 to L5",
+      "Sitting bone",
+      "Front of the sacrum"
      ],
      "answer": 1,
-     "explanation": "Psoas major arises from the bodies, discs and transverse processes of T12-L5."
+     "explanation": "Psoas major starts on the lowest back vertebrae, from T12 to L5, then runs down to the thigh bone."
     },
     {
      "kind": "clinical",
-     "text": "Pain when the hip is extended (psoas sign) may point to inflammation near which muscle?",
+     "text": "Pain when the hip is pulled backward, the psoas sign, can point to inflammation near which muscle?",
      "options": [
       "Gluteus maximus",
       "Vastus lateralis",
@@ -965,7 +965,7 @@
       "Soleus"
      ],
      "answer": 2,
-     "explanation": "Inflammation touching psoas major makes stretching it painful."
+     "explanation": "Stretching psoas major pulls on whatever inflamed thing lies beside it, so the stretch hurts."
     }
    ]
   },
@@ -1029,18 +1029,18 @@
    ],
    "content": {
     "pronunciation": "sar-TOR-ee-us",
-    "origin": "Latin sartor, \"tailor\": it helps produce the cross-legged tailor's sitting position.",
-    "location": "Crosses the front of the thigh diagonally from the anterior superior iliac spine to the medial side of the knee.",
-    "description": "The longest muscle in the body; a narrow strap. It forms the lateral border of the femoral triangle.",
-    "function": "Flexes, abducts and laterally rotates the hip and flexes the knee (the cross-legged position). Anterior superior iliac spine -> upper medial surface of tibia (pes anserinus). Femoral nerve (L2-L3).",
-    "mnemonic": "Pes anserinus: \"Say Grace before Tea\" (Sartorius, Gracilis, semiTendinosus) - sartorius is the S at the front.",
-    "clinical": "Irritation of the bursa under the pes anserinus tendons causes pain on the upper medial shin, common in runners and people with knee osteoarthritis.",
-    "hint": "Longest strap muscle in the body, crossing the thigh diagonally from the front of the pelvis to the inside of the knee."
+    "origin": "From the Latin for tailor. Tailors once sat cross-legged, the very position this muscle helps make.",
+    "location": "It crosses the front of the thigh at a slant, from the bony point at the front of the pelvis to the inner side of the knee.",
+    "description": "The longest muscle in the body, a narrow strap. It forms the outer edge of the femoral triangle in the groin.",
+    "function": "It helps lift, open and turn out your hip and bend your knee. Together that puts you in the cross-legged position.",
+    "mnemonic": "Three tendons meet below the inner knee. Say Grace before Tea: Sartorius, Gracilis and semiTendinosus, with sartorius in front.",
+    "clinical": "The fluid sac under these three tendons can get inflamed. This causes pain on the upper inner shin, common in runners and people with knee arthritis.",
+    "hint": "The longest strap muscle in the body, crossing the thigh at a slant from the front of the pelvis to the inner knee."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "Sartorius is named after a:",
+     "text": "Sartorius is named after which job?",
      "options": [
       "Soldier",
       "Tailor",
@@ -1048,11 +1048,11 @@
       "Sailor"
      ],
      "answer": 1,
-     "explanation": "Sartor is Latin for tailor, for the cross-legged position it helps produce."
+     "explanation": "Sartor is Latin for tailor. Tailors sat cross-legged, and this muscle helps you sit that way."
     },
     {
      "kind": "relationship",
-     "text": "Which three tendons form the pes anserinus?",
+     "text": "Which three tendons meet at the pes anserinus below the inner knee?",
      "options": [
       "Sartorius, gracilis, semitendinosus",
       "Sartorius, gracilis, semimembranosus",
@@ -1060,7 +1060,7 @@
       "Sartorius, adductor longus, semitendinosus"
      ],
      "answer": 0,
-     "explanation": "\"Say Grace before Tea\": Sartorius, Gracilis and semiTendinosus."
+     "explanation": "Say Grace before Tea: Sartorius, Gracilis and semiTendinosus all meet on the upper inner shin."
     }
    ]
   },
@@ -1138,18 +1138,18 @@
    ],
    "content": {
     "pronunciation": "REK-tus FEM-or-is",
-    "origin": "Latin rectus, \"straight\", and femoris, \"of the thigh\".",
-    "location": "Runs straight down the middle of the front of the thigh, superficial to vastus intermedius and between the other two vasti.",
-    "description": "A bipennate, spindle-shaped muscle; the only quadriceps head that crosses the hip as well as the knee.",
-    "function": "Extends the knee and flexes the hip, as in kicking. Anterior inferior iliac spine and ilium above the acetabulum -> patella via the quadriceps tendon, then tibial tuberosity via the patellar ligament. Femoral nerve (L2-L4).",
-    "mnemonic": "Rectus = straight down the middle, and it crosses two joints: kick a ball.",
-    "clinical": "In adolescents, a hard kick can pull its origin off the anterior inferior iliac spine (avulsion fracture).",
-    "hint": "The straight central quadriceps head, the only one that also crosses the hip."
+    "origin": "From the Latin for straight, and femoris, meaning of the thigh. It runs straight down the thigh.",
+    "location": "It runs straight down the middle of the front of the thigh. It sits on top of vastus intermedius, between the other two vasti.",
+    "description": "A spindle-shaped muscle with feather-like fibres. It is the only quadriceps muscle that crosses the hip as well as the knee.",
+    "function": "It straightens your knee and lifts your thigh forward at the same time, which is exactly what you do when you kick a ball.",
+    "mnemonic": "Rectus runs straight down the middle and crosses two joints. Think of kicking a ball.",
+    "clinical": "In teenagers, a hard kick can pull its starting point off the front of the pelvis, taking a chip of bone with it.",
+    "hint": "The straight central muscle of the front thigh group, the only one that also crosses the hip."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which quadriceps muscle also flexes the hip?",
+     "text": "Which quadriceps muscle also lifts the thigh at the hip?",
      "options": [
       "Vastus lateralis",
       "Vastus intermedius",
@@ -1157,7 +1157,7 @@
       "Vastus medialis"
      ],
      "answer": 2,
-     "explanation": "Rectus femoris arises from the pelvis, so it crosses and flexes the hip."
+     "explanation": "Rectus femoris starts on the pelvis, so it crosses the hip and lifts the thigh as well as straightening the knee."
     }
    ]
   },
@@ -1227,18 +1227,18 @@
    ],
    "content": {
     "pronunciation": "VAS-tus lat-er-AH-lis",
-    "origin": "Latin vastus, \"huge\", and lateralis, \"on the side\".",
-    "location": "Along the lateral side of the thigh, deep to the iliotibial tract.",
-    "description": "The largest quadriceps head; a broad, thick muscle.",
-    "function": "Extends the knee. Greater trochanter and lateral lip of the linea aspera -> patella via the quadriceps tendon, then tibial tuberosity via the patellar ligament. Femoral nerve (L2-L4).",
-    "mnemonic": "Lateral = largest: the big outer thigh muscle.",
-    "clinical": "A common intramuscular injection site, especially in infants, in the middle third of the anterolateral thigh.",
-    "hint": "Largest head of the thigh's front group, on the outer side under the iliotibial tract; a common injection site in babies."
+    "origin": "From the Latin for huge, and lateralis, meaning on the side.",
+    "location": "It runs down the outer side of your thigh, under the tough iliotibial band.",
+    "description": "The biggest of the four quadriceps muscles, broad and thick.",
+    "function": "It straightens your knee, like standing up from a chair or kicking a ball. The femoral nerve powers it.",
+    "mnemonic": "Lateral is largest. It is the big muscle on the outside of your thigh.",
+    "clinical": "It is a common spot for injections, especially in babies, in the middle third of the outer front thigh.",
+    "hint": "The biggest front thigh muscle, on the outer side under the long band, a common injection site in babies."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Which thigh muscle is a common intramuscular injection site in infants?",
+     "text": "Which thigh muscle is a common injection site in babies?",
      "options": [
       "Vastus lateralis",
       "Gracilis",
@@ -1246,7 +1246,7 @@
       "Adductor longus"
      ],
      "answer": 0,
-     "explanation": "The anterolateral thigh over vastus lateralis is safe and well developed in infants."
+     "explanation": "The outer front thigh over vastus lateralis is safe and well developed in babies, so it is a favourite injection site."
     }
    ]
   },
@@ -1318,18 +1318,18 @@
    ],
    "content": {
     "pronunciation": "VAS-tus mee-dee-AH-lis",
-    "origin": "Latin vastus, \"huge\", and medialis, \"towards the middle\".",
-    "location": "On the medial side of the front of the thigh, forming the teardrop bulge just above and medial to the patella.",
-    "description": "A large quadriceps head whose lower oblique fibres (VMO) pull the patella medially.",
-    "function": "Extends the knee and its lower fibres help keep the patella tracking centrally. Intertrochanteric line and medial lip of the linea aspera -> patella via the quadriceps tendon, then tibial tuberosity. Femoral nerve (L2-L4).",
+    "origin": "From the Latin for huge, and medialis, meaning toward the middle.",
+    "location": "It is on the inner side of the front of your thigh. It makes the teardrop bulge just above and inside the kneecap.",
+    "description": "A large quadriceps muscle. Its lowest fibres slant across and pull the kneecap inward.",
+    "function": "It straightens your knee. Its lower fibres keep your kneecap running straight in its groove, like a guide rail.",
     "mnemonic": "Medialis makes the teardrop on the inside of the knee.",
-    "clinical": "Weak or wasted lower fibres are linked to kneecap maltracking and anterior knee pain; this part wastes quickly after knee injury.",
-    "hint": "Teardrop-shaped bulge of the thigh's front group just above and inside the kneecap."
+    "clinical": "Weak lower fibres are linked to the kneecap running off track and pain at the front of the knee. This part shrinks quickly after a knee injury.",
+    "hint": "The teardrop bulge of the front thigh group, just above and inside the kneecap."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "The teardrop-shaped bulge above and medial to the patella is formed by:",
+     "text": "The teardrop bulge above and inside the kneecap is made by which muscle?",
      "options": [
       "Sartorius",
       "Vastus lateralis",
@@ -1337,7 +1337,7 @@
       "Vastus medialis"
      ],
      "answer": 3,
-     "explanation": "The lower oblique fibres of vastus medialis form the teardrop."
+     "explanation": "The low slanting fibres of vastus medialis form the teardrop just above the inner kneecap."
     }
    ]
   },
@@ -1395,18 +1395,18 @@
    ],
    "content": {
     "pronunciation": "VAS-tus in-ter-MEE-dee-us",
-    "origin": "Latin vastus, \"huge\", and intermedius, \"in between\".",
-    "location": "Deepest quadriceps head, lying directly on the front and side of the femoral shaft, deep to rectus femoris.",
-    "description": "A broad muscle wrapped around the femur, hidden between the other vasti.",
-    "function": "Extends the knee. Anterior and lateral surfaces of the femoral shaft -> patella via the quadriceps tendon, then tibial tuberosity via the patellar ligament. Femoral nerve (L2-L4).",
-    "mnemonic": "Intermedius is in the middle and underneath: you cannot see it without lifting rectus femoris.",
-    "clinical": "A direct blow to the front of the thigh can crush it against the femur, causing a painful contusion (\"cork thigh\") and sometimes bone formation in the muscle.",
-    "hint": "Deepest part of the front thigh group, lying right on the femur under the straight central head."
+    "origin": "From the Latin for huge, and intermedius, meaning in between.",
+    "location": "It is the deepest quadriceps muscle. It lies right on the front and outer side of the thigh bone, under rectus femoris.",
+    "description": "A broad muscle wrapped round the thigh bone, hidden between the other vasti.",
+    "function": "It straightens your knee, helping you rise from a squat or climb stairs.",
+    "mnemonic": "Intermedius is in the middle and underneath. You cannot see it without lifting rectus femoris.",
+    "clinical": "A knee to the front of the thigh can crush it against the bone, giving a painful dead leg. Sometimes bone even forms in the muscle.",
+    "hint": "The deepest front thigh muscle, lying right on the thigh bone under the straight central one."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which quadriceps head lies deep to rectus femoris, directly on the femur?",
+     "text": "Which quadriceps muscle lies under rectus femoris, right on the thigh bone?",
      "options": [
       "Vastus lateralis",
       "Vastus intermedius",
@@ -1414,7 +1414,7 @@
       "Sartorius"
      ],
      "answer": 1,
-     "explanation": "Vastus intermedius lies on the anterior and lateral femoral shaft, deep to rectus femoris."
+     "explanation": "Vastus intermedius lies on the front and outer thigh bone, hidden under rectus femoris."
     }
    ]
   },
@@ -1468,18 +1468,18 @@
    ],
    "content": {
     "pronunciation": "pek-TIN-ee-us",
-    "origin": "Latin pecten, \"comb\": it arises from the pecten (pectineal line) of the pubis.",
-    "location": "At the upper medial thigh, forming part of the floor of the femoral triangle between iliopsoas and adductor longus.",
-    "description": "A flat, quadrangular muscle; the most superior of the adductor group.",
-    "function": "Adducts and flexes the hip. Pectineal line of the superior pubic ramus -> pectineal line of the femur, just below the lesser trochanter. Femoral nerve (L2-L3), sometimes with a branch of the obturator nerve.",
-    "mnemonic": "Pectineus = the comb at the top of the adductors, with two jobs (adduct and flex) and sometimes two nerves.",
-    "clinical": "It can be strained in groin injuries along with the other adductors.",
-    "hint": "Flat, square muscle in the floor of the femoral triangle, the highest of the inner thigh group."
+    "origin": "From the Latin for comb. It starts on a comb-like ridge of the pubic bone.",
+    "location": "It sits at the top of the inner thigh, in the floor of the groin triangle, between iliopsoas and adductor longus.",
+    "description": "A flat, square muscle. It is the highest of the inner thigh group.",
+    "function": "It pulls your thigh in and helps lift it forward, like crossing your legs. It is usually powered by the femoral nerve.",
+    "mnemonic": "Pectineus is the comb at the top of the inner thigh. It has two jobs and sometimes two nerves.",
+    "clinical": "It can be strained along with the other inner thigh muscles in a groin injury.",
+    "hint": "The flat square muscle in the floor of the groin triangle, the highest of the inner thigh group."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Unlike most adductors, pectineus is usually supplied by which nerve?",
+     "text": "Unlike most inner thigh muscles, pectineus is usually powered by which nerve?",
      "options": [
       "Obturator nerve",
       "Sciatic nerve",
@@ -1487,7 +1487,7 @@
       "Tibial nerve"
      ],
      "answer": 2,
-     "explanation": "Pectineus is usually supplied by the femoral nerve, sometimes also by the obturator nerve."
+     "explanation": "Pectineus usually runs on the femoral nerve, sometimes with help from the obturator nerve that powers the other adductors."
     }
    ]
   },
@@ -1557,18 +1557,18 @@
    ],
    "content": {
     "pronunciation": "ad-DUK-tor LONG-us",
-    "origin": "Latin adducere, \"to bring towards\", and longus, \"long\".",
-    "location": "In the upper medial thigh, most anterior of the adductors; its medial border forms the medial edge of the femoral triangle.",
-    "description": "A large fan-shaped muscle with a strong tendon you can feel in the groin when the thigh is adducted against resistance.",
-    "function": "Adducts the hip and helps flex it. Body of the pubis below the pubic crest -> middle third of the linea aspera. Obturator nerve, anterior division (L2-L4).",
-    "mnemonic": "The femoral triangle borders: \"SAIL\" - Sartorius, Adductor longus, Inguinal Ligament.",
-    "clinical": "The most commonly strained adductor in \"groin strain\", typical in football, hockey and other kicking or cutting sports.",
-    "hint": "The most anterior inner-thigh muscle, whose tendon stands out in the groin and borders the femoral triangle."
+    "origin": "From the Latin for to bring toward, and longus, meaning long. It brings your leg toward the middle.",
+    "location": "It lies in the upper inner thigh, the front-most of the inner thigh muscles. It forms the inner edge of the groin triangle.",
+    "description": "A large fan-shaped muscle. Its strong tendon stands out in your groin when you squeeze your knees together.",
+    "function": "It pulls your thigh in toward the other leg, like squeezing a ball between your knees. It also helps lift the thigh.",
+    "mnemonic": "The groin triangle has three borders, SAIL: Sartorius, Adductor Longus and the Inguinal Ligament.",
+    "clinical": "It is the inner thigh muscle most often strained in a groin injury. This is common in football, hockey and other sports with kicks and quick turns.",
+    "hint": "The front-most inner thigh muscle, whose tendon stands out in the groin and edges the groin triangle."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Which muscle is most often injured in a groin strain?",
+     "text": "Which muscle is most often hurt in a groin strain?",
      "options": [
       "Adductor longus",
       "Rectus femoris",
@@ -1576,19 +1576,19 @@
       "Gluteus minimus"
      ],
      "answer": 0,
-     "explanation": "Adductor longus is the most commonly strained adductor."
+     "explanation": "Adductor longus is the inner thigh muscle most often strained, especially in kicking and turning sports."
     },
     {
      "kind": "relationship",
-     "text": "Adductor longus forms the medial border of which region?",
+     "text": "Adductor longus forms the inner edge of which area?",
      "options": [
-      "Popliteal fossa",
+      "Hollow behind the knee",
       "Femoral triangle",
       "Greater sciatic foramen",
       "Adductor hiatus"
      ],
      "answer": 1,
-     "explanation": "The femoral triangle is bounded by sartorius, adductor longus and the inguinal ligament."
+     "explanation": "The femoral triangle in the groin is edged by sartorius, adductor longus and the inguinal ligament."
     }
    ]
   },
@@ -1646,26 +1646,26 @@
    ],
    "content": {
     "pronunciation": "ad-DUK-tor BREV-is",
-    "origin": "Latin adducere, \"to bring towards\", and brevis, \"short\".",
-    "location": "In the upper medial thigh, deep to pectineus and adductor longus and in front of adductor magnus.",
-    "description": "A short, triangular muscle; the obturator nerve splits into anterior and posterior divisions around it.",
-    "function": "Adducts the hip and helps flex it. Body and inferior ramus of the pubis -> pectineal line and upper part of the linea aspera. Obturator nerve (L2-L4).",
-    "mnemonic": "Brevis is brief and sandwiched: longus in front, magnus behind.",
-    "clinical": "It can be injured with adductor longus in groin strains.",
-    "hint": "Short triangular inner-thigh muscle sandwiched between the long and large ones, with the obturator nerve's branches on each face."
+    "origin": "From the Latin for to bring toward, and brevis, meaning short.",
+    "location": "It lies in the upper inner thigh, under pectineus and adductor longus, and in front of adductor magnus.",
+    "description": "A short triangular muscle. The obturator nerve splits into two branches, one in front of it and one behind.",
+    "function": "It pulls your thigh in toward the other leg and helps lift it forward.",
+    "mnemonic": "Brevis is brief and sandwiched, with longus in front and magnus behind.",
+    "clinical": "It can be hurt along with adductor longus in a groin strain.",
+    "hint": "The short triangular inner thigh muscle sandwiched between the long and large ones, with nerve branches on each face."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Adductor brevis lies between which two muscles?",
+     "text": "Adductor brevis is sandwiched between which two muscles?",
      "options": [
       "Sartorius and gracilis",
       "Pectineus and iliacus",
-      "Adductor longus (in front) and adductor magnus (behind)",
+      "Adductor longus in front and adductor magnus behind",
       "Vastus medialis and sartorius"
      ],
      "answer": 2,
-     "explanation": "Adductor brevis is sandwiched between adductor longus anteriorly and adductor magnus posteriorly."
+     "explanation": "Adductor brevis sits between adductor longus in front and adductor magnus behind, like the filling in a sandwich."
     }
    ]
   },
@@ -1739,18 +1739,18 @@
    ],
    "content": {
     "pronunciation": "ad-DUK-tor MAG-nus",
-    "origin": "Latin adducere, \"to bring towards\", and magnus, \"great\".",
-    "location": "The deepest and most posterior of the adductors, forming much of the medial and back of the thigh.",
-    "description": "A large triangular muscle with two parts; a gap near its lower end (adductor hiatus) lets the femoral vessels pass into the popliteal fossa.",
-    "function": "Adducts the hip; its adductor part flexes and its hamstring part extends the hip. Inferior pubic ramus, ischial ramus and ischial tuberosity -> linea aspera and adductor tubercle of femur. Obturator nerve (L2-L4) and tibial part of sciatic nerve (L4).",
-    "mnemonic": "Magnus has two parts and two nerves: adductor part (obturator) and hamstring part (sciatic).",
-    "clinical": "The adductor hiatus is where the femoral artery becomes the popliteal artery, a common site of narrowing in peripheral arterial disease.",
-    "hint": "The largest inner-thigh muscle, half adductor and half hamstring, with a gap for the femoral vessels near the knee."
+    "origin": "From the Latin for to bring toward, and magnus, meaning great.",
+    "location": "It is the deepest and most rear of the inner thigh muscles. It fills much of the inner and back part of the thigh.",
+    "description": "A huge triangle with two parts. A gap near its lower end, the adductor hiatus, lets the main thigh vessels pass to the back of the knee.",
+    "function": "It pulls your thigh in powerfully. Its front part helps lift the thigh and its hamstring part helps straighten the hip.",
+    "mnemonic": "Magnus has two parts and two nerves. The adductor part uses the obturator nerve, and the hamstring part uses the sciatic nerve.",
+    "clinical": "At the gap in this muscle, the femoral artery becomes the artery behind the knee. This is a common place for it to narrow in artery disease.",
+    "hint": "The largest inner thigh muscle, half adductor and half hamstring, with a gap for the main vessels near the knee."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The hamstring part of adductor magnus is supplied by which nerve?",
+     "text": "The hamstring part of adductor magnus is powered by which nerve?",
      "options": [
       "Femoral nerve",
       "Obturator nerve",
@@ -1758,11 +1758,11 @@
       "Tibial part of the sciatic nerve"
      ],
      "answer": 3,
-     "explanation": "The hamstring part arises from the ischial tuberosity and is supplied by the tibial part of the sciatic nerve."
+     "explanation": "The hamstring part starts on the sitting bone and is powered by the tibial part of the sciatic nerve, like the other hamstrings."
     },
     {
      "kind": "terminology",
-     "text": "The gap in adductor magnus that lets the femoral vessels reach the back of the knee is the:",
+     "text": "What is the gap in adductor magnus that lets the thigh vessels reach the back of the knee?",
      "options": [
       "Adductor hiatus",
       "Greater sciatic foramen",
@@ -1770,7 +1770,7 @@
       "Femoral triangle"
      ],
      "answer": 0,
-     "explanation": "The femoral vessels pass through the adductor hiatus into the popliteal fossa."
+     "explanation": "The femoral vessels pass through the adductor hiatus to reach the hollow behind the knee."
     }
    ]
   },
@@ -1832,18 +1832,18 @@
    ],
    "content": {
     "pronunciation": "GRAS-ih-lis",
-    "origin": "Latin gracilis, \"slender\".",
-    "location": "The most superficial and medial muscle of the inner thigh, running from the pubis to the upper medial tibia.",
-    "description": "A long, thin strap muscle; the only adductor that crosses the knee.",
-    "function": "Adducts the hip, flexes the knee and helps medially rotate the leg. Body and inferior ramus of the pubis -> upper medial surface of tibia (pes anserinus). Obturator nerve (L2-L3).",
-    "mnemonic": "Gracilis is graceful and slender: the G in \"Say Grace before Tea\".",
-    "clinical": "Because it is expendable, its tendon (often with semitendinosus) is commonly used as a graft in anterior cruciate ligament reconstruction.",
-    "hint": "Slender, superficial strap down the inside of the thigh, the only inner-thigh muscle that crosses the knee."
+    "origin": "From the Latin for slender. It is a long, graceful strap.",
+    "location": "It is the innermost muscle of the inner thigh, right under the skin. It runs from the pubic bone to the upper inner shin.",
+    "description": "A long, thin strap. It is the only inner thigh muscle that crosses the knee.",
+    "function": "It pulls your thigh in, bends your knee and helps turn the leg inward, like gripping a horse with your knees.",
+    "mnemonic": "Gracilis is graceful and slender. It is the G in Say Grace before Tea.",
+    "clinical": "You can manage without it. So its tendon, often with semitendinosus, is a common graft to rebuild a torn anterior cruciate ligament in the knee.",
+    "hint": "The slender surface strap down the inside of the thigh, the only inner thigh muscle that crosses the knee."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which adductor also crosses and flexes the knee?",
+     "text": "Which inner thigh muscle also crosses the knee and helps bend it?",
      "options": [
       "Adductor brevis",
       "Pectineus",
@@ -1851,7 +1851,7 @@
       "Adductor longus"
      ],
      "answer": 2,
-     "explanation": "Gracilis inserts on the upper medial tibia, so it also flexes the knee."
+     "explanation": "Gracilis attaches to the upper inner shin, so it bends the knee as well as pulling the thigh in."
     }
    ]
   },
@@ -1931,30 +1931,30 @@
    ],
    "content": {
     "pronunciation": "BY-seps FEM-or-is",
-    "origin": "Latin bi-, \"two\", caput, \"head\", and femoris, \"of the thigh\": two-headed thigh muscle.",
-    "location": "The lateral hamstring, on the back and outer side of the thigh; its tendon forms the upper lateral border of the popliteal fossa.",
-    "description": "Has a long head from the pelvis and a short head from the femur, joining in one tendon to the fibula.",
-    "function": "Flexes the knee and laterally rotates the leg when the knee is bent; the long head also extends the hip. Long head: ischial tuberosity; short head: linea aspera -> head of fibula. Long head: tibial part of sciatic nerve; short head: common fibular part (L5-S2).",
-    "mnemonic": "Biceps goes to the fibula: B and F sit together on the lateral side.",
-    "clinical": "Hamstring strains, often in the long head of biceps femoris, are common in sprinting sports.",
-    "hint": "Two-headed lateral muscle at the back of the thigh whose tendon runs to the head of the fibula."
+    "origin": "From the Latin for two heads, and femoris, meaning of the thigh. It is the two-headed thigh muscle.",
+    "location": "It is the outer hamstring, on the back and outer side of the thigh. Its tendon forms the upper outer edge of the hollow behind the knee.",
+    "description": "It has a long head from the pelvis and a short head from the thigh bone. They join in one tendon to the top of the fibula.",
+    "function": "It bends your knee and turns the leg outward when the knee is bent. Its long head also straightens the hip as you run.",
+    "mnemonic": "Biceps goes to the fibula. B and F sit together on the outer side.",
+    "clinical": "Hamstring strains are common in sprinting and often hit the long head. The short head does not cross the hip, so it is not a true hamstring.",
+    "hint": "The two-headed outer muscle at the back of the thigh, whose tendon runs to the top of the fibula."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Biceps femoris inserts onto which bone?",
+     "text": "Where does biceps femoris attach below the knee?",
      "options": [
-      "Tibia (medial condyle)",
-      "Fibula (head)",
-      "Patella",
-      "Calcaneus"
+      "Inner top of the tibia",
+      "Head of the fibula",
+      "Kneecap",
+      "Heel bone"
      ],
      "answer": 1,
-     "explanation": "Both heads join into a tendon that inserts on the head of the fibula."
+     "explanation": "Both heads join into one tendon that attaches to the head of the fibula, on the outer side of the knee."
     },
     {
      "kind": "terminology",
-     "text": "Which part of biceps femoris is NOT a true hamstring because it does not cross the hip?",
+     "text": "Which part of biceps femoris is not a true hamstring, because it does not cross the hip?",
      "options": [
       "Long head",
       "Tendon",
@@ -1962,7 +1962,7 @@
       "Lateral head"
      ],
      "answer": 2,
-     "explanation": "The short head arises from the femur, so it acts only on the knee and is supplied by the common fibular nerve."
+     "explanation": "The short head starts on the thigh bone, so it works only the knee. It is also powered by a different nerve, the common fibular nerve."
     }
    ],
    "merged": true
@@ -2031,18 +2031,18 @@
    ],
    "content": {
     "pronunciation": "sem-ee-ten-dih-NOH-sus",
-    "origin": "Latin semi, \"half\", and tendinosus, \"tendinous\": its lower half is a long tendon.",
-    "location": "A medial hamstring on the back of the thigh, lying superficial to (on top of) semimembranosus.",
-    "description": "A fleshy upper part and a long, cord-like lower tendon that curves around the medial knee.",
-    "function": "Extends the hip, flexes the knee and medially rotates the leg when the knee is bent. Ischial tuberosity -> upper medial surface of tibia (pes anserinus). Tibial part of sciatic nerve (L5-S2).",
-    "mnemonic": "Semi-Tendinosus sits on Top and has a long Tendon; the T in \"Say Grace before Tea\".",
-    "clinical": "Its tendon is commonly harvested (often with gracilis) as a graft for anterior cruciate ligament reconstruction.",
-    "hint": "Medial hamstring with a long cord-like lower tendon, lying on top of its flatter partner and joining the pes anserinus."
+    "origin": "From the Latin for half tendon. Its lower half is a long, cord-like tendon.",
+    "location": "It is an inner hamstring on the back of the thigh, lying on top of semimembranosus.",
+    "description": "A fleshy upper part with a long cord of a tendon below, which curves round the inner knee.",
+    "function": "It straightens your hip and bends your knee, as when you pull your heel back while running. With the knee bent, it turns the leg inward.",
+    "mnemonic": "Semi-Tendinosus sits on Top and has a long Tendon. It is the T in Say Grace before Tea.",
+    "clinical": "Surgeons often take its tendon, sometimes with gracilis, to rebuild a torn anterior cruciate ligament in the knee.",
+    "hint": "The inner hamstring with a long cord-like tendon, lying on top of its flatter partner and joining the three-tendon fan below the knee."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which hamstring lies superficial to semimembranosus?",
+     "text": "Which hamstring lies on top of semimembranosus?",
      "options": [
       "Biceps femoris short head",
       "Gracilis",
@@ -2050,19 +2050,19 @@
       "Semitendinosus"
      ],
      "answer": 3,
-     "explanation": "Semitendinosus lies on top of semimembranosus."
+     "explanation": "Semitendinosus lies on top of semimembranosus. Feel for its thin cord of a tendon at the back of the inner knee."
     },
     {
      "kind": "function",
-     "text": "Semitendinosus produces all of these EXCEPT:",
+     "text": "Semitendinosus does all of these EXCEPT which one?",
      "options": [
-      "Hip extension",
-      "Knee flexion",
-      "Knee extension",
-      "Medial rotation of the flexed knee"
+      "Straighten the hip",
+      "Bend the knee",
+      "Straighten the knee",
+      "Turn the bent knee inward"
      ],
      "answer": 2,
-     "explanation": "As a hamstring it flexes, not extends, the knee."
+     "explanation": "Like all hamstrings, it bends the knee. Straightening the knee is the job of the quadriceps at the front."
     }
    ]
   },
@@ -2130,26 +2130,26 @@
    ],
    "content": {
     "pronunciation": "sem-ee-mem-brah-NOH-sus",
-    "origin": "Latin semi, \"half\", and membranosus, \"membranous\": its upper part is a flat, membrane-like tendon.",
-    "location": "The deeper medial hamstring, deep to semitendinosus on the back of the thigh, ending at the back of the medial tibial condyle.",
-    "description": "A broad muscle with a flattened membranous upper tendon; bulkier than semitendinosus in its lower part.",
-    "function": "Extends the hip, flexes the knee and medially rotates the leg when the knee is bent. Ischial tuberosity -> posterior part of the medial condyle of tibia. Tibial part of sciatic nerve (L5-S2).",
-    "mnemonic": "Membranosus = membrane at the top, and it lies below (deep to) tendinosus.",
-    "clinical": "A Baker's (popliteal) cyst often forms from the bursa between semimembranosus and the medial head of gastrocnemius, causing a swelling behind the knee.",
-    "hint": "Deeper medial hamstring with a flat membrane-like upper tendon, ending on the back of the medial tibial condyle."
+    "origin": "From the Latin for half membrane. Its upper part is a flat, sheet-like tendon.",
+    "location": "It is the deeper inner hamstring, under semitendinosus. It ends on the back of the inner top of the tibia.",
+    "description": "A broad muscle with a flat, sheet-like upper tendon. Lower down, it is bulkier than semitendinosus.",
+    "function": "It straightens your hip and bends your knee, like driving your leg back as you sprint. With the knee bent, it turns the leg inward.",
+    "mnemonic": "Membranosus has a membrane at the top, and it lies under its tendon partner.",
+    "clinical": "A Baker's cyst, a fluid swelling behind the knee, often grows from the sac between this muscle and the inner calf muscle.",
+    "hint": "The deeper inner hamstring with a flat sheet-like upper tendon, ending on the back of the inner top of the tibia."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Semimembranosus inserts on the:",
+     "text": "Where does semimembranosus attach below the knee?",
      "options": [
-      "Posterior medial condyle of the tibia",
+      "Back of the inner top of the tibia",
       "Head of the fibula",
-      "Tibial tuberosity",
-      "Lateral condyle of the femur"
+      "Bump on the front of the tibia",
+      "Outer knob of the thigh bone"
      ],
      "answer": 0,
-     "explanation": "Semimembranosus inserts on the back of the medial condyle of the tibia."
+     "explanation": "Semimembranosus attaches to the back of the medial condyle, the inner top of the tibia."
     }
    ]
   },
@@ -2211,18 +2211,18 @@
    ],
    "content": {
     "pronunciation": "tib-ee-AH-lis an-TEER-ee-or",
-    "origin": "Latin tibia, \"shin bone\" (originally \"flute\"), and anterior, \"in front\".",
-    "location": "In the anterior compartment of the leg, just lateral to the sharp front edge of the tibia (the shin).",
-    "description": "A thick, superficial muscle whose tendon is easily felt at the front of the ankle, the most medial tendon there.",
-    "function": "Dorsiflexes the ankle and inverts the foot; supports the medial arch. Lateral condyle and upper lateral surface of tibia and interosseous membrane -> medial cuneiform and base of first metatarsal. Deep fibular nerve (L4-L5).",
-    "mnemonic": "At the front of the ankle, medial to lateral: \"Tom Has A Very Nervous Disposition\" (Tibialis anterior, extensor Hallucis, Artery, Vein, Nerve, extensor Digitorum).",
-    "clinical": "Weakness from common or deep fibular nerve injury causes foot drop and a high-stepping gait; overuse causes anterior shin pain (\"shin splints\").",
-    "hint": "The main shin muscle beside the front edge of the tibia that lifts the foot up and turns the sole inwards."
+    "origin": "From the Latin for shin bone, which once meant flute, and anterior, meaning in front.",
+    "location": "It lies just to the outside of the sharp front edge of your shin bone. Lift your toes and feel it harden.",
+    "description": "A thick surface muscle. Its tendon is the easy one to feel at the inner front of the ankle.",
+    "function": "It lifts your foot so your toes clear the ground as you walk, and it turns the sole inward. It also helps hold up the inner arch.",
+    "mnemonic": "At the front of the ankle, from inside out: Tom Has A Very Nervous Disposition. Tibialis anterior is Tom, the innermost.",
+    "clinical": "If the deep fibular nerve that powers it is hurt, the foot drops and you lift your knee high to walk. Overuse causes shin splints.",
+    "hint": "The main shin muscle beside the front edge of the tibia that lifts your foot and turns the sole inward."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which muscle is the main dorsiflexor and an invertor of the foot?",
+     "text": "Which muscle is the main foot lifter and also turns the sole inward?",
      "options": [
       "Fibularis longus",
       "Tibialis anterior",
@@ -2230,11 +2230,11 @@
       "Flexor hallucis longus"
      ],
      "answer": 1,
-     "explanation": "Tibialis anterior dorsiflexes the ankle and inverts the foot."
+     "explanation": "Tibialis anterior pulls your foot up and turns the sole inward. It is the muscle you feel on your shin."
     },
     {
      "kind": "clinical",
-     "text": "Foot drop after common fibular nerve injury is mainly due to weakness of:",
+     "text": "After a common fibular nerve injury, the foot drops. Which muscle has become weak?",
      "options": [
       "Tibialis anterior",
       "Gastrocnemius",
@@ -2242,7 +2242,7 @@
       "Popliteus"
      ],
      "answer": 0,
-     "explanation": "Tibialis anterior, supplied by the deep fibular nerve, is the main dorsiflexor."
+     "explanation": "Tibialis anterior is the main foot lifter. It is powered by the deep fibular nerve, a branch of the common fibular nerve."
     }
    ]
   },
@@ -2308,26 +2308,26 @@
    ],
    "content": {
     "pronunciation": "ex-TEN-sor dij-ih-TOR-um LONG-us",
-    "origin": "Latin extensor, \"straightener\", digitorum, \"of the toes\", and longus, \"long\".",
-    "location": "In the anterior compartment of the leg, lateral to tibialis anterior, with its tendons fanning out over the top of the foot.",
-    "description": "A pennate muscle whose tendon splits into four for the lateral four toes.",
-    "function": "Extends the lateral four toes and dorsiflexes the ankle. Lateral condyle of tibia, upper three-quarters of the medial fibula and interosseous membrane -> middle and distal phalanges of toes 2-5 via extensor expansions. Deep fibular nerve (L5-S1).",
-    "mnemonic": "Digitorum = digits (toes 2-5); hallucis = hallux (big toe).",
-    "clinical": "Loss of toe extension with foot drop helps localise a deep fibular or common fibular nerve injury.",
-    "hint": "Anterior leg muscle whose four tendons you can see on the top of the foot going to the small toes when you lift them."
+    "origin": "From the Latin for long straightener of the toes.",
+    "location": "It lies at the front of the leg, on the outer side of tibialis anterior. Its tendons fan out over the top of your foot.",
+    "description": "A feather-like muscle whose tendon splits into four, one for each of the four smaller toes.",
+    "function": "It lifts your four smaller toes and helps pull your foot up, so you do not trip on the kerb.",
+    "mnemonic": "Digitorum means digits, your small toes two to five. Hallucis means hallux, your big toe.",
+    "clinical": "If you cannot lift your toes along with foot drop, it helps pin down an injury to the fibular nerve.",
+    "hint": "The front leg muscle whose four tendons show on top of your foot, going to the small toes when you lift them."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Extensor digitorum longus extends which toes?",
+     "text": "Extensor digitorum longus lifts which toes?",
      "options": [
       "Big toe only",
       "All five toes",
-      "Lateral four toes",
+      "The four smaller toes",
       "Little toe only"
      ],
      "answer": 2,
-     "explanation": "Its four tendons go to toes 2 to 5."
+     "explanation": "Its four tendons go to toes two to five, so it lifts the four smaller toes."
     }
    ]
   },
@@ -2377,18 +2377,18 @@
    ],
    "content": {
     "pronunciation": "ex-TEN-sor HAL-uh-sis LONG-us",
-    "origin": "Latin extensor, \"straightener\", hallux, \"big toe\", and longus, \"long\".",
-    "location": "In the anterior compartment of the leg, deep between tibialis anterior and extensor digitorum longus; its tendon surfaces at the ankle.",
-    "description": "A thin muscle whose tendon stands out on top of the foot when you lift the big toe.",
-    "function": "Extends the big toe and dorsiflexes the ankle. Middle part of the anterior surface of the fibula and interosseous membrane -> base of the distal phalanx of the big toe. Deep fibular nerve (L5-S1).",
-    "mnemonic": "Hallux = big toe: extensor hallucis lifts the hallux.",
-    "clinical": "Testing big-toe extension strength is a quick check of the L5 nerve root.",
-    "hint": "The tendon that pops up on the top of the foot when you lift only your big toe."
+    "origin": "From the Latin for long straightener of the big toe. Hallux means big toe.",
+    "location": "It lies deep at the front of the leg, between tibialis anterior and the long toe straightener. Its tendon comes to the surface at the ankle.",
+    "description": "A thin muscle whose tendon stands out on top of your foot when you lift your big toe.",
+    "function": "It lifts your big toe and helps pull your foot up, so the toe clears the ground as you step.",
+    "mnemonic": "Hallux means big toe. Extensor hallucis lifts the hallux.",
+    "clinical": "Testing how strongly you can lift your big toe is a quick check of the L5 nerve root in your lower back.",
+    "hint": "The tendon that pops up on top of your foot when you lift only your big toe."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Weak big-toe extension (extensor hallucis longus) is a useful test of which nerve root?",
+     "text": "Weakness lifting the big toe is a useful test of which nerve root?",
      "options": [
       "L2",
       "L5",
@@ -2396,7 +2396,7 @@
       "L3"
      ],
      "answer": 1,
-     "explanation": "Big-toe extension is a classic test of the L5 root."
+     "explanation": "Lifting the big toe depends on the L5 nerve root, so weakness points to a problem at that level of the lower back."
     }
    ]
   },
@@ -2456,30 +2456,30 @@
    ],
    "content": {
     "pronunciation": "fib-yoo-LAIR-is LONG-us",
-    "origin": "Latin fibula, \"pin\" or \"clasp\" (Greek perone, the same meaning, gives \"peroneus\"), and longus, \"long\".",
-    "location": "In the lateral compartment of the leg, superficial to fibularis brevis; its tendon passes behind the lateral malleolus and under the foot.",
-    "description": "A long muscle with a long tendon that crosses the sole in a groove under the cuboid to reach the medial side of the foot.",
-    "function": "Everts the foot, helps plantarflex the ankle and supports the arches. Head and upper two-thirds of the lateral fibula -> base of first metatarsal and medial cuneiform. Superficial fibular nerve (L5-S2).",
-    "mnemonic": "Longus goes a long way: behind the ankle, under the foot, to the big-toe side, forming a \"stirrup\" with tibialis anterior.",
-    "clinical": "It helps protect against ankle inversion sprains; its tendon can tear or dislocate behind the lateral malleolus.",
-    "hint": "Superficial lateral-leg muscle whose long tendon crosses under the sole to the base of the first metatarsal."
+    "origin": "From the Latin for pin or clasp, and longus, meaning long. Its old name, peroneus, comes from a Greek word with the same meaning.",
+    "location": "It lies on the outer side of the leg, on top of fibularis brevis. Its tendon passes behind the outer ankle bone and under the foot.",
+    "description": "A long muscle with a long tendon. The tendon crosses right under the sole to reach the big toe side of the foot.",
+    "function": "It turns your sole outward, helps point your foot down and braces your arches. The superficial fibular nerve powers it.",
+    "mnemonic": "Longus goes a long way, behind the ankle and under the foot. With tibialis anterior, it forms a stirrup under your arch.",
+    "clinical": "It helps stop you rolling your ankle inward. Its tendon can tear or slip out of place behind the outer ankle bone.",
+    "hint": "The surface outer leg muscle whose long tendon crosses under the sole to the base of the first long foot bone."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "What is the main action of the fibularis (peroneus) muscles?",
+     "text": "What is the main job of the fibularis, or peroneus, muscles?",
      "options": [
-      "Inversion",
-      "Eversion",
-      "Dorsiflexion of the toes",
-      "Knee flexion"
+      "Turning the sole inward",
+      "Turning the sole outward",
+      "Lifting the toes",
+      "Bending the knee"
      ],
      "answer": 1,
-     "explanation": "The lateral compartment muscles evert the foot."
+     "explanation": "The outer leg muscles turn the sole outward. This is called eversion, and it helps you recover from a wobble on uneven ground."
     },
     {
      "kind": "relationship",
-     "text": "Which nerve supplies fibularis longus?",
+     "text": "Which nerve powers fibularis longus?",
      "options": [
       "Deep fibular nerve",
       "Tibial nerve",
@@ -2487,7 +2487,7 @@
       "Superficial fibular nerve"
      ],
      "answer": 3,
-     "explanation": "The lateral compartment is supplied by the superficial fibular nerve."
+     "explanation": "The superficial fibular nerve powers the muscles on the outer side of the leg."
     }
    ]
   },
@@ -2543,18 +2543,18 @@
    ],
    "content": {
     "pronunciation": "fib-yoo-LAIR-is BREV-is",
-    "origin": "Latin fibula, \"pin\" or \"clasp\" (Greek perone gives \"peroneus\"), and brevis, \"short\".",
-    "location": "In the lateral compartment of the leg, deep to fibularis longus; its tendon runs directly behind the lateral malleolus.",
-    "description": "A shorter, lower muscle whose tendon ends on the outer edge of the foot.",
-    "function": "Everts the foot and helps plantarflex the ankle. Lower two-thirds of the lateral surface of the fibula -> tuberosity at the base of the fifth metatarsal. Superficial fibular nerve (L5-S2).",
-    "mnemonic": "Brevis is brief and goes to the fifth (little toe) metatarsal.",
-    "clinical": "A sudden inversion injury can pull off the base of the fifth metatarsal where its tendon attaches (avulsion fracture).",
-    "hint": "Short lateral-leg muscle lying deep to its longer partner, ending on the base of the fifth metatarsal."
+    "origin": "From the Latin for pin or clasp, and brevis, meaning short. Its old name was peroneus brevis.",
+    "location": "It lies on the outer side of the leg, under fibularis longus. Its tendon runs right behind the outer ankle bone.",
+    "description": "A shorter, lower muscle whose tendon ends on the outer edge of your foot.",
+    "function": "It turns your sole outward and helps point your foot down. It helps steady you when your ankle starts to roll.",
+    "mnemonic": "Brevis is brief and goes to the fifth long foot bone, on the little toe side.",
+    "clinical": "When the ankle rolls inward suddenly, this tendon can pull a chip of bone off the base of the fifth long foot bone.",
+    "hint": "The short outer leg muscle under its longer partner, ending on the base of the fifth long foot bone."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "An inversion injury can cause an avulsion fracture of the fifth metatarsal base, pulled by which muscle?",
+     "text": "Rolling your ankle can pull off the base of the fifth long foot bone. Which muscle does the pulling?",
      "options": [
       "Fibularis brevis",
       "Tibialis posterior",
@@ -2562,7 +2562,7 @@
       "Soleus"
      ],
      "answer": 0,
-     "explanation": "Fibularis brevis inserts on the tuberosity of the fifth metatarsal base."
+     "explanation": "Fibularis brevis attaches to the base of the fifth metatarsal, so a sudden ankle roll can make it pull a piece of bone away."
     }
    ]
   },
@@ -2638,18 +2638,18 @@
    ],
    "content": {
     "pronunciation": "gas-trok-NEE-mee-us",
-    "origin": "Greek gaster, \"belly\", and kneme, \"leg\": the belly of the leg.",
-    "location": "The most superficial calf muscle at the back of the leg; its two heads form the lower borders of the popliteal fossa.",
-    "description": "Has medial and lateral heads forming the calf bulge, joining the soleus in the calcaneal (Achilles) tendon.",
-    "function": "Plantarflexes the ankle (strongest with the knee straight) and flexes the knee; raises the heel in walking, running and jumping. Medial and lateral femoral condyles -> posterior calcaneus via the calcaneal tendon. Tibial nerve (S1-S2).",
-    "mnemonic": "Triceps surae = gastrocnemius (2 heads) + soleus: three heads, one tendon.",
-    "clinical": "A sudden push-off can tear the medial head (\"tennis leg\"), causing sharp calf pain.",
-    "hint": "Superficial two-headed calf muscle that crosses the back of the knee and forms the calf bulge."
+    "origin": "From the Greek for belly of the leg. It forms the round belly of your calf.",
+    "location": "It is the surface calf muscle at the back of the leg. Its two heads form the lower edges of the hollow behind the knee.",
+    "description": "Two heads, inner and outer, make the calf bulge and join soleus in the Achilles tendon. The tibial nerve powers them.",
+    "function": "It points your foot down and lifts your heel when you walk, run, jump or stand on tiptoe. It works best with the knee straight and also helps bend the knee.",
+    "mnemonic": "Gastrocnemius has two heads and soleus has one. Three heads, one tendon, called triceps surae.",
+    "clinical": "A sudden push-off can tear its inner head, causing a sharp pain in the calf. This is called tennis leg.",
+    "hint": "The two-headed surface calf muscle that crosses the back of the knee and makes the calf bulge."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Gastrocnemius acts on which two joints?",
+     "text": "Gastrocnemius works on which two joints?",
      "options": [
       "Hip and knee",
       "Knee and ankle",
@@ -2657,11 +2657,11 @@
       "Hip and ankle"
      ],
      "answer": 1,
-     "explanation": "It arises from the femur and inserts on the calcaneus, so it flexes the knee and plantarflexes the ankle."
+     "explanation": "It starts on the thigh bone and ends on the heel, so it bends the knee and points the foot down."
     },
     {
      "kind": "relationship",
-     "text": "Which nerve supplies gastrocnemius?",
+     "text": "Which nerve powers gastrocnemius?",
      "options": [
       "Deep fibular nerve",
       "Femoral nerve",
@@ -2669,7 +2669,7 @@
       "Superficial fibular nerve"
      ],
      "answer": 2,
-     "explanation": "The posterior leg compartment is supplied by the tibial nerve (S1-S2)."
+     "explanation": "The tibial nerve powers all the muscles in the back of the leg, including gastrocnemius."
     }
    ],
    "merged": true
@@ -2744,18 +2744,18 @@
    ],
    "content": {
     "pronunciation": "SOH-lee-us",
-    "origin": "Latin solea, \"sandal\" or \"sole\" (the flatfish), for its flat shape.",
-    "location": "Deep to gastrocnemius at the back of the leg, visible on each side of the lower calf.",
-    "description": "A broad, flat muscle; it does not cross the knee. Many veins within it form the calf pump.",
-    "function": "Plantarflexes the ankle whatever the knee position and steadies the leg on the foot when standing. Head and upper posterior fibula, soleal line and medial border of tibia -> posterior calcaneus via the calcaneal tendon. Tibial nerve (S1-S2).",
-    "mnemonic": "Soleus = sole-shaped, and it keeps you standing on your soles.",
-    "clinical": "Its contractions pump venous blood back to the heart (\"peripheral heart\"); inactivity allows stasis and raises the risk of deep vein thrombosis in its veins.",
-    "hint": "Flat, sandal-shaped calf muscle deep to the two-headed one, working even with the knee bent."
+    "origin": "From the Latin for sandal or sole, like the flat fish. It is named for its flat shape.",
+    "location": "It lies under gastrocnemius at the back of the leg. You can see its edges on each side of the lower calf.",
+    "description": "A broad, flat muscle that does not cross the knee. Many veins run inside it.",
+    "function": "It points your foot down whatever your knee is doing. When you stand, it stops you tipping forward.",
+    "mnemonic": "Soleus is sole-shaped, and it keeps you standing on your soles.",
+    "clinical": "Each squeeze pumps blood in your veins back up to the heart. Sitting still for a long time lets blood pool, raising the risk of a clot, called deep vein thrombosis.",
+    "hint": "The flat, sandal-shaped calf muscle under the two-headed one, still working when the knee is bent."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which calf muscle plantarflexes the ankle but does NOT cross the knee?",
+     "text": "Which calf muscle points the foot down but does NOT cross the knee?",
      "options": [
       "Gastrocnemius",
       "Soleus",
@@ -2763,19 +2763,19 @@
       "Biceps femoris"
      ],
      "answer": 1,
-     "explanation": "Soleus arises from the tibia and fibula, below the knee."
+     "explanation": "Soleus starts on the tibia and fibula, below the knee, so it works on the ankle only."
     },
     {
      "kind": "clinical",
-     "text": "The venous pump effect of soleus is important in preventing:",
+     "text": "The pumping action of soleus helps prevent which problem?",
      "options": [
-      "Deep vein thrombosis",
+      "Deep vein thrombosis, a clot",
       "Foot drop",
       "Groin strain",
       "Trendelenburg gait"
      ],
      "answer": 0,
-     "explanation": "Soleus contractions push venous blood upwards, reducing stasis and DVT risk."
+     "explanation": "Each squeeze of soleus pushes blood up the veins, so it does not pool and clot."
     }
    ]
   },
@@ -2819,30 +2819,30 @@
    ],
    "content": {
     "pronunciation": "kal-KAY-nee-al TEN-don",
-    "origin": "Latin calcaneus, \"heel\" (from calx). Achilles was the Greek hero whose only weak spot was his heel.",
-    "location": "At the back of the ankle, running from the lower calf to the back of the heel bone.",
-    "description": "The thickest and strongest tendon in the body, formed by the joined tendons of gastrocnemius and soleus.",
-    "function": "Transmits the pull of gastrocnemius and soleus to the calcaneus to plantarflex the ankle, e.g. rising on tiptoe and pushing off in walking. Tapping it tests the ankle jerk reflex (S1-S2).",
-    "mnemonic": "Achilles' heel: the hero's weak point is the heel tendon.",
-    "clinical": "Rupture often happens in middle-aged people during sudden push-off; squeezing the calf fails to plantarflex the foot (positive Thompson test).",
-    "hint": "The thick cord at the back of the ankle joining the calf to the heel; tapped for the ankle reflex."
+    "origin": "From the Latin for heel. It is also named after Achilles, the Greek hero whose only weak spot was his heel.",
+    "location": "It runs down the back of your ankle, from the lower calf to the back of the heel bone. Pinch it just above your heel.",
+    "description": "The thickest and strongest tendon in the body. It is made by the tendons of gastrocnemius and soleus joining together.",
+    "function": "It passes the pull of your calf muscles to your heel, so you can rise on tiptoe and push off with each step. Tapping it tests the ankle reflex.",
+    "mnemonic": "Remember Achilles' heel. The hero's weak point is this very tendon.",
+    "clinical": "It often snaps in middle-aged people during a sudden push-off. Then squeezing the calf does not point the foot down, a positive Thompson test.",
+    "hint": "The thick cord at the back of the ankle joining the calf to the heel, tapped for the ankle reflex."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "A positive Thompson (calf squeeze) test suggests rupture of the:",
+     "text": "In the Thompson test, squeezing the calf does not point the foot down. What has probably torn?",
      "options": [
       "Patellar ligament",
       "Iliotibial tract",
-      "Calcaneal (Achilles) tendon",
+      "Achilles tendon",
       "Fibularis longus tendon"
      ],
      "answer": 2,
-     "explanation": "If squeezing the calf does not plantarflex the foot, the calcaneal tendon is likely ruptured."
+     "explanation": "Squeezing the calf normally tugs the Achilles tendon and points the foot. If nothing moves, the tendon is probably torn."
     },
     {
      "kind": "relationship",
-     "text": "The calcaneal tendon is formed by which muscles?",
+     "text": "Which muscles form the calcaneal tendon?",
      "options": [
       "Gastrocnemius and soleus",
       "Tibialis anterior and posterior",
@@ -2850,7 +2850,7 @@
       "Popliteus and soleus"
      ],
      "answer": 0,
-     "explanation": "Gastrocnemius and soleus (triceps surae) share the calcaneal tendon."
+     "explanation": "Gastrocnemius and soleus, together called triceps surae, share the calcaneal tendon."
     }
    ]
   },
@@ -2900,18 +2900,18 @@
    ],
    "content": {
     "pronunciation": "pop-LIT-ee-us",
-    "origin": "Latin poples, \"ham\" or back of the knee.",
-    "location": "Deep in the floor of the popliteal fossa at the back of the knee, above soleus.",
-    "description": "A thin, triangular muscle; its tendon runs inside the knee joint capsule and attaches near the lateral meniscus.",
-    "function": "Unlocks the fully extended knee by laterally rotating the femur on the fixed tibia (or medially rotating the tibia), allowing flexion to start. Lateral condyle of femur and lateral meniscus -> posterior tibia above the soleal line. Tibial nerve (L4-S1).",
-    "mnemonic": "Popliteus is the \"key\" that unlocks the knee.",
-    "clinical": "Its tendon can be injured with posterolateral knee ligament injuries, causing pain and instability at the back and outside of the knee.",
-    "hint": "Small triangular muscle in the floor of the back of the knee that unlocks the joint to start bending."
+    "origin": "From the Latin for the back of the knee, the ham.",
+    "location": "It lies deep in the floor of the hollow behind the knee, just above soleus.",
+    "description": "A thin triangle. Its tendon runs inside the knee joint and attaches near the outer meniscus.",
+    "function": "When your knee is locked straight, it gives a small twist to unlock it so you can start to bend.",
+    "mnemonic": "Popliteus is the key that unlocks the knee.",
+    "clinical": "It can be hurt along with the ligaments at the back and outer side of the knee, causing pain and a wobbly knee.",
+    "hint": "The small triangle in the floor of the back of the knee that unlocks the joint so it can bend."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which muscle unlocks the fully extended knee to allow flexion?",
+     "text": "Which muscle unlocks the straight knee so it can start to bend?",
      "options": [
       "Popliteus",
       "Rectus femoris",
@@ -2919,7 +2919,7 @@
       "Tibialis posterior"
      ],
      "answer": 0,
-     "explanation": "Popliteus rotates the femur and tibia relative to each other to unlock the knee."
+     "explanation": "Popliteus gives a small twist between the thigh bone and the tibia that unlocks the straight knee."
     }
    ]
   },
@@ -2989,18 +2989,18 @@
    ],
    "content": {
     "pronunciation": "tib-ee-AH-lis pos-TEER-ee-or",
-    "origin": "Latin tibia, \"shin bone\", and posterior, \"behind\".",
-    "location": "The deepest muscle of the posterior compartment, between the tibia and fibula; its tendon passes behind the medial malleolus.",
-    "description": "A flat muscle whose tendon spreads under the foot to many tarsal and metatarsal bones.",
-    "function": "Inverts the foot, plantarflexes the ankle and is the main support of the medial longitudinal arch. Interosseous membrane and posterior tibia and fibula -> navicular tuberosity, cuneiforms, cuboid and bases of metatarsals 2-4. Tibial nerve (L4-L5).",
-    "mnemonic": "Behind the medial malleolus the order is \"Tom, Dick And Very Nervous Harry\"; tibialis posterior is Tom, closest to the malleolus.",
-    "clinical": "Tibialis posterior tendon dysfunction is a leading cause of adult-acquired flat foot.",
-    "hint": "Deepest back-of-leg muscle, whose tendon hugs the inner ankle bone and holds up the inner arch."
+    "origin": "From the Latin for shin bone, and posterior, meaning behind.",
+    "location": "It is the deepest muscle in the back of the leg, between the tibia and fibula. Its tendon passes behind the inner ankle bone.",
+    "description": "A flat muscle whose tendon spreads out under the foot to many small foot bones.",
+    "function": "It turns your sole inward and helps point your foot down. Most of all, it holds up the inner arch of your foot like a sling.",
+    "mnemonic": "Behind the inner ankle bone, front to back: Tom, Dick And Very Nervous Harry. Tibialis posterior is Tom, closest to the bone.",
+    "clinical": "When this tendon wears out, the inner arch sinks. It is a leading cause of flat foot that starts in adult life.",
+    "hint": "The deepest back-of-leg muscle, whose tendon hugs the inner ankle bone and holds up the inner arch."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Failure of which tendon is a common cause of adult-acquired flat foot?",
+     "text": "Failure of which tendon often causes flat foot in adults?",
      "options": [
       "Fibularis brevis",
       "Extensor digitorum longus",
@@ -3008,11 +3008,11 @@
       "Calcaneal tendon"
      ],
      "answer": 2,
-     "explanation": "Tibialis posterior is the main dynamic support of the medial longitudinal arch."
+     "explanation": "Tibialis posterior is the main muscle holding up the inner arch. When its tendon fails, the arch sinks."
     },
     {
      "kind": "location",
-     "text": "Which tendon lies closest behind the medial malleolus?",
+     "text": "Which tendon lies closest behind the inner ankle bone?",
      "options": [
       "Flexor hallucis longus",
       "Tibialis posterior",
@@ -3020,7 +3020,7 @@
       "Tibialis anterior"
      ],
      "answer": 1,
-     "explanation": "In \"Tom, Dick And Very Nervous Harry\", tibialis posterior (Tom) is first, nearest the malleolus."
+     "explanation": "In Tom, Dick And Very Nervous Harry, Tom is tibialis posterior, first in line and nearest the inner ankle bone."
     }
    ]
   },
@@ -3078,26 +3078,26 @@
    ],
    "content": {
     "pronunciation": "FLEX-or dij-ih-TOR-um LONG-us",
-    "origin": "Latin flexor, \"bender\", digitorum, \"of the toes\", and longus, \"long\".",
-    "location": "In the deep posterior compartment on the tibial (medial) side of the leg; its tendon passes behind the medial malleolus into the sole.",
-    "description": "A thin muscle whose tendon divides into four in the sole for the lateral four toes, crossing superficial to the flexor hallucis longus tendon.",
-    "function": "Flexes the lateral four toes, helps plantarflex the ankle and supports the longitudinal arches. Posterior surface of tibia below the soleal line -> bases of distal phalanges of toes 2-5. Tibial nerve (S2-S3).",
-    "mnemonic": "Tom, Dick And Very Nervous Harry: Dick (flexor Digitorum) is second behind the medial malleolus.",
-    "clinical": "Its tendon can be transferred to replace a failed tibialis posterior tendon in flat-foot surgery.",
-    "hint": "Deep calf muscle on the tibial side whose four tendons curl the small toes, running behind the inner ankle bone."
+    "origin": "From the Latin for long bender of the toes.",
+    "location": "It lies deep in the back of the leg on the tibia side. Its tendon passes behind the inner ankle bone into the sole.",
+    "description": "A thin muscle whose tendon splits into four in the sole, one for each smaller toe. It crosses over the big toe bender's tendon.",
+    "function": "It curls your four smaller toes, helping you grip the ground. It also helps point the foot down and support the arches.",
+    "mnemonic": "Tom, Dick And Very Nervous Harry. Dick, for flexor digitorum, is second behind the inner ankle bone.",
+    "clinical": "Surgeons can move its tendon to replace a worn-out tibialis posterior tendon when repairing a flat foot.",
+    "hint": "The deep calf muscle on the tibia side whose four tendons curl the small toes, running behind the inner ankle bone."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Flexor digitorum longus mainly flexes which toes?",
+     "text": "Flexor digitorum longus mainly bends which toes?",
      "options": [
       "Big toe only",
-      "Lateral four toes",
+      "The four smaller toes",
       "Little toe only",
-      "No toes; it only inverts the foot"
+      "No toes, it only turns the foot in"
      ],
      "answer": 1,
-     "explanation": "Its four tendons insert on the distal phalanges of toes 2-5."
+     "explanation": "Its four tendons attach to the tip bones of toes two to five, so it curls the four smaller toes."
     }
    ]
   },
@@ -3163,18 +3163,18 @@
    ],
    "content": {
     "pronunciation": "FLEX-or HAL-uh-sis LONG-us",
-    "origin": "Latin flexor, \"bender\", hallux, \"big toe\", and longus, \"long\".",
-    "location": "In the deep posterior compartment on the fibular (lateral) side of the leg; its tendon crosses to pass behind the medial malleolus, under the sustentaculum tali.",
-    "description": "A strong pennate muscle; surprisingly it arises on the lateral side but serves the big toe on the medial side.",
-    "function": "Flexes the big toe, giving the final push-off in walking, and helps plantarflex the ankle and support the medial arch. Lower two-thirds of the posterior fibula and interosseous membrane -> base of distal phalanx of big toe. Tibial nerve (S2-S3).",
-    "mnemonic": "Harry is last in \"Tom, Dick And Very Nervous Harry\": flexor Hallucis is the most posterior tendon behind the medial malleolus.",
-    "clinical": "Inflammation of its tendon behind the ankle is common in ballet dancers who work on pointe (\"dancer's tendinitis\").",
-    "hint": "Deep calf muscle from the fibula whose tendon crosses to the inner ankle to bend the big toe for push-off."
+    "origin": "From the Latin for long bender of the big toe. Hallux means big toe.",
+    "location": "It lies deep in the back of the leg on the fibula side. Its tendon crosses over to pass behind the inner ankle bone.",
+    "description": "A strong feather-like muscle. Oddly, it starts on the outer side of the leg but serves the big toe on the inner side.",
+    "function": "It bends your big toe to give the final push-off as you walk. It also helps point the foot down and support the inner arch.",
+    "mnemonic": "Harry comes last in Tom, Dick And Very Nervous Harry. Flexor hallucis is the rearmost tendon behind the inner ankle bone.",
+    "clinical": "Ballet dancers who dance on their toes often inflame this tendon behind the ankle. This is called dancer's tendinitis.",
+    "hint": "The deep calf muscle from the fibula whose tendon crosses to the inner ankle to bend the big toe for push-off."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Flexor hallucis longus arises from which bone?",
+     "text": "Flexor hallucis longus starts on which bone?",
      "options": [
       "Tibia",
       "Femur",
@@ -3182,11 +3182,11 @@
       "Calcaneus"
      ],
      "answer": 2,
-     "explanation": "It arises from the posterior surface of the fibula, then its tendon crosses medially to the big toe."
+     "explanation": "It starts on the back of the fibula, then its tendon crosses inward to reach the big toe."
     },
     {
      "kind": "clinical",
-     "text": "\"Dancer's tendinitis\" behind the ankle affects the tendon of:",
+     "text": "Dancer's tendinitis behind the ankle affects the tendon of which muscle?",
      "options": [
       "Tibialis anterior",
       "Fibularis longus",
@@ -3194,7 +3194,7 @@
       "Flexor hallucis longus"
      ],
      "answer": 3,
-     "explanation": "Repeated pointe work irritates the flexor hallucis longus tendon behind the ankle."
+     "explanation": "Pointing the foot again and again in ballet irritates the flexor hallucis longus tendon behind the ankle."
     }
    ]
   }

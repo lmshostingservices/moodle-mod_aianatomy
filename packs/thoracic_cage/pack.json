@@ -106,31 +106,31 @@
    "id": "thorax",
    "label": "Thoracic cage",
    "parent": null,
-   "tip": "Think of the thoracic cage as a birdcage: sternum in front, 12 pairs of ribs curving round, and flexible costal cartilages linking them so the cage can expand with each breath."
+   "tip": "Think of your chest as a birdcage: the breastbone in front, 12 pairs of ribs curving round, and bendy cartilage letting it swell with every breath."
   },
   {
    "id": "sternum",
    "label": "Sternum",
    "parent": "thorax",
-   "tip": "The sternum is shaped like a sword: manubrium (handle), body (blade) and xiphoid process (tip). The sternal angle between handle and blade marks the second rib."
+   "tip": "The sternum is shaped like a sword, with a handle, a blade and a tip. The ridge where handle meets blade marks the second rib."
   },
   {
    "id": "ribs_right",
    "label": "Ribs (right)",
    "parent": "thorax",
-   "tip": "Remember 7-3-2: seven true ribs (own cartilage to sternum), three false ribs (8-10, join the cartilage above) and two floating ribs (11-12, free front ends)."
+   "tip": "Remember seven, three, two: seven true ribs reach the breastbone, three false ribs join the cartilage above, and two floating ribs end free."
   },
   {
    "id": "ribs_left",
    "label": "Ribs (left)",
    "parent": "thorax",
-   "tip": "Count ribs from the sternal angle: slide sideways onto the second costal cartilage, then count down the ribs and the spaces between them."
+   "tip": "To count ribs, find the ridge where the sword handle meets the blade and slide sideways onto rib two. Then count down, rib by rib."
   },
   {
    "id": "costal_cartilages",
    "label": "Costal cartilages",
    "parent": "thorax",
-   "tip": "Cartilages 1-7 reach the sternum directly (1 by a fixed synchondrosis, 2-7 by small synovial joints); cartilages 8-10 join the one above to form the costal margin."
+   "tip": "Cartilages one to seven reach the breastbone directly. Cartilages eight to ten join the one above, building the lower edge of your rib cage."
   }
  ],
  "structures": [
@@ -178,18 +178,18 @@
    ],
    "content": {
     "pronunciation": "mah-NOO-bree-um",
-    "origin": "Latin manubrium, \"handle\". It is the handle of the sword-shaped sternum.",
-    "location": "The uppermost part of the sternum, at the front and centre of the upper chest, just below the base of the neck.",
-    "description": "A roughly four-sided flat bone. Its upper border has the jugular (suprasternal) notch, with a clavicular notch on each side; the first costal cartilages join its sides and the second join at its lower corners.",
-    "function": "Anchors the clavicles at the sternoclavicular joints (the only bony link between the upper limb and the trunk) and the first and second costal cartilages. It joins the body of the sternum at the manubriosternal joint.",
-    "mnemonic": "Manubrium = handle: the sword is held at the top.",
-    "clinical": "The manubriosternal joint forms a palpable ridge, the sternal angle (angle of Louis). The second costal cartilage joins here, so it is the starting point for counting ribs and intercostal spaces.",
-    "hint": "The top, handle-shaped part of the breastbone, with a notch you can feel at the base of the throat."
+    "origin": "From the Latin word for handle. The breastbone is shaped like a sword, and this is the handle at the top.",
+    "location": "At the very top of your breastbone. Put a finger in the dip at the base of your throat and you are resting on its top edge.",
+    "description": "A flat, roughly square plate of bone, like a sword handle, with a dip on top and a socket on each side for the collarbones. The first rib cartilages join its sides, and the second meet its lower corners.",
+    "function": "It anchors both collarbones, the only bony link between your arms and your trunk. It also holds the first two pairs of rib cartilages and joins the body of the breastbone below.",
+    "mnemonic": "Manubrium sounds like manual, something done by hand. It is the handle you would grip at the top of the sword.",
+    "clinical": "Where it meets the body of the breastbone you can feel a small ridge, the sternal angle. The second rib joins here, so it is the starting point for counting ribs.",
+    "hint": "Look for the top, handle-shaped piece of the breastbone, with a dip you can feel at the base of your throat."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which part of the sternum has the jugular (suprasternal) notch on its upper border?",
+     "text": "Which part of the breastbone has the jugular notch, the dip at the base of your throat, on its top edge?",
      "options": [
       "Body of sternum",
       "Manubrium",
@@ -197,11 +197,11 @@
       "Seventh costal cartilage"
      ],
      "answer": 1,
-     "explanation": "The jugular notch is the dip on the upper border of the manubrium."
+     "explanation": "The jugular notch is the dip on the top edge of the manubrium. You can feel it just above where your collarbones meet."
     },
     {
      "kind": "relationship",
-     "text": "The sternal angle marks the joint between the manubrium and which structure?",
+     "text": "The sternal angle is the ridge where the manubrium meets which part?",
      "options": [
       "Tenth costal cartilage",
       "Xiphoid process",
@@ -209,7 +209,7 @@
       "Body of sternum"
      ],
      "answer": 3,
-     "explanation": "The sternal angle is the manubriosternal joint, where the manubrium meets the body of the sternum."
+     "explanation": "The sternal angle is the joint between the manubrium and the body of the sternum. It feels like a small bump across your breastbone."
     }
    ]
   },
@@ -294,38 +294,38 @@
    ],
    "content": {
     "pronunciation": "BOD-ee of STER-num",
-    "origin": "Sternum is from Greek sternon, \"chest\". The body is also called the gladiolus, Latin for \"small sword\".",
-    "location": "The middle and longest part of the sternum, in the midline of the front of the chest, between the manubrium above and the xiphoid process below.",
-    "description": "A long, flat bone formed by fusion of four segments (sternebrae). Each side edge has notches for the costal cartilages: half of the second, and the third to seventh.",
-    "function": "Forms the front centre of the thoracic cage, protects the heart, and anchors costal cartilages 2 to 7 so the true ribs are joined directly to the sternum.",
-    "mnemonic": "The blade of the sword: long and flat, with the rib cartilages lined up down its edges.",
-    "clinical": "CPR chest compressions are given on the lower half of the sternum. Heart surgery is often done through a median sternotomy, a cut down the length of the sternum.",
-    "hint": "The long flat middle section of the breastbone, where most of the upper rib cartilages attach."
+    "origin": "Sternum comes from the Greek word for chest. This long middle part is sometimes called the gladiolus, Latin for small sword.",
+    "location": "The long middle section of your breastbone, running down the centre of your chest. The handle sits above it and a small pointed tip below.",
+    "description": "A long, flat blade of bone made from four pieces that fuse together as you grow. Notches down each edge hold the rib cartilages, like slots in a rack.",
+    "function": "It shields your heart like a front plate of armour. Its edges hold the cartilages of ribs three to seven and share rib two with the handle, so these true ribs link straight to it.",
+    "mnemonic": "Picture the blade of the sword: long and flat, with the rib cartilages lined up down both edges.",
+    "clinical": "CPR chest compressions push on the lower half of this bone. Heart surgeons often open the chest by cutting straight down its length.",
+    "hint": "Look for the long, flat middle section of the breastbone, where most of the upper rib cartilages attach."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which costal cartilages join the body of the sternum?",
+     "text": "Which rib cartilages join the body of the sternum?",
      "options": [
-      "Second (in part) to seventh",
+      "Part of the second, then third to seventh",
       "First only",
       "Eighth to tenth",
       "Eleventh and twelfth"
      ],
      "answer": 0,
-     "explanation": "The body has notches for half of the second and all of the third to seventh costal cartilages."
+     "explanation": "The body has notches for part of the second cartilage and all of the third to seventh. The second is shared with the manubrium."
     },
     {
      "kind": "clinical",
-     "text": "Where on the sternum are CPR chest compressions given?",
+     "text": "Where do you push on the breastbone during CPR chest compressions?",
      "options": [
       "On the jugular notch",
       "On the manubrium",
       "On the lower half of the sternum",
-      "On the xiphoid process tip"
+      "On the xiphoid tip"
      ],
      "answer": 2,
-     "explanation": "Compressions are given over the lower half of the sternum, above the xiphoid process."
+     "explanation": "Push on the lower half of the breastbone, staying above the small pointed tip at the bottom."
     }
    ]
   },
@@ -366,30 +366,30 @@
    ],
    "content": {
     "pronunciation": "ZY-foyd PROH-ses",
-    "origin": "Greek xiphos, \"sword\", and -oid, \"like\": the sword-shaped tip.",
-    "location": "The small lower tip of the sternum, in the midline at the top of the abdomen, between the lower costal margins.",
-    "description": "The smallest and most variable part of the sternum. It is cartilage in young people and usually ossifies in adults; it may be pointed, split or have a hole.",
-    "function": "Provides attachment for the diaphragm and the linea alba and abdominal muscles. It joins the body of the sternum at the xiphisternal joint.",
-    "mnemonic": "Xiphoid = sword tip: the point at the bottom of the sternum sword.",
-    "clinical": "Hands must stay above the xiphoid during CPR, because pressing on it can break it and injure the liver underneath.",
-    "hint": "The small pointed tip at the very bottom of the breastbone."
+    "origin": "From the Greek word for sword, plus oid, meaning like. It is the pointed tip of the sword-shaped breastbone.",
+    "location": "At the very bottom of your breastbone, where your chest meets the top of your belly. It sits in the V between the lower edges of your ribs.",
+    "description": "The smallest part of the breastbone, and the one that varies most. It starts as cartilage and usually turns to bone in adults, and it may be pointed, split or have a hole.",
+    "function": "It gives an anchor point to the diaphragm, your main breathing muscle, and to the stomach muscles. It joins the body of the breastbone just above.",
+    "mnemonic": "Xiphoid is the sword tip. Picture the sharp point at the bottom of the breastbone sword.",
+    "clinical": "Keep your hands above it during CPR. Pressing on this tip can snap it and push it into the liver underneath.",
+    "hint": "Find the small pointed tip at the very bottom of the breastbone."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Why should CPR hand position stay above the xiphoid process?",
+     "text": "Why should your hands stay above the xiphoid process during CPR?",
      "options": [
       "It holds the heart valves",
-      "Pressing it may break it and injure the liver",
+      "It can break and injure the liver",
       "It contains the sternal angle",
       "It is where the first rib joins"
      ],
      "answer": 1,
-     "explanation": "The xiphoid can fracture and be pushed into the liver below."
+     "explanation": "The xiphoid can snap and be pushed into the liver just below it."
     },
     {
      "kind": "terminology",
-     "text": "What does xiphoid mean?",
+     "text": "What does the word xiphoid mean?",
      "options": [
       "Handle-like",
       "Key-shaped",
@@ -397,7 +397,7 @@
       "Sword-like"
      ],
      "answer": 3,
-     "explanation": "From Greek xiphos, sword, plus -oid, like."
+     "explanation": "It comes from the Greek word xiphos, a sword, plus oid, meaning like."
     }
    ]
   },
@@ -433,18 +433,18 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\"; prima, \"first\". A true rib that reaches the sternum with its own cartilage.",
-    "location": "Right side. The highest and most curved rib, lying mostly under the clavicle at the top of the chest, curving around the upper opening of the thorax. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "The shortest, broadest and most curved rib, flattened with upper and lower surfaces. Its head has a single facet, and its upper surface has the scalene tubercle with grooves for the subclavian vein in front and the subclavian artery behind.",
-    "function": "A true rib: its short costal cartilage joins the manubrium directly. It forms the rim of the superior thoracic aperture (thoracic inlet) and gives attachment to scalenus anterior and scalenus medius.",
-    "mnemonic": "Rib 1 is the flat, tight hoop around the top of the chest: shortest and most curved.",
-    "clinical": "Because it is short and well protected, a fractured first rib signals high-energy trauma, and nearby vessels and the brachial plexus may be injured. An extra cervical rib above it can cause thoracic outlet syndrome.",
-    "hint": "The short, flat, tightly curved hoop at the very top of the rib cage, tucked under the collarbone."
+    "origin": "From the Latin word costa, meaning rib. Rib one is a true rib, because its own cartilage reaches the breastbone.",
+    "location": "On the right, at the very top of the rib cage, tucked mostly under the collarbone. Its back end joins the spine, which is not shown here.",
+    "description": "The shortest, broadest and most curved rib, flat like a tight hoop. On top are grooves for the big vein and artery heading to the arm, with a small bump between them.",
+    "function": "Its short cartilage joins the handle of the breastbone. It forms the rim of the top opening of the chest, and neck muscles called the scalenes attach to it.",
+    "mnemonic": "Rib one is the flat, tight hoop around the top of your chest: shortest, broadest and most curved.",
+    "clinical": "A broken first rib means a very hard blow, and the arm artery and nerves crossing it may be hurt. An extra neck rib above it can squeeze them too.",
+    "hint": "Look for the short, flat, tightly curved hoop at the very top of the cage, tucked under the collarbone."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The costal cartilage of the first rib joins which part of the sternum?",
+     "text": "The cartilage of the first rib joins which part of the breastbone?",
      "options": [
       "Manubrium",
       "Xiphoid process",
@@ -452,7 +452,7 @@
       "Seventh costal cartilage"
      ],
      "answer": 0,
-     "explanation": "The first costal cartilage joins the manubrium directly."
+     "explanation": "Its short cartilage joins the manubrium, the handle at the top of the breastbone."
     },
     {
      "kind": "location",
@@ -464,7 +464,7 @@
       "Twelfth rib"
      ],
      "answer": 2,
-     "explanation": "The first rib is short, broad, flat and tightly curved around the top of the thorax."
+     "explanation": "The first rib is short, broad and flat, curving tightly around the top of the chest."
     }
    ]
   },
@@ -504,18 +504,18 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Right side. The second rib from the top, below the first rib. Its costal cartilage reaches the sternum at the level of the sternal angle. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "Thinner, longer and less curved than the first rib. Its outer surface has a rough tuberosity for serratus anterior.",
-    "function": "A true rib. Its costal cartilage joins the sternum at the sternal angle, touching both the manubrium and the body. It gives origin to part of serratus anterior.",
-    "mnemonic": "Second rib, sternal angle: feel the ridge, slide sideways, and you are on rib 2.",
-    "clinical": "The second rib is found by feeling the sternal angle, making it the reference point for counting ribs. The space below it (2nd intercostal space) is a classic landmark, for example for needle decompression of a tension pneumothorax in the midclavicular line.",
-    "hint": "The rib whose cartilage meets the breastbone at the palpable ridge between its top and middle parts."
+    "origin": "From the Latin costa, meaning rib. Rib two is a true rib, linked straight to the breastbone by its own cartilage.",
+    "location": "On the right, just below the top rib. Its cartilage meets the breastbone at the small ridge you can feel near the top. Its back end joins the spine, not shown here.",
+    "description": "Longer, thinner and less curved than rib one. A rough bump on its outer side marks where a side chest muscle, serratus anterior, grabs on.",
+    "function": "Its cartilage slots in right where the handle and body of the breastbone meet. It also anchors part of serratus anterior, which holds your shoulder blade against your ribs.",
+    "mnemonic": "Second rib, sternal angle. Feel the ridge, slide your finger sideways, and you are on rib two.",
+    "clinical": "Rib two is the starting point for counting ribs. The gap just below it, in line with the middle of the collarbone, is where a needle can release trapped air crushing a lung.",
+    "hint": "Find the rib whose cartilage meets the breastbone right at the small ridge near its top."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Feeling sideways from the sternal angle leads you to which rib's cartilage?",
+     "text": "Slide your finger sideways from the sternal angle. Which rib's cartilage do you reach?",
      "options": [
       "First",
       "Second",
@@ -523,7 +523,7 @@
       "Seventh"
      ],
      "answer": 1,
-     "explanation": "The second costal cartilage joins the sternum at the sternal angle."
+     "explanation": "The second rib's cartilage joins the breastbone right at the sternal angle, which makes it easy to find."
     }
    ]
   },
@@ -563,18 +563,18 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Right side. The third rib from the top, in the upper chest below the second rib. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
-    "function": "A true rib: its own costal cartilage joins the body of the sternum. Like other ribs, it helps protect the heart and lungs and moves up and out during breathing to enlarge the chest.",
-    "mnemonic": "True ribs 1 to 7 go \"straight to the sternum\" with their own cartilage.",
-    "clinical": "The intercostal vein, artery and nerve (VAN, from top to bottom) run in the costal groove under each rib, so needles are passed just above the rib below, not under the rib above.",
-    "hint": "A typical upper true rib, two below the top one, joining the middle section of the breastbone."
+    "origin": "From the Latin costa, meaning rib. As a true rib, it has its own cartilage running straight to the breastbone.",
+    "location": "On the right, the third rib down, in the upper chest. Its back end joins the spine, which is not shown here.",
+    "description": "A typical rib: a small head and neck at the back, then a long curved shaft. A groove under its lower edge hides a vein, an artery and a nerve.",
+    "function": "Its cartilage joins the body of the breastbone. Like a bucket handle, it lifts up and out when you breathe in, making your chest bigger.",
+    "mnemonic": "True ribs one to seven go straight to the sternum. Under every rib, remember VAN: vein, artery, nerve, from top to bottom.",
+    "clinical": "The vein, artery and nerve run under each rib. So needles go in just above the rib below, never just under the rib above.",
+    "hint": "Find a typical upper true rib, two below the top one, joining the middle section of the breastbone."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "What runs in the costal groove on the lower inner edge of a typical rib such as the third?",
+     "text": "What runs in the groove under the lower edge of a typical rib, like the third?",
      "options": [
       "The phrenic nerve",
       "The internal jugular vein",
@@ -582,7 +582,7 @@
       "The intercostal vein, artery and nerve"
      ],
      "answer": 3,
-     "explanation": "The intercostal neurovascular bundle (VAN) lies in the costal groove."
+     "explanation": "A vein, an artery and a nerve run in this groove, in the order VAN from top to bottom."
     }
    ]
   },
@@ -622,26 +622,26 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Right side. The fourth rib from the top, in the upper-middle chest. In males the nipple usually lies near the 4th intercostal space, just below it. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
-    "function": "A true rib: its costal cartilage joins the body of the sternum. It is part of the cage protecting the heart and lungs and moves with breathing.",
-    "mnemonic": "4 and 4: ECG leads V1 and V2 go in the 4th intercostal space.",
-    "clinical": "ECG lead V1 is placed in the 4th intercostal space (just below this rib) at the right sternal border.",
-    "hint": "The true rib whose space below is used for the first two chest ECG electrodes beside the breastbone."
+    "origin": "From the Latin costa, meaning rib. Rib four is a true rib, with its own cartilage reaching the breastbone.",
+    "location": "On the right, fourth from the top, in the upper middle chest. In men the nipple usually sits in the gap just below it. Its back end joins the spine, not shown here.",
+    "description": "A typical rib with a head, a neck and a long curved shaft. A groove along its lower inner edge shelters a vein, an artery and a nerve.",
+    "function": "Its cartilage joins the body of the breastbone. It helps form the cage that protects your heart and lungs, and it moves with every breath.",
+    "mnemonic": "Four and four: the first two chest stickers of a heart tracing go in the fourth gap, one each side of the breastbone.",
+    "clinical": "For a heart tracing, called an ECG, the lead named V1 goes in the gap just below this rib, beside the right edge of the breastbone.",
+    "hint": "Find the true rib whose gap below holds the first two ECG stickers beside the breastbone."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "ECG lead V1 is placed in which intercostal space at the right sternal border?",
+     "text": "ECG lead V1 goes in which gap between the ribs, beside the right edge of the breastbone?",
      "options": [
-      "4th",
-      "3rd",
-      "2nd",
-      "6th"
+      "The fourth gap",
+      "The third gap",
+      "The second gap",
+      "The sixth gap"
      ],
      "answer": 0,
-     "explanation": "V1 goes in the 4th intercostal space, just below the fourth rib, at the right sternal border."
+     "explanation": "V1 goes in the fourth intercostal space, the gap just below the fourth rib, at the right edge of the breastbone."
     }
    ]
   },
@@ -681,18 +681,18 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Right side. The fifth rib from the top, in the middle of the chest, roughly at the level of the lower part of the heart. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
-    "function": "A true rib: its costal cartilage joins the body of the sternum. Middle ribs like this one take the most force from chest impacts.",
-    "mnemonic": "Fifth space, midclavicular line: think \"high five\" for the heartbeat on the left.",
-    "clinical": "The middle ribs are the most often fractured. If several neighbouring ribs break in two places, a flail segment can move in with breathing (flail chest).",
-    "hint": "A mid-chest true rib, one above the rib that chest drains pass over, in the zone most often broken in chest injuries."
+    "origin": "From the Latin costa, meaning rib. Rib five is a true rib, with a cartilage of its own reaching the breastbone.",
+    "location": "On the right, fifth from the top, in the middle of the chest, about level with the lower part of the heart. Its back end joins the spine, not shown here.",
+    "description": "A typical mid-chest rib, long and gently curved like a barrel hoop. It has a head and neck at the back and a groove under its lower edge.",
+    "function": "Its cartilage joins the body of the breastbone. Middle ribs like this one take the most force when the chest is hit.",
+    "mnemonic": "Middle of the cage, middle of the action: the middle ribs take most of the blows.",
+    "clinical": "Middle ribs break most often. If several neighbouring ribs each break in two places, a loose piece sinks in as you breathe in, called flail chest.",
+    "hint": "Find a mid-chest true rib, one above the rib that chest drains slide over."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "If several neighbouring ribs break in two places and the segment moves in with breathing, this is called what?",
+     "text": "Several neighbouring ribs break in two places, and the loose piece sinks in when breathing in. What is this called?",
      "options": [
       "Pectus excavatum",
       "Costochondritis",
@@ -700,7 +700,7 @@
       "Thoracic outlet syndrome"
      ],
      "answer": 2,
-     "explanation": "A flail segment moves paradoxically with breathing: flail chest."
+     "explanation": "The loose flail segment moves the wrong way with each breath. This is flail chest, a serious injury."
     }
    ]
   },
@@ -740,18 +740,18 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Right side. The sixth rib from the top, in the lower chest; its cartilage reaches the lower body of the sternum. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
-    "function": "A true rib: its costal cartilage joins the lower body of the sternum. It also gives attachment to the diaphragm and upper abdominal wall muscles near the front.",
-    "mnemonic": "Triangle of safety: go in above rib 6, in the 5th space, in the mid-axillary line.",
-    "clinical": "Chest drains are placed in the triangle of safety, usually in the 5th intercostal space in the mid-axillary line, passing over the upper border of the sixth rib to avoid the neurovascular bundle.",
-    "hint": "The second-lowest true rib; drains in the side of the chest are passed over its upper border."
+    "origin": "From the Latin costa, meaning rib. Rib six is a true rib, the second lowest to reach the breastbone on its own.",
+    "location": "On the right, sixth from the top, in the lower chest. Its cartilage reaches the lower body of the breastbone. Its back end joins the spine, not shown here.",
+    "description": "A typical rib with a long curved shaft. The groove under its lower edge carries the vein, artery and nerve for the gap beneath it.",
+    "function": "Its cartilage joins the lower body of the breastbone. Near the front, it also anchors the diaphragm and some upper stomach muscles.",
+    "mnemonic": "Triangle of safety: go in above rib six, in the fifth gap, level with the middle of the armpit.",
+    "clinical": "A chest drain goes in at the side of the chest, sliding over the top edge of this rib. That keeps it clear of the nerve and vessels under the rib above.",
+    "hint": "Find the second lowest true rib, whose top edge a chest drain slides over at the side."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "A chest drain in the triangle of safety is passed over the upper border of which rib?",
+     "text": "A chest drain in the triangle of safety slides over the top edge of which rib?",
      "options": [
       "Second",
       "Sixth",
@@ -759,7 +759,7 @@
       "Twelfth"
      ],
      "answer": 1,
-     "explanation": "The drain goes through the 5th intercostal space over the upper border of the sixth rib, avoiding the bundle under the fifth."
+     "explanation": "The drain passes through the fifth gap, over the top of the sixth rib. This avoids the vessels and nerve under the fifth rib."
     }
    ]
   },
@@ -800,26 +800,26 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Right side. The seventh rib from the top and the lowest true rib. Its cartilage curves up to the sternum near the xiphisternal joint. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Ribs lengthen from the first to the seventh, so it is usually the longest rib.",
-    "function": "The last true rib: its own costal cartilage reaches the sternum near the junction of the body and xiphoid process. Its cartilage forms the top of the costal margin.",
-    "mnemonic": "7 - 3 - 2: seven true ribs, three false, two floating. Rib 7 is the last of the seven true ribs.",
-    "clinical": "The seventh costal cartilage starts the costal margin, which is traced from the xiphoid down and out when examining the upper abdomen.",
-    "hint": "The lowest and usually longest rib that still has its own cartilage reaching the breastbone."
+    "origin": "From the Latin costa, meaning rib. Rib seven is the last true rib, the lowest with its own cartilage reaching the breastbone.",
+    "location": "On the right, seventh from the top. Its cartilage curves up to the breastbone near the small pointed tip. Its back end joins the spine, not shown here.",
+    "description": "Usually the longest rib, because ribs grow longer from one to seven and then get shorter. It has a typical head, neck and long curved shaft.",
+    "function": "Its own cartilage reaches the breastbone where the body meets the pointed tip. That cartilage also starts the lower edge of the rib cage, called the costal margin.",
+    "mnemonic": "Seven, three, two: seven true ribs, three false, two floating. Rib seven closes the true group.",
+    "clinical": "Doctors trace the lower edge of the rib cage from here, down and out from the pointed tip, when they examine the upper belly.",
+    "hint": "Find the lowest and usually longest rib that still has its own cartilage reaching the breastbone."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "Rib 7 is described as which type of rib?",
+     "text": "Which type of rib is the seventh rib?",
      "options": [
       "False rib",
       "Floating rib",
-      "Atypical rib with no cartilage",
+      "A rib with no cartilage",
       "The last true rib"
      ],
      "answer": 3,
-     "explanation": "Ribs 1 to 7 are true ribs; the seventh is the last one with its own cartilage reaching the sternum."
+     "explanation": "Ribs one to seven are true ribs. The seventh is the last with its own cartilage reaching the breastbone."
     },
     {
      "kind": "location",
@@ -831,7 +831,7 @@
       "Twelfth"
      ],
      "answer": 0,
-     "explanation": "Ribs increase in length from 1 to 7, then get shorter."
+     "explanation": "Ribs get longer from one to seven, then shorter again, so the seventh is usually the longest."
     }
    ]
   },
@@ -871,30 +871,30 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
-    "location": "Right side. The eighth rib from the top and the first false rib, in the lower chest; its front end continues into cartilage that joins the seventh costal cartilage. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Its front end turns into cartilage that angles upwards.",
-    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. The lower ribs also protect upper abdominal organs such as the liver and spleen.",
-    "mnemonic": "False ribs 8, 9 and 10 \"borrow\" the cartilage above to reach the sternum.",
-    "clinical": "Fractures of the lower right ribs can injure the liver underneath.",
-    "hint": "The first rib whose cartilage does not reach the breastbone, joining the cartilage above instead."
+    "origin": "From the Latin costa, meaning rib. It is a false rib, because it reaches the breastbone only by borrowing the cartilage above.",
+    "location": "On the right, eighth from the top, in the lower chest. Its front end turns into cartilage that joins the seventh rib's cartilage. Its back end joins the spine, not shown here.",
+    "description": "A typical rib with a long curved shaft. At the front it turns into cartilage that angles upward to meet the cartilage above.",
+    "function": "Its cartilage helps build the lower edge of the rib cage. The lower ribs also shield upper belly organs, like the liver on this side.",
+    "mnemonic": "False ribs eight, nine and ten borrow a lift. Each one hitches onto the cartilage above to reach the breastbone.",
+    "clinical": "A broken lower right rib can tear the liver sitting just underneath.",
+    "hint": "Find the first rib whose cartilage does not reach the breastbone but joins the cartilage above."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The costal cartilage of the eighth rib joins what?",
+     "text": "The cartilage of the eighth rib joins what?",
      "options": [
       "The manubrium",
-      "The xiphoid process only",
+      "Only the xiphoid process",
       "The seventh costal cartilage",
-      "Nothing - it floats free"
+      "Nothing, it floats free"
      ],
      "answer": 2,
-     "explanation": "False ribs join the cartilage above; the eighth joins the seventh."
+     "explanation": "False ribs join the cartilage above them. The eighth joins the seventh."
     },
     {
      "kind": "terminology",
-     "text": "Ribs 8, 9 and 10 are called what?",
+     "text": "What are ribs eight, nine and ten called?",
      "options": [
       "True ribs",
       "False ribs",
@@ -902,7 +902,7 @@
       "Cervical ribs"
      ],
      "answer": 1,
-     "explanation": "Their cartilages reach the sternum only indirectly, so they are false (vertebrochondral) ribs."
+     "explanation": "Their cartilages reach the breastbone only through the cartilage above, so they are false ribs."
     }
    ]
   },
@@ -942,18 +942,18 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
-    "location": "Right side. The ninth rib from the top, a false rib in the lower chest, over the upper abdominal organs. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Its cartilage joins the eighth costal cartilage.",
-    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. It also guards the liver on the right and the spleen on the left.",
-    "mnemonic": "7 - 3 - 2: rib 9 is in the middle of the three false ribs.",
-    "clinical": "Fractures of the right lower ribs (roughly 8 to 11) can tear the liver, causing internal haemorrhage.",
-    "hint": "The middle one of the three lower ribs whose cartilage joins the cartilage above."
+    "origin": "From the Latin costa, meaning rib. As a false rib, it reaches the breastbone only through the cartilage above.",
+    "location": "On the right, ninth from the top, low in the chest over the liver. Its back end joins the spine, which is not shown here.",
+    "description": "A typical rib with a head, a neck and a long curved shaft. Its cartilage joins the cartilage of the eighth rib.",
+    "function": "It adds to the lower edge of the rib cage. On this side it also helps guard the liver.",
+    "mnemonic": "Seven, three, two: rib nine sits in the middle of the three false ribs.",
+    "clinical": "Breaks of the lower right ribs, from about eight to eleven, can tear the liver and cause bleeding inside the belly.",
+    "hint": "Find the middle one of the three lower ribs whose cartilage joins the cartilage above."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Fractures of the left 9th to 11th ribs are especially dangerous because they may injure which organ?",
+     "text": "Breaks of the left ninth to eleventh ribs are dangerous because they may injure which organ?",
      "options": [
       "Liver",
       "Oesophagus",
@@ -961,7 +961,7 @@
       "Spleen"
      ],
      "answer": 3,
-     "explanation": "The spleen lies under the left 9th to 11th ribs."
+     "explanation": "The spleen sits under the left ninth to eleventh ribs. A broken rib here can make it bleed."
     }
    ]
   },
@@ -1001,18 +1001,18 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
-    "location": "Right side. The tenth rib from the top, the lowest false rib; its cartilage forms the lowest part of the costal margin at the side of the upper abdomen. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "An atypical rib: like ribs 1, 11 and 12, its head usually has only one facet for a single vertebra. Its cartilage joins the ninth costal cartilage.",
-    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. The lowest point of the costal margin, at the tenth costal cartilage, is a landmark for the upper abdomen.",
-    "mnemonic": "Ten is the end: rib 10 is the last false rib before the two floating ribs.",
-    "clinical": "The lowest point of the costal margin, at the tenth costal cartilage, is used as a landmark for dividing the abdomen into regions (subcostal plane).",
-    "hint": "The lowest rib whose cartilage still joins the costal margin; below it are only the free-ended ribs."
+    "origin": "From the Latin costa, meaning rib. Rib ten is the last false rib, reaching the breastbone through the cartilage above.",
+    "location": "On the right, tenth from the top. Its cartilage forms the lowest part of the rib edge at the side of the upper belly. Its back end joins the spine, not shown here.",
+    "description": "An unusual rib: like ribs one, eleven and twelve, its head usually meets just one vertebra. Its cartilage joins the ninth rib's cartilage.",
+    "function": "Its cartilage forms the lowest point of the rib cage's lower edge. That point is a handy landmark for the upper belly.",
+    "mnemonic": "Ten is the end of the false ribs. After ten, only the two floating ribs are left.",
+    "clinical": "The lowest point of the rib edge, at this rib's cartilage, marks an imaginary line doctors use to divide the belly into regions.",
+    "hint": "Find the lowest rib whose cartilage still joins the rib edge, with only free-ended ribs below it."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which is the lowest rib whose cartilage forms part of the costal margin?",
+     "text": "Which is the lowest rib whose cartilage forms part of the costal margin, the lower rib edge?",
      "options": [
       "Tenth",
       "Eighth",
@@ -1020,7 +1020,7 @@
       "Twelfth"
      ],
      "answer": 0,
-     "explanation": "The tenth is the lowest false rib; ribs 11 and 12 float free."
+     "explanation": "The tenth is the lowest false rib. Ribs eleven and twelve float free at the front."
     }
    ]
   },
@@ -1057,26 +1057,26 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". A floating (vertebral) rib: its front end is free.",
-    "location": "Right side. The eleventh rib from the top, a short floating rib at the lower back and side of the chest. Its tip ends free in the muscles of the abdominal wall. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "An atypical rib: short, with a single facet on its head and no neck or tubercle. Its front tip is capped with a small piece of cartilage that does not join any other cartilage.",
-    "function": "A floating (free) rib: it has no attachment at the front. It protects the back of the kidney and gives attachment to the diaphragm and abdominal wall muscles.",
-    "mnemonic": "7 - 3 - 2: ribs 11 and 12 are the two floating ribs, their front ends float free.",
-    "clinical": "Fractures of the right lower ribs can injure the liver and right kidney.",
-    "hint": "The upper of the two short ribs whose front tips float free with no link to the breastbone."
+    "origin": "From the Latin costa, meaning rib. It is a floating rib, because its front end is free.",
+    "location": "On the right, eleventh from the top, a short rib at the lower back and side. Its tip ends free in the belly wall muscles. Its back end joins the spine, not shown here.",
+    "description": "Short and simple, with one joint surface on its head and no neck or bump. A little cap of cartilage sits on its tip but joins nothing.",
+    "function": "With no link at the front, it floats free. It helps protect the back of the kidney and gives a grip to the diaphragm and belly wall muscles.",
+    "mnemonic": "Seven, three, two: ribs eleven and twelve are the two floating ribs, with front ends floating free.",
+    "clinical": "A broken lower right rib can injure the liver and the right kidney.",
+    "hint": "Find the upper of the two short ribs whose front tips float free."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "Why are ribs 11 and 12 called floating ribs?",
+     "text": "Why are ribs eleven and twelve called floating ribs?",
      "options": [
       "They have no bony head",
       "They are made only of cartilage",
-      "Their front ends do not attach to the sternum or other cartilages",
+      "Their front ends attach to nothing",
       "They move freely inside the lungs"
      ],
      "answer": 2,
-     "explanation": "Floating ribs end free in the abdominal wall with no front attachment."
+     "explanation": "Their front ends stop in the belly wall muscles, with no link to the breastbone or other cartilages."
     }
    ]
   },
@@ -1109,18 +1109,18 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". A floating (vertebral) rib: its front end is free.",
-    "location": "Right side. The lowest rib, at the back of the lower thorax, above the kidney. It is short and angles down and out; its tip ends free in the back muscles. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "An atypical rib: the shortest of the lower ribs (length varies a lot), with a single facet on its head and no neck or tubercle.",
-    "function": "A floating rib: it has no front attachment. It gives attachment to the diaphragm, quadratus lumborum and other back and abdominal wall muscles, and helps protect the kidney.",
-    "mnemonic": "Twelve at the bottom: the last and shortest floating rib, at kidney level.",
-    "clinical": "The kidney lies against the 12th rib, so it is a landmark for kidney surgery and biopsy, and the pleura can dip below it near the spine.",
-    "hint": "The lowest and shortest rib of the cage, lying behind the kidney with a free front tip."
+    "origin": "From the Latin costa, meaning rib. It is the last floating rib, with a free front end.",
+    "location": "On the right, the lowest rib, at the back of the lower chest above the kidney. It angles down and out, and its tip ends free in the back muscles. The spine is not shown here.",
+    "description": "A short rib, often the shortest of the lower ribs, though its length varies a lot. Its head has a single joint surface, and it has no neck or bump.",
+    "function": "It anchors the diaphragm and a deep back muscle, quadratus lumborum, along with other back and belly muscles. It also helps protect the kidney.",
+    "mnemonic": "Twelve is the bottom rung: the last and shortest floating rib, at kidney level.",
+    "clinical": "The kidney lies against this rib, so it guides kidney surgery and biopsy. Near the spine, the lining of the lung can dip below it.",
+    "hint": "Find the lowest and shortest rib, lying behind the kidney with a free front tip."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The twelfth rib is an important landmark for which organ lying against it at the back?",
+     "text": "The twelfth rib is a key landmark for which organ lying against it at the back?",
      "options": [
       "Spleen only",
       "Kidney",
@@ -1128,11 +1128,11 @@
       "Thyroid"
      ],
      "answer": 1,
-     "explanation": "The kidney lies against the twelfth rib at the back."
+     "explanation": "The kidney lies against the twelfth rib at the back, so surgeons use this rib to find it."
     },
     {
      "kind": "location",
-     "text": "Which rib is the lowest in the thoracic cage?",
+     "text": "Which rib is the lowest in the rib cage?",
      "options": [
       "Tenth rib",
       "Eleventh rib",
@@ -1176,13 +1176,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\"; prima, \"first\". A true rib that reaches the sternum with its own cartilage.",
-    "location": "Left side. The highest and most curved rib, lying mostly under the clavicle at the top of the chest, curving around the upper opening of the thorax. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "The shortest, broadest and most curved rib, flattened with upper and lower surfaces. Its head has a single facet, and its upper surface has the scalene tubercle with grooves for the subclavian vein in front and the subclavian artery behind.",
-    "function": "A true rib: its short costal cartilage joins the manubrium directly. It forms the rim of the superior thoracic aperture (thoracic inlet) and gives attachment to scalenus anterior and scalenus medius.",
-    "mnemonic": "Rib 1 is the flat, tight hoop around the top of the chest: shortest and most curved.",
-    "clinical": "A fractured first rib signals high-energy trauma, with possible injury to the subclavian vessels and brachial plexus that cross it.",
-    "hint": "The short, flat, tightly curved hoop at the very top of the rib cage, tucked under the collarbone."
+    "origin": "Costa is Latin for rib. Rib one is the first of the seven true ribs, each with its own cartilage reaching the breastbone.",
+    "location": "On the left, forming the top ring of the rib cage just under the collarbone. Its back end meets the spine, which this pack leaves out.",
+    "description": "A short, wide, flattened rib that curves more than any other. Its top surface has grooves where the main blood vessels to the arm cross over it.",
+    "function": "It links straight to the top of the breastbone by a short cartilage. With its partner, it frames the opening where the windpipe and food pipe enter the chest.",
+    "mnemonic": "One is the crown: the small, flat ring that sits on top of all the other ribs.",
+    "clinical": "Breaking it takes a big force, like a car crash. Doctors then check the artery and nerves to the arm, which cross right over it.",
+    "hint": "Look for the top ring of the cage on the left, small, flat and sharply curved under the collarbone."
    },
    "questions": []
   },
@@ -1222,13 +1222,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Left side. The second rib from the top, below the first rib. Its costal cartilage reaches the sternum at the level of the sternal angle. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "Thinner, longer and less curved than the first rib. Its outer surface has a rough tuberosity for serratus anterior.",
-    "function": "A true rib. Its costal cartilage joins the sternum at the sternal angle, touching both the manubrium and the body. It gives origin to part of serratus anterior.",
-    "mnemonic": "Second rib, sternal angle: feel the ridge, slide sideways, and you are on rib 2.",
-    "clinical": "Found from the sternal angle, the second rib is the reference point for counting ribs. The 2nd intercostal space at the left sternal edge is where the pulmonary valve is best heard.",
-    "hint": "The rib whose cartilage meets the breastbone at the palpable ridge between its top and middle parts."
+    "origin": "Costa means rib in Latin. The second rib belongs to the true ribs, the top seven that reach the breastbone on their own.",
+    "location": "On the left, second from the top. Its cartilage lines up with the bump across the upper breastbone. The spine it joins at the back is not shown in this pack.",
+    "description": "A slimmer, longer and flatter curve than the rib above. Its outer surface has a rough patch where a side chest muscle attaches.",
+    "function": "It links to both the handle and the body of the breastbone at once. It also gives a grip to serratus anterior, the muscle that holds your shoulder blade flat.",
+    "mnemonic": "Two for the ridge: rib two meets the sternal angle, the bump you can feel across your upper breastbone.",
+    "clinical": "Once you find rib two, you can count down to any rib. In the gap just below it, beside the breastbone, a doctor listens to the pulmonary valve.",
+    "hint": "Look for the rib just below the top one on the left, meeting the breastbone at its small ridge."
    },
    "questions": []
   },
@@ -1268,13 +1268,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Left side. The third rib from the top, in the upper chest below the second rib. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
-    "function": "A true rib: its own costal cartilage joins the body of the sternum. Like other ribs, it helps protect the heart and lungs and moves up and out during breathing to enlarge the chest.",
-    "mnemonic": "True ribs 1 to 7 go \"straight to the sternum\" with their own cartilage.",
-    "clinical": "The intercostal vein, artery and nerve run in the costal groove under each rib, so needles and drains are passed just above the upper border of a rib.",
-    "hint": "A typical upper true rib, two below the top one, joining the middle section of the breastbone."
+    "origin": "Costa is Latin for rib. Rib three is one of the true ribs, joined straight to the breastbone by its own cartilage.",
+    "location": "On the left, third from the top, in the upper chest. The spine it joins at the back is not part of this pack.",
+    "description": "A classic rib shape, like a long curved bow. It has a head and neck at the back and a groove along its lower inner edge.",
+    "function": "It links to the body of the breastbone and helps guard your heart and lungs. Each breath in lifts it up and out.",
+    "mnemonic": "Think of a rib as a curved bow with a hidden gutter underneath. The gutter carries a vein, an artery and a nerve.",
+    "clinical": "Because the nerve and vessels hide under each rib, needles and drains go in just above the upper edge of a rib.",
+    "hint": "Look for a typical upper true rib on the left, two below the top, joining the middle of the breastbone."
    },
    "questions": []
   },
@@ -1314,13 +1314,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Left side. The fourth rib from the top, in the upper-middle chest. In males the nipple usually lies near the 4th intercostal space, just below it. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
-    "function": "A true rib: its costal cartilage joins the body of the sternum. It is part of the cage protecting the heart and lungs and moves with breathing.",
-    "mnemonic": "4 and 4: ECG leads V1 and V2 go in the 4th intercostal space.",
-    "clinical": "ECG lead V2 is placed in the 4th intercostal space (just below this rib) at the left sternal border.",
-    "hint": "The true rib whose space below is used for the first two chest ECG electrodes beside the breastbone."
+    "origin": "Costa is Latin for rib. The fourth rib is a true rib, so its own cartilage reaches the breastbone.",
+    "location": "On the left, fourth from the top, in the upper middle chest. In men the nipple usually lies in the gap just below it. The spine it joins is not shown here.",
+    "description": "A typical rib: a knobbly head at the back, then a long, sweeping curve to the front. A groove underneath carries its nerve and blood vessels.",
+    "function": "It joins the body of the breastbone by its own cartilage. It shields the heart and left lung and rises with each breath in.",
+    "mnemonic": "Four and four: V1 and V2 both sit in the fourth gap, V1 on the right and V2 on the left.",
+    "clinical": "For a heart tracing, ECG lead V2 goes in the gap just below this rib, beside the left edge of the breastbone.",
+    "hint": "Look on the left for the true rib whose gap below takes an ECG sticker beside the breastbone."
    },
    "questions": []
   },
@@ -1360,13 +1360,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Left side. The fifth rib from the top, in the middle of the chest, roughly at the level of the lower part of the heart. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
-    "function": "A true rib: its costal cartilage joins the body of the sternum. Middle ribs like this one take the most force from chest impacts.",
-    "mnemonic": "Fifth space, midclavicular line: think \"high five\" for the heartbeat on the left.",
-    "clinical": "The apex beat of the heart is normally felt in the left 5th intercostal space, midclavicular line, just below this rib; ECG lead V4 goes there too.",
-    "hint": "A mid-chest true rib, one above the rib that chest drains pass over, in the zone most often broken in chest injuries."
+    "origin": "Costa is Latin for rib. Rib five is still a true rib, with its own cartilage running to the breastbone.",
+    "location": "On the left, fifth from the top, in the middle of the chest near the lower part of the heart. The spine it joins at the back is not shown here.",
+    "description": "A long, evenly curved rib of typical shape. Its lower inner edge has a groove that carries a nerve and blood vessels.",
+    "function": "It links straight to the body of the breastbone and guards the lower heart. As a middle rib, it takes a lot of the force in chest impacts.",
+    "mnemonic": "High five for the heartbeat. The tip of the heart taps in the fifth gap on the left, just below this rib.",
+    "clinical": "You can usually feel your heartbeat in the gap just below this rib, in line with the middle of the collarbone. ECG lead V4 goes there too.",
+    "hint": "Look on the left for the mid-chest true rib just above the spot where the heartbeat is felt."
    },
    "questions": []
   },
@@ -1406,13 +1406,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Left side. The sixth rib from the top, in the lower chest; its cartilage reaches the lower body of the sternum. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve.",
-    "function": "A true rib: its costal cartilage joins the lower body of the sternum. It also gives attachment to the diaphragm and upper abdominal wall muscles near the front.",
-    "mnemonic": "Triangle of safety: go in above rib 6, in the 5th space, in the mid-axillary line.",
-    "clinical": "Chest drains are placed in the triangle of safety, usually in the 5th intercostal space in the mid-axillary line, over the upper border of the sixth rib.",
-    "hint": "The second-lowest true rib; drains in the side of the chest are passed over its upper border."
+    "origin": "Costa means rib in Latin. The sixth rib is the second last of the seven true ribs.",
+    "location": "On the left, sixth from the top, in the lower chest. Its cartilage meets the lower part of the breastbone body. The spine it joins is not shown here.",
+    "description": "A long, typical rib that sweeps from the spine around to the front. Its lower inner edge has a groove for a nerve and blood vessels.",
+    "function": "It joins the lower breastbone through its own cartilage. At the front it gives a grip to the diaphragm and upper stomach muscles.",
+    "mnemonic": "Six is the safe floor: a chest drain goes in just above it, never below the rib above.",
+    "clinical": "Chest drains go in through the fifth gap at the side of the chest, over the top edge of this rib. This avoids the nerve and vessels under the rib above.",
+    "hint": "Look on the left for the second lowest true rib, the one chest drains slide over."
    },
    "questions": []
   },
@@ -1453,13 +1453,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". True ribs (vertebrosternal) reach the sternum with their own cartilage.",
-    "location": "Left side. The seventh rib from the top and the lowest true rib. Its cartilage curves up to the sternum near the xiphisternal joint. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Ribs lengthen from the first to the seventh, so it is usually the longest rib.",
-    "function": "The last true rib: its own costal cartilage reaches the sternum near the junction of the body and xiphoid process. Its cartilage forms the top of the costal margin.",
-    "mnemonic": "7 - 3 - 2: seven true ribs, three false, two floating. Rib 7 is the last of the seven true ribs.",
-    "clinical": "The seventh costal cartilage starts the costal margin, which is traced from the xiphoid down and out when examining the upper abdomen.",
-    "hint": "The lowest and usually longest rib that still has its own cartilage reaching the breastbone."
+    "origin": "Costa is Latin for rib. Rib seven is the seventh and final true rib.",
+    "location": "On the left, seventh from the top. Its long cartilage bends up to meet the breastbone near its pointed tip. The spine it joins is not shown here.",
+    "description": "The longest rib in most people, sweeping in a big curve around the chest. Ribs lengthen down to this one and then shorten.",
+    "function": "It is the last rib to reach the breastbone on its own. Its cartilage forms the top of the lower rib edge, the costal margin.",
+    "mnemonic": "Lucky seven, last in line: the final rib with its own ticket to the breastbone.",
+    "clinical": "The lower edge of the rib cage begins at this rib's cartilage. Doctors follow it down and out from the pointed tip when they examine the upper belly.",
+    "hint": "Look on the left for the longest rib that still has its own cartilage reaching the breastbone."
    },
    "questions": []
   },
@@ -1499,13 +1499,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
-    "location": "Left side. The eighth rib from the top and the first false rib, in the lower chest; its front end continues into cartilage that joins the seventh costal cartilage. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Its front end turns into cartilage that angles upwards.",
-    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. The lower ribs also protect upper abdominal organs such as the liver and spleen.",
-    "mnemonic": "False ribs 8, 9 and 10 \"borrow\" the cartilage above to reach the sternum.",
-    "clinical": "Fractures of the lower left ribs can injure the spleen underneath.",
-    "hint": "The first rib whose cartilage does not reach the breastbone, joining the cartilage above instead."
+    "origin": "Costa is Latin for rib. Rib eight is the first false rib, reaching the breastbone only through its neighbour's cartilage.",
+    "location": "On the left, eighth from the top, in the lower chest. Its cartilage joins the seventh rib's cartilage. The spine it joins at the back is not shown here.",
+    "description": "Long and curved like the ribs above it, but its front end turns into cartilage that bends up to meet the cartilage above.",
+    "function": "It forms part of the lower edge of the rib cage. On this side, the lower ribs help guard the spleen.",
+    "mnemonic": "Eight is the first to fake it: a false rib that leans on seven to reach the breastbone.",
+    "clinical": "A broken lower left rib can injure the spleen underneath, which may bleed heavily.",
+    "hint": "Look on the left for the first rib whose cartilage joins the cartilage above instead of the breastbone."
    },
    "questions": []
   },
@@ -1545,13 +1545,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
-    "location": "Left side. The ninth rib from the top, a false rib in the lower chest, over the upper abdominal organs. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "A typical rib: a head with two facets, a neck, a tubercle and a long curved shaft (body) with a costal groove on the inner lower edge for the intercostal vessels and nerve. Its cartilage joins the eighth costal cartilage.",
-    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. It also guards the liver on the right and the spleen on the left.",
-    "mnemonic": "7 - 3 - 2: rib 9 is in the middle of the three false ribs.",
-    "clinical": "The spleen lies under the left 9th to 11th ribs, so fractures there can rupture it and cause serious internal haemorrhage.",
-    "hint": "The middle one of the three lower ribs whose cartilage joins the cartilage above."
+    "origin": "Costa is Latin for rib. The ninth rib is a false rib that borrows the cartilage above to reach the breastbone.",
+    "location": "On the left, ninth from the top, low in the chest over the spleen. The spine it joins at the back is not shown here.",
+    "description": "A long, curved rib of typical shape. Its cartilage joins the one from the eighth rib instead of the breastbone.",
+    "function": "It helps form the lower edge of the rib cage and shields the spleen on this side.",
+    "mnemonic": "Nine is in between: the middle of the three false ribs.",
+    "clinical": "The spleen lies under the left ninth to eleventh ribs. A break here can rupture it and cause serious bleeding inside.",
+    "hint": "Look on the left for the middle one of the three ribs whose cartilage joins the cartilage above."
    },
    "questions": []
   },
@@ -1591,13 +1591,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". A false (vertebrochondral) rib: it reaches the sternum only indirectly, through the cartilage above.",
-    "location": "Left side. The tenth rib from the top, the lowest false rib; its cartilage forms the lowest part of the costal margin at the side of the upper abdomen. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "An atypical rib: like ribs 1, 11 and 12, its head usually has only one facet for a single vertebra. Its cartilage joins the ninth costal cartilage.",
-    "function": "A false rib: its costal cartilage does not reach the sternum but joins the cartilage above, helping form the costal margin. The lowest point of the costal margin, at the tenth costal cartilage, is a landmark for the upper abdomen.",
-    "mnemonic": "Ten is the end: rib 10 is the last false rib before the two floating ribs.",
-    "clinical": "The lowest point of the costal margin, at the tenth costal cartilage, is used as a landmark for dividing the abdomen into regions (subcostal plane).",
-    "hint": "The lowest rib whose cartilage still joins the costal margin; below it are only the free-ended ribs."
+    "origin": "Costa is Latin for rib. The tenth rib is the third and last of the false ribs.",
+    "location": "On the left, tenth from the top, low on the side of the chest. Its cartilage forms the lowest point of the rib edge. The spine it joins is not shown here.",
+    "description": "Its head usually touches only one vertebra, which makes it unusual, like ribs one, eleven and twelve. Its cartilage hooks onto the ninth.",
+    "function": "It closes off the lower edge of the rib cage at its lowest point. That point helps doctors map out the belly.",
+    "mnemonic": "Ten is the end: the last rib to hold hands with the cartilage above.",
+    "clinical": "Doctors draw an imaginary line across the belly at the lowest point of this rib's cartilage, called the subcostal plane, to divide the belly into regions.",
+    "hint": "Look on the left for the lowest rib joined into the rib edge, just above the two short free ribs."
    },
    "questions": []
   },
@@ -1634,13 +1634,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". A floating (vertebral) rib: its front end is free.",
-    "location": "Left side. The eleventh rib from the top, a short floating rib at the lower back and side of the chest. Its tip ends free in the muscles of the abdominal wall. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "An atypical rib: short, with a single facet on its head and no neck or tubercle. Its front tip is capped with a small piece of cartilage that does not join any other cartilage.",
-    "function": "A floating (free) rib: it has no attachment at the front. It protects the back of the kidney and gives attachment to the diaphragm and abdominal wall muscles.",
-    "mnemonic": "7 - 3 - 2: ribs 11 and 12 are the two floating ribs, their front ends float free.",
-    "clinical": "Fractures of the left lower ribs can injure the spleen and left kidney.",
-    "hint": "The upper of the two short ribs whose front tips float free with no link to the breastbone."
+    "origin": "Costa is Latin for rib. Rib eleven is a floating rib, with a front end that joins nothing.",
+    "location": "On the left, eleventh from the top, at the lower back and side. Its tip ends free among the belly wall muscles. The spine it joins is not shown here.",
+    "description": "A short rib with a simple head, no neck and no bump at the back. Its small cartilage tip is not attached to anything.",
+    "function": "It floats free at the front. It shelters the back of the kidney and anchors the diaphragm and belly wall muscles.",
+    "mnemonic": "Eleven is the first floater. Picture a small boat with its front rope untied.",
+    "clinical": "Breaks of the lower left ribs can injure the spleen and the left kidney.",
+    "hint": "Look on the left for the upper of the two short ribs with free front tips."
    },
    "questions": []
   },
@@ -1673,13 +1673,13 @@
    ],
    "content": {
     "pronunciation": "RIB",
-    "origin": "Latin costa, \"rib\". A floating (vertebral) rib: its front end is free.",
-    "location": "Left side. The lowest rib, at the back of the lower thorax, above the kidney. It is short and angles down and out; its tip ends free in the back muscles. At the back it joins the thoracic vertebrae (not shown in this pack).",
-    "description": "An atypical rib: the shortest of the lower ribs (length varies a lot), with a single facet on its head and no neck or tubercle.",
-    "function": "A floating rib: it has no front attachment. It gives attachment to the diaphragm, quadratus lumborum and other back and abdominal wall muscles, and helps protect the kidney.",
-    "mnemonic": "Twelve at the bottom: the last and shortest floating rib, at kidney level.",
-    "clinical": "The kidney lies against the 12th rib, so it is a landmark for kidney surgery and biopsy, and the pleura can dip below it near the spine.",
-    "hint": "The lowest and shortest rib of the cage, lying behind the kidney with a free front tip."
+    "origin": "Costa is Latin for rib. The twelfth rib is the very last rib and the second floating rib.",
+    "location": "On the left, the lowest rib, low on the back above the kidney. It slants down and out and ends free in the back muscles. The spine it joins is not shown here.",
+    "description": "A short, slim rib whose length varies a lot from person to person. It has a simple head, no neck and no bump.",
+    "function": "It has no front attachment. It anchors the diaphragm and deep back muscles and helps shield the kidney.",
+    "mnemonic": "Twelve sits on the kidney: the last rib and the shortest floater.",
+    "clinical": "Because the kidney lies against this rib, it guides kidney surgery and biopsy. Near the spine, the lung lining can dip below it.",
+    "hint": "Look on the left for the lowest, shortest rib, behind the kidney, with a free front tip."
    },
    "questions": []
   },
@@ -1715,26 +1715,26 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Right side. Joins the front end of the first rib to the side of the manubrium, just below the clavicle.",
-    "description": "A short, thick bar of hyaline cartilage. It is joined to the manubrium by a primary cartilaginous joint (synchondrosis) that allows no movement.",
-    "function": "Anchors the first rib firmly to the manubrium, giving a stable base for the thoracic inlet and the clavicle above.",
-    "mnemonic": "Cartilage 1 is \"fixed\": the only sternocostal joint that is not synovial.",
-    "clinical": "The first costal cartilage often calcifies with age, which can show on chest X-rays and be mistaken for a lung lesion.",
-    "hint": "The short, stiff cartilage bar joining the top rib to the handle of the breastbone."
+    "origin": "From the Latin costa, meaning rib, and cartilago, meaning gristle. It is the rib's bendy front end.",
+    "location": "On the right, joining the front of the top rib to the side of the breastbone handle, just below the collarbone.",
+    "description": "A short, thick bar of smooth, glassy cartilage. It is fused to the handle of the breastbone, so this joint does not move.",
+    "function": "It locks the first rib firmly to the breastbone. That gives a steady base for the top opening of the chest and for the collarbone above.",
+    "mnemonic": "Cartilage one is fixed. It is the only rib cartilage that joins the breastbone without a small sliding joint.",
+    "clinical": "This cartilage often hardens with age. On a chest X-ray it can look like a spot on the lung.",
+    "hint": "Find the short, stiff cartilage bar joining the top rib to the handle of the breastbone."
    },
    "questions": [
     {
      "kind": "function",
      "text": "How is the first costal cartilage joined to the manubrium?",
      "options": [
-      "By a synchondrosis that allows no movement",
-      "By a synovial joint that glides freely",
+      "By a fixed joint that does not move",
+      "By a sliding joint that glides freely",
       "By a ligament only, with a gap",
       "It does not reach the sternum"
      ],
      "answer": 0,
-     "explanation": "The first sternocostal joint is a primary cartilaginous joint (synchondrosis)."
+     "explanation": "It is fused to the manubrium by a solid cartilage joint, called a synchondrosis, which allows no movement."
     }
    ]
   },
@@ -1774,18 +1774,18 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Right side. Joins the front end of the second rib to the sternum at the sternal angle, where the manubrium meets the body.",
-    "description": "A bar of hyaline cartilage whose end fits into a notch shared by the lower manubrium and the upper body of the sternum, at a small synovial joint.",
-    "function": "Links the second rib to both the manubrium and the body of the sternum while allowing slight gliding for breathing.",
-    "mnemonic": "Two parts of the sternum for cartilage two.",
-    "clinical": "Being next to the sternal angle, it is the starting point for counting ribs. Costochondritis (painful inflamed costal cartilages) often affects the 2nd to 5th cartilages and can mimic heart pain.",
-    "hint": "The cartilage that meets the breastbone right at the ridge between its top and middle parts."
+    "origin": "From the Latin costa, meaning rib, and cartilago, meaning gristle.",
+    "location": "On the right, joining the front of the second rib to the breastbone at the sternal angle, the ridge where the handle meets the body.",
+    "description": "A bar of cartilage whose tip fits into a notch shared by the handle and the body of the breastbone. It meets them at a small sliding joint.",
+    "function": "It ties the second rib to two parts of the breastbone at once. Its small joint lets it glide a little as you breathe.",
+    "mnemonic": "Two parts for cartilage two: the handle and the body of the breastbone share it.",
+    "clinical": "It sits by the sternal angle, so rib counting starts here. Sore, swollen rib cartilages, called costochondritis, often affect cartilages two to five and can feel like heart pain.",
+    "hint": "Find the cartilage meeting the breastbone right at the ridge between its top and middle parts."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The second costal cartilage articulates with which parts of the sternum?",
+     "text": "The second costal cartilage joins which parts of the breastbone?",
      "options": [
       "Manubrium only",
       "Body and xiphoid process",
@@ -1793,7 +1793,7 @@
       "Xiphoid process only"
      ],
      "answer": 2,
-     "explanation": "It fits into a notch shared by the manubrium and body at the sternal angle."
+     "explanation": "Its tip fits into a notch shared by the manubrium and the body, right at the sternal angle."
     }
    ]
   },
@@ -1829,18 +1829,18 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Right side. Joins the front end of the third rib to the side of the body of the sternum.",
-    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint. The cartilages get longer from the upper to the lower ribs.",
-    "function": "Connects the third rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
-    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
-    "clinical": "Costochondritis is painful inflammation of costal cartilages (often 2 to 5), causing tender chest wall pain that can be mistaken for heart pain.",
-    "hint": "The cartilage bar linking the third true rib to the middle section of the breastbone."
+    "origin": "Its name joins two Latin words: costa for rib and cartilago for gristle.",
+    "location": "On the right, joining the front of the third rib to the side of the breastbone body.",
+    "description": "A bar of smooth cartilage joined to the breastbone by a small sliding joint. Going down the chest, these cartilages get longer.",
+    "function": "It connects rib three straight to the breastbone, making it a true rib. Being bendy, it lets your chest spring out as you breathe and soak up knocks.",
+    "mnemonic": "Rib cartilages are the chest's shock absorbers: bendy bars between the ribs and the breastbone.",
+    "clinical": "In costochondritis, rib cartilages, often two to five, become sore and swollen. The chest pain can be mistaken for heart pain.",
+    "hint": "Find the cartilage bar two below the top one, joining the middle section of the breastbone."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "The third costal cartilage joins which part of the sternum?",
+     "text": "The third costal cartilage joins which part of the breastbone?",
      "options": [
       "Manubrium",
       "Body of sternum",
@@ -1848,7 +1848,7 @@
       "Eighth costal cartilage"
      ],
      "answer": 1,
-     "explanation": "Costal cartilages 3 to 6 join the body of the sternum."
+     "explanation": "Cartilages three to six join the body of the sternum, the long middle part."
     }
    ]
   },
@@ -1884,18 +1884,18 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Right side. Joins the front end of the fourth rib to the side of the body of the sternum.",
-    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
-    "function": "Connects the fourth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
-    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
-    "clinical": "Costochondritis commonly affects the 2nd to 5th cartilages; pressing on the cartilage reproduces the pain, unlike most heart pain.",
-    "hint": "The cartilage bar on the rib whose space below is used for the first two ECG chest electrodes."
+    "origin": "From Latin costa, a rib, and cartilago, gristle. It is the gristly front end of rib four.",
+    "location": "On the right, joining the front of the fourth rib to the side of the breastbone body.",
+    "description": "A bar of smooth cartilage that meets the breastbone body at a small sliding joint.",
+    "function": "It links the fourth rib straight to the breastbone. Its flexibility lets the chest wall spring out when you breathe and absorb blows.",
+    "mnemonic": "Bendy bars, strong cage. The cartilages give just enough to stop the ribs from cracking.",
+    "clinical": "Costochondritis often affects cartilages two to five. Pressing on the sore cartilage brings the pain back, which most heart pain does not do.",
+    "hint": "Find the cartilage bar of the rib whose gap below holds the first two ECG chest stickers."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Chest wall pain that is reproduced by pressing on the upper costal cartilages suggests which condition?",
+     "text": "Chest pain that comes back when you press on the upper rib cartilages suggests which condition?",
      "options": [
       "Flail chest",
       "Thoracic outlet syndrome",
@@ -1903,7 +1903,7 @@
       "Costochondritis"
      ],
      "answer": 3,
-     "explanation": "Costochondritis is inflammation of the costal cartilages, tender to press."
+     "explanation": "Costochondritis is swelling of the rib cartilages, so pressing on them hurts."
     }
    ]
   },
@@ -1939,26 +1939,26 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Right side. Joins the front end of the fifth rib to the side of the body of the sternum.",
-    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
-    "function": "Connects the fifth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
-    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
-    "clinical": "Costochondral separation (the rib pulling away from its cartilage) can follow a blow to the chest and does not show on a plain X-ray.",
-    "hint": "The cartilage bar linking the fifth rib to the middle section of the breastbone."
+    "origin": "Latin gives us both parts of the name: costa, a rib, and cartilago, gristle.",
+    "location": "On the right, joining the front of the fifth rib to the side of the breastbone body.",
+    "description": "A bar of smooth cartilage meeting the breastbone at a small sliding joint. It is longer than the cartilages above it.",
+    "function": "It ties the fifth rib to the breastbone and lets the chest wall bend out with each breath instead of cracking.",
+    "mnemonic": "Cartilage is the chest's crumple zone: bone where you need strength, gristle where you need give.",
+    "clinical": "A hard knock can pull the rib away from this cartilage. This is called costochondral separation, and it does not show on a plain X-ray.",
+    "hint": "Count down from the ridge on the breastbone: this cartilage bar is three below the one at the ridge."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "What is the main mechanical benefit of the costal cartilages being made of cartilage rather than bone?",
+     "text": "Why is it useful that rib cartilages are made of cartilage, not bone?",
      "options": [
-      "Their flexibility lets the chest expand and absorb blows",
-      "They produce blood cells",
-      "They attach the clavicle",
-      "They house the intercostal nerves"
+      "They bend, so the chest can expand and absorb blows",
+      "They make blood cells",
+      "They attach the collarbone",
+      "They hold the rib nerves"
      ],
      "answer": 0,
-     "explanation": "Hyaline cartilage is flexible, so the cage can spring outwards and resist fracture."
+     "explanation": "Cartilage is bendy, so the cage can spring out with each breath and is less likely to break."
     }
    ]
   },
@@ -1998,18 +1998,18 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Right side. Joins the front end of the sixth rib to the side of the body of the sternum.",
-    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
-    "function": "Connects the sixth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
-    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
-    "clinical": "In CPR, the flexible cartilages let the sternum be pressed down; they may still fracture or separate, especially in older people whose cartilages have calcified.",
-    "hint": "The cartilage bar of the second-lowest true rib, joining the lower breastbone body."
+    "origin": "Its name comes from the Latin costa, rib, and cartilago, gristle.",
+    "location": "On the right, joining the front of the sixth rib to the lower part of the breastbone body.",
+    "description": "A long bar of cartilage that bends upward and meets the breastbone at a small sliding joint.",
+    "function": "It connects rib six directly to the breastbone, making it a true rib. Its bend lets the chest spring outward and cushion blows.",
+    "mnemonic": "Six still reaches home. It is the second last cartilage to touch the breastbone itself.",
+    "clinical": "During CPR these bendy cartilages let the breastbone be pressed down. They can still crack or separate, especially in older people whose cartilages have hardened.",
+    "hint": "Find the cartilage bar of the second lowest true rib, joining the lower breastbone body."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which structure does the sixth costal cartilage join at the front?",
+     "text": "What does the sixth costal cartilage join at the front?",
      "options": [
       "The seventh rib",
       "The manubrium",
@@ -2017,7 +2017,7 @@
       "The first costal cartilage"
      ],
      "answer": 2,
-     "explanation": "The sixth is a true rib, joined by its own cartilage to the body of the sternum."
+     "explanation": "The sixth is a true rib, so its own cartilage joins the body of the sternum."
     }
    ]
   },
@@ -2065,13 +2065,13 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Right side. Joins the front end of the seventh rib to the lower sternum near the xiphisternal joint, where the body of the sternum meets the xiphoid process.",
-    "description": "The longest cartilage that reaches the sternum. It curves upwards from the rib and joins the sternum at a small synovial joint; the cartilages below join its lower edge.",
-    "function": "Makes the seventh rib the last true rib. It forms the upper end of the costal margin and receives the eighth costal cartilage at an interchondral joint.",
-    "mnemonic": "Seven is the last to reach the sternum; everything below hangs on to seven.",
-    "clinical": "The costal margin begins at the seventh costal cartilage; the angle between the right and left margins at the xiphoid (the subcostal or infrasternal angle) is felt during abdominal examination.",
-    "hint": "The lowest cartilage bar that reaches the breastbone itself, near its pointed tip."
+    "origin": "From the Latin costa, rib, and cartilago, gristle. The seventh is the last one to reach the breastbone.",
+    "location": "On the right, joining the seventh rib to the lower breastbone, near where the body meets the small pointed tip.",
+    "description": "The longest cartilage that reaches the breastbone. It curves upward from the rib, and the cartilages below cling to its lower edge.",
+    "function": "It makes rib seven the last true rib. It starts the lower edge of the rib cage and holds on to the eighth cartilage below.",
+    "mnemonic": "Seven is the last to reach the breastbone. Everything below hangs on to seven.",
+    "clinical": "The lower rib edges start here. The angle where the right and left edges meet below the breastbone is felt during a belly examination.",
+    "hint": "Find the lowest cartilage bar that reaches the breastbone itself, near its pointed tip."
    },
    "questions": [
     {
@@ -2081,10 +2081,10 @@
       "Manubrium",
       "Seventh costal cartilage",
       "First costal cartilage",
-      "Xiphoid process only"
+      "Only the xiphoid process"
      ],
      "answer": 1,
-     "explanation": "The eighth cartilage joins the lower edge of the seventh at an interchondral joint."
+     "explanation": "The eighth cartilage joins the lower edge of the seventh at a small joint between the two cartilages."
     }
    ]
   },
@@ -2128,18 +2128,18 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Right side. The lowest cartilages of the costal margin, running up and inwards from the front ends of ribs 8, 9 and 10 at the lower edge of the chest.",
-    "description": "In this model the 8th, 9th and 10th costal cartilages are shown as one piece. Each joins the cartilage above (8 to 7, 9 to 8, 10 to 9) instead of reaching the sternum.",
-    "function": "Link the false ribs indirectly to the sternum via the seventh costal cartilage and form most of the costal margin (arch), where abdominal muscles and the diaphragm attach.",
-    "mnemonic": "8, 9 and 10 climb the ladder: each holds the rung above to reach the sternum.",
-    "clinical": "Slipping rib syndrome occurs when the loose joints between these lower cartilages allow one to slip under the other, causing lower chest or upper abdominal pain.",
-    "hint": "The combined lower cartilage piece forming the edge of the rib cage above the abdomen, not reaching the breastbone."
+    "origin": "From the Latin costa, rib, and cartilago, gristle. These three belong to the false ribs.",
+    "location": "On the right, forming the lower edge of the rib cage. They run up and inward from the front ends of ribs eight, nine and ten.",
+    "description": "This model shows cartilages eight, nine and ten as one piece. Each joins the cartilage above it instead of reaching the breastbone.",
+    "function": "They link the false ribs to the breastbone through the seventh cartilage. They form most of the lower rib edge, where belly muscles and the diaphragm attach.",
+    "mnemonic": "Eight, nine and ten climb the ladder. Each one holds the rung above to reach the breastbone.",
+    "clinical": "In slipping rib syndrome, the loose joints between these cartilages let one slip under another. This causes pain in the lower chest or upper belly.",
+    "hint": "Find the combined cartilage piece forming the lower edge of the cage above the belly, not reaching the breastbone."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "The curved edge formed by costal cartilages 7 to 10 is called what?",
+     "text": "What is the curved lower edge of the rib cage, made by cartilages seven to ten, called?",
      "options": [
       "Sternal angle",
       "Superior thoracic aperture",
@@ -2147,11 +2147,11 @@
       "Costal margin"
      ],
      "answer": 3,
-     "explanation": "The joined lower cartilages form the costal margin (costal arch)."
+     "explanation": "Together these joined cartilages make the costal margin, the arch you can feel at the bottom of your ribs."
     },
     {
      "kind": "clinical",
-     "text": "Pain from a lower costal cartilage slipping under the one above is called what?",
+     "text": "Pain from a lower rib cartilage slipping under the one above is called what?",
      "options": [
       "Slipping rib syndrome",
       "Costochondral separation",
@@ -2159,7 +2159,7 @@
       "Colles fracture"
      ],
      "answer": 0,
-     "explanation": "Slipping rib syndrome involves the hypermobile joints between cartilages 8 to 10."
+     "explanation": "In slipping rib syndrome, the loose joints between cartilages eight to ten let one slide under another."
     }
    ]
   },
@@ -2195,13 +2195,13 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Left side. Joins the front end of the first rib to the side of the manubrium, just below the clavicle.",
-    "description": "A short, thick bar of hyaline cartilage. It is joined to the manubrium by a primary cartilaginous joint (synchondrosis) that allows no movement.",
-    "function": "Anchors the first rib firmly to the manubrium, giving a stable base for the thoracic inlet and the clavicle above.",
-    "mnemonic": "Cartilage 1 is \"fixed\": the only sternocostal joint that is not synovial.",
-    "clinical": "The first costal cartilage often calcifies with age, which can show on chest X-rays and be mistaken for a lung lesion.",
-    "hint": "The short, stiff cartilage bar joining the top rib to the handle of the breastbone."
+    "origin": "Costa is Latin for rib and cartilago is Latin for gristle. Together they name the rubbery link between rib and breastbone.",
+    "location": "On the left, running from the front tip of the top rib to the side of the breastbone handle, under the collarbone.",
+    "description": "A short, sturdy bar of cartilage. It grows straight into the breastbone handle, making a joint that cannot move.",
+    "function": "It fixes the first rib solidly in place, so the top of the rib cage and the collarbone above have a firm base.",
+    "mnemonic": "Number one is glued on. Every other true rib cartilage has a small sliding joint, but this one is fixed.",
+    "clinical": "With age it often hardens with calcium. This can show up on a chest X-ray and be mistaken for a lung problem.",
+    "hint": "Look on the left for the short, sturdy cartilage joining the top rib to the breastbone handle."
    },
    "questions": []
   },
@@ -2241,13 +2241,13 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Left side. Joins the front end of the second rib to the sternum at the sternal angle, where the manubrium meets the body.",
-    "description": "A bar of hyaline cartilage whose end fits into a notch shared by the lower manubrium and the upper body of the sternum, at a small synovial joint.",
-    "function": "Links the second rib to both the manubrium and the body of the sternum while allowing slight gliding for breathing.",
-    "mnemonic": "Two parts of the sternum for cartilage two.",
-    "clinical": "Being next to the sternal angle, it is the starting point for counting ribs. Costochondritis (painful inflamed costal cartilages) often affects the 2nd to 5th cartilages and can mimic heart pain.",
-    "hint": "The cartilage that meets the breastbone right at the ridge between its top and middle parts."
+    "origin": "Costa is Latin for rib, and cartilago is Latin for gristle, the chewy stuff at the end of a bone.",
+    "location": "On the left, running from the second rib to the breastbone at the small ridge near its top.",
+    "description": "A cartilage bar whose tip slots into a notch between the handle and the body of the breastbone, at a small sliding joint.",
+    "function": "It links rib two to both the handle and the body of the breastbone, while letting it glide a little with each breath.",
+    "mnemonic": "Cartilage two sits on the seam, right where the two top parts of the breastbone meet.",
+    "clinical": "It marks the start point for counting ribs. Inflamed rib cartilages, called costochondritis, often involve cartilages two to five and can mimic heart pain.",
+    "hint": "Look on the left for the cartilage that meets the breastbone right at its small ridge."
    },
    "questions": []
   },
@@ -2283,13 +2283,13 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Left side. Joins the front end of the third rib to the side of the body of the sternum.",
-    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint. The cartilages get longer from the upper to the lower ribs.",
-    "function": "Connects the third rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
-    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
-    "clinical": "Costochondritis is painful inflammation of costal cartilages (often 2 to 5), causing tender chest wall pain that can be mistaken for heart pain.",
-    "hint": "The cartilage bar linking the third true rib to the middle section of the breastbone."
+    "origin": "Costa means rib and cartilago means gristle in Latin. It is the gristly front section of the third rib.",
+    "location": "On the left, running from the third rib to the side of the breastbone body.",
+    "description": "A short cartilage bar ending in a small sliding joint on the breastbone. The cartilages below it are longer.",
+    "function": "It joins the third rib directly to the breastbone. Its springiness lets the chest wall move with each breath and cushion blows.",
+    "mnemonic": "Think of these cartilages as rubber hinges. They let the stiff ribs swing without snapping.",
+    "clinical": "Sore, swollen rib cartilages, called costochondritis, often affect cartilages two to five. The pain can be mistaken for a heart problem.",
+    "hint": "Look on the left for the cartilage bar two below the top one, joining the middle of the breastbone."
    },
    "questions": []
   },
@@ -2325,13 +2325,13 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Left side. Joins the front end of the fourth rib to the side of the body of the sternum.",
-    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
-    "function": "Connects the fourth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
-    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
-    "clinical": "Costochondritis commonly affects the 2nd to 5th cartilages; pressing on the cartilage reproduces the pain, unlike most heart pain.",
-    "hint": "The cartilage bar on the rib whose space below is used for the first two ECG chest electrodes."
+    "origin": "Two Latin words make its name: costa, a rib, and cartilago, gristle.",
+    "location": "On the left, running from the fourth rib to the side of the breastbone body.",
+    "description": "A smooth, rubbery bar ending in a small sliding joint on the breastbone.",
+    "function": "It holds the fourth rib to the breastbone while letting the chest wall flex with each breath and cushion knocks.",
+    "mnemonic": "Four meets the body: cartilages three to six all join the long middle part of the breastbone.",
+    "clinical": "In costochondritis the pain gets worse when you press the sore cartilage. That clue helps tell it apart from most heart pain.",
+    "hint": "Look on the left for the cartilage bar of the rib just above the V2 ECG sticker."
    },
    "questions": []
   },
@@ -2367,13 +2367,13 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Left side. Joins the front end of the fifth rib to the side of the body of the sternum.",
-    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
-    "function": "Connects the fifth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
-    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
-    "clinical": "Costochondral separation (the rib pulling away from its cartilage) can follow a blow to the chest and does not show on a plain X-ray.",
-    "hint": "The cartilage bar linking the fifth rib to the middle section of the breastbone."
+    "origin": "Costa is Latin for rib, and cartilago is Latin for gristle.",
+    "location": "On the left, running from the fifth rib to the lower part of the breastbone body.",
+    "description": "A curved bar of cartilage that meets the breastbone at a small sliding joint.",
+    "function": "It holds rib five to the breastbone and gives the chest wall some bounce, both for breathing and for taking a hit.",
+    "mnemonic": "Ribs are bone, their tips are gristle. Bone for strength, gristle for bounce.",
+    "clinical": "A blow to the chest can separate the rib from this cartilage. A plain X-ray will not show it, because cartilage barely shows up.",
+    "hint": "On the left, count down from the ridge on the breastbone: this cartilage is three below the one at the ridge."
    },
    "questions": []
   },
@@ -2413,13 +2413,13 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Left side. Joins the front end of the sixth rib to the side of the body of the sternum.",
-    "description": "A bar of hyaline cartilage joined to the body of the sternum by a small synovial sternocostal joint.",
-    "function": "Connects the sixth rib directly to the sternum, making it a true rib, and its flexibility lets the chest wall spring outwards during breathing and absorb blows.",
-    "mnemonic": "Costal cartilages are the chest's shock absorbers: bendy bars between ribs and sternum.",
-    "clinical": "In CPR, the flexible cartilages let the sternum be pressed down; they may still fracture or separate, especially in older people whose cartilages have calcified.",
-    "hint": "The cartilage bar of the second-lowest true rib, joining the lower breastbone body."
+    "origin": "Costa and cartilago are the Latin words for rib and gristle.",
+    "location": "On the left, running from the sixth rib up to the lower breastbone body.",
+    "description": "A long, gently curved cartilage bar that ends in a small sliding joint on the breastbone.",
+    "function": "It lets rib six reach the breastbone on its own and gives the lower chest wall some spring.",
+    "mnemonic": "Count them off: cartilages three, four, five and six all dock on the breastbone body.",
+    "clinical": "CPR compressions bend these cartilages. In older people, where they have hardened, they may crack or pull away.",
+    "hint": "Look on the left for the cartilage of the second lowest true rib, meeting the lower breastbone."
    },
    "questions": []
   },
@@ -2467,13 +2467,13 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Left side. Joins the front end of the seventh rib to the lower sternum near the xiphisternal joint, where the body of the sternum meets the xiphoid process.",
-    "description": "The longest cartilage that reaches the sternum. It curves upwards from the rib and joins the sternum at a small synovial joint; the cartilages below join its lower edge.",
-    "function": "Makes the seventh rib the last true rib. It forms the upper end of the costal margin and receives the eighth costal cartilage at an interchondral joint.",
-    "mnemonic": "Seven is the last to reach the sternum; everything below hangs on to seven.",
-    "clinical": "The costal margin begins at the seventh costal cartilage; the angle between the right and left margins at the xiphoid (the subcostal or infrasternal angle) is felt during abdominal examination.",
-    "hint": "The lowest cartilage bar that reaches the breastbone itself, near its pointed tip."
+    "origin": "Costa is Latin for rib and cartilago for gristle. This is the final rib cartilage to touch the breastbone.",
+    "location": "On the left, curving from the seventh rib up to the lower breastbone, beside the small pointed tip.",
+    "description": "A long, upward-sweeping bar, the longest cartilage to reach the breastbone. The cartilages below attach to its lower edge.",
+    "function": "It anchors rib seven, the last true rib, to the breastbone. It also forms the top of the lower rib edge and receives the eighth cartilage.",
+    "mnemonic": "Seven is the anchor rope: the lower cartilages grab onto it to reach the breastbone.",
+    "clinical": "Doctors feel along the lower rib edge from here during a belly examination. The angle between the left and right edges sits just below the breastbone.",
+    "hint": "Look on the left for the lowest cartilage still touching the breastbone, near its pointed tip."
    },
    "questions": []
   },
@@ -2517,13 +2517,13 @@
    ],
    "content": {
     "pronunciation": "KOS-tal KAR-tih-lij",
-    "origin": "Latin costa, \"rib\", and cartilago, \"gristle\".",
-    "location": "Left side. The lowest cartilages of the costal margin, running up and inwards from the front ends of ribs 8, 9 and 10 at the lower edge of the chest.",
-    "description": "In this model the 8th, 9th and 10th costal cartilages are shown as one piece. Each joins the cartilage above (8 to 7, 9 to 8, 10 to 9) instead of reaching the sternum.",
-    "function": "Link the false ribs indirectly to the sternum via the seventh costal cartilage and form most of the costal margin (arch), where abdominal muscles and the diaphragm attach.",
-    "mnemonic": "8, 9 and 10 climb the ladder: each holds the rung above to reach the sternum.",
-    "clinical": "Slipping rib syndrome occurs when the loose joints between these lower cartilages allow one to slip under the other, causing lower chest or upper abdominal pain.",
-    "hint": "The combined lower cartilage piece forming the edge of the rib cage above the abdomen, not reaching the breastbone."
+    "origin": "Costa is Latin for rib, cartilago for gristle. These are the cartilages of the three false ribs.",
+    "location": "On the left, along the lower edge of the rib cage. They rise up and inward from the front of ribs eight, nine and ten.",
+    "description": "In this model the eighth, ninth and tenth cartilages are shown as one piece. Each hooks onto the cartilage above, like links in a chain.",
+    "function": "They connect the false ribs to the breastbone by way of the seventh cartilage. They make up most of the lower rib edge, where the diaphragm and belly muscles hold on.",
+    "mnemonic": "False ribs hold hands: ten holds nine, nine holds eight, and eight holds seven.",
+    "clinical": "If the joints between them are too loose, one can slip under the next. This slipping rib syndrome causes lower chest or upper belly pain.",
+    "hint": "Look on the left for the joined cartilage piece forming the lower rib edge above the belly."
    },
    "questions": []
   }

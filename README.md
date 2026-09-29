@@ -48,7 +48,9 @@ Every structure has a stable ID, its FMA ID(s), a Latin name, synonyms, a group 
 ## Language and voiceover
 - **Activity language** (51 languages). The whole activity switches: the interface (when the Moodle language pack is installed), teaching content, labels, group names, questions and voice. Interface strings ship in English plus 24 translations (de, fr, es, it, pt_br, nl, pl, sv, da, no, cs, ro, ru, uk, el, tr, ar, hi, id, vi, ja, ko, zh_cn, th), AI-assisted and open to correction.
 - **Translate with AI** (LMS Labs credits): content, names and questions become drafts in the activity language for the teacher to approve; group names and view names are translated in one request and can be edited.
-- **Voiceover** (LMS Labs text to speech, Google Chirp 3 HD voices, LMS Labs credits): the teacher picks one of 8 voices (Aoede, Kore, Leda, Zephyr, Charon, Fenrir, Orus, Puck) and where the voice is used: Study cards (Listen, Say it), Practice prompts, questions and answer options, and Practice feedback. Test mode never speaks feedback. Optional "Read automatically"; students can turn the voice off.
+- **Voiceover** (LMS Labs text to speech, Google Chirp 3 HD voices, 1 LMS Labs credit per clip) is part of every activity: study cards, the Practice card after a correct label, Practice prompts, questions and answer options, and Practice feedback are all read aloud. Test mode never speaks feedback. The teacher picks one of 8 voices (Aoede, Kore, Leda, Zephyr, Charon, Fenrir, Orus, Puck) and can turn on "Read automatically"; students can turn the voice off.
+- **Prepared before students start.** When an activity is saved or its texts change, a background task creates all its audio. A student who opens the activity before that has finished sees a short *Preparing your voiceover* screen with progress (their visit also creates the next clips when the site allows it). If LMS Labs cannot create audio (no entitlement, no credits), students can continue without voiceover and teachers see why. A card is never read out in part.
+- **Writing style.** All library content and questions are written in simple, clear, memorable language for every learner (school, vocational, nursing, university), and read well aloud. AI drafts and translations follow the same style (there is no learner-level setting).
 - Each clip is generated once per activity and stored (and backed up), so replays are free. Teachers can generate all audio in advance from *Edit anatomy and content → Language and voice*. Only server-signed text can be spoken.
 
 ## AI setup (LMS Labs)
@@ -63,7 +65,7 @@ How the credentials work:
 - A Site ID and API key entered in AI Anatomy's own settings are only used as a complete pair. That happens when Central Config has no complete pair, or when *Use this plugin's own credentials* is ticked. Central and local values are never mixed.
 - If no complete pair exists, AI buttons show a configuration message and no request is sent. A rejected key gives a clear error and is not retried with other credentials.
 - The API key stays on the server. Generation requests send it only in the `X-API-Key` header (with `X-Site-ID`); the activation routes send it in their JSON request body, as LMS Labs requires. It is never sent to the browser or written to logs or content.
-- No student data is sent to the AI service. Prompts contain only anatomy facts from the pack and the learner level; voiceover sends only the teaching text to be read.
+- No student data is sent to the AI service. Prompts contain only anatomy facts from the pack and the writing style; voiceover sends only the teaching text to be read.
 
 LMS Labs AI credits are the only AI source. There is no free or third-party AI option. Without LMS Labs credentials, teachers can still use and edit the library content and questions by hand.
 

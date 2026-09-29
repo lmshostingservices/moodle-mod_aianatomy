@@ -43,6 +43,9 @@ class voice {
     /** @var string[] Where voiceover can be offered */
     const PLACES = ['cards', 'prompts', 'questions', 'feedback'];
 
+    /** Card fields in the order the card shows them (and the voiceover reads them). */
+    const CARDFIELDS = ['origin', 'location', 'description', 'function', 'mnemonic', 'clinical'];
+
     /**
      * Voiceover is on for this activity and the site has LMS Labs text to speech set up.
      *
@@ -360,8 +363,8 @@ class voice {
                 $file->get_filename()
             )->out(false);
         }
-        if ($out['pending']) {
-            // Play nothing until every clip is ready (the caller polls again).
+        if ($out['pending'] || $out['missing']) {
+            // Play nothing until every clip of the text is ready: never read out only part of a card.
             $out['clips'] = [];
         }
         $out['credits'] = round($out['credits'], 4);
@@ -384,6 +387,114 @@ class voice {
         return ['clips' => count($rows), 'credits' => round($credits, 2)];
     }
 
+    /** Errors that stop preparation until something changes (credentials, entitlement, credits, service). */
+    const STOPPERS = ['aiauth', 'voicenoentitlement', 'ainocredits', 'voicenotavailable', 'voicenotconfigured',
+        'lmslabscredentialsmissing'];
+
+    /**
+     * Voiceover readiness of an activity: every text students can hear, split into clips.
+     *
+     * @param stdClass $instance
+     * @param \context_module $context
+     * @return array ['total' => clips needed, 'ready' => clips stored, 'items' => [[item, missing clip count]]]
+     */
+    public static function status(stdClass $instance, \context_module $context): array {
+        $locale = language::locale($instance->language ?? 'en');
+        $voicename = self::voicename($instance);
+        $have = [];
+        foreach (get_file_storage()->get_area_files($context->id, 'mod_aianatomy', 'voice', 0, 'id', false) as $file) {
+            $have[$file->get_filename()] = true;
+        }
+        $seen = [];
+        $items = [];
+        foreach (manager::voice_items($instance, $context) as $item) {
+            $missing = 0;
+            foreach (self::chunks($item['text']) as $chunk) {
+                $name = self::hash($locale, $voicename, $item['speed'], $chunk) . '.mp3';
+                if (isset($seen[$name])) {
+                    continue;
+                }
+                $seen[$name] = true;
+                if (!isset($have[$name])) {
+                    $missing++;
+                }
+            }
+            $items[] = [$item, $missing];
+        }
+        $total = count($seen);
+        $ready = $total - array_sum(array_column($items, 1));
+        return ['total' => $total, 'ready' => $ready, 'items' => $items];
+    }
+
+    /**
+     * Prepares the voiceover of an activity before students need it: generates missing clips (paid with LMS Labs
+     * credits, 1 per clip) for up to $budget seconds. Safe to call from several places at once: every clip uses the
+     * persisted job and Idempotency-Key, so a clip is never paid twice.
+     *
+     * @param stdClass $instance
+     * @param \context_module $context
+     * @param int $budget seconds of generation (0 = only report)
+     * @return array ['state' => off|ready|preparing|failed, 'total', 'ready', 'retryafter', 'error' => string code]
+     */
+    public static function prepare(stdClass $instance, \context_module $context, int $budget): array {
+        global $DB;
+        if (!self::enabled($instance)) {
+            return ['state' => 'off', 'total' => 0, 'ready' => 0, 'retryafter' => 0, 'error' => ''];
+        }
+        $status = self::status($instance, $context);
+        $error = (string)($instance->voiceerror ?? '');
+        $retry = 0;
+        $deadline = time() + $budget;
+        if ($budget > 0 && $status['ready'] < $status['total']) {
+            $error = '';
+            foreach ($status['items'] as [$item, $missing]) {
+                if (!$missing) {
+                    continue;
+                }
+                if (time() >= $deadline) {
+                    break;
+                }
+                try {
+                    $r = self::speak($instance, $context, $item['text'], $item['sig'], $item['speed'], true);
+                    if ($r['pending']) {
+                        $retry = max($retry, (int)$r['retryafter']);
+                    }
+                } catch (moodle_exception $e) {
+                    if (in_array($e->errorcode, self::STOPPERS, true)) {
+                        // Nothing more can be generated until the site's LMS Labs setup changes.
+                        $error = $e->errorcode;
+                        break;
+                    }
+                    // One text failed (for example 409/410): keep going with the others.
+                    $error = $error ?: $e->errorcode;
+                }
+            }
+            if ((string)($instance->voiceerror ?? '') !== $error) {
+                $DB->set_field('aianatomy', 'voiceerror', $error, ['id' => $instance->id]);
+                $instance->voiceerror = $error;
+            }
+            $status = self::status($instance, $context);
+        }
+        $state = $status['ready'] >= $status['total'] ? 'ready'
+            : (in_array($error, self::STOPPERS, true) ? 'failed' : 'preparing');
+        return ['state' => $state, 'total' => $status['total'], 'ready' => $status['ready'], 'retryafter' => $retry,
+            'error' => $state === 'ready' ? '' : $error];
+    }
+
+    /**
+     * Queues background preparation of an activity's voiceover (after it is created or its texts change).
+     *
+     * @param stdClass $instance
+     */
+    public static function queue(stdClass $instance): void {
+        if (!self::enabled($instance)) {
+            return;
+        }
+        $task = new \mod_aianatomy\task\prepare_voice();
+        $task->set_custom_data(['instanceid' => (int)$instance->id]);
+        \core\task\manager::queue_adhoc_task($task, true);
+    }
+
     /**
      * Deletes all stored clips of an activity.
      *
@@ -404,19 +515,40 @@ class voice {
      * @param string $name
      * @param string $latin
      * @param array $content visible content, field => text
+     * @param array $related related structures [['type', 'name']] (shown on the card when ticked)
      * @return string
      */
-    public static function card_text(string $name, string $latin, array $content): string {
-        $parts = [rtrim($name, '.') . '.'];
-        if ($latin !== '' && $latin !== $name) {
-            $parts[] = rtrim($latin, '.') . '.';
+    public static function card_text(string $name, string $latin, array $content, array $related = []): string {
+        $parts = [rtrim(self::plain($name), '.') . '.'];
+        if ($latin !== '' && self::plain($latin) !== self::plain($name)) {
+            $parts[] = rtrim(self::plain($latin), '.') . '.';
         }
-        foreach (['description', 'location', 'function', 'origin', 'mnemonic', 'clinical'] as $f) {
+        foreach (self::CARDFIELDS as $f) {
             if (!empty($content[$f])) {
                 $parts[] = get_string('field_' . $f, 'mod_aianatomy') . ': ' . rtrim(self::plain($content[$f]), '.') . '.';
             }
         }
+        foreach (self::related_groups($related) as $label => $list) {
+            $parts[] = $label . ': ' . self::plain(implode(', ', $list)) . '.';
+        }
         return implode(' ', $parts);
+    }
+
+    /**
+     * Related structures grouped by relationship type, in pack order: label => names.
+     *
+     * @param array $related [['type', 'name']]
+     * @return array
+     */
+    public static function related_groups(array $related): array {
+        $out = [];
+        $sm = get_string_manager();
+        foreach ($related as $r) {
+            $label = $sm->string_exists('rel_' . $r['type'], 'mod_aianatomy') ? get_string('rel_' . $r['type'], 'mod_aianatomy')
+                : get_string('field_relationships', 'mod_aianatomy');
+            $out[$label][] = $r['name'];
+        }
+        return $out;
     }
 
     /**

@@ -57,6 +57,7 @@ const STRING_KEYS = [
     'intro_study_nopressure', 'intro_study_next', 'intro_requirements', 'intro_expect', 'intro_howto',
     'intro_howto_study', 'intro_howto_practice', 'intro_howto_test', 'intro_go', 'intro_back', 'intro_weights',
     'intro_weak', 'firsttryscore', 'attribution', 'hintfor', 'hintpick', 'nexttask', 'yourchoice', 'close',
+    'voiceprep_title', 'voiceprep_text', 'voiceprep_progress', 'voiceprep_failed', 'voiceprep_continue', 'voiceprep_slow',
 ];
 
 let S = {};
@@ -186,12 +187,103 @@ class Player {
         const go = shell.querySelector('[data-action="go"]');
         go.addEventListener('click', () => {
             go.disabled = true;
-            this.start(mode, focus).catch(Notification.exception);
+            // The whole voiceover is prepared before the student starts, so every card and question can be heard.
+            this.ensureVoice(shell)
+                .then(() => this.start(mode, focus))
+                .catch(Notification.exception);
         });
         this.host.appendChild(shell);
         this.shell = shell;
         go.focus({preventScroll: true});
         this.scrollToShell();
+    }
+
+    /**
+     * Makes sure the activity's voiceover is ready before a mode starts. While clips are still being created, shows a
+     * "Preparing your voiceover" screen with progress; each call to the server creates the next clips (or waits for
+     * the background task). Resolves when ready, or when the student continues without voiceover after a failure or
+     * a long wait with no progress.
+     *
+     * @param {HTMLElement} shell
+     * @returns {Promise<void>}
+     */
+    async ensureVoice(shell) {
+        if (!this.voice.available || this.voiceReady) {
+            return;
+        }
+        const ask = (generate) => Ajax.call([{methodname: 'mod_aianatomy_voice_prepare',
+            args: {cmid: this.config.cmid, generate}}])[0];
+        // A quick check first, so the waiting screen appears at once if anything still has to be created.
+        let r = await ask(false);
+        if (r.state === 'ready' || r.state === 'off') {
+            this.voiceReady = true;
+            return;
+        }
+        const panel = el('div', 'aa-voiceprep', {role: 'status', 'aria-live': 'polite'});
+        panel.appendChild(el('div', 'aa-voiceprep-icon', {html: icon('voice')}));
+        panel.appendChild(el('h3', 'aa-voiceprep-title', {text: S.voiceprep_title}));
+        panel.appendChild(el('p', 'aa-voiceprep-text', {text: S.voiceprep_text}));
+        const bar = el('div', 'aa-voiceprep-bar');
+        const fill = el('span', 'aa-voiceprep-fill');
+        bar.appendChild(fill);
+        panel.appendChild(bar);
+        const count = el('p', 'aa-voiceprep-count');
+        panel.appendChild(count);
+        const note = el('p', 'aa-voiceprep-note');
+        panel.appendChild(note);
+        const skip = button(S.voiceprep_continue, 'next');
+        skip.hidden = true;
+        panel.appendChild(skip);
+        shell.appendChild(panel);
+        shell.classList.add('is-preparing');
+        const show = (res) => {
+            const pct = res.total ? Math.round(100 * res.ready / res.total) : 0;
+            fill.style.width = pct + '%';
+            count.textContent = fmt(S.voiceprep_progress, {ready: res.ready, total: res.total});
+        };
+        show(r);
+        let skipped = false;
+        const skipPromise = new Promise((resolve) => skip.addEventListener('click', () => {
+            skipped = true;
+            resolve();
+        }));
+        let best = r.ready;
+        let stalledsince = Date.now();
+        try {
+            let first = true;
+            while (!skipped && r.state === 'preparing') {
+                // Start creating straight away; afterwards wait as LMS Labs asks (Retry-After) between calls.
+                const wait = first ? 0 : Math.max(1, r.retryafter || 1) * 1000;
+                first = false;
+                await Promise.race([new Promise((res) => window.setTimeout(res, wait)), skipPromise]);
+                if (skipped) {
+                    break;
+                }
+                r = await ask(true);
+                show(r);
+                if (r.ready > best) {
+                    best = r.ready;
+                    stalledsince = Date.now();
+                } else if (Date.now() - stalledsince > 180000) {
+                    // No progress for three minutes: let the student go on; the voiceover keeps being prepared.
+                    note.textContent = S.voiceprep_slow;
+                    skip.hidden = false;
+                }
+            }
+            if (!skipped && r.state === 'failed') {
+                note.textContent = r.message || S.voiceprep_failed;
+                skip.hidden = false;
+                await skipPromise;
+                // Nothing can be created right now: no voice this session (no repeated errors on every card).
+                this.voice.config.enabled = false;
+            }
+        } finally {
+            panel.remove();
+            shell.classList.remove('is-preparing');
+        }
+        if (r.state === 'ready') {
+            this.voiceReady = true;
+        }
     }
 
     /**
@@ -463,8 +555,9 @@ class Player {
     }
 
     /**
-     * Practice: after a correct label, shows a card with the structure's key facts (and Listen when voiceover is
-     * on). It stays until the student closes it or labels the next structure.
+     * Practice: after a correct label, shows the structure's card: every field the teacher ticked, in the same
+     * order as the Study card, with Listen (the same audio as the Study card). It stays until the student closes it
+     * or labels the next structure.
      *
      * @param {string} pin
      * @param {string} colour
@@ -481,8 +574,15 @@ class Player {
         const title = el('div', 'ax-info-title');
         title.appendChild(el('span', 'ax-info-check', {html: icon('check')}));
         title.appendChild(el('strong', '', {formatted: info.name}));
-        if (info.latin) {
-            title.appendChild(el('em', 'ax-latin', {formatted: info.latin}));
+        if (info.latin || info.pronunciation) {
+            const sub = el('span', 'ax-info-sub');
+            if (info.latin) {
+                sub.appendChild(el('em', 'ax-latin', {formatted: info.latin}));
+            }
+            if (info.pronunciation) {
+                sub.appendChild(el('span', 'ax-pron', {formatted: info.pronunciation}));
+            }
+            title.appendChild(sub);
         }
         head.appendChild(title);
         if (info.voice && this.voice.has('cards')) {
@@ -1215,6 +1315,8 @@ class Player {
      * @param {HTMLElement} chip
      */
     chipPointerDown(e, chip) {
+        // Picking up the next name closes the previous card, so it never covers a label box.
+        this.hideInfo();
         if (chip.disabled || e.button > 0) {
             return;
         }

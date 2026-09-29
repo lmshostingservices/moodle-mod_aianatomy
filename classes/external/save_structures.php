@@ -74,6 +74,7 @@ class save_structures extends base {
         if ($params['studytip'] !== null) {
             $DB->set_field('aianatomy', 'studytip', trim($params['studytip']), ['id' => $instance->id]);
         }
+        \mod_aianatomy\local\voice::queue($instance);
         return ['saved' => $saved];
     }
 

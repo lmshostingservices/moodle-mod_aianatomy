@@ -329,4 +329,79 @@ final class voice_test extends \advanced_testcase {
             $this->assertFileExists(pack::model_path($id));
         }
     }
+
+    /**
+     * A card is never read out in part: when some of its clips are missing and cannot be created, nothing plays.
+     */
+    public function test_no_partial_playback(): void {
+        $this->resetAfterTest();
+        set_config('ttscapabilities', json_encode(['time' => time(), 'locales' => null]), 'mod_aianatomy');
+        [$instance, $context] = $this->setup_voice();
+        lmslabs::$transport = fn(array $req) => [200, ['Content-Type' => ['audio/mpeg'], 'X-Credits-Charged' => ['1']],
+            'ID3audio'];
+        $text = str_repeat('The scaphoid is the boat shaped bone beside your thumb. ', 8);
+        $item = voice::item($instance, $text);
+        $chunks = voice::chunks($item['text']);
+        $this->assertGreaterThan(1, count($chunks));
+        // Only the first clip exists (for example, the rest failed earlier).
+        $first = voice::item($instance, $chunks[0]);
+        voice::speak($instance, $context, $first['text'], $first['sig'], 'normal', true);
+        $r = voice::speak($instance, $context, $item['text'], $item['sig'], 'normal', false);
+        $this->assertGreaterThan(0, $r['missing']);
+        $this->assertSame([], $r['clips']);
+        // Once everything exists, the whole text plays.
+        voice::speak($instance, $context, $item['text'], $item['sig'], 'normal', true);
+        $r = voice::speak($instance, $context, $item['text'], $item['sig'], 'normal', false);
+        $this->assertSame(0, $r['missing']);
+        $this->assertCount(count($chunks), $r['clips']);
+    }
+
+    /**
+     * Preparation creates every clip students can hear, is safe to repeat (no clip paid twice), reports progress,
+     * and stops with a reason when the site cannot generate.
+     */
+    public function test_prepare(): void {
+        global $DB;
+        $this->resetAfterTest();
+        set_config('ttscapabilities', json_encode(['time' => time(), 'locales' => null]), 'mod_aianatomy');
+        [$instance, $context] = $this->setup_voice(['quizcount' => 3]);
+        $calls = 0;
+        lmslabs::$transport = function (array $req) use (&$calls) {
+            $calls++;
+            return [200, ['Content-Type' => ['audio/mpeg'], 'X-Credits-Charged' => ['1']], 'ID3audio'];
+        };
+        $before = voice::prepare($instance, $context, 0);
+        $this->assertSame('preparing', $before['state']);
+        $this->assertSame(0, $before['ready']);
+        $this->assertGreaterThan(0, $before['total']);
+        $r = voice::prepare($instance, $context, 600);
+        $this->assertSame('ready', $r['state']);
+        $this->assertSame($r['total'], $r['ready']);
+        $this->assertSame($r['total'], $calls);
+        // Nothing more is requested once ready.
+        $this->assertSame('ready', voice::prepare($instance, $context, 600)['state']);
+        $this->assertSame($r['total'], $calls);
+        // No entitlement: preparation stops with the reason, and the activity records it.
+        voice::clear($instance, $context);
+        lmslabs::$transport = fn(array $req) => [403, [], '{"code":"NO_ENTITLEMENT"}'];
+        $f = voice::prepare($instance, $context, 600);
+        $this->assertSame('failed', $f['state']);
+        $this->assertSame('voicenoentitlement', $f['error']);
+        $this->assertSame('voicenoentitlement', $DB->get_field('aianatomy', 'voiceerror', ['id' => $instance->id]));
+    }
+
+    /**
+     * Voiceover is part of every activity: it is on even when a form sends voice = 0.
+     */
+    public function test_voice_always_on(): void {
+        global $DB;
+        $this->resetAfterTest();
+        $course = $this->getDataGenerator()->create_course();
+        $module = $this->getDataGenerator()->create_module(
+            'aianatomy', ['course' => $course->id, 'voice' => 0,
+            'voiceplaces' => 'cards']
+        );
+        $this->assertSame(1, (int)$DB->get_field('aianatomy', 'voice', ['id' => $module->id]));
+        $this->assertSame(implode(',', voice::PLACES), $DB->get_field('aianatomy', 'voiceplaces', ['id' => $module->id]));
+    }
 }

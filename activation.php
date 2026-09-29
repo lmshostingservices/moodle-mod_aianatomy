@@ -103,8 +103,10 @@ if ($action === 'check') {
     if (!empty($state['resolved'])) {
         $msg .= ' ' . $str('act_msg_resolved_' . $state['resolved']);
     }
-    redirect($pageurl, $msg, null, $state['status'] === 'unknown' ? \core\output\notification::NOTIFY_WARNING
-        : \core\output\notification::NOTIFY_SUCCESS);
+    redirect(
+        $pageurl, $msg, null, $state['status'] === 'unknown' ? \core\output\notification::NOTIFY_WARNING
+        : \core\output\notification::NOTIFY_SUCCESS
+    );
 }
 
 if ($action === 'unlock') {
@@ -185,22 +187,30 @@ if ($action === 'review') {
     // Free: a fresh access check and the live price. Nothing is bought here.
     $r = unlock::review();
     if (!$r['canbuy']) {
-        echo $OUTPUT->notification($str('act_msg_blocked', $blockedtext($r['blocked'], $r['state'], $r['release'])),
-            \core\output\notification::NOTIFY_WARNING);
+        echo $OUTPUT->notification(
+            $str('act_msg_blocked', $blockedtext($r['blocked'], $r['state'], $r['release'])),
+            \core\output\notification::NOTIFY_WARNING
+        );
         echo $OUTPUT->continue_button($pageurl);
         echo $OUTPUT->footer();
         exit;
     }
     $release = $r['release'];
-    $confirmurl = new moodle_url($pageurl, ['action' => 'unlock', 'confirm' => 1, 'expected' => $release['price'],
-        'sha' => $release['sha']]);
-    $warning = $r['warning'] === 'insufficient' ? ' ' . $str('act_warn_insufficient',
-        ['price' => $release['price'], 'balance' => $balancetext($r['state'])]) : '';
-    $message = $str('act_confirm', [
-        'price' => $release['price'],
-        'balance' => $balancetext($r['state']),
-        'release' => ($release['version'] !== '' ? $release['version'] . ', ' : '') . 'SHA-256 ' . $release['sha'],
-    ]) . $warning;
+    $confirmurl = new moodle_url(
+        $pageurl, ['action' => 'unlock', 'confirm' => 1, 'expected' => $release['price'],
+        'sha' => $release['sha']]
+    );
+    $warning = $r['warning'] === 'insufficient' ? ' ' . $str(
+        'act_warn_insufficient',
+        ['price' => $release['price'], 'balance' => $balancetext($r['state'])]
+    ) : '';
+    $message = $str(
+        'act_confirm', [
+            'price' => $release['price'],
+            'balance' => $balancetext($r['state']),
+            'release' => ($release['version'] !== '' ? $release['version'] . ', ' : '') . 'SHA-256 ' . $release['sha'],
+        ]
+    ) . $warning;
     echo $OUTPUT->confirm(
         $message,
         new single_button($confirmurl, $str('act_confirmbutton', $release['price']), 'post', single_button::BUTTON_PRIMARY),
@@ -223,13 +233,17 @@ $table = new html_table();
 $table->attributes['class'] = 'generaltable aa-activation';
 $sourcecell = s($str('act_source_' . $source));
 if (credentials::central_installed()) {
-    $sourcecell .= ' ' . html_writer::link(new moodle_url('/admin/settings.php', ['section' => 'local_aiconfig']),
-        $str('act_configurecentral'));
+    $sourcecell .= ' ' . html_writer::link(
+        new moodle_url('/admin/settings.php', ['section' => 'local_aiconfig']),
+        $str('act_configurecentral')
+    );
 } else {
     $sourcecell .= ' ' . html_writer::span(s(get_string('credentials_nocentral', 'mod_aianatomy')), 'text-muted');
 }
-$sourcecell .= ' ' . html_writer::link(new moodle_url('/admin/settings.php', ['section' => 'modsettingaianatomy']),
-    $str('act_configurelocal'));
+$sourcecell .= ' ' . html_writer::link(
+    new moodle_url('/admin/settings.php', ['section' => 'modsettingaianatomy']),
+    $str('act_configurelocal')
+);
 
 $accesscell = html_writer::tag('strong', s($str('act_status_' . $state['status'])));
 $details = [];
@@ -251,8 +265,14 @@ if ($details) {
 
 if ($release['ok']) {
     $pricecell = html_writer::tag('strong', s($str('act_price_live', $release['price'])))
-        . html_writer::div(s($str('act_release', ['version' => $release['version'] !== '' ? $release['version'] : '-',
-            'sha' => $release['sha']])), 'text-muted small');
+        . html_writer::div(
+            s(
+                $str(
+                    'act_release', ['version' => $release['version'] !== '' ? $release['version'] : '-',
+                    'sha' => $release['sha']]
+                )
+            ), 'text-muted small'
+        );
 } else {
     $pricecell = s($str('act_price_unavailable', $reasontext($release)));
 }
@@ -266,8 +286,10 @@ $table->data = [
 echo html_writer::table($table);
 
 if ($pending) {
-    echo $OUTPUT->notification($str('act_pendingnote', userdate($pending['time'])) . ' ' . $str('act_blocked_pending'),
-        \core\output\notification::NOTIFY_WARNING, false);
+    echo $OUTPUT->notification(
+        $str('act_pendingnote', userdate($pending['time'])) . ' ' . $str('act_blocked_pending'),
+        \core\output\notification::NOTIFY_WARNING, false
+    );
 }
 
 // Why "Unlock" is not available right now (the review step checks again before anything is bought).
@@ -284,14 +306,22 @@ if ($source === 'missing') {
 
 $check = new single_button(new moodle_url($pageurl, ['action' => 'check']), $str('act_check'), 'post');
 $check->disabled = $source === 'missing';
-$buy = new single_button(new moodle_url($pageurl, ['action' => 'review']), $str('act_unlock'), 'post',
-    single_button::BUTTON_PRIMARY);
+$buy = new single_button(
+    new moodle_url($pageurl, ['action' => 'review']), $str('act_unlock'), 'post',
+    single_button::BUTTON_PRIMARY
+);
 $buy->disabled = $blocked !== '';
 echo html_writer::div($OUTPUT->render($check) . ' ' . $OUTPUT->render($buy), 'd-flex gap-2 aa-activation-actions');
 if ($blocked !== '') {
     echo html_writer::div(s($blockedtext($blocked, $state, $release)), 'text-muted mt-2');
 } else if ($release['ok'] && unlock::low($state, (int)$release['price'])) {
-    echo html_writer::div(s($str('act_warn_insufficient', ['price' => $release['price'],
-        'balance' => $balancetext($state)])), 'text-warning mt-2');
+    echo html_writer::div(
+        s(
+            $str(
+                'act_warn_insufficient', ['price' => $release['price'],
+                'balance' => $balancetext($state)]
+            )
+        ), 'text-warning mt-2'
+    );
 }
 echo $OUTPUT->footer();

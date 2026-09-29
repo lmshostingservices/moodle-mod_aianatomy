@@ -104,31 +104,31 @@
    "id": "upper_limb",
    "label": "Upper limb",
    "parent": null,
-   "tip": "Work from the trunk outwards: shoulder girdle (clavicle and scapula), arm (humerus), forearm (radius and ulna), then hand."
+   "tip": "Work outwards from the trunk: collarbone and shoulder blade, then the humerus, then the radius and ulna, and finally the hand."
   },
   {
    "id": "girdle",
    "label": "Pectoral (shoulder) girdle",
    "parent": "upper_limb",
-   "tip": "The pectoral girdle is the clavicle and scapula. It joins the trunk only at the sternoclavicular joint; the scapula is held on mainly by muscles, giving the shoulder its great range of movement."
+   "tip": "The collarbone and shoulder blade join your trunk at just one small joint by the breastbone. Muscles hold the rest, which is why your shoulder moves so freely."
   },
   {
    "id": "arm",
    "label": "Arm",
    "parent": "upper_limb",
-   "tip": "In anatomy, the arm is only the part between shoulder and elbow, so it has just one bone: the humerus."
+   "tip": "In anatomy, the arm is only the part between shoulder and elbow. So it has just one bone, the humerus."
   },
   {
    "id": "forearm",
    "label": "Forearm",
    "parent": "upper_limb",
-   "tip": "Radius by the thumb, ulna by the little finger. In pronation the radius crosses over the ulna; the ulna stays still."
+   "tip": "Radius by the thumb, ulna by the little finger. Turn your palm down and the radius crosses over the ulna, which stays still."
   },
   {
    "id": "hand_context",
    "label": "Hand (context)",
    "parent": "upper_limb",
-   "tip": "Carpals: Some Lovers Try Positions That They Can't Handle (scaphoid, lunate, triquetrum, pisiform; trapezium, trapezoid, capitate, hamate)."
+   "tip": "Wrist bones, top row from thumb to pinky, then the bottom row back again: So Long To Pinky, Here Comes The Thumb."
   }
  ],
  "structures": [
@@ -161,18 +161,18 @@
    ],
    "content": {
     "pronunciation": "KLAV-ih-kul",
-    "origin": "Latin clavicula, \"little key\", from its S-shaped curve, like an old-fashioned key.",
-    "location": "Lies horizontally across the top of the chest at the front, just under the skin, from the sternum (medially) to the acromion of the scapula (laterally).",
-    "description": "A long, S-shaped bone: the medial two-thirds curve forwards (convex anteriorly) and the lateral third curves backwards and is flattened. It can be felt along its whole length.",
-    "function": "Acts as a strut holding the shoulder out from the trunk so the arm can move freely, and is the only bony link between the upper limb and the axial skeleton (at the sternoclavicular joint). It passes forces from the arm to the trunk.",
-    "mnemonic": "Clavicle = little key: an S-shaped key that locks the shoulder to the chest.",
-    "clinical": "One of the most commonly fractured bones, usually in its middle third, from a fall onto the shoulder or an outstretched hand. The shoulder then drops forwards and down.",
-    "hint": "The S-shaped bone you can feel running across the top of the chest from the breastbone to the point of the shoulder."
+    "origin": "From the Latin for little key. Its gentle S-shaped curve looks like an old-fashioned key.",
+    "location": "It runs across the top of your chest, just under the skin, from the breastbone out to the point of your shoulder.",
+    "description": "A long bone shaped like a gentle S. You can feel it along its whole length.",
+    "function": "It works like a strut, holding your shoulder out from your body so your arm can swing freely. It is the only bone that links your arm to your trunk.",
+    "mnemonic": "Clavicle means little key. Picture an S-shaped key that locks your shoulder to your chest.",
+    "clinical": "It is one of the most often broken bones, usually in its middle, from a fall on the shoulder or an outstretched hand. The shoulder then droops forward and down.",
+    "hint": "Find the S-shaped bone running across the top of the chest from the breastbone to the point of the shoulder."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which bone forms the only bony connection between the upper limb and the axial skeleton?",
+     "text": "Which bone is the only bony link between your arm and your trunk?",
      "options": [
       "Scapula",
       "Clavicle",
@@ -180,19 +180,19 @@
       "Ulna"
      ],
      "answer": 1,
-     "explanation": "The clavicle joins the sternum at the sternoclavicular joint; the scapula is held on by muscles."
+     "explanation": "The clavicle joins the breastbone at the sternoclavicular joint. The shoulder blade is held on only by muscles."
     },
     {
      "kind": "clinical",
-     "text": "Where is the clavicle most commonly fractured?",
+     "text": "Where does the clavicle most often break?",
      "options": [
       "At the coracoid process",
-      "At the sternal end",
+      "At the breastbone end",
       "Through the acromion",
-      "Its middle third"
+      "In its middle third"
      ],
      "answer": 3,
-     "explanation": "Most clavicle fractures occur in the middle third."
+     "explanation": "Most clavicle breaks happen in the middle third of the bone."
     }
    ]
   },
@@ -228,18 +228,18 @@
    ],
    "content": {
     "pronunciation": "SKAP-yoo-lah",
-    "origin": "Latin scapula, \"shoulder blade\" (plural scapulae).",
-    "location": "A flat bone on the upper back, lying over the back of the rib cage roughly from the second to the seventh ribs, on each side of the spine.",
-    "description": "A flat triangular bone. The back has a ridge, the spine, ending in the acromion (point of the shoulder); above and below it are the supraspinous and infraspinous fossae. The front has the subscapular fossa and the hook-like coracoid process, and the lateral angle has the shallow glenoid cavity.",
-    "function": "Forms the shoulder (glenohumeral) joint with the humerus at the glenoid cavity and the acromioclavicular joint with the clavicle. It anchors many muscles, including the rotator cuff, and glides over the rib cage to widen the arm's range of movement.",
-    "mnemonic": "Spine, acromion, coracoid, glenoid: the blade's ridge, its roof, its hook and its socket.",
-    "clinical": "Damage to the long thoracic nerve paralyses serratus anterior, so the medial border of the scapula lifts off the chest wall (winged scapula), best seen when pushing against a wall.",
-    "hint": "The flat triangular bone on the upper back with a ridge across it, a hook at the front and a shallow socket for the arm."
+    "origin": "From the Latin for shoulder blade. It really does look like a flat blade.",
+    "location": "It lies flat on your upper back over the ribs, one on each side of the spine.",
+    "description": "A flat triangle of bone. A ridge crosses its back and ends at the point of your shoulder, and at the outer corner is a shallow socket for the arm.",
+    "function": "Its shallow socket holds the top of the arm bone to form the shoulder joint. It anchors many muscles, including the rotator cuff, and glides over your ribs to give your arm more reach.",
+    "mnemonic": "Remember four landmarks as a ridge, a roof, a hook and a socket. They are the spine, acromion, coracoid and glenoid.",
+    "clinical": "If the long thoracic nerve is damaged, the inner edge of the blade sticks out like a wing. It shows best when the person pushes against a wall.",
+    "hint": "Find the flat triangle on the upper back with a ridge across it, a hook at the front and a shallow socket for the arm."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The head of the humerus articulates with which part of the scapula?",
+     "text": "The top of the humerus fits into which part of the scapula?",
      "options": [
       "Glenoid cavity",
       "Coracoid process",
@@ -247,7 +247,7 @@
       "Spine"
      ],
      "answer": 0,
-     "explanation": "The glenoid cavity is the shallow socket of the shoulder joint."
+     "explanation": "The glenoid cavity is the shallow socket of the shoulder joint. The ball at the top of the humerus sits in it."
     },
     {
      "kind": "clinical",
@@ -259,7 +259,7 @@
       "Ulnar nerve"
      ],
      "answer": 2,
-     "explanation": "The long thoracic nerve supplies serratus anterior, which holds the scapula against the chest wall."
+     "explanation": "The long thoracic nerve powers serratus anterior, the muscle that holds the shoulder blade flat against the ribs."
     }
    ]
   },
@@ -299,30 +299,30 @@
    ],
    "content": {
     "pronunciation": "HYOO-mer-us",
-    "origin": "Latin umerus, \"shoulder\" or \"upper arm\".",
-    "location": "The only bone of the arm (between the shoulder and the elbow), running from the scapula above to the radius and ulna below.",
-    "description": "A long bone. The upper end has a rounded head, the anatomical and surgical necks, and the greater and lesser tubercles with the intertubercular groove between them. The shaft has the deltoid tuberosity and radial groove; the lower end has the medial and lateral epicondyles, the trochlea (for the ulna) and capitulum (for the radius).",
-    "function": "Forms the shoulder joint with the scapula and the elbow joint with the radius and ulna, and acts as the lever for most arm movements. It anchors major muscles such as deltoid, the rotator cuff, pectoralis major and the elbow and wrist muscles.",
-    "mnemonic": "Nerves at risk from top to bottom, A-R-U: Axillary at the surgical neck, Radial at the shaft, Ulnar behind the medial epicondyle.",
-    "clinical": "A surgical neck fracture can injure the axillary nerve; a shaft fracture can injure the radial nerve (wrist drop); and the ulnar nerve behind the medial epicondyle is the tingling \"funny bone\".",
-    "hint": "The single long bone of the upper arm, with a ball at the shoulder end and a pulley-like lower end at the elbow."
+    "origin": "From the Latin word for shoulder or upper arm.",
+    "location": "It is the only bone in your upper arm, running from the shoulder blade down to the two forearm bones at the elbow.",
+    "description": "A long bone with a smooth ball at the top. At the elbow it has a pulley, the trochlea, for the ulna and a round knob, the capitulum, for the radius.",
+    "function": "It forms the shoulder joint above and the elbow joint below. It is the lever for most arm movements and anchors big muscles like the deltoid.",
+    "mnemonic": "Nerves at risk, top to bottom, spell A R U. Axillary at the neck, Radial along the shaft, Ulnar behind the elbow.",
+    "clinical": "A break through its shaft can hurt the radial nerve, so the wrist flops down, called wrist drop. The ulnar nerve behind the elbow is your tingly funny bone.",
+    "hint": "Find the single long bone of the upper arm, with a ball at the shoulder and a pulley shape at the elbow."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "A fracture of the shaft of the humerus in the radial groove may cause which problem?",
+     "text": "A break along the shaft of the humerus can damage the radial nerve. What problem can this cause?",
      "options": [
       "Winged scapula",
       "Wrist drop",
-      "Loss of shoulder abduction only",
-      "Loss of sensation over the little finger only"
+      "Loss of shoulder lifting only",
+      "Numb little finger only"
      ],
      "answer": 1,
-     "explanation": "The radial nerve runs in the radial groove and supplies the wrist extensors, so injury causes wrist drop."
+     "explanation": "The radial nerve runs in a groove along the humerus and powers the muscles that lift the wrist. Injury makes the wrist flop down."
     },
     {
      "kind": "terminology",
-     "text": "Which part of the distal humerus articulates with the ulna?",
+     "text": "Which part of the lower humerus meets the ulna?",
      "options": [
       "Capitulum",
       "Deltoid tuberosity",
@@ -330,7 +330,7 @@
       "Trochlea"
      ],
      "answer": 3,
-     "explanation": "The pulley-shaped trochlea fits the trochlear notch of the ulna; the capitulum meets the radius."
+     "explanation": "The pulley-shaped trochlea fits into the notch of the ulna. The rounded capitulum meets the radius instead."
     }
    ]
   },
@@ -368,30 +368,30 @@
    ],
    "content": {
     "pronunciation": "RAY-dee-us",
-    "origin": "Latin radius, \"spoke of a wheel\" or \"ray\". It turns around the ulna like a spoke.",
-    "location": "The lateral (thumb-side) bone of the forearm, running from the elbow to the wrist, alongside the ulna.",
-    "description": "A long bone, narrow at the elbow and broad at the wrist. The upper end has a disc-shaped head and the radial tuberosity (where biceps brachii inserts); the lower end has the radial styloid process and a surface for the carpal bones.",
-    "function": "Its head meets the capitulum of the humerus and the ulna at the elbow, and it rotates around the ulna to turn the palm up and down (supination and pronation). Its broad lower end forms most of the wrist joint and carries load from the hand.",
-    "mnemonic": "Radius by the thumb: thumbs up for the radius.",
-    "clinical": "A Colles fracture is a break of the distal radius, usually from a fall on an outstretched hand. In young children, a sudden pull on the arm can slip the radial head out of its ring ligament (pulled elbow).",
-    "hint": "The forearm bone on the thumb side, with a disc-shaped head at the elbow and a wide lower end at the wrist."
+    "origin": "From the Latin for the spoke of a wheel. It turns around the ulna like a spoke.",
+    "location": "It is the forearm bone on your thumb side, running from the elbow to the wrist beside the ulna.",
+    "description": "A long bone, slim at the elbow and wide at the wrist. Its top is a flat disc, and just below it is a bump where the biceps pulls.",
+    "function": "Its disc-shaped head spins against the humerus as it rolls around the ulna, turning your palm up and down. Its wide lower end forms most of the wrist joint.",
+    "mnemonic": "Radius by the thumb. Give a thumbs up for the radius.",
+    "clinical": "Falling on an outstretched hand often breaks its wrist end, a Colles fracture. In young children, a sudden tug on the arm can slip its head out of place, called pulled elbow.",
+    "hint": "Find the forearm bone on the thumb side, with a disc-shaped top at the elbow and a wide lower end at the wrist."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which movement depends on the radius rotating around the ulna?",
+     "text": "Which movement depends on the radius rolling around the ulna?",
      "options": [
       "Turning the palm up and down",
-      "Flexing the fingers",
+      "Bending the fingers",
       "Shrugging the shoulder",
       "Straightening the elbow"
      ],
      "answer": 0,
-     "explanation": "The radius rotates around the ulna during pronation and supination."
+     "explanation": "Turning a key or a doorknob works because the radius rolls around the ulna, turning your palm up and down."
     },
     {
      "kind": "relationship",
-     "text": "The head of the radius articulates with which part of the humerus?",
+     "text": "The head of the radius meets which part of the humerus?",
      "options": [
       "Trochlea",
       "Glenoid cavity",
@@ -399,7 +399,7 @@
       "Olecranon fossa"
      ],
      "answer": 2,
-     "explanation": "The capitulum is the rounded lateral part of the distal humerus that meets the radial head."
+     "explanation": "The capitulum is the round knob on the outer side of the lower humerus. The disc-shaped head of the radius spins against it."
     }
    ]
   },
@@ -437,13 +437,13 @@
    ],
    "content": {
     "pronunciation": "UL-nah",
-    "origin": "Latin ulna, \"elbow\" or \"forearm\".",
-    "location": "The medial (little-finger side) bone of the forearm, running from the elbow to the wrist, alongside the radius.",
-    "description": "A long bone, large at the elbow and small at the wrist. The upper end has the olecranon (the point of the elbow), the coronoid process and the C-shaped trochlear notch; the lower end has a small head and the ulnar styloid process.",
-    "function": "Its trochlear notch grips the trochlea of the humerus to form the main hinge of the elbow, and it is the stable bone the radius rotates around. Triceps brachii inserts on the olecranon. At the wrist it is separated from the carpal bones by a cartilage disc.",
-    "mnemonic": "Ulna is by the little finger: the olecranon is the elbow you lean on.",
-    "clinical": "A Monteggia fracture is a fracture of the ulna shaft with dislocation of the radial head. A fall onto the point of the elbow can fracture the olecranon.",
-    "hint": "The forearm bone on the little-finger side, whose upper end forms the bony point of the elbow."
+    "origin": "From the Latin word for elbow or forearm. Its top end is the point of your elbow.",
+    "location": "It is the forearm bone on your little-finger side, running from the elbow to the wrist beside the radius.",
+    "description": "A long bone, big at the elbow and small at the wrist. Its top end has a deep C-shaped notch, with the olecranon, the point of your elbow, behind it.",
+    "function": "Its C-shaped notch grips the humerus to make the elbow's main hinge. Triceps pulls on the olecranon to straighten your arm, and the radius turns around this steady bone.",
+    "mnemonic": "Ulna goes with the little finger. The olecranon is the elbow you lean on at the table.",
+    "clinical": "Landing on the point of the elbow can break the olecranon. A Monteggia fracture is a break of the ulna with the top of the radius knocked out of place.",
+    "hint": "Find the forearm bone on the little-finger side, whose top end forms the bony point of the elbow."
    },
    "questions": [
     {
@@ -456,11 +456,11 @@
       "Scapula"
      ],
      "answer": 1,
-     "explanation": "The olecranon is the upper end of the ulna."
+     "explanation": "The olecranon is the top end of the ulna. It is the part you lean on when you rest your elbows on a table."
     },
     {
      "kind": "relationship",
-     "text": "Which muscle inserts on the olecranon of the ulna?",
+     "text": "Which muscle attaches to the olecranon of the ulna?",
      "options": [
       "Biceps brachii",
       "Serratus anterior",
@@ -468,7 +468,7 @@
       "Triceps brachii"
      ],
      "answer": 3,
-     "explanation": "Triceps brachii inserts on the olecranon and straightens the elbow."
+     "explanation": "Triceps brachii, on the back of your arm, pulls on the olecranon to straighten the elbow."
     }
    ]
   },
@@ -552,13 +552,13 @@
    ],
    "content": {
     "pronunciation": "KAR-pulz and MET-ah-KAR-pulz",
-    "origin": "Greek karpos, \"wrist\"; meta-, \"beyond\": the metacarpals lie beyond the wrist.",
-    "location": "Distal to the radius and ulna: the eight carpal bones form the wrist and the five metacarpals form the palm. Shown here for context only.",
-    "description": "Eight small carpal bones in two rows of four, and five long metacarpals, one leading to each digit. The finger bones (phalanges) are not included in this model.",
-    "function": "The wrist bones meet the radius at the wrist joint and give the hand a flexible base; the metacarpals form the framework of the palm.",
-    "mnemonic": "Carpals, lateral to medial, proximal then distal row: Some Lovers Try Positions That They Can't Handle (scaphoid, lunate, triquetrum, pisiform, trapezium, trapezoid, capitate, hamate).",
-    "clinical": "A fall on an outstretched hand can fracture the scaphoid; tenderness in the anatomical snuffbox is a key sign.",
-    "hint": "The small wrist bones and palm bones beyond the lower ends of the forearm bones."
+    "origin": "From the Greek karpos, meaning wrist. Meta means beyond, so the metacarpals lie beyond the wrist.",
+    "location": "It sits just past the lower ends of the radius and ulna. It is shown here only to complete the arm.",
+    "description": "Eight small wrist bones in two rows of four, plus five palm bones, one for each finger. The finger bones are not included in this model.",
+    "function": "The wrist bones meet the radius and give your hand a flexible base. The palm bones form the frame of your palm.",
+    "mnemonic": "Wrist bones, top row from thumb to pinky, then the bottom row back again: So Long To Pinky, Here Comes The Thumb.",
+    "clinical": "A fall on an outstretched hand can break the scaphoid, a small wrist bone. Pain in the hollow at the base of the thumb is a key warning sign.",
+    "hint": "Find the small wrist bones and palm bones just past the lower ends of the forearm bones."
    },
    "questions": [],
    "merged": true,

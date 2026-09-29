@@ -29,37 +29,62 @@ if ($ADMIN->fulltree) {
     $unlockstate = \mod_aianatomy\local\unlock::state();
     $actionurl = new moodle_url('/mod/aianatomy/activation.php');
     $settingsurl = new moodle_url('/admin/settings.php', ['section' => 'modsettingaianatomy']);
-    $access = s(get_string('act_settings_status', 'mod_aianatomy',
-        get_string('act_status_' . $unlockstate['status'], 'mod_aianatomy')));
-    $access .= ' ' . html_writer::tag('button', get_string('act_check', 'mod_aianatomy'), [
-        'type' => 'submit', 'name' => 'action', 'value' => 'check',
-        'formaction' => $actionurl->out(false), 'formmethod' => 'post', 'class' => 'btn btn-secondary btn-sm',
-    ]);
-    $access .= ' ' . html_writer::link(new moodle_url($settingsurl, ['unlockreview' => 1]),
-        get_string('act_unlock', 'mod_aianatomy'), ['class' => 'btn btn-secondary btn-sm']);
+    $access = s(
+        get_string(
+            'act_settings_status', 'mod_aianatomy',
+            get_string('act_status_' . $unlockstate['status'], 'mod_aianatomy')
+        )
+    );
+    $access .= ' ' . html_writer::tag(
+        'button', get_string('act_check', 'mod_aianatomy'), [
+            'type' => 'submit', 'name' => 'action', 'value' => 'check',
+            'formaction' => $actionurl->out(false), 'formmethod' => 'post', 'class' => 'btn btn-secondary btn-sm',
+        ]
+    );
+    $access .= ' ' . html_writer::link(
+        new moodle_url($settingsurl, ['unlockreview' => 1]),
+        get_string('act_unlock', 'mod_aianatomy'), ['class' => 'btn btn-secondary btn-sm']
+    );
     if (optional_param('unlockreview', 0, PARAM_BOOL)) {
         // Only an explicit review performs the free remote check. Confirmation is bound to the live ZIP and price.
         $review = \mod_aianatomy\local\unlock::review();
         if ($review['canbuy'] && $review['release']['price'] === 50) {
             $release = $review['release'];
-            $access .= html_writer::tag('p', s(get_string('act_confirm', 'mod_aianatomy', (object)[
-                'price' => 50,
-                'balance' => !empty($review['state']['unlimited']) ? get_string('act_balance_unlimited', 'mod_aianatomy')
-                    : ($review['state']['credits'] ?? get_string('act_balance_unknown', 'mod_aianatomy')),
-                'release' => $release['version'] . ', SHA-256 ' . $release['sha'],
-            ])));
+            $access .= html_writer::tag(
+                'p', s(
+                    get_string(
+                        'act_confirm', 'mod_aianatomy', (object)[
+                            'price' => 50,
+                            'balance' => !empty($review['state']['unlimited'])
+                                ? get_string('act_balance_unlimited', 'mod_aianatomy')
+                                : ($review['state']['credits'] ?? get_string('act_balance_unknown', 'mod_aianatomy')),
+                            'release' => $release['version'] . ', SHA-256 ' . $release['sha'],
+                        ]
+                    )
+                )
+            );
             foreach (['confirm' => 1, 'expected' => 50, 'sha' => $release['sha']] as $name => $value) {
-                $access .= html_writer::empty_tag('input', [
-                    'type' => 'hidden', 'name' => $name, 'value' => $value,
-                ]);
+                $access .= html_writer::empty_tag(
+                    'input', [
+                        'type' => 'hidden', 'name' => $name, 'value' => $value,
+                    ]
+                );
             }
-            $access .= html_writer::tag('button', get_string('act_confirmbutton', 'mod_aianatomy', 50), [
-                'type' => 'submit', 'name' => 'action', 'value' => 'unlock',
-                'formaction' => $actionurl->out(false), 'formmethod' => 'post', 'class' => 'btn btn-primary',
-            ]);
+            $access .= html_writer::tag(
+                'button', get_string('act_confirmbutton', 'mod_aianatomy', 50), [
+                    'type' => 'submit', 'name' => 'action', 'value' => 'unlock',
+                    'formaction' => $actionurl->out(false), 'formmethod' => 'post', 'class' => 'btn btn-primary',
+                ]
+            );
         } else {
-            $access .= html_writer::div(s(get_string('act_blocked_' . ($review['blocked'] ?: 'release'),
-                'mod_aianatomy')), 'alert alert-warning');
+            $access .= html_writer::div(
+                s(
+                    get_string(
+                        'act_blocked_' . ($review['blocked'] ?: 'release'),
+                        'mod_aianatomy'
+                    )
+                ), 'alert alert-warning'
+            );
         }
     }
     $settings->add(
@@ -87,13 +112,17 @@ if ($ADMIN->fulltree) {
         $status .= ' ' . get_string('act_notproof', 'mod_aianatomy');
     }
     $configlink = \mod_aianatomy\local\credentials::central_installed()
-        ? html_writer::link(new moodle_url('/admin/settings.php', ['section' => 'local_aiconfig']),
-            get_string('act_configurecentral', 'mod_aianatomy')) : '';
+        ? html_writer::link(
+            new moodle_url('/admin/settings.php', ['section' => 'local_aiconfig']),
+            get_string('act_configurecentral', 'mod_aianatomy')
+        ) : '';
     $settings->add(
         new admin_setting_heading(
             'mod_aianatomy/credentialstatus', get_string('credentials', 'mod_aianatomy'),
-            html_writer::div(s($status) . ' ' . $configlink,
-                $source === 'missing' ? 'alert alert-warning' : 'alert alert-info')
+            html_writer::div(
+                s($status) . ' ' . $configlink,
+                $source === 'missing' ? 'alert alert-warning' : 'alert alert-info'
+            )
         )
     );
     // The LMS Labs endpoints are built in (see \mod_aianatomy\local\ai\endpoints); shown here for information.

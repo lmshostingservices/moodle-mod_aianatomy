@@ -61,13 +61,6 @@ class mod_aianatomy_mod_form extends moodleform_mod {
             $mform->hardFreeze('pack');
             $mform->addElement('static', 'packlocked', '', get_string('packlocked', 'mod_aianatomy'));
         }
-        $levels = [];
-        foreach (\mod_aianatomy\local\pack::LEVELS as $level) {
-            $levels[$level] = get_string('level_' . $level, 'mod_aianatomy');
-        }
-        $mform->addElement('select', 'level', get_string('level', 'mod_aianatomy'), $levels);
-        $mform->addHelpButton('level', 'level', 'mod_aianatomy');
-        $mform->setDefault('level', 'diploma');
         $fieldgroup = [];
         foreach (array_merge(array_diff(\mod_aianatomy\local\pack::FIELDS, ['hint']), ['relationships']) as $field) {
             $fieldgroup[] = $mform->createElement(
@@ -113,11 +106,13 @@ class mod_aianatomy_mod_form extends moodleform_mod {
         $mform->setDefault('language', \mod_aianatomy\local\language::normalise(current_language()));
         $mform->addElement('static', 'languagenote', '', get_string('activitylanguage_note', 'mod_aianatomy'));
 
+        // Voiceover is part of every activity (cards, prompts, questions and feedback); it is prepared before students
+        // start. Only the voice and automatic reading are chosen here.
         $mform->addElement(
-            'advcheckbox', 'voice', get_string('voiceover', 'mod_aianatomy'),
-            get_string('voiceover_desc', 'mod_aianatomy')
+            'static', 'voiceincluded', get_string('voiceover', 'mod_aianatomy'),
+            get_string('voiceover_included', 'mod_aianatomy')
         );
-        $mform->addHelpButton('voice', 'voiceover', 'mod_aianatomy');
+        $mform->addHelpButton('voiceincluded', 'voiceover', 'mod_aianatomy');
         if (!\mod_aianatomy\local\ai\tts_lmslabs::is_ready()) {
             $mform->addElement(
                 'static', 'voicenotready', '',
@@ -133,23 +128,10 @@ class mod_aianatomy_mod_form extends moodleform_mod {
         }
         $mform->addElement('select', 'voicename', get_string('voicename', 'mod_aianatomy'), $voices);
         $mform->setDefault('voicename', 'Kore');
-        $mform->hideIf('voicename', 'voice', 'notchecked');
-        $places = [];
-        foreach (\mod_aianatomy\local\voice::PLACES as $place) {
-            $places[] = $mform->createElement(
-                'advcheckbox', 'voiceplaceset[' . $place . ']', '',
-                get_string('voiceplace_' . $place, 'mod_aianatomy')
-            );
-            $mform->setDefault('voiceplaceset[' . $place . ']', 1);
-        }
-        $mform->addGroup($places, 'voiceplacesgroup', get_string('voiceplaces', 'mod_aianatomy'), '<br>', false);
-        $mform->addHelpButton('voiceplacesgroup', 'voiceplaces', 'mod_aianatomy');
-        $mform->hideIf('voiceplacesgroup', 'voice', 'notchecked');
         $mform->addElement(
             'advcheckbox', 'voiceauto', get_string('voiceauto', 'mod_aianatomy'),
             get_string('voiceauto_desc', 'mod_aianatomy')
         );
-        $mform->hideIf('voiceauto', 'voice', 'notchecked');
 
         // Modes.
         $mform->addElement('header', 'modeshdr', get_string('modes', 'mod_aianatomy'));
@@ -250,12 +232,6 @@ class mod_aianatomy_mod_form extends moodleform_mod {
                 $defaultvalues['studyfieldset'][$field] = in_array($field, $on, true) ? 1 : 0;
             }
         }
-        if (isset($defaultvalues['voiceplaces'])) {
-            $on = array_filter(array_map('trim', explode(',', (string)$defaultvalues['voiceplaces'])));
-            foreach (\mod_aianatomy\local\voice::PLACES as $place) {
-                $defaultvalues['voiceplaceset'][$place] = in_array($place, $on, true) ? 1 : 0;
-            }
-        }
     }
 
     /**
@@ -308,7 +284,7 @@ class mod_aianatomy_mod_form extends moodleform_mod {
         if (empty($data['allowstudy']) && empty($data['allowpractice']) && empty($data['allowtest'])) {
             $errors['allowtest'] = get_string('errornomode', 'mod_aianatomy');
         }
-        if (!empty($data['voice'])) {
+        if (\mod_aianatomy\local\ai\tts_lmslabs::is_ready()) {
             // Only offer voices LMS Labs lists for the activity language (when the catalogue can be read).
             $locale = \mod_aianatomy\local\language::locale($data['language'] ?? 'en');
             $available = \mod_aianatomy\local\voice::available($locale, $known);

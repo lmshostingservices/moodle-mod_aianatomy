@@ -223,8 +223,10 @@ if ($canmanage && !\mod_aianatomy\local\language::same($activitylang, 'en')) {
         fn($r) => !\mod_aianatomy\local\language::same((string)($r->contentlang ?? 'en'), $activitylang)
     );
     if ($untranslated) {
-        $notice = $str('lang_teachernotice', ['n' => count($untranslated), 'total' => count($enabledrows),
-            'lang' => \mod_aianatomy\local\language::native_name($activitylang)]);
+        $notice = $str(
+            'lang_teachernotice', ['n' => count($untranslated), 'total' => count($enabledrows),
+            'lang' => \mod_aianatomy\local\language::native_name($activitylang)]
+        );
         $link = html_writer::link(
             new moodle_url('/mod/aianatomy/editor.php', ['id' => $cm->id]),
             $str('editanatomy'),

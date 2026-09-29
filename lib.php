@@ -99,22 +99,13 @@ function aianatomy_prepare_instance_data(stdClass $data): stdClass {
     $data->timelimit = empty($data->timelimit) ? 0 : (int)$data->timelimit;
     // Language and voiceover.
     $data->language = \mod_aianatomy\local\language::normalise($data->language ?? current_language());
-    $data->voice = empty($data->voice) ? 0 : 1;
+    // Voiceover is part of every activity, in every place.
+    $data->voice = 1;
     $data->voiceauto = empty($data->voiceauto) ? 0 : 1;
     if (!isset(\mod_aianatomy\local\voice::VOICES[$data->voicename ?? ''])) {
         $data->voicename = 'Kore';
     }
-    if (isset($data->voiceplaceset) && is_array($data->voiceplaceset)) {
-        $data->voiceplaces = implode(
-            ',', array_intersect(
-                \mod_aianatomy\local\voice::PLACES,
-                array_keys(array_filter($data->voiceplaceset))
-            )
-        );
-    }
-    if (!isset($data->voiceplaces)) {
-        $data->voiceplaces = implode(',', \mod_aianatomy\local\voice::PLACES);
-    }
+    $data->voiceplaces = implode(',', \mod_aianatomy\local\voice::PLACES);
     return $data;
 }
 
@@ -131,8 +122,11 @@ function aianatomy_add_instance($data, $mform = null) {
     $data->timecreated = time();
     $data->timemodified = $data->timecreated;
     $data->id = $DB->insert_record('aianatomy', $data);
-    \mod_aianatomy\local\manager::sync_structures($DB->get_record('aianatomy', ['id' => $data->id], '*', MUST_EXIST));
+    $instance = $DB->get_record('aianatomy', ['id' => $data->id], '*', MUST_EXIST);
+    \mod_aianatomy\local\manager::sync_structures($instance);
     aianatomy_grade_item_update($data);
+    // Prepare the voiceover in the background before students start.
+    \mod_aianatomy\local\voice::queue($instance);
     if (!empty($data->completionexpected)) {
         \core_completion\api::update_completion_date_event(
             $data->coursemodule,
@@ -167,6 +161,7 @@ function aianatomy_update_instance($data, $mform = null) {
     \mod_aianatomy\local\manager::sync_structures($instance);
     aianatomy_grade_item_update($instance);
     aianatomy_update_grades($instance, 0, false);
+    \mod_aianatomy\local\voice::queue($instance);
     \core_completion\api::update_completion_date_event(
         $data->coursemodule,
         'aianatomy',

@@ -122,37 +122,37 @@
    "id": "brain",
    "label": "Brain",
    "parent": null,
-   "tip": "Brain divisions: forebrain (cerebrum, thalamus, hypothalamus), midbrain, and hindbrain (pons, medulla, cerebellum). Some cortex, including the frontal pole and inferior frontal gyrus (Broca area), is not included in this model."
+   "tip": "Your brain has three main parts: the big forebrain on top, a small midbrain, and the hindbrain at the back. This model leaves out a little of the cortex at the very front."
   },
   {
    "id": "cortex_left",
    "label": "Left cerebral hemisphere (gyri)",
    "parent": "brain",
-   "tip": "Central sulcus rule: precentral = motor (\"pre = go\"), postcentral = sensory. In most people the left hemisphere is dominant for language, including the Wernicke area in the posterior superior temporal gyrus."
+   "tip": "The central groove splits the jobs: the fold in front moves you, the fold behind feels. In most people the left half runs language, both speaking and understanding."
   },
   {
    "id": "cortex_right",
    "label": "Right cerebral hemisphere (gyri)",
    "parent": "brain",
-   "tip": "Each hemisphere controls and feels the opposite side of the body. The right hemisphere is usually more involved in spatial attention, face recognition and the emotional tone of speech."
+   "tip": "Each half of the brain moves and feels the opposite side of your body. The right half is great with spaces, faces and the feeling in a voice."
   },
   {
    "id": "deep",
    "label": "Deep structures",
    "parent": "brain",
-   "tip": "Basal ganglia: caudate + putamen = striatum; putamen + globus pallidus = lentiform (\"lens-shaped\") nucleus. The limbic trio: hippocampus (memory), amygdala (fear), fornix (the arch linking them to the hypothalamus)."
+   "tip": "The caudate and putamen team up as the striatum, a movement helper. The hippocampus stores memories, the amygdala sounds the fear alarm, and the fornix arches between them."
   },
   {
    "id": "ventricles",
    "label": "Ventricles",
    "parent": "brain",
-   "tip": "CSF route: lateral ventricles -> interventricular foramina -> third ventricle -> cerebral aqueduct -> fourth ventricle -> apertures (Magendie median, Luschka lateral) -> subarachnoid space."
+   "tip": "Follow the fluid: from the two side ventricles into the third, down a narrow aqueduct to the fourth, then out to bathe the brain and spinal cord."
   },
   {
    "id": "brainstem_cerebellum",
    "label": "Brainstem and cerebellum",
    "parent": "brain",
-   "tip": "Cranial nerve \"rule of 4s\": nerves III-IV from the midbrain, V-VIII from the pons, IX-XII from the medulla (I and II attach to the forebrain)."
+   "tip": "Use the rule of fours: cranial nerves three and four leave the midbrain, five to eight the pons, and nine to twelve the medulla. Nerves one and two join the forebrain."
   }
  ],
  "structures": [
@@ -190,18 +190,18 @@
    ],
    "content": {
     "pronunciation": "soo-PEER-ee-er FRUN-tul JY-rus",
-    "origin": "Latin frons, \"forehead\", and Greek gyros, \"circle\" or \"ring\" (a gyrus is a raised fold of cortex).",
-    "location": "The uppermost fold of the left frontal lobe, running from front to back beside the midline and continuing onto the medial surface of the hemisphere.",
-    "description": "A long strip of cortex bordered below by the superior frontal sulcus and behind by the precentral gyrus. The frontal pole and inferior frontal gyrus are not included in this model.",
-    "function": "Its back part on the medial surface contains the supplementary motor area, which helps plan and sequence movements. The rest is prefrontal cortex involved in self-awareness, working memory and control of behaviour.",
-    "mnemonic": "Frontal lobe = \"front office\": the superior gyrus is the top floor where plans are made.",
-    "clinical": "Damage to the frontal lobes, including this gyrus, can change personality, motivation and judgement. An anterior cerebral artery stroke affects its medial surface.",
-    "hint": "The top fold at the front of the hemisphere, lying alongside the longitudinal fissure."
+    "origin": "From the Latin for forehead and the Greek gyros, a ring. A gyrus is one of the raised folds on the surface of the brain.",
+    "location": "The topmost fold at the front of the left hemisphere, running front to back beside the midline. It rolls over onto the inner face of the hemisphere.",
+    "description": "A long strip of cortex with a groove below it and the movement strip behind it. This model leaves out the very front tip and the lowest frontal fold.",
+    "function": "Its back part, on the inner face, helps you plan and sequence movements. The rest helps with self-awareness, holding things in mind and controlling your behaviour.",
+    "mnemonic": "Think of the frontal lobe as the front office. This fold is the top floor, where the plans are made.",
+    "clinical": "Damage to the frontal lobes, including this fold, can change personality, drive and judgement. A stroke of the anterior cerebral artery hits its inner face.",
+    "hint": "The top fold at the front of the hemisphere, running beside the deep groove that splits the brain in two."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which gyrus forms the uppermost fold of the frontal lobe beside the midline?",
+     "text": "Which fold forms the top of the frontal lobe, next to the midline?",
      "options": [
       "Middle frontal gyrus",
       "Superior frontal gyrus",
@@ -209,7 +209,7 @@
       "Cingulate gyrus"
      ],
      "answer": 1,
-     "explanation": "The superior frontal gyrus runs along the top of the frontal lobe next to the longitudinal fissure."
+     "explanation": "The superior frontal gyrus runs along the top of the frontal lobe, next to the deep groove between the hemispheres."
     }
    ]
   },
@@ -243,18 +243,18 @@
    ],
    "content": {
     "pronunciation": "MID-ul FRUN-tul JY-rus",
-    "origin": "Latin medius, \"middle\", and frons, \"forehead\".",
-    "location": "On the lateral surface of the left frontal lobe, between the superior and inferior frontal sulci and in front of the precentral gyrus.",
-    "description": "A broad horizontal fold, often partly divided by a shallow groove. The inferior frontal gyrus below it is not included in this model.",
-    "function": "Its back part contains the frontal eye field, which moves both eyes voluntarily towards the opposite side. Its front part is dorsolateral prefrontal cortex, used for working memory, planning and attention.",
-    "mnemonic": "Middle frontal = \"mind's eye\": it steers the eyes and holds plans in mind.",
-    "clinical": "After an acute stroke that damages the frontal eye field, the eyes tend to look towards the side of the damaged hemisphere.",
-    "hint": "The horizontal fold in the middle of the lateral frontal lobe, sandwiched between the top frontal fold and the missing lowest one."
+    "origin": "From the Latin for middle and forehead. It is the middle fold on the side of the frontal lobe.",
+    "location": "On the outer side of the left frontal lobe, between two long grooves and just in front of the movement strip.",
+    "description": "A broad fold running front to back, often split by a shallow groove. This model leaves out the lowest frontal fold beneath it.",
+    "function": "Its back part, the frontal eye field, turns both eyes towards the opposite side when you choose to look. Its front part helps with planning, attention and holding information in mind.",
+    "mnemonic": "Think of it as the mind's eye. It steers your gaze and holds your plans in mind.",
+    "clinical": "After a stroke that damages the frontal eye field, the eyes tend to drift towards the side of the damaged hemisphere.",
+    "hint": "The fold across the middle of the side of the frontal lobe, between the top fold and the missing lowest one."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which area in the back of the middle frontal gyrus controls voluntary eye movements?",
+     "text": "Which area at the back of the middle frontal gyrus controls the eye movements you choose to make?",
      "options": [
       "Primary visual cortex",
       "Wernicke area",
@@ -262,7 +262,7 @@
       "Supplementary motor area"
      ],
      "answer": 2,
-     "explanation": "The frontal eye field in the posterior middle frontal gyrus directs voluntary gaze."
+     "explanation": "The frontal eye field sits at the back of this fold. It turns your eyes when you decide where to look."
     }
    ]
   },
@@ -303,18 +303,18 @@
    ],
    "content": {
     "pronunciation": "pree-SEN-trul JY-rus",
-    "origin": "Latin prae, \"in front of\", and centralis: the gyrus in front of the central sulcus.",
-    "location": "The last fold of the left frontal lobe, lying directly in front of the central sulcus and running from the top of the hemisphere down towards the lateral sulcus.",
-    "description": "A long vertical strip of cortex. Its motor map (the motor homunculus) has the leg near the midline, then the trunk, arm and hand, with the face lowest.",
-    "function": "Primary motor cortex (Brodmann area 4). It sends commands down the corticospinal and corticobulbar tracts to control voluntary movement of the opposite side of the body. The left gyrus serves the right side of the body.",
-    "mnemonic": "\"Pre = go\": the precentral gyrus makes you move; the postcentral gyrus lets you feel.",
-    "clinical": "A stroke here causes weakness of the opposite side of the body. Middle cerebral artery strokes mostly affect the face and arm, anterior cerebral artery strokes the leg.",
-    "hint": "The vertical strip just in front of the central sulcus; it holds the body map for voluntary movement."
+    "origin": "From the Latin for in front of the centre. It is the fold just in front of the central groove.",
+    "location": "The last fold of the left frontal lobe, just in front of the central groove. It runs from the top of the brain down towards the deep side groove.",
+    "description": "A long, upright strip of cortex holding a map of the body. The leg is near the top, then the trunk, arm and hand, with the face lowest.",
+    "function": "This is the main movement area, the primary motor cortex. It sends commands down to the muscles on the right side of your body.",
+    "mnemonic": "Pre means go: the precentral strip makes you move, and the postcentral strip behind it lets you feel.",
+    "clinical": "A stroke here weakens the right side of the body. Middle cerebral artery strokes mostly hit the face and arm, and anterior cerebral artery strokes the leg.",
+    "hint": "The upright strip just in front of the central groove, holding the body map for movement."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "The precentral gyrus contains which functional area?",
+     "text": "The precentral gyrus contains which area?",
      "options": [
       "Primary somatosensory cortex",
       "Primary motor cortex",
@@ -322,7 +322,7 @@
       "Primary visual cortex"
      ],
      "answer": 1,
-     "explanation": "The precentral gyrus is the primary motor cortex (area 4)."
+     "explanation": "The precentral gyrus is the primary motor cortex. It sends the commands that move your muscles."
     },
     {
      "kind": "clinical",
@@ -334,7 +334,7 @@
       "Weakness of the right side of the body"
      ],
      "answer": 3,
-     "explanation": "Each motor cortex controls the opposite side of the body because the motor pathway crosses in the medulla."
+     "explanation": "Each side of the brain moves the opposite side of the body, because the movement pathway crosses over in the medulla."
     }
    ]
   },
@@ -374,13 +374,13 @@
    ],
    "content": {
     "pronunciation": "pohst-SEN-trul JY-rus",
-    "origin": "Latin post, \"behind\", and centralis: the gyrus behind the central sulcus.",
-    "location": "The first fold of the left parietal lobe, lying directly behind the central sulcus and parallel to the precentral gyrus.",
-    "description": "A long vertical strip of cortex with a sensory body map (the sensory homunculus): leg near the midline and face lowest, with large areas for the hands and lips.",
-    "function": "Primary somatosensory cortex (Brodmann areas 3, 1 and 2). It receives touch, pressure, pain, temperature and body-position information from the opposite side of the body, relayed through the thalamus. The left gyrus serves the right side of the body.",
-    "mnemonic": "\"Post = post office\": the postcentral gyrus receives the incoming sensory mail.",
-    "clinical": "Damage causes loss of fine touch and position sense on the opposite side of the body, making it hard to recognise objects by feel.",
-    "hint": "The vertical strip just behind the central sulcus, first stop in the cortex for touch."
+    "origin": "From the Latin for behind the centre. It is the fold just behind the central groove.",
+    "location": "The first fold of the left parietal lobe, just behind the central groove and running alongside the movement strip.",
+    "description": "A long, upright strip holding a map of body feeling. The hands and lips get huge areas, because they are so sensitive.",
+    "function": "This is the main touch area. It receives touch, pain, temperature and body position from the right side of your body, passed up through the thalamus.",
+    "mnemonic": "Post as in post office: this strip receives all the incoming mail from your skin.",
+    "clinical": "Damage here dulls fine touch and position sense on the right side. It becomes hard to recognise objects just by feeling them.",
+    "hint": "The upright strip just behind the central groove, the first stop in the cortex for touch."
    },
    "questions": [
     {
@@ -393,11 +393,11 @@
       "Occipital lobe"
      ],
      "answer": 2,
-     "explanation": "It is the most anterior gyrus of the parietal lobe, just behind the central sulcus."
+     "explanation": "It is the front fold of the parietal lobe, just behind the central groove."
     },
     {
      "kind": "function",
-     "text": "Which sensation is processed mainly in the postcentral gyrus?",
+     "text": "Which sensation is handled mainly in the postcentral gyrus?",
      "options": [
       "Hearing",
       "Touch and body position",
@@ -405,7 +405,7 @@
       "Taste only"
      ],
      "answer": 1,
-     "explanation": "The postcentral gyrus is the primary somatosensory cortex for touch, pain, temperature and position sense."
+     "explanation": "The postcentral gyrus is the main touch area. It also handles pain, temperature and body position."
     }
    ]
   },
@@ -449,13 +449,13 @@
    ],
    "content": {
     "pronunciation": "soo-PEER-ee-er puh-RY-uh-tul LOB-yool",
-    "origin": "Latin paries, \"wall\" (the parietal bones form the side walls of the skull); lobulus, \"small lobe\"; precuneus, \"in front of the wedge\" (the cuneus).",
-    "location": "The upper part of the left parietal lobe behind the postcentral gyrus, above the intraparietal sulcus, continuing onto the medial surface as the precuneus.",
-    "description": "A block of cortex on the upper lateral surface of the parietal lobe. In this model it is combined with the precuneus, the part of the parietal lobe on the medial surface.",
-    "function": "Somatosensory and visual association cortex. It combines touch, body position and vision to build a sense of where the body and nearby objects are in space, guiding reaching and grasping.",
-    "mnemonic": "Superior parietal = \"sat-nav\" of the body: it tells you where your limbs are.",
-    "clinical": "Damage can cause difficulty reaching accurately for objects under visual guidance (optic ataxia) and problems sensing limb position on the opposite side.",
-    "hint": "The upper back part of the parietal lobe, above the intraparietal sulcus, wrapping onto the medial surface."
+    "origin": "From the Latin paries, a wall, because the parietal bones form the side walls of the skull. Lobule means small lobe.",
+    "location": "The upper back part of the left parietal lobe, behind the touch strip. It rolls over onto the inner face of the hemisphere.",
+    "description": "A block of cortex high on the side of the parietal lobe. In this model it is joined with the precuneus, its partner on the inner face.",
+    "function": "It blends touch, body position and vision into a sense of where your body and nearby objects are. This guides you when you reach out and grab something.",
+    "mnemonic": "Think of it as your body's sat-nav. It always knows where your limbs are.",
+    "clinical": "Damage can make it hard to reach accurately for things you can see. It can also blur the sense of where your right limbs are.",
+    "hint": "The upper back part of the parietal lobe, above a deep groove, wrapping onto the inner face."
    },
    "questions": [
     {
@@ -464,11 +464,11 @@
      "options": [
       "Producing speech",
       "Hearing sounds",
-      "Combining touch and vision to sense body position in space",
+      "Blending touch and vision to sense where you are",
       "Controlling heart rate"
      ],
      "answer": 2,
-     "explanation": "It is association cortex that integrates somatosensory and visual information for spatial awareness and reaching."
+     "explanation": "It combines touch and vision to track where your body is in space. This helps you reach and grab."
     }
    ]
   },
@@ -510,18 +510,18 @@
    ],
    "content": {
     "pronunciation": "SOO-pruh-MAR-jin-ul JY-rus",
-    "origin": "Latin supra, \"above\", and margo, \"edge\": it arches over the end of the lateral sulcus.",
-    "location": "In the left inferior parietal lobule, curving around the posterior end of the lateral sulcus, behind the lower postcentral gyrus.",
-    "description": "A horseshoe-shaped gyrus capping the back end of the lateral sulcus. It is the front part of the inferior parietal lobule; the angular gyrus lies behind it.",
-    "function": "Association cortex for touch and body position, and for planning skilled learned movements. In the left (usually language-dominant) hemisphere it also helps process the sounds of words (phonological processing).",
-    "mnemonic": "\"Supra-marginal sits on the margin\": it sits on the end of the lateral sulcus like a cap.",
-    "clinical": "Damage to the left inferior parietal lobule, including this gyrus, can cause ideomotor apraxia: difficulty performing learned gestures on command despite normal strength.",
-    "hint": "The horseshoe fold capping the posterior end of the lateral sulcus, just behind the lower postcentral gyrus."
+    "origin": "From the Latin for above the edge. It arches over the end of the deep side groove.",
+    "location": "In the lower part of the left parietal lobe, curving around the back end of the lateral sulcus, the deep groove on the side of the brain.",
+    "description": "A horseshoe-shaped fold capping the end of the deep side groove. The angular gyrus lies just behind it.",
+    "function": "It helps with touch, body position and planning skilled movements you have learned. On the left, the usual language side, it also helps you handle the sounds of words.",
+    "mnemonic": "Supramarginal sits on the margin, capping the end of the side groove.",
+    "clinical": "Damage here on the left can cause apraxia. Strength is normal, but the person struggles to make learned gestures, like waving goodbye, when asked.",
+    "hint": "The horseshoe fold capping the back end of the deep side groove, just behind the lower touch strip."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "The supramarginal gyrus curves around the end of which sulcus?",
+     "text": "The supramarginal gyrus curves around the end of which groove?",
      "options": [
       "Central sulcus",
       "Calcarine sulcus",
@@ -529,7 +529,7 @@
       "Lateral sulcus"
      ],
      "answer": 3,
-     "explanation": "The supramarginal gyrus caps the posterior end of the lateral (Sylvian) sulcus."
+     "explanation": "It caps the back end of the lateral sulcus, the deep groove on the side of the brain."
     }
    ]
   },
@@ -571,18 +571,18 @@
    ],
    "content": {
     "pronunciation": "ANG-gyoo-lar JY-rus",
-    "origin": "Latin angulus, \"angle\" or \"bend\": it bends around the end of the superior temporal sulcus.",
-    "location": "In the back of the left inferior parietal lobule, behind the supramarginal gyrus, curving around the end of the superior temporal sulcus near the occipital lobe.",
-    "description": "A curved gyrus at the meeting point of the parietal, temporal and occipital lobes.",
-    "function": "A multimodal association area linking vision, hearing and touch. In the left (usually dominant) hemisphere it is important for reading, writing, calculation and the meaning of words.",
-    "mnemonic": "Angular gyrus = \"reading corner\": the angle where seeing words meets understanding them.",
-    "clinical": "Damage to the left angular gyrus can cause Gerstmann syndrome: difficulty writing and calculating, confusing left and right, and failing to name fingers. It can also cause loss of reading and writing.",
-    "hint": "The curved fold where parietal, temporal and occipital lobes meet, behind the horseshoe that caps the lateral sulcus."
+    "origin": "From the Latin for angle or bend. It bends around the end of a groove in the temporal lobe.",
+    "location": "At the back of the lower left parietal lobe, behind the supramarginal gyrus and close to the occipital lobe.",
+    "description": "A curved fold sitting where three lobes meet: the parietal, temporal and occipital.",
+    "function": "It links what you see, hear and feel. On the left, the usual language side, it is key for reading, writing, sums and the meaning of words.",
+    "mnemonic": "Think of it as the reading corner, the bend where seeing words meets understanding them.",
+    "clinical": "Damage on the left can cause Gerstmann syndrome. The person struggles to write and do sums, mixes up left and right, and cannot name their fingers.",
+    "hint": "The curved fold where three lobes meet, just behind the horseshoe that caps the deep side groove."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "A lesion of the left angular gyrus is most likely to affect which ability?",
+     "text": "Damage to the left angular gyrus is most likely to affect which ability?",
      "options": [
       "Reading and writing",
       "Smell",
@@ -590,7 +590,7 @@
       "Swallowing"
      ],
      "answer": 0,
-     "explanation": "In the dominant hemisphere the angular gyrus is important for reading, writing and calculation."
+     "explanation": "On the left, the angular gyrus is key for reading, writing and doing sums."
     }
    ]
   },
@@ -635,30 +635,30 @@
    ],
    "content": {
     "pronunciation": "soo-PEER-ee-er TEM-puh-rul JY-rus",
-    "origin": "Latin tempus, \"time\" (the temples, where hair first greys with age).",
-    "location": "The top fold of the left temporal lobe, just below the lateral sulcus. Its upper surface, hidden inside the sulcus, carries the transverse temporal gyri.",
-    "description": "A long horizontal gyrus. In this model it includes the transverse temporal (Heschl) gyri, the small folds on its upper surface that hold the primary auditory cortex.",
-    "function": "Contains the primary auditory cortex (Brodmann areas 41 and 42) on the transverse temporal gyri, which receives hearing information from both ears, plus surrounding auditory association cortex. In most people the back part of the left superior temporal gyrus is the Wernicke area, which is essential for understanding spoken language.",
-    "mnemonic": "\"Superior temporal = superior hearing\": the ears sit next to the temporal lobes.",
-    "clinical": "Damage to the Wernicke area (usually left) causes Wernicke (receptive) aphasia: fluent speech that makes little sense and poor understanding of what others say.",
-    "hint": "The top fold of the lobe that lies beside the ear, just below the lateral sulcus; its hidden upper surface receives sound."
+    "origin": "From the Latin tempus, meaning time. It names the temples, where hair often turns grey first with age.",
+    "location": "The top fold of the left temporal lobe, just below the deep side groove. Its hidden upper surface carries small folds that receive sound.",
+    "description": "A long fold running front to back. In this model it includes Heschl's gyri, the small folds on its top surface where hearing arrives.",
+    "function": "Its top surface is the main hearing area, getting sound from both ears. At the back on the left, the Wernicke area helps you understand what people say.",
+    "mnemonic": "Superior temporal means superior hearing. Your ears sit right beside your temporal lobes.",
+    "clinical": "Damage to the Wernicke area causes Wernicke aphasia. Speech flows easily but makes little sense, and the person struggles to understand others.",
+    "hint": "The top fold of the lobe beside the ear, just below the deep side groove, with a hidden surface that receives sound."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "The transverse temporal gyri on the superior temporal gyrus contain which area?",
+     "text": "The small folds on top of the superior temporal gyrus hold which area?",
      "options": [
       "Primary motor cortex",
       "Primary auditory cortex",
       "Primary visual cortex",
-      "Primary gustatory cortex"
+      "Primary taste cortex"
      ],
      "answer": 1,
-     "explanation": "The primary auditory cortex (areas 41 and 42) lies on the transverse temporal (Heschl) gyri."
+     "explanation": "Heschl's gyri hold the primary auditory cortex. This is where hearing first reaches the cortex."
     },
     {
      "kind": "clinical",
-     "text": "Damage to the posterior left superior temporal gyrus most typically causes which problem?",
+     "text": "Damage to the back of the left superior temporal gyrus usually causes which problem?",
      "options": [
       "Weakness of the right leg",
       "Difficulty understanding spoken language",
@@ -666,7 +666,7 @@
       "Loss of balance"
      ],
      "answer": 1,
-     "explanation": "This region is the Wernicke area; damage causes receptive (Wernicke) aphasia."
+     "explanation": "This is the Wernicke area. Damage causes Wernicke aphasia, where understanding speech becomes hard."
     }
    ],
    "merged": true
@@ -705,18 +705,18 @@
    ],
    "content": {
     "pronunciation": "MID-ul TEM-puh-rul JY-rus",
-    "origin": "Latin medius, \"middle\", and tempus, \"temple\".",
-    "location": "On the lateral surface of the left temporal lobe, between the superior and inferior temporal gyri.",
-    "description": "A long horizontal fold between the superior and inferior temporal sulci, reaching back towards the occipital lobe.",
-    "function": "Association cortex involved in understanding the meaning of words and in memory for facts. Its back end, near the occipital lobe, helps detect visual motion. On the left it supports word meaning (semantics) as part of the language network.",
-    "mnemonic": "Middle temporal = \"middle man\": it links sounds and sights to their meaning.",
-    "clinical": "It is a common site for temporal lobe epilepsy spread and for tumours; damage on the left can cause word-finding difficulty.",
-    "hint": "The middle of the three horizontal folds on the side of the lobe below the lateral sulcus."
+    "origin": "From the Latin for middle and temple. It is the middle fold on the side of the temporal lobe.",
+    "location": "On the outer side of the left temporal lobe, between the top and bottom temporal folds.",
+    "description": "A long fold running front to back between two grooves, stretching back towards the occipital lobe.",
+    "function": "It links words and sights to their meaning and holds memory for facts. Its back end spots movement, and on the left it is part of the language network.",
+    "mnemonic": "Think of it as the middle man, linking sounds and sights to what they mean.",
+    "clinical": "Epilepsy and tumours often involve this fold. Damage on the left can make it hard to find the right word.",
+    "hint": "The middle of three long folds on the side of the lobe beside the ear."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which gyrus lies between the superior and inferior temporal gyri?",
+     "text": "Which fold lies between the superior and inferior temporal gyri?",
      "options": [
       "Angular gyrus",
       "Fusiform gyrus",
@@ -724,7 +724,7 @@
       "Middle temporal gyrus"
      ],
      "answer": 3,
-     "explanation": "The middle temporal gyrus lies between the superior and inferior temporal sulci."
+     "explanation": "The middle temporal gyrus sits between them, just as its name suggests."
     }
    ]
   },
@@ -758,26 +758,26 @@
    ],
    "content": {
     "pronunciation": "in-FEER-ee-er TEM-puh-rul JY-rus",
-    "origin": "Latin inferior, \"lower\", and tempus, \"temple\".",
-    "location": "The lowest fold of the lateral surface of the left temporal lobe, curving onto its underside next to the fusiform gyrus.",
-    "description": "A horizontal gyrus below the inferior temporal sulcus, forming the lower lateral edge of the temporal lobe.",
-    "function": "Higher visual cortex in the ventral \"what\" pathway. It helps recognise objects, shapes and colours.",
-    "mnemonic": "Inferior temporal = \"identify things\": it answers \"what am I looking at?\".",
-    "clinical": "Damage to the ventral visual pathway, including this region, can cause visual agnosia: seeing an object but being unable to recognise it.",
-    "hint": "The lowest fold on the side of the lobe beside the ear, wrapping onto the underside of the brain."
+    "origin": "From the Latin for lower and temple. It is the lowest fold on the side of the temporal lobe.",
+    "location": "The lowest fold on the side of the left temporal lobe, curling under onto the base of the brain.",
+    "description": "A long fold forming the lower outer edge of the temporal lobe, with the fusiform gyrus beside it underneath.",
+    "function": "It is part of the what pathway of vision. It helps you recognise objects, shapes and colours.",
+    "mnemonic": "Inferior temporal for identifying things. It answers the question, what am I looking at?",
+    "clinical": "Damage along this pathway can cause visual agnosia. The person sees an object clearly but cannot tell what it is.",
+    "hint": "The lowest fold on the side of the lobe beside the ear, curling under onto the base of the brain."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "The inferior temporal gyrus is part of which visual pathway?",
+     "text": "The inferior temporal gyrus is part of which vision pathway?",
      "options": [
-      "The \"what\" pathway for recognising objects",
-      "The \"where\" pathway for spatial location",
-      "The pathway to the superior colliculus for reflexes",
-      "The pupillary light reflex pathway"
+      "The what pathway, for recognising objects",
+      "The where pathway, for locating things",
+      "The reflex pathway to the midbrain",
+      "The pupil light reflex pathway"
      ],
      "answer": 0,
-     "explanation": "The inferior temporal gyrus lies in the ventral stream, which recognises what objects are."
+     "explanation": "It sits on the what pathway. This stream of vision works out what an object is."
     }
    ]
   },
@@ -818,18 +818,18 @@
    ],
    "content": {
     "pronunciation": "ok-SIP-ih-tul lohb",
-    "origin": "Latin occiput, \"back of the head\" (ob, \"against\", and caput, \"head\").",
-    "location": "The rear lobe of the left cerebral hemisphere, behind the parietal and temporal lobes and resting on the tentorium cerebelli above the cerebellum.",
-    "description": "A pyramid-shaped lobe. Its medial surface is divided by the calcarine sulcus into the cuneus above and the lingual gyrus below.",
-    "function": "The visual lobe. Primary visual cortex (Brodmann area 17) lines the calcarine sulcus and receives input from the opposite half of the visual field of both eyes; the surrounding cortex is visual association cortex.",
-    "mnemonic": "\"O for optic\": the occipital lobe is for seeing, at the back of the head.",
-    "clinical": "A posterior cerebral artery stroke in one occipital lobe causes loss of the opposite half of the visual field in both eyes (homonymous hemianopia), often with sparing of central vision.",
-    "hint": "The rearmost lobe of the hemisphere, sitting above the cerebellum; the calcarine sulcus runs through it."
+    "origin": "From the Latin occiput, the back of the head.",
+    "location": "The back lobe of the left hemisphere, behind the parietal and temporal lobes. It rests on a sheet of tough tissue above the cerebellum.",
+    "description": "A pyramid-shaped lobe. On its inner face, a deep groove called the calcarine sulcus splits it into an upper and a lower part.",
+    "function": "This is your seeing lobe. The main vision area lines the calcarine sulcus and receives the right half of what both eyes see.",
+    "mnemonic": "O for optic: the occipital lobe does your seeing, at the back of your head.",
+    "clinical": "A stroke in one occipital lobe blanks out the opposite half of vision in both eyes. The very centre of vision is often spared.",
+    "hint": "The back lobe of the hemisphere, sitting above the cerebellum, with a deep groove on its inner face."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Primary visual cortex lies along which sulcus in the occipital lobe?",
+     "text": "The main vision area lines which groove in the occipital lobe?",
      "options": [
       "Central sulcus",
       "Lateral sulcus",
@@ -837,19 +837,19 @@
       "Cingulate sulcus"
      ],
      "answer": 2,
-     "explanation": "Primary visual cortex (area 17) lines the calcarine sulcus on the medial occipital lobe."
+     "explanation": "The primary visual cortex lines the calcarine sulcus, on the inner face of the occipital lobe."
     },
     {
      "kind": "clinical",
-     "text": "A stroke in the left occipital lobe would cause loss of which part of vision?",
+     "text": "A stroke in the left occipital lobe would blank out which part of vision?",
      "options": [
-      "The right half of the visual field in both eyes",
-      "The left half of the visual field in both eyes",
+      "The right half of vision in both eyes",
+      "The left half of vision in both eyes",
       "All vision in the left eye only",
       "Only colour vision"
      ],
      "answer": 0,
-     "explanation": "Each occipital lobe receives the opposite visual field, so a left lesion causes a right homonymous hemianopia."
+     "explanation": "Each occipital lobe sees the opposite half of the world. So damage on the left blanks the right half in both eyes."
     }
    ]
   },
@@ -887,38 +887,38 @@
    ],
    "content": {
     "pronunciation": "IN-syoo-lah",
-    "origin": "Latin insula, \"island\": it is an island of cortex hidden deep in the lateral sulcus.",
-    "location": "Deep inside the left lateral sulcus, hidden beneath the overlying frontal, parietal and temporal lobes (the opercula), lateral to the lentiform nucleus.",
-    "description": "A triangular area of cortex with short and long gyri, surrounded by the circular sulcus. It can only be seen when the lips of the lateral sulcus are pulled apart.",
-    "function": "Primary taste (gustatory) cortex, and processing of internal body sensations such as heartbeat, breathing, pain and gut feelings, linking them with emotion.",
-    "mnemonic": "\"Insula = inside\": the hidden island that feels your insides.",
-    "clinical": "Strokes of the middle cerebral artery often damage the insula because its branches run over it.",
-    "hint": "Cortex hidden deep in the lateral sulcus, covered by the lips of three lobes; taste is processed here."
+    "origin": "From the Latin for island. It is an island of cortex hidden deep inside the side groove.",
+    "location": "Deep inside the left lateral sulcus, covered by the frontal, parietal and temporal lobes. You only see it when you pull the lips of the groove apart.",
+    "description": "A triangle of cortex with short and long folds, ringed by a groove, like a buried island.",
+    "function": "It is your main taste area. It also senses what is going on inside you, like heartbeat, breathing and gut feelings, and links them to emotion.",
+    "mnemonic": "Insula sounds like inside. It is the hidden island that feels your insides.",
+    "clinical": "Middle cerebral artery strokes often damage the insula, because the artery's branches run right over it.",
+    "hint": "Cortex hidden deep in the side groove, covered by the lips of three lobes, where taste is handled."
    },
    "questions": [
     {
      "kind": "location",
      "text": "Where is the insula found?",
      "options": [
-      "On the medial surface of the occipital lobe",
+      "On the inner face of the occipital lobe",
       "Under the cerebellum",
       "On the top of the frontal lobe",
       "Deep within the lateral sulcus"
      ],
      "answer": 3,
-     "explanation": "The insula is hidden deep in the lateral sulcus, covered by the opercula."
+     "explanation": "The insula is hidden deep inside the lateral sulcus, covered by the lips of three lobes."
     },
     {
      "kind": "function",
-     "text": "Which primary sensory area is located in the insula?",
+     "text": "Which main sense area is found in the insula?",
      "options": [
-      "Taste (gustatory) cortex",
+      "Taste cortex",
       "Visual cortex",
       "Auditory cortex",
       "Motor cortex"
      ],
      "answer": 0,
-     "explanation": "The insula contains the primary gustatory cortex."
+     "explanation": "The insula holds the main taste area, the gustatory cortex."
     }
    ]
   },
@@ -956,18 +956,18 @@
    ],
    "content": {
     "pronunciation": "SING-gyoo-lut JY-rus",
-    "origin": "Latin cingulum, \"belt\" or \"girdle\": it wraps around the corpus callosum like a belt.",
-    "location": "On the medial surface of the left hemisphere, arching around the top of the corpus callosum from front to back.",
-    "description": "A C-shaped gyrus between the callosal sulcus below and the cingulate sulcus above. Behind the splenium of the corpus callosum it narrows (the isthmus) and continues into the parahippocampal gyrus.",
-    "function": "Part of the limbic system. The front part helps with emotion, motivation, the unpleasantness of pain and attention; the back part helps with memory and self-reflection.",
-    "mnemonic": "Cingulate = \"cingulum\" belt: it belts around the corpus callosum.",
-    "clinical": "Swelling in one hemisphere can push the cingulate gyrus under the falx cerebri (subfalcine herniation), compressing the anterior cerebral arteries.",
-    "hint": "A belt of cortex on the medial surface, curving directly over the large white-matter bridge between hemispheres."
+    "origin": "From the Latin for belt. It wraps around the corpus callosum like a belt.",
+    "location": "On the inner face of the left hemisphere, arching over the corpus callosum from front to back.",
+    "description": "A C-shaped fold sitting between two grooves. Behind the corpus callosum it narrows and flows into the parahippocampal gyrus.",
+    "function": "It is part of the limbic system, your emotional brain. The front helps with emotion, motivation, attention and how bad pain feels, and the back helps with memory.",
+    "mnemonic": "Cingulate sounds like cingulum, a belt. It belts around the corpus callosum.",
+    "clinical": "Swelling in one hemisphere can push this fold under the tough midline sheet, the falx. This is called subfalcine herniation and can squeeze the anterior cerebral arteries.",
+    "hint": "A belt of cortex on the inner face, curving right over the big white bridge between the hemispheres."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The cingulate gyrus arches directly above which structure?",
+     "text": "The cingulate gyrus arches just above which structure?",
      "options": [
       "Cerebellum",
       "Corpus callosum",
@@ -975,7 +975,7 @@
       "Optic chiasm"
      ],
      "answer": 1,
-     "explanation": "The cingulate gyrus wraps around the upper surface of the corpus callosum."
+     "explanation": "It wraps over the top of the corpus callosum, the bridge between the two hemispheres."
     },
     {
      "kind": "terminology",
@@ -987,7 +987,7 @@
       "Almond"
      ],
      "answer": 0,
-     "explanation": "Cingulum means belt or girdle; the gyrus belts around the corpus callosum."
+     "explanation": "Cingulum means belt. This fold belts around the corpus callosum."
     }
    ]
   },
@@ -1029,18 +1029,18 @@
    ],
    "content": {
     "pronunciation": "PAIR-uh-hip-oh-KAM-pul JY-rus",
-    "origin": "Greek para, \"beside\", and hippocampus, \"seahorse\": the gyrus beside the hippocampus.",
-    "location": "On the inferior and medial surface of the left temporal lobe, alongside the hippocampus, with the fusiform gyrus lateral to it.",
-    "description": "A gyrus whose front end hooks back on itself to form the uncus. Its front part contains the entorhinal cortex, the main gateway into the hippocampus.",
-    "function": "Part of the limbic system. It passes information from the cortex to the hippocampus for forming new memories, and helps recognise places and scenes.",
-    "mnemonic": "Para-hippocampal = \"partner of the hippocampus\": it feeds memories in.",
-    "clinical": "Raised pressure above the tentorium can push the uncus over the tentorial edge (uncal herniation), compressing the oculomotor nerve and causing a dilated pupil on that side.",
-    "hint": "The inner fold on the underside of the lobe beside the ear, lying next to the seahorse-shaped memory structure and ending in a hook (the uncus)."
+    "origin": "From the Greek for beside the seahorse. It is the fold next to the hippocampus.",
+    "location": "On the underside and inner face of the left temporal lobe, next to the hippocampus, with the fusiform gyrus on its outer side.",
+    "description": "A fold whose front end hooks back on itself, forming the uncus. Its front part is the main gateway into the hippocampus.",
+    "function": "It passes information from the cortex into the hippocampus to make new memories. It also helps you recognise places and scenes.",
+    "mnemonic": "Think of it as the hippocampus's partner, feeding new memories in.",
+    "clinical": "Raised pressure can push its hook, the uncus, over a tough edge. This squeezes the nerve that works the eye and makes the pupil on that side go wide.",
+    "hint": "The inner fold under the lobe beside the ear, lying next to the seahorse-shaped memory maker and ending in a hook."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The parahippocampal gyrus passes information into which structure for memory formation?",
+     "text": "The parahippocampal gyrus feeds information into which structure to make memories?",
      "options": [
       "Cerebellum",
       "Pineal gland",
@@ -1048,7 +1048,7 @@
       "Hippocampus"
      ],
      "answer": 3,
-     "explanation": "The entorhinal cortex of the parahippocampal gyrus is the main input to the hippocampus."
+     "explanation": "Its front part is the main way into the hippocampus, where new memories are formed."
     }
    ]
   },
@@ -1089,13 +1089,13 @@
    ],
    "content": {
     "pronunciation": "FYOO-zih-form JY-rus",
-    "origin": "Latin fusus, \"spindle\", and forma, \"shape\": it is spindle-shaped, wide in the middle and tapering at each end.",
-    "location": "On the underside of the left temporal and occipital lobes, between the inferior temporal gyrus laterally and the parahippocampal gyrus medially.",
-    "description": "A long spindle-shaped gyrus on the basal surface of the brain, separated from the parahippocampal gyrus by the collateral sulcus.",
-    "function": "High-level visual cortex. It contains areas specialised for recognising faces and, on the left, written words. On the left it includes the visual word form area used in reading.",
-    "mnemonic": "\"Fusiform for faces\": both start with F.",
-    "clinical": "Damage to the fusiform face area (especially on the right or both sides) can cause prosopagnosia, an inability to recognise familiar faces.",
-    "hint": "A spindle-shaped fold on the underside of the brain, between the lowest lateral temporal fold and the gyrus next to the hippocampus; it recognises faces."
+    "origin": "From the Latin for spindle-shaped. It is wide in the middle and tapers at each end.",
+    "location": "On the underside of the left temporal and occipital lobes, between the inferior temporal gyrus and the parahippocampal gyrus.",
+    "description": "A long, spindle-shaped fold on the base of the brain, separated from its inner neighbour by a groove.",
+    "function": "It is a high-level vision area for recognising faces. On the left it also holds a word area that you use when you read.",
+    "mnemonic": "Fusiform for faces: both start with F.",
+    "clinical": "Damage to the face area, especially on the right or both sides, can cause face blindness. The person can no longer recognise familiar faces.",
+    "hint": "A spindle-shaped fold on the base of the brain, between the lowest side fold and the fold next to the memory maker."
    },
    "questions": [
     {
@@ -1103,12 +1103,12 @@
      "text": "Damage to the fusiform gyrus may cause which condition?",
      "options": [
       "Wernicke aphasia",
-      "Prosopagnosia (face blindness)",
-      "Hemiplegia",
+      "Face blindness, called prosopagnosia",
+      "Weakness down one side",
       "Deafness"
      ],
      "answer": 1,
-     "explanation": "The fusiform face area is specialised for recognising faces."
+     "explanation": "The fusiform gyrus holds a special face area. Damage can make familiar faces impossible to recognise."
     }
    ]
   },
@@ -1146,13 +1146,13 @@
    ],
    "content": {
     "pronunciation": "soo-PEER-ee-er FRUN-tul JY-rus",
-    "origin": "Latin frons, \"forehead\", and Greek gyros, \"circle\" or \"ring\" (a gyrus is a raised fold of cortex).",
-    "location": "The uppermost fold of the right frontal lobe, running from front to back beside the midline and continuing onto the medial surface of the hemisphere.",
-    "description": "A long strip of cortex bordered below by the superior frontal sulcus and behind by the precentral gyrus. The frontal pole and inferior frontal gyrus are not included in this model.",
-    "function": "Its back part on the medial surface contains the supplementary motor area, which helps plan and sequence movements. The rest is prefrontal cortex involved in self-awareness, working memory and control of behaviour.",
-    "mnemonic": "Frontal lobe = \"front office\": the superior gyrus is the top floor where plans are made.",
-    "clinical": "Damage to the frontal lobes, including this gyrus, can change personality, motivation and judgement. An anterior cerebral artery stroke affects its medial surface.",
-    "hint": "The top fold at the front of the hemisphere, lying alongside the longitudinal fissure."
+    "origin": "From the Latin for forehead and the Greek gyros, a ring. A gyrus is one of the raised folds on the surface of the brain.",
+    "location": "The topmost fold at the front of the right hemisphere, running front to back beside the midline. It rolls over onto the inner face of the hemisphere.",
+    "description": "A long strip of cortex with a groove below it and the movement strip behind it. This model leaves out the very front tip and the lowest frontal fold.",
+    "function": "Its back part, on the inner face, helps you plan and sequence movements. The rest helps with self-awareness, holding things in mind and controlling your behaviour.",
+    "mnemonic": "Think of the frontal lobe as the front office. This fold is the top floor, where the plans are made.",
+    "clinical": "Damage to the frontal lobes, including this fold, can change personality, drive and judgement. A stroke of the anterior cerebral artery hits its inner face.",
+    "hint": "The top fold at the front of the hemisphere, running beside the deep groove that splits the brain in two."
    },
    "questions": []
   },
@@ -1186,13 +1186,13 @@
    ],
    "content": {
     "pronunciation": "MID-ul FRUN-tul JY-rus",
-    "origin": "Latin medius, \"middle\", and frons, \"forehead\".",
-    "location": "On the lateral surface of the right frontal lobe, between the superior and inferior frontal sulci and in front of the precentral gyrus.",
-    "description": "A broad horizontal fold, often partly divided by a shallow groove. The inferior frontal gyrus below it is not included in this model.",
-    "function": "Its back part contains the frontal eye field, which moves both eyes voluntarily towards the opposite side. Its front part is dorsolateral prefrontal cortex, used for working memory, planning and attention.",
-    "mnemonic": "Middle frontal = \"mind's eye\": it steers the eyes and holds plans in mind.",
-    "clinical": "After an acute stroke that damages the frontal eye field, the eyes tend to look towards the side of the damaged hemisphere.",
-    "hint": "The horizontal fold in the middle of the lateral frontal lobe, sandwiched between the top frontal fold and the missing lowest one."
+    "origin": "From the Latin for middle and forehead. It is the middle fold on the side of the frontal lobe.",
+    "location": "On the outer side of the right frontal lobe, between two long grooves and just in front of the movement strip.",
+    "description": "A broad fold running front to back, often split by a shallow groove. This model leaves out the lowest frontal fold beneath it.",
+    "function": "Its back part, the frontal eye field, turns both eyes towards the opposite side when you choose to look. Its front part helps with planning, attention and holding information in mind.",
+    "mnemonic": "Think of it as the mind's eye. It steers your gaze and holds your plans in mind.",
+    "clinical": "After a stroke that damages the frontal eye field, the eyes tend to drift towards the side of the damaged hemisphere.",
+    "hint": "The fold across the middle of the side of the frontal lobe, between the top fold and the missing lowest one."
    },
    "questions": []
   },
@@ -1233,13 +1233,13 @@
    ],
    "content": {
     "pronunciation": "pree-SEN-trul JY-rus",
-    "origin": "Latin prae, \"in front of\", and centralis: the gyrus in front of the central sulcus.",
-    "location": "The last fold of the right frontal lobe, lying directly in front of the central sulcus and running from the top of the hemisphere down towards the lateral sulcus.",
-    "description": "A long vertical strip of cortex. Its motor map (the motor homunculus) has the leg near the midline, then the trunk, arm and hand, with the face lowest.",
-    "function": "Primary motor cortex (Brodmann area 4). It sends commands down the corticospinal and corticobulbar tracts to control voluntary movement of the opposite side of the body. The right gyrus serves the left side of the body.",
-    "mnemonic": "\"Pre = go\": the precentral gyrus makes you move; the postcentral gyrus lets you feel.",
-    "clinical": "A stroke here causes weakness of the opposite side of the body. Middle cerebral artery strokes mostly affect the face and arm, anterior cerebral artery strokes the leg.",
-    "hint": "The vertical strip just in front of the central sulcus; it holds the body map for voluntary movement."
+    "origin": "From the Latin for in front of the centre. It is the fold just in front of the central groove.",
+    "location": "The last fold of the right frontal lobe, just in front of the central groove. It runs from the top of the brain down towards the deep side groove.",
+    "description": "A long, upright strip of cortex holding a map of the body. The leg is near the top, then the trunk, arm and hand, with the face lowest.",
+    "function": "This is the main movement area, the primary motor cortex. It sends commands down to the muscles on the left side of your body.",
+    "mnemonic": "Pre means go: the precentral strip makes you move, and the postcentral strip behind it lets you feel.",
+    "clinical": "A stroke here weakens the left side of the body. Middle cerebral artery strokes mostly hit the face and arm, and anterior cerebral artery strokes the leg.",
+    "hint": "The upright strip just in front of the central groove, holding the body map for movement."
    },
    "questions": []
   },
@@ -1279,13 +1279,13 @@
    ],
    "content": {
     "pronunciation": "pohst-SEN-trul JY-rus",
-    "origin": "Latin post, \"behind\", and centralis: the gyrus behind the central sulcus.",
-    "location": "The first fold of the right parietal lobe, lying directly behind the central sulcus and parallel to the precentral gyrus.",
-    "description": "A long vertical strip of cortex with a sensory body map (the sensory homunculus): leg near the midline and face lowest, with large areas for the hands and lips.",
-    "function": "Primary somatosensory cortex (Brodmann areas 3, 1 and 2). It receives touch, pressure, pain, temperature and body-position information from the opposite side of the body, relayed through the thalamus. The right gyrus serves the left side of the body.",
-    "mnemonic": "\"Post = post office\": the postcentral gyrus receives the incoming sensory mail.",
-    "clinical": "Damage causes loss of fine touch and position sense on the opposite side of the body, making it hard to recognise objects by feel.",
-    "hint": "The vertical strip just behind the central sulcus, first stop in the cortex for touch."
+    "origin": "From the Latin for behind the centre. It is the fold just behind the central groove.",
+    "location": "The first fold of the right parietal lobe, just behind the central groove and running alongside the movement strip.",
+    "description": "A long, upright strip holding a map of body feeling. The hands and lips get huge areas, because they are so sensitive.",
+    "function": "This is the main touch area. It receives touch, pain, temperature and body position from the left side of your body, passed up through the thalamus.",
+    "mnemonic": "Post as in post office: this strip receives all the incoming mail from your skin.",
+    "clinical": "Damage here dulls fine touch and position sense on the left side. It becomes hard to recognise objects just by feeling them.",
+    "hint": "The upright strip just behind the central groove, the first stop in the cortex for touch."
    },
    "questions": []
   },
@@ -1329,13 +1329,13 @@
    ],
    "content": {
     "pronunciation": "soo-PEER-ee-er puh-RY-uh-tul LOB-yool",
-    "origin": "Latin paries, \"wall\" (the parietal bones form the side walls of the skull); lobulus, \"small lobe\"; precuneus, \"in front of the wedge\" (the cuneus).",
-    "location": "The upper part of the right parietal lobe behind the postcentral gyrus, above the intraparietal sulcus, continuing onto the medial surface as the precuneus.",
-    "description": "A block of cortex on the upper lateral surface of the parietal lobe. In this model it is combined with the precuneus, the part of the parietal lobe on the medial surface.",
-    "function": "Somatosensory and visual association cortex. It combines touch, body position and vision to build a sense of where the body and nearby objects are in space, guiding reaching and grasping.",
-    "mnemonic": "Superior parietal = \"sat-nav\" of the body: it tells you where your limbs are.",
-    "clinical": "Damage can cause difficulty reaching accurately for objects under visual guidance (optic ataxia) and problems sensing limb position on the opposite side.",
-    "hint": "The upper back part of the parietal lobe, above the intraparietal sulcus, wrapping onto the medial surface."
+    "origin": "From the Latin paries, a wall, because the parietal bones form the side walls of the skull. Lobule means small lobe.",
+    "location": "The upper back part of the right parietal lobe, behind the touch strip. It rolls over onto the inner face of the hemisphere.",
+    "description": "A block of cortex high on the side of the parietal lobe. In this model it is joined with the precuneus, its partner on the inner face.",
+    "function": "It blends touch, body position and vision into a sense of where your body and nearby objects are. This guides you when you reach out and grab something.",
+    "mnemonic": "Think of it as your body's sat-nav. It always knows where your limbs are.",
+    "clinical": "Damage can make it hard to reach accurately for things you can see. It can also blur the sense of where your left limbs are.",
+    "hint": "The upper back part of the parietal lobe, above a deep groove, wrapping onto the inner face."
    },
    "questions": []
   },
@@ -1377,13 +1377,13 @@
    ],
    "content": {
     "pronunciation": "SOO-pruh-MAR-jin-ul JY-rus",
-    "origin": "Latin supra, \"above\", and margo, \"edge\": it arches over the end of the lateral sulcus.",
-    "location": "In the right inferior parietal lobule, curving around the posterior end of the lateral sulcus, behind the lower postcentral gyrus.",
-    "description": "A horseshoe-shaped gyrus capping the back end of the lateral sulcus. It is the front part of the inferior parietal lobule; the angular gyrus lies behind it.",
-    "function": "Association cortex for touch and body position, and for planning skilled learned movements. In the right hemisphere it contributes to spatial attention and empathy for others' feelings.",
-    "mnemonic": "\"Supra-marginal sits on the margin\": it sits on the end of the lateral sulcus like a cap.",
-    "clinical": "Damage to the left inferior parietal lobule, including this gyrus, can cause ideomotor apraxia: difficulty performing learned gestures on command despite normal strength.",
-    "hint": "The horseshoe fold capping the posterior end of the lateral sulcus, just behind the lower postcentral gyrus."
+    "origin": "From the Latin for above the edge. It arches over the end of the deep side groove.",
+    "location": "In the lower part of the right parietal lobe, curving around the back end of the lateral sulcus, the deep groove on the side of the brain.",
+    "description": "A horseshoe-shaped fold capping the end of the deep side groove. The angular gyrus lies just behind it.",
+    "function": "It helps with touch, body position and planning skilled movements you have learned. On the right, it helps with spatial attention and sensing how others feel.",
+    "mnemonic": "Supramarginal sits on the margin, capping the end of the side groove.",
+    "clinical": "Apraxia, trouble making learned gestures when asked despite normal strength, mainly follows damage to this area on the left side.",
+    "hint": "The horseshoe fold capping the back end of the deep side groove, just behind the lower touch strip."
    },
    "questions": []
   },
@@ -1425,13 +1425,13 @@
    ],
    "content": {
     "pronunciation": "ANG-gyoo-lar JY-rus",
-    "origin": "Latin angulus, \"angle\" or \"bend\": it bends around the end of the superior temporal sulcus.",
-    "location": "In the back of the right inferior parietal lobule, behind the supramarginal gyrus, curving around the end of the superior temporal sulcus near the occipital lobe.",
-    "description": "A curved gyrus at the meeting point of the parietal, temporal and occipital lobes.",
-    "function": "A multimodal association area linking vision, hearing and touch. In the right hemisphere it contributes to spatial attention, and damage to the right inferior parietal region can cause neglect of the left side of space.",
-    "mnemonic": "Angular gyrus = \"reading corner\": the angle where seeing words meets understanding them.",
-    "clinical": "Damage to the left angular gyrus can cause Gerstmann syndrome: difficulty writing and calculating, confusing left and right, and failing to name fingers. It can also cause loss of reading and writing.",
-    "hint": "The curved fold where parietal, temporal and occipital lobes meet, behind the horseshoe that caps the lateral sulcus."
+    "origin": "From the Latin for angle or bend. It bends around the end of a groove in the temporal lobe.",
+    "location": "At the back of the lower right parietal lobe, behind the supramarginal gyrus and close to the occipital lobe.",
+    "description": "A curved fold sitting where three lobes meet: the parietal, temporal and occipital.",
+    "function": "It links what you see, hear and feel. On the right, it helps with spatial attention, and damage in this region can make a person ignore the left side of space.",
+    "mnemonic": "Think of it as the reading corner, the bend where seeing words meets understanding them.",
+    "clinical": "Gerstmann syndrome, with trouble writing, doing sums, telling left from right and naming fingers, follows damage to this area on the left side.",
+    "hint": "The curved fold where three lobes meet, just behind the horseshoe that caps the deep side groove."
    },
    "questions": []
   },
@@ -1476,13 +1476,13 @@
    ],
    "content": {
     "pronunciation": "soo-PEER-ee-er TEM-puh-rul JY-rus",
-    "origin": "Latin tempus, \"time\" (the temples, where hair first greys with age).",
-    "location": "The top fold of the right temporal lobe, just below the lateral sulcus. Its upper surface, hidden inside the sulcus, carries the transverse temporal gyri.",
-    "description": "A long horizontal gyrus. In this model it includes the transverse temporal (Heschl) gyri, the small folds on its upper surface that hold the primary auditory cortex.",
-    "function": "Contains the primary auditory cortex (Brodmann areas 41 and 42) on the transverse temporal gyri, which receives hearing information from both ears, plus surrounding auditory association cortex. The right side is more involved in music and in the tone and emotion of speech (prosody); language comprehension is usually on the left.",
-    "mnemonic": "\"Superior temporal = superior hearing\": the ears sit next to the temporal lobes.",
-    "clinical": "Damage to the Wernicke area (usually left) causes Wernicke (receptive) aphasia: fluent speech that makes little sense and poor understanding of what others say.",
-    "hint": "The top fold of the lobe that lies beside the ear, just below the lateral sulcus; its hidden upper surface receives sound."
+    "origin": "From the Latin tempus, meaning time. It names the temples, where hair often turns grey first with age.",
+    "location": "The top fold of the right temporal lobe, just below the deep side groove. Its hidden upper surface carries small folds that receive sound.",
+    "description": "A long fold running front to back. In this model it includes Heschl's gyri, the small folds on its top surface where hearing arrives.",
+    "function": "Its top surface is the main hearing area, getting sound from both ears. The right side is tuned to music and to the tone and feeling in a voice.",
+    "mnemonic": "Superior temporal means superior hearing. Your ears sit right beside your temporal lobes.",
+    "clinical": "Wernicke aphasia, where speech flows but makes little sense, usually follows damage on the left. Damage here on the right can make it hard to read the tone of a voice.",
+    "hint": "The top fold of the lobe beside the ear, just below the deep side groove, with a hidden surface that receives sound."
    },
    "questions": [],
    "merged": true
@@ -1521,13 +1521,13 @@
    ],
    "content": {
     "pronunciation": "MID-ul TEM-puh-rul JY-rus",
-    "origin": "Latin medius, \"middle\", and tempus, \"temple\".",
-    "location": "On the lateral surface of the right temporal lobe, between the superior and inferior temporal gyri.",
-    "description": "A long horizontal fold between the superior and inferior temporal sulci, reaching back towards the occipital lobe.",
-    "function": "Association cortex involved in understanding the meaning of words and in memory for facts. Its back end, near the occipital lobe, helps detect visual motion.",
-    "mnemonic": "Middle temporal = \"middle man\": it links sounds and sights to their meaning.",
-    "clinical": "It is a common site for temporal lobe epilepsy spread and for tumours; damage on the left can cause word-finding difficulty.",
-    "hint": "The middle of the three horizontal folds on the side of the lobe below the lateral sulcus."
+    "origin": "From the Latin for middle and temple. It is the middle fold on the side of the temporal lobe.",
+    "location": "On the outer side of the right temporal lobe, between the top and bottom temporal folds.",
+    "description": "A long fold running front to back between two grooves, stretching back towards the occipital lobe.",
+    "function": "It links words and sights to their meaning and holds memory for facts. Its back end, near the occipital lobe, helps you spot movement.",
+    "mnemonic": "Think of it as the middle man, linking sounds and sights to what they mean.",
+    "clinical": "Epilepsy and tumours often involve this fold. Word-finding trouble is more likely when the left one is damaged.",
+    "hint": "The middle of three long folds on the side of the lobe beside the ear."
    },
    "questions": []
   },
@@ -1561,13 +1561,13 @@
    ],
    "content": {
     "pronunciation": "in-FEER-ee-er TEM-puh-rul JY-rus",
-    "origin": "Latin inferior, \"lower\", and tempus, \"temple\".",
-    "location": "The lowest fold of the lateral surface of the right temporal lobe, curving onto its underside next to the fusiform gyrus.",
-    "description": "A horizontal gyrus below the inferior temporal sulcus, forming the lower lateral edge of the temporal lobe.",
-    "function": "Higher visual cortex in the ventral \"what\" pathway. It helps recognise objects, shapes and colours.",
-    "mnemonic": "Inferior temporal = \"identify things\": it answers \"what am I looking at?\".",
-    "clinical": "Damage to the ventral visual pathway, including this region, can cause visual agnosia: seeing an object but being unable to recognise it.",
-    "hint": "The lowest fold on the side of the lobe beside the ear, wrapping onto the underside of the brain."
+    "origin": "From the Latin for lower and temple. It is the lowest fold on the side of the temporal lobe.",
+    "location": "The lowest fold on the side of the right temporal lobe, curling under onto the base of the brain.",
+    "description": "A long fold forming the lower outer edge of the temporal lobe, with the fusiform gyrus beside it underneath.",
+    "function": "It is part of the what pathway of vision. It helps you recognise objects, shapes and colours.",
+    "mnemonic": "Inferior temporal for identifying things. It answers the question, what am I looking at?",
+    "clinical": "Damage along this pathway can cause visual agnosia. The person sees an object clearly but cannot tell what it is.",
+    "hint": "The lowest fold on the side of the lobe beside the ear, curling under onto the base of the brain."
    },
    "questions": []
   },
@@ -1608,13 +1608,13 @@
    ],
    "content": {
     "pronunciation": "ok-SIP-ih-tul lohb",
-    "origin": "Latin occiput, \"back of the head\" (ob, \"against\", and caput, \"head\").",
-    "location": "The rear lobe of the right cerebral hemisphere, behind the parietal and temporal lobes and resting on the tentorium cerebelli above the cerebellum.",
-    "description": "A pyramid-shaped lobe. Its medial surface is divided by the calcarine sulcus into the cuneus above and the lingual gyrus below.",
-    "function": "The visual lobe. Primary visual cortex (Brodmann area 17) lines the calcarine sulcus and receives input from the opposite half of the visual field of both eyes; the surrounding cortex is visual association cortex.",
-    "mnemonic": "\"O for optic\": the occipital lobe is for seeing, at the back of the head.",
-    "clinical": "A posterior cerebral artery stroke in one occipital lobe causes loss of the opposite half of the visual field in both eyes (homonymous hemianopia), often with sparing of central vision.",
-    "hint": "The rearmost lobe of the hemisphere, sitting above the cerebellum; the calcarine sulcus runs through it."
+    "origin": "From the Latin occiput, the back of the head.",
+    "location": "The back lobe of the right hemisphere, behind the parietal and temporal lobes. It rests on a sheet of tough tissue above the cerebellum.",
+    "description": "A pyramid-shaped lobe. On its inner face, a deep groove called the calcarine sulcus splits it into an upper and a lower part.",
+    "function": "This is your seeing lobe. The main vision area lines the calcarine sulcus and receives the left half of what both eyes see.",
+    "mnemonic": "O for optic: the occipital lobe does your seeing, at the back of your head.",
+    "clinical": "A stroke in one occipital lobe blanks out the opposite half of vision in both eyes. The very centre of vision is often spared.",
+    "hint": "The back lobe of the hemisphere, sitting above the cerebellum, with a deep groove on its inner face."
    },
    "questions": []
   },
@@ -1648,13 +1648,13 @@
    ],
    "content": {
     "pronunciation": "IN-syoo-lah",
-    "origin": "Latin insula, \"island\": it is an island of cortex hidden deep in the lateral sulcus.",
-    "location": "Deep inside the right lateral sulcus, hidden beneath the overlying frontal, parietal and temporal lobes (the opercula), lateral to the lentiform nucleus.",
-    "description": "A triangular area of cortex with short and long gyri, surrounded by the circular sulcus. It can only be seen when the lips of the lateral sulcus are pulled apart.",
-    "function": "Primary taste (gustatory) cortex, and processing of internal body sensations such as heartbeat, breathing, pain and gut feelings, linking them with emotion.",
-    "mnemonic": "\"Insula = inside\": the hidden island that feels your insides.",
-    "clinical": "Strokes of the middle cerebral artery often damage the insula because its branches run over it.",
-    "hint": "Cortex hidden deep in the lateral sulcus, covered by the lips of three lobes; taste is processed here."
+    "origin": "From the Latin for island. It is an island of cortex hidden deep inside the side groove.",
+    "location": "Deep inside the right lateral sulcus, covered by the frontal, parietal and temporal lobes. You only see it when you pull the lips of the groove apart.",
+    "description": "A triangle of cortex with short and long folds, ringed by a groove, like a buried island.",
+    "function": "It is your main taste area. It also senses what is going on inside you, like heartbeat, breathing and gut feelings, and links them to emotion.",
+    "mnemonic": "Insula sounds like inside. It is the hidden island that feels your insides.",
+    "clinical": "Middle cerebral artery strokes often damage the insula, because the artery's branches run right over it.",
+    "hint": "Cortex hidden deep in the side groove, covered by the lips of three lobes, where taste is handled."
    },
    "questions": []
   },
@@ -1692,13 +1692,13 @@
    ],
    "content": {
     "pronunciation": "SING-gyoo-lut JY-rus",
-    "origin": "Latin cingulum, \"belt\" or \"girdle\": it wraps around the corpus callosum like a belt.",
-    "location": "On the medial surface of the right hemisphere, arching around the top of the corpus callosum from front to back.",
-    "description": "A C-shaped gyrus between the callosal sulcus below and the cingulate sulcus above. Behind the splenium of the corpus callosum it narrows (the isthmus) and continues into the parahippocampal gyrus.",
-    "function": "Part of the limbic system. The front part helps with emotion, motivation, the unpleasantness of pain and attention; the back part helps with memory and self-reflection.",
-    "mnemonic": "Cingulate = \"cingulum\" belt: it belts around the corpus callosum.",
-    "clinical": "Swelling in one hemisphere can push the cingulate gyrus under the falx cerebri (subfalcine herniation), compressing the anterior cerebral arteries.",
-    "hint": "A belt of cortex on the medial surface, curving directly over the large white-matter bridge between hemispheres."
+    "origin": "From the Latin for belt. It wraps around the corpus callosum like a belt.",
+    "location": "On the inner face of the right hemisphere, arching over the corpus callosum from front to back.",
+    "description": "A C-shaped fold sitting between two grooves. Behind the corpus callosum it narrows and flows into the parahippocampal gyrus.",
+    "function": "It is part of the limbic system, your emotional brain. The front helps with emotion, motivation, attention and how bad pain feels, and the back helps with memory.",
+    "mnemonic": "Cingulate sounds like cingulum, a belt. It belts around the corpus callosum.",
+    "clinical": "Swelling in one hemisphere can push this fold under the tough midline sheet, the falx. This is called subfalcine herniation and can squeeze the anterior cerebral arteries.",
+    "hint": "A belt of cortex on the inner face, curving right over the big white bridge between the hemispheres."
    },
    "questions": []
   },
@@ -1732,13 +1732,13 @@
    ],
    "content": {
     "pronunciation": "PAIR-uh-hip-oh-KAM-pul JY-rus",
-    "origin": "Greek para, \"beside\", and hippocampus, \"seahorse\": the gyrus beside the hippocampus.",
-    "location": "On the inferior and medial surface of the right temporal lobe, alongside the hippocampus, with the fusiform gyrus lateral to it.",
-    "description": "A gyrus whose front end hooks back on itself to form the uncus. Its front part contains the entorhinal cortex, the main gateway into the hippocampus.",
-    "function": "Part of the limbic system. It passes information from the cortex to the hippocampus for forming new memories, and helps recognise places and scenes.",
-    "mnemonic": "Para-hippocampal = \"partner of the hippocampus\": it feeds memories in.",
-    "clinical": "Raised pressure above the tentorium can push the uncus over the tentorial edge (uncal herniation), compressing the oculomotor nerve and causing a dilated pupil on that side.",
-    "hint": "The inner fold on the underside of the lobe beside the ear, lying next to the seahorse-shaped memory structure and ending in a hook (the uncus)."
+    "origin": "From the Greek for beside the seahorse. It is the fold next to the hippocampus.",
+    "location": "On the underside and inner face of the right temporal lobe, next to the hippocampus, with the fusiform gyrus on its outer side.",
+    "description": "A fold whose front end hooks back on itself, forming the uncus. Its front part is the main gateway into the hippocampus.",
+    "function": "It passes information from the cortex into the hippocampus to make new memories. It also helps you recognise places and scenes.",
+    "mnemonic": "Think of it as the hippocampus's partner, feeding new memories in.",
+    "clinical": "Raised pressure can push its hook, the uncus, over a tough edge. This squeezes the nerve that works the eye and makes the pupil on that side go wide.",
+    "hint": "The inner fold under the lobe beside the ear, lying next to the seahorse-shaped memory maker and ending in a hook."
    },
    "questions": []
   },
@@ -1779,13 +1779,13 @@
    ],
    "content": {
     "pronunciation": "FYOO-zih-form JY-rus",
-    "origin": "Latin fusus, \"spindle\", and forma, \"shape\": it is spindle-shaped, wide in the middle and tapering at each end.",
-    "location": "On the underside of the right temporal and occipital lobes, between the inferior temporal gyrus laterally and the parahippocampal gyrus medially.",
-    "description": "A long spindle-shaped gyrus on the basal surface of the brain, separated from the parahippocampal gyrus by the collateral sulcus.",
-    "function": "High-level visual cortex. It contains areas specialised for recognising faces and, on the left, written words. Face recognition is usually stronger in the right fusiform gyrus.",
-    "mnemonic": "\"Fusiform for faces\": both start with F.",
-    "clinical": "Damage to the fusiform face area (especially on the right or both sides) can cause prosopagnosia, an inability to recognise familiar faces.",
-    "hint": "A spindle-shaped fold on the underside of the brain, between the lowest lateral temporal fold and the gyrus next to the hippocampus; it recognises faces."
+    "origin": "From the Latin for spindle-shaped. It is wide in the middle and tapers at each end.",
+    "location": "On the underside of the right temporal and occipital lobes, between the inferior temporal gyrus and the parahippocampal gyrus.",
+    "description": "A long, spindle-shaped fold on the base of the brain, separated from its inner neighbour by a groove.",
+    "function": "It is a high-level vision area for recognising faces. The right side usually does more of the face work than the left.",
+    "mnemonic": "Fusiform for faces: both start with F.",
+    "clinical": "Damage to the face area, especially on the right or both sides, can cause face blindness. The person can no longer recognise familiar faces.",
+    "hint": "A spindle-shaped fold on the base of the brain, between the lowest side fold and the fold next to the memory maker."
    },
    "questions": []
   },
@@ -1831,30 +1831,30 @@
    ],
    "content": {
     "pronunciation": "KOR-pus kuh-LOH-sum",
-    "origin": "Latin corpus, \"body\", and callosus, \"tough\" or \"hard\".",
-    "location": "In the midline at the bottom of the longitudinal fissure, joining the two cerebral hemispheres and forming the roof of the lateral ventricles.",
-    "description": "A thick, curved band of white matter with four parts from front to back: rostrum, genu, body and splenium. It is the largest commissure of the brain.",
-    "function": "Carries hundreds of millions of nerve fibres between matching areas of the left and right hemispheres, so the two sides can share information and work together.",
-    "mnemonic": "\"Callosum connects\": the corpus callosum is the bridge between the two halves.",
-    "clinical": "Cutting the corpus callosum (callosotomy) is sometimes used to stop severe seizures spreading between hemispheres; afterwards the hemispheres cannot easily share information (\"split brain\").",
-    "hint": "The large arched white-matter bridge seen in the midline between the two hemispheres, with the cingulate cortex curving above it."
+    "origin": "From the Latin for tough body.",
+    "location": "Deep in the middle, at the bottom of the groove that splits the brain in two. It joins the two hemispheres and forms the roof of the lateral ventricles.",
+    "description": "A thick, curved band of white matter, the biggest bridge in the brain. From front to back its parts are the rostrum, genu, body and splenium.",
+    "function": "It carries hundreds of millions of nerve fibres between the left and right hemispheres. This lets the two halves share information and work as a team.",
+    "mnemonic": "Callosum connects. It is the bridge between your two brain halves.",
+    "clinical": "Surgeons sometimes cut it to stop severe seizures spreading from one side to the other. Afterwards the two halves struggle to share information, called split brain.",
+    "hint": "The big arched white bridge in the midline between the two hemispheres, with a belt of cortex curving above it."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "What is the main role of the corpus callosum?",
+     "text": "What is the main job of the corpus callosum?",
      "options": [
-      "Producing cerebrospinal fluid",
-      "Connecting the left and right cerebral hemispheres",
+      "Making cerebrospinal fluid",
+      "Connecting the left and right hemispheres",
       "Controlling hormone release",
       "Coordinating balance"
      ],
      "answer": 1,
-     "explanation": "It is the largest commissure, carrying fibres between the two hemispheres."
+     "explanation": "It is the biggest bridge in the brain, carrying fibres between the left and right hemispheres."
     },
     {
      "kind": "terminology",
-     "text": "Which part of the corpus callosum is at its posterior end?",
+     "text": "Which part of the corpus callosum is at its back end?",
      "options": [
       "Genu",
       "Rostrum",
@@ -1862,7 +1862,7 @@
       "Body"
      ],
      "answer": 2,
-     "explanation": "The splenium is the thick posterior end of the corpus callosum."
+     "explanation": "The splenium is the thick back end of the corpus callosum."
     }
    ]
   },
@@ -1904,18 +1904,18 @@
    ],
    "content": {
     "pronunciation": "THAL-uh-mus",
-    "origin": "Greek thalamos, \"inner chamber\" or \"bedroom\".",
-    "location": "Deep in the left half of the forebrain (diencephalon), forming the side wall of the third ventricle, above the hypothalamus and medial to the basal ganglia.",
-    "description": "An egg-shaped mass of grey matter made of many nuclei. The two thalami are often joined across the third ventricle by a small bridge (the interthalamic adhesion).",
-    "function": "The main relay station to the cerebral cortex: almost all sensory information (except smell) passes through it, and it relays motor loops from the basal ganglia and cerebellum. It also helps regulate alertness and consciousness.",
-    "mnemonic": "\"Thalamus = the brain's switchboard\": every sense except smell is switched through it.",
-    "clinical": "A thalamic stroke can cause loss of sensation on the opposite side of the body and sometimes severe, burning pain afterwards (thalamic pain syndrome).",
-    "hint": "An egg-shaped grey-matter mass in the centre of the brain, forming the side wall of the slit-like midline ventricle; the relay for incoming senses."
+    "origin": "From the Greek for inner chamber or bedroom.",
+    "location": "Deep in the centre of the brain on the left side, above the hypothalamus. It forms the side wall of the third ventricle.",
+    "description": "An egg-shaped lump of grey matter made of many nuclei. The two thalami are often joined across the middle by a small bridge.",
+    "function": "It is the main relay to the cortex. Almost every sense except smell passes through it, and it also helps keep you alert and awake.",
+    "mnemonic": "Think of the thalamus as the brain's switchboard. Every sense except smell is switched through it.",
+    "clinical": "A stroke here can cause numbness on the right side of the body. Sometimes a severe burning pain follows later.",
+    "hint": "An egg-shaped grey lump in the centre of the brain, forming the side wall of the slit-like middle cavity."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which sense does NOT relay through the thalamus before reaching the cortex?",
+     "text": "Which sense does NOT pass through the thalamus on its way to the cortex?",
      "options": [
       "Vision",
       "Hearing",
@@ -1923,7 +1923,7 @@
       "Smell"
      ],
      "answer": 3,
-     "explanation": "Smell (olfaction) is the one sense that reaches the cortex without a thalamic relay."
+     "explanation": "Smell is the only sense that reaches the cortex without stopping at the thalamus."
     },
     {
      "kind": "relationship",
@@ -1935,7 +1935,7 @@
       "Only the lateral ventricle"
      ],
      "answer": 1,
-     "explanation": "The two thalami form the lateral walls of the third ventricle."
+     "explanation": "The two thalami face each other across the third ventricle, forming its side walls."
     }
    ]
   },
@@ -1973,13 +1973,13 @@
    ],
    "content": {
     "pronunciation": "THAL-uh-mus",
-    "origin": "Greek thalamos, \"inner chamber\" or \"bedroom\".",
-    "location": "Deep in the right half of the forebrain (diencephalon), forming the side wall of the third ventricle, above the hypothalamus and medial to the basal ganglia.",
-    "description": "An egg-shaped mass of grey matter made of many nuclei. The two thalami are often joined across the third ventricle by a small bridge (the interthalamic adhesion).",
-    "function": "The main relay station to the cerebral cortex: almost all sensory information (except smell) passes through it, and it relays motor loops from the basal ganglia and cerebellum. It also helps regulate alertness and consciousness.",
-    "mnemonic": "\"Thalamus = the brain's switchboard\": every sense except smell is switched through it.",
-    "clinical": "A thalamic stroke can cause loss of sensation on the opposite side of the body and sometimes severe, burning pain afterwards (thalamic pain syndrome).",
-    "hint": "An egg-shaped grey-matter mass in the centre of the brain, forming the side wall of the slit-like midline ventricle; the relay for incoming senses."
+    "origin": "From the Greek for inner chamber or bedroom.",
+    "location": "Deep in the centre of the brain on the right side, above the hypothalamus. It forms the side wall of the third ventricle.",
+    "description": "An egg-shaped lump of grey matter made of many nuclei. The two thalami are often joined across the middle by a small bridge.",
+    "function": "It is the main relay to the cortex. Almost every sense except smell passes through it, and it also helps keep you alert and awake.",
+    "mnemonic": "Think of the thalamus as the brain's switchboard. Every sense except smell is switched through it.",
+    "clinical": "A stroke here can cause numbness on the left side of the body. Sometimes a severe burning pain follows later.",
+    "hint": "An egg-shaped grey lump in the centre of the brain, forming the side wall of the slit-like middle cavity."
    },
    "questions": []
   },
@@ -2025,30 +2025,30 @@
    ],
    "content": {
     "pronunciation": "HY-poh-THAL-uh-mus",
-    "origin": "Greek hypo, \"below\", and thalamos, \"inner chamber\": the part below the thalamus.",
-    "location": "Below the thalamus in the floor and lower walls of the third ventricle, just above the pituitary gland and behind the optic chiasm.",
-    "description": "A small cluster of nuclei, about the size of an almond. The pituitary stalk (infundibulum) hangs from its underside, and the mammillary bodies bulge from its back.",
-    "function": "Controls homeostasis: body temperature, hunger, thirst, sleep-wake rhythm, the autonomic nervous system and the pituitary gland. It makes antidiuretic hormone (ADH) and oxytocin, which are released from the posterior pituitary.",
-    "mnemonic": "The hypothalamus controls the \"4 Fs\": feeding, fighting, fleeing and reproduction.",
-    "clinical": "Damage to the hypothalamus or pituitary stalk can stop ADH release, causing central diabetes insipidus with large volumes of dilute urine and constant thirst.",
-    "hint": "A small region below the main sensory relay, in the floor of the midline ventricle, with the hormone gland hanging from it on a stalk."
+    "origin": "From the Greek for below the inner chamber. It is the part below the thalamus.",
+    "location": "Just below the thalamus, in the floor of the third ventricle. It sits above the pituitary gland and behind the optic chiasm.",
+    "description": "A small cluster of nuclei about the size of an almond. The pituitary hangs from its underside on a stalk.",
+    "function": "It keeps your body in balance, running temperature, hunger, thirst and sleep. It also controls the pituitary and makes the hormones ADH and oxytocin.",
+    "mnemonic": "The hypothalamus runs the four Fs: feeding, fighting, fleeing and reproduction.",
+    "clinical": "Damage here or to the pituitary stalk can stop ADH release. This causes diabetes insipidus, with huge amounts of watery urine and constant thirst.",
+    "hint": "A small region below the central relay, in the floor of the middle cavity, with the hormone gland hanging from it on a stalk."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which of these is a main function of the hypothalamus?",
+     "text": "Which of these is a main job of the hypothalamus?",
      "options": [
-      "Regulating body temperature and thirst",
+      "Controlling body temperature and thirst",
       "Coordinating balance",
       "Relaying hearing to the cortex",
-      "Producing melatonin"
+      "Making melatonin"
      ],
      "answer": 0,
-     "explanation": "The hypothalamus controls homeostasis, including temperature, hunger and thirst."
+     "explanation": "The hypothalamus keeps your body in balance, including temperature, hunger and thirst."
     },
     {
      "kind": "relationship",
-     "text": "The hypothalamus controls which endocrine gland through a stalk?",
+     "text": "The hypothalamus controls which gland through a stalk?",
      "options": [
       "Pineal gland",
       "Thyroid gland",
@@ -2056,7 +2056,7 @@
       "Adrenal gland"
      ],
      "answer": 2,
-     "explanation": "The pituitary hangs from the hypothalamus by the infundibulum and is controlled by it."
+     "explanation": "The pituitary hangs from the hypothalamus on a stalk and takes its orders from it."
     }
    ]
   },
@@ -2094,18 +2094,18 @@
    ],
    "content": {
     "pronunciation": "pih-TYOO-ih-tree GLAND",
-    "origin": "Latin pituita, \"phlegm\" (it was once thought to make nasal mucus); hypophysis is Greek for \"undergrowth\".",
-    "location": "At the base of the brain in the midline, sitting in the sella turcica of the sphenoid bone, just below the optic chiasm and hanging from the hypothalamus by the pituitary stalk.",
-    "description": "A pea-sized gland with an anterior lobe (adenohypophysis) and a posterior lobe (neurohypophysis).",
-    "function": "The anterior lobe makes growth hormone, prolactin, TSH, ACTH, FSH and LH, controlling other endocrine glands. The posterior lobe releases ADH and oxytocin made in the hypothalamus.",
-    "mnemonic": "\"Master gland under the master\": the pituitary controls other glands but takes orders from the hypothalamus.",
-    "clinical": "A pituitary tumour (adenoma) growing upwards can press on the optic chiasm, causing loss of the outer (temporal) half of vision in both eyes (bitemporal hemianopia).",
-    "hint": "The pea-sized gland in the bony saddle of the skull base, hanging on a stalk just below where the optic nerves cross."
+    "origin": "From the Latin for phlegm, because people once thought it made nasal mucus. Its other name, hypophysis, means undergrowth in Greek.",
+    "location": "At the base of the brain in the middle, in a saddle-shaped hollow of the sphenoid bone. It hangs from the hypothalamus, just below the optic chiasm.",
+    "description": "A gland about the size of a pea, with a front lobe and a back lobe.",
+    "function": "The front lobe makes hormones that control growth and other glands, like the thyroid. The back lobe releases ADH and oxytocin, which are made in the hypothalamus.",
+    "mnemonic": "Think of it as the master gland with a boss. It controls other glands but takes orders from the hypothalamus.",
+    "clinical": "A pituitary tumour growing upwards can press on the optic chiasm. This blanks out the outer half of vision in both eyes.",
+    "hint": "The pea-sized gland in a bony saddle at the base of the skull, hanging on a stalk just below where the eye nerves cross."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "A pituitary tumour pressing upwards typically causes which visual problem?",
+     "text": "A pituitary tumour pressing upwards usually causes which vision problem?",
      "options": [
       "Blindness in one eye only",
       "Double vision only when looking down",
@@ -2113,7 +2113,7 @@
       "Loss of the outer half of vision in both eyes"
      ],
      "answer": 3,
-     "explanation": "It compresses the crossing fibres in the optic chiasm, causing bitemporal hemianopia."
+     "explanation": "It squeezes the crossing fibres in the optic chiasm. These carry the outer half of vision from each eye."
     },
     {
      "kind": "location",
@@ -2125,7 +2125,7 @@
       "Frontal bone"
      ],
      "answer": 2,
-     "explanation": "It lies in the sella turcica of the sphenoid bone."
+     "explanation": "It sits in the sella turcica, a saddle-shaped hollow in the sphenoid bone."
     }
    ]
   },
@@ -2163,18 +2163,18 @@
    ],
    "content": {
     "pronunciation": "PIN-ee-ul GLAND",
-    "origin": "Latin pinea, \"pine cone\", from its shape.",
-    "location": "In the midline at the back of the third ventricle, above the top of the midbrain (the superior colliculi) and below the splenium of the corpus callosum.",
-    "description": "A tiny pine-cone-shaped gland attached to the back of the roof of the third ventricle. It often contains calcium deposits in adults.",
-    "function": "Makes the hormone melatonin, mainly at night in darkness, helping to set the body's daily (circadian) sleep-wake rhythm.",
-    "mnemonic": "\"Pine cone at night\": the pineal makes melatonin when the lights go out.",
-    "clinical": "A pineal gland calcified with age is visible on CT scans and X-rays and serves as a midline landmark. Pineal tumours can block the cerebral aqueduct and cause hydrocephalus.",
-    "hint": "A tiny cone-shaped gland at the back of the midline ventricle, perched above the top of the brainstem."
+    "origin": "From the Latin for pine cone, because of its shape.",
+    "location": "In the middle at the back of the third ventricle, just above the top of the midbrain and below the back end of the corpus callosum.",
+    "description": "A tiny gland shaped like a pine cone. In adults it often contains small specks of calcium.",
+    "function": "It makes the hormone melatonin, mostly at night in the dark. This helps set your daily sleep and wake rhythm, your body clock.",
+    "mnemonic": "Pine cone at night: the pineal makes melatonin when the lights go out.",
+    "clinical": "With age it often gathers calcium and shows up on scans as a handy midline marker. A pineal tumour can block the aqueduct and cause fluid build-up in the brain.",
+    "hint": "A tiny cone-shaped gland at the back of the middle cavity, perched above the top of the brainstem."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which hormone is produced by the pineal gland?",
+     "text": "Which hormone does the pineal gland make?",
      "options": [
       "Cortisol",
       "Melatonin",
@@ -2182,7 +2182,7 @@
       "Growth hormone"
      ],
      "answer": 1,
-     "explanation": "The pineal gland secretes melatonin, which helps regulate the sleep-wake cycle."
+     "explanation": "The pineal gland makes melatonin, which helps control your sleep and wake cycle."
     }
    ]
   },
@@ -2227,30 +2227,30 @@
    ],
    "content": {
     "pronunciation": "hip-oh-KAM-pus",
-    "origin": "Greek hippos, \"horse\", and kampos, \"sea monster\": its curved shape looks like a seahorse.",
-    "location": "In the medial part of the left temporal lobe, forming the floor of the inferior (temporal) horn of the lateral ventricle, just behind the amygdala.",
-    "description": "A curved ridge of grey matter shaped like a seahorse. Its output fibres gather into the fornix. Only the left one is shown in this model; a matching one lies in the right hemisphere.",
-    "function": "Part of the limbic system. It is essential for forming new long-term memories of facts and events, and for spatial memory and navigation.",
-    "mnemonic": "\"Hippo-campus goes to campus to learn\": it is the brain's memory-maker.",
-    "clinical": "The hippocampus is one of the first areas damaged in Alzheimer disease, which explains early loss of recent memory. It is also a common source of temporal lobe epilepsy.",
-    "hint": "A seahorse-shaped ridge in the medial temporal lobe forming the floor of the temporal horn of the ventricle."
+    "origin": "From the Greek for horse and sea monster. Its curled shape looks like a seahorse.",
+    "location": "Deep in the inner part of the left temporal lobe, forming the floor of the lower horn of the lateral ventricle. It lies just behind the amygdala.",
+    "description": "A curved ridge of grey matter shaped like a seahorse. Only the left one is shown here, and a matching one sits on the right.",
+    "function": "It is essential for making new memories of facts and events. It also helps you remember places and find your way around.",
+    "mnemonic": "The hippo goes to campus to learn. The hippocampus is your memory maker.",
+    "clinical": "Alzheimer disease damages the hippocampus early, which is why recent memories fade first. It is also a common source of temporal lobe epilepsy.",
+    "hint": "A seahorse-shaped ridge deep in the inner temporal lobe, forming the floor of a horn of the fluid cavity."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "What is the main function of the hippocampus?",
+     "text": "What is the main job of the hippocampus?",
      "options": [
       "Forming new memories",
       "Controlling eye movements",
-      "Producing cerebrospinal fluid",
+      "Making cerebrospinal fluid",
       "Relaying taste"
      ],
      "answer": 0,
-     "explanation": "The hippocampus is essential for forming new declarative (fact and event) memories."
+     "explanation": "The hippocampus is essential for making new memories of facts and events."
     },
     {
      "kind": "clinical",
-     "text": "Which disease typically damages the hippocampus early, causing recent memory loss?",
+     "text": "Which disease usually damages the hippocampus early, causing loss of recent memories?",
      "options": [
       "Parkinson disease",
       "Multiple sclerosis only",
@@ -2258,7 +2258,7 @@
       "Alzheimer disease"
      ],
      "answer": 3,
-     "explanation": "Alzheimer disease affects the hippocampus early, impairing new memory formation."
+     "explanation": "Alzheimer disease strikes the hippocampus early, so making new memories becomes hard."
     }
    ]
   },
@@ -2299,13 +2299,13 @@
    ],
    "content": {
     "pronunciation": "uh-MIG-duh-lah",
-    "origin": "Greek amygdale, \"almond\", from its shape.",
-    "location": "Deep in the front of the left medial temporal lobe, under the uncus, just in front of the hippocampus and the tip of the inferior horn of the lateral ventricle.",
-    "description": "An almond-shaped cluster of nuclei. Only the left one is shown in this model; a matching one lies in the right hemisphere.",
-    "function": "Part of the limbic system. It detects threats, generates fear and other emotional responses, and strengthens memories of emotional events.",
-    "mnemonic": "\"Amygdala = alarm\": the almond-shaped alarm bell of the brain.",
-    "clinical": "Damage to both amygdalae reduces normal fear responses and the ability to recognise fear in other people's faces.",
-    "hint": "An almond-shaped cluster in the front of the medial temporal lobe, just in front of the seahorse-shaped memory structure."
+    "origin": "From the Greek word for almond, because of its shape.",
+    "location": "Deep in the front of the inner left temporal lobe, under the uncus. It sits just in front of the hippocampus.",
+    "description": "An almond-shaped cluster of nuclei. Only the left one is shown here, and a matching one sits on the right.",
+    "function": "It spots danger and sets off fear and other strong emotions. It also makes memories of emotional events stronger.",
+    "mnemonic": "Amygdala sounds like alarm. It is the almond-shaped alarm bell of your brain.",
+    "clinical": "Damage to both amygdalae dampens normal fear. People also struggle to spot fear in other people's faces.",
+    "hint": "An almond-shaped cluster at the front of the inner temporal lobe, just in front of the seahorse-shaped memory maker."
    },
    "questions": [
     {
@@ -2318,11 +2318,11 @@
       "Thirst"
      ],
      "answer": 0,
-     "explanation": "The amygdala detects threat and produces fear responses."
+     "explanation": "The amygdala spots threats and sets off fear."
     },
     {
      "kind": "location",
-     "text": "The amygdala lies just in front of which structure?",
+     "text": "The amygdala sits just in front of which structure?",
      "options": [
       "Hippocampus",
       "Cerebellum",
@@ -2330,7 +2330,7 @@
       "Corpus callosum"
      ],
      "answer": 0,
-     "explanation": "The amygdala sits in the anterior medial temporal lobe, in front of the hippocampus."
+     "explanation": "The amygdala lies at the front of the inner temporal lobe, just in front of the hippocampus."
     }
    ]
   },
@@ -2368,18 +2368,18 @@
    ],
    "content": {
     "pronunciation": "KAW-dayt NYOO-klee-us",
-    "origin": "Latin cauda, \"tail\": the nucleus has a long tail.",
-    "location": "Deep in the left cerebral hemisphere, curving along the wall of the lateral ventricle; its head bulges into the anterior horn, lateral to the ventricle.",
-    "description": "A C-shaped nucleus with a large head, a body and a thin tail that follows the lateral ventricle into the temporal lobe. It is one of the basal ganglia. Only the left one is shown in this model; a matching one lies in the right hemisphere.",
-    "function": "With the putamen it forms the striatum, the input part of the basal ganglia. It helps start and control movement and is involved in learning, habits and motivation.",
-    "mnemonic": "\"Caudate has a tail\": caudate plus putamen make the striped striatum.",
-    "clinical": "In Huntington disease the caudate nucleus shrinks, which enlarges the anterior horns of the lateral ventricles on scans and causes involuntary jerky movements (chorea).",
-    "hint": "A C-shaped grey-matter nucleus with a head and tail that hugs the wall of the lateral ventricle."
+    "origin": "From the Latin cauda, meaning tail. This nucleus has a long tail.",
+    "location": "Deep in the left hemisphere, hugging the wall of the lateral ventricle. Its big head bulges into the front horn.",
+    "description": "A C-shaped nucleus with a large head, a body and a thin tail, one of the basal ganglia. Only the left one is shown, and a matching one sits on the right.",
+    "function": "With the putamen it forms the striatum, the input to the basal ganglia. It helps start and control movement and plays a part in learning, habits and motivation.",
+    "mnemonic": "The caudate has a tail. Add the putamen and you get the striped striatum.",
+    "clinical": "In Huntington disease the caudate shrinks, so the front horns of the ventricles look bigger on scans. This causes jerky, uncontrolled movements called chorea.",
+    "hint": "A C-shaped grey nucleus with a head and a tail, hugging the wall of the fluid cavity inside the hemisphere."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Shrinkage of the caudate nucleus is characteristic of which disease?",
+     "text": "Shrinking of the caudate nucleus is typical of which disease?",
      "options": [
       "Alzheimer disease",
       "Parkinson disease",
@@ -2387,7 +2387,7 @@
       "Motor neurone disease"
      ],
      "answer": 2,
-     "explanation": "Huntington disease causes atrophy of the caudate nucleus."
+     "explanation": "Huntington disease makes the caudate shrink, leading to jerky movements."
     },
     {
      "kind": "terminology",
@@ -2399,7 +2399,7 @@
       "The striatum"
      ],
      "answer": 3,
-     "explanation": "The caudate and putamen together are called the striatum."
+     "explanation": "Together the caudate and putamen are called the striatum, which means striped."
     }
    ]
   },
@@ -2437,13 +2437,13 @@
    ],
    "content": {
     "pronunciation": "pyoo-TAY-men",
-    "origin": "Latin putamen, \"shell\" or \"husk\" (of a nut): it forms the outer shell of the lentiform nucleus.",
-    "location": "Deep in the left cerebral hemisphere, lateral to the globus pallidus and internal capsule and deep to the insula.",
-    "description": "A rounded, shell-like mass that is the outer part of the lens-shaped lentiform nucleus. It is one of the basal ganglia. Only the left one is shown in this model; a matching one lies in the right hemisphere.",
-    "function": "Part of the striatum (with the caudate). It receives input from the motor cortex and dopamine from the substantia nigra and helps regulate and smooth movement.",
-    "mnemonic": "\"Putamen = the outer shell\": it wraps around the globus pallidus.",
-    "clinical": "In Parkinson disease the dopamine supply to the putamen is lost first. The putamen is also a common site of bleeding in brain haemorrhage caused by high blood pressure.",
-    "hint": "The outer shell of the lens-shaped deep nucleus, lying just beneath the hidden island of cortex."
+    "origin": "From the Latin for the shell or husk of a nut. It forms the outer shell of a lens-shaped nucleus.",
+    "location": "Deep in the left hemisphere, outside the globus pallidus and just beneath the insula.",
+    "description": "A rounded, shell-like mass forming the outer part of the lens-shaped lentiform nucleus. Only the left one is shown, and a matching one sits on the right.",
+    "function": "It is part of the striatum, with the caudate. It takes in signals from the movement cortex and dopamine from the midbrain, and helps keep movement smooth.",
+    "mnemonic": "Putamen is the outer shell, wrapped around the pale ball of the globus pallidus.",
+    "clinical": "In Parkinson disease the putamen loses its dopamine supply first. It is also a common spot for bleeding in the brain caused by high blood pressure.",
+    "hint": "The curved outer shell of the deep lens-shaped nucleus, tucked just under the hidden island of cortex."
    },
    "questions": [
     {
@@ -2456,7 +2456,7 @@
       "Posterior only"
      ],
      "answer": 1,
-     "explanation": "The putamen lies lateral to the globus pallidus; together they form the lentiform nucleus."
+     "explanation": "The putamen lies on the outer, lateral side of the globus pallidus. Together they make the lentiform nucleus."
     }
    ]
   },
@@ -2493,26 +2493,26 @@
    ],
    "content": {
     "pronunciation": "GLOH-bus PAL-ih-dus",
-    "origin": "Latin globus, \"ball\", and pallidus, \"pale\": it looks paler than the putamen because of its many myelinated fibres.",
-    "location": "Deep in the left cerebral hemisphere, medial to the putamen and lateral to the internal capsule.",
-    "description": "A pale, wedge-shaped mass with external and internal segments; with the putamen it forms the lentiform nucleus. It is one of the basal ganglia. Only the left one is shown in this model; a matching one lies in the right hemisphere.",
-    "function": "The main output of the basal ganglia. Its internal segment sends inhibitory signals to the thalamus, helping to select wanted movements and suppress unwanted ones.",
-    "mnemonic": "\"Pale ball in the middle\": the globus pallidus sits inside the putamen shell.",
-    "clinical": "Deep brain stimulation of the internal globus pallidus is used to treat movement disorders such as Parkinson disease and dystonia.",
-    "hint": "The pale, wedge-shaped inner part of the lens-shaped deep nucleus, medial to its outer shell."
+    "origin": "From the Latin for pale ball. It looks paler than the putamen because it is packed with insulated nerve fibres.",
+    "location": "Deep in the left hemisphere, just inside the putamen and outside the internal capsule.",
+    "description": "A pale, wedge-shaped mass in two parts, which forms the lentiform nucleus with the putamen. Only the left one is shown, and a matching one sits on the right.",
+    "function": "It is the main exit of the basal ganglia. It sends braking signals to the thalamus, helping you pick the movements you want and block the ones you do not.",
+    "mnemonic": "A pale ball in the middle: the globus pallidus sits inside the putamen's shell.",
+    "clinical": "Deep brain stimulation of its inner part can ease movement disorders such as Parkinson disease and dystonia.",
+    "hint": "The pale, wedge-shaped inner part of the lens-shaped deep nucleus, inside its outer shell."
    },
    "questions": [
     {
      "kind": "function",
      "text": "What is the main role of the globus pallidus?",
      "options": [
-      "Main output of the basal ganglia to the thalamus",
-      "Primary visual processing",
-      "Producing melatonin",
+      "Main exit of the basal ganglia to the thalamus",
+      "Main vision processing",
+      "Making melatonin",
       "Controlling breathing"
      ],
      "answer": 0,
-     "explanation": "The internal globus pallidus sends the main inhibitory output of the basal ganglia to the thalamus."
+     "explanation": "Its inner part sends the main braking output of the basal ganglia to the thalamus."
     }
    ]
   },
@@ -2554,18 +2554,18 @@
    ],
    "content": {
     "pronunciation": "FOR-niks",
-    "origin": "Latin fornix, \"arch\" or \"vault\".",
-    "location": "Arching under the corpus callosum from the left hippocampus in the temporal lobe forward to above the third ventricle, then down to the mammillary body of the hypothalamus.",
-    "description": "A C-shaped bundle of white-matter fibres. The two sides join under the corpus callosum (body of the fornix) and separate again at the front as the columns. Only the left one is shown in this model; a matching one lies in the right hemisphere.",
-    "function": "The main output tract of the hippocampus, carrying memory-related signals to the mammillary bodies and other limbic areas, as part of the Papez circuit.",
-    "mnemonic": "\"Fornix = forward arch\": it arches forward from the hippocampus to the mammillary bodies.",
-    "clinical": "Damage to the fornix, for example during surgery for a colloid cyst of the third ventricle, can cause problems forming new memories.",
-    "hint": "An arched white-matter tract that curves under the midline bridge between hemispheres, running from the seahorse-shaped memory structure towards the hypothalamus."
+    "origin": "From the Latin for arch or vault.",
+    "location": "It arches under the corpus callosum from the left hippocampus, forward over the third ventricle, then down to the mammillary body of the hypothalamus.",
+    "description": "A C-shaped bundle of white-matter fibres. The two sides meet under the corpus callosum and part again at the front. Only the left one is shown.",
+    "function": "It is the main exit cable of the hippocampus. It carries memory signals to the mammillary bodies and other parts of the limbic system.",
+    "mnemonic": "Fornix, the forward arch: it arches forward from the hippocampus to the mammillary bodies.",
+    "clinical": "Damage to the fornix, for example during surgery on a cyst in the third ventricle, can make it hard to form new memories.",
+    "hint": "An arched white cable curving under the midline bridge, running from the seahorse-shaped memory maker towards the hypothalamus."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The fornix carries output fibres from which structure?",
+     "text": "The fornix carries fibres out of which structure?",
      "options": [
       "Cerebellum",
       "Hippocampus",
@@ -2573,7 +2573,7 @@
       "Pons"
      ],
      "answer": 1,
-     "explanation": "The fornix is the main efferent tract of the hippocampus."
+     "explanation": "The fornix is the main output cable of the hippocampus."
     }
    ]
   },
@@ -2613,26 +2613,26 @@
    ],
    "content": {
     "pronunciation": "OP-tik KY-az-um",
-    "origin": "Greek chiasma, \"a crossing\", from the letter chi (X).",
-    "location": "At the base of the brain in the midline, above the pituitary gland, in front of the pituitary stalk and just below the front of the hypothalamus.",
-    "description": "An X-shaped structure where the two optic nerves meet and then separate into the two optic tracts.",
-    "function": "Fibres from the nasal (inner) half of each retina cross here to the opposite side, so each side of the brain receives the opposite half of the visual field from both eyes.",
-    "mnemonic": "\"Chiasm = X marks the crossing\": the nasal fibres cross.",
-    "clinical": "Pressure from below, usually a pituitary tumour, damages the crossing fibres and causes bitemporal hemianopia (loss of both outer visual fields).",
-    "hint": "An X-shaped crossing at the base of the brain, above the pea-sized gland, where the nerves from the eyes meet."
+    "origin": "From the Greek for a crossing, named after the X-shaped Greek letter chi.",
+    "location": "At the base of the brain in the middle, above the pituitary gland and in front of its stalk, just below the front of the hypothalamus.",
+    "description": "An X-shaped crossing where the two optic nerves meet, swap some fibres, then split into the two optic tracts.",
+    "function": "Fibres from the inner, nose side of each retina cross over here. So each side of the brain sees the opposite half of the world from both eyes.",
+    "mnemonic": "X marks the crossing. Only the nose-side fibres cross.",
+    "clinical": "Pressure from below, usually a pituitary tumour, damages the crossing fibres. This blanks out the outer half of vision in both eyes.",
+    "hint": "An X-shaped crossing at the base of the brain, just above the pea-sized gland, where the nerves from the eyes meet."
    },
    "questions": [
     {
      "kind": "function",
      "text": "Which fibres cross at the optic chiasm?",
      "options": [
-      "Fibres from the temporal (outer) half of each retina",
+      "Fibres from the outer half of each retina",
       "No fibres cross",
       "All fibres from both eyes",
-      "Fibres from the nasal (inner) half of each retina"
+      "Fibres from the inner, nose-side half of each retina"
      ],
      "answer": 3,
-     "explanation": "Only the nasal retinal fibres cross, carrying the temporal visual fields."
+     "explanation": "Only fibres from the nose side of each retina cross. They carry the outer half of each eye's view."
     }
    ]
   },
@@ -2686,18 +2686,18 @@
    ],
    "content": {
     "pronunciation": "LAT-er-ul VEN-trik-ul",
-    "origin": "Latin ventriculus, \"little belly\"; lateralis, \"at the side\".",
-    "location": "Inside the left cerebral hemisphere, below the corpus callosum, curving from the frontal lobe back and then down into the temporal lobe.",
-    "description": "A C-shaped cavity with an anterior (frontal) horn, body, posterior (occipital) horn and inferior (temporal) horn. It contains choroid plexus, which produces cerebrospinal fluid (CSF).",
-    "function": "Holds and produces cerebrospinal fluid, which cushions the brain, removes waste and helps keep pressure stable. CSF flows from here through the interventricular foramen into the third ventricle.",
-    "mnemonic": "CSF route: \"Lateral to third, through the aqueduct to the fourth, then out to the space around the brain\".",
-    "clinical": "If CSF flow is blocked, the ventricles swell (hydrocephalus), raising pressure in the skull. A shunt tube can drain the excess fluid.",
-    "hint": "The largest C-shaped fluid-filled cavity inside each hemisphere, with horns reaching into the frontal, occipital and temporal lobes."
+    "origin": "From the Latin for little belly, and lateral, meaning at the side.",
+    "location": "Inside the left hemisphere, under the corpus callosum. It curves from the frontal lobe back and then down into the temporal lobe.",
+    "description": "A C-shaped cavity with horns reaching into the frontal, occipital and temporal lobes. Inside it, a spongy tissue called choroid plexus makes brain fluid.",
+    "function": "It holds and makes cerebrospinal fluid, which cushions the brain and carries away waste. The fluid flows out through a small hole into the third ventricle.",
+    "mnemonic": "Follow the fluid: lateral to third, down the aqueduct to the fourth, then out around the brain.",
+    "clinical": "If the fluid is blocked, the ventricles swell, called hydrocephalus, and pressure builds in the skull. A shunt tube can drain the extra fluid.",
+    "hint": "The largest C-shaped fluid-filled cavity inside the hemisphere, with horns reaching into three lobes."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Cerebrospinal fluid passes from each lateral ventricle into which space?",
+     "text": "Brain fluid flows from each lateral ventricle into which space?",
      "options": [
       "Fourth ventricle",
       "Third ventricle",
@@ -2705,11 +2705,11 @@
       "Central canal"
      ],
      "answer": 1,
-     "explanation": "CSF flows from the lateral ventricles through the interventricular foramina into the third ventricle."
+     "explanation": "The fluid passes through a small hole on each side, the interventricular foramen, into the third ventricle."
     },
     {
      "kind": "function",
-     "text": "Which tissue in the ventricles produces cerebrospinal fluid?",
+     "text": "Which tissue in the ventricles makes cerebrospinal fluid?",
      "options": [
       "Choroid plexus",
       "Arachnoid granulations",
@@ -2717,7 +2717,7 @@
       "Pineal gland"
      ],
      "answer": 0,
-     "explanation": "The choroid plexus in the ventricles secretes CSF."
+     "explanation": "The choroid plexus, a spongy tissue inside the ventricles, makes the fluid."
     }
    ]
   },
@@ -2755,13 +2755,13 @@
    ],
    "content": {
     "pronunciation": "LAT-er-ul VEN-trik-ul",
-    "origin": "Latin ventriculus, \"little belly\"; lateralis, \"at the side\".",
-    "location": "Inside the right cerebral hemisphere, below the corpus callosum, curving from the frontal lobe back and then down into the temporal lobe.",
-    "description": "A C-shaped cavity with an anterior (frontal) horn, body, posterior (occipital) horn and inferior (temporal) horn. It contains choroid plexus, which produces cerebrospinal fluid (CSF).",
-    "function": "Holds and produces cerebrospinal fluid, which cushions the brain, removes waste and helps keep pressure stable. CSF flows from here through the interventricular foramen into the third ventricle.",
-    "mnemonic": "CSF route: \"Lateral to third, through the aqueduct to the fourth, then out to the space around the brain\".",
-    "clinical": "If CSF flow is blocked, the ventricles swell (hydrocephalus), raising pressure in the skull. A shunt tube can drain the excess fluid.",
-    "hint": "The largest C-shaped fluid-filled cavity inside each hemisphere, with horns reaching into the frontal, occipital and temporal lobes."
+    "origin": "From the Latin for little belly, and lateral, meaning at the side.",
+    "location": "Inside the right hemisphere, under the corpus callosum. It curves from the frontal lobe back and then down into the temporal lobe.",
+    "description": "A C-shaped cavity with horns reaching into the frontal, occipital and temporal lobes. Inside it, a spongy tissue called choroid plexus makes brain fluid.",
+    "function": "It holds and makes cerebrospinal fluid, which cushions the brain and carries away waste. The fluid flows out through a small hole into the third ventricle.",
+    "mnemonic": "Follow the fluid: lateral to third, down the aqueduct to the fourth, then out around the brain.",
+    "clinical": "If the fluid is blocked, the ventricles swell, called hydrocephalus, and pressure builds in the skull. A shunt tube can drain the extra fluid.",
+    "hint": "The largest C-shaped fluid-filled cavity inside the hemisphere, with horns reaching into three lobes."
    },
    "questions": []
   },
@@ -2823,13 +2823,13 @@
    ],
    "content": {
     "pronunciation": "THIRD VEN-trik-ul",
-    "origin": "Latin ventriculus tertius, \"third little belly\".",
-    "location": "In the midline of the forebrain between the left and right thalami, with the hypothalamus in its floor and lower walls.",
-    "description": "A narrow, slit-like cavity. It connects to each lateral ventricle through an interventricular foramen (of Monro) and to the fourth ventricle through the cerebral aqueduct.",
-    "function": "Carries cerebrospinal fluid from the lateral ventricles to the cerebral aqueduct, and has its own choroid plexus in the roof that adds more CSF.",
-    "mnemonic": "\"Third is the thin one\": a slit between the two thalami.",
-    "clinical": "A colloid cyst in the front of the third ventricle can block the interventricular foramina, causing sudden hydrocephalus and headache.",
-    "hint": "A thin slit of fluid in the midline, walled on each side by the egg-shaped relay masses."
+    "origin": "From the Latin for third little belly.",
+    "location": "In the middle of the brain, between the left and right thalami, with the hypothalamus in its floor.",
+    "description": "A narrow, slit-like cavity. Small holes link it to each lateral ventricle, and the aqueduct links it to the fourth ventricle.",
+    "function": "It passes brain fluid from the lateral ventricles on to the aqueduct. Choroid plexus in its roof adds more fluid.",
+    "mnemonic": "The third is the thin one, a slit squeezed between the two thalami.",
+    "clinical": "A small colloid cyst at its front can block the holes to the lateral ventricles. This causes sudden fluid build-up and headache.",
+    "hint": "A thin slit of fluid in the midline, with an egg-shaped relay mass on each side."
    },
    "questions": [
     {
@@ -2842,7 +2842,7 @@
       "Pons and cerebellum"
      ],
      "answer": 1,
-     "explanation": "The third ventricle is a midline slit between the two thalami."
+     "explanation": "The third ventricle is a thin slit in the middle, between the two thalami."
     }
    ]
   },
@@ -2883,18 +2883,18 @@
    ],
    "content": {
     "pronunciation": "suh-REE-brul AK-weh-dukt",
-    "origin": "Latin aqua, \"water\", and ducere, \"to lead\": a channel for fluid.",
-    "location": "In the midline, running through the midbrain from the back of the third ventricle down to the fourth ventricle.",
-    "description": "A narrow canal about 1.5 cm long, the narrowest part of the ventricular system. It has no choroid plexus.",
-    "function": "Carries cerebrospinal fluid from the third ventricle to the fourth ventricle.",
-    "mnemonic": "\"Aqueduct = water pipe\" through the midbrain.",
-    "clinical": "Narrowing of the aqueduct (aqueductal stenosis) is a common cause of hydrocephalus present at birth, because CSF cannot drain from the third ventricle.",
-    "hint": "The narrow fluid channel running through the upper brainstem between the slit-like midline cavity and the tent-shaped one behind the pons."
+    "origin": "From the Latin for water and to lead. It is a channel that leads fluid along.",
+    "location": "In the middle of the brain, running down through the midbrain from the third ventricle to the fourth.",
+    "description": "A narrow canal about 1.5 centimetres long, the tightest point of the fluid system. Unlike the ventricles, it has no choroid plexus.",
+    "function": "It carries brain fluid from the third ventricle down to the fourth ventricle.",
+    "mnemonic": "Think of an aqueduct as a water pipe, running through the midbrain.",
+    "clinical": "A narrowed aqueduct is a common cause of fluid build-up in the brain present at birth, because fluid cannot drain out of the third ventricle.",
+    "hint": "The narrow fluid channel through the upper brainstem, linking the slit-like middle cavity to the tent-shaped one behind the pons."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The cerebral aqueduct connects which two ventricles?",
+     "text": "The cerebral aqueduct links which two ventricles?",
      "options": [
       "Lateral and third",
       "Fourth and central canal",
@@ -2902,7 +2902,7 @@
       "Third and fourth"
      ],
      "answer": 3,
-     "explanation": "The cerebral aqueduct runs through the midbrain from the third to the fourth ventricle."
+     "explanation": "It runs through the midbrain from the third ventricle to the fourth."
     }
    ]
   },
@@ -2944,13 +2944,13 @@
    ],
    "content": {
     "pronunciation": "FORTH VEN-trik-ul",
-    "origin": "Latin ventriculus quartus, \"fourth little belly\".",
-    "location": "In the midline of the hindbrain, between the pons and upper medulla in front and the cerebellum behind.",
-    "description": "A tent-shaped cavity with a diamond-shaped floor (the rhomboid fossa). It opens into the subarachnoid space through one median aperture and two lateral apertures, and continues down as the central canal of the spinal cord.",
-    "function": "Receives CSF from the cerebral aqueduct, adds more from its choroid plexus, and releases it through its apertures into the subarachnoid space around the brain and spinal cord.",
-    "mnemonic": "\"Magendie in the middle, Luschka on the lateral sides\": the three exits of the fourth ventricle.",
-    "clinical": "Tumours of the cerebellum or brainstem in children can block the fourth ventricle, causing hydrocephalus with headache, vomiting and unsteadiness.",
-    "hint": "A tent-shaped fluid cavity behind the pons and medulla, with the cerebellum forming its roof."
+    "origin": "From the Latin for fourth little belly.",
+    "location": "In the middle of the hindbrain, with the pons and medulla in front and the cerebellum behind.",
+    "description": "A tent-shaped cavity with a diamond-shaped floor. Three openings let fluid out, and below it continues as the thin canal of the spinal cord.",
+    "function": "It collects fluid from the aqueduct and adds more of its own. Then it lets the fluid out through three openings to bathe the brain and spinal cord.",
+    "mnemonic": "Magendie in the middle, Luschka on the sides: the three exits of the fourth ventricle.",
+    "clinical": "In children, tumours of the cerebellum or brainstem can block it. This causes fluid build-up with headache, vomiting and unsteadiness.",
+    "hint": "A tent-shaped fluid cavity behind the pons and medulla, with the cerebellum as its roof."
    },
    "questions": [
     {
@@ -2963,19 +2963,19 @@
       "Pituitary gland"
      ],
      "answer": 1,
-     "explanation": "The fourth ventricle is between the pons and medulla in front and the cerebellum behind."
+     "explanation": "The fourth ventricle has the brainstem in front and the cerebellum behind."
     },
     {
      "kind": "function",
-     "text": "How does CSF leave the ventricular system?",
+     "text": "How does brain fluid leave the ventricles?",
      "options": [
-      "Through the interventricular foramina",
-      "Through the median and lateral apertures of the fourth ventricle",
+      "Through the small holes between the ventricles",
+      "Through the three openings of the fourth ventricle",
       "Through the pituitary stalk",
       "Through the optic chiasm"
      ],
      "answer": 1,
-     "explanation": "CSF exits into the subarachnoid space through the apertures of the fourth ventricle."
+     "explanation": "Fluid escapes through the three openings of the fourth ventricle into the space around the brain."
     }
    ]
   },
@@ -3019,18 +3019,18 @@
    ],
    "content": {
     "pronunciation": "MID-brayn",
-    "origin": "Greek mesos, \"middle\", and enkephalos, \"brain\".",
-    "location": "The top part of the brainstem, between the diencephalon (thalamus and hypothalamus) above and the pons below, passing through the tentorial notch.",
-    "description": "A short segment with the cerebral peduncles in front, the tectum (four bumps called colliculi) behind, and the cerebral aqueduct running through it. It contains the substantia nigra.",
-    "function": "Carries motor and sensory tracts between the forebrain and lower brainstem. The superior colliculi help with visual reflexes and the inferior colliculi with hearing; it contains the nuclei of cranial nerves III and IV.",
-    "mnemonic": "\"Midbrain has 3 and 4\": the oculomotor (III) and trochlear (IV) nerves start here.",
-    "clinical": "In Parkinson disease, dopamine-making neurons in the substantia nigra of the midbrain die, causing tremor, stiffness and slow movement.",
-    "hint": "The top segment of the brainstem, with four small bumps on its back and a narrow fluid channel through its centre."
+    "origin": "Its other name, mesencephalon, comes from the Greek for middle brain.",
+    "location": "The top part of the brainstem, below the thalamus and hypothalamus and above the pons.",
+    "description": "A short section with four small bumps on its back and the aqueduct through its middle. It holds a dark band of cells, the substantia nigra.",
+    "function": "It carries messages between the brain above and the brainstem below. Its bumps handle quick seeing and hearing reflexes, and it is home to cranial nerves three and four.",
+    "mnemonic": "The midbrain has three and four: the oculomotor and trochlear nerves start here.",
+    "clinical": "In Parkinson disease, the dopamine-making cells of the substantia nigra die. This causes tremor, stiffness and slow movement.",
+    "hint": "The top section of the brainstem, with four small bumps on its back and a narrow fluid channel through its centre."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Parkinson disease involves loss of neurons in which part of the brain?",
+     "text": "Parkinson disease involves loss of nerve cells in which part of the brain?",
      "options": [
       "Substantia nigra of the midbrain",
       "Cerebellar vermis",
@@ -3038,19 +3038,19 @@
       "Occipital lobe"
      ],
      "answer": 0,
-     "explanation": "Dopamine-producing neurons of the substantia nigra, in the midbrain, are lost in Parkinson disease."
+     "explanation": "The dopamine-making cells of the substantia nigra, in the midbrain, are lost in Parkinson disease."
     },
     {
      "kind": "terminology",
-     "text": "Which cranial nerves arise from the midbrain?",
+     "text": "Which cranial nerves start in the midbrain?",
      "options": [
-      "V and VII",
-      "IX and X",
-      "XI and XII",
-      "III and IV"
+      "Five and seven",
+      "Nine and ten",
+      "Eleven and twelve",
+      "Three and four"
      ],
      "answer": 3,
-     "explanation": "The oculomotor (III) and trochlear (IV) nerves arise from the midbrain."
+     "explanation": "The oculomotor nerve, number three, and the trochlear nerve, number four, both start in the midbrain."
     }
    ]
   },
@@ -3092,18 +3092,18 @@
    ],
    "content": {
     "pronunciation": "PONZ",
-    "origin": "Latin pons, \"bridge\": it looks like a bridge between the two halves of the cerebellum.",
-    "location": "The middle part of the brainstem, between the midbrain above and the medulla oblongata below, in front of the cerebellum and fourth ventricle.",
-    "description": "A rounded bulge on the front of the brainstem made of transverse fibres, joined to the cerebellum on each side by the middle cerebellar peduncles.",
-    "function": "Relays signals from the cerebral cortex to the cerebellum, helps regulate breathing rhythm, and contains nuclei of cranial nerves V to VIII (trigeminal, abducens, facial and vestibulocochlear).",
-    "mnemonic": "\"Pons = bridge\": it bridges the cortex to the cerebellum.",
-    "clinical": "A stroke in the front of the pons (usually from basilar artery blockage) can cause locked-in syndrome: the person is awake and aware but can move only the eyes up and down.",
-    "hint": "The rounded bulge in the middle of the brainstem, between the upper segment and the lowest part joining the spinal cord."
+    "origin": "From the Latin for bridge. It looks like a bridge between the two halves of the cerebellum.",
+    "location": "The middle part of the brainstem, between the midbrain above and the medulla below, with the cerebellum behind it.",
+    "description": "A rounded bulge on the front of the brainstem, made of fibres running side to side. Thick stalks join it to the cerebellum on each side.",
+    "function": "It relays messages from the cortex to the cerebellum and helps set your breathing rhythm. It is also home to cranial nerves five to eight, serving the face, eye and ear.",
+    "mnemonic": "Pons means bridge. It bridges the cortex to the cerebellum.",
+    "clinical": "A stroke in the front of the pons can cause locked-in syndrome. The person is fully awake but can only move their eyes up and down.",
+    "hint": "The rounded bulge in the middle of the brainstem, between the top section and the lowest part that joins the spinal cord."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which part of the brainstem lies between the midbrain and the medulla oblongata?",
+     "text": "Which part of the brainstem lies between the midbrain and the medulla?",
      "options": [
       "Thalamus",
       "Pons",
@@ -3115,7 +3115,7 @@
     },
     {
      "kind": "clinical",
-     "text": "Locked-in syndrome most often results from damage to which structure?",
+     "text": "Locked-in syndrome most often comes from damage to which structure?",
      "options": [
       "Occipital lobe",
       "Pons",
@@ -3123,7 +3123,7 @@
       "Caudate nucleus"
      ],
      "answer": 1,
-     "explanation": "A stroke in the ventral pons interrupts motor tracts but spares consciousness."
+     "explanation": "A stroke in the front of the pons cuts the movement pathways but leaves the person awake and aware."
     }
    ]
   },
@@ -3164,18 +3164,18 @@
    ],
    "content": {
     "pronunciation": "meh-DUL-ah ob-long-GAH-tah",
-    "origin": "Latin medulla, \"marrow\" or \"core\", and oblongata, \"elongated\".",
-    "location": "The lowest part of the brainstem, below the pons and in front of the cerebellum, continuing into the spinal cord at the foramen magnum.",
-    "description": "A cone-shaped segment with two pyramids on its front surface and an olive on each side. The motor fibres of the pyramids cross here (decussation of the pyramids).",
-    "function": "Contains vital centres controlling heart rate, blood pressure and breathing, and reflexes such as swallowing, coughing and vomiting. It holds nuclei of cranial nerves IX to XII.",
-    "mnemonic": "\"Medulla = most vital\": damage here stops breathing and heartbeat control.",
-    "clinical": "Raised pressure in the skull can force the cerebellar tonsils down through the foramen magnum (tonsillar herniation), compressing the medulla and causing breathing to stop.",
-    "hint": "The lowest part of the brainstem, tapering into the spinal cord at the big hole in the skull base."
+    "origin": "From the Latin medulla, meaning marrow or core, and oblongata, meaning stretched out.",
+    "location": "The lowest part of the brainstem, below the pons and in front of the cerebellum. It becomes the spinal cord at the big hole in the base of the skull.",
+    "description": "A cone-shaped section with two ridges called pyramids on its front. Here the movement fibres in the pyramids cross to the other side.",
+    "function": "It runs your vital controls: heart rate, blood pressure and breathing. It also handles swallowing, coughing and being sick, and holds cranial nerves nine to twelve.",
+    "mnemonic": "Medulla, most vital. Damage here can stop the control of breathing and heartbeat.",
+    "clinical": "High pressure in the skull can force the bottom of the cerebellum down through the skull's big hole. This squeezes the medulla and can stop breathing.",
+    "hint": "The bottom of the brainstem, narrowing into the spinal cord where it drops through the big hole in the skull."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which vital function is controlled by the medulla oblongata?",
+     "text": "Which vital job is controlled by the medulla oblongata?",
      "options": [
       "Breathing and heart rate",
       "Vision",
@@ -3183,11 +3183,11 @@
       "Taste"
      ],
      "answer": 0,
-     "explanation": "The medulla contains the cardiovascular and respiratory centres."
+     "explanation": "The medulla holds the control centres for breathing and heart rate."
     },
     {
      "kind": "terminology",
-     "text": "Where do the motor (pyramidal) fibres cross to the opposite side?",
+     "text": "Where do the main movement fibres cross to the other side?",
      "options": [
       "In the pons",
       "In the corpus callosum",
@@ -3195,7 +3195,7 @@
       "In the medulla oblongata"
      ],
      "answer": 3,
-     "explanation": "The decussation of the pyramids is in the lower medulla."
+     "explanation": "The movement fibres cross in the lower medulla, at the pyramids. That is why each side of the brain moves the opposite side."
     }
    ]
   },
@@ -3237,21 +3237,21 @@
    ],
    "content": {
     "pronunciation": "sair-uh-BEL-um",
-    "origin": "Latin cerebellum, \"little brain\".",
-    "location": "At the back of the skull in the posterior cranial fossa, below the occipital lobes (separated by the tentorium cerebelli) and behind the pons and medulla.",
-    "description": "Two hemispheres joined by a narrow midline vermis, with a surface of fine parallel folds (folia). Inside, its white matter branches like a tree (arbor vitae). Three pairs of peduncles connect it to the brainstem.",
-    "function": "Coordinates movement, balance, posture and muscle tone, and helps learn motor skills. Each side controls the same side of the body.",
-    "mnemonic": "\"Cerebellum = balance-ellum\": the little brain that keeps you steady.",
-    "clinical": "Cerebellar damage, including from alcohol, causes ataxia: an unsteady wide-based walk, poor coordination, intention tremor and slurred speech, on the same side as the lesion.",
-    "hint": "The \"little brain\" with fine parallel folds, tucked under the back of the hemispheres behind the brainstem."
+    "origin": "From the Latin for little brain.",
+    "location": "At the back of your skull, tucked under the occipital lobes and behind the pons and medulla. A tough sheet of tissue separates it from the lobes above.",
+    "description": "Two halves joined by a narrow middle strip, the vermis, covered in fine parallel folds. Inside, its white matter branches like a tree.",
+    "function": "It fine-tunes movement, balance and posture, and helps you learn skills like riding a bike. Each side controls the same side of the body.",
+    "mnemonic": "Think of it as the balance-ellum, the little brain that keeps you steady.",
+    "clinical": "Damage, including from alcohol, makes a person unsteady and clumsy, with slurred speech. The problems show on the same side as the damage.",
+    "hint": "The little brain with fine parallel folds, tucked under the back of the hemispheres, behind the brainstem."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "What is the main function of the cerebellum?",
+     "text": "What is the main job of the cerebellum?",
      "options": [
-      "Coordination of movement and balance",
-      "Producing hormones",
+      "Coordinating movement and balance",
+      "Making hormones",
       "Relaying smell",
       "Understanding language"
      ],
@@ -3260,7 +3260,7 @@
     },
     {
      "kind": "clinical",
-     "text": "Damage to the right cerebellar hemisphere causes poor coordination on which side?",
+     "text": "Damage to the right side of the cerebellum causes poor coordination on which side?",
      "options": [
       "Left side",
       "Right side",
@@ -3268,7 +3268,7 @@
       "Neither side"
      ],
      "answer": 1,
-     "explanation": "The cerebellum controls the same (ipsilateral) side of the body."
+     "explanation": "Each side of the cerebellum controls the same side of the body. So damage on the right affects the right."
     }
    ]
   }

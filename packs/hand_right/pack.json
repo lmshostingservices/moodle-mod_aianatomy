@@ -109,7 +109,7 @@
    "id": "carpals",
    "label": "Carpal bones",
    "parent": "hand",
-   "tip": "Carpal mnemonic: \"So Long To Pinky, Here Comes The Thumb\" - Scaphoid, Lunate, Triquetrum, Pisiform (proximal row, thumb to pinky), then Hamate, Capitate, Trapezoid, Trapezium (distal row, pinky to thumb)."
+   "tip": "So Long To Pinky, Here Comes The Thumb. The top row runs scaphoid, lunate, triquetrum, pisiform, then the bottom row comes back: hamate, capitate, trapezoid, trapezium."
   },
   {
    "id": "carpals_proximal",
@@ -125,13 +125,13 @@
    "id": "metacarpals",
    "label": "Metacarpals",
    "parent": "hand",
-   "tip": "Metacarpals are numbered I to V starting at the thumb. Their heads form your knuckles."
+   "tip": "The metacarpals are numbered one to five, starting at the thumb. Make a fist, and their heads are your knuckles."
   },
   {
    "id": "phalanges",
    "label": "Phalanges",
    "parent": "hand",
-   "tip": "Each finger has three phalanges (proximal, middle, distal). The thumb has two: 14 in total."
+   "tip": "Each finger has three phalanges, but the thumb has only two. That makes 14 in each hand."
   },
   {
    "id": "phalanges_proximal",
@@ -184,26 +184,26 @@
    ],
    "content": {
     "pronunciation": "RAY-dee-us",
-    "origin": "Latin radius, \"spoke of a wheel\" or \"ray\". The radius turns around the ulna like a spoke.",
-    "location": "The lateral (thumb-side) bone of the forearm. Its wide lower end forms most of the wrist joint.",
-    "description": "A long bone that is narrow at the elbow and broad at the wrist.",
-    "function": "Carries most of the load from the hand to the forearm and rotates around the ulna to turn the palm up and down (supination and pronation).",
-    "mnemonic": "Radius sits by the thumb: \"thumbs up for the radius\".",
-    "clinical": "A Colles fracture is a break of the distal radius, usually from a fall on an outstretched hand.",
-    "hint": "The big forearm bone on the thumb side, meeting the scaphoid and lunate."
+    "origin": "From the Latin word for the spoke of a wheel. It swings around the ulna like a spoke turning on a wheel.",
+    "location": "It is the forearm bone on your thumb side. Its wide lower end makes up most of your wrist joint.",
+    "description": "A long bone that starts slim at the elbow and flares out wide at the wrist, a bit like a trumpet.",
+    "function": "It takes most of the load from your hand. It also rolls around the ulna so you can turn your palm up and down.",
+    "mnemonic": "Give a thumbs up. The radius runs down to your thumb, so it is thumbs up for the radius.",
+    "clinical": "Fall on an outstretched hand and this bone often snaps just above the wrist. This common break is called a Colles fracture.",
+    "hint": "Look for the big forearm bone on the thumb side, meeting the boat-shaped and moon-shaped wrist bones."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which movement depends on the radius rotating around the ulna?",
+     "text": "Which movement needs the radius to roll around the ulna?",
      "options": [
-      "Flexing the fingers",
+      "Bending the fingers",
       "Turning the palm up and down",
       "Spreading the fingers apart",
       "Bending the elbow only"
      ],
      "answer": 1,
-     "explanation": "The radius rotates around the ulna during pronation and supination."
+     "explanation": "When you turn a key or a door handle, your radius rolls around the ulna to turn your palm up and down."
     }
    ]
   },
@@ -233,26 +233,26 @@
    ],
    "content": {
     "pronunciation": "UL-nah",
-    "origin": "Latin ulna, \"elbow\" or \"forearm\".",
-    "location": "The medial (little-finger side) bone of the forearm.",
-    "description": "A long bone that is large at the elbow and small at the wrist, ending in the ulnar styloid process.",
-    "function": "Forms the main hinge of the elbow and acts as the fixed bone the radius rotates around. At the wrist it is separated from the carpal bones by a cartilage disc.",
-    "mnemonic": "Ulna is by the little finger: \"U and the little finger point the same way\".",
-    "clinical": "The ulnar styloid is often broken together with a distal radius fracture.",
-    "hint": "The forearm bone on the little-finger side."
+    "origin": "From the Latin word for elbow or forearm. Fitting, because its top end forms the point of your elbow.",
+    "location": "It is the forearm bone on your little-finger side. Run a finger from your elbow point towards your little finger and you trace it.",
+    "description": "A long bone that is chunky at the elbow and slim at the wrist, the opposite of the radius. It ends in a small point called the styloid process.",
+    "function": "It forms the main hinge of your elbow and stays still while the radius turns around it. At the wrist, a pad of cartilage sits between it and the wrist bones.",
+    "mnemonic": "Remember the pair: thumbs up for the radius, pinky out for the ulna.",
+    "clinical": "When the wrist end of the radius breaks, the tiny pointed tip of the ulna often snaps off too.",
+    "hint": "Look for the forearm bone on the little-finger side of the wrist."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "At the wrist, the ulna is separated from the carpal bones by what?",
+     "text": "At the wrist, what sits between the ulna and the wrist bones?",
      "options": [
-      "A cartilage disc",
+      "A pad of cartilage",
       "The pisiform",
       "The capitate",
-      "Nothing - it joins the lunate directly"
+      "Nothing, it touches the lunate directly"
      ],
      "answer": 0,
-     "explanation": "An articular disc (part of the triangular fibrocartilage complex) sits between the ulna and the carpal bones."
+     "explanation": "A small disc of cartilage cushions the gap between the ulna and the wrist bones. It is part of the triangular fibrocartilage complex."
     }
    ]
   },
@@ -300,18 +300,18 @@
    ],
    "content": {
     "pronunciation": "SKAF-oyd",
-    "origin": "Greek skaphe, \"boat\", plus -oeides, \"like\". It is shaped a little like a boat.",
-    "location": "Proximal row of the carpal bones, on the thumb (lateral) side, next to the radius.",
-    "description": "The largest bone of the proximal carpal row. It is long and curved and bridges the two carpal rows.",
-    "function": "Links the proximal and distal carpal rows, helping the wrist move smoothly and stay stable. It also carries force from the thumb side of the hand to the radius.",
-    "mnemonic": "\"Scaphoid sails beside the thumb\" - a little boat on the thumb side.",
-    "clinical": "The most commonly fractured carpal bone, usually from a fall on an outstretched hand. Tenderness in the anatomical snuffbox is a warning sign. Its blood supply enters at the far end, so the near part can lose its blood supply after a fracture.",
-    "hint": "Look in the first row of wrist bones, on the thumb side, right next to the radius."
+    "origin": "From the Greek word for boat. Its long, curved shape looks a little like a small boat.",
+    "location": "It sits in the first row of wrist bones on the thumb side, right next to the radius.",
+    "description": "The biggest bone in the first row of the wrist. It is long and curved and reaches across towards the second row, like a bridge.",
+    "function": "It links the two rows of wrist bones, keeping your wrist smooth and steady. It also passes force from the thumb side of your hand to the radius.",
+    "mnemonic": "Picture a little boat sailing beside your thumb. That boat is the scaphoid.",
+    "clinical": "It is the wrist bone people break most, usually in a fall on an outstretched hand. Pain in the hollow at the base of the thumb is a warning sign, as this bone can lose its blood supply.",
+    "hint": "Start at the radius and step into the first row of wrist bones on the thumb side."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Which is the most commonly fractured carpal bone?",
+     "text": "Which wrist bone do people break most often?",
      "options": [
       "Hamate",
       "Scaphoid",
@@ -319,19 +319,19 @@
       "Trapezoid"
      ],
      "answer": 1,
-     "explanation": "The scaphoid is the most commonly fractured carpal bone, usually after a fall on an outstretched hand."
+     "explanation": "The scaphoid is the most often broken wrist bone. It usually happens in a fall onto an outstretched hand."
     },
     {
      "kind": "function",
-     "text": "What is an important role of the scaphoid?",
+     "text": "What is an important job of the scaphoid?",
      "options": [
       "It forms the elbow joint",
-      "It links the two rows of carpal bones",
-      "It is a sesamoid bone in a tendon",
-      "It forms the knuckle of the index finger"
+      "It links the two rows of wrist bones",
+      "It sits inside a tendon",
+      "It forms the index finger knuckle"
      ],
      "answer": 1,
-     "explanation": "The scaphoid bridges the proximal and distal carpal rows, helping wrist movement and stability."
+     "explanation": "The scaphoid bridges the two rows of wrist bones, which keeps the wrist moving smoothly and steadily."
     }
    ]
   },
@@ -379,18 +379,18 @@
    ],
    "content": {
     "pronunciation": "LOO-nate",
-    "origin": "Latin luna, \"moon\". Seen from the side it has a crescent-moon shape.",
-    "location": "Centre of the proximal carpal row, between the scaphoid and the triquetrum.",
-    "description": "A crescent-shaped bone that sits in the middle of the wrist, directly beyond the radius.",
-    "function": "Forms part of the main wrist joint with the radius and passes force from the capitate to the forearm.",
-    "mnemonic": "\"Lunate is the moon in the middle of the wrist.\"",
-    "clinical": "The most commonly dislocated carpal bone. Loss of its blood supply causes Kienbock disease.",
-    "hint": "The middle bone of the first row of wrist bones."
+    "origin": "From the Latin word for moon. Seen from the side, it has a crescent-moon shape.",
+    "location": "It sits in the middle of the first row of wrist bones, between the scaphoid and the triquetrum.",
+    "description": "A small crescent-shaped bone right in the middle of your wrist, directly in line with the radius.",
+    "function": "It helps form the main wrist joint with the radius. It passes force from the capitate, the big central wrist bone, up into your forearm.",
+    "mnemonic": "Lunate sounds like lunar. Picture a moon rising in the middle of your wrist.",
+    "clinical": "It is the wrist bone that most often slips out of place, or dislocates. If it loses its blood supply, it can slowly collapse, a condition called Kienbock disease.",
+    "hint": "Look for the bone in the very middle of the first row of wrist bones."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Which carpal bone is most commonly dislocated?",
+     "text": "Which wrist bone most often slips out of place?",
      "options": [
       "Lunate",
       "Capitate",
@@ -398,19 +398,19 @@
       "Pisiform"
      ],
      "answer": 0,
-     "explanation": "The lunate is the most commonly dislocated carpal bone."
+     "explanation": "The lunate is the wrist bone most often dislocated, meaning it is pushed out of its normal spot."
     },
     {
      "kind": "location",
      "text": "Where is the lunate?",
      "options": [
-      "Middle of the proximal carpal row",
+      "Middle of the first row of wrist bones",
       "Base of the thumb",
-      "Little-finger side of the distal row",
+      "Little-finger side of the second row",
       "Inside a tendon on the palm"
      ],
      "answer": 0,
-     "explanation": "The lunate sits in the centre of the proximal row, between the scaphoid and triquetrum."
+     "explanation": "The lunate sits in the middle of the first row, between the scaphoid and the triquetrum."
     }
    ]
   },
@@ -451,13 +451,13 @@
    ],
    "content": {
     "pronunciation": "try-KWEE-trum",
-    "origin": "Latin triquetrus, \"three-cornered\". It is roughly pyramid-shaped.",
-    "location": "Proximal carpal row on the little-finger (medial) side, beside the lunate. The pisiform sits on its palm side.",
-    "description": "A pyramid-shaped bone with a small oval facet on its front for the pisiform.",
-    "function": "Helps form the ulnar side of the wrist and moves with the other proximal row bones. It transfers load through the cartilage disc to the ulna.",
-    "mnemonic": "\"Tri = three corners, on the pinky side.\"",
-    "clinical": "The second most commonly fractured carpal bone, often as a small chip off its back surface.",
-    "hint": "First row of wrist bones, on the little-finger side, with the pea-shaped pisiform sitting on it."
+    "origin": "From the Latin word for three-cornered. It is shaped roughly like a small pyramid.",
+    "location": "It sits in the first row of wrist bones on the little-finger side, next to the lunate. The pea-shaped pisiform rests on its palm side.",
+    "description": "A pyramid-shaped bone with a small, smooth oval spot on its front where the pisiform sits.",
+    "function": "It forms the little-finger side of the wrist and moves with its neighbours in the first row. It passes load through a cartilage pad to the ulna.",
+    "mnemonic": "Tri means three, like a tricycle. Three corners, on the pinky side.",
+    "clinical": "It is the second most often broken wrist bone. Usually a small chip breaks off its back surface.",
+    "hint": "Look in the first row of wrist bones on the little-finger side, where a pea-shaped bone sits on top."
    },
    "questions": [
     {
@@ -470,7 +470,7 @@
       "Capitate"
      ],
      "answer": 1,
-     "explanation": "The pisiform articulates with the front (palmar) surface of the triquetrum."
+     "explanation": "The little pea-shaped pisiform rests on the front, palm-side surface of the triquetrum."
     }
    ]
   },
@@ -500,26 +500,26 @@
    ],
    "content": {
     "pronunciation": "PIZ-ih-form (or PY-sih-form)",
-    "origin": "Latin pisum, \"pea\", plus forma, \"shape\". It is small and pea-shaped.",
-    "location": "On the palm side of the triquetrum, at the little-finger side of the wrist crease.",
-    "description": "The smallest carpal bone. It sits inside the tendon of flexor carpi ulnaris.",
-    "function": "Acts as a sesamoid bone, giving the flexor carpi ulnaris tendon better leverage. It is also an attachment point for the flexor retinaculum.",
-    "mnemonic": "\"Pisiform is the pea you can feel at the pinky side of the wrist.\"",
-    "clinical": "It forms one wall of Guyon canal, through which the ulnar nerve and artery pass into the hand.",
-    "hint": "The tiny pea-shaped bone on the palm side of the little-finger edge of the wrist."
+    "origin": "From the Latin words for pea and shape. It is small and round, just like a pea.",
+    "location": "Find the crease on the palm side of your wrist. At its little-finger end you can feel this bone as a small, hard bump.",
+    "description": "The smallest wrist bone. It sits inside the tendon of a forearm muscle called flexor carpi ulnaris.",
+    "function": "It works like a tiny pulley inside the tendon, giving the muscle better leverage to bend the wrist. It also anchors a strong band across the wrist, the flexor retinaculum.",
+    "mnemonic": "The pisiform is the pea you can feel at the pinky side of your wrist.",
+    "clinical": "It forms one wall of a small tunnel called Guyon canal. The ulnar nerve and artery pass through it into the hand, so pressure here can numb the little finger.",
+    "hint": "Feel for the tiny pea-shaped bump on the palm side, at the little-finger edge of the wrist."
    },
    "questions": [
     {
      "kind": "function",
      "text": "Why is the pisiform called a sesamoid bone?",
      "options": [
-      "It is the largest carpal bone",
-      "It develops within a tendon",
+      "It is the largest wrist bone",
+      "It grows inside a tendon",
       "It has a hook",
       "It forms the thumb joint"
      ],
      "answer": 1,
-     "explanation": "The pisiform develops within the tendon of flexor carpi ulnaris, which makes it a sesamoid bone."
+     "explanation": "A sesamoid bone grows inside a tendon. The pisiform grows inside the flexor carpi ulnaris tendon, just as your kneecap sits inside a tendon."
     }
    ],
    "explode": [
@@ -568,26 +568,26 @@
    ],
    "content": {
     "pronunciation": "trah-PEE-zee-um",
-    "origin": "Greek trapezion, \"little table\", a four-sided figure.",
-    "location": "Distal carpal row on the thumb side, at the base of the first metacarpal.",
-    "description": "An irregular bone with a saddle-shaped surface for the thumb and a groove for the flexor carpi radialis tendon.",
-    "function": "Forms the saddle joint at the base of the thumb, which allows the thumb to move across the palm (opposition).",
-    "mnemonic": "\"TrapeziUM sits under the thUMb.\"",
-    "clinical": "The thumb base joint (trapezium and first metacarpal) is a very common site of osteoarthritis.",
-    "hint": "Second row of wrist bones, directly below the thumb metacarpal."
+    "origin": "From the Greek for little table, an old word for a four-sided shape.",
+    "location": "It sits in the second row of wrist bones on the thumb side, right at the base of the thumb's palm bone.",
+    "description": "An odd-shaped bone with a saddle-shaped surface for the thumb and a groove for a wrist tendon.",
+    "function": "It forms the saddle joint at the base of your thumb. This joint lets your thumb swing across your palm to touch each fingertip.",
+    "mnemonic": "TrapeziUM sits under the thUMb. Both words end in UM.",
+    "clinical": "The joint between this bone and the thumb is a very common place for arthritis. It can make opening jars or turning keys painful.",
+    "hint": "Look in the second row of wrist bones, directly below the thumb's palm bone."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which movement is made possible by the saddle joint between the trapezium and the first metacarpal?",
+     "text": "What does the saddle joint between the trapezium and the thumb metacarpal let you do?",
      "options": [
-      "Thumb opposition",
-      "Wrist extension only",
-      "Elbow flexion",
-      "Little-finger abduction"
+      "Touch your thumb to your fingertips",
+      "Bend the wrist back only",
+      "Bend the elbow",
+      "Spread the little finger"
      ],
      "answer": 0,
-     "explanation": "The saddle-shaped trapezium lets the thumb move across the palm to touch the other fingers."
+     "explanation": "The saddle-shaped trapezium lets the thumb swing across the palm to touch the other fingers. This move is called opposition."
     },
     {
      "kind": "terminology",
@@ -595,11 +595,11 @@
      "options": [
       "The trapezium is under the thumb",
       "The trapezium is under the little finger",
-      "The trapezium is in the proximal row",
+      "The trapezium is in the first row",
       "The trapezium is inside a tendon"
      ],
      "answer": 0,
-     "explanation": "Remember \"trapeziUM under the thUMb\". The trapezoid sits next to it, under the index finger."
+     "explanation": "Remember trapeziUM under the thUMb. The trapezoid sits right next to it, under the index finger."
     }
    ]
   },
@@ -643,13 +643,13 @@
    ],
    "content": {
     "pronunciation": "TRAP-eh-zoyd",
-    "origin": "Greek trapezoeides, \"table-shaped\".",
-    "location": "Distal carpal row, between the trapezium and the capitate, at the base of the second metacarpal.",
-    "description": "A small wedge-shaped bone, the smallest bone of the distal row.",
-    "function": "Holds the base of the index finger metacarpal firmly in place, making the index finger a stable pillar of the hand.",
-    "mnemonic": "\"TrapezOID is the Other one - beside the trapezium, under the index finger.\"",
-    "clinical": "Rarely injured on its own because it is well protected and tightly bound to its neighbours.",
-    "hint": "Second row of wrist bones, between the thumb-side bone and the big central bone."
+    "origin": "From the Greek for table-shaped. It is the smaller neighbour of the trapezium.",
+    "location": "It sits in the second row of wrist bones, between the trapezium and the capitate, at the base of the index finger's palm bone.",
+    "description": "A small wedge-shaped bone, the smallest in the second row.",
+    "function": "It holds the base of the index finger's palm bone firmly in place. This makes your index finger a steady pillar for pointing and pinching.",
+    "mnemonic": "TrapezOID is the Other one. It sits beside the trapezium, under the index finger.",
+    "clinical": "It is rarely broken on its own, because it is well protected and tightly tied to its neighbours.",
+    "hint": "Look in the second row of wrist bones, between the thumb-side bone and the big central bone."
    },
    "questions": [
     {
@@ -662,7 +662,7 @@
       "Fifth"
      ],
      "answer": 1,
-     "explanation": "The trapezoid sits at the base of the second (index finger) metacarpal."
+     "explanation": "The trapezoid sits at the base of the second metacarpal, the palm bone of your index finger."
     }
    ]
   },
@@ -718,18 +718,18 @@
    ],
    "content": {
     "pronunciation": "KAP-ih-tate",
-    "origin": "Latin caput, \"head\". It has a rounded head that fits into the proximal row.",
-    "location": "Centre of the distal carpal row, at the base of the third metacarpal.",
-    "description": "The largest carpal bone, with a rounded head that sits in a hollow formed by the scaphoid and lunate.",
-    "function": "Acts as the keystone of the wrist. It carries force from the middle finger to the lunate and radius and is the centre of wrist movement.",
-    "mnemonic": "\"Capitate is the Captain - biggest and in the centre.\"",
-    "clinical": "It is the first carpal bone to ossify, which makes it useful when estimating bone age on X-ray.",
-    "hint": "The biggest wrist bone, in the middle of the second row, below the middle finger."
+    "origin": "From the Latin word for head. Its rounded head fits snugly into the first row of wrist bones.",
+    "location": "It sits in the centre of the second row of wrist bones, at the base of the middle finger's palm bone.",
+    "description": "The biggest wrist bone. Its round head nestles into a hollow made by the scaphoid and lunate, like a ball in a cup.",
+    "function": "It is the keystone of the wrist, the centre that wrist movement turns around. It carries force from your middle finger to the lunate and radius.",
+    "mnemonic": "Capitate is the Captain: the biggest bone, standing in the centre.",
+    "clinical": "It is the first wrist bone to turn from cartilage into bone in a baby. That makes it useful for judging a child's bone age on an X-ray.",
+    "hint": "Look for the biggest wrist bone, in the middle of the second row, below the middle finger."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which is the largest carpal bone?",
+     "text": "Which is the largest wrist bone?",
      "options": [
       "Capitate",
       "Scaphoid",
@@ -737,7 +737,7 @@
       "Lunate"
      ],
      "answer": 0,
-     "explanation": "The capitate is the largest carpal bone and sits in the centre of the distal row."
+     "explanation": "The capitate is the largest wrist bone. It sits in the centre of the second row."
     }
    ]
   },
@@ -785,18 +785,18 @@
    ],
    "content": {
     "pronunciation": "HAM-ate",
-    "origin": "Latin hamus, \"hook\". It has a hook-like projection on its palm side.",
-    "location": "Distal carpal row on the little-finger side, at the base of the fourth and fifth metacarpals.",
-    "description": "A wedge-shaped bone with a hook (the hook of hamate) that projects towards the palm.",
-    "function": "Supports the ring and little finger metacarpals. Its hook anchors the flexor retinaculum, which forms the roof of the carpal tunnel.",
-    "mnemonic": "\"Hamate has a hook - hang your ring and pinky on it.\"",
-    "clinical": "The hook can break in golf, tennis and baseball when the handle presses into the palm. It is also a boundary of Guyon canal (ulnar nerve).",
-    "hint": "Second row of wrist bones, on the little-finger side. Look for the hook."
+    "origin": "From the Latin word for hook. It has a small hook that sticks out towards the palm.",
+    "location": "It sits in the second row of wrist bones on the little-finger side, at the base of the ring and little finger palm bones.",
+    "description": "A wedge-shaped bone with a hook, the hook of hamate, that juts out towards your palm.",
+    "function": "It supports the palm bones of your ring and little fingers. Its hook anchors the band that forms the roof of the carpal tunnel.",
+    "mnemonic": "Hamate has a hook. Hang your ring finger and pinky on it.",
+    "clinical": "A golf club, racquet or bat handle pressing into the palm can snap the hook. It also borders Guyon canal, where the ulnar nerve passes into the hand.",
+    "hint": "Look in the second row of wrist bones on the little-finger side, and find the hook."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "Which feature gives the hamate its name?",
+     "text": "What feature gives the hamate its name?",
      "options": [
       "A groove",
       "A hook",
@@ -804,11 +804,11 @@
       "A saddle-shaped surface"
      ],
      "answer": 1,
-     "explanation": "Hamate comes from the Latin hamus, \"hook\", after the hook of hamate."
+     "explanation": "Hamate comes from the Latin word for hook, after the small hook that sticks out towards the palm."
     },
     {
      "kind": "clinical",
-     "text": "In which sport is a fracture of the hook of hamate typically seen?",
+     "text": "In which sport is a broken hook of hamate typically seen?",
      "options": [
       "Swimming",
       "Golf",
@@ -816,7 +816,7 @@
       "Diving"
      ],
      "answer": 1,
-     "explanation": "A club, racquet or bat handle pressing into the palm can fracture the hook of hamate."
+     "explanation": "When a golf club, racquet or bat handle presses hard into the palm, it can snap the hook of hamate."
     }
    ]
   },
@@ -853,18 +853,18 @@
    ],
    "content": {
     "pronunciation": "met-ah-KAR-pul",
-    "origin": "Greek meta, \"beyond\", plus karpos, \"wrist\": the bones beyond the wrist.",
-    "location": "In the palm, between the carpal bones and the thumb. Metacarpals are numbered from the thumb (I) to the little finger (V).",
-    "description": "A long bone with a base (near the wrist), a shaft and a head (the knuckle). The shortest and thickest metacarpal. It sits at an angle to the others so the thumb can oppose.",
-    "function": "Lets the thumb move independently and powerfully, especially in gripping and pinching.",
-    "mnemonic": "Count from the thumb: thumb = I, so the thumb = I. The heads are your knuckles.",
-    "clinical": "A Bennett fracture is a break into the joint at the base of the first metacarpal.",
-    "hint": "In the palm, in line with the thumb."
+    "origin": "From the Greek for beyond the wrist. These are the bones of your palm, just past the wrist.",
+    "location": "It sits in the palm in line with your thumb. Palm bones are numbered one to five, starting at the thumb.",
+    "description": "The shortest and thickest palm bone. It sits at an angle to the others, which lets the thumb face your fingers.",
+    "function": "It lets your thumb move on its own and with real power. You use it every time you grip a bottle or pinch a coin.",
+    "mnemonic": "Count from the thumb: the thumb is number one. Make a fist, and its head is your thumb knuckle.",
+    "clinical": "A Bennett fracture is a break at the base of this bone that runs into the thumb joint. It often happens when a clenched fist hits something hard.",
+    "hint": "Look in the palm, in line with the thumb."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which metacarpal is shortest and thickest?",
+     "text": "Which metacarpal is the shortest and thickest?",
      "options": [
       "First",
       "Second",
@@ -872,7 +872,7 @@
       "Fifth"
      ],
      "answer": 0,
-     "explanation": "The first (thumb) metacarpal is the shortest and thickest."
+     "explanation": "The first metacarpal, behind the thumb, is the shortest and thickest palm bone."
     }
    ]
   },
@@ -921,18 +921,18 @@
    ],
    "content": {
     "pronunciation": "met-ah-KAR-pul",
-    "origin": "Greek meta, \"beyond\", plus karpos, \"wrist\": the bones beyond the wrist.",
-    "location": "In the palm, between the carpal bones and the index finger. Metacarpals are numbered from the thumb (I) to the little finger (V).",
-    "description": "A long bone with a base (near the wrist), a shaft and a head (the knuckle). Usually the longest metacarpal, with a notched base that locks against the trapezoid.",
-    "function": "Forms a stable, fixed pillar for the index finger, which is important for precision grip.",
-    "mnemonic": "Count from the thumb: thumb = I, so the index finger = II. The heads are your knuckles.",
-    "clinical": "Because it is firmly fixed at the base, force is often transmitted along it to the carpal bones.",
-    "hint": "In the palm, in line with the index finger."
+    "origin": "From the Greek for beyond the wrist. Meta means beyond, and karpos means wrist.",
+    "location": "It sits in the palm in line with your index finger. Counting from the thumb, it is number two.",
+    "description": "Usually the longest palm bone. Its notched base locks against the trapezoid like a puzzle piece.",
+    "function": "It forms a firm, fixed pillar for your index finger. That steadiness helps with fine work like writing or threading a needle.",
+    "mnemonic": "Count from the thumb: the index finger is number two. Its head is your pointer knuckle.",
+    "clinical": "Because its base is locked in so firmly, a hard knock on this bone travels straight into the wrist bones.",
+    "hint": "Look in the palm, in line with the pointing finger."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which carpal bone does the second metacarpal articulate with?",
+     "text": "Which wrist bone does the second metacarpal meet?",
      "options": [
       "Trapezoid",
       "Pisiform",
@@ -940,7 +940,7 @@
       "Lunate"
      ],
      "answer": 0,
-     "explanation": "The second metacarpal articulates with the trapezoid."
+     "explanation": "The base of the second metacarpal locks into the trapezoid."
     }
    ]
   },
@@ -985,18 +985,18 @@
    ],
    "content": {
     "pronunciation": "met-ah-KAR-pul",
-    "origin": "Greek meta, \"beyond\", plus karpos, \"wrist\": the bones beyond the wrist.",
-    "location": "In the palm, between the carpal bones and the middle finger. Metacarpals are numbered from the thumb (I) to the little finger (V).",
-    "description": "A long bone with a base (near the wrist), a shaft and a head (the knuckle). Has a small styloid process at the back of its base.",
-    "function": "Forms the central, most stable pillar of the hand, in line with the capitate.",
-    "mnemonic": "Count from the thumb: thumb = I, so the middle finger = III. The heads are your knuckles.",
-    "clinical": "The styloid process at its base can form an extra bony lump (carpal boss) on the back of the hand.",
-    "hint": "In the palm, in line with the middle finger."
+    "origin": "From the Greek for beyond the wrist. It is the central bone of your palm.",
+    "location": "It sits in the middle of the palm, in line with your middle finger. Counting from the thumb, it is number three.",
+    "description": "A long palm bone with a small bony point on the back of its base, called the styloid process.",
+    "function": "It is the central and steadiest pillar of your hand, lined up with the capitate in the wrist.",
+    "mnemonic": "Count from the thumb: the middle finger is number three. Its head is the knuckle in the middle of your fist.",
+    "clinical": "The small point at its base can form an extra bony lump on the back of the hand, called a carpal boss.",
+    "hint": "Look in the centre of the palm, in line with the middle finger."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which carpal bone does the third metacarpal articulate with?",
+     "text": "Which wrist bone does the third metacarpal meet?",
      "options": [
       "Capitate",
       "Pisiform",
@@ -1004,7 +1004,7 @@
       "Lunate"
      ],
      "answer": 0,
-     "explanation": "The third metacarpal articulates with the capitate."
+     "explanation": "The third metacarpal sits on the capitate, the big central wrist bone."
     }
    ]
   },
@@ -1053,18 +1053,18 @@
    ],
    "content": {
     "pronunciation": "met-ah-KAR-pul",
-    "origin": "Greek meta, \"beyond\", plus karpos, \"wrist\": the bones beyond the wrist.",
-    "location": "In the palm, between the carpal bones and the ring finger. Metacarpals are numbered from the thumb (I) to the little finger (V).",
-    "description": "A long bone with a base (near the wrist), a shaft and a head (the knuckle). Thinner than the second and third metacarpals and more mobile at its base.",
-    "function": "Supports the ring finger and allows a little movement that helps cup the palm.",
-    "mnemonic": "Count from the thumb: thumb = I, so the ring finger = IV. The heads are your knuckles.",
-    "clinical": "Its neck may break together with the fifth in a punch injury.",
-    "hint": "In the palm, in line with the ring finger."
+    "origin": "From the Greek for beyond the wrist. It is the ring finger's bone in the palm.",
+    "location": "It sits in the palm in line with your ring finger. Counting from the thumb, it is number four.",
+    "description": "A slim palm bone, thinner than the second and third. Its base can move a little more than theirs.",
+    "function": "It supports your ring finger. Its small bit of movement helps your palm cup around a ball or a glass.",
+    "mnemonic": "Count from the thumb: the ring finger is number four. Its head is the knuckle just behind your ring.",
+    "clinical": "A punch can break the neck of this bone, often together with the fifth metacarpal next to it.",
+    "hint": "Look in the palm, in line with the ring finger."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which carpal bone does the fourth metacarpal articulate with?",
+     "text": "Which wrist bone does the fourth metacarpal mainly meet?",
      "options": [
       "Hamate",
       "Pisiform",
@@ -1072,7 +1072,7 @@
       "Lunate"
      ],
      "answer": 0,
-     "explanation": "The fourth metacarpal articulates with the hamate (and also the capitate)."
+     "explanation": "The fourth metacarpal rests mainly on the hamate, and it also touches the capitate."
     }
    ]
   },
@@ -1113,26 +1113,26 @@
    ],
    "content": {
     "pronunciation": "met-ah-KAR-pul",
-    "origin": "Greek meta, \"beyond\", plus karpos, \"wrist\": the bones beyond the wrist.",
-    "location": "In the palm, between the carpal bones and the little finger. Metacarpals are numbered from the thumb (I) to the little finger (V).",
-    "description": "A long bone with a base (near the wrist), a shaft and a head (the knuckle). The most mobile metacarpal at its base, where it meets the hamate.",
-    "function": "Supports the little finger and lets the ulnar side of the palm cup around objects for a firm grip.",
-    "mnemonic": "Count from the thumb: thumb = I, so the little finger = V. The heads are your knuckles.",
-    "clinical": "A boxer fracture is a break of the neck of the fifth metacarpal, often from punching a hard surface.",
-    "hint": "In the palm, in line with the little finger."
+    "origin": "From the Greek for beyond the wrist. It is the little finger's bone in the palm.",
+    "location": "It sits in the palm along the little-finger edge of your hand. Counting from the thumb, it is number five.",
+    "description": "A slim palm bone. Its base, where it meets the hamate, moves more than that of any other metacarpal.",
+    "function": "It supports your little finger and lets the outer edge of your palm curl around objects for a firm grip.",
+    "mnemonic": "Count from the thumb: the little finger is number five, last in line. Its head is your pinky knuckle.",
+    "clinical": "A boxer fracture is a break in the neck of this bone. It often happens when someone punches a wall or another hard surface.",
+    "hint": "Look in the palm, along the little-finger edge of the hand."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "A \"boxer fracture\" most commonly involves which bone?",
+     "text": "A boxer fracture most often breaks which bone?",
      "options": [
       "Fifth metacarpal",
       "Scaphoid",
       "First metacarpal",
-      "Distal radius"
+      "Radius at the wrist"
      ],
      "answer": 0,
-     "explanation": "A boxer fracture is a break of the neck of the fifth metacarpal."
+     "explanation": "A boxer fracture is a break in the neck of the fifth metacarpal, the palm bone of the little finger."
     }
    ]
   },
@@ -1166,18 +1166,18 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The first bone of the thumb, just beyond the knuckle (metacarpal head).",
-    "description": "The longest phalanx of each digit, with a concave base that fits the rounded metacarpal head.",
-    "function": "Forms the knuckle joint with the metacarpal, which allows the finger to bend, straighten and spread.",
-    "mnemonic": "Proximal = closest to the palm.",
-    "clinical": "Fractures of the proximal phalanx can twist the finger (rotational deformity) if not aligned correctly.",
-    "hint": "The thumb bone closest to the palm."
+    "origin": "From the Greek word phalanx, a line of soldiers. Your finger bones stand in rows, like soldiers in line.",
+    "location": "It is the first bone of your thumb, just past the thumb knuckle.",
+    "description": "The longer of the thumb's two bones. Its cupped base fits over the round head of the metacarpal like a socket.",
+    "function": "It forms the thumb knuckle joint with the metacarpal, helping your thumb bend and straighten as you grip.",
+    "mnemonic": "Proximal means closest. It is the thumb bone closest to your palm.",
+    "clinical": "If a break here heals with a twist, the thumb can end up pointing the wrong way. That is why these breaks must be lined up carefully.",
+    "hint": "Find the thumb bone closest to the palm."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "How many phalanges does the thumb have?",
+     "text": "How many phalanges, or finger bones, does the thumb have?",
      "options": [
       "One",
       "Two",
@@ -1185,7 +1185,7 @@
       "Four"
      ],
      "answer": 1,
-     "explanation": "The thumb has only a proximal and a distal phalanx. The other fingers have three."
+     "explanation": "The thumb has just two, a proximal and a distal phalanx. The other fingers have three each."
     }
    ]
   },
@@ -1219,13 +1219,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The first bone of the index finger, just beyond the knuckle (metacarpal head).",
-    "description": "The longest phalanx of each digit, with a concave base that fits the rounded metacarpal head.",
-    "function": "Forms the knuckle joint with the metacarpal, which allows the finger to bend, straighten and spread.",
-    "mnemonic": "Proximal = closest to the palm.",
-    "clinical": "Fractures of the proximal phalanx can twist the finger (rotational deformity) if not aligned correctly.",
-    "hint": "The index finger bone closest to the palm."
+    "origin": "From the Greek word phalanx, a line of soldiers. Each finger has its bones lined up in a row.",
+    "location": "It is the first bone of your index finger, just past the knuckle.",
+    "description": "The longest of the index finger's three bones. Its cupped base fits over the round knuckle like a cup on a ball.",
+    "function": "It forms the knuckle joint, which lets your pointing finger bend, straighten and spread away from the others.",
+    "mnemonic": "Proximal sounds like proximity, which means closeness. It is the finger bone closest to your palm.",
+    "clinical": "A break here can leave the finger twisted if it heals out of line. Then the finger may cross over its neighbour when you make a fist.",
+    "hint": "Find the pointing finger bone closest to the palm."
    },
    "questions": []
   },
@@ -1259,13 +1259,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The first bone of the middle finger, just beyond the knuckle (metacarpal head).",
-    "description": "The longest phalanx of each digit, with a concave base that fits the rounded metacarpal head.",
-    "function": "Forms the knuckle joint with the metacarpal, which allows the finger to bend, straighten and spread.",
-    "mnemonic": "Proximal = closest to the palm.",
-    "clinical": "Fractures of the proximal phalanx can twist the finger (rotational deformity) if not aligned correctly.",
-    "hint": "The middle finger bone closest to the palm."
+    "origin": "From the Greek word phalanx, a line of soldiers. Your middle finger has three of these bones in a row.",
+    "location": "It is the first bone of your middle finger, just past the knuckle.",
+    "description": "The longest bone of your longest finger. Its hollow base sits over the round knuckle.",
+    "function": "It forms the knuckle joint of your middle finger, letting it bend, straighten and move sideways.",
+    "mnemonic": "Proximal is closest to your palm. Think P for proximal and P for palm.",
+    "clinical": "Finger breaks near the knuckle need careful lining up. If they heal with a twist, the fingers overlap when you grip.",
+    "hint": "Find the bone of the longest finger nearest the palm."
    },
    "questions": []
   },
@@ -1299,13 +1299,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The first bone of the ring finger, just beyond the knuckle (metacarpal head).",
-    "description": "The longest phalanx of each digit, with a concave base that fits the rounded metacarpal head.",
-    "function": "Forms the knuckle joint with the metacarpal, which allows the finger to bend, straighten and spread.",
-    "mnemonic": "Proximal = closest to the palm.",
-    "clinical": "Fractures of the proximal phalanx can twist the finger (rotational deformity) if not aligned correctly.",
-    "hint": "The ring finger bone closest to the palm."
+    "origin": "From the Greek word phalanx, a line of soldiers. Like soldiers, the ring finger's bones march in a row.",
+    "location": "It is the first bone of your ring finger, just past the knuckle, right where a ring sits.",
+    "description": "The longest of the ring finger's three bones, with a cupped base that fits the round knuckle.",
+    "function": "It forms the knuckle joint of your ring finger, letting it bend, straighten and spread.",
+    "mnemonic": "Proximal means closest to the palm. Your ring slides onto this bone.",
+    "clinical": "If this bone heals with a twist after a break, the ring finger can drift across its neighbour when you curl your hand.",
+    "hint": "Find the ring finger bone closest to the palm."
    },
    "questions": []
   },
@@ -1339,13 +1339,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The first bone of the little finger, just beyond the knuckle (metacarpal head).",
-    "description": "The longest phalanx of each digit, with a concave base that fits the rounded metacarpal head.",
-    "function": "Forms the knuckle joint with the metacarpal, which allows the finger to bend, straighten and spread.",
-    "mnemonic": "Proximal = closest to the palm.",
-    "clinical": "Fractures of the proximal phalanx can twist the finger (rotational deformity) if not aligned correctly.",
-    "hint": "The little finger bone closest to the palm."
+    "origin": "From the Greek word phalanx, a line of soldiers. Even your little finger has three in its row.",
+    "location": "It is the first bone of your little finger, just past the knuckle.",
+    "description": "The longest of the little finger's three bones, though still small. Its cupped base fits the knuckle.",
+    "function": "It forms the knuckle joint that lets your little finger bend, straighten and spread wide.",
+    "mnemonic": "Proximal means closest to the palm. Little finger, first bone, right next to the knuckle.",
+    "clinical": "A break here that heals with a twist can make the little finger overlap the ring finger when you make a fist.",
+    "hint": "Find the little finger bone closest to the palm."
    },
    "questions": []
   },
@@ -1381,13 +1381,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The middle bone of the index finger. The thumb has no middle phalanx.",
-    "description": "Shorter than the proximal phalanx, with joints at both ends.",
-    "function": "Adds a second bending joint to the finger. The flexor digitorum superficialis tendon attaches here to bend the middle finger joint.",
-    "mnemonic": "Middle = in the middle, and the thumb skips it.",
-    "clinical": "Injury to the middle finger joint can cause a boutonniere or swan-neck deformity.",
-    "hint": "The middle bone of the index finger."
+    "origin": "From the Greek word phalanx, a line of soldiers. This one stands in the middle of the line.",
+    "location": "It is the middle bone of your index finger. The thumb has no bone like this.",
+    "description": "A short bone, shorter than the one below it, with a joint at each end.",
+    "function": "It gives your finger a second bending joint. A forearm tendon, flexor digitorum superficialis, pulls on it to bend that joint.",
+    "mnemonic": "Middle means in the middle, and the thumb skips it.",
+    "clinical": "Damage to the tendons around the middle finger joint can bend the finger into odd shapes, called boutonniere or swan-neck deformity.",
+    "hint": "Find the middle bone of the pointing finger."
    },
    "questions": []
   },
@@ -1423,13 +1423,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The middle bone of the middle finger. The thumb has no middle phalanx.",
-    "description": "Shorter than the proximal phalanx, with joints at both ends.",
-    "function": "Adds a second bending joint to the finger. The flexor digitorum superficialis tendon attaches here to bend the middle finger joint.",
-    "mnemonic": "Middle = in the middle, and the thumb skips it.",
-    "clinical": "Injury to the middle finger joint can cause a boutonniere or swan-neck deformity.",
-    "hint": "The middle bone of the middle finger."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the middle soldier of three.",
+    "location": "It is the middle bone of your middle finger. The thumb has no middle bone at all.",
+    "description": "A short bone with a joint at both ends, like a link in a chain.",
+    "function": "It adds a second hinge so your finger can curl around things. A long forearm tendon, flexor digitorum superficialis, pulls on it to bend that hinge.",
+    "mnemonic": "The middle bone of the middle finger. Easy: middle, middle, and the thumb skips it.",
+    "clinical": "Jamming a finger can hurt the joint at this bone's base. If the tendons there are damaged, the finger may set in a boutonniere or swan-neck shape.",
+    "hint": "Find the middle bone of the longest finger."
    },
    "questions": [
     {
@@ -1442,7 +1442,7 @@
       "Little finger"
      ],
      "answer": 0,
-     "explanation": "The thumb has only proximal and distal phalanges."
+     "explanation": "The thumb has only two bones, a proximal and a distal phalanx. Every other finger has a middle one too."
     }
    ]
   },
@@ -1478,13 +1478,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The middle bone of the ring finger. The thumb has no middle phalanx.",
-    "description": "Shorter than the proximal phalanx, with joints at both ends.",
-    "function": "Adds a second bending joint to the finger. The flexor digitorum superficialis tendon attaches here to bend the middle finger joint.",
-    "mnemonic": "Middle = in the middle, and the thumb skips it.",
-    "clinical": "Injury to the middle finger joint can cause a boutonniere or swan-neck deformity.",
-    "hint": "The middle bone of the ring finger."
+    "origin": "From the Greek word phalanx, a line of soldiers. Three stand in the ring finger's row, and this is the middle one.",
+    "location": "It is the middle bone of your ring finger, between the first bone and the tip.",
+    "description": "A short bone with a joint at both ends, shorter than the first bone of the finger.",
+    "function": "It gives the ring finger its second bending joint, so the finger can wrap around a handle. A forearm tendon pulls on it to bend.",
+    "mnemonic": "Middle bone, middle position. Only the thumb goes without one.",
+    "clinical": "A ball hitting the fingertip can jam the joint at this bone's base. Tendon damage there can lead to a boutonniere or swan-neck shape.",
+    "hint": "Find the middle bone of the ring finger."
    },
    "questions": []
   },
@@ -1520,13 +1520,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The middle bone of the little finger. The thumb has no middle phalanx.",
-    "description": "Shorter than the proximal phalanx, with joints at both ends.",
-    "function": "Adds a second bending joint to the finger. The flexor digitorum superficialis tendon attaches here to bend the middle finger joint.",
-    "mnemonic": "Middle = in the middle, and the thumb skips it.",
-    "clinical": "Injury to the middle finger joint can cause a boutonniere or swan-neck deformity.",
-    "hint": "The middle bone of the little finger."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the little finger's middle soldier.",
+    "location": "It is the middle bone of your little finger. The thumb is the only digit without one.",
+    "description": "A small, short bone with a joint at each end, the tiniest middle bone in the hand.",
+    "function": "It adds a second bend to your little finger, helping it hook around objects. A forearm tendon pulls on it to bend.",
+    "mnemonic": "Middle means middle. Four fingers have one, and the thumb skips it.",
+    "clinical": "Injured tendons around the joint at this bone can leave the finger stuck in a boutonniere or swan-neck shape.",
+    "hint": "Find the middle bone of the little finger."
    },
    "questions": []
   },
@@ -1556,13 +1556,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The fingertip bone of the thumb.",
-    "description": "A small bone with a rough, flattened tip (the tuberosity) that supports the fingertip pulp and nail.",
-    "function": "Supports the fingertip and nail for fine touch and pinch. The deep flexor tendon attaches here to bend the fingertip.",
-    "mnemonic": "Distal = distant from the palm: the fingertip.",
-    "clinical": "Crush injuries often break the tip (tuft fracture). Mallet finger is an injury to the extensor tendon at the base of this bone.",
-    "hint": "The tip bone of the thumb."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the soldier at the very front.",
+    "location": "It is the tip bone of your thumb, under the thumbnail.",
+    "description": "A small bone that spreads into a rough, flat tip. That tip holds up the soft pad and the nail.",
+    "function": "It supports your thumb tip for touch and pinch. A deep tendon from the forearm pulls on it to bend the tip.",
+    "mnemonic": "Distal sounds like distant. It is the bone farthest from your palm.",
+    "clinical": "Crushing the thumb tip, for example in a door, often breaks its tip, called a tuft fracture. A tendon tear at its base stops the tip from straightening.",
+    "hint": "Find the tip bone of the thumb."
    },
    "questions": []
   },
@@ -1592,26 +1592,26 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The fingertip bone of the index finger.",
-    "description": "A small bone with a rough, flattened tip (the tuberosity) that supports the fingertip pulp and nail.",
-    "function": "Supports the fingertip and nail for fine touch and pinch. The deep flexor tendon attaches here to bend the fingertip.",
-    "mnemonic": "Distal = distant from the palm: the fingertip.",
-    "clinical": "Crush injuries often break the tip (tuft fracture). Mallet finger is an injury to the extensor tendon at the base of this bone.",
-    "hint": "The tip bone of the index finger."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the last soldier, at the front of the line.",
+    "location": "It is the tip bone of your index finger, under the nail.",
+    "description": "A tiny bone with a rough, flattened tip that holds up your fingertip pad and nail.",
+    "function": "It supports your fingertip for fine touch and pinching. A deep tendon pulls on it to bend the tip.",
+    "mnemonic": "Distal means distant from the palm. It is the fingertip bone.",
+    "clinical": "If a ball strikes the fingertip, the tendon that straightens it can tear away at this bone. The tip then droops, which is called mallet finger.",
+    "hint": "Find the tip bone of the pointing finger."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "What is \"mallet finger\"?",
+     "text": "What is mallet finger?",
      "options": [
-      "A tendon injury at the distal phalanx so the fingertip droops",
+      "A tendon injury at the tip bone, so the fingertip droops",
       "A break of the fifth metacarpal",
       "Arthritis at the thumb base",
       "A dislocated lunate"
      ],
      "answer": 0,
-     "explanation": "Mallet finger is an injury to the extensor tendon where it attaches to the distal phalanx, so the fingertip cannot straighten."
+     "explanation": "In mallet finger, the tendon that straightens the fingertip tears where it joins the distal phalanx. The tip droops and cannot straighten."
     }
    ]
   },
@@ -1641,13 +1641,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The fingertip bone of the middle finger.",
-    "description": "A small bone with a rough, flattened tip (the tuberosity) that supports the fingertip pulp and nail.",
-    "function": "Supports the fingertip and nail for fine touch and pinch. The deep flexor tendon attaches here to bend the fingertip.",
-    "mnemonic": "Distal = distant from the palm: the fingertip.",
-    "clinical": "Crush injuries often break the tip (tuft fracture). Mallet finger is an injury to the extensor tendon at the base of this bone.",
-    "hint": "The tip bone of the middle finger."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the front of the line on your middle finger.",
+    "location": "It is the tip bone of your middle finger, under the nail.",
+    "description": "A small bone that widens into a rough, flat tip, like a tiny spade supporting the pad and nail.",
+    "function": "It gives your fingertip a firm base for feeling textures and gripping. A deep tendon pulls on it to curl the tip.",
+    "mnemonic": "Distal is distant: the bone farthest from your palm, right at the tip.",
+    "clinical": "Fingertips shut in a car door often break this bone's tip, a tuft fracture. A torn tendon at its base causes mallet finger.",
+    "hint": "Find the tip bone of the longest finger."
    },
    "questions": []
   },
@@ -1677,13 +1677,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The fingertip bone of the ring finger.",
-    "description": "A small bone with a rough, flattened tip (the tuberosity) that supports the fingertip pulp and nail.",
-    "function": "Supports the fingertip and nail for fine touch and pinch. The deep flexor tendon attaches here to bend the fingertip.",
-    "mnemonic": "Distal = distant from the palm: the fingertip.",
-    "clinical": "Crush injuries often break the tip (tuft fracture). Mallet finger is an injury to the extensor tendon at the base of this bone.",
-    "hint": "The tip bone of the ring finger."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the ring finger's front-line soldier.",
+    "location": "It is the tip bone of your ring finger, under the nail.",
+    "description": "A tiny bone with a rough, flattened end that props up the fingertip pad and nail.",
+    "function": "It supports the ring fingertip so you can feel and grip. A deep forearm tendon pulls on it to bend the tip.",
+    "mnemonic": "Distal means distant from the palm, so it is the fingertip.",
+    "clinical": "Crushing the tip can break this bone, a tuft fracture. A tear of the tendon that straightens it at its base makes the tip droop, called mallet finger.",
+    "hint": "Find the tip bone of the ring finger."
    },
    "questions": []
   },
@@ -1713,13 +1713,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the finger bones line up in rows.",
-    "location": "The fingertip bone of the little finger.",
-    "description": "A small bone with a rough, flattened tip (the tuberosity) that supports the fingertip pulp and nail.",
-    "function": "Supports the fingertip and nail for fine touch and pinch. The deep flexor tendon attaches here to bend the fingertip.",
-    "mnemonic": "Distal = distant from the palm: the fingertip.",
-    "clinical": "Crush injuries often break the tip (tuft fracture). Mallet finger is an injury to the extensor tendon at the base of this bone.",
-    "hint": "The tip bone of the little finger."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the smallest soldier at the front of the line.",
+    "location": "It is the tip bone of your little finger, under the smallest nail.",
+    "description": "A very small bone with a rough, flat tip that supports the fingertip pad and nail.",
+    "function": "It supports the little fingertip. A deep tendon pulls on it to bend the tip when you grip.",
+    "mnemonic": "Distal is distant, at the tip of the finger. Little finger, last bone.",
+    "clinical": "Crushing the fingertip can break its tip, a tuft fracture. A tendon tear at its base lets the tip droop, called mallet finger.",
+    "hint": "Find the tip bone of the little finger."
    },
    "questions": []
   }

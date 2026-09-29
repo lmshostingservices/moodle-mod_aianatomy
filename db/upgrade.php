@@ -114,5 +114,62 @@ function xmldb_aianatomy_upgrade($oldversion) {
         unset_config('lmslabs_model', 'mod_aianatomy');
         upgrade_mod_savepoint(true, 2026100200, 'aianatomy');
     }
+    if ($oldversion < 2026100900) {
+        // Voiceover preparation status.
+        $table = new xmldb_table('aianatomy');
+        $field = new xmldb_field('voiceerror', XMLDB_TYPE_CHAR, '40', null, XMLDB_NOTNULL, null, '', 'voiceauto');
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+        // Voiceover is part of every activity, in every place.
+        $DB->set_field('aianatomy', 'voice', 1);
+        $DB->set_field('aianatomy', 'voiceplaces', implode(',', \mod_aianatomy\local\voice::PLACES));
+        // The library texts were rewritten in plain, memorable language. Refresh what teachers have not changed:
+        // structures still on the English library content, and library questions (edited ones became "approved").
+        $packs = [];
+        $instances = $DB->get_records('aianatomy', null, '', 'id, pack');
+        foreach ($instances as $inst) {
+            if (!isset($packs[$inst->pack])) {
+                try {
+                    $packs[$inst->pack] = \mod_aianatomy\local\pack::get($inst->pack);
+                } catch (\Throwable $e) {
+                    $packs[$inst->pack] = null;
+                }
+            }
+            $pack = $packs[$inst->pack];
+            if (!$pack) {
+                continue;
+            }
+            foreach ($pack['structures'] as $s) {
+                $DB->set_field_select(
+                    'aianatomy_structure', 'content',
+                    json_encode(\mod_aianatomy\local\pack::library_content($s)),
+                    "aianatomyid = :aid AND structureid = :sid AND contentstatus = 'library' AND contentlang = 'en'",
+                    ['aid' => $inst->id, 'sid' => $s['id']]
+                );
+                $questions = $DB->get_records(
+                    'aianatomy_question', ['aianatomyid' => $inst->id, 'structureid' => $s['id'],
+                    'status' => 'library', 'lang' => 'en', 'aigenerated' => 0], 'sortorder'
+                );
+                foreach ($questions as $q) {
+                    $src = $s['questions'][$q->sortorder] ?? null;
+                    if (!$src || (int)$src['answer'] !== (int)$q->answer
+                            || count($src['options']) !== count(json_decode($q->options, true) ?: [])) {
+                        continue;
+                    }
+                    $DB->update_record(
+                        'aianatomy_question', (object)['id' => $q->id, 'questiontext' => $src['text'],
+                        'options' => json_encode(array_values($src['options'])),
+                        'explanation' => $src['explanation'] ?? '', 'timemodified' => time()]
+                    );
+                }
+            }
+            // Prepare the voiceover in the background so students do not wait for it.
+            $task = new \mod_aianatomy\task\prepare_voice();
+            $task->set_custom_data(['instanceid' => (int)$inst->id]);
+            \core\task\manager::queue_adhoc_task($task, true);
+        }
+        upgrade_mod_savepoint(true, 2026100900, 'aianatomy');
+    }
     return true;
 }

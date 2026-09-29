@@ -145,6 +145,7 @@ class start_attempt extends base {
                                         'pin' => new external_value(PARAM_ALPHANUM, 'Pin'),
                                         'name' => new external_value(PARAM_TEXT, 'Structure name'),
                                         'latin' => new external_value(PARAM_TEXT, 'Latin name'),
+                                        'pronunciation' => new external_value(PARAM_TEXT, 'Pronunciation'),
                                         'facts' => new external_multiple_structure(
                                             new external_single_structure(
                                                 [

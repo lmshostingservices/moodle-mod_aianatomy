@@ -51,7 +51,9 @@ final class ai_test extends \advanced_testcase {
         $this->assertStringContainsString('Os scaphoideum', $prompt);
         $this->assertStringContainsString('FMA24435', $prompt);
         $this->assertStringContainsString('articulates with Lunate', $prompt);
-        $this->assertStringContainsString('medical students', $prompt);
+        // One writing style for every learner (no learner levels).
+        $this->assertStringContainsString('never like a medical textbook', $prompt);
+        $this->assertStringNotContainsString('medical students:', $prompt);
     }
 
     /**

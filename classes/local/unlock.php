@@ -219,9 +219,11 @@ final class unlock {
             self::save($state);
             return $state;
         }
-        [$status, $data] = self::request('POST', self::url(self::VERIFY), [
-            'pluginId' => self::PLUGINID, 'siteId' => $creds['siteid'], 'apiKey' => $creds['apikey'],
-        ], 20);
+        [$status, $data] = self::request(
+            'POST', self::url(self::VERIFY), [
+                'pluginId' => self::PLUGINID, 'siteId' => $creds['siteid'], 'apiKey' => $creds['apikey'],
+            ], 20
+        );
         if ($status === 200 && $data !== null && is_bool($data['unlocked'] ?? null)) {
             $state = ['status' => $data['unlocked'] ? 'unlocked' : 'locked'] + self::balance($data) + [
                 'unlockedat' => self::time($data['unlockedAt'] ?? null),
@@ -394,13 +396,17 @@ final class unlock {
             return ['outcome' => 'changed', 'error' => $release['ok'] ? '' : $release['reason']] + $result
                 + ['state' => $state, 'release' => $release];
         }
-        set_config('unlockpending', json_encode(['time' => time(), 'expected' => $expected, 'sha' => $release['sha']]),
-            'mod_aianatomy');
-        [$status, $data] = self::request('POST', self::url(self::UNLOCK), [
-            'pluginId' => self::PLUGINID, 'pluginComponent' => self::COMPONENT,
-            'siteId' => $creds['siteid'], 'apiKey' => $creds['apikey'],
-            'releaseSha256' => $release['sha'], 'expectedCredits' => $expected,
-        ], 60);
+        set_config(
+            'unlockpending', json_encode(['time' => time(), 'expected' => $expected, 'sha' => $release['sha']]),
+            'mod_aianatomy'
+        );
+        [$status, $data] = self::request(
+            'POST', self::url(self::UNLOCK), [
+                'pluginId' => self::PLUGINID, 'pluginComponent' => self::COMPONENT,
+                'siteId' => $creds['siteid'], 'apiKey' => $creds['apikey'],
+                'releaseSha256' => $release['sha'], 'expectedCredits' => $expected,
+            ], 60
+        );
         $code = self::code($data);
         $result['message'] = self::text($data['message'] ?? '', 300);
         $result['balance'] = self::balance($data ?? []);

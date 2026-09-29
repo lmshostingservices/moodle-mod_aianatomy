@@ -110,6 +110,13 @@ $functions = [
         'ajax' => true,
         'capabilities' => 'mod/aianatomy:view',
     ],
+    'mod_aianatomy_voice_prepare' => [
+        'classname' => \mod_aianatomy\external\voice_prepare::class,
+        'description' => 'Reports and advances the preparation of an activity\'s voiceover (LMS Labs text to speech).',
+        'type' => 'write',
+        'ajax' => true,
+        'capabilities' => 'mod/aianatomy:view',
+    ],
     'mod_aianatomy_voice_clear' => [
         'classname' => \mod_aianatomy\external\voice_clear::class,
         'description' => 'Deletes the stored voiceover clips of an activity.',

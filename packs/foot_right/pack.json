@@ -104,31 +104,31 @@
    "id": "foot",
    "label": "Foot and ankle",
    "parent": null,
-   "tip": "The foot has 26 bones: 7 tarsals, 5 metatarsals and 14 phalanges, arranged in arches that spread body weight."
+   "tip": "Your foot has 26 bones: seven tarsals, five metatarsals and 14 phalanges. They form springy arches that spread your weight with every step."
   },
   {
    "id": "leg_context",
    "label": "Leg (distal)",
    "parent": "foot",
-   "tip": "The ankle bumps are the malleoli: the medial one belongs to the tibia and the lateral one (lower) to the fibula."
+   "tip": "The ankle bumps are the malleoli. The inner one belongs to the tibia, and the outer one, a little lower, belongs to the fibula."
   },
   {
    "id": "tarsals",
    "label": "Tarsal bones",
    "parent": "foot",
-   "tip": "Tarsal mnemonic \"Tiger Cubs Need MILC\": Talus, Calcaneus, Navicular, Medial, Intermediate and Lateral cuneiforms, Cuboid."
+   "tip": "Tiger Cubs Need MILC names the tarsals: talus, calcaneus, navicular, the medial, intermediate and lateral cuneiforms, and cuboid."
   },
   {
    "id": "metatarsals",
    "label": "Metatarsals",
    "parent": "foot",
-   "tip": "Metatarsals are numbered I to V from the big toe. Their heads form the ball of the foot."
+   "tip": "The metatarsals are numbered one to five, starting at the big toe. Their rounded heads make the ball of your foot."
   },
   {
    "id": "phalanges",
    "label": "Phalanges of the toes",
    "parent": "foot",
-   "tip": "Each lesser toe has three phalanges (proximal, middle, distal); the big toe has two: 14 in total, just like the hand."
+   "tip": "Each smaller toe has three phalanges, but the big toe has only two. That makes 14 in all, just like your hand."
   }
  ],
  "structures": [
@@ -164,13 +164,13 @@
    ],
    "content": {
     "pronunciation": "TIB-ee-ah",
-    "origin": "Latin tibia, \"shin bone\" (also a flute, once made from animal shin bones).",
-    "location": "The larger, medial bone of the leg. Only its lower end is shown here, above the talus.",
-    "description": "Its lower end is broad, with a smooth under-surface for the talus and a bony point on the inner side, the medial malleolus.",
-    "function": "Carries body weight from the knee to the foot and forms the roof and inner wall of the ankle joint.",
-    "mnemonic": "Tibia = the Thick bone on the inside (the big toe side).",
-    "clinical": "The medial malleolus is often broken in twisting ankle injuries.",
-    "hint": "The thick leg bone ending in the bump on the inner side of the ankle."
+    "origin": "From the Latin word for shin bone. The word also meant a flute, because early flutes were made from animal shin bones.",
+    "location": "It is the big bone on the inner side of your lower leg. This model shows only its lower end, sitting on top of the talus.",
+    "description": "Its lower end is wide and smooth underneath. On the inner side it juts down into the medial malleolus, the bump on the inside of your ankle.",
+    "function": "It carries your body weight from the knee down to the foot. It forms the roof and the inner wall of your ankle joint.",
+    "mnemonic": "Tibia is the Thick one. It sits on the inside, on the big toe side.",
+    "clinical": "A bad twist of the ankle can snap off its inner bump, the medial malleolus.",
+    "hint": "Look for the thick leg bone that ends in the bump on the inside of the ankle."
    },
    "questions": [],
    "context": true
@@ -207,13 +207,13 @@
    ],
    "content": {
     "pronunciation": "FIB-yoo-lah",
-    "origin": "Latin fibula, \"clasp\" or \"brooch pin\": it is thin like the pin of a brooch.",
-    "location": "The thin, lateral bone of the leg. Only its lower end is shown here, beside the tibia and talus.",
-    "description": "A slender bone whose lower end forms the lateral malleolus, the bump on the outer side of the ankle.",
-    "function": "Forms the outer wall of the ankle joint, keeping the talus stable, and gives attachment to ankle ligaments and leg muscles.",
-    "mnemonic": "FibuLa is Lateral and Little.",
-    "clinical": "The common ankle sprain tears ligaments that run from the lateral malleolus to the talus and calcaneus.",
-    "hint": "The thin leg bone ending in the bump on the outer side of the ankle."
+    "origin": "From the Latin word for a brooch pin or clasp. It is thin, like the pin of a brooch.",
+    "location": "It is the thin bone on the outer side of your lower leg. This model shows only its lower end, beside the tibia and talus.",
+    "description": "A slim bone whose lower end forms the lateral malleolus, the bump on the outside of your ankle.",
+    "function": "It forms the outer wall of your ankle joint and stops the talus sliding sideways. Ankle ligaments and leg muscles attach to it.",
+    "mnemonic": "FibuLa is Lateral and Little. Two L words for the thin outer bone.",
+    "clinical": "In the common rolled ankle, the ligaments that tear run from this bone's lower end to the talus and heel bone.",
+    "hint": "Look for the thin leg bone that ends in the bump on the outside of the ankle."
    },
    "questions": [],
    "context": true
@@ -259,18 +259,18 @@
    ],
    "content": {
     "pronunciation": "TAY-lus",
-    "origin": "Latin talus, \"ankle\" or \"ankle bone\". Talus bones of animals were used as dice in ancient times.",
-    "location": "The top bone of the foot, sitting between the tibia and fibula above and the calcaneus below.",
-    "description": "Has a head, neck and body. The top of the body (the trochlea) is a smooth, pulley-shaped surface that fits between the two malleoli. Most of its surface is covered in joint cartilage and no muscles attach to it.",
-    "function": "Transfers body weight from the leg to the foot. It forms the ankle joint (up and down movement) above and the subtalar joint below (tilting the sole in and out).",
-    "mnemonic": "Tiger Cubs Need MILC: T is for Talus, the tarsal on Top.",
-    "clinical": "A fracture of the talar neck can cut off the blood supply to the body of the talus, which may then die (avascular necrosis).",
-    "hint": "The top foot bone that locks into the ankle between the two malleoli, with no muscles attached."
+    "origin": "From the Latin word for ankle bone. Long ago, people used animal ankle bones as dice.",
+    "location": "It is the top bone of the foot. It sits between the tibia and fibula above and the heel bone below.",
+    "description": "It has a head, a neck and a body. Its top is a smooth pulley that fits between your two ankle bumps, and no muscles attach to it at all.",
+    "function": "It passes your weight from the leg to the foot. Above, it makes the up and down ankle joint, and below, the joint that tilts your sole in and out.",
+    "mnemonic": "Tiger Cubs Need MILC names the tarsal bones. T is for Talus, the one on Top.",
+    "clinical": "A break through its neck can cut off the blood supply to the rest of the bone. Starved of blood, that part may die, which is called avascular necrosis.",
+    "hint": "Find the top foot bone that locks in between the two ankle bumps, with no muscles attached."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which foot bone articulates with the tibia and fibula to form the ankle joint?",
+     "text": "Which foot bone meets the tibia and fibula to form the ankle joint?",
      "options": [
       "Calcaneus",
       "Navicular",
@@ -278,11 +278,11 @@
       "Cuboid"
      ],
      "answer": 2,
-     "explanation": "The talus sits between the tibia and fibula and is the only foot bone in the ankle joint."
+     "explanation": "The talus sits snugly between the tibia and fibula. It is the only foot bone in the ankle joint."
     },
     {
      "kind": "clinical",
-     "text": "Why is a fracture of the talar neck a concern?",
+     "text": "Why is a break through the neck of the talus a worry?",
      "options": [
       "It always damages the Achilles tendon",
       "The body of the talus can lose its blood supply",
@@ -290,7 +290,7 @@
       "It tears the plantar fascia"
      ],
      "answer": 1,
-     "explanation": "Blood vessels reach the talus through its neck, so a neck fracture can cause avascular necrosis of the body."
+     "explanation": "Blood vessels reach the talus through its neck. A break there can starve the body of blood, so that part of the bone may die."
     }
    ]
   },
@@ -327,26 +327,26 @@
    ],
    "content": {
     "pronunciation": "kal-KAY-nee-us",
-    "origin": "Latin calx, \"heel\" (also \"chalk\" or \"limestone\").",
-    "location": "The heel bone, at the back and bottom of the foot, below the talus and behind the cuboid.",
-    "description": "The largest tarsal bone. Its back end forms the calcaneal tuberosity (the heel). A shelf on its inner side, the sustentaculum tali, supports the talus.",
-    "function": "Takes body weight at heel strike and acts as a lever for the calf muscles, which pull on it through the calcaneal (Achilles) tendon to point the foot (plantarflexion).",
-    "mnemonic": "Tiger Cubs Need MILC: C is for Calcaneus, the Chunky heel.",
-    "clinical": "Plantar fasciitis causes heel pain where the plantar fascia attaches under the calcaneus. Falls from a height onto the feet can shatter the calcaneus.",
-    "hint": "The biggest tarsal bone, forming the heel where the Achilles tendon attaches."
+    "origin": "From the Latin word calx, meaning heel. The same word also meant chalk or limestone.",
+    "location": "It is your heel bone, at the back and bottom of the foot, below the talus and behind the cuboid.",
+    "description": "The biggest tarsal bone. Its back end forms your heel, and a shelf on its inner side holds up the talus like a bracket.",
+    "function": "It takes your weight as your heel hits the ground. Your calf muscles pull on it through the Achilles tendon to point your foot, as when you stand on tiptoe.",
+    "mnemonic": "Tiger Cubs Need MILC. The first C is for Calcaneus, the chunky heel.",
+    "clinical": "Plantar fasciitis causes heel pain where a tough band under the foot attaches to this bone. Landing on your feet from a height can shatter it.",
+    "hint": "Find the biggest tarsal bone, forming the heel where the Achilles tendon attaches."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which tendon attaches to the calcaneal tuberosity?",
+     "text": "Which tendon attaches to the back of the heel bone?",
      "options": [
       "Tibialis anterior tendon",
-      "Calcaneal (Achilles) tendon",
+      "Achilles tendon",
       "Fibularis brevis tendon",
       "Patellar tendon"
      ],
      "answer": 1,
-     "explanation": "The calf muscles insert on the calcaneal tuberosity through the calcaneal (Achilles) tendon."
+     "explanation": "Your calf muscles pull on the back of the calcaneus through the Achilles tendon, also called the calcaneal tendon."
     },
     {
      "kind": "terminology",
@@ -358,7 +358,7 @@
       "Calcaneus"
      ],
      "answer": 3,
-     "explanation": "The calcaneus (heel bone) is the largest tarsal bone."
+     "explanation": "The calcaneus, your heel bone, is the largest tarsal bone."
     }
    ]
   },
@@ -403,18 +403,18 @@
    ],
    "content": {
     "pronunciation": "na-VIK-yoo-lar",
-    "origin": "Latin navicula, \"little boat\": it is boat-shaped.",
-    "location": "On the medial side of the foot, between the head of the talus behind and the three cuneiforms in front.",
-    "description": "A boat-shaped bone, concave behind for the talar head and with three facets in front for the cuneiforms. A rounded bump on its medial side, the navicular tuberosity, can be felt in front of and below the medial malleolus.",
-    "function": "Keystone of the medial longitudinal arch. The main tendon of tibialis posterior attaches to its tuberosity and helps hold up the arch.",
-    "mnemonic": "Tiger Cubs Need MILC: N is for Navicular, the little boat in the middle of the arch.",
-    "clinical": "Stress fractures of the navicular occur in running and jumping athletes and are easy to miss. Some people have an extra bone beside it (accessory navicular) that can be painful.",
-    "hint": "The boat-shaped bone on the inner side of the foot, in front of the talus and behind the three wedge-shaped bones."
+    "origin": "From the Latin for little boat. It is shaped like a small boat.",
+    "location": "It sits on the inner side of the foot, between the head of the talus behind and the three wedge-shaped cuneiforms in front.",
+    "description": "A boat-shaped bone, hollow at the back for the talus. On its inner side is a bump you can feel just in front of and below your inner ankle bump.",
+    "function": "It is the keystone of the arch on the inner side of your foot. The main tendon of tibialis posterior grips its bump and helps hold the arch up.",
+    "mnemonic": "Tiger Cubs Need MILC. N is for Navicular, a little boat floating at the top of your arch.",
+    "clinical": "Runners and jumpers can get stress fractures here, and they are easy to miss. Some people have an extra bone beside it that can be painful.",
+    "hint": "Find the boat-shaped bone on the inner side of the foot, in front of the talus and behind the three wedge bones."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which bones articulate with the front of the navicular?",
+     "text": "Which bones meet the front of the navicular?",
      "options": [
       "The three cuneiforms",
       "The metatarsals",
@@ -422,11 +422,11 @@
       "The calcaneus and cuboid"
      ],
      "answer": 0,
-     "explanation": "The navicular has three facets in front for the medial, intermediate and lateral cuneiforms."
+     "explanation": "The front of the navicular has three smooth spots, one for each of the three wedge-shaped cuneiforms."
     },
     {
      "kind": "function",
-     "text": "Which muscle's main tendon attaches to the navicular tuberosity?",
+     "text": "Which muscle's main tendon attaches to the bump on the navicular?",
      "options": [
       "Fibularis longus",
       "Gastrocnemius",
@@ -434,7 +434,7 @@
       "Extensor digitorum longus"
      ],
      "answer": 2,
-     "explanation": "Tibialis posterior inserts mainly on the navicular tuberosity and supports the medial arch."
+     "explanation": "Tibialis posterior attaches mainly to the navicular's bump. Its pull helps hold up the arch on the inner side of the foot."
     }
    ]
   },
@@ -478,18 +478,18 @@
    ],
    "content": {
     "pronunciation": "KYOO-boyd",
-    "origin": "Greek kubos, \"cube\", plus -oeides, \"like\": roughly cube-shaped.",
-    "location": "On the lateral (little toe) side of the foot, between the calcaneus behind and the fourth and fifth metatarsals in front.",
-    "description": "A roughly cube-shaped bone. Its plantar surface has a groove for the tendon of fibularis (peroneus) longus.",
-    "function": "Supports the lateral longitudinal arch and passes load from the fourth and fifth metatarsals to the calcaneus. Its groove acts as a pulley for the fibularis longus tendon.",
-    "mnemonic": "Tiger Cubs Need MILC: the last C is the Cuboid, on the outside.",
-    "clinical": "Cuboid syndrome is lateral foot pain thought to come from slight displacement of the cuboid, sometimes after an ankle sprain.",
-    "hint": "The cube-shaped tarsal on the little toe side, between the heel bone and the last two metatarsals."
+    "origin": "From the Greek for cube-like. It is roughly the shape of a dice.",
+    "location": "It sits on the outer, little toe side of the foot, between the heel bone behind and the fourth and fifth metatarsals in front.",
+    "description": "A roughly cube-shaped bone. Underneath, it has a groove for the tendon of a leg muscle, fibularis longus.",
+    "function": "It supports the outer arch of the foot and passes load from the last two metatarsals to the heel bone. Its groove works like a pulley for the fibularis longus tendon.",
+    "mnemonic": "Tiger Cubs Need MILC. The last C is for Cuboid, the cube on the outside.",
+    "clinical": "Cuboid syndrome is pain on the outer side of the foot, thought to come from this bone shifting slightly, sometimes after an ankle sprain.",
+    "hint": "Find the cube-shaped tarsal on the little toe side, between the heel bone and the last two metatarsals."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which tarsal bone lies between the calcaneus and the fourth and fifth metatarsals?",
+     "text": "Which tarsal bone lies between the heel bone and the fourth and fifth metatarsals?",
      "options": [
       "Lateral cuneiform",
       "Navicular",
@@ -497,19 +497,19 @@
       "Cuboid"
      ],
      "answer": 3,
-     "explanation": "The cuboid lies on the lateral side of the foot, in front of the calcaneus and behind metatarsals IV and V."
+     "explanation": "The cuboid sits on the outer side of the foot, in front of the heel bone and behind metatarsals four and five."
     },
     {
      "kind": "function",
-     "text": "The groove on the plantar surface of the cuboid carries which tendon?",
+     "text": "The groove under the cuboid carries which tendon?",
      "options": [
       "Fibularis longus",
       "Tibialis anterior",
       "Flexor hallucis longus",
-      "Calcaneal (Achilles) tendon"
+      "Achilles tendon"
      ],
      "answer": 0,
-     "explanation": "The fibularis (peroneus) longus tendon runs in the groove under the cuboid."
+     "explanation": "The fibularis longus tendon, also called peroneus longus, runs through the groove under the cuboid like a rope over a pulley."
     }
    ]
   },
@@ -553,18 +553,18 @@
    ],
    "content": {
     "pronunciation": "MEE-dee-al KYOO-nee-i-form",
-    "origin": "Latin cuneus, \"wedge\", plus forma, \"shape\": a wedge-shaped bone.",
-    "location": "On the inner (big toe) side of the foot, between the navicular behind and the first metatarsal in front.",
-    "description": "The largest of the three cuneiforms. Unlike the other two, its wedge has the broad edge facing down towards the sole.",
-    "function": "Forms part of the medial longitudinal arch. Tibialis anterior and fibularis longus both attach to it and to the base of the first metatarsal, helping to support the arch.",
-    "mnemonic": "Tiger Cubs Need MILC: M is for Medial cuneiform, the biggest wedge, behind the big toe.",
-    "clinical": "It forms part of the tarsometatarsal (Lisfranc) joint line, which can be injured by twisting or crushing forces on the midfoot.",
-    "hint": "The biggest of the three wedge bones, lined up behind the big toe."
+    "origin": "From the Latin for wedge-shaped. Medial means closer to the middle of the body.",
+    "location": "It sits on the inner, big toe side of the foot, between the navicular behind and the first metatarsal in front.",
+    "description": "The biggest of the three wedge bones. Unlike the other two, its wide edge faces down towards the sole.",
+    "function": "It helps build the arch on the inner side of your foot. Two leg muscles, tibialis anterior and fibularis longus, attach here to help hold that arch.",
+    "mnemonic": "Tiger Cubs Need MILC. M is for Medial, the biggest wedge, sitting behind the big toe.",
+    "clinical": "It lies along the Lisfranc joint line, where the midfoot meets the long foot bones. A twist or a crush can injure this line.",
+    "hint": "Find the biggest of the three wedge bones, lined up behind the big toe."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The medial cuneiform articulates in front with which bone?",
+     "text": "The medial cuneiform meets which bone in front?",
      "options": [
       "Fifth metatarsal",
       "First metatarsal",
@@ -572,7 +572,7 @@
       "Talus"
      ],
      "answer": 1,
-     "explanation": "The medial cuneiform sits directly behind, and articulates with, the first metatarsal."
+     "explanation": "The medial cuneiform sits directly behind the first metatarsal, the long bone of the big toe."
     }
    ]
   },
@@ -617,13 +617,13 @@
    ],
    "content": {
     "pronunciation": "in-ter-MEE-dee-at KYOO-nee-i-form",
-    "origin": "Latin cuneus, \"wedge\", plus forma, \"shape\"; intermedius, \"in between\".",
-    "location": "Between the medial and lateral cuneiforms, in front of the navicular and behind the second metatarsal.",
-    "description": "The smallest cuneiform, a wedge with its broad edge facing up. It is shorter than its neighbours, so the base of the second metatarsal sits in a recess between the medial and lateral cuneiforms.",
-    "function": "Helps form the transverse arch of the foot. The recess it creates locks the second metatarsal in place, stabilising the midfoot.",
-    "mnemonic": "Tiger Cubs Need MILC: I is for Intermediate, the little wedge In the middle.",
-    "clinical": "Because it keys in the second metatarsal, it is involved in Lisfranc (tarsometatarsal) injuries.",
-    "hint": "The smallest wedge bone, in the middle of the three, directly behind the second metatarsal."
+    "origin": "From the Latin for wedge-shaped. Intermediate means in between.",
+    "location": "It sits between the other two wedge bones, in front of the navicular and behind the second metatarsal.",
+    "description": "The smallest wedge, with its wide edge facing up. It is shorter than its neighbours, leaving a notch where the second metatarsal slots in.",
+    "function": "It helps form the arch across your foot. The notch it leaves locks the second metatarsal in place, keeping the midfoot steady.",
+    "mnemonic": "Tiger Cubs Need MILC. I is for Intermediate, the little wedge In the middle.",
+    "clinical": "Because it helps lock in the second metatarsal, it is often part of Lisfranc injuries of the midfoot.",
+    "hint": "Find the smallest of the three wedge bones, in the middle, right behind the second metatarsal."
    },
    "questions": [
     {
@@ -636,7 +636,7 @@
       "Cuboid"
      ],
      "answer": 2,
-     "explanation": "The intermediate cuneiform is the smallest of the three cuneiforms."
+     "explanation": "The intermediate cuneiform, the middle wedge, is the smallest of the three."
     }
    ]
   },
@@ -688,18 +688,18 @@
    ],
    "content": {
     "pronunciation": "LAT-er-al KYOO-nee-i-form",
-    "origin": "Latin cuneus, \"wedge\", plus forma, \"shape\"; lateralis, \"to the side\".",
-    "location": "The outermost cuneiform, between the intermediate cuneiform and the cuboid, in front of the navicular and behind the third metatarsal.",
-    "description": "A wedge-shaped bone with its broad edge facing up, sized between the other two cuneiforms.",
-    "function": "Helps form the transverse arch and carries load from the third metatarsal (and parts of the second and fourth) back to the navicular.",
-    "mnemonic": "Tiger Cubs Need MILC: L is for Lateral cuneiform, the wedge that touches the cuboid.",
-    "clinical": "Isolated fractures are rare; it is usually injured along with its neighbours in midfoot (Lisfranc) injuries.",
-    "hint": "The outermost of the three wedge bones, touching the cube-shaped tarsal and lined up behind the third toe."
+    "origin": "From the Latin for wedge-shaped. Lateral means towards the outer side.",
+    "location": "It is the outermost wedge bone, between the intermediate cuneiform and the cuboid, and behind the third metatarsal.",
+    "description": "A wedge-shaped bone with its wide edge facing up. In size, it sits between the other two wedges.",
+    "function": "It helps form the arch across the foot. It carries load from the third metatarsal, and parts of the second and fourth, back to the navicular.",
+    "mnemonic": "Tiger Cubs Need MILC. L is for Lateral, the wedge that leans against the cuboid.",
+    "clinical": "It rarely breaks on its own. It is usually hurt along with its neighbours in a Lisfranc injury of the midfoot.",
+    "hint": "Find the outermost wedge bone, touching the cube-shaped tarsal and lined up behind the third toe."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which tarsal bone lies directly lateral to the lateral cuneiform?",
+     "text": "Which tarsal bone lies right beside the lateral cuneiform, on its outer side?",
      "options": [
       "Cuboid",
       "Calcaneus",
@@ -707,7 +707,7 @@
       "Talus"
      ],
      "answer": 0,
-     "explanation": "The lateral cuneiform articulates with the cuboid on its lateral side."
+     "explanation": "The lateral cuneiform leans against the cuboid on its outer side."
     }
    ]
   },
@@ -744,26 +744,26 @@
    ],
    "content": {
     "pronunciation": "met-ah-TAR-sul",
-    "origin": "Greek meta, \"beyond\", plus tarsos, the ankle region: the bones beyond the tarsus.",
-    "location": "The innermost metatarsal, between the medial cuneiform and the big toe.",
-    "description": "The shortest and thickest metatarsal. Two small sesamoid bones sit under its head within the tendons of flexor hallucis brevis.",
-    "function": "Carries the most weight of all the metatarsals, especially when pushing off in walking and running. Tibialis anterior and fibularis longus attach to its base.",
-    "mnemonic": "Count from the big toe: big toe = I, little toe = V. The heads form the ball of the foot. Number I is the short, thick one.",
-    "clinical": "A bunion (hallux valgus) forms when the big toe drifts outward and the head of this bone becomes prominent. Gout often first affects the joint at its head.",
-    "hint": "The short, thick bone in the ball of the foot, lined up behind the big toe."
+    "origin": "From the Greek for beyond the tarsus. These are the long bones just past the ankle and midfoot bones.",
+    "location": "It is the innermost long bone of the foot, running from the medial cuneiform to the big toe.",
+    "description": "The shortest and thickest metatarsal. Two tiny pea-like bones, called sesamoids, sit under its head inside a tendon.",
+    "function": "It carries more weight than any other metatarsal, especially when you push off to walk or run. Tibialis anterior and fibularis longus attach to its base.",
+    "mnemonic": "Count from the big toe: this is number one, the short, thick one. The heads of these bones make the ball of your foot.",
+    "clinical": "A bunion forms when the big toe drifts outward and the head of this bone sticks out. Gout often strikes the joint at its head first.",
+    "hint": "Find the short, thick bone in the ball of the foot, lined up behind the big toe."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "A bunion (hallux valgus) is a prominence at the head of which bone?",
+     "text": "A bunion is a bump at the head of which bone?",
      "options": [
       "Fifth metatarsal",
       "Calcaneus",
       "First metatarsal",
-      "Distal phalanx of big toe"
+      "Tip bone of the big toe"
      ],
      "answer": 2,
-     "explanation": "In hallux valgus the big toe drifts outward and the head of the first metatarsal sticks out on the inner side."
+     "explanation": "In a bunion, or hallux valgus, the big toe drifts outward and the head of the first metatarsal sticks out on the inner side."
     },
     {
      "kind": "terminology",
@@ -823,18 +823,18 @@
    ],
    "content": {
     "pronunciation": "met-ah-TAR-sul",
-    "origin": "Greek meta, \"beyond\", plus tarsos, the ankle region: the bones beyond the tarsus.",
-    "location": "Behind the second toe. Its base sits in a recess between the medial and lateral cuneiforms.",
-    "description": "Usually the longest metatarsal, with a slim shaft. A long base, head and shaft like the other metatarsals.",
-    "function": "Its locked-in base makes it the most stable metatarsal, the keystone of the tarsometatarsal joints and the transverse arch.",
-    "mnemonic": "Count from the big toe: big toe = I, little toe = V. The heads form the ball of the foot. Number II is the long one locked in place.",
-    "clinical": "The most common site of a metatarsal stress (march) fracture, seen in soldiers, runners and after a sudden increase in walking. Its base is central to Lisfranc injuries.",
-    "hint": "Usually the longest bone of the forefoot, lined up with the toe next to the big toe."
+    "origin": "From the Greek for beyond the tarsus. It is the second of the five long bones of the foot.",
+    "location": "It sits behind the second toe. Its base slots into a notch between the medial and lateral cuneiforms.",
+    "description": "Usually the longest metatarsal, with a slim shaft, like a long, thin pole.",
+    "function": "Its locked-in base makes it the steadiest metatarsal. It is the keystone of the midfoot joints and of the arch across the foot.",
+    "mnemonic": "Count from the big toe: number two is the long one, locked in place like a key in a lock.",
+    "clinical": "It is the most common place for a stress fracture, or march fracture, seen in soldiers, runners and after a sudden jump in walking. Its base is central to Lisfranc injuries.",
+    "hint": "Find the longest bone of the forefoot, lined up with the toe next to the big toe."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Which metatarsal is the most common site of a stress (march) fracture?",
+     "text": "Which metatarsal most often gets a stress fracture, also called a march fracture?",
      "options": [
       "First",
       "Fifth",
@@ -842,11 +842,11 @@
       "Second"
      ],
      "answer": 3,
-     "explanation": "The long, slim, firmly fixed second metatarsal is the most common site of a march fracture."
+     "explanation": "The long, slim, locked-in second metatarsal takes a lot of repeated stress, so march fractures happen here most."
     },
     {
      "kind": "location",
-     "text": "The base of the second metatarsal sits in a recess between which bones?",
+     "text": "The base of the second metatarsal slots between which bones?",
      "options": [
       "The medial and lateral cuneiforms",
       "The talus and calcaneus",
@@ -854,7 +854,7 @@
       "The first and third metatarsal heads"
      ],
      "answer": 0,
-     "explanation": "The short intermediate cuneiform leaves a recess between the medial and lateral cuneiforms for the second metatarsal base."
+     "explanation": "The short middle wedge leaves a notch between the medial and lateral cuneiforms, and the second metatarsal locks into it."
     }
    ]
   },
@@ -898,18 +898,18 @@
    ],
    "content": {
     "pronunciation": "met-ah-TAR-sul",
-    "origin": "Greek meta, \"beyond\", plus tarsos, the ankle region: the bones beyond the tarsus.",
-    "location": "In the middle of the forefoot, between the lateral cuneiform and the third toe.",
-    "description": "A long bone with a base, shaft and head, a little shorter than the second metatarsal.",
-    "function": "Carries weight across the middle of the forefoot and helps form the transverse arch.",
-    "mnemonic": "Count from the big toe: big toe = I, little toe = V. The heads form the ball of the foot. Number III is in the middle of the five.",
-    "clinical": "After the second, it is a common site of stress fractures. Morton's neuroma, a painful thickened nerve, most often lies between the heads of the third and fourth metatarsals.",
-    "hint": "The middle bone of the five in the forefoot, lined up behind the middle toe."
+    "origin": "From the Greek for beyond the tarsus. It is the middle of the five long foot bones.",
+    "location": "It sits in the middle of the forefoot, between the lateral cuneiform and the third toe.",
+    "description": "A long, straight bone with a base, a shaft and a rounded head. It is a little shorter than its neighbour, the second metatarsal.",
+    "function": "It carries weight across the middle of the forefoot and helps shape the arch that runs across your foot.",
+    "mnemonic": "Count from the big toe: number three is right in the middle of the five.",
+    "clinical": "After the second, it is a common place for stress fractures. Morton's neuroma, a painful thickened nerve, most often sits between its head and the fourth.",
+    "hint": "Find the middle bone of the five in the forefoot, lined up behind the middle toe."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which tarsal bone does the third metatarsal articulate with?",
+     "text": "Which tarsal bone does the third metatarsal meet?",
      "options": [
       "Medial cuneiform",
       "Lateral cuneiform",
@@ -917,7 +917,7 @@
       "Talus"
      ],
      "answer": 1,
-     "explanation": "The base of the third metatarsal articulates with the lateral cuneiform."
+     "explanation": "The base of the third metatarsal rests against the lateral cuneiform, the outermost wedge bone."
     }
    ]
   },
@@ -965,13 +965,13 @@
    ],
    "content": {
     "pronunciation": "met-ah-TAR-sul",
-    "origin": "Greek meta, \"beyond\", plus tarsos, the ankle region: the bones beyond the tarsus.",
-    "location": "Between the third and fifth metatarsals, running from the cuboid (and lateral cuneiform) to the fourth toe.",
-    "description": "A long bone with a base, shaft and head, shorter than the third metatarsal.",
-    "function": "Supports the lateral side of the forefoot. Its joint with the cuboid is more mobile than the medial ones, helping the foot adapt to uneven ground.",
-    "mnemonic": "Count from the big toe: big toe = I, little toe = V. The heads form the ball of the foot. Numbers IV and V both sit on the cuboid.",
-    "clinical": "Morton's neuroma, a painful thickening of a plantar digital nerve, most often lies between the heads of the third and fourth metatarsals, causing burning pain in the ball of the foot.",
-    "hint": "The forefoot bone behind the second-smallest toe, sitting on the cube-shaped tarsal."
+    "origin": "From the Greek for beyond the tarsus. It is the fourth of the five long foot bones.",
+    "location": "It sits between the third and fifth metatarsals, running from the cuboid to the fourth toe. It also touches the lateral cuneiform.",
+    "description": "A long bone with a base, shaft and head, a little shorter than the third.",
+    "function": "It supports the outer side of the forefoot. Its joint with the cuboid moves more than the inner ones, helping your foot adjust to bumpy ground.",
+    "mnemonic": "Count from the big toe: numbers four and five both sit on the cuboid, like two friends sharing a seat.",
+    "clinical": "Morton's neuroma is a thickened, painful nerve, most often between the heads of the third and fourth metatarsals. It can feel like a burning pebble in your shoe.",
+    "hint": "Find the forefoot bone behind the second-smallest toe, sitting on the cube-shaped tarsal."
    },
    "questions": [
     {
@@ -984,7 +984,7 @@
       "Second and third"
      ],
      "answer": 2,
-     "explanation": "Morton's neuroma most often affects the nerve between the third and fourth metatarsal heads."
+     "explanation": "Morton's neuroma most often affects the nerve that runs between the heads of the third and fourth metatarsals."
     }
    ]
   },
@@ -1025,18 +1025,18 @@
    ],
    "content": {
     "pronunciation": "met-ah-TAR-sul",
-    "origin": "Greek meta, \"beyond\", plus tarsos, the ankle region: the bones beyond the tarsus.",
-    "location": "The outermost metatarsal, along the lateral border of the foot between the cuboid and the little toe.",
-    "description": "Its base has a large bump on the outer side, the tuberosity, which can be felt halfway along the outer edge of the foot.",
-    "function": "Supports the lateral edge of the foot. Fibularis brevis attaches to its tuberosity and helps turn the sole outward (eversion).",
-    "mnemonic": "Count from the big toe: big toe = I, little toe = V. The heads form the ball of the foot. Number V has the bump on the outside edge.",
-    "clinical": "Rolling the ankle inward can pull off the tuberosity (avulsion fracture). A Jones fracture, a little further along the shaft, heals poorly because of its limited blood supply.",
-    "hint": "The forefoot bone along the outer edge, with a bony bump at its base halfway along the side of the foot."
+    "origin": "From the Greek for beyond the tarsus. It is the last of the five, on the outer edge.",
+    "location": "It is the outermost metatarsal, along the outer edge of your foot between the cuboid and the little toe.",
+    "description": "Its base has a big bump on the outer side. You can feel it halfway along the outside edge of your foot.",
+    "function": "It supports the outer edge of the foot. A leg muscle, fibularis brevis, pulls on its bump to turn your sole outward.",
+    "mnemonic": "Count from the big toe: number five is the one with the bump on the outside edge.",
+    "clinical": "Rolling your ankle inward can tear that bump right off, an avulsion fracture. A Jones fracture, a little further along, heals slowly because of a poor blood supply.",
+    "hint": "Find the forefoot bone along the outer edge, with a bony bump at its base halfway along the side of the foot."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which muscle attaches to the tuberosity of the fifth metatarsal?",
+     "text": "Which muscle attaches to the bump at the base of the fifth metatarsal?",
      "options": [
       "Tibialis anterior",
       "Fibularis brevis",
@@ -1044,11 +1044,11 @@
       "Flexor hallucis longus"
      ],
      "answer": 1,
-     "explanation": "Fibularis (peroneus) brevis inserts on the tuberosity at the base of the fifth metatarsal."
+     "explanation": "Fibularis brevis, also called peroneus brevis, attaches to the bump at the base of the fifth metatarsal."
     },
     {
      "kind": "clinical",
-     "text": "An inversion (rolling in) ankle injury can pull off a fragment from the base of which bone?",
+     "text": "Rolling your ankle inward can pull a chip off the base of which bone?",
      "options": [
       "Fifth metatarsal",
       "First metatarsal",
@@ -1056,7 +1056,7 @@
       "Medial cuneiform"
      ],
      "answer": 0,
-     "explanation": "Fibularis brevis can avulse the tuberosity at the base of the fifth metatarsal when the foot rolls inward."
+     "explanation": "When the foot rolls in, fibularis brevis can yank its bump off the base of the fifth metatarsal."
     }
    ]
   },
@@ -1093,18 +1093,18 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows. Hallux is Latin for the big toe.",
-    "location": "The first bone of the big toe, just in front of the head of the first metatarsal.",
-    "description": "A short, thick bone, larger than the proximal phalanges of the other toes. The big toe has only two phalanges.",
-    "function": "Forms the first metatarsophalangeal (MTP) joint, which bends upward as the foot pushes off. The short muscles of the big toe (flexor and extensor hallucis brevis, abductor and adductor hallucis) attach to its base.",
-    "mnemonic": "Hallux has two bones, like the thumb: proximal and distal, no middle.",
-    "clinical": "Turf toe is a sprain of the big toe MTP joint from forced upward bending. Hallux rigidus is arthritis of this joint, making push-off stiff and painful.",
-    "hint": "The bone of the big toe that sits right in front of the ball of the foot."
+    "origin": "From the Greek word phalanx, a line of soldiers, because toe bones line up in rows. Hallux is Latin for the big toe.",
+    "location": "It is the first bone of the big toe, just in front of the head of the first metatarsal.",
+    "description": "A short, thick bone, bigger than the first bones of the other toes. The big toe has only two bones.",
+    "function": "It forms the big toe joint, which bends up as your foot pushes off. The small muscles of the big toe attach to its base.",
+    "mnemonic": "The big toe is like your thumb: two bones, near and far, with no middle one.",
+    "clinical": "Turf toe is a sprain of the big toe joint from being bent up too far. Hallux rigidus is arthritis here that makes pushing off stiff and sore.",
+    "hint": "Find the big toe bone sitting just in front of the ball of the foot."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "How many phalanges does the big toe (hallux) have?",
+     "text": "How many phalanges, or toe bones, does the big toe have?",
      "options": [
       "One",
       "Two",
@@ -1112,7 +1112,7 @@
       "Four"
      ],
      "answer": 1,
-     "explanation": "The big toe has two phalanges, proximal and distal, and no middle phalanx."
+     "explanation": "The big toe has two phalanges, proximal and distal, and no middle one, just like your thumb."
     }
    ]
   },
@@ -1146,13 +1146,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The first bone of the second toe, just in front of the head of metatarsal II.",
-    "description": "The second toe is often the longest toe, and its proximal phalanx is long and slender.",
-    "function": "Forms the metatarsophalangeal (MTP) joint, letting the toe bend up during push-off and grip the ground. Small muscles of the sole (lumbricals and interossei) act across this joint.",
-    "mnemonic": "Proximal = closest to the foot. Each lesser toe has three phalanges.",
-    "clinical": "Hammer toe, a fixed bend at the joint between the proximal and middle phalanges, most often affects the second toe.",
-    "hint": "The second toe bone closest to the ball of the foot."
+    "origin": "From the Greek word phalanx, a line of soldiers. Each small toe has three bones in a row.",
+    "location": "It is the first bone of the second toe, just in front of the head of the second metatarsal.",
+    "description": "A long, slim bone. The second toe is often your longest toe.",
+    "function": "It forms the toe's joint at the ball of the foot, letting the toe bend up as you push off and press down to grip. Small muscles of the sole work across this joint.",
+    "mnemonic": "Proximal means closest, so it is the toe bone closest to your foot. Small toes have three bones each.",
+    "clinical": "Hammer toe is a fixed bend at the joint just beyond this bone. It most often affects the second toe.",
+    "hint": "Find the second toe bone closest to the ball of the foot."
    },
    "questions": [
     {
@@ -1165,7 +1165,7 @@
       "Between the first metatarsal and medial cuneiform"
      ],
      "answer": 0,
-     "explanation": "Hammer toe is a flexion deformity of the proximal interphalangeal joint, between the proximal and middle phalanges."
+     "explanation": "In hammer toe, the joint between the proximal and middle phalanges stays bent, so the toe curls like a hammer."
     }
    ]
   },
@@ -1199,26 +1199,26 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The first bone of the third toe, just in front of the head of metatarsal III.",
-    "description": "A slender bone with a concave base that fits the rounded head of the third metatarsal.",
-    "function": "Forms the metatarsophalangeal (MTP) joint, letting the toe bend up during push-off and grip the ground. Small muscles of the sole (lumbricals and interossei) act across this joint.",
-    "mnemonic": "Proximal = closest to the foot. Each lesser toe has three phalanges.",
-    "clinical": "Broken lesser toe phalanges are common after stubbing the toe and are usually treated by strapping the toe to its neighbour (buddy strapping).",
-    "hint": "The third toe bone closest to the ball of the foot."
+    "origin": "From the Greek word phalanx, a line of soldiers. The third toe's bones line up three in a row.",
+    "location": "It is the first bone of the third toe, just in front of the head of the third metatarsal.",
+    "description": "A slim bone with a cupped base that fits over the round head of the third metatarsal.",
+    "function": "It forms the joint at the ball of the foot, so the toe can bend up as you step off and grip the floor.",
+    "mnemonic": "Proximal means closest to the foot. Three small bones, and this is the first.",
+    "clinical": "Stubbing your toe often breaks a small toe bone like this one. It is usually treated by taping it to the next toe, called buddy strapping.",
+    "hint": "Find the third toe bone closest to the ball of the foot."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The proximal phalanx of the third toe articulates proximally with which bone?",
+     "text": "At its base, the proximal phalanx of the third toe meets which bone?",
      "options": [
       "Lateral cuneiform",
       "Third metatarsal",
-      "Middle phalanx of third toe",
+      "Middle phalanx of the third toe",
       "Cuboid"
      ],
      "answer": 1,
-     "explanation": "At its base, the proximal phalanx of the third toe meets the head of the third metatarsal at the MTP joint."
+     "explanation": "At its base, it meets the head of the third metatarsal, at the toe joint in the ball of the foot."
     }
    ]
   },
@@ -1252,13 +1252,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The first bone of the fourth toe, just in front of the head of metatarsal IV.",
-    "description": "A slender bone, shorter than those of the second and third toes, with a concave base for the fourth metatarsal head.",
-    "function": "Forms the metatarsophalangeal (MTP) joint, letting the toe bend up during push-off and grip the ground. Small muscles of the sole (lumbricals and interossei) act across this joint.",
-    "mnemonic": "Proximal = closest to the foot. Each lesser toe has three phalanges.",
-    "clinical": "In claw toe the MTP joint is bent up while the joints beyond it bend down; it often affects several lesser toes and can occur with nerve or muscle disease.",
-    "hint": "The fourth toe bone closest to the ball of the foot."
+    "origin": "From the Greek word phalanx, a line of soldiers. The fourth toe has its own row of three.",
+    "location": "It is the first bone of the fourth toe, just in front of the head of the fourth metatarsal.",
+    "description": "A slim bone, shorter than those of the second and third toes, with a cupped base for the metatarsal head.",
+    "function": "It forms the joint at the ball of the foot, letting the toe lift as you push off and press down to grip.",
+    "mnemonic": "Proximal means closest to the foot. Each small toe has three bones, and this is the first.",
+    "clinical": "In claw toe, the joint at this bone's base bends up while the joints beyond bend down. It often affects several toes and can come with nerve or muscle disease.",
+    "hint": "Find the fourth toe bone closest to the ball of the foot."
    },
    "questions": [
     {
@@ -1267,11 +1267,11 @@
      "options": [
       "At the tip of the fourth toe",
       "Between the cuboid and the fourth metatarsal",
-      "Just beyond the head of the fourth metatarsal",
+      "Just past the head of the fourth metatarsal",
       "Under the big toe"
      ],
      "answer": 2,
-     "explanation": "The proximal phalanx is the first toe bone, just beyond the metatarsal head."
+     "explanation": "The proximal phalanx is the first toe bone, just past the head of its metatarsal."
     }
    ]
   },
@@ -1305,18 +1305,18 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The first bone of the little toe, just in front of the head of metatarsal V.",
-    "description": "The shortest proximal phalanx. Abductor digiti minimi and flexor digiti minimi brevis attach to its base.",
-    "function": "Forms the metatarsophalangeal (MTP) joint, letting the toe bend up during push-off and grip the ground. Small muscles of the sole (lumbricals and interossei) act across this joint.",
-    "mnemonic": "Proximal = closest to the foot. Each lesser toe has three phalanges.",
-    "clinical": "Stubbing the little toe on furniture (the \"night-walker's fracture\") often breaks this bone.",
-    "hint": "The little toe bone closest to the ball of the foot."
+    "origin": "From the Greek word phalanx, a line of soldiers. The little toe's row starts here.",
+    "location": "It is the first bone of the little toe, just in front of the head of the fifth metatarsal.",
+    "description": "The shortest of the first toe bones. Abductor digiti minimi and flexor digiti minimi brevis attach to its base.",
+    "function": "It forms the little toe's joint at the ball of the foot, letting it bend up and grip the ground.",
+    "mnemonic": "Proximal means closest to the foot. Even the little toe starts with this bone.",
+    "clinical": "Walking into furniture in the dark often breaks this bone. That is why it is nicknamed the night-walker's fracture.",
+    "hint": "Find the little toe bone closest to the ball of the foot."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which muscle attaches to the base of the proximal phalanx of the little toe?",
+     "text": "Which muscle attaches to the base of the little toe's first bone?",
      "options": [
       "Abductor digiti minimi",
       "Flexor hallucis longus",
@@ -1324,7 +1324,7 @@
       "Extensor hallucis longus"
      ],
      "answer": 0,
-     "explanation": "Abductor digiti minimi runs along the outer foot and attaches to the base of the little toe's proximal phalanx."
+     "explanation": "Abductor digiti minimi runs along the outer edge of the foot and attaches to the base of the little toe's proximal phalanx."
     }
    ]
   },
@@ -1360,18 +1360,18 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The middle bone of the second toe, between its proximal and distal phalanges. The big toe has no middle phalanx.",
-    "description": "A short bone, much shorter than the proximal phalanx, with a joint at each end.",
-    "function": "Adds a second bending joint to the toe. Flexor digitorum brevis attaches to the sides of the middle phalanges of toes II to V.",
-    "mnemonic": "Middle = in the middle, and the big toe skips it.",
-    "clinical": "In hammer toe this bone is held bent down on the proximal phalanx, and a painful corn can form over the joint on top.",
-    "hint": "The in-between bone of the second toe."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the soldier in the middle.",
+    "location": "It is the middle bone of the second toe, between its first bone and its tip. The big toe has no middle bone.",
+    "description": "A short bone, much shorter than the first toe bone, with a joint at each end.",
+    "function": "It adds a second bending joint to the toe. A muscle in the sole, flexor digitorum brevis, attaches to the middle bones of the four small toes.",
+    "mnemonic": "Middle means in the middle, and the big toe skips it.",
+    "clinical": "In hammer toe, this bone is held bent down. A painful corn can form where the bent joint rubs on the shoe.",
+    "hint": "Find the in-between bone of the second toe."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which muscle inserts on the middle phalanges of the lateral four toes?",
+     "text": "Which muscle attaches to the middle bones of the four small toes?",
      "options": [
       "Flexor digitorum longus",
       "Flexor digitorum brevis",
@@ -1379,7 +1379,7 @@
       "Fibularis longus"
      ],
      "answer": 1,
-     "explanation": "Flexor digitorum brevis, in the sole, inserts on the middle phalanges of toes II to V."
+     "explanation": "Flexor digitorum brevis, a muscle in the sole, attaches to the middle phalanges of toes two to five."
     }
    ]
   },
@@ -1415,18 +1415,18 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The middle bone of the third toe, between its proximal and distal phalanges. The big toe has no middle phalanx.",
-    "description": "A short bone, much shorter than the proximal phalanx, with a joint at each end.",
-    "function": "Lets the toe curl to grip the ground. Flexor digitorum brevis attaches to its sides.",
-    "mnemonic": "Middle = in the middle, and the big toe skips it.",
-    "clinical": "Toe phalanx fractures are usually managed with buddy strapping and a stiff-soled shoe.",
-    "hint": "The in-between bone of the third toe."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the middle soldier of the third toe.",
+    "location": "It is the middle bone of the third toe, between its first bone and its tip.",
+    "description": "A short little bone with a joint at each end, like a bead on a string.",
+    "function": "It helps the toe curl so you can grip the ground. A muscle in the sole, flexor digitorum brevis, attaches to its sides.",
+    "mnemonic": "Middle means middle. Small toes have one, and the big toe goes without.",
+    "clinical": "Small toe breaks are usually treated by taping the toe to its neighbour and wearing a stiff-soled shoe.",
+    "hint": "Find the in-between bone of the third toe."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which two bones does the middle phalanx of the third toe articulate with?",
+     "text": "Which two bones does the middle phalanx of the third toe meet?",
      "options": [
       "Third metatarsal and lateral cuneiform",
       "Proximal and distal phalanges of the third toe",
@@ -1434,7 +1434,7 @@
       "Talus and navicular"
      ],
      "answer": 1,
-     "explanation": "A middle phalanx sits between, and articulates with, the proximal and distal phalanges of its toe."
+     "explanation": "A middle phalanx sits between the first bone and the tip bone of its own toe, with a joint at each end."
     }
    ]
   },
@@ -1470,13 +1470,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The middle bone of the fourth toe, between its proximal and distal phalanges. The big toe has no middle phalanx.",
-    "description": "A short bone, much shorter than the proximal phalanx, with a joint at each end.",
-    "function": "Adds a second bending joint to the toe. Flexor digitorum brevis attaches to its sides.",
-    "mnemonic": "Middle = in the middle, and the big toe skips it.",
-    "clinical": "In claw toe the joints on either side of this bone are bent down while the MTP joint is bent up.",
-    "hint": "The in-between bone of the fourth toe."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the fourth toe's middle soldier.",
+    "location": "It is the middle bone of the fourth toe, between its first bone and its tip.",
+    "description": "A short bone, much shorter than the first toe bone, with a small joint at each end.",
+    "function": "It gives the fourth toe a second bending joint. A muscle in the sole, flexor digitorum brevis, attaches to its sides.",
+    "mnemonic": "Middle bone, middle place. The big toe is the only one without it.",
+    "clinical": "In claw toe, the joints on both sides of this bone bend down while the joint at the ball of the foot bends up.",
+    "hint": "Find the in-between bone of the fourth toe."
    },
    "questions": [
     {
@@ -1489,7 +1489,7 @@
       "Third toe"
      ],
      "answer": 2,
-     "explanation": "The big toe has only proximal and distal phalanges; each lesser toe has a middle phalanx."
+     "explanation": "The big toe has only two bones, near and far. Each of the small toes has a middle bone too."
     }
    ]
   },
@@ -1525,13 +1525,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The middle bone of the little toe, between its proximal and distal phalanges. The big toe has no middle phalanx.",
-    "description": "A short bone, much shorter than the proximal phalanx, with a joint at each end. Often fused with the distal phalanx.",
-    "function": "Adds a joint to the little toe, though this joint moves little.",
-    "mnemonic": "Middle = in the middle, and the big toe skips it.",
-    "clinical": "In many people this bone is fused with the distal phalanx, so the little toe appears to have only two bones on an X-ray.",
-    "hint": "The in-between bone of the little toe."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the little toe's middle soldier.",
+    "location": "It is the middle bone of the little toe, between its first bone and its tip.",
+    "description": "A tiny, short bone with a joint at each end. In many people it is joined to the tip bone.",
+    "function": "It adds a joint to the little toe, though that joint hardly moves.",
+    "mnemonic": "Middle means middle. The big toe skips it, and the little toe often merges it with the tip.",
+    "clinical": "In many people it is fused with the tip bone, so the little toe shows only two bones on an X-ray. That is normal, not an injury.",
+    "hint": "Find the in-between bone of the little toe."
    },
    "questions": [
     {
@@ -1540,11 +1540,11 @@
      "options": [
       "Between the fifth metatarsal and the cuboid",
       "At the base of the big toe",
-      "Between the proximal and distal phalanges of the little toe",
-      "Beside the lateral malleolus"
+      "Between the first and tip bones of the little toe",
+      "Beside the outer ankle bump"
      ],
      "answer": 2,
-     "explanation": "The middle phalanx lies between the proximal and distal phalanges of its toe."
+     "explanation": "The middle phalanx lies between the first bone and the tip bone of its toe."
     }
    ]
   },
@@ -1577,18 +1577,18 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows. Hallux is Latin for the big toe.",
-    "location": "The tip bone of the big toe, in front of its proximal phalanx.",
-    "description": "A short, broad bone with a rough, flattened tip (the tuberosity) that supports the toe pad and toenail.",
-    "function": "Supports the tip of the big toe for the final push-off in walking. Flexor hallucis longus attaches underneath its base to bend the toe, and extensor hallucis longus attaches on top to straighten it.",
-    "mnemonic": "Distal = distant from the foot: the toe tip. Both long hallux muscles end here.",
-    "clinical": "Ingrown toenails most often affect the big toe. A crush injury can break the tip and cause bleeding under the nail (subungual haematoma).",
-    "hint": "The tip bone of the big toe, under the largest toenail."
+    "origin": "From the Greek word phalanx, a line of soldiers. Hallux, the Latin name for the big toe, is where this bone lives.",
+    "location": "It is the tip bone of the big toe, in front of its first bone.",
+    "description": "A short, broad bone with a rough, flat tip that supports the toe pad and toenail.",
+    "function": "It gives the big toe a firm tip for the final push-off in walking. Flexor hallucis longus bends it from underneath, and extensor hallucis longus straightens it from on top.",
+    "mnemonic": "Distal is distant from the foot, right at the tip. Both long big toe muscles end here.",
+    "clinical": "Ingrown toenails most often affect the big toe. Crushing the tip can break this bone and cause a painful bruise under the nail.",
+    "hint": "Find the tip bone of the big toe, under the largest toenail."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which muscle attaches to the plantar surface of the base of the distal phalanx of the big toe?",
+     "text": "Which muscle attaches under the base of the big toe's tip bone?",
      "options": [
       "Fibularis brevis",
       "Tibialis anterior",
@@ -1596,7 +1596,7 @@
       "Flexor hallucis longus"
      ],
      "answer": 3,
-     "explanation": "Flexor hallucis longus inserts on the base of the distal phalanx of the big toe to bend it."
+     "explanation": "Flexor hallucis longus attaches under the base of the big toe's tip bone and bends the toe down."
     }
    ]
   },
@@ -1626,26 +1626,26 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The tip bone of the second toe, under the toenail.",
-    "description": "A tiny bone with a flattened, rough tip (the tuberosity) that supports the toe pad and nail.",
-    "function": "Supports the toe tip. Flexor digitorum longus attaches underneath to bend the tip, and the extensor digitorum longus tendon attaches on top.",
-    "mnemonic": "Distal = distant from the foot: the toe tip.",
-    "clinical": "Mallet toe is a fixed bend at the joint just before this bone, so the toe tip points down and may rub on the shoe.",
-    "hint": "The tip bone of the second toe."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the front soldier of the second toe.",
+    "location": "It is the tip bone of the second toe, under the toenail.",
+    "description": "A tiny bone with a flat, rough tip that props up the toe pad and nail.",
+    "function": "It supports the toe tip. Flexor digitorum longus bends it from below, and extensor digitorum longus lifts it from above.",
+    "mnemonic": "Distal means distant from the foot. It is the toe tip.",
+    "clinical": "Mallet toe is a fixed bend at the joint just behind this bone. The tip points down and can rub on the shoe.",
+    "hint": "Find the tip bone of the second toe."
    },
    "questions": [
     {
      "kind": "clinical",
      "text": "Mallet toe is a fixed bend at which joint?",
      "options": [
-      "The joint just before the distal phalanx",
+      "The joint just before the tip bone",
       "The ankle joint",
-      "The joint between metatarsal and proximal phalanx",
+      "The joint between metatarsal and first toe bone",
       "The joint between talus and calcaneus"
      ],
      "answer": 0,
-     "explanation": "In mallet toe the distal interphalangeal joint is bent, so the tip (distal phalanx) points down."
+     "explanation": "In mallet toe, the last joint of the toe stays bent, so the tip bone points down."
     }
    ]
   },
@@ -1675,18 +1675,18 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The tip bone of the third toe, under the toenail.",
-    "description": "A tiny bone with a flattened, rough tip (the tuberosity) that supports the toe pad and nail.",
-    "function": "Supports the toe tip and nail. Flexor digitorum longus attaches underneath to bend the tip.",
-    "mnemonic": "Distal = distant from the foot: the toe tip.",
-    "clinical": "Toe tips are often broken in crush injuries, sometimes with bleeding under the nail.",
-    "hint": "The tip bone of the third toe."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the third toe's front-line soldier.",
+    "location": "It is the tip bone of the third toe, under the toenail.",
+    "description": "A tiny bone with a flattened, rough tip, like a little shelf for the toe pad and nail.",
+    "function": "It supports the toe tip and nail. The long muscle flexor digitorum longus pulls on it from below to curl the tip.",
+    "mnemonic": "Distal is distant, so it is the toe tip.",
+    "clinical": "Dropping something heavy on your foot can break toe tips like this one, sometimes with blood trapped under the nail.",
+    "hint": "Find the tip bone of the third toe."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which long muscle bends the tips of the lateral four toes?",
+     "text": "Which long muscle bends the tips of the four small toes?",
      "options": [
       "Flexor hallucis longus",
       "Tibialis anterior",
@@ -1694,7 +1694,7 @@
       "Fibularis brevis"
      ],
      "answer": 2,
-     "explanation": "Flexor digitorum longus inserts on the distal phalanges of toes II to V and bends the toe tips."
+     "explanation": "Flexor digitorum longus attaches to the tip bones of toes two to five and curls them down."
     }
    ]
   },
@@ -1724,13 +1724,13 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The tip bone of the fourth toe, under the toenail.",
-    "description": "A tiny bone with a flattened, rough tip (the tuberosity) that supports the toe pad and nail.",
-    "function": "Supports the toe tip and nail. Flexor digitorum longus attaches underneath and extensor digitorum longus on top.",
-    "mnemonic": "Distal = distant from the foot: the toe tip.",
-    "clinical": "Crush injuries of the toe tips can break this bone; they are usually treated with protection and strapping.",
-    "hint": "The tip bone of the fourth toe."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the fourth toe's soldier at the front.",
+    "location": "It is the tip bone of the fourth toe, under the toenail.",
+    "description": "A tiny bone with a flat, rough tip that supports the toe pad and nail.",
+    "function": "It supports the toe tip and nail. Flexor digitorum longus attaches below, and extensor digitorum longus on top.",
+    "mnemonic": "Distal means distant, so think of it as the bone at the far end.",
+    "clinical": "Crushed toe tips can break this bone. They usually heal with protection and taping.",
+    "hint": "Find the tip bone of the fourth toe."
    },
    "questions": [
     {
@@ -1743,7 +1743,7 @@
       "Under the head of the fourth metatarsal"
      ],
      "answer": 1,
-     "explanation": "Distal phalanges are the tip bones of the toes, under the nails."
+     "explanation": "Distal phalanges are the tip bones of the toes, sitting under the nails."
     }
    ]
   },
@@ -1773,18 +1773,18 @@
    ],
    "content": {
     "pronunciation": "FAL-anks (plural: fa-LAN-jeez)",
-    "origin": "Greek phalanx, \"a line of soldiers\": the toe bones line up in rows.",
-    "location": "The tip bone of the little toe, under the toenail.",
-    "description": "A tiny bone with a flattened, rough tip (the tuberosity) that supports the toe pad and nail.",
-    "function": "Supports the tip and nail of the little toe. Flexor digitorum longus attaches underneath.",
-    "mnemonic": "Distal = distant from the foot: the toe tip.",
-    "clinical": "The little toe's middle and distal phalanges are fused into one bone in many people, which is a normal variant, not an injury.",
-    "hint": "The tip bone of the little toe."
+    "origin": "From the Greek word phalanx, a line of soldiers. This is the little toe's last soldier.",
+    "location": "It is the tip bone of the little toe, under the toenail.",
+    "description": "A tiny bone with a flat, rough tip that props up the toe pad and nail.",
+    "function": "It supports the tip and nail of the little toe. Flexor digitorum longus pulls on it from underneath.",
+    "mnemonic": "Distal is distant, at the tip. On the little toe it often teams up with the middle bone.",
+    "clinical": "In many people this bone is fused with the middle bone. That is a normal variation, not an injury.",
+    "hint": "Find the tip bone of the little toe."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "In many people, the distal phalanx of the little toe is fused with which bone?",
+     "text": "In many people, the tip bone of the little toe is fused with which bone?",
      "options": [
       "Fifth metatarsal",
       "Cuboid",
@@ -1792,7 +1792,7 @@
       "Middle phalanx of the little toe"
      ],
      "answer": 3,
-     "explanation": "Fusion of the middle and distal phalanges of the little toe is a common normal variant."
+     "explanation": "In many people, the middle and tip bones of the little toe grow together. It is a common, normal variation."
     }
    ]
   }

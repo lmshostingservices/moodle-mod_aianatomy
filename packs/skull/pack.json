@@ -118,25 +118,25 @@
    "id": "skull",
    "label": "Skull",
    "parent": null,
-   "tip": "The skull has 22 bones: 8 cranial and 14 facial. The hyoid is counted separately because it does not join the skull. Most skull bones meet at immovable joints called sutures."
+   "tip": "The skull has 22 bones: eight around the brain and 14 in the face. Most meet at locked seams called sutures, and the hyoid is counted separately."
   },
   {
    "id": "cranial",
    "label": "Cranial bones (neurocranium)",
    "parent": "skull",
-   "tip": "The 8 cranial bones: \"Old People From Texas Eat Spiders\" - Occipital, Parietal (2), Frontal, Temporal (2), Ethmoid, Sphenoid."
+   "tip": "Old People From Texas Eat Spiders names the eight cranial bones: occipital, two parietals, frontal, two temporals, ethmoid and sphenoid."
   },
   {
    "id": "facial",
    "label": "Facial bones (viscerocranium)",
    "parent": "skull",
-   "tip": "The 14 facial bones: \"Virgil Can Not Make My Pet Zebra Laugh\" - Vomer, Conchae (inferior nasal), Nasal, Maxilla, Mandible, Palatine, Zygomatic, Lacrimal. Only the vomer and mandible are single."
+   "tip": "Virgil Can Not Make My Pet Zebra Laugh names the 14 facial bones. Only the vomer and mandible come as singles, the rest come in pairs."
   },
   {
    "id": "mandible_hyoid",
    "label": "Mandible and hyoid",
    "parent": "skull",
-   "tip": "The mandible is the only freely movable skull bone; the hyoid below it is the only bone that does not articulate with any other bone."
+   "tip": "The mandible is the only skull bone that moves freely, every time you talk or chew. The hyoid below it floats alone, touching no other bone."
   }
  ],
  "structures": [
@@ -210,18 +210,18 @@
    ],
    "content": {
     "pronunciation": "FRUN-tul",
-    "origin": "Latin frons, frontis, \"forehead\".",
-    "location": "The front of the cranium, forming the forehead and the roofs of the orbits (eye sockets). It meets the two parietal bones at the coronal suture.",
-    "description": "A shell-shaped bone with a flat, curved squamous part (the forehead) and two thin orbital plates. It contains the frontal sinuses, air spaces just above the eyebrows, and has supraorbital notches or foramina above each orbit.",
-    "function": "Protects the frontal lobes of the brain, shapes the forehead and forms the upper rim and roof of each orbit.",
-    "mnemonic": "Frontal = forehead: both start with \"F\", and it sits at the front.",
-    "clinical": "The frontal sinuses can become infected and blocked (frontal sinusitis), causing pain and tenderness above the eyes that is often worse when bending forward.",
-    "hint": "The single bone behind your forehead, forming the roof of both eye sockets."
+    "origin": "From the Latin word frons, meaning forehead. It is the bone at the front of your head.",
+    "location": "Behind your forehead, forming the roof of both eye sockets. It meets the two parietal bones along the coronal suture, a seam across the top of the head.",
+    "description": "A curved shell of bone, like the front of a helmet. Inside it, just above your eyebrows, are two air spaces called the frontal sinuses.",
+    "function": "It guards the front of your brain, the part that plans and decides. It also shapes your forehead and forms the top rim of each eye socket.",
+    "mnemonic": "Frontal and forehead both start with F, and both sit at the front.",
+    "clinical": "The frontal sinuses can get infected and blocked. This gives pain above the eyes that often gets worse when you bend forward.",
+    "hint": "The single bone behind the forehead, forming the roof of both eye sockets."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which suture joins the frontal bone to the two parietal bones?",
+     "text": "Which seam joins the frontal bone to the two parietal bones?",
      "options": [
       "Sagittal suture",
       "Lambdoid suture",
@@ -229,11 +229,11 @@
       "Squamous suture"
      ],
      "answer": 2,
-     "explanation": "The coronal suture runs across the top of the skull between the frontal bone and the parietal bones."
+     "explanation": "The coronal suture runs across the top of your head, like a headband, between the frontal and parietal bones."
     },
     {
      "kind": "clinical",
-     "text": "Pain and tenderness just above the eyebrows during a sinus infection most likely involves the sinus in which bone?",
+     "text": "Sinus pain just above the eyebrows most likely comes from a sinus in which bone?",
      "options": [
       "Frontal bone",
       "Sphenoid bone",
@@ -241,7 +241,7 @@
       "Ethmoid bone"
      ],
      "answer": 0,
-     "explanation": "The frontal sinuses lie in the frontal bone just above the eyebrows."
+     "explanation": "The frontal sinuses sit inside the frontal bone, just above your eyebrows."
     }
    ]
   },
@@ -287,18 +287,18 @@
    ],
    "content": {
     "pronunciation": "ok-SIP-it-ul",
-    "origin": "Latin occiput, \"back of the head\" (ob, \"against\", plus caput, \"head\").",
-    "location": "The back and base of the cranium. It meets the parietal bones at the lambdoid suture and sits on top of the first cervical vertebra (atlas).",
-    "description": "A curved, trapezoid-shaped bone with a large opening, the foramen magnum. On either side of the foramen are the occipital condyles, and on the outer surface is a bump called the external occipital protuberance.",
-    "function": "Protects the back of the brain (occipital lobes and cerebellum), lets the spinal cord pass through the foramen magnum, and forms the atlanto-occipital joints with the atlas for nodding the head.",
-    "mnemonic": "The occipital bone Occupies the back of the head and Opens into the foramen magnum.",
-    "clinical": "Raised pressure inside the skull can push part of the brain and brainstem down through the foramen magnum (coning), which is life-threatening.",
-    "hint": "The bone at the back and base of the skull with the large hole the spinal cord passes through."
+    "origin": "From the Latin occiput, the back of the head. Put your hand on the back of your head and you are touching it.",
+    "location": "At the back and base of your skull. It meets the parietal bones at the lambdoid suture and sits on top of the atlas, the first neck bone.",
+    "description": "A curved, cup-like bone with a big hole in its base, the foramen magnum. Two smooth knuckles sit beside the hole, and a bump sticks out at the back.",
+    "function": "It guards the back of your brain. The spinal cord passes through its big hole, and its knuckles rock on the atlas when you nod.",
+    "mnemonic": "The Occipital bone Occupies the back of the head and Opens into the foramen magnum.",
+    "clinical": "If pressure builds up inside the skull, the brainstem can be pushed down through the big hole. This is called coning, and it is life threatening.",
+    "hint": "Look at the back and base of the skull for the bone with the big hole where the spinal cord passes."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "What is the large opening in the occipital bone called?",
+     "text": "What is the large hole in the occipital bone called?",
      "options": [
       "Foramen ovale",
       "Foramen magnum",
@@ -306,11 +306,11 @@
       "Jugular notch"
      ],
      "answer": 1,
-     "explanation": "The foramen magnum (\"great hole\") in the occipital bone transmits the spinal cord where it joins the brainstem."
+     "explanation": "Foramen magnum means great hole. The spinal cord passes through it to join the brainstem."
     },
     {
      "kind": "function",
-     "text": "The occipital condyles form a joint with which bone?",
+     "text": "The knuckles on the occipital bone, the condyles, form a joint with which bone?",
      "options": [
       "Axis (C2)",
       "Mandible",
@@ -318,7 +318,7 @@
       "Temporal bone"
      ],
      "answer": 2,
-     "explanation": "The occipital condyles sit on the atlas (C1) at the atlanto-occipital joints, which allow nodding."
+     "explanation": "The occipital condyles rest on the atlas, C1. This joint lets you nod yes."
     }
    ]
   },
@@ -392,18 +392,18 @@
    ],
    "content": {
     "pronunciation": "SFEE-noyd",
-    "origin": "Greek sphen, \"wedge\", plus -oeides, \"like\". It is wedged between the other bones of the skull base.",
-    "location": "In the middle of the skull base, behind the eyes, reaching out to the sides of the skull at the temples.",
-    "description": "Shaped like a butterfly or bat, with a central body, greater and lesser wings, and pterygoid plates pointing downwards. The body contains the sphenoid sinus and a saddle-shaped hollow on top, the sella turcica.",
-    "function": "Links the cranial and facial bones, forms part of the floor of the cranium and the walls of the orbits, and cradles the pituitary gland in the sella turcica. Its pterygoid plates give attachment to chewing muscles.",
-    "mnemonic": "Sphenoid = the \"keystone\" of the skull: a butterfly with the pituitary sitting in its saddle.",
-    "clinical": "Surgeons can reach pituitary tumours through the nose and the sphenoid sinus (transsphenoidal surgery), avoiding opening the skull.",
-    "hint": "A butterfly-shaped bone in the middle of the skull base, with a saddle that holds the pituitary gland."
+    "origin": "From the Greek word for a wedge. It is wedged in among the other bones of the skull base.",
+    "location": "In the middle of the skull base, right behind your eyes. Its wings reach out to the sides of your head at the temples.",
+    "description": "Shaped like a butterfly or bat, with a body in the middle and wings spreading out. On top of the body is a saddle-shaped dip called the sella turcica.",
+    "function": "It locks the skull and face bones together and forms part of the eye sockets. Its saddle cradles the pituitary gland, and chewing muscles pull on it.",
+    "mnemonic": "Think of the sphenoid as the keystone of the skull, a butterfly with the pituitary sitting in its saddle.",
+    "clinical": "Surgeons can reach a pituitary tumour through the nose and the sphenoid sinus. This avoids opening the skull.",
+    "hint": "A butterfly-shaped bone in the middle of the skull base, with a saddle that holds a small gland."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which gland sits in the sella turcica of the sphenoid bone?",
+     "text": "Which gland sits in the saddle, or sella turcica, of the sphenoid bone?",
      "options": [
       "Thyroid gland",
       "Pineal gland",
@@ -411,11 +411,11 @@
       "Pituitary gland"
      ],
      "answer": 3,
-     "explanation": "The sella turcica is a saddle-shaped hollow on the sphenoid body that holds the pituitary gland."
+     "explanation": "The pituitary gland, the body's master gland, sits snugly in this saddle-shaped dip."
     },
     {
      "kind": "terminology",
-     "text": "The name sphenoid comes from the Greek for what?",
+     "text": "The name sphenoid comes from the Greek word for what?",
      "options": [
       "Wedge",
       "Sieve",
@@ -423,7 +423,7 @@
       "Shell"
      ],
      "answer": 0,
-     "explanation": "Sphen means \"wedge\"; the sphenoid is wedged between the other bones of the skull base."
+     "explanation": "Sphen means wedge. The sphenoid is wedged in the middle of the skull base."
     }
    ]
   },
@@ -501,18 +501,18 @@
    ],
    "content": {
     "pronunciation": "ETH-moyd",
-    "origin": "Greek ethmos, \"sieve\", plus -oeides, \"like\", after its sieve-like cribriform plate.",
-    "location": "Deep in the centre of the face, between the two orbits and behind the nose, forming the roof of the nasal cavity.",
-    "description": "A light, box-like bone full of air cells (ethmoidal sinuses). It has a horizontal cribriform plate full of small holes, a vertical perpendicular plate in the nasal septum, and the superior and middle nasal conchae on each side.",
-    "function": "Forms the roof, upper septum and side walls of the nasal cavity and part of the medial wall of each orbit. Olfactory (smell) nerve fibres pass through the holes of the cribriform plate.",
-    "mnemonic": "Ethmoid = sieve: the smell nerves \"sieve\" through its holes.",
-    "clinical": "A fracture of the cribriform plate can tear the meninges, causing cerebrospinal fluid to leak from the nose (CSF rhinorrhoea) and loss of smell.",
-    "hint": "A light, sieve-like bone between the eye sockets that forms the roof of the nasal cavity."
+    "origin": "From the Greek word for a sieve. Part of it is full of tiny holes, like a kitchen sieve.",
+    "location": "Deep in the middle of your face, between your eye sockets and behind your nose. It forms the roof of the nose.",
+    "description": "A light, box-like bone full of small air pockets. Its roof is a flat plate peppered with tiny holes, called the cribriform plate.",
+    "function": "It builds the roof and upper walls of your nose and part of each eye socket. Smell nerves pass up through its tiny holes to reach your brain.",
+    "mnemonic": "Ethmoid means sieve. Your smell nerves sieve through its holes.",
+    "clinical": "A break in the thin, holey plate can tear the brain's lining. Clear brain fluid may then drip from the nose, and the sense of smell can be lost.",
+    "hint": "A light, sieve-like bone between the eye sockets that forms the roof of the nose."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which nerve fibres pass through the cribriform plate of the ethmoid bone?",
+     "text": "Which nerve fibres pass through the tiny holes of the ethmoid bone?",
      "options": [
       "Optic nerve fibres",
       "Facial nerve fibres",
@@ -520,11 +520,11 @@
       "Olfactory nerve fibres"
      ],
      "answer": 3,
-     "explanation": "Olfactory (smell) nerve fibres pass from the nasal cavity to the brain through the holes in the cribriform plate."
+     "explanation": "The olfactory fibres carry smell from your nose up through the cribriform plate to your brain."
     },
     {
      "kind": "clinical",
-     "text": "Clear fluid leaking from the nose after a head injury suggests a fracture of which part?",
+     "text": "Clear fluid dripping from the nose after a head injury suggests a break in which part?",
      "options": [
       "Mastoid process",
       "Zygomatic arch",
@@ -532,7 +532,7 @@
       "Mandibular condyle"
      ],
      "answer": 2,
-     "explanation": "A cribriform plate fracture can tear the meninges and let cerebrospinal fluid leak into the nose."
+     "explanation": "A broken cribriform plate can tear the brain's lining and let brain fluid leak into the nose."
     }
    ]
   },
@@ -578,18 +578,18 @@
    ],
    "content": {
     "pronunciation": "pa-RY-uh-tul",
-    "origin": "Latin paries, parietis, \"wall\". The parietal bones form the side walls of the cranium.",
-    "location": "The right upper side and roof of the cranium, behind the frontal bone, above the right temporal bone and in front of the occipital bone.",
-    "description": "A curved, roughly square plate of bone. It meets its partner at the sagittal suture, the frontal bone at the coronal suture, the occipital bone at the lambdoid suture and the temporal bone at the squamous suture.",
-    "function": "Forms much of the roof and side wall of the cranium, protecting the parietal lobe of the brain.",
-    "mnemonic": "Parietal = \"wall\": the two parietal bones are the walls and roof of the brain's house.",
-    "clinical": "In babies, the anterior fontanelle (soft spot) lies where the two parietal bones meet the frontal bone. A sunken fontanelle can suggest dehydration and a bulging one raised pressure inside the skull.",
-    "hint": "A large curved plate forming the roof and right side wall of the cranium, meeting its partner along the midline suture."
+    "origin": "From the Latin word paries, meaning a wall. The two parietal bones are the side walls of your skull.",
+    "location": "The upper right side and roof of your skull, above the right ear. It sits behind the frontal bone and in front of the occipital bone.",
+    "description": "A big, curved, roughly square plate, like a roof tile. It meets its partner along the top of the head, at the sagittal suture.",
+    "function": "It forms much of the roof and right wall of your skull. It guards the part of the brain that makes sense of touch and space.",
+    "mnemonic": "Parietal sounds like partition, a wall. The two parietal bones are the walls and roof of the brain's house.",
+    "clinical": "A baby has a soft spot where the two parietal bones meet the frontal bone. A sunken soft spot can mean dehydration, and a bulging one raised pressure.",
+    "hint": "A large curved plate forming the roof and right side wall of the skull, meeting its partner along the midline seam."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which suture joins the right and left parietal bones?",
+     "text": "Which seam joins the right and left parietal bones?",
      "options": [
       "Sagittal suture",
       "Coronal suture",
@@ -597,7 +597,7 @@
       "Squamous suture"
      ],
      "answer": 0,
-     "explanation": "The sagittal suture runs along the midline of the skull roof between the two parietal bones."
+     "explanation": "The sagittal suture runs front to back along the top of your head, joining the two parietal bones."
     }
    ]
   },
@@ -643,18 +643,18 @@
    ],
    "content": {
     "pronunciation": "TEM-puh-rul",
-    "origin": "Latin tempus, temporis, \"time\". The hair at the temples is often the first to turn grey, showing the passing of time.",
-    "location": "The right side and base of the cranium, around the right ear, below the parietal bone.",
-    "description": "A complex bone with a thin, flat squamous part, a zygomatic process forming part of the cheekbone arch, a mastoid process behind the ear, a slender styloid process, and a dense petrous part inside the skull base. It has the mandibular fossa for the jaw joint and the external acoustic meatus (ear canal).",
-    "function": "Houses and protects the middle and inner ear (hearing and balance), forms the jaw joint (temporomandibular joint) with the mandible, and gives attachment to neck and chewing muscles.",
-    "mnemonic": "Temporal = temple and ear: \"time to listen\" - it holds the organs of hearing.",
-    "clinical": "The pterion, where the frontal, parietal, temporal and sphenoid bones meet, is thin. A blow here can tear the middle meningeal artery underneath and cause an extradural haematoma.",
-    "hint": "The bone around the right ear canal, with a bump behind the ear and a socket for the jaw joint."
+    "origin": "From the Latin word for time. The hair at your temples often turns grey first, showing the passing of time.",
+    "location": "On the right side and base of your skull, all around the right ear, below the parietal bone.",
+    "description": "A busy bone with a thin flat part at the temple, a bump behind the ear and a hollow for the jaw joint. Its ear canal leads inward.",
+    "function": "It holds and protects the parts of the ear for hearing and balance. It also makes the jaw joint with the mandible, so you can chew.",
+    "mnemonic": "Temporal means time to listen. This bone holds your hearing organs.",
+    "clinical": "The pterion, where four skull bones meet at the temple, is thin. A blow here can tear the artery beneath and cause a dangerous bleed outside the brain's lining.",
+    "hint": "The bone around the right ear canal, with a bump behind the ear and a hollow for the jaw joint."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "The temporal bone forms a joint with which bone to allow chewing?",
+     "text": "The temporal bone forms a joint with which bone so you can chew?",
      "options": [
       "Maxilla",
       "Zygomatic bone",
@@ -662,11 +662,11 @@
       "Sphenoid bone"
      ],
      "answer": 2,
-     "explanation": "The mandibular fossa of the temporal bone forms the temporomandibular joint with the mandible."
+     "explanation": "The jaw bone, the mandible, fits into a hollow in the temporal bone to make the jaw joint."
     },
     {
      "kind": "clinical",
-     "text": "A blow to the pterion on the side of the head can tear which artery?",
+     "text": "A blow to the thin pterion at the side of the head can tear which artery?",
      "options": [
       "Middle meningeal artery",
       "Vertebral artery",
@@ -674,7 +674,7 @@
       "Basilar artery"
      ],
      "answer": 0,
-     "explanation": "The middle meningeal artery runs just deep to the thin pterion, and tearing it causes an extradural haematoma."
+     "explanation": "The middle meningeal artery runs just under the thin pterion. If it tears, blood collects outside the brain's lining."
     }
    ]
   },
@@ -720,13 +720,13 @@
    ],
    "content": {
     "pronunciation": "pa-RY-uh-tul",
-    "origin": "Latin paries, parietis, \"wall\". The parietal bones form the side walls of the cranium.",
-    "location": "The left upper side and roof of the cranium, behind the frontal bone, above the left temporal bone and in front of the occipital bone.",
-    "description": "A curved, roughly square plate of bone. It meets its partner at the sagittal suture, the frontal bone at the coronal suture, the occipital bone at the lambdoid suture and the temporal bone at the squamous suture.",
-    "function": "Forms much of the roof and side wall of the cranium, protecting the parietal lobe of the brain.",
-    "mnemonic": "Parietal = \"wall\": the two parietal bones are the walls and roof of the brain's house.",
-    "clinical": "In babies, the anterior fontanelle (soft spot) lies where the two parietal bones meet the frontal bone. A sunken fontanelle can suggest dehydration and a bulging one raised pressure inside the skull.",
-    "hint": "A large curved plate forming the roof and left side wall of the cranium, meeting its partner along the midline suture."
+    "origin": "From the Latin word paries, meaning a wall. The two parietal bones are the side walls of your skull.",
+    "location": "The upper left side and roof of your skull, above the left ear. It sits behind the frontal bone and in front of the occipital bone.",
+    "description": "A big, curved, roughly square plate, like a roof tile. It meets its partner along the top of the head, at the sagittal suture.",
+    "function": "It forms much of the roof and left wall of your skull. It guards the part of the brain that makes sense of touch and space.",
+    "mnemonic": "Picture the two parietal bones as the walls of the brain's house, meeting at the roof ridge.",
+    "clinical": "In babies, the soft spot at the front of the head lies where both parietal bones meet the frontal bone. Doctors check it for sinking or bulging.",
+    "hint": "A large curved plate forming the roof and left side wall of the skull, meeting its partner along the midline seam."
    },
    "questions": []
   },
@@ -772,13 +772,13 @@
    ],
    "content": {
     "pronunciation": "TEM-puh-rul",
-    "origin": "Latin tempus, temporis, \"time\". The hair at the temples is often the first to turn grey, showing the passing of time.",
-    "location": "The left side and base of the cranium, around the left ear, below the parietal bone.",
-    "description": "A complex bone with a thin, flat squamous part, a zygomatic process forming part of the cheekbone arch, a mastoid process behind the ear, a slender styloid process, and a dense petrous part inside the skull base. It has the mandibular fossa for the jaw joint and the external acoustic meatus (ear canal).",
-    "function": "Houses and protects the middle and inner ear (hearing and balance), forms the jaw joint (temporomandibular joint) with the mandible, and gives attachment to neck and chewing muscles.",
-    "mnemonic": "Temporal = temple and ear: \"time to listen\" - it holds the organs of hearing.",
-    "clinical": "The pterion, where the frontal, parietal, temporal and sphenoid bones meet, is thin. A blow here can tear the middle meningeal artery underneath and cause an extradural haematoma.",
-    "hint": "The bone around the left ear canal, with a bump behind the ear and a socket for the jaw joint."
+    "origin": "From the Latin word for time. The hair at your temples often turns grey first, showing the passing of time.",
+    "location": "On the left side and base of your skull, all around the left ear, below the parietal bone.",
+    "description": "A busy bone with a thin flat part at the temple, a bump behind the ear and a hollow for the jaw joint. Its ear canal leads inward.",
+    "function": "It holds and protects the parts of the ear for hearing and balance. It also makes the jaw joint with the mandible, so you can chew.",
+    "mnemonic": "Temple, time and tympanum, the eardrum. This bone surrounds your ear.",
+    "clinical": "The thin spot at the temple called the pterion covers the middle meningeal artery. A hard knock there can make it bleed and press on the brain.",
+    "hint": "The bone around the left ear canal, with a bump behind the ear and a hollow for the jaw joint."
    },
    "questions": []
   },
@@ -820,18 +820,18 @@
    ],
    "content": {
     "pronunciation": "NAY-zul",
-    "origin": "Latin nasus, \"nose\".",
-    "location": "The upper part of the nose, on the right of the midline, between the frontal bone above and the right maxilla at the side.",
-    "description": "A small, thin, oblong bone. It meets its partner in the midline to form the bony bridge of the nose; the lower nose is shaped by cartilage.",
-    "function": "Forms the bridge of the nose and supports the nasal cartilages below it.",
-    "mnemonic": "Nasal = nose: the two small bones on the bridge where glasses rest.",
-    "clinical": "The nasal bones are the most commonly fractured facial bones, usually from a direct blow to the nose.",
-    "hint": "One of the two small bones forming the bony bridge of the nose, where glasses rest."
+    "origin": "From the Latin word nasus, meaning nose.",
+    "location": "In the upper part of your nose, just right of the middle line. The frontal bone is above it and the right maxilla is beside it.",
+    "description": "A small, thin, oblong bone. It meets its partner in the middle to make the bony bridge of the nose, while the softer lower nose is cartilage.",
+    "function": "It forms the hard bridge of your nose and holds up the bendy cartilage below.",
+    "mnemonic": "The nasal bones are where your glasses rest. Feel the hard bit at the top of your nose.",
+    "clinical": "The nasal bones break more often than any other face bone, usually from a direct knock to the nose.",
+    "hint": "One of the two small bones forming the hard bridge of the nose, where glasses rest."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Which is the most commonly fractured facial bone?",
+     "text": "Which face bone is broken most often?",
      "options": [
       "Zygomatic bone",
       "Nasal bone",
@@ -839,7 +839,7 @@
       "Lacrimal bone"
      ],
      "answer": 1,
-     "explanation": "The nasal bones project forward and are thin, so they are the most commonly fractured facial bones."
+     "explanation": "The nasal bones stick out and are thin, so they break more easily than any other bone of the face."
     }
    ]
   },
@@ -881,13 +881,13 @@
    ],
    "content": {
     "pronunciation": "NAY-zul",
-    "origin": "Latin nasus, \"nose\".",
-    "location": "The upper part of the nose, on the left of the midline, between the frontal bone above and the left maxilla at the side.",
-    "description": "A small, thin, oblong bone. It meets its partner in the midline to form the bony bridge of the nose; the lower nose is shaped by cartilage.",
-    "function": "Forms the bridge of the nose and supports the nasal cartilages below it.",
-    "mnemonic": "Nasal = nose: the two small bones on the bridge where glasses rest.",
-    "clinical": "The nasal bones are the most commonly fractured facial bones, usually from a direct blow to the nose.",
-    "hint": "One of the two small bones forming the bony bridge of the nose, where glasses rest."
+    "origin": "From the Latin word nasus, meaning nose.",
+    "location": "In the upper part of your nose, just left of the middle line. The frontal bone is above it and the left maxilla is beside it.",
+    "description": "A small, thin, oblong bone. It meets its partner in the middle to make the bony bridge of the nose, while the softer lower nose is cartilage.",
+    "function": "It forms the hard bridge of your nose and holds up the bendy cartilage below.",
+    "mnemonic": "Pinch the top of your nose. The hard part is the two nasal bones, the rest is cartilage.",
+    "clinical": "A punch or a ball to the face often breaks the nasal bones. They are the most often broken bones of the face.",
+    "hint": "One of the two small bones forming the hard bridge of the nose, where glasses rest."
    },
    "questions": []
   },
@@ -929,13 +929,13 @@
    ],
    "content": {
     "pronunciation": "LAK-rim-ul",
-    "origin": "Latin lacrima, \"tear\".",
-    "location": "The front of the medial wall of the right orbit, just behind the frontal process of the maxilla.",
-    "description": "The smallest and most fragile bone of the face, about the size of a fingernail. It has a groove that forms the lacrimal fossa for the lacrimal (tear) sac.",
-    "function": "Forms part of the medial wall of the orbit and, with the maxilla, houses the lacrimal sac and the start of the nasolacrimal duct, which drains tears into the nose.",
-    "mnemonic": "Lacrimal = tears: a tiny bone where the tears drain away (think \"lacrimal = lachrymose\").",
-    "clinical": "A blocked nasolacrimal duct stops tears draining into the nose, causing a watery, sometimes sticky eye. It is common in newborns and usually settles on its own.",
-    "hint": "The smallest facial bone, a fingernail-sized plate in the inner wall of the eye socket where tears drain."
+    "origin": "From the Latin word lacrima, meaning a tear.",
+    "location": "In the inner wall of your right eye socket, near the front, close to the side of your nose.",
+    "description": "The smallest and most fragile bone of the face, about the size of a fingernail. A groove in it holds the tear sac.",
+    "function": "It helps build the inner wall of the eye socket. With the maxilla it houses the tear sac and the start of the duct that drains tears into your nose.",
+    "mnemonic": "Lacrimal means tears. It is the tiny bone where your tears drain away.",
+    "clinical": "If the tear duct is blocked, tears cannot drain into the nose, so the eye waters and may get sticky. This is common in newborns and usually clears up.",
+    "hint": "The smallest face bone, a fingernail-sized plate in the inner wall of the eye socket where tears drain."
    },
    "questions": [
     {
@@ -948,19 +948,19 @@
       "Tears"
      ],
      "answer": 3,
-     "explanation": "Lacrima is Latin for \"tear\"; the lacrimal bone houses the tear sac."
+     "explanation": "Lacrima is Latin for a tear. The lacrimal bone holds the tear sac."
     },
     {
      "kind": "location",
      "text": "Where is the lacrimal bone found?",
      "options": [
       "In the hard palate",
-      "In the medial wall of the orbit",
+      "In the inner wall of the eye socket",
       "In the nasal septum",
       "Behind the ear"
      ],
      "answer": 1,
-     "explanation": "The lacrimal bone lies at the front of the medial (inner) wall of the orbit."
+     "explanation": "The lacrimal bone sits at the front of the inner wall of the eye socket, next to the nose."
     }
    ]
   },
@@ -1002,13 +1002,13 @@
    ],
    "content": {
     "pronunciation": "LAK-rim-ul",
-    "origin": "Latin lacrima, \"tear\".",
-    "location": "The front of the medial wall of the left orbit, just behind the frontal process of the maxilla.",
-    "description": "The smallest and most fragile bone of the face, about the size of a fingernail. It has a groove that forms the lacrimal fossa for the lacrimal (tear) sac.",
-    "function": "Forms part of the medial wall of the orbit and, with the maxilla, houses the lacrimal sac and the start of the nasolacrimal duct, which drains tears into the nose.",
-    "mnemonic": "Lacrimal = tears: a tiny bone where the tears drain away (think \"lacrimal = lachrymose\").",
-    "clinical": "A blocked nasolacrimal duct stops tears draining into the nose, causing a watery, sometimes sticky eye. It is common in newborns and usually settles on its own.",
-    "hint": "The smallest facial bone, a fingernail-sized plate in the inner wall of the eye socket where tears drain."
+    "origin": "From the Latin word lacrima, meaning a tear.",
+    "location": "In the inner wall of your left eye socket, near the front, close to the side of your nose.",
+    "description": "The smallest and most fragile bone of the face, about the size of a fingernail. A groove in it holds the tear sac.",
+    "function": "It helps build the inner wall of the eye socket. With the maxilla it houses the tear sac and the start of the duct that drains tears into your nose.",
+    "mnemonic": "Think lachrymose, a word for tearful. The lacrimal bone is where tears drain.",
+    "clinical": "That is why your nose runs when you cry. A blocked tear duct gives a watery eye, often in newborn babies, and usually clears on its own.",
+    "hint": "The smallest face bone, a fingernail-sized plate in the inner wall of the eye socket where tears drain."
    },
    "questions": []
   },
@@ -1053,18 +1053,18 @@
    ],
    "content": {
     "pronunciation": "zy-goh-MAT-ik",
-    "origin": "Greek zygon, \"yoke\". With the temporal bone it forms an arch that \"yokes\" the face to the side of the skull.",
-    "location": "The prominence of the right cheek, forming the lateral wall and lower outer rim of the right orbit.",
-    "description": "A roughly diamond-shaped bone. Its temporal process joins the zygomatic process of the temporal bone to form the zygomatic arch.",
-    "function": "Shapes the cheek, protects the eye from the side and below, and gives origin to the masseter muscle, a powerful chewing muscle.",
-    "mnemonic": "Zygomatic = \"yoke\": the cheekbone yokes the face to the temple via the zygomatic arch.",
-    "clinical": "A blow to the cheek can cause a zygomatic complex (tripod) fracture, giving a flattened cheek, numbness of the cheek and sometimes double vision.",
-    "hint": "The right cheekbone, forming the outer rim of the eye socket and the front of the arch at the side of the face."
+    "origin": "From the Greek word for a yoke. With the temporal bone it makes an arch that yokes your face to the side of your skull.",
+    "location": "The high point of your right cheek. It also forms the outer wall and lower outer rim of the right eye socket.",
+    "description": "A roughly diamond-shaped bone. A finger of bone reaches back to join the temporal bone, making the cheekbone arch.",
+    "function": "It shapes your cheek and shields your eye from the side and below. The masseter, a strong chewing muscle, starts from it.",
+    "mnemonic": "Zygomatic means yoke. Your cheekbone yokes your face to your temple.",
+    "clinical": "A hard blow to the cheek can break it in several places. The cheek looks flat, may feel numb, and vision can go double.",
+    "hint": "Find the high point of the right cheek, the bone under the outer rim of the eye socket."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "The zygomatic arch is formed by the zygomatic bone and which other bone?",
+     "text": "The cheekbone arch is made by the zygomatic bone and which other bone?",
      "options": [
       "Sphenoid bone",
       "Maxilla",
@@ -1072,7 +1072,7 @@
       "Temporal bone"
      ],
      "answer": 3,
-     "explanation": "The temporal process of the zygomatic bone joins the zygomatic process of the temporal bone to form the arch."
+     "explanation": "A finger of the zygomatic bone meets a finger of the temporal bone. Together they form the zygomatic arch."
     }
    ]
   },
@@ -1117,13 +1117,13 @@
    ],
    "content": {
     "pronunciation": "zy-goh-MAT-ik",
-    "origin": "Greek zygon, \"yoke\". With the temporal bone it forms an arch that \"yokes\" the face to the side of the skull.",
-    "location": "The prominence of the left cheek, forming the lateral wall and lower outer rim of the left orbit.",
-    "description": "A roughly diamond-shaped bone. Its temporal process joins the zygomatic process of the temporal bone to form the zygomatic arch.",
-    "function": "Shapes the cheek, protects the eye from the side and below, and gives origin to the masseter muscle, a powerful chewing muscle.",
-    "mnemonic": "Zygomatic = \"yoke\": the cheekbone yokes the face to the temple via the zygomatic arch.",
-    "clinical": "A blow to the cheek can cause a zygomatic complex (tripod) fracture, giving a flattened cheek, numbness of the cheek and sometimes double vision.",
-    "hint": "The left cheekbone, forming the outer rim of the eye socket and the front of the arch at the side of the face."
+    "origin": "From the Greek word for a yoke. With the temporal bone it makes an arch that yokes your face to the side of your skull.",
+    "location": "The high point of your left cheek. It also forms the outer wall and lower outer rim of the left eye socket.",
+    "description": "A roughly diamond-shaped bone. A finger of bone reaches back to join the temporal bone, making the cheekbone arch.",
+    "function": "It shapes your cheek and shields your eye from the side and below. The masseter, a strong chewing muscle, starts from it.",
+    "mnemonic": "Run your finger back along your cheekbone toward your ear. That bridge is the zygomatic arch.",
+    "clinical": "A punch to the cheek can crack this bone and its arch. Signs include a flattened cheek, a numb cheek and sometimes double vision.",
+    "hint": "Find the high point of the left cheek, the bone under the outer rim of the eye socket."
    },
    "questions": []
   },
@@ -1188,13 +1188,13 @@
    ],
    "content": {
     "pronunciation": "mak-SIL-uh",
-    "origin": "Latin maxilla, \"jaw\" or \"jawbone\".",
-    "location": "The right half of the upper jaw, in the middle of the face below the right orbit and beside the nasal cavity.",
-    "description": "The two maxillae fuse in the midline to form the upper jaw. Each has an alveolar process holding the upper teeth, a palatine process forming most of the hard palate, a frontal process beside the nose, and the large maxillary sinus in its body.",
-    "function": "Holds the upper teeth, forms most of the hard palate (roof of the mouth), the floor of the orbit and part of the walls of the nasal cavity. The facial bones are arranged around it, so it is often called the keystone of the face.",
-    "mnemonic": "Maxilla holds the upper teeth; Mandible Moves below it.",
-    "clinical": "The maxillary sinus is the largest paranasal sinus. Because the roots of the upper back teeth lie just below its floor, maxillary sinusitis can feel like upper toothache, and an upper tooth infection can spread into the sinus.",
-    "hint": "The right half of the upper jaw, holding the upper teeth and containing the largest air sinus of the face."
+    "origin": "From the Latin word maxilla, meaning jaw or jawbone.",
+    "location": "The right half of your upper jaw, in the middle of your face. It sits below the right eye socket and beside the nose.",
+    "description": "The two maxillae join in the middle to make the upper jaw. Each holds a row of upper teeth and hides a large air space, the maxillary sinus.",
+    "function": "It holds your upper teeth and forms most of the roof of your mouth. It also makes the floor of the eye socket, so it is called the keystone of the face.",
+    "mnemonic": "The Maxilla holds the upper teeth still, while the Mandible Moves below it.",
+    "clinical": "The maxillary sinus is the biggest sinus of the face. The roots of the upper back teeth sit just under it, so a sinus infection can feel like toothache.",
+    "hint": "The right half of the upper jaw, holding the upper teeth and the largest air space of the face."
    },
    "questions": [
     {
@@ -1207,11 +1207,11 @@
       "Vomer"
      ],
      "answer": 2,
-     "explanation": "The alveolar process of the maxilla holds the upper teeth."
+     "explanation": "The maxilla has a ridge of bone, the alveolar process, with sockets for all the upper teeth."
     },
     {
      "kind": "terminology",
-     "text": "What is the largest paranasal sinus?",
+     "text": "Which is the largest sinus of the face?",
      "options": [
       "Frontal sinus",
       "Sphenoid sinus",
@@ -1219,7 +1219,7 @@
       "Maxillary sinus"
      ],
      "answer": 3,
-     "explanation": "The maxillary sinus, inside the body of each maxilla, is the largest paranasal sinus."
+     "explanation": "The maxillary sinus, inside each maxilla under the eye, is the biggest air space around the nose."
     }
    ]
   },
@@ -1284,13 +1284,13 @@
    ],
    "content": {
     "pronunciation": "mak-SIL-uh",
-    "origin": "Latin maxilla, \"jaw\" or \"jawbone\".",
-    "location": "The left half of the upper jaw, in the middle of the face below the left orbit and beside the nasal cavity.",
-    "description": "The two maxillae fuse in the midline to form the upper jaw. Each has an alveolar process holding the upper teeth, a palatine process forming most of the hard palate, a frontal process beside the nose, and the large maxillary sinus in its body.",
-    "function": "Holds the upper teeth, forms most of the hard palate (roof of the mouth), the floor of the orbit and part of the walls of the nasal cavity. The facial bones are arranged around it, so it is often called the keystone of the face.",
-    "mnemonic": "Maxilla holds the upper teeth; Mandible Moves below it.",
-    "clinical": "The maxillary sinus is the largest paranasal sinus. Because the roots of the upper back teeth lie just below its floor, maxillary sinusitis can feel like upper toothache, and an upper tooth infection can spread into the sinus.",
-    "hint": "The left half of the upper jaw, holding the upper teeth and containing the largest air sinus of the face."
+    "origin": "From the Latin word maxilla, meaning jaw or jawbone.",
+    "location": "The left half of your upper jaw, in the middle of your face. It sits below the left eye socket and beside the nose.",
+    "description": "The two maxillae join in the middle to make the upper jaw. Each holds a row of upper teeth and hides a large air space, the maxillary sinus.",
+    "function": "It holds your upper teeth and forms most of the roof of your mouth. It also makes the floor of the eye socket, so it is called the keystone of the face.",
+    "mnemonic": "Maxilla is the upper jaw that stays put. The mandible is the lower jaw that moves.",
+    "clinical": "The upper back tooth roots sit right under the biggest face sinus. A tooth infection can spread into it, and sinus pain can feel like toothache.",
+    "hint": "The left half of the upper jaw, holding the upper teeth and the largest air space of the face."
    },
    "questions": []
   },
@@ -1340,13 +1340,13 @@
    ],
    "content": {
     "pronunciation": "PAL-uh-tyne",
-    "origin": "Latin palatum, \"palate\" or \"roof of the mouth\".",
-    "location": "At the back of the nasal cavity and roof of the mouth, on the right, behind the right maxilla.",
-    "description": "An L-shaped bone. Its horizontal plate forms the back part of the hard palate, and its perpendicular plate rises up to form part of the lateral wall of the nasal cavity. A tiny orbital process reaches the floor of the orbit.",
-    "function": "Forms the back part of the hard palate, separating the mouth from the nasal cavity, and helps form the walls of the nasal cavity and orbit.",
-    "mnemonic": "Palatine = palate: the maxilla makes the front of the palate, the palatine bone \"finishes the back\".",
-    "clinical": "A cleft palate happens when the palatal shelves fail to join in the midline before birth, leaving a gap between mouth and nose that affects feeding and speech. It is repaired surgically.",
-    "hint": "An L-shaped bone forming the back part of the roof of the mouth, behind the upper jaw."
+    "origin": "From the Latin word palatum, the palate or roof of the mouth.",
+    "location": "At the back of the roof of your mouth and nose, on the right, just behind the right maxilla.",
+    "description": "An L-shaped bone. Its flat part makes the back of the hard palate, and its upright part climbs up the side wall of the nose.",
+    "function": "It finishes off the back of the hard palate, keeping food in your mouth out of your nose. It also helps build the walls of the nose.",
+    "mnemonic": "Palatine means palate. The maxilla makes the front of the roof of your mouth, and the palatine bone finishes the back.",
+    "clinical": "A cleft palate happens when the two halves of the palate do not join before birth. The gap between mouth and nose affects feeding and speech, and surgery repairs it.",
+    "hint": "Look at the very back of the roof of the mouth, on the right, for a small L-shaped bone."
    },
    "questions": [
     {
@@ -1356,10 +1356,10 @@
       "The back part",
       "The front part",
       "The whole palate",
-      "None of it; they are in the orbit"
+      "None, they are in the eye socket"
      ],
      "answer": 0,
-     "explanation": "The horizontal plates of the palatine bones form the back part of the hard palate; the maxillae form the front."
+     "explanation": "The palatine bones make the back part of the hard palate. The maxillae make the front."
     }
    ]
   },
@@ -1409,13 +1409,13 @@
    ],
    "content": {
     "pronunciation": "PAL-uh-tyne",
-    "origin": "Latin palatum, \"palate\" or \"roof of the mouth\".",
-    "location": "At the back of the nasal cavity and roof of the mouth, on the left, behind the left maxilla.",
-    "description": "An L-shaped bone. Its horizontal plate forms the back part of the hard palate, and its perpendicular plate rises up to form part of the lateral wall of the nasal cavity. A tiny orbital process reaches the floor of the orbit.",
-    "function": "Forms the back part of the hard palate, separating the mouth from the nasal cavity, and helps form the walls of the nasal cavity and orbit.",
-    "mnemonic": "Palatine = palate: the maxilla makes the front of the palate, the palatine bone \"finishes the back\".",
-    "clinical": "A cleft palate happens when the palatal shelves fail to join in the midline before birth, leaving a gap between mouth and nose that affects feeding and speech. It is repaired surgically.",
-    "hint": "An L-shaped bone forming the back part of the roof of the mouth, behind the upper jaw."
+    "origin": "From the Latin word palatum, the palate or roof of the mouth.",
+    "location": "At the back of the roof of your mouth and nose, on the left, just behind the left maxilla.",
+    "description": "An L-shaped bone. Its flat part makes the back of the hard palate, and its upright part climbs up the side wall of the nose.",
+    "function": "It finishes off the back of the hard palate, keeping food in your mouth out of your nose. It also helps build the walls of the nose.",
+    "mnemonic": "Run your tongue back along the roof of your mouth. The hard part at the very back is the palatine bone.",
+    "clinical": "If the two sides of the palate fail to join before birth, a baby has a cleft palate. It makes feeding and speech hard, and it is fixed with surgery.",
+    "hint": "Look at the very back of the roof of the mouth, on the left, for a small L-shaped bone."
    },
    "questions": []
   },
@@ -1459,18 +1459,18 @@
    ],
    "content": {
     "pronunciation": "in-FEER-ee-ur NAY-zul KONG-kuh",
-    "origin": "Latin concha, \"shell\", from its curled, shell-like shape.",
-    "location": "On the lateral wall of the right side of the nasal cavity, below the middle concha of the ethmoid bone.",
-    "description": "A thin, curled scroll of bone. Unlike the superior and middle conchae, which are parts of the ethmoid, it is a separate bone. The space under it is the inferior meatus.",
-    "function": "Increases the surface area of the nasal lining so inhaled air is warmed, moistened and filtered. The nasolacrimal duct opens into the inferior meatus beneath it.",
-    "mnemonic": "The lowest \"shell\" in the nose is the only one that stands alone as its own bone.",
-    "clinical": "The soft tissue covering it (the inferior turbinate) can swell with allergy or infection and block the nose; enlarged turbinates are sometimes reduced surgically.",
-    "hint": "A separate curled scroll of bone on the lower side wall of the nasal cavity."
+    "origin": "From the Latin word concha, meaning a shell. It is curled like a seashell.",
+    "location": "On the outer wall of the right side of your nose, low down, below the middle concha of the ethmoid.",
+    "description": "A thin, curled scroll of bone. The upper and middle conchae are part of the ethmoid, but this lowest one is a bone of its own.",
+    "function": "It adds surface to the lining of your nose, so the air you breathe in gets warmed, moistened and filtered. The tear duct opens just under it.",
+    "mnemonic": "The lowest shell in the nose is the only one that stands alone as its own bone.",
+    "clinical": "The soft lining over it can swell up with allergies or a cold and block your nose. Very swollen ones are sometimes trimmed by surgery.",
+    "hint": "A separate curled scroll of bone on the lower side wall of the nose."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "What is the main role of the inferior nasal concha?",
+     "text": "What is the main job of the inferior nasal concha?",
      "options": [
       "It holds the lower teeth",
       "It warms, moistens and filters air",
@@ -1478,7 +1478,7 @@
       "It forms the jaw joint"
      ],
      "answer": 1,
-     "explanation": "The concha increases the surface area of the nasal lining, which warms, moistens and filters inhaled air."
+     "explanation": "Its curled shape adds lining to the nose, which warms, moistens and cleans the air you breathe in."
     }
    ]
   },
@@ -1522,13 +1522,13 @@
    ],
    "content": {
     "pronunciation": "in-FEER-ee-ur NAY-zul KONG-kuh",
-    "origin": "Latin concha, \"shell\", from its curled, shell-like shape.",
-    "location": "On the lateral wall of the left side of the nasal cavity, below the middle concha of the ethmoid bone.",
-    "description": "A thin, curled scroll of bone. Unlike the superior and middle conchae, which are parts of the ethmoid, it is a separate bone. The space under it is the inferior meatus.",
-    "function": "Increases the surface area of the nasal lining so inhaled air is warmed, moistened and filtered. The nasolacrimal duct opens into the inferior meatus beneath it.",
-    "mnemonic": "The lowest \"shell\" in the nose is the only one that stands alone as its own bone.",
-    "clinical": "The soft tissue covering it (the inferior turbinate) can swell with allergy or infection and block the nose; enlarged turbinates are sometimes reduced surgically.",
-    "hint": "A separate curled scroll of bone on the lower side wall of the nasal cavity."
+    "origin": "From the Latin word concha, meaning a shell. It is curled like a seashell.",
+    "location": "On the outer wall of the left side of your nose, low down, below the middle concha of the ethmoid.",
+    "description": "A thin, curled scroll of bone. The upper and middle conchae are part of the ethmoid, but this lowest one is a bone of its own.",
+    "function": "It adds surface to the lining of your nose, so the air you breathe in gets warmed, moistened and filtered. The tear duct opens just under it.",
+    "mnemonic": "Picture three shelves of shell in the nose. Only the bottom shelf is a separate bone.",
+    "clinical": "When you have a blocked nose with hay fever, it is mostly the lining over this bone that has swollen up.",
+    "hint": "A separate curled scroll of bone on the lower side wall of the nose."
    },
    "questions": []
   },
@@ -1578,13 +1578,13 @@
    ],
    "content": {
     "pronunciation": "VOH-mer",
-    "origin": "Latin vomer, \"ploughshare\", from its thin, blade-like shape.",
-    "location": "In the midline of the nasal cavity, forming the lower and back part of the nasal septum.",
-    "description": "A thin, flat, roughly trapezoid bone. Its upper edge meets the sphenoid and the perpendicular plate of the ethmoid, and its lower edge sits on the maxillae and palatine bones.",
-    "function": "Forms the lower back part of the nasal septum, which divides the nasal cavity into right and left halves. The front of the septum is completed by septal cartilage.",
-    "mnemonic": "Vomer = ploughshare: a thin blade that ploughs down the middle of the nose.",
-    "clinical": "A deviated nasal septum, where the septum (bone and cartilage) bends to one side, can block one nostril and cause breathing problems. It can be corrected by septoplasty.",
-    "hint": "A thin midline blade of bone forming the lower back part of the wall between the two nostrils."
+    "origin": "From the Latin word for a ploughshare, the blade of a plough. It is thin and blade-like.",
+    "location": "Right in the middle of your nose, forming the lower back part of the wall between your nostrils.",
+    "description": "A thin, flat plate of bone. Its top edge meets the ethmoid and sphenoid, and its bottom edge rests on the roof of the mouth.",
+    "function": "It helps build the nasal septum, the wall that splits your nose into left and right sides. Cartilage completes the wall at the front.",
+    "mnemonic": "Vomer means ploughshare, a thin blade that ploughs down the middle of your nose.",
+    "clinical": "If the septum bends to one side, it can block one nostril and make breathing hard. This deviated septum can be fixed by an operation.",
+    "hint": "Look down the middle of the nose for a thin blade of bone at the back of the dividing wall."
    },
    "questions": [
     {
@@ -1592,16 +1592,16 @@
      "text": "The vomer forms part of which structure?",
      "options": [
       "The hard palate",
-      "The orbit floor",
+      "The eye socket floor",
       "The zygomatic arch",
       "The nasal septum"
      ],
      "answer": 3,
-     "explanation": "The vomer forms the lower and back part of the nasal septum."
+     "explanation": "The vomer makes the lower back part of the nasal septum, the wall down the middle of your nose."
     },
     {
      "kind": "relationship",
-     "text": "Together with the vomer, which part of the ethmoid bone forms the bony nasal septum?",
+     "text": "Together with the vomer, which part of the ethmoid makes the bony nasal septum?",
      "options": [
       "Cribriform plate",
       "Middle concha",
@@ -1609,7 +1609,7 @@
       "Orbital plate"
      ],
      "answer": 2,
-     "explanation": "The bony nasal septum is formed by the perpendicular plate of the ethmoid above and the vomer below."
+     "explanation": "The perpendicular plate of the ethmoid forms the top of the bony septum, and the vomer forms the bottom."
     }
    ]
   },
@@ -1650,18 +1650,18 @@
    ],
    "content": {
     "pronunciation": "MAN-dib-ul",
-    "origin": "Latin mandere, \"to chew\".",
-    "location": "The lower jaw, forming the chin and lower face. Its condyles reach up to the temporal bones just in front of the ears.",
-    "description": "The largest and strongest facial bone. It is U-shaped, with a horizontal body holding the lower teeth and two vertical rami. Each ramus ends in a condyle (for the jaw joint) and a coronoid process (for the temporalis muscle). The mental foramen lies on the outer body below the premolar teeth.",
-    "function": "Holds the lower teeth and is the only skull bone that moves freely, at the temporomandibular joints, for chewing, speaking and swallowing. It gives attachment to the chewing muscles.",
-    "mnemonic": "Mandible = \"mand\" to chew: the Mandible Moves.",
-    "clinical": "The temporomandibular joint can dislocate forwards, for example during a wide yawn, locking the mouth open. Because the mandible is a ring with the skull, fractures often occur in two places.",
-    "hint": "The U-shaped bone that moves when you chew, holding the lower teeth."
+    "origin": "From the Latin word mandere, meaning to chew.",
+    "location": "Your lower jaw, forming your chin and lower face. Its upper ends reach up to the temporal bones just in front of your ears.",
+    "description": "The biggest and strongest face bone, shaped like a U. The curved body holds the lower teeth, and an upright branch rises at each end to the jaw joint.",
+    "function": "It holds your lower teeth and is the only skull bone that moves freely. It swings at the jaw joints so you can chew, talk and swallow.",
+    "mnemonic": "Mandible comes from mand, to chew. Remember, the Mandible Moves.",
+    "clinical": "A very wide yawn can pop the jaw joint forward and lock the mouth open. Because the jaw forms a ring with the skull, it often breaks in two places at once.",
+    "hint": "Find the U-shaped bone that holds the lower teeth and moves when you chew."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which is the only bone of the skull that moves freely at a synovial joint for chewing?",
+     "text": "Which skull bone is the only one that moves freely when you chew?",
      "options": [
       "Maxilla",
       "Hyoid bone",
@@ -1669,11 +1669,11 @@
       "Mandible"
      ],
      "answer": 3,
-     "explanation": "The mandible moves at the temporomandibular joints for chewing and speaking."
+     "explanation": "The mandible swings at the jaw joints, letting you chew and speak."
     },
     {
      "kind": "relationship",
-     "text": "The condyle of the mandible forms a joint with which bone?",
+     "text": "The top end of the mandible, its condyle, forms a joint with which bone?",
      "options": [
       "Temporal bone",
       "Occipital bone",
@@ -1681,7 +1681,7 @@
       "Sphenoid bone"
      ],
      "answer": 0,
-     "explanation": "The mandibular condyle sits in the mandibular fossa of the temporal bone at the temporomandibular joint."
+     "explanation": "The condyle fits into a hollow in the temporal bone, making the jaw joint just in front of your ear."
     }
    ]
   },
@@ -1713,13 +1713,13 @@
    ],
    "content": {
     "pronunciation": "HY-oyd",
-    "origin": "Greek hyoeides, \"shaped like the letter upsilon (U)\".",
-    "location": "In the front of the neck, below the mandible and above the larynx (thyroid cartilage), usually at about the level of the third cervical vertebra.",
-    "description": "A small U-shaped bone with a central body and two pairs of horns (greater and lesser cornua). It does not form a joint with any other bone; it is held in place by muscles and ligaments.",
-    "function": "Anchors the tongue and the muscles of the floor of the mouth, and supports the larynx. It moves up and forward during swallowing.",
-    "mnemonic": "Hyoid = \"U-shaped\": a floating U that hangs under the jaw.",
-    "clinical": "Because it is well protected, a fractured hyoid is uncommon and suggests significant direct force to the front of the neck, such as compression of the neck.",
-    "hint": "A small U-shaped bone in the front of the neck, just under the jaw, that joins no other bone."
+    "origin": "From a Greek word meaning shaped like the letter upsilon, which looks like a U.",
+    "location": "In the front of your neck, under your jaw and just above your voice box. It sits at about the level of C3.",
+    "description": "A small U-shaped bone with a body in front and two pairs of horns. It does not form a joint with any other bone, and muscles hold it in place.",
+    "function": "It anchors your tongue and the floor of your mouth, and it holds up the voice box. It moves up and forward each time you swallow.",
+    "mnemonic": "Hyoid is a floating U that hangs under your jaw. Swallow and feel it rise.",
+    "clinical": "It is well tucked away, so it rarely breaks. A broken hyoid suggests a strong blow or squeeze to the front of the neck.",
+    "hint": "Look in the front of the neck, just under the jaw, for a small U-shaped bone that touches no other bone."
    },
    "questions": [
     {
@@ -1732,7 +1732,7 @@
       "It holds the lower teeth"
      ],
      "answer": 1,
-     "explanation": "The hyoid is held in place only by muscles and ligaments and does not articulate with another bone."
+     "explanation": "The hyoid floats in the neck, held only by muscles and ligaments. It touches no other bone."
     },
     {
      "kind": "function",
@@ -1740,11 +1740,11 @@
      "options": [
       "The tongue",
       "The eyeball",
-      "The ear ossicles",
+      "The ear bones",
       "The pituitary gland"
      ],
      "answer": 0,
-     "explanation": "Muscles of the tongue and floor of the mouth attach to the hyoid."
+     "explanation": "Muscles of the tongue and the floor of the mouth hold on to the hyoid."
     }
    ]
   }

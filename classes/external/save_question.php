@@ -101,7 +101,9 @@ class save_question extends base {
             $DB->delete_records('aianatomy_question', ['id' => $q['id'], 'aianatomyid' => $instance->id]);
             return ['deleted' => true];
         }
-        return ['deleted' => false, 'question' => manager::save_question($instance, $q)];
+        $saved = manager::save_question($instance, $q);
+        \mod_aianatomy\local\voice::queue($instance);
+        return ['deleted' => false, 'question' => $saved];
     }
 
     /**

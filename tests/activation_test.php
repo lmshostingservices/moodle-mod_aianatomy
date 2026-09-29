@@ -103,8 +103,10 @@ final class activation_test extends \advanced_testcase {
         $state = unlock::verify();
         $this->assertSame('locked', $state['status']);
         $this->assertSame(120, $state['credits']);
-        $this->assertSame(['pluginId' => 'aianatomy', 'siteId' => 'site-42', 'apiKey' => 'secret-key-123'],
-            $this->sent('/api/plugin-unlock/verify')[0]['body']);
+        $this->assertSame(
+            ['pluginId' => 'aianatomy', 'siteId' => 'site-42', 'apiKey' => 'secret-key-123'],
+            $this->sent('/api/plugin-unlock/verify')[0]['body']
+        );
         $review = unlock::review();
         $this->assertTrue($review['canbuy']);
         $this->assertSame(50, $review['release']['price']);
@@ -118,8 +120,10 @@ final class activation_test extends \advanced_testcase {
      * Unlocked site with an unlimited account (verify: credits = -1): nothing is offered or bought.
      */
     public function test_unlocked(): void {
-        $this->mock(['/api/plugin-unlock/verify' => [[200, ['unlocked' => true, 'credits' => -1,
-            'unlockedAt' => '2026-10-01T10:00:00Z', 'entitlementSource' => 'credits']]]]);
+        $this->mock(
+            ['/api/plugin-unlock/verify' => [[200, ['unlocked' => true, 'credits' => -1,
+            'unlockedAt' => '2026-10-01T10:00:00Z', 'entitlementSource' => 'credits']]]]
+        );
         $review = unlock::review();
         $this->assertFalse($review['canbuy']);
         $this->assertSame('unlocked', $review['blocked']);
@@ -149,12 +153,14 @@ final class activation_test extends \advanced_testcase {
      * are read from the real response fields.
      */
     public function test_new_unlock(): void {
-        $this->mock([
-            '/api/plugin-unlock/verify' => [self::LOCKED, [200, ['unlocked' => true, 'credits' => 70,
-                'entitlementSource' => 'credits']]],
-            '/api/plugin-unlock' => [[200, ['success' => true, 'creditsConsumed' => 50, 'entitlementSource' => 'credits',
-                'remainingCredits' => 70, 'message' => 'Plugin unlocked', 'downloadUrl' => 'https://lms-labs.com/d/x']]],
-        ]);
+        $this->mock(
+            [
+                '/api/plugin-unlock/verify' => [self::LOCKED, [200, ['unlocked' => true, 'credits' => 70,
+                    'entitlementSource' => 'credits']]],
+                '/api/plugin-unlock' => [[200, ['success' => true, 'creditsConsumed' => 50, 'entitlementSource' => 'credits',
+                    'remainingCredits' => 70, 'message' => 'Plugin unlocked', 'downloadUrl' => 'https://lms-labs.com/d/x']]],
+            ]
+        );
         $r = unlock::buy(50, self::SHA);
         $this->assertSame('unlocked', $r['outcome']);
         $this->assertSame(50, $r['consumed']);
@@ -162,8 +168,10 @@ final class activation_test extends \advanced_testcase {
         $this->assertSame(70, $r['balance']['credits']);
         $this->assertSame('Plugin unlocked', $r['message']);
         $body = $this->sent('/api/plugin-unlock')[0]['body'];
-        $this->assertSame(['pluginId' => 'aianatomy', 'pluginComponent' => 'mod_aianatomy', 'siteId' => 'site-42',
-            'apiKey' => 'secret-key-123', 'releaseSha256' => self::SHA, 'expectedCredits' => 50], $body);
+        $this->assertSame(
+            ['pluginId' => 'aianatomy', 'pluginComponent' => 'mod_aianatomy', 'siteId' => 'site-42',
+            'apiKey' => 'secret-key-123', 'releaseSha256' => self::SHA, 'expectedCredits' => 50], $body
+        );
         $this->assertIsInt($body['expectedCredits']);
         $this->assertNull(unlock::pending());
         $this->assertSame('unlocked', unlock::state()['status']);
@@ -174,12 +182,14 @@ final class activation_test extends \advanced_testcase {
      */
     public function test_zero_credit_restoration(): void {
         foreach (['marketplace', 'purchase'] as $source) {
-            $this->mock([
-                '/api/plugin-unlock/verify' => [[200, ['unlocked' => false, 'credits' => 5]],
-                    [200, ['unlocked' => true, 'credits' => 5, 'entitlementSource' => $source]]],
-                '/api/plugin-unlock' => [[200, ['success' => true, 'creditsConsumed' => 0, 'entitlementSource' => $source,
-                    'remainingCredits' => 5, 'message' => 'Unlocked from existing purchase']]],
-            ]);
+            $this->mock(
+                [
+                    '/api/plugin-unlock/verify' => [[200, ['unlocked' => false, 'credits' => 5]],
+                        [200, ['unlocked' => true, 'credits' => 5, 'entitlementSource' => $source]]],
+                    '/api/plugin-unlock' => [[200, ['success' => true, 'creditsConsumed' => 0, 'entitlementSource' => $source,
+                        'remainingCredits' => 5, 'message' => 'Unlocked from existing purchase']]],
+                ]
+            );
             $r = unlock::buy(50, self::SHA);
             $this->assertSame('restored', $r['outcome'], $source);
             $this->assertSame(0, $r['consumed'], $source);
@@ -194,11 +204,13 @@ final class activation_test extends \advanced_testcase {
      * remainingCredits "unlimited" is read as unlimited.
      */
     public function test_already_unlocked_reply(): void {
-        $this->mock([
-            '/api/plugin-unlock/verify' => [self::LOCKED, [0, null]],
-            '/api/plugin-unlock' => [[200, ['success' => true, 'alreadyUnlocked' => true, 'creditsConsumed' => 50,
-                'entitlementSource' => 'credits', 'remainingCredits' => 'unlimited', 'message' => 'Already unlocked']]],
-        ]);
+        $this->mock(
+            [
+                '/api/plugin-unlock/verify' => [self::LOCKED, [0, null]],
+                '/api/plugin-unlock' => [[200, ['success' => true, 'alreadyUnlocked' => true, 'creditsConsumed' => 50,
+                    'entitlementSource' => 'credits', 'remainingCredits' => 'unlimited', 'message' => 'Already unlocked']]],
+            ]
+        );
         $r = unlock::buy(50, self::SHA);
         $this->assertSame('already', $r['outcome']);
         $this->assertNull($r['consumed']);
@@ -213,11 +225,13 @@ final class activation_test extends \advanced_testcase {
      * Insufficient credits: the review warns but buys nothing; LMS Labs refuses with 402 and currentCredits.
      */
     public function test_insufficient_credits(): void {
-        $this->mock([
-            '/api/plugin-unlock/verify' => [[200, ['unlocked' => false, 'credits' => 20]]],
-            '/api/plugin-unlock' => [[402, ['success' => false, 'error' => 'insufficient_credits',
-                'message' => 'Not enough credits', 'currentCredits' => 12]]],
-        ]);
+        $this->mock(
+            [
+                '/api/plugin-unlock/verify' => [[200, ['unlocked' => false, 'credits' => 20]]],
+                '/api/plugin-unlock' => [[402, ['success' => false, 'error' => 'insufficient_credits',
+                    'message' => 'Not enough credits', 'currentCredits' => 12]]],
+            ]
+        );
         $review = unlock::review();
         $this->assertTrue($review['canbuy']);
         $this->assertSame('insufficient', $review['warning']);
@@ -243,10 +257,12 @@ final class activation_test extends \advanced_testcase {
             ['release_unavailable', 'This release is not available for unlock', 'conflict'],
         ];
         foreach ($cases as [$code, $message, $outcome]) {
-            $this->mock([
-                '/api/plugin-unlock/verify' => [self::LOCKED],
-                '/api/plugin-unlock' => [[409, ['success' => false, 'error' => $code, 'message' => $message]]],
-            ]);
+            $this->mock(
+                [
+                    '/api/plugin-unlock/verify' => [self::LOCKED],
+                    '/api/plugin-unlock' => [[409, ['success' => false, 'error' => $code, 'message' => $message]]],
+                ]
+            );
             $r = unlock::buy(50, self::SHA);
             $this->assertSame($outcome, $r['outcome'], $code);
             $this->assertStringContainsString($message, $r['error'], $code);
@@ -260,11 +276,13 @@ final class activation_test extends \advanced_testcase {
      * check has settled it.
      */
     public function test_uncertain_delivery(): void {
-        $this->mock([
-            '/api/plugin-unlock/verify' => [self::LOCKED, [200, ['unlocked' => true, 'credits' => 70,
-                'entitlementSource' => 'credits']]],
-            '/api/plugin-unlock' => [[0, null]],
-        ]);
+        $this->mock(
+            [
+                '/api/plugin-unlock/verify' => [self::LOCKED, [200, ['unlocked' => true, 'credits' => 70,
+                    'entitlementSource' => 'credits']]],
+                '/api/plugin-unlock' => [[0, null]],
+            ]
+        );
         $r = unlock::buy(50, self::SHA);
         $this->assertSame('uncertain', $r['outcome']);
         $this->assertSame('network', $r['error']);
@@ -286,10 +304,12 @@ final class activation_test extends \advanced_testcase {
      * A 5xx or unreadable 2xx reply is also an unknown outcome; a later "locked" check re-enables the review.
      */
     public function test_uncertain_server_error(): void {
-        $this->mock([
-            '/api/plugin-unlock/verify' => [self::LOCKED],
-            '/api/plugin-unlock' => [[502, 'Bad gateway']],
-        ]);
+        $this->mock(
+            [
+                '/api/plugin-unlock/verify' => [self::LOCKED],
+                '/api/plugin-unlock' => [[502, 'Bad gateway']],
+            ]
+        );
         $this->assertSame('uncertain', unlock::buy(50, self::SHA)['outcome']);
         $this->assertNotNull(unlock::pending());
         $this->assertSame('locked', unlock::verify()['resolved']);
@@ -304,10 +324,12 @@ final class activation_test extends \advanced_testcase {
      * If the follow-up check cannot reach LMS Labs either, the marker stays and purchases stay disabled.
      */
     public function test_uncertain_check_unreachable(): void {
-        $this->mock([
-            '/api/plugin-unlock/verify' => [self::LOCKED, [0, null]],
-            '/api/plugin-unlock' => [[504, 'Gateway timeout']],
-        ]);
+        $this->mock(
+            [
+                '/api/plugin-unlock/verify' => [self::LOCKED, [0, null]],
+                '/api/plugin-unlock' => [[504, 'Gateway timeout']],
+            ]
+        );
         $this->assertSame('uncertain', unlock::buy(50, self::SHA)['outcome']);
         $state = unlock::verify();
         $this->assertSame('unknown', $state['status']);
@@ -328,17 +350,21 @@ final class activation_test extends \advanced_testcase {
             $this->assertNotNull(unlock::pending());
         }
         foreach (['true', 1, null] as $value) {
-            $this->mock([
-                '/api/plugin-unlock/verify' => [self::LOCKED],
-                '/api/plugin-unlock' => [[200, ['success' => $value, 'creditsConsumed' => 50]]],
-            ]);
+            $this->mock(
+                [
+                    '/api/plugin-unlock/verify' => [self::LOCKED],
+                    '/api/plugin-unlock' => [[200, ['success' => $value, 'creditsConsumed' => 50]]],
+                ]
+            );
             $this->assertSame('uncertain', unlock::buy(50, self::SHA)['outcome']);
             $this->assertNotNull(unlock::pending());
         }
-        $this->mock([
-            '/api/plugin-unlock/verify' => [self::LOCKED],
-            '/api/plugin-unlock' => [[200, ['success' => true, 'alreadyUnlocked' => 'false']]],
-        ]);
+        $this->mock(
+            [
+                '/api/plugin-unlock/verify' => [self::LOCKED],
+                '/api/plugin-unlock' => [[200, ['success' => true, 'alreadyUnlocked' => 'false']]],
+            ]
+        );
         $this->assertSame('uncertain', unlock::buy(50, self::SHA)['outcome']);
         $this->assertNotNull(unlock::pending());
     }
@@ -386,8 +412,10 @@ final class activation_test extends \advanced_testcase {
             $this->assertCount(0, $this->sent('/api/plugin-unlock'), $reason);
         }
         // The live manifest shape is accepted (a string of digits is a whole number too).
-        $this->mock(['/api/plugin-unlock/verify' => [self::LOCKED],
-            '/api/plugin-versions' => [self::catalogue(['creditsRequired' => '50'])]]);
+        $this->mock(
+            ['/api/plugin-unlock/verify' => [self::LOCKED],
+            '/api/plugin-versions' => [self::catalogue(['creditsRequired' => '50'])]]
+        );
         $this->assertTrue(unlock::review()['canbuy']);
     }
 

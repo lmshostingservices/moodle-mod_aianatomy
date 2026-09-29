@@ -156,48 +156,74 @@ class manager {
     }
 
     /**
-     * The "did you know" card shown in Practice after a structure is labelled correctly: its name and up to two
-     * facts from its teaching content (only fields the teacher shows students).
+     * What a structure's card shows, the same in Study and in the Practice card after a correct label: every field
+     * the teacher ticked (in card order), related structures when ticked, and one spoken text of exactly that card.
+     *
+     * @param stdClass $instance
+     * @param \context $context
+     * @param array $s pack structure
+     * @param stdClass $row structure row
+     * @param array $names structure id => display name (for related structures)
+     * @return array ['content' => field => formatted text, 'related' => [['id', 'name', 'type']], 'voice' => item|null]
+     */
+    public static function card(stdClass $instance, \context $context, array $s, stdClass $row, array $names): array {
+        $fields = self::studyfields($instance);
+        $content = [];
+        foreach (self::content($row) as $k => $v) {
+            if ($v !== '' && in_array($k, $fields, true)) {
+                $content[$k] = format_string($v, true, ['context' => $context]);
+            }
+        }
+        $related = [];
+        if (in_array('relationships', $fields, true)) {
+            foreach ($s['relationships'] ?? [] as $r) {
+                if (isset($names[$r['target']])) {
+                    $related[] = ['id' => $r['target'], 'type' => $r['type'],
+                        'name' => format_string($names[$r['target']], true, ['context' => $context])];
+                }
+            }
+        }
+        $item = null;
+        if (voice::on($instance, 'cards')) {
+            $item = voice::item($instance, voice::card_text($names[$s['id']], $content['latin'] ?? '', $content, $related));
+        }
+        return ['content' => $content, 'related' => $related, 'voice' => $item];
+    }
+
+    /**
+     * The card shown in Practice after a structure is labelled correctly: the same fields, related structures and
+     * spoken text as its Study card (so the audio is shared).
      *
      * @param stdClass $instance
      * @param \context $context
      * @param string $pin pin token
      * @param stdClass $row structure row
      * @param array $s pack structure
-     * @param array $content live content
+     * @param array $names structure id => display name
      * @return array
      */
     public static function pin_info(stdClass $instance, \context $context, string $pin, stdClass $row, array $s,
-            array $content): array {
-        $shown = self::studyfields($instance);
+            array $names): array {
+        $card = self::card($instance, $context, $s, $row, $names);
         $facts = [];
-        foreach (['function', 'mnemonic', 'clinical', 'location', 'description'] as $field) {
-            $text = trim((string)($content[$field] ?? ''));
-            if ($text === '' || !in_array($field, $shown, true)) {
-                continue;
-            }
-            if (\core_text::strlen($text) > 220) {
-                $text = rtrim(\core_text::substr($text, 0, 217)) . '…';
-            }
-            $facts[] = ['field' => $field, 'label' => get_string('field_' . $field, 'mod_aianatomy'),
-                'text' => format_string($text, true, ['context' => $context])];
-            if (count($facts) >= 2) {
-                break;
+        foreach (voice::CARDFIELDS as $field) {
+            if (isset($card['content'][$field])) {
+                $facts[] = ['field' => $field, 'label' => get_string('field_' . $field, 'mod_aianatomy'),
+                    'text' => $card['content'][$field]];
             }
         }
-        $name = self::display_name($row, $s);
+        foreach (voice::related_groups($card['related']) as $label => $list) {
+            $facts[] = ['field' => 'relationships', 'label' => $label, 'text' => implode(', ', $list)];
+        }
         $info = [
             'pin' => $pin,
-            'name' => format_string($name, true, ['context' => $context]),
-            'latin' => in_array('latin', $shown, true) ? format_string((string)($s['names']['latin'] ?? ''), true,
-                ['context' => $context]) : '',
+            'name' => format_string($names[$s['id']], true, ['context' => $context]),
+            'latin' => $card['content']['latin'] ?? '',
+            'pronunciation' => $card['content']['pronunciation'] ?? '',
             'facts' => $facts,
         ];
-        if (voice::on($instance, 'cards') && $facts) {
-            $spoken = voice::plain($name) . '. ' . voice::plain(strip_tags($facts[0]['text']));
-            if ($item = voice::item($instance, $spoken)) {
-                $info['voice'] = $item;
-            }
+        if ($card['voice']) {
+            $info['voice'] = $card['voice'];
         }
         return $info;
     }
@@ -421,32 +447,12 @@ class manager {
             }
             $enabled = (bool)$row->enabled;
             // Study shows every structure's approved content; "enabled" only decides what Practice and Test assess.
-            $content = [];
-            foreach (self::content($row) as $k => $v) {
-                if ($v !== '' && in_array($k, $fields, true)) {
-                    $content[$k] = format_string($v, true, ['context' => $context]);
-                }
-            }
-            $related = [];
-            if (in_array('relationships', $fields, true)) {
-                foreach ($s['relationships'] as $r) {
-                    if (isset($names[$r['target']])) {
-                        $related[] = ['id' => $r['target'], 'name' => format_string(
-                            $names[$r['target']], true,
-                            ['context' => $context]
-                        ), 'type' => $r['type']];
-                    }
-                }
-            }
+            $card = self::card($instance, $context, $s, $row, $names);
+            $content = $card['content'];
+            $related = $card['related'];
             $voiceitems = [];
             if (voice::on($instance, 'cards')) {
-                $latin = in_array('latin', $fields, true) ? ($s['names']['latin'] ?? '') : '';
-                $voiceitems = array_filter(
-                    [
-                        'name' => voice::item($instance, $names[$s['id']], 'slow'),
-                        'card' => voice::item($instance, voice::card_text($names[$s['id']], $latin, $content)),
-                    ]
-                );
+                $voiceitems = array_filter(['name' => voice::item($instance, $names[$s['id']], 'slow'), 'card' => $card['voice']]);
             }
             $structures[] = [
                 'id' => $s['id'],
@@ -818,6 +824,10 @@ class manager {
 
         $pack = pack::get($instance->pack);
         $rows = self::get_structures($instance->id);
+        $allnames = [];
+        foreach ($pack['structures'] as $st) {
+            $allnames[$st['id']] = self::display_name($rows[$st['id']] ?? null, $st);
+        }
         $targets = array_filter($rows, fn($r) => $r->enabled);
         if (!$targets) {
             throw new moodle_exception('nostructures', 'mod_aianatomy');
@@ -881,7 +891,7 @@ class manager {
                     ['context' => $context]
                 )];
                 if ($mode === 'practice') {
-                    $infos[] = self::pin_info($instance, $context, $pt, $row, $s, $content);
+                    $infos[] = self::pin_info($instance, $context, $pt, $row, $s, $allnames);
                     $answers[] = ['pin' => $pt, 'label' => $lt];
                     $hints[] = ['pin' => $pt, 'text' => format_string(
                         $content['hint'] ?: $content['location'], true,

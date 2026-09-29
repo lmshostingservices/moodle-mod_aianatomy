@@ -72,6 +72,7 @@ class save_groups extends base {
             'aianatomy', 'grouptext', $clean ? json_encode($clean, JSON_UNESCAPED_UNICODE) : null,
             ['id' => $instance->id]
         );
+        \mod_aianatomy\local\voice::queue($instance);
         return ['saved' => count($clean)];
     }
 

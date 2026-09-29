@@ -34,6 +34,7 @@
         <FIELD NAME="voicename" TYPE="char" LENGTH="30" NOTNULL="true" DEFAULT="Kore" SEQUENCE="false" COMMENT="Chirp 3 HD voice"/>
         <FIELD NAME="voiceplaces" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="cards,questions,feedback,prompts" SEQUENCE="false" COMMENT="Where voiceover is offered"/>
         <FIELD NAME="voiceauto" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 = read prompts and questions automatically"/>
+        <FIELD NAME="voiceerror" TYPE="char" LENGTH="40" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Why voiceover preparation stopped (error code), empty when fine"/>
         <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
       </FIELDS>

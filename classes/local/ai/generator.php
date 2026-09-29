@@ -34,17 +34,15 @@ use stdClass;
  * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class generator {
-    /** @var array Level descriptions used in prompts. */
-    public const LEVEL_TEXT = [
-        'school' => 'secondary school students (age 14-17): very simple words, short sentences, no clinical jargon',
-        'certificate' => 'vocational Certificate III/IV learners (e.g. aged care, fitness, allied health assistants): ' .
-            'plain English, practical relevance',
-        'diploma' => 'Diploma-level health learners (e.g. enrolled nursing, massage therapy): clear plain English with ' .
-            'correct anatomical terms explained',
-        'undergraduate' => 'undergraduate health science, nursing or physiotherapy students: correct anatomical ' .
-            'terminology and relationships',
-        'medical' => 'medical students: precise terminology, articulations, attachments and clinical correlations',
-    ];
+    /** One writing style for every learner (the same as the built-in library content). */
+    public const STYLE = 'Write for every learner, from school and vocational students to nurses and university students: ' .
+        'simple, clear and interesting, like a friendly tutor talking to them, never like a medical textbook. ' .
+        'Use everyday words; when an anatomical term matters, explain it in plain words in the same sentence. ' .
+        'Help it stick: link to the learner\'s own body (where they can feel it, what it lets them do), use an ' .
+        'everyday comparison or a vivid real-life fact. Use active verbs and "you" where natural. ' .
+        'The text is read aloud by a voiceover: short sentences of about 8 to 18 words, 1 or 2 sentences per field, ' .
+        'no abbreviations or symbols (no e.g., i.e., etc., arrows, =, +, /, &, semicolons, per cent signs), ' .
+        'no brackets, small numbers as words. Keep every fact correct.';
 
     /**
      * The LMS Labs provider when it is configured (endpoint plus a complete credential pair), else null.
@@ -77,6 +75,7 @@ class generator {
             'anatomy activity. Accuracy matters more than creativity. Only state well-established anatomical facts ' .
             '(Terminologia Anatomica naming). Never invent structures, attachments, nerves or relationships; if you ' .
             'are not sure of a fact, leave that field empty. Use plain text only: no HTML, no Markdown, no emojis. ' .
+            self::STYLE . ' ' .
             'Reply with a single JSON object and nothing else.';
     }
 
@@ -143,22 +142,23 @@ class generator {
      * @return string
      */
     public static function content_prompt(stdClass $instance, string $structureid): string {
-        $level = self::LEVEL_TEXT[$instance->level] ?? self::LEVEL_TEXT['diploma'];
         return "Write teaching content for this anatomical structure.\n\n" .
             self::facts($instance, $structureid) . "\n\n" .
-            "Audience: {$level}.\n\n" .
+            "Style: " . self::STYLE . "\n\n" .
             self::language_line($instance) .
-            "Return JSON with exactly these keys (each a plain-text string, 1-3 sentences unless noted):\n" .
+            "Return JSON with exactly these keys (each a plain-text string of 1 or 2 short sentences, at most 220 " .
+            "characters, unless noted):\n" .
             "{\n" .
-            "  \"latin\": \"Terminologia Anatomica Latin name\",\n" .
-            "  \"pronunciation\": \"simple phonetic spelling with the stressed syllable in capitals, e.g. SKAF-oyd\",\n" .
-            "  \"origin\": \"word origin: the Latin or Greek root(s) and what they mean; do not assume Latin\",\n" .
-            "  \"location\": \"where it is, using anatomical directions and neighbouring structures\",\n" .
-            "  \"description\": \"what it looks like / key features\",\n" .
-            "  \"function\": \"what it does\",\n" .
-            "  \"mnemonic\": \"one short, memorable, respectful memory aid for the name or location\",\n" .
-            "  \"clinical\": \"one common, well-established clinical note (injury, pathology or exam relevance)\",\n" .
-            "  \"hint\": \"a practice hint that helps find it on a 3D model without naming it\"\n" .
+            "  \"latin\": \"Terminologia Anatomica Latin name only\",\n" .
+            "  \"pronunciation\": \"simple sound-it-out spelling with the stressed syllable in capitals, like SKAF-oyd\",\n" .
+            "  \"origin\": \"where the name comes from, as a tiny story: the Greek or Latin word and what it means\",\n" .
+            "  \"location\": \"where to find it, using landmarks the learner knows or can feel on their own body\",\n" .
+            "  \"description\": \"what it looks like, with one good everyday comparison\",\n" .
+            "  \"function\": \"what it does for you, in active voice\",\n" .
+            "  \"mnemonic\": \"a short, memorable, respectful memory trick suitable for school students\",\n" .
+            "  \"clinical\": \"why it matters in real life: a common injury, condition or everyday situation, " .
+            "explained simply\",\n" .
+            "  \"hint\": \"one sentence that helps find it on a 3D model without naming it\"\n" .
             "}";
     }
 
@@ -172,7 +172,6 @@ class generator {
      */
     public static function questions_prompt(stdClass $instance, string $structureid, int $count = 3): string {
         global $DB;
-        $level = self::LEVEL_TEXT[$instance->level] ?? self::LEVEL_TEXT['diploma'];
         $row = $DB->get_record(
             'aianatomy_structure', ['aianatomyid' => $instance->id, 'structureid' => $structureid],
             '*', MUST_EXIST
@@ -187,10 +186,11 @@ class generator {
             self::facts($instance, $structureid) . "\n\n" .
             "Teacher-approved teaching content (base every question ONLY on these facts):\n" .
             implode("\n", $approved) . "\n\n" .
-            "Audience: {$level}.\n" .
+            "Style: " . self::STYLE . "\n" .
             "Rules: 4 options each, exactly one correct; use other structures from the same group as distractors " .
             "where it makes sense; mix question kinds (function, location, relationship, terminology, clinical); " .
-            "no 'all of the above'; the explanation says why the answer is right in one sentence.\n\n" .
+            "no 'all of the above'. Question at most 140 characters, each option at most 60 characters, and a " .
+            "friendly explanation of 1 or 2 short sentences saying why the answer is right.\n\n" .
             self::language_line($instance) .
             "Return JSON: {\"questions\": [{\"kind\": \"function|location|relationship|terminology|clinical\", " .
             "\"text\": \"...\", \"options\": [\"...\", \"...\", \"...\", \"...\"], \"answer\": 0, " .
@@ -412,6 +412,7 @@ class generator {
             'questions' => $questions,
         ];
         $prompt = "Translate this anatomy teaching material from {$from} into {$to}.\n\n" .
+            "Keep the same simple, clear, friendly style (it is read aloud to learners): " . self::STYLE . "\n\n" .
             self::facts($instance, $structureid) . "\n\n" .
             "Rules: translate faithfully; do not add, remove or change any facts. Use the anatomical and medical " .
             "terms normally taught in {$to}-language health education. Keep Latin (TA) names in Latin. Translate " .

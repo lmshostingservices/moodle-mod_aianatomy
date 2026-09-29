@@ -90,25 +90,25 @@
    "id": "urinary",
    "label": "Urinary system",
    "parent": null,
-   "tip": "Follow the urine: kidney -> ureter -> urinary bladder -> urethra. The kidneys, adrenal glands and ureters are retroperitoneal (behind the peritoneum)."
+   "tip": "Follow the urine: kidney, ureter, bladder, urethra. The kidneys, adrenal glands and ureters sit behind the belly lining, against your back wall."
   },
   {
    "id": "kidneys",
    "label": "Kidneys and adrenal glands",
    "parent": "urinary",
-   "tip": "Kidney jobs \"A WET BED\": Acid-base balance, Water balance, Electrolytes, Toxin removal, Blood pressure (renin), Erythropoietin, vitamin D activation. Adrenal cortex layers make \"salt, sugar, sex\" hormones."
+   "tip": "A WET BED lists the kidney jobs: Acid balance, Water, Electrolytes, Toxins, Blood pressure, Erythropoietin and vitamin D. The adrenal cortex makes salt, sugar and sex hormones."
   },
   {
    "id": "vessels",
    "label": "Renal vessels",
    "parent": "urinary",
-   "tip": "At the renal hilum the order from front to back is Vein, Artery, Pelvis (\"VAP\"). The left renal vein is long and crosses in front of the aorta; the right renal artery is long and passes behind the IVC."
+   "tip": "At the kidney notch, think VAP from front to back: vein, artery, pelvis. The long left kidney vein crosses in front of the aorta."
   },
   {
    "id": "lower_tract",
    "label": "Ureters, bladder and urethra",
    "parent": "urinary",
-   "tip": "Ureters pass under the uterine artery in females and under the ductus deferens in males: \"water under the bridge\"."
+   "tip": "Water under the bridge: the ureter passes under the uterine artery in females and under the sperm duct in males."
   }
  ],
  "structures": [
@@ -148,13 +148,13 @@
    ],
    "content": {
     "pronunciation": "KID-nee",
-    "origin": "Middle English kidenei (origin uncertain); Latin ren and Greek nephros (as in renal and nephron) also mean kidney.",
-    "location": "On the posterior abdominal wall, behind the peritoneum, roughly from T12 to L3. The right kidney sits a little lower than the left because the liver lies above it.",
-    "description": "Bean-shaped, about 10-12 cm long, with a medial hilum where the renal vessels and renal pelvis pass. Inside are an outer cortex, an inner medulla of renal pyramids, and the renal pelvis that funnels urine into the ureter.",
-    "function": "Filters blood through about a million nephrons to make urine, controlling water, electrolytes and acid-base balance. It also releases renin (blood pressure) and erythropoietin (red cell production) and activates vitamin D.",
-    "mnemonic": "\"A WET BED\": Acid-base, Water, Electrolytes, Toxins, Blood pressure, Erythropoietin, vitamin D.",
-    "clinical": "Kidney stones (renal calculi) cause severe colicky loin-to-groin pain when they pass into the ureter.",
-    "hint": "The bean-shaped organ on the right posterior abdominal wall, capped by a small endocrine gland, with vessels entering its medial notch."
+    "origin": "Kidney is an old English word of unknown origin. The Latin ren and the Greek nephros also mean kidney, which is why we say renal and nephron.",
+    "location": "High on the back wall of your belly, behind the gut lining, roughly from T12 to L3. The right one sits a little lower because the liver is above it.",
+    "description": "Shaped like a bean, about 10 to 12 centimetres long, with a notch on the inner side where vessels and the urine funnel pass through.",
+    "function": "It filters your blood through about a million tiny filters, the nephrons, to make urine. It also helps control blood pressure, red blood cell making and vitamin D.",
+    "mnemonic": "A WET BED lists its jobs: Acid balance, Water, Electrolytes, Toxins, Blood pressure, Erythropoietin and vitamin D.",
+    "clinical": "A kidney stone that slips into the ureter causes waves of severe pain. The pain often runs from the lower back round to the groin.",
+    "hint": "The bean-shaped organ on the right side of the back wall of the belly, with a small gland on top and vessels in its inner notch."
    },
    "questions": [
     {
@@ -167,11 +167,11 @@
       "The heart pushes it down"
      ],
      "answer": 0,
-     "explanation": "The large liver on the right pushes the right kidney slightly lower."
+     "explanation": "The big liver takes up the space on the right, so the right kidney sits a little lower."
     },
     {
      "kind": "function",
-     "text": "Which hormone made by the kidneys stimulates red blood cell production?",
+     "text": "Which kidney hormone tells the body to make more red blood cells?",
      "options": [
       "Adrenaline",
       "Erythropoietin",
@@ -179,11 +179,11 @@
       "Insulin"
      ],
      "answer": 1,
-     "explanation": "The kidneys release erythropoietin when oxygen delivery falls, stimulating red bone marrow."
+     "explanation": "When the blood carries too little oxygen, the kidneys release erythropoietin. It tells the bone marrow to make more red cells."
     },
     {
      "kind": "terminology",
-     "text": "What is the microscopic filtering unit of the kidney called?",
+     "text": "What is the tiny filtering unit of the kidney called?",
      "options": [
       "Lobule",
       "Alveolus",
@@ -191,7 +191,7 @@
       "Neuron"
      ],
      "answer": 2,
-     "explanation": "Each kidney contains about a million nephrons, which filter blood and form urine."
+     "explanation": "Each kidney has about a million nephrons. Each one filters blood and makes a little urine."
     }
    ]
   },
@@ -227,18 +227,18 @@
    ],
    "content": {
     "pronunciation": "ad-REE-nul GLAND",
-    "origin": "Latin ad \"near\" + ren \"kidney\"; suprarenal means \"above the kidney\".",
-    "location": "On the superior pole of the right kidney, behind the inferior vena cava and the liver.",
-    "description": "A small pyramid-shaped (triangular) endocrine gland with an outer cortex and an inner medulla, enclosed with the kidney in renal fascia.",
-    "function": "The cortex makes aldosterone (salt and water balance), cortisol (glucose metabolism and stress response) and androgens. The medulla makes adrenaline and noradrenaline for the fight-or-flight response.",
-    "mnemonic": "Cortex layers \"GFR\" (glomerulosa, fasciculata, reticularis) make \"salt, sugar, sex\" hormones. Medulla = middle, makes adrenaline.",
-    "clinical": "Addison's disease (adrenal insufficiency) and Cushing's syndrome (too much cortisol) are well-known disorders of the adrenal cortex.",
-    "hint": "The small hormone-producing cap sitting on top of the right bean-shaped organ."
+    "origin": "From the Latin ad, meaning near, and ren, meaning kidney. Its other name, suprarenal, means above the kidney.",
+    "location": "Sitting on the top of the right kidney, tucked behind the big vein, the inferior vena cava, and the liver.",
+    "description": "A small, pyramid-shaped gland, like a little hat on the kidney. It has an outer layer, the cortex, and an inner core, the medulla.",
+    "function": "The cortex makes hormones for salt and water balance, for handling stress and sugar, and some sex hormones. The medulla makes adrenaline for fight or flight.",
+    "mnemonic": "The cortex makes salt, sugar and sex hormones. The medulla is in the middle and makes adrenaline.",
+    "clinical": "In Addison's disease, the cortex stops making enough hormones. In Cushing's syndrome, it makes too much cortisol.",
+    "hint": "The small hormone-making cap sitting on top of the right bean-shaped organ."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which hormones are made by the adrenal medulla?",
+     "text": "Which hormones does the adrenal medulla make?",
      "options": [
       "Insulin and glucagon",
       "Renin and erythropoietin",
@@ -246,11 +246,11 @@
       "Adrenaline and noradrenaline"
      ],
      "answer": 3,
-     "explanation": "The medulla releases adrenaline and noradrenaline for the fight-or-flight response."
+     "explanation": "The medulla pumps out adrenaline and noradrenaline, getting you ready for fight or flight."
     },
     {
      "kind": "clinical",
-     "text": "Addison's disease is failure of which structure?",
+     "text": "Addison's disease is failure of which part?",
      "options": [
       "Adrenal cortex",
       "Renal pelvis",
@@ -258,7 +258,7 @@
       "Adrenal medulla only"
      ],
      "answer": 0,
-     "explanation": "Addison's disease is primary adrenal insufficiency: the adrenal cortex fails to make enough cortisol and aldosterone."
+     "explanation": "In Addison's disease the adrenal cortex fails, so there is too little cortisol and aldosterone."
     }
    ]
   },
@@ -300,13 +300,13 @@
    ],
    "content": {
     "pronunciation": "REE-nul AR-ter-ee",
-    "origin": "Latin ren, \"kidney\" (renalis, of the kidney).",
-    "location": "Arises from the right side of the abdominal aorta at about L1/L2 and passes behind the inferior vena cava to the right kidney hilum.",
-    "description": "Longer than the left renal artery because the aorta lies left of the midline. It divides near the hilum into segmental arteries.",
-    "function": "Carries oxygenated blood to the kidney for filtering. Together the kidneys receive about 20-25% of the cardiac output at rest.",
-    "mnemonic": "At the hilum from front to back: Vein, Artery, Pelvis (\"VAP\").",
-    "clinical": "Renal artery stenosis reduces blood flow to the kidney, which releases more renin and causes high blood pressure (renovascular hypertension).",
-    "hint": "The vessel leaving the side of the main abdominal artery just below the level of L1 and entering the right kidney hilum."
+    "origin": "From the Latin ren, meaning kidney. Renal means of the kidney.",
+    "location": "It leaves the right side of the aorta at about L1 to L2 and runs behind the big vein, the inferior vena cava, to reach the right kidney.",
+    "description": "Longer than the left renal artery, because the aorta lies to the left of the middle. Near the kidney it splits into smaller branches.",
+    "function": "It brings fresh, oxygen-rich blood into the kidney to be filtered. The two kidneys take about a fifth to a quarter of all the blood the heart pumps at rest.",
+    "mnemonic": "At the kidney notch, from front to back, think VAP: Vein, Artery, Pelvis.",
+    "clinical": "If this artery narrows, the kidney thinks blood pressure is low and releases more renin. This drives blood pressure up.",
+    "hint": "The vessel leaving the side of the main belly artery near L1 and running behind the big vein to the right kidney."
    },
    "questions": [
     {
@@ -319,11 +319,11 @@
       "Superior mesenteric vein"
      ],
      "answer": 1,
-     "explanation": "Both renal arteries arise from the sides of the abdominal aorta at about L1/L2."
+     "explanation": "Both renal arteries come off the sides of the abdominal aorta, at about L1 to L2."
     },
     {
      "kind": "clinical",
-     "text": "Narrowing of a renal artery (renal artery stenosis) typically causes what?",
+     "text": "A narrowed renal artery usually causes what?",
      "options": [
       "Varicocele",
       "Low blood pressure",
@@ -331,7 +331,7 @@
       "Kidney stones"
      ],
      "answer": 2,
-     "explanation": "Reduced flow makes the kidney release more renin, raising blood pressure."
+     "explanation": "Less blood reaches the kidney, so it releases more renin, and that pushes blood pressure up."
     }
    ]
   },
@@ -365,13 +365,13 @@
    ],
    "content": {
     "pronunciation": "REE-nul VAYN",
-    "origin": "Latin ren \"kidney\" + vena \"vein\".",
-    "location": "Runs a short course from the right kidney hilum, in front of the renal artery, into the inferior vena cava.",
-    "description": "Short (about 2-3 cm) because the inferior vena cava lies on the right of the midline.",
-    "function": "Returns filtered blood from the kidney to the inferior vena cava.",
-    "mnemonic": "Left renal vein = long and crosses the aorta; right renal artery = long and crosses behind the IVC.",
-    "clinical": "Because it is so short, the right renal vein makes the left kidney the usual choice for living kidney donation, where a longer vein is easier to join.",
-    "hint": "The short vessel carrying blood straight from the right kidney hilum into the large vein beside it."
+    "origin": "From the Latin ren, kidney, and vena, vein. It is the vein of the kidney.",
+    "location": "A short hop from the notch of the right kidney, in front of the renal artery, straight into the big vein, the inferior vena cava.",
+    "description": "Very short, only about two to three centimetres, because the big vein sits just to the right of the middle.",
+    "function": "It carries cleaned blood out of the kidney and into the inferior vena cava, on its way back to the heart.",
+    "mnemonic": "Left renal vein is long and crosses the aorta. The right renal vein is a short stub, since the big vein is right next door.",
+    "clinical": "Because this vein is so short, surgeons usually take the left kidney from a living donor. Its longer vein is easier to join.",
+    "hint": "The short vessel carrying blood straight from the right kidney into the large vein beside it."
    },
    "questions": []
   },
@@ -409,38 +409,38 @@
    ],
    "content": {
     "pronunciation": "yoo-REE-ter",
-    "origin": "Greek oureter, from ourein \"to urinate\".",
-    "location": "Runs from the right renal pelvis down the posterior abdominal wall on the psoas major muscle, crosses the pelvic brim near the common iliac artery bifurcation, and enters the back of the bladder.",
-    "description": "A narrow muscular tube about 25-30 cm long. It passes obliquely through the bladder wall, which acts like a valve to stop urine flowing back up.",
-    "function": "Carries urine from the kidney to the bladder by waves of smooth muscle contraction (peristalsis).",
-    "mnemonic": "\"Water under the bridge\": the ureter passes under the uterine artery (female) or ductus deferens (male).",
-    "clinical": "Kidney stones lodge at its three narrowings: the pelviureteric junction, the pelvic brim and the vesicoureteric junction, causing renal colic.",
-    "hint": "The long thin tube running down from the right renal pelvis to the back of the bladder."
+    "origin": "From the Greek ourein, meaning to pass urine.",
+    "location": "It runs from the right kidney down the back wall of the belly, over the psoas muscle, across the rim of the pelvis and into the back of the bladder.",
+    "description": "A narrow muscular tube about 25 to 30 centimetres long. It enters the bladder on a slant, which works like a valve to stop urine flowing back up.",
+    "function": "It carries urine from the kidney down to the bladder. Its muscle squeezes in waves, called peristalsis, like squeezing toothpaste along a tube.",
+    "mnemonic": "Water under the bridge. The ureter passes under the uterine artery in females and under the sperm duct in males.",
+    "clinical": "Kidney stones get stuck at its three narrow points: where it leaves the kidney, at the pelvic rim, and where it enters the bladder. This causes intense pain.",
+    "hint": "The long thin tube running down from the right kidney to the back of the bladder."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Where do kidney stones most commonly get stuck along the ureter?",
+     "text": "Where do kidney stones most often get stuck in the ureter?",
      "options": [
-      "Only inside the kidney cortex",
+      "Only inside the kidney",
       "In the urethra only",
       "Where it crosses the diaphragm",
-      "At the three natural narrowings (renal pelvis junction, pelvic brim, bladder entry)"
+      "At its three narrow points"
      ],
      "answer": 3,
-     "explanation": "The ureter narrows at the pelviureteric junction, the pelvic brim and where it enters the bladder."
+     "explanation": "The ureter narrows where it leaves the kidney, at the rim of the pelvis and where it enters the bladder."
     },
     {
      "kind": "function",
      "text": "How is urine moved along the ureter?",
      "options": [
-      "By waves of smooth muscle contraction (peristalsis)",
-      "By skeletal muscle under voluntary control",
-      "By cilia",
+      "By waves of smooth muscle squeezing",
+      "By muscles you control at will",
+      "By tiny hairs, or cilia",
       "By gravity only"
      ],
      "answer": 0,
-     "explanation": "The ureter wall has smooth muscle that pushes urine down by peristalsis."
+     "explanation": "Smooth muscle in the ureter wall squeezes in waves, called peristalsis, pushing urine down even when you lie flat."
     }
    ]
   },
@@ -480,13 +480,13 @@
    ],
    "content": {
     "pronunciation": "KID-nee",
-    "origin": "Middle English kidenei (origin uncertain); Latin ren and Greek nephros (as in renal and nephron) also mean kidney.",
-    "location": "On the posterior abdominal wall, behind the peritoneum, roughly from T12 to L3 but slightly higher than the right kidney. The stomach, spleen, pancreas and colon lie in front of it.",
-    "description": "Bean-shaped, about 10-12 cm long, with a medial hilum where the renal vessels and renal pelvis pass. Inside are an outer cortex, an inner medulla of renal pyramids, and the renal pelvis that funnels urine into the ureter.",
-    "function": "Filters blood through about a million nephrons to make urine, controlling water, electrolytes and acid-base balance. It also releases renin (blood pressure) and erythropoietin (red cell production) and activates vitamin D.",
-    "mnemonic": "\"A WET BED\": Acid-base, Water, Electrolytes, Toxins, Blood pressure, Erythropoietin, vitamin D.",
-    "clinical": "Kidney stones (renal calculi) cause severe colicky loin-to-groin pain when they pass into the ureter.",
-    "hint": "The bean-shaped organ on the left posterior abdominal wall, capped by a small endocrine gland, with vessels entering its medial notch."
+    "origin": "Kidney is an old English word whose roots nobody is sure of. The Latin ren gives us renal, and the Greek nephros gives us nephron.",
+    "location": "High on the back wall of your belly, behind the gut lining, a little higher than the right kidney. The stomach, spleen, pancreas and colon lie in front of it.",
+    "description": "A bean-shaped organ, about 10 to 12 centimetres long. Inside, an outer layer and inner cones drain urine into a funnel that leads to the ureter.",
+    "function": "It cleans your blood and makes urine, balancing your water, salts and acid. It also releases hormones for blood pressure and red blood cells.",
+    "mnemonic": "Remember its jobs with A WET BED: Acid, Water, Electrolytes, Toxins, Blood pressure, Erythropoietin, vitamin D.",
+    "clinical": "Kidney stones can form here and pass down the ureter. As they move, they cause sharp, coming-and-going pain from the loin to the groin.",
+    "hint": "The bean-shaped organ on the left side of the back wall of the belly, with a small gland on top and vessels in its inner notch."
    },
    "questions": []
   },
@@ -522,13 +522,13 @@
    ],
    "content": {
     "pronunciation": "ad-REE-nul GLAND",
-    "origin": "Latin ad \"near\" + ren \"kidney\"; suprarenal means \"above the kidney\".",
-    "location": "On the superior and medial border of the left kidney, down toward its hilum, behind the stomach and pancreas.",
-    "description": "A small crescent-shaped (semilunar) endocrine gland with an outer cortex and an inner medulla, enclosed with the kidney in renal fascia.",
-    "function": "The cortex makes aldosterone (salt and water balance), cortisol (glucose metabolism and stress response) and androgens. The medulla makes adrenaline and noradrenaline for the fight-or-flight response.",
-    "mnemonic": "Cortex layers \"GFR\" (glomerulosa, fasciculata, reticularis) make \"salt, sugar, sex\" hormones. Medulla = middle, makes adrenaline.",
-    "clinical": "Addison's disease (adrenal insufficiency) and Cushing's syndrome (too much cortisol) are well-known disorders of the adrenal cortex.",
-    "hint": "The small hormone-producing cap sitting on top of the left bean-shaped organ."
+    "origin": "From the Latin ad, near, and ren, kidney. It is also called suprarenal, which means above the kidney.",
+    "location": "On the upper inner edge of the left kidney, reaching down toward its notch. It sits behind the stomach and pancreas.",
+    "description": "A small half-moon-shaped gland hugging the kidney. It has an outer cortex and an inner medulla, wrapped with the kidney in the same layer of tissue.",
+    "function": "Its cortex makes aldosterone for salt and water, cortisol for stress and sugar, and some sex hormones. Its medulla makes adrenaline and noradrenaline.",
+    "mnemonic": "Salt, sugar and sex come from the cortex. The medulla, in the middle, gives the adrenaline rush.",
+    "clinical": "Two well-known cortex problems are Addison's disease, where too little hormone is made, and Cushing's syndrome, where there is too much cortisol.",
+    "hint": "The small half-moon cap on the top inner edge of the left bean-shaped organ."
    },
    "questions": []
   },
@@ -566,13 +566,13 @@
    ],
    "content": {
     "pronunciation": "REE-nul AR-ter-ee",
-    "origin": "Latin ren, \"kidney\" (renalis, of the kidney).",
-    "location": "Arises from the left side of the abdominal aorta at about L1/L2 and runs a short course to the left kidney hilum.",
-    "description": "Shorter than the right renal artery. It divides near the hilum into segmental arteries.",
-    "function": "Carries oxygenated blood to the kidney for filtering. Together the kidneys receive about 20-25% of the cardiac output at rest.",
-    "mnemonic": "At the hilum from front to back: Vein, Artery, Pelvis (\"VAP\").",
-    "clinical": "Renal artery stenosis reduces blood flow to the kidney, which releases more renin and causes high blood pressure (renovascular hypertension).",
-    "hint": "The vessel leaving the side of the main abdominal artery just below the level of L1 and entering the left kidney hilum."
+    "origin": "From the Latin renalis, meaning of the kidney.",
+    "location": "It leaves the left side of the aorta at about L1 to L2 and takes a short path to the notch of the left kidney.",
+    "description": "Shorter than the right renal artery, because the aorta sits a little to the left. Near the kidney it splits into smaller branches.",
+    "function": "It carries oxygen-rich blood to the left kidney for cleaning. Together the kidneys get about a fifth to a quarter of the heart's output at rest.",
+    "mnemonic": "Vein, Artery, Pelvis, or VAP, is the order at the kidney notch from front to back.",
+    "clinical": "A narrowed renal artery starves the kidney of blood, so it releases more renin. The result is high blood pressure that can be hard to control.",
+    "hint": "The short vessel leaving the side of the main belly artery near L1 and entering the left kidney."
    },
    "questions": []
   },
@@ -610,13 +610,13 @@
    ],
    "content": {
     "pronunciation": "REE-nul VAYN",
-    "origin": "Latin ren \"kidney\" + vena \"vein\".",
-    "location": "Runs from the left kidney hilum across the front of the aorta, just below the superior mesenteric artery, to the inferior vena cava.",
-    "description": "About three times longer than the right renal vein. It receives the left gonadal (testicular or ovarian) vein and the left suprarenal vein.",
-    "function": "Returns filtered blood from the kidney to the inferior vena cava.",
-    "mnemonic": "Left renal vein = long and crosses the aorta; right renal artery = long and crosses behind the IVC.",
-    "clinical": "Compression of the left renal vein between the aorta and superior mesenteric artery (nutcracker syndrome) can cause blood in the urine and, in males, a left varicocele.",
-    "hint": "The long vessel from the left kidney that crosses in front of the aorta to reach the large vein on the right."
+    "origin": "From the Latin ren, kidney, and vena, vein.",
+    "location": "It runs from the notch of the left kidney across the front of the aorta, just below the superior mesenteric artery, to reach the big vein on the right.",
+    "description": "About three times longer than the right renal vein. The veins from the left testis or ovary and the left adrenal gland drain into it.",
+    "function": "It carries cleaned blood from the left kidney back to the inferior vena cava, and on to the heart.",
+    "mnemonic": "Left is long. The left renal vein crosses in front of the aorta to reach the big vein on the right.",
+    "clinical": "It can be squeezed between the aorta and the artery above it, like a nut in a nutcracker. This can cause blood in the urine and swollen veins by the left testis.",
+    "hint": "The long vessel from the left kidney that crosses in front of the main artery to reach the large vein on the right."
    },
    "questions": [
     {
@@ -626,14 +626,14 @@
       "Right renal vein",
       "Left renal vein",
       "Both equally",
-      "Neither: both pass behind the aorta"
+      "Neither, both pass behind the aorta"
      ],
      "answer": 1,
-     "explanation": "The left renal vein crosses anterior to the aorta, just below the superior mesenteric artery, to reach the IVC."
+     "explanation": "The left renal vein has to cross in front of the aorta to reach the big vein on the right, so it is longer."
     },
     {
      "kind": "relationship",
-     "text": "The left gonadal (testicular or ovarian) vein drains into which vessel?",
+     "text": "The vein from the left testis or ovary drains into which vessel?",
      "options": [
       "Left renal artery",
       "Abdominal aorta",
@@ -641,7 +641,7 @@
       "Inferior vena cava directly"
      ],
      "answer": 2,
-     "explanation": "On the left the gonadal vein drains into the left renal vein; on the right it drains directly into the IVC."
+     "explanation": "On the left, the gonadal vein empties into the left renal vein. On the right, it goes straight into the big vein."
     }
    ]
   },
@@ -679,13 +679,13 @@
    ],
    "content": {
     "pronunciation": "yoo-REE-ter",
-    "origin": "Greek oureter, from ourein \"to urinate\".",
-    "location": "Runs from the left renal pelvis down the posterior abdominal wall on the psoas major muscle, crosses the pelvic brim near the common iliac artery bifurcation, and enters the back of the bladder.",
-    "description": "A narrow muscular tube about 25-30 cm long. It passes obliquely through the bladder wall, which acts like a valve to stop urine flowing back up.",
-    "function": "Carries urine from the kidney to the bladder by waves of smooth muscle contraction (peristalsis).",
-    "mnemonic": "\"Water under the bridge\": the ureter passes under the uterine artery (female) or ductus deferens (male).",
-    "clinical": "Kidney stones lodge at its three narrowings: the pelviureteric junction, the pelvic brim and the vesicoureteric junction, causing renal colic.",
-    "hint": "The long thin tube running down from the left renal pelvis to the back of the bladder."
+    "origin": "From the Greek oureter, based on ourein, to pass urine.",
+    "location": "It runs from the left kidney down the back wall of the belly on the psoas muscle, crosses the rim of the pelvis and enters the back of the bladder.",
+    "description": "A thin muscular tube about 25 to 30 centimetres long. It tunnels through the bladder wall on a slant, making a one-way valve.",
+    "function": "It moves urine from the left kidney to the bladder in waves of muscle squeezing, so urine flows down even when you lie down.",
+    "mnemonic": "Remember water under the bridge. The ureter runs under the uterine artery or the sperm duct.",
+    "clinical": "A stone stuck at one of its three narrow points blocks the flow and causes renal colic, waves of severe pain from the loin to the groin.",
+    "hint": "The long thin tube running down from the left kidney to the back of the bladder."
    },
    "questions": []
   },
@@ -725,18 +725,18 @@
    ],
    "content": {
     "pronunciation": "YOOR-in-air-ee BLAD-er",
-    "origin": "Old English blaedre, \"bladder\" or \"blister\"; Latin vesica, as in vesical and cystitis (Greek kystis).",
-    "location": "In the pelvis, behind the pubic symphysis. In the male it lies in front of the rectum with the prostate below. When full it rises up into the lower abdomen.",
-    "description": "A hollow, stretchy muscular bag. Its wall is detrusor smooth muscle lined by transitional epithelium. The trigone is a smooth triangle on its base between the two ureteric openings and the internal urethral opening.",
-    "function": "Stores urine (usually comfortable up to about 400-500 mL in adults) and empties it during micturition, when the detrusor contracts under parasympathetic control from S2-S4.",
-    "mnemonic": "Trigone = triangle: two ureters in, one urethra out.",
-    "clinical": "Cystitis (bladder infection) is a common urinary tract infection. Urinary retention may need drainage with a urinary catheter.",
-    "hint": "The hollow muscular storage bag behind the pubic symphysis, fed by two tubes and emptied by one."
+    "origin": "From the Old English word for a bladder or blister. The Latin vesica and Greek kystis also mean bladder, as in cystitis.",
+    "location": "Low in your pelvis, just behind the pubic bone. As it fills, it rises up into your lower belly.",
+    "description": "A hollow, stretchy bag of muscle, like a balloon. On its floor is a smooth triangle, the trigone, between the two ureter openings and the urethra.",
+    "function": "It stores urine, usually comfortably up to about 400 to 500 millilitres in adults. When you go, its wall muscle, the detrusor, squeezes it empty.",
+    "mnemonic": "Trigone means triangle. Two ureters come in and one urethra goes out.",
+    "clinical": "Cystitis, a bladder infection, is a very common urinary infection. If the bladder cannot empty, a thin tube called a catheter can drain it.",
+    "hint": "The hollow muscular storage bag behind the pubic bone, filled by two tubes and emptied by one."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "What is the smooth triangular area on the bladder base called?",
+     "text": "What is the smooth triangle on the floor of the bladder called?",
      "options": [
       "Detrusor",
       "Renal pelvis",
@@ -744,11 +744,11 @@
       "Trigone"
      ],
      "answer": 3,
-     "explanation": "The trigone lies between the two ureteric openings and the internal urethral opening."
+     "explanation": "The trigone is the triangle between the two ureter openings and the urethra opening."
     },
     {
      "kind": "function",
-     "text": "Which muscle contracts to empty the bladder?",
+     "text": "Which muscle squeezes to empty the bladder?",
      "options": [
       "Detrusor",
       "Diaphragm",
@@ -756,7 +756,7 @@
       "External urethral sphincter"
      ],
      "answer": 0,
-     "explanation": "The detrusor smooth muscle in the bladder wall contracts during micturition."
+     "explanation": "The detrusor is the smooth muscle in the bladder wall. It squeezes to push urine out."
     }
    ]
   },
@@ -788,13 +788,13 @@
    ],
    "content": {
     "pronunciation": "yoo-REE-thrah",
-    "origin": "Greek ourethra, from ourein \"to urinate\".",
-    "location": "Runs from the internal urethral opening at the bladder neck, through the prostate and pelvic floor, then along the penis to the external urethral opening.",
-    "description": "About 18-20 cm long in males, in four parts: preprostatic (bladder neck), prostatic, membranous (through the pelvic floor, surrounded by the external urethral sphincter) and spongy (penile). The female urethra is only about 4 cm.",
-    "function": "Carries urine from the bladder out of the body; in males it also carries semen. The external urethral sphincter gives voluntary control of voiding.",
-    "mnemonic": "Male urethra parts \"P-P-M-S\": Preprostatic, Prostatic, Membranous, Spongy.",
-    "clinical": "An enlarged prostate (benign prostatic hyperplasia) squeezes the prostatic part, causing a weak stream and difficulty passing urine. The short female urethra is why UTIs are more common in women.",
-    "hint": "The outlet tube leading from the bladder neck through the prostate and along the penis."
+    "origin": "From the Greek ourethra, from ourein, meaning to pass urine.",
+    "location": "It runs from the neck of the bladder, through the prostate and the pelvic floor, then along the penis to the outside.",
+    "description": "In males it is about 18 to 20 centimetres long, in four parts, and the longest part runs along the penis. In females it is only about four centimetres.",
+    "function": "It carries urine from the bladder out of the body, and in males it carries semen too. A ring of muscle you control lets you hold on or let go.",
+    "mnemonic": "The four male parts, from the bladder out, are P P M S: preprostatic, prostatic, membranous and spongy.",
+    "clinical": "An enlarged prostate squeezes the part of the urethra inside it, giving a weak stream. The short female urethra is why women get more bladder infections.",
+    "hint": "The outlet tube leading from the neck of the bladder through the prostate and along the penis."
    },
    "questions": [
     {
@@ -802,16 +802,16 @@
      "text": "Which is the longest part of the male urethra?",
      "options": [
       "Membranous part",
-      "Spongy (penile) part",
+      "Spongy part, in the penis",
       "Preprostatic part",
       "Prostatic part"
      ],
      "answer": 1,
-     "explanation": "The spongy part runs the length of the penis and is the longest section."
+     "explanation": "The spongy part runs the whole length of the penis, so it is the longest."
     },
     {
      "kind": "clinical",
-     "text": "Benign prostatic hyperplasia mainly compresses which part of the urethra?",
+     "text": "An enlarged prostate mainly squeezes which part of the urethra?",
      "options": [
       "External opening",
       "Spongy part",
@@ -819,7 +819,7 @@
       "Membranous part"
      ],
      "answer": 2,
-     "explanation": "The prostatic urethra passes through the prostate, so an enlarged gland narrows it."
+     "explanation": "The prostatic part runs right through the prostate, so when the gland grows, it gets squeezed."
     }
    ]
   },
@@ -871,13 +871,13 @@
    ],
    "content": {
     "pronunciation": "ay-OR-tah",
-    "origin": "Greek aorte, from aeirein \"to lift\".",
-    "location": "Runs down the posterior abdominal wall just left of the midline, in front of the vertebral bodies, beside the inferior vena cava.",
-    "description": "The main artery of the body. The abdominal part gives the renal arteries at about L1/L2 and divides into the common iliac arteries at about L4.",
-    "function": "Carries oxygenated blood from the heart to the abdomen, pelvis and lower limbs, including both kidneys.",
-    "mnemonic": "Artery on the left, vein (IVC) on the right, side by side on the spine.",
-    "clinical": "An abdominal aortic aneurysm is a dangerous widening that can rupture and cause massive haemorrhage.",
-    "hint": "The main artery running down just left of the midline, giving a branch to each kidney."
+    "origin": "From the Greek aorte, linked to a word meaning to lift. Ancient writers thought the heart hung from it.",
+    "location": "It runs down the back wall of your belly, just left of the middle, in front of the spine and beside the big vein.",
+    "description": "The body's main artery. In the belly it sends a branch to each kidney at about L1 to L2, then splits in two at about L4.",
+    "function": "It carries oxygen-rich blood from the heart down to the belly, pelvis and legs, including both kidneys.",
+    "mnemonic": "Artery on the left, vein on the right, lying side by side on the spine.",
+    "clinical": "An aortic aneurysm is a dangerous ballooning of its wall. If it bursts, it causes massive bleeding.",
+    "hint": "The main artery running down just left of the middle, sending a branch to each kidney."
    },
    "questions": [],
    "context": true
@@ -926,13 +926,13 @@
    ],
    "content": {
     "pronunciation": "in-FEER-ee-er VEE-nah KAY-vah",
-    "origin": "Latin vena cava, \"hollow vein\"; inferior, \"lower\".",
-    "location": "Runs up the posterior abdominal wall to the right of the aorta, in front of the right renal artery, to pass through the diaphragm at T8.",
-    "description": "The largest vein in the body, formed by the common iliac veins at about L5.",
-    "function": "Returns deoxygenated blood from the lower body to the right atrium; both renal veins drain into it.",
-    "mnemonic": "Vein on the right, artery on the left.",
-    "clinical": "Late in pregnancy, lying on the back lets the uterus compress this vein and lower blood pressure (supine hypotension).",
-    "hint": "The large vein on the right of the main artery, receiving both renal veins."
+    "origin": "Vena cava is Latin for hollow vein. Inferior means lower, because it drains the lower body.",
+    "location": "It runs up the back wall of your belly, to the right of the aorta, and passes through the diaphragm at T8.",
+    "description": "The largest vein in the body. It starts at about L5, where the two big veins from the legs join.",
+    "function": "It carries used blood from the lower body back to the right side of the heart. Both renal veins empty into it.",
+    "mnemonic": "IVC is on the right side, like the right heart it returns to. The aorta keeps to the left.",
+    "clinical": "Late in pregnancy, lying flat on the back lets the womb press on this vein. Blood pressure can drop and the mother may feel faint.",
+    "hint": "The large vein to the right of the main artery, receiving both kidney veins."
    },
    "questions": [],
    "context": true

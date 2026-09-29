@@ -92,37 +92,37 @@
    "id": "muscles_ul",
    "label": "Muscles of the upper limb",
    "parent": null,
-   "tip": "Nerve summary: anterior arm muscles are musculocutaneous, forearm flexors mostly median (FCU and half of FDP ulnar), and all posterior arm and forearm muscles radial."
+   "tip": "Three nerves do most of the work: musculocutaneous for the front of the arm, mostly median for the forearm flexors, and radial for everything at the back."
   },
   {
    "id": "bones_context",
    "label": "Bones (context)",
    "parent": "muscles_ul",
-   "tip": "Use the bones to locate attachments: most forearm flexors start at the medial epicondyle, most extensors at the lateral epicondyle."
+   "tip": "Use your elbow bumps as anchors. Most forearm flexors start at the inner bump, and most extensors at the outer bump."
   },
   {
    "id": "shoulder",
    "label": "Shoulder and pectoral muscles",
    "parent": "muscles_ul",
-   "tip": "Rotator cuff mnemonic SITS: Supraspinatus, Infraspinatus, Teres minor, Subscapularis. The first three insert on the greater tubercle, subscapularis on the lesser tubercle."
+   "tip": "SITS names the rotator cuff: supraspinatus, infraspinatus, teres minor, subscapularis. The first three grip the greater bump on the arm bone, subscapularis the lesser one."
   },
   {
    "id": "arm",
    "label": "Arm muscles",
    "parent": "muscles_ul",
-   "tip": "Anterior arm \"BBC\": Biceps, Brachialis, Coracobrachialis, all supplied by the musculocutaneous nerve. The posterior arm (triceps, with anconeus) is supplied by the radial nerve."
+   "tip": "The front of the arm is BBC: biceps, brachialis and coracobrachialis, all run by the musculocutaneous nerve. The triceps at the back uses the radial nerve."
   },
   {
    "id": "forearm_flexors",
    "label": "Forearm: anterior (flexor) compartment",
    "parent": "muscles_ul",
-   "tip": "Lay your opposite hand on the forearm, thumb lateral: thumb, index, middle and ring fingers mark pronator teres, FCR, palmaris longus and FCU. Only FCU and the medial half of FDP use the ulnar nerve; the rest are median."
+   "tip": "Lay your other hand on your forearm, thumb outside, and your fingers mark four flexors. Only flexor carpi ulnaris and half of one deep flexor use the ulnar nerve."
   },
   {
    "id": "forearm_extensors",
    "label": "Forearm: posterior (extensor) compartment",
    "parent": "muscles_ul",
-   "tip": "Most arise from the lateral epicondyle and all are supplied by the radial nerve or its posterior interosseous branch. The three outcropping thumb muscles (APL, EPB, EPL) border the anatomical snuffbox."
+   "tip": "Most start at the outer elbow bump, and all use the radial nerve or its branch. Three thumb muscles frame the snuffbox, the hollow you see when you stretch your thumb back."
   }
  ],
  "structures": [
@@ -217,13 +217,13 @@
    "relationships": [],
    "content": {
     "pronunciation": "bones of the UP-er limb",
-    "origin": "Limb from Old English lim, a part or member of the body.",
-    "location": "The right shoulder girdle (clavicle and scapula), humerus, radius, ulna and hand bones, shown here for context.",
-    "description": "Pale context mesh that shows where the muscles in this pack take their origins and insertions.",
-    "function": "Provides the levers and attachment points that the shoulder, arm and forearm muscles pull on to move the limb.",
-    "mnemonic": "Muscles usually start (origin) on the more fixed, proximal bone and insert on the bone they move.",
-    "clinical": "Muscle pull explains how many fractures displace, for example the fragments of a broken clavicle or humerus.",
-    "hint": "The pale framework under the muscles: collarbone, shoulder blade, arm and forearm bones."
+    "origin": "Limb comes from an old English word for a part of the body.",
+    "location": "This pale frame is your right collarbone, shoulder blade, arm bone, forearm bones and hand. It sits under the muscles as a guide.",
+    "description": "A ghostly pale skeleton that shows where each muscle starts and where it ends.",
+    "function": "The bones are the levers. The muscles pull on them to lift, bend, twist and grip.",
+    "mnemonic": "A muscle usually starts on the steadier bone nearer your body and pulls on the bone it moves. Think of an anchor at the top and a rope to the load.",
+    "clinical": "Muscle pull explains why broken bones shift out of line. After a broken collarbone or arm bone, the muscles tug the pieces apart.",
+    "hint": "Look for the pale frame under everything: collarbone, shoulder blade, arm and forearm bones."
    },
    "questions": [],
    "merged": true,
@@ -282,18 +282,18 @@
    ],
    "content": {
     "pronunciation": "DEL-toyd",
-    "origin": "Greek delta, the triangular letter, plus -oid, \"like\": shaped like an upside-down triangle.",
-    "location": "Forms the rounded contour of the shoulder, covering the shoulder joint from the front, side and back.",
-    "description": "A thick triangular muscle with anterior, middle (acromial) and posterior parts that converge on the lateral side of the humerus.",
-    "function": "Abducts the arm (middle fibres) after supraspinatus starts the movement; anterior fibres flex and medially rotate, posterior fibres extend and laterally rotate. Lateral clavicle, acromion and spine of scapula -> deltoid tuberosity of humerus. Axillary nerve (C5-C6).",
-    "mnemonic": "Delta = triangle: the triangle on top of your shoulder.",
-    "clinical": "A fracture of the surgical neck of the humerus or a shoulder dislocation can injure the axillary nerve, weakening abduction and leaving a patch of numb skin over the lower deltoid (\"regimental badge\" area).",
-    "hint": "The shoulder \"cap\" muscle often used for intramuscular injections, about three fingerbreadths below the acromion."
+    "origin": "From the Greek letter delta, which is a triangle. The muscle looks like an upside-down triangle on your shoulder.",
+    "location": "It forms the round cap of your shoulder. It wraps over the joint from the front, the side and the back.",
+    "description": "A thick triangle with front, middle and back parts. They all meet on the outer side of the arm bone.",
+    "function": "It lifts your arm out to the side, like reaching for a high shelf, once a small cuff muscle starts the move. Its front swings the arm forward and its back swings it behind you.",
+    "mnemonic": "Delta means triangle. Picture a triangle-shaped shoulder pad sitting on top of your arm.",
+    "clinical": "A break near the top of the arm bone or a dislocated shoulder can hurt the axillary nerve that powers it. Lifting the arm sideways gets weak, and a patch of shoulder skin goes numb.",
+    "hint": "The rounded shoulder cap used for vaccine injections, about three finger widths below the bony tip of the shoulder."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which nerve supplies the deltoid?",
+     "text": "Which nerve powers the deltoid?",
      "options": [
       "Radial nerve",
       "Axillary nerve",
@@ -301,19 +301,19 @@
       "Suprascapular nerve"
      ],
      "answer": 1,
-     "explanation": "The deltoid is supplied by the axillary nerve (C5-C6), which also supplies teres minor."
+     "explanation": "The axillary nerve powers the deltoid. It also supplies teres minor, a small rotator cuff muscle."
     },
     {
      "kind": "clinical",
-     "text": "A fracture of the surgical neck of the humerus most often weakens which movement by damaging the axillary nerve?",
+     "text": "A break near the top of the arm bone can damage the axillary nerve. Which movement gets weak?",
      "options": [
-      "Shoulder abduction",
-      "Wrist extension",
-      "Elbow flexion",
-      "Finger flexion"
+      "Lifting the arm out to the side",
+      "Bending the wrist back",
+      "Bending the elbow",
+      "Bending the fingers"
      ],
      "answer": 0,
-     "explanation": "The axillary nerve supplies the deltoid, the main abductor of the arm beyond the first 15 degrees or so."
+     "explanation": "The axillary nerve powers the deltoid, the main muscle that lifts your arm sideways after the first small part of the lift."
     }
    ],
    "merged": true
@@ -375,26 +375,26 @@
    ],
    "content": {
     "pronunciation": "trah-PEE-zee-us",
-    "origin": "Greek trapezion, \"little table\": the left and right muscles together form a trapezium (four-sided) shape.",
-    "location": "Superficial muscle of the back of the neck and upper back, running from the skull and spine out to the shoulder.",
-    "description": "A large flat muscle with descending (upper), transverse (middle) and ascending (lower) fibres.",
-    "function": "Upper fibres elevate the scapula, middle fibres retract it, lower fibres depress it; upper and lower fibres together rotate it upward. Skull, ligamentum nuchae and spinous processes C7-T12 -> lateral clavicle, acromion and spine of scapula. Spinal accessory nerve (CN XI), with C3-C4 sensory fibres.",
-    "mnemonic": "Shrug your shoulders: the \"traps\" do the lifting.",
-    "clinical": "Injury to the spinal accessory nerve (for example in neck surgery) weakens shoulder shrugging and causes the shoulder to droop.",
-    "hint": "The broad, diamond-shaped sheet (with its partner) on the upper back that you use to shrug."
+    "origin": "From the Greek word for a little table. Your left and right traps together make a four-sided shape, a trapezium.",
+    "location": "It spreads over the back of your neck and upper back, from your skull and spine out to the tip of your shoulder.",
+    "description": "A big flat sheet shaped like a kite. It has upper, middle and lower fibres that pull in different directions.",
+    "function": "Its upper part shrugs your shoulders, the middle pulls your shoulder blades back, and the lower part pulls them down. Together they tilt the blade so you can reach overhead.",
+    "mnemonic": "Shrug your shoulders up to your ears. The traps are doing the lifting.",
+    "clinical": "It is powered by the spinal accessory nerve, a cranial nerve. If neck surgery injures this nerve, shrugging gets weak and the shoulder droops.",
+    "hint": "The broad kite-shaped sheet on the upper back that you use to shrug."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which nerve provides motor supply to the trapezius?",
+     "text": "Which nerve makes the trapezius move?",
      "options": [
       "Dorsal scapular nerve",
       "Long thoracic nerve",
       "Thoracodorsal nerve",
-      "Spinal accessory nerve (CN XI)"
+      "Spinal accessory nerve"
      ],
      "answer": 3,
-     "explanation": "The trapezius gets its motor supply from the spinal accessory nerve (cranial nerve XI)."
+     "explanation": "The spinal accessory nerve, cranial nerve eleven, drives the trapezius. That is why an injured nerve makes shrugging weak."
     }
    ],
    "merged": true
@@ -448,18 +448,18 @@
    ],
    "content": {
     "pronunciation": "pek-tor-AH-lis MAY-jor",
-    "origin": "Latin pectus, \"chest\", and major, \"larger\".",
-    "location": "The large fan-shaped muscle of the upper front of the chest; its lower border forms the anterior fold of the armpit (axilla).",
-    "description": "A thick fan with a clavicular head and a larger sternocostal head that converge on a flat tendon to the humerus.",
-    "function": "Adducts and medially rotates the arm; clavicular head flexes it. Medial clavicle, sternum and upper six costal cartilages -> lateral lip of intertubercular sulcus of humerus. Lateral and medial pectoral nerves (clavicular head C5-C6, sternocostal head C7-C8, T1).",
-    "mnemonic": "Pec major hugs: adduction and medial rotation bring the arms across the chest in a hug.",
-    "clinical": "Congenital absence of part of the muscle (Poland syndrome) is well known; the muscle can also rupture at its humeral tendon during heavy bench pressing.",
-    "hint": "The big chest muscle forming the front wall of the armpit."
+    "origin": "From the Latin for chest, and major, meaning larger. It is the bigger of your two chest muscles.",
+    "location": "It covers the upper front of your chest. Its lower edge makes the front fold of your armpit, which you can grip between finger and thumb.",
+    "description": "A thick fan with an upper part from the collarbone and a bigger part from the breastbone. Both gather into a flat tendon on the arm bone.",
+    "function": "It pulls your arm across your chest and turns it inward, like giving someone a hug. Its upper part helps lift the arm forward.",
+    "mnemonic": "Pec major gives the hugs. Wrap your arms across your chest and feel it squeeze.",
+    "clinical": "Its tendon can tear off the arm bone during a very heavy bench press. Some people are born missing part of it, a condition called Poland syndrome.",
+    "hint": "The big chest muscle that forms the front wall of your armpit."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "The anterior fold of the axilla (armpit) is formed mainly by which muscle?",
+     "text": "The front fold of your armpit is formed mainly by which muscle?",
      "options": [
       "Latissimus dorsi",
       "Serratus anterior",
@@ -467,7 +467,7 @@
       "Teres major"
      ],
      "answer": 2,
-     "explanation": "The lower border of pectoralis major forms the anterior axillary fold."
+     "explanation": "The lower edge of pectoralis major makes the front fold of the armpit. Grip it and you are holding this muscle."
     }
    ],
    "merged": true
@@ -508,26 +508,26 @@
    ],
    "content": {
     "pronunciation": "pek-tor-AH-lis MY-nor",
-    "origin": "Latin pectus, \"chest\", and minor, \"smaller\".",
-    "location": "Deep to pectoralis major on the upper front of the chest wall.",
-    "description": "A thin triangular muscle running upward and outward from the ribs to the coracoid process of the scapula.",
-    "function": "Stabilises the scapula by pulling it forward and downward against the chest wall. Ribs 3-5 near their costal cartilages -> coracoid process of scapula. Medial pectoral nerve (C8, T1).",
-    "mnemonic": "Ribs 3, 4, 5 up to the coracoid: \"3-4-5 to the beak\" (coracoid means \"like a crow's beak\").",
-    "clinical": "It is a key landmark: it divides the axillary artery into three parts, and a tight pectoralis minor can compress the brachial plexus.",
-    "hint": "The smaller chest muscle hidden beneath the big one, running from ribs to the scapula's beak-like process."
+    "origin": "From the Latin for chest, and minor, meaning smaller. It hides under its big brother.",
+    "location": "It lies under pectoralis major on the upper front of your chest wall.",
+    "description": "A thin triangle running up and out from ribs three, four and five to a small hook on the shoulder blade called the coracoid.",
+    "function": "It pulls your shoulder blade forward and down, holding it steady against your chest wall.",
+    "mnemonic": "Remember three, four, five to the beak. Coracoid means like a crow's beak, and the muscle runs from ribs three to five up to it.",
+    "clinical": "Surgeons use it as a landmark, because it crosses the main armpit artery and splits it into three parts. When tight, it can press on the nerves to the arm.",
+    "hint": "The smaller chest muscle hidden under the big one, running from the ribs up to a beak-like hook on the shoulder blade."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Pectoralis minor inserts onto which part of the scapula?",
+     "text": "Where on the shoulder blade does pectoralis minor attach?",
      "options": [
-      "Acromion",
-      "Coracoid process",
-      "Glenoid cavity",
-      "Inferior angle"
+      "Acromion, the shoulder tip",
+      "Coracoid process, the beak",
+      "Glenoid, the shoulder socket",
+      "Bottom corner of the blade"
      ],
      "answer": 1,
-     "explanation": "Pectoralis minor runs from ribs 3-5 to the coracoid process."
+     "explanation": "Pectoralis minor runs from ribs three to five up to the coracoid process, the beak-shaped hook on the front of the shoulder blade."
     }
    ]
   },
@@ -579,18 +579,18 @@
    ],
    "content": {
     "pronunciation": "seh-RAY-tus an-TEER-ee-or",
-    "origin": "Latin serratus, \"saw-toothed\", from its jagged rib attachments, and anterior, \"in front\".",
-    "location": "On the lateral wall of the chest, between the ribs and the scapula; its lower digitations show on the side of the chest.",
-    "description": "A broad sheet arising by saw-tooth slips from the upper eight ribs and wrapping back around the chest to the scapula.",
-    "function": "Protracts the scapula (pushing, punching) and rotates it upward for raising the arm above the head; holds it against the chest wall. Outer surfaces of ribs 1-8 -> anterior surface of medial border of scapula. Long thoracic nerve (C5-C7).",
-    "mnemonic": "Long thoracic nerve roots \"C5, 6, 7 raise your wings to heaven\": they stop the scapula winging.",
-    "clinical": "Damage to the long thoracic nerve (for example during axillary surgery) causes a \"winged scapula\": the medial border lifts off the chest when pushing against a wall.",
-    "hint": "The saw-toothed muscle on the side of the chest that holds the shoulder blade flat when you push."
+    "origin": "From the Latin for saw-toothed, because its edge on the ribs looks like the teeth of a saw.",
+    "location": "It lies on the side of your chest, between the ribs and the shoulder blade. On a lean person you can see its jagged edge below the armpit.",
+    "description": "A wide sheet that grips the top eight ribs with saw-tooth slips, then wraps back round the chest to the shoulder blade.",
+    "function": "It pushes your shoulder blade forward when you punch or push, and tilts it up so you can reach overhead. It keeps the blade pressed flat on your ribs.",
+    "mnemonic": "Think of it as the boxer's muscle. It throws your shoulder blade forward with every punch.",
+    "clinical": "Its nerve, the long thoracic nerve, can be injured during armpit surgery. Then the shoulder blade sticks out like a wing when you push against a wall.",
+    "hint": "The saw-toothed muscle on the side of your chest that holds your shoulder blade flat when you push."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "A winged scapula after axillary surgery suggests injury to the nerve of which muscle?",
+     "text": "After armpit surgery, a shoulder blade sticks out like a wing. The nerve to which muscle is likely hurt?",
      "options": [
       "Serratus anterior",
       "Trapezius",
@@ -598,19 +598,19 @@
       "Rhomboid major"
      ],
      "answer": 0,
-     "explanation": "The long thoracic nerve supplies serratus anterior, which holds the scapula against the chest wall."
+     "explanation": "The long thoracic nerve powers serratus anterior, which holds the shoulder blade against the chest. Without it, the blade lifts off like a wing."
     },
     {
      "kind": "function",
-     "text": "Which movement of the scapula is the main action of serratus anterior?",
+     "text": "What is the main job of serratus anterior on the shoulder blade?",
      "options": [
-      "Retraction",
-      "Elevation",
-      "Depression",
-      "Protraction"
+      "Pulling it back toward the spine",
+      "Lifting it up toward the ear",
+      "Pulling it down",
+      "Pushing it forward around the chest"
      ],
      "answer": 3,
-     "explanation": "Serratus anterior pulls the scapula forward around the chest (protraction), as in punching."
+     "explanation": "Serratus anterior drives the shoulder blade forward around the chest, as when you throw a punch. This move is called protraction."
     }
    ]
   },
@@ -659,18 +659,18 @@
    ],
    "content": {
     "pronunciation": "lah-TISS-ih-mus DOR-sy",
-    "origin": "Latin latissimus, \"widest\", and dorsi, \"of the back\".",
-    "location": "The broad flat muscle of the lower and middle back; it sweeps up to the armpit, forming the posterior axillary fold with teres major.",
-    "description": "A very wide triangular sheet that narrows into a flat tendon twisting around teres major to reach the front of the humerus.",
-    "function": "Extends, adducts and medially rotates the arm (climbing, rowing, swimming). Spinous processes T7-T12, thoracolumbar fascia, iliac crest and lower 3-4 ribs -> floor of intertubercular sulcus of humerus. Thoracodorsal nerve (C6-C8).",
-    "mnemonic": "The \"swimmer's muscle\": pulls the arm down and back as in a swimming stroke or chin-up.",
-    "clinical": "Because it is large and has a reliable blood supply, it is often used as a flap in breast reconstruction surgery.",
-    "hint": "The widest muscle of the back, pulling the arm down and back, as in a chin-up."
+    "origin": "From the Latin for widest of the back. It is the broadest muscle on your back.",
+    "location": "It covers your middle and lower back and sweeps up to your armpit. With teres major, it forms the back fold of the armpit.",
+    "description": "A huge flat triangle that narrows into a tendon. The tendon twists round to reach the front of the arm bone.",
+    "function": "It pulls your arm down and back and turns it inward, for pull-ups, rowing, climbing and swimming. The thoracodorsal nerve powers it.",
+    "mnemonic": "Call it the swimmer's muscle. It pulls your arm down and back through the water, just like a chin-up.",
+    "clinical": "It is large and has a reliable blood supply. Surgeons often move part of it to rebuild a breast after cancer surgery.",
+    "hint": "The widest muscle of the back, pulling your arm down and back as in a chin-up."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which nerve supplies latissimus dorsi?",
+     "text": "Which nerve powers latissimus dorsi?",
      "options": [
       "Long thoracic nerve",
       "Axillary nerve",
@@ -678,19 +678,19 @@
       "Lower subscapular nerve"
      ],
      "answer": 2,
-     "explanation": "Latissimus dorsi is supplied by the thoracodorsal nerve (C6-C8)."
+     "explanation": "The thoracodorsal nerve powers latissimus dorsi. Its name points to the chest and back, where the muscle lives."
     },
     {
      "kind": "function",
-     "text": "Which set of arm movements does latissimus dorsi produce?",
+     "text": "Which set of arm movements does latissimus dorsi make?",
      "options": [
-      "Flexion, abduction and lateral rotation",
-      "Extension, adduction and medial rotation",
-      "Abduction and lateral rotation only",
-      "Elbow flexion and supination"
+      "Forward, out to the side and turn outward",
+      "Back, in to the side and turn inward",
+      "Out to the side and turn outward only",
+      "Bend the elbow and turn the palm up"
      ],
      "answer": 1,
-     "explanation": "Latissimus dorsi extends, adducts and medially rotates the humerus."
+     "explanation": "Latissimus dorsi pulls the arm back, draws it in to your side and turns it inward. That is the pull in a chin-up or a swimming stroke."
     }
    ]
   },
@@ -734,18 +734,18 @@
    ],
    "content": {
     "pronunciation": "SOO-prah-spy-NAY-tus",
-    "origin": "Latin supra, \"above\", and spina, \"spine\": it lies above the spine of the scapula.",
-    "location": "In the supraspinous fossa of the scapula, above the scapular spine; its tendon passes under the acromion over the top of the shoulder joint.",
-    "description": "A rotator cuff muscle that fills the fossa above the spine and runs laterally in a tendon to the top of the humerus.",
-    "function": "Starts abduction of the arm (about the first 15 degrees) and helps deltoid, while holding the humeral head in the glenoid. Supraspinous fossa -> superior facet of greater tubercle of humerus. Suprascapular nerve (C5-C6).",
-    "mnemonic": "S of SITS: the first rotator cuff muscle, sitting \"super\" (above) the spine and \"starting\" abduction.",
-    "clinical": "Its tendon is the most commonly torn or impinged rotator cuff tendon, as it is pinched under the acromion in a painful arc of abduction.",
-    "hint": "The rotator cuff muscle in the fossa above the scapular spine that begins lifting the arm sideways."
+    "origin": "From the Latin for above the spine. It sits above the bony ridge on your shoulder blade.",
+    "location": "It fills the hollow above the ridge on the back of your shoulder blade. Its tendon slips under the bony tip of the shoulder to the top of the arm bone.",
+    "description": "A rotator cuff muscle that packs the upper hollow of the shoulder blade and ends in a tendon over the top of the joint.",
+    "function": "It starts lifting your arm out to the side, for about the first 15 degrees, then the deltoid takes over. It also holds the ball of the arm bone in its socket.",
+    "mnemonic": "The four rotator cuff muscles spell SITS. S for supraspinatus is the starter, sitting on top.",
+    "clinical": "Its tendon is the one most often pinched or torn in the shoulder. It gets squeezed under the bony shoulder tip, so lifting the arm hurts partway up.",
+    "hint": "The cuff muscle in the hollow above the shoulder blade ridge that begins lifting the arm sideways."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which rotator cuff muscle initiates abduction of the arm?",
+     "text": "Which rotator cuff muscle starts lifting your arm out to the side?",
      "options": [
       "Supraspinatus",
       "Teres minor",
@@ -753,11 +753,11 @@
       "Infraspinatus"
      ],
      "answer": 0,
-     "explanation": "Supraspinatus starts abduction, then deltoid takes over."
+     "explanation": "Supraspinatus starts the sideways lift, then the deltoid takes over for the rest."
     },
     {
      "kind": "clinical",
-     "text": "Which rotator cuff tendon is most often impinged under the acromion?",
+     "text": "Which rotator cuff tendon is most often pinched under the bony tip of the shoulder?",
      "options": [
       "Infraspinatus",
       "Subscapularis",
@@ -765,7 +765,7 @@
       "Supraspinatus"
      ],
      "answer": 3,
-     "explanation": "The supraspinatus tendon runs under the acromion and is the most commonly impinged and torn."
+     "explanation": "The supraspinatus tendon runs right under the shoulder tip, so it is the one most often pinched and torn."
     }
    ]
   },
@@ -813,18 +813,18 @@
    ],
    "content": {
     "pronunciation": "IN-frah-spy-NAY-tus",
-    "origin": "Latin infra, \"below\", and spina, \"spine\": it lies below the spine of the scapula.",
-    "location": "In the infraspinous fossa on the back of the scapula, below the scapular spine.",
-    "description": "A thick triangular rotator cuff muscle covering most of the back of the scapula, with a tendon passing behind the shoulder joint.",
-    "function": "Laterally rotates the arm and helps hold the humeral head in the glenoid. Infraspinous fossa -> middle facet of greater tubercle of humerus. Suprascapular nerve (C5-C6).",
-    "mnemonic": "I of SITS: \"infra\" = under the spine, and it turns the arm out (lateral rotation).",
-    "clinical": "Wasting of this muscle can be seen at the back of the shoulder when the suprascapular nerve is compressed, for example at the spinoglenoid notch.",
-    "hint": "The rotator cuff muscle filling the back of the scapula below its spine; it turns the arm outward."
+    "origin": "From the Latin for below the spine. It sits below the bony ridge on your shoulder blade.",
+    "location": "It fills the big hollow on the back of your shoulder blade, below the bony ridge.",
+    "description": "A thick triangle covering most of the back of the shoulder blade. Its tendon passes behind the shoulder joint.",
+    "function": "It turns your arm outward, like drawing your hand back to throw a ball. It also helps hold the ball of the arm bone in its socket.",
+    "mnemonic": "I in SITS. Infra means under the spine, and it turns the arm out.",
+    "clinical": "It shares the suprascapular nerve with supraspinatus. If that nerve is squeezed, you can see this muscle waste away at the back of the shoulder.",
+    "hint": "The cuff muscle filling the back of the shoulder blade below the ridge, turning the arm outward."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Infraspinatus and supraspinatus share which nerve supply?",
+     "text": "Infraspinatus and supraspinatus share which nerve?",
      "options": [
       "Axillary nerve",
       "Upper subscapular nerve",
@@ -832,7 +832,7 @@
       "Dorsal scapular nerve"
      ],
      "answer": 2,
-     "explanation": "Both are supplied by the suprascapular nerve (C5-C6)."
+     "explanation": "Both get their power from the suprascapular nerve, which runs across the top of the shoulder blade."
     }
    ]
   },
@@ -880,13 +880,13 @@
    ],
    "content": {
     "pronunciation": "TEH-reez MY-nor",
-    "origin": "Latin teres, \"round\" or \"rounded\", and minor, \"smaller\".",
-    "location": "Along the lateral border of the scapula on its back surface, just below infraspinatus.",
-    "description": "A narrow, rounded rotator cuff muscle running up and out to the back of the humeral head.",
-    "function": "Laterally rotates the arm and helps hold the humeral head in the glenoid. Middle part of lateral border of scapula -> inferior facet of greater tubercle of humerus. Axillary nerve (C5-C6).",
-    "mnemonic": "T of SITS: teres minor is in the cuff, teres major is not (\"minor is in, major is out\").",
-    "clinical": "It shares the axillary nerve with the deltoid, so axillary nerve injury weakens both.",
-    "hint": "The small rounded cuff muscle on the lateral border of the scapula that shares a nerve with the shoulder cap muscle."
+    "origin": "From the Latin for round, and minor, meaning smaller. It is the smaller of the two round muscles.",
+    "location": "It runs along the outer edge of the back of your shoulder blade, just below infraspinatus.",
+    "description": "A narrow, rounded cuff muscle running up and out to the back of the ball of the arm bone.",
+    "function": "It turns your arm outward and helps hold the ball of the arm bone snug in its socket.",
+    "mnemonic": "T in SITS. Teres minor is in the cuff, teres major is not. Remember: minor is in, major is out.",
+    "clinical": "It shares the axillary nerve with the deltoid. So an injury to that nerve weakens both muscles.",
+    "hint": "The small rounded cuff muscle on the outer edge of the shoulder blade that shares a nerve with the shoulder cap muscle."
    },
    "questions": [
     {
@@ -899,11 +899,11 @@
       "Deltoid"
      ],
      "answer": 1,
-     "explanation": "Teres minor is part of the rotator cuff (SITS); teres major is not."
+     "explanation": "Teres minor is the T in SITS, the four cuff muscles. Teres major sits just below it but is not part of the cuff."
     },
     {
      "kind": "function",
-     "text": "Which nerve supplies teres minor?",
+     "text": "Which nerve powers teres minor?",
      "options": [
       "Axillary nerve",
       "Suprascapular nerve",
@@ -911,7 +911,7 @@
       "Radial nerve"
      ],
      "answer": 0,
-     "explanation": "Teres minor is supplied by the axillary nerve (C5-C6), like the deltoid."
+     "explanation": "The axillary nerve powers teres minor, just as it powers the deltoid."
     }
    ]
   },
@@ -959,18 +959,18 @@
    ],
    "content": {
     "pronunciation": "sub-skap-yoo-LAIR-iss",
-    "origin": "Latin sub, \"under\", and scapula, \"shoulder blade\": it lies on the underside (front) of the scapula.",
-    "location": "On the anterior (rib-facing) surface of the scapula, forming part of the posterior wall of the armpit.",
-    "description": "The largest rotator cuff muscle, filling the subscapular fossa, with a tendon crossing the front of the shoulder joint.",
-    "function": "Medially rotates the arm and holds the humeral head in the glenoid. Subscapular fossa -> lesser tubercle of humerus. Upper and lower subscapular nerves (C5-C6).",
-    "mnemonic": "The last S of SITS, and the only cuff muscle on the \"S\"ide facing the ribs; it goes to the lesser tubercle, the other three to the greater.",
-    "clinical": "Its tendon helps prevent anterior dislocation of the shoulder and can be torn when the shoulder dislocates forwards.",
-    "hint": "The rotator cuff muscle on the front of the scapula, against the ribs, that turns the arm inward."
+    "origin": "From the Latin for under the shoulder blade. It lies on the side of the blade that faces your ribs.",
+    "location": "It covers the front of your shoulder blade, pressed against the ribs. It forms part of the back wall of your armpit.",
+    "description": "The biggest rotator cuff muscle. It fills the front of the shoulder blade, and its tendon crosses the front of the shoulder joint.",
+    "function": "It turns your arm inward, like tucking your hand behind your back. It also holds the ball of the arm bone firmly in its socket.",
+    "mnemonic": "The last S in SITS, on the Side facing the ribs. It alone goes to the lesser bump on the arm bone, while the other three go to the greater bump.",
+    "clinical": "Its tendon guards the front of the shoulder and helps stop it popping out forward. It can tear when the shoulder dislocates forward.",
+    "hint": "The cuff muscle on the front of the shoulder blade, against the ribs, that turns the arm inward."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Which rotator cuff muscle inserts on the lesser tubercle of the humerus?",
+     "text": "Which rotator cuff muscle attaches to the lesser tubercle, the smaller bump on the arm bone?",
      "options": [
       "Supraspinatus",
       "Infraspinatus",
@@ -978,7 +978,7 @@
       "Subscapularis"
      ],
      "answer": 3,
-     "explanation": "Subscapularis inserts on the lesser tubercle; the other three insert on the greater tubercle."
+     "explanation": "Subscapularis goes to the lesser tubercle at the front. The other three cuff muscles attach to the greater tubercle."
     }
    ]
   },
@@ -1030,18 +1030,18 @@
    ],
    "content": {
     "pronunciation": "TEH-reez MAY-jor",
-    "origin": "Latin teres, \"round\", and major, \"larger\".",
-    "location": "Along the lower lateral border and inferior angle of the scapula, below teres minor; with latissimus dorsi it forms the posterior fold of the armpit.",
-    "description": "A thick rounded muscle running up and out to the front of the humerus; it is not part of the rotator cuff.",
-    "function": "Adducts and medially rotates the arm, and helps extend it. Posterior surface of inferior angle of scapula -> medial lip of intertubercular sulcus of humerus. Lower subscapular nerve (C5-C6).",
-    "mnemonic": "Called \"lat's little helper\": it does the same jobs as latissimus dorsi.",
-    "clinical": "Teres major, teres minor, the long head of triceps and the humerus bound small spaces through which the axillary nerve and blood vessels pass.",
-    "hint": "The thick round muscle from the scapula's lower corner to the front of the humerus, helping the widest back muscle."
+    "origin": "From the Latin for round, and major, meaning larger. It is the bigger of the two round muscles.",
+    "location": "It runs from the lower corner of your shoulder blade, below teres minor. With latissimus dorsi it forms the back fold of your armpit.",
+    "description": "A thick, rounded muscle that runs up and out to the front of the arm bone. It is not part of the rotator cuff.",
+    "function": "It pulls your arm in to your side, turns it inward and helps draw it back, like pulling down on a rope.",
+    "mnemonic": "Call it lat's little helper. It does the same jobs as latissimus dorsi, the widest back muscle.",
+    "clinical": "It borders small gaps near the armpit that carry the axillary nerve and blood vessels. Surgeons use it to find them.",
+    "hint": "The thick round muscle from the lower corner of the shoulder blade to the front of the arm bone, helping the widest back muscle."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which muscle is known as \"lat's little helper\" because it adducts and medially rotates the arm?",
+     "text": "Which muscle is called lat's little helper because it pulls the arm in and turns it inward?",
      "options": [
       "Teres minor",
       "Infraspinatus",
@@ -1049,7 +1049,7 @@
       "Rhomboid minor"
      ],
      "answer": 2,
-     "explanation": "Teres major shares the actions of latissimus dorsi."
+     "explanation": "Teres major shares the jobs of latissimus dorsi, so it earns the nickname lat's little helper."
     }
    ]
   },
@@ -1101,26 +1101,26 @@
    ],
    "content": {
     "pronunciation": "ROM-boyd MAY-jor",
-    "origin": "Greek rhombos, a diamond (rhombus) shape.",
-    "location": "Deep to trapezius, between the thoracic spine and the medial border of the scapula.",
-    "description": "A flat, quadrilateral muscle with fibres running down and out, just below rhomboid minor.",
-    "function": "Retracts the scapula (squeezes the shoulder blades together) and rotates it downward, holding it to the chest wall. Spinous processes T2-T5 -> medial border of scapula from the spine to the inferior angle. Dorsal scapular nerve (C4-C5).",
-    "mnemonic": "Rhomboids \"row the boat\": they pull the shoulder blades together as in rowing.",
-    "clinical": "Weakness from dorsal scapular nerve injury lets the scapula drift away from the spine; the muscles are also a common site of upper back pain in desk workers.",
+    "origin": "From the Greek word for a diamond shape. Its outline looks like a stretched diamond.",
+    "location": "It lies under the trapezius, between your upper back spine and the inner edge of your shoulder blade.",
+    "description": "A flat, four-sided sheet with fibres running down and out. It sits just below rhomboid minor.",
+    "function": "It squeezes your shoulder blades together, as when you pull back on oars or stand up tall. It also holds the blade against your ribs.",
+    "mnemonic": "The rhomboids row the boat. Pull your shoulder blades back together and you feel them work.",
+    "clinical": "It is a common spot for aching upper back pain in desk workers. If its nerve is injured, the shoulder blade drifts away from the spine.",
     "hint": "The larger diamond-shaped muscle under the trapezius that squeezes the shoulder blades together."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which scapular movement do the rhomboids produce?",
+     "text": "What do the rhomboids do to the shoulder blades?",
      "options": [
-      "Protraction",
-      "Retraction",
-      "Upward rotation",
-      "Elevation only"
+      "Push them forward around the chest",
+      "Pull them back toward the spine",
+      "Tilt them up for reaching overhead",
+      "Only lift them up"
      ],
      "answer": 1,
-     "explanation": "The rhomboids retract the scapula, pulling it toward the spine."
+     "explanation": "The rhomboids pull the shoulder blades back toward the spine, squeezing them together like rowing."
     }
    ]
   },
@@ -1168,26 +1168,26 @@
    ],
    "content": {
     "pronunciation": "ROM-boyd MY-nor",
-    "origin": "Greek rhombos, a diamond (rhombus) shape; minor, \"smaller\".",
-    "location": "Deep to trapezius, just above rhomboid major, between the lower neck/upper thoracic spine and the scapula.",
-    "description": "A narrow band-like muscle lying above and parallel to rhomboid major.",
-    "function": "Retracts the scapula and rotates it downward, holding it to the chest wall. Ligamentum nuchae and spinous processes C7-T1 -> medial border of scapula at the level of its spine. Dorsal scapular nerve (C4-C5).",
-    "mnemonic": "Minor sits higher: \"minor on top, major below\".",
-    "clinical": "It is supplied by the same nerve as rhomboid major and levator scapulae, so dorsal scapular nerve injury weakens all three.",
-    "hint": "The small upper diamond-shaped muscle linking C7-T1 to the scapula at the level of its spine."
+    "origin": "From the Greek word for a diamond shape, and minor, meaning smaller.",
+    "location": "It lies under the trapezius, just above rhomboid major. It runs from the base of your neck to the shoulder blade.",
+    "description": "A narrow band lying above and alongside rhomboid major, like a thin stripe on top.",
+    "function": "It pulls your shoulder blade back toward the spine and holds it snug against your ribs.",
+    "mnemonic": "Minor sits higher. Remember: minor on top, major below.",
+    "clinical": "It shares the dorsal scapular nerve with rhomboid major and levator scapulae. Injury to that nerve weakens all three.",
+    "hint": "The small upper diamond-shaped muscle joining the base of the neck to the shoulder blade, level with its ridge."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Compared with rhomboid major, rhomboid minor lies:",
+     "text": "Compared with rhomboid major, where does rhomboid minor lie?",
      "options": [
-      "Superior to it",
-      "Inferior to it",
-      "Anterior to the scapula",
-      "Lateral to the scapula"
+      "Above it",
+      "Below it",
+      "In front of the shoulder blade",
+      "Outside the shoulder blade"
      ],
      "answer": 0,
-     "explanation": "Rhomboid minor runs from C7-T1 and lies just above rhomboid major (T2-T5)."
+     "explanation": "Rhomboid minor starts at the base of the neck and sits just above rhomboid major, which starts lower on the back."
     }
    ]
   },
@@ -1231,26 +1231,26 @@
    ],
    "content": {
     "pronunciation": "leh-VAY-tor SKAP-yoo-lee",
-    "origin": "Latin levator, \"lifter\", and scapulae, \"of the shoulder blade\".",
-    "location": "At the side and back of the neck, deep to trapezius and sternocleidomastoid, running down to the upper corner of the scapula.",
-    "description": "A strap-like muscle that twists slightly as it descends from the upper cervical vertebrae.",
-    "function": "Elevates the scapula and rotates it downward; with the scapula fixed it can bend the neck to the side. Transverse processes of C1-C4 -> medial border of scapula from the superior angle to the spine. Dorsal scapular nerve (C5) and cervical nerves C3-C4.",
-    "mnemonic": "It does what its name says: \"lifter of the scapula\".",
-    "clinical": "It is a common source of neck and shoulder stiffness (\"stiff neck\") and trigger-point pain near the upper corner of the scapula.",
-    "hint": "The neck muscle that lifts the upper corner of the shoulder blade, running from the top four neck vertebrae."
+    "origin": "From the Latin for lifter of the shoulder blade. Its name tells you its job.",
+    "location": "It runs down the side and back of your neck, under the trapezius, to the upper corner of your shoulder blade.",
+    "description": "A strap-like muscle that twists a little as it runs down from the top of the neck.",
+    "function": "It lifts your shoulder blade, like hitching a heavy bag up on one shoulder. When the blade stays still, it tips your neck to the side.",
+    "mnemonic": "It does what its name says. Levator means lifter, just like an elevator.",
+    "clinical": "It is a common cause of a stiff neck. Tender knots often form near the upper corner of the shoulder blade.",
+    "hint": "The neck muscle that lifts the upper corner of the shoulder blade, starting from the top four neck bones."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Levator scapulae arises from which vertebrae?",
+     "text": "Where does levator scapulae start?",
      "options": [
-      "Bodies of T1-T4",
-      "Spinous processes T2-T5",
-      "Spinous processes C7-T1",
-      "Transverse processes of C1-C4"
+      "Front of the upper back bones",
+      "Upper back spine, T2 to T5",
+      "Base of the neck, C7 to T1",
+      "Side bumps of the top four neck bones"
      ],
      "answer": 3,
-     "explanation": "Levator scapulae arises from the transverse processes of the upper four cervical vertebrae."
+     "explanation": "Levator scapulae starts on the side bumps of the top four neck vertebrae, then runs down to the shoulder blade."
     }
    ]
   },
@@ -1306,38 +1306,38 @@
    ],
    "content": {
     "pronunciation": "BY-seps BRAY-kee-eye",
-    "origin": "Latin bi-, \"two\", caput, \"head\", and brachium, \"arm\": the two-headed muscle of the arm.",
-    "location": "The superficial muscle on the front of the arm, between the shoulder and the elbow.",
-    "description": "A two-headed muscle: the long head's tendon runs through the shoulder joint in the intertubercular sulcus; the short head arises beside coracobrachialis.",
-    "function": "Supinates the forearm and flexes the elbow (strongest when the forearm is supinated); weakly flexes the shoulder. Long head: supraglenoid tubercle; short head: coracoid process -> radial tuberosity and bicipital aponeurosis. Musculocutaneous nerve (C5-C6).",
-    "mnemonic": "The biceps \"pulls the cork out\": it supinates to turn the corkscrew, then flexes to pull.",
-    "clinical": "The long head tendon can rupture, producing a \"Popeye\" bulge in the arm; the biceps reflex tests C5-C6.",
+    "origin": "From the Latin for two heads, and brachii, meaning of the arm. It is the two-headed arm muscle.",
+    "location": "It is the muscle on the front of your upper arm, between shoulder and elbow. Make a fist and bend your elbow to see it bulge.",
+    "description": "It has a long head and a short head. The long head's tendon runs through the shoulder joint in a groove on the arm bone.",
+    "function": "It bends your elbow and turns your palm up, like lifting a shopping bag or turning a key. It pulls hardest when your palm faces up.",
+    "mnemonic": "The biceps pulls the cork. It turns the corkscrew with your palm, then bends the elbow to pull the cork out.",
+    "clinical": "The long head tendon can snap, leaving a ball-shaped bulge called a Popeye arm. Tapping its tendon at the elbow tests the C5 and C6 nerves.",
     "hint": "The two-headed muscle on the front of the arm that turns the palm up and bends the elbow."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Apart from flexing the elbow, what is a main action of biceps brachii?",
+     "text": "Besides bending the elbow, what else does biceps brachii do?",
      "options": [
-      "Pronation of the forearm",
-      "Extension of the wrist",
-      "Supination of the forearm",
-      "Abduction of the arm"
+      "Turns the palm down",
+      "Bends the wrist back",
+      "Turns the palm up",
+      "Lifts the arm to the side"
      ],
      "answer": 2,
-     "explanation": "Biceps is a powerful supinator of the forearm as well as an elbow flexor."
+     "explanation": "Biceps is a strong palm-up twister as well as an elbow bender. That is why it helps you turn a screwdriver."
     },
     {
      "kind": "relationship",
-     "text": "Where does the tendon of biceps brachii mainly insert?",
+     "text": "Where does the main biceps tendon attach?",
      "options": [
-      "Coronoid process of ulna",
-      "Radial tuberosity",
-      "Olecranon",
-      "Deltoid tuberosity"
+      "Coronoid process of the ulna",
+      "Radial tuberosity, a bump on the radius",
+      "Olecranon, the point of the elbow",
+      "Deltoid tuberosity on the arm bone"
      ],
      "answer": 1,
-     "explanation": "Biceps inserts on the radial tuberosity (plus the bicipital aponeurosis)."
+     "explanation": "The biceps tendon attaches to a bump on the radius. Pulling there lets it twist the forearm as well as bend the elbow."
     }
    ],
    "merged": true
@@ -1386,18 +1386,18 @@
    ],
    "content": {
     "pronunciation": "bray-kee-AH-lis",
-    "origin": "Latin brachium, \"arm\": \"of the arm\".",
-    "location": "On the front of the lower arm, deep to biceps brachii, crossing the front of the elbow joint.",
-    "description": "A broad, flat muscle covering the lower half of the front of the humerus.",
-    "function": "The main flexor of the elbow in all forearm positions. Distal half of anterior humerus -> coronoid process and tuberosity of ulna. Musculocutaneous nerve (C5-C6), with a small radial nerve contribution.",
-    "mnemonic": "Brachialis is the \"workhorse\" of elbow flexion: it pulls on the ulna, which cannot rotate, so it works whatever the palm is doing.",
-    "clinical": "After elbow injuries, bleeding into this muscle can calcify (myositis ossificans), limiting movement.",
-    "hint": "The deep workhorse elbow flexor lying under the two-headed arm muscle, attaching to the ulna."
+    "origin": "From the Latin for arm. It simply means the muscle of the arm.",
+    "location": "It lies on the front of the lower arm, underneath the biceps, and crosses the front of the elbow.",
+    "description": "A broad, flat muscle covering the lower half of the front of the arm bone.",
+    "function": "It is the main elbow bender, whichever way your palm faces. It works every time you lift a cup or carry a bag.",
+    "mnemonic": "Brachialis is the workhorse. It pulls on the ulna, which cannot twist, so it bends the elbow in any hand position.",
+    "clinical": "After a bad elbow injury, bleeding into this muscle can turn into bone. This stiffens the elbow and is called myositis ossificans.",
+    "hint": "The deep workhorse elbow bender under the two-headed arm muscle, attaching to the ulna."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which muscle flexes the elbow equally well whether the forearm is pronated or supinated, because it inserts on the ulna?",
+     "text": "Which muscle bends the elbow equally well with the palm up or down, because it pulls on the ulna?",
      "options": [
       "Brachialis",
       "Biceps brachii",
@@ -1405,7 +1405,7 @@
       "Anconeus"
      ],
      "answer": 0,
-     "explanation": "Brachialis inserts on the ulna, which does not rotate, so it flexes the elbow in all positions."
+     "explanation": "Brachialis attaches to the ulna, which does not twist. So it bends the elbow in every hand position."
     }
    ]
   },
@@ -1445,18 +1445,18 @@
    ],
    "content": {
     "pronunciation": "KOR-ah-koh-bray-kee-AH-lis",
-    "origin": "Coracoid (Greek korax, \"crow\", like a crow's beak) plus brachium, \"arm\": from the coracoid to the arm.",
-    "location": "In the upper medial arm, deep and medial to the short head of biceps.",
-    "description": "A slender muscle that is pierced by the musculocutaneous nerve.",
-    "function": "Flexes and adducts the arm at the shoulder. Tip of coracoid process -> middle of medial surface of humerus. Musculocutaneous nerve (C5-C7).",
-    "mnemonic": "Its name gives its attachments: coraco (coracoid) -> brachialis (arm).",
-    "clinical": "It is a landmark for the musculocutaneous nerve, which pierces it, and for the brachial artery running along its medial side.",
-    "hint": "The slender upper-arm muscle from the scapula's beak to the humerus that its own nerve passes through."
+    "origin": "Named from the coracoid, the crow's beak on the shoulder blade, plus brachium, meaning arm. It runs from the beak to the arm.",
+    "location": "It lies high on the inner side of your upper arm, beside and under the short head of the biceps.",
+    "description": "A slender muscle with a nerve passing right through it.",
+    "function": "It lifts your arm forward and draws it in to your side, like clamping a newspaper under your arm.",
+    "mnemonic": "Its name is its map. Coraco means the coracoid and brachialis means the arm, so it runs from one to the other.",
+    "clinical": "The musculocutaneous nerve pierces it, and the main arm artery runs along its inner side. Surgeons use it to find both.",
+    "hint": "The slender upper-arm muscle from the shoulder blade's beak to the arm bone, with its own nerve passing through it."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "Which nerve pierces coracobrachialis?",
+     "text": "Which nerve passes right through coracobrachialis?",
      "options": [
       "Median nerve",
       "Ulnar nerve",
@@ -1464,7 +1464,7 @@
       "Musculocutaneous nerve"
      ],
      "answer": 3,
-     "explanation": "The musculocutaneous nerve pierces coracobrachialis and then supplies the anterior arm muscles."
+     "explanation": "The musculocutaneous nerve pierces coracobrachialis, then goes on to power the muscles on the front of the arm."
     }
    ]
   },
@@ -1520,18 +1520,18 @@
    ],
    "content": {
     "pronunciation": "TRY-seps BRAY-kee-eye",
-    "origin": "Latin tri-, \"three\", and caput, \"head\": the three-headed muscle of the arm.",
-    "location": "Fills the whole back (posterior compartment) of the arm.",
-    "description": "A three-headed muscle (long, lateral and medial heads) joining in one tendon at the point of the elbow.",
-    "function": "The main extensor of the elbow; the long head also helps extend and adduct the arm. Long head: infraglenoid tubercle; lateral and medial heads: posterior humerus above and below the radial groove -> olecranon of ulna. Radial nerve (C6-C8).",
-    "mnemonic": "Tri = three heads; \"triceps straightens\" (extends) the elbow.",
-    "clinical": "The triceps reflex tests C7; a midshaft humerus fracture can injure the radial nerve in the radial groove, between the lateral and medial heads.",
+    "origin": "From the Latin for three heads. It is the three-headed muscle of the arm.",
+    "location": "It fills the whole back of your upper arm. Push up from a chair and you can feel it firm up.",
+    "description": "Three heads, called long, lateral and medial, join into one tendon at the point of your elbow.",
+    "function": "It straightens your elbow, as in a push-up or pushing a door open. The radial nerve powers all three heads.",
+    "mnemonic": "Tri means three heads, and triceps straightens. Biceps bends, triceps straightens.",
+    "clinical": "Tapping its tendon tests the C7 nerve. A break in the middle of the arm bone can hurt the radial nerve, which runs in a groove between its heads.",
     "hint": "The three-headed muscle on the back of the arm that straightens the elbow."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which nerve supplies triceps brachii?",
+     "text": "Which nerve powers triceps brachii?",
      "options": [
       "Musculocutaneous nerve",
       "Axillary nerve",
@@ -1539,19 +1539,19 @@
       "Ulnar nerve"
      ],
      "answer": 2,
-     "explanation": "All three heads of triceps are supplied by the radial nerve (C6-C8)."
+     "explanation": "The radial nerve powers all three heads of triceps. It winds round the back of the arm bone right beside them."
     },
     {
      "kind": "relationship",
-     "text": "Where does triceps brachii insert?",
+     "text": "Where does triceps brachii attach at the elbow?",
      "options": [
       "Coronoid process",
-      "Olecranon",
+      "Olecranon, the point of the elbow",
       "Radial tuberosity",
       "Lateral epicondyle"
      ],
      "answer": 1,
-     "explanation": "Triceps inserts on the olecranon of the ulna, the point of the elbow."
+     "explanation": "Triceps pulls on the olecranon, the bony point of your elbow. That pull straightens your arm."
     }
    ],
    "merged": true
@@ -1592,18 +1592,18 @@
    ],
    "content": {
     "pronunciation": "an-KOH-nee-us",
-    "origin": "Greek ankon, \"elbow\".",
-    "location": "A small muscle on the back of the elbow, on the lateral side, just below the triceps tendon.",
-    "description": "A small triangular muscle, partly blended with the medial head of triceps.",
-    "function": "Assists triceps in extending the elbow and stabilises the elbow joint. Lateral epicondyle of humerus -> lateral surface of olecranon and upper posterior ulna. Radial nerve (C7-C8).",
-    "mnemonic": "Ankon = elbow: the little elbow muscle.",
-    "clinical": "It is used as a landmark in the lateral surgical approach to the elbow and radial head.",
-    "hint": "The small triangular muscle at the back of the elbow, from the lateral epicondyle to the ulna."
+    "origin": "From the Greek word for elbow. It is simply the elbow muscle.",
+    "location": "A small muscle on the back of your elbow, on the outer side, just below the triceps tendon.",
+    "description": "A small triangle that partly blends with the triceps above it.",
+    "function": "It helps triceps straighten your elbow and keeps the elbow joint steady as you move.",
+    "mnemonic": "Ankon means elbow. Think of it as the little elbow helper.",
+    "clinical": "Surgeons use it as a guide when they open the outer side of the elbow to reach the top of the radius.",
+    "hint": "The small triangle at the back of the elbow, running from the outer bump of the arm bone to the ulna."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Anconeus assists which muscle?",
+     "text": "Anconeus helps which muscle?",
      "options": [
       "Triceps brachii",
       "Biceps brachii",
@@ -1611,7 +1611,7 @@
       "Pronator teres"
      ],
      "answer": 0,
-     "explanation": "Anconeus helps triceps extend the elbow."
+     "explanation": "Anconeus helps triceps straighten the elbow. It sits right below the triceps tendon."
     }
    ]
   },
@@ -1663,18 +1663,18 @@
    ],
    "content": {
     "pronunciation": "PROH-nay-tor TEH-reez",
-    "origin": "Latin pronare, \"to bend forward\" (face down), and teres, \"round\".",
-    "location": "In the upper anterior forearm, running obliquely from the medial elbow across to the middle of the radius; it forms the medial border of the cubital fossa.",
-    "description": "A round two-headed muscle (humeral and ulnar heads); the median nerve passes between the heads.",
-    "function": "Pronates the forearm and helps flex the elbow. Medial epicondyle (humeral head) and coronoid process (ulnar head) -> middle of lateral surface of radius. Median nerve (C6-C7).",
-    "mnemonic": "Place your hand on your forearm: the thumb lies over pronator teres, the first of the superficial flexors (lateral to medial).",
-    "clinical": "The median nerve can be compressed between its two heads (pronator syndrome), causing forearm pain and tingling in the thumb side of the hand.",
-    "hint": "The round, oblique muscle that turns the palm down and forms the medial edge of the elbow pit."
+    "origin": "From the Latin for turning face down, and teres, meaning round.",
+    "location": "It slants across the upper front of your forearm, from the inner elbow to the middle of the radius. It forms the inner edge of the elbow pit.",
+    "description": "A round muscle with two heads. The median nerve passes between them.",
+    "function": "It turns your palm down, like flipping your hand over to type or use a mouse. It also helps bend the elbow.",
+    "mnemonic": "Lay your other hand across the front of this forearm, thumb near the elbow. Your thumb covers pronator teres, the first of four surface muscles.",
+    "clinical": "The median nerve can get squeezed between its two heads. This causes forearm ache and tingling on the thumb side of the hand, called pronator syndrome.",
+    "hint": "The round, slanting muscle that turns the palm down and forms the inner edge of the elbow pit."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which muscle forms the medial border of the cubital fossa?",
+     "text": "Which muscle forms the inner edge of the elbow pit, the cubital fossa?",
      "options": [
       "Brachioradialis",
       "Flexor carpi ulnaris",
@@ -1682,11 +1682,11 @@
       "Pronator teres"
      ],
      "answer": 3,
-     "explanation": "Pronator teres forms the medial border and brachioradialis the lateral border of the cubital fossa."
+     "explanation": "Pronator teres makes the inner edge of the elbow pit, and brachioradialis makes the outer edge."
     },
     {
      "kind": "clinical",
-     "text": "Pronator syndrome is compression of which nerve between the heads of pronator teres?",
+     "text": "In pronator syndrome, which nerve gets squeezed between the two heads of pronator teres?",
      "options": [
       "Ulnar nerve",
       "Radial nerve",
@@ -1694,7 +1694,7 @@
       "Musculocutaneous nerve"
      ],
      "answer": 2,
-     "explanation": "The median nerve passes between the humeral and ulnar heads of pronator teres."
+     "explanation": "The median nerve passes between the two heads of pronator teres, so a tight muscle can squeeze it."
     }
    ],
    "merged": true
@@ -1747,18 +1747,18 @@
    ],
    "content": {
     "pronunciation": "FLEK-sor KAR-pee ray-dee-AH-lis",
-    "origin": "Latin flexor, \"bender\", carpi, \"of the wrist\", radialis, \"on the radius side\".",
-    "location": "In the superficial layer of the anterior forearm, medial to pronator teres; its tendon is felt at the wrist on the thumb side of palmaris longus.",
-    "description": "A superficial flexor with a long tendon that passes through its own groove in the trapezium.",
-    "function": "Flexes the wrist and abducts it (radial deviation). Medial epicondyle (common flexor origin) -> base of 2nd metacarpal (and 3rd). Median nerve (C6-C7).",
-    "mnemonic": "Second finger of the \"hand on forearm\" mnemonic: index finger over FCR.",
-    "clinical": "Its tendon is a landmark at the wrist: the radial artery pulse is felt just lateral to it.",
-    "hint": "The superficial wrist flexor on the thumb side; the radial pulse lies just lateral to its tendon."
+    "origin": "From the Latin for bender of the wrist on the radius side. The radius is on your thumb side.",
+    "location": "It lies on the surface of the front of the forearm, beside pronator teres. At the wrist, feel its tendon just on the thumb side of the middle tendon.",
+    "description": "A surface wrist bender with a long tendon that slides through its own groove in a small wrist bone.",
+    "function": "It bends your wrist forward and tips your hand toward the thumb side.",
+    "mnemonic": "Lay your hand across your forearm, thumb near the elbow. Your index finger covers flexor carpi radialis.",
+    "clinical": "It is a handy landmark. You feel the radial pulse at the wrist just to the thumb side of its tendon.",
+    "hint": "The surface wrist bender on the thumb side, with the wrist pulse just beside its tendon."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "The radial pulse is felt just lateral to the tendon of which muscle?",
+     "text": "You feel the radial pulse just on the thumb side of which tendon?",
      "options": [
       "Palmaris longus",
       "Flexor carpi radialis",
@@ -1766,7 +1766,7 @@
       "Flexor digitorum superficialis"
      ],
      "answer": 1,
-     "explanation": "The radial artery lies just lateral to the flexor carpi radialis tendon at the wrist."
+     "explanation": "The radial artery runs just beside the flexor carpi radialis tendon at the wrist. Press gently there to feel your pulse."
     }
    ]
   },
@@ -1810,18 +1810,18 @@
    ],
    "content": {
     "pronunciation": "pal-MAIR-iss LONG-gus",
-    "origin": "Latin palma, \"palm\", and longus, \"long\".",
-    "location": "In the superficial layer of the anterior forearm between FCR and FCU; its tendon runs down the middle of the front of the wrist.",
-    "description": "A small muscle belly with a very long thin tendon passing superficial to the flexor retinaculum.",
-    "function": "Flexes the wrist and tenses the palmar aponeurosis. Medial epicondyle (common flexor origin) -> flexor retinaculum and palmar aponeurosis. Median nerve (C7-C8).",
-    "mnemonic": "Middle finger of the \"hand on forearm\" mnemonic; touch thumb to little finger and flex the wrist to make its tendon stand out.",
-    "clinical": "It is absent in about 1 in 7 people and is a common donor tendon for grafts; the median nerve lies just deep to its tendon at the wrist.",
-    "hint": "The thin central wrist tendon that pops up when you pinch thumb and little finger together and flex the wrist; not everyone has it."
+    "origin": "From the Latin for palm, and longus, meaning long. It has a long tendon to your palm.",
+    "location": "It lies on the surface of the front of the forearm, between the two wrist benders. Its tendon runs down the middle of your wrist.",
+    "description": "A small muscle belly with a very long thin tendon, like a balloon on a string.",
+    "function": "It helps bend your wrist and tightens the tough sheet in your palm, which helps you cup and grip.",
+    "mnemonic": "Your middle finger covers it in the hand-on-forearm trick. Touch thumb to little finger and bend your wrist to make its tendon pop up.",
+    "clinical": "About one in seven people do not have it at all. Surgeons often borrow its tendon as a graft, and the median nerve lies right under it at the wrist.",
+    "hint": "The thin middle wrist tendon that pops up when you pinch thumb to little finger, though not everyone has one."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Which forearm muscle is absent in a notable minority of people and is often used as a tendon graft?",
+     "text": "Which forearm muscle is missing in some people and often used as a tendon graft?",
      "options": [
       "Palmaris longus",
       "Flexor carpi radialis",
@@ -1829,7 +1829,7 @@
       "Pronator quadratus"
      ],
      "answer": 0,
-     "explanation": "Palmaris longus is missing in roughly 1 in 7 people and its tendon is a common graft source."
+     "explanation": "Palmaris longus is missing in about one in seven people. Its spare tendon is a favourite for grafts."
     }
    ]
   },
@@ -1881,18 +1881,18 @@
    ],
    "content": {
     "pronunciation": "FLEK-sor KAR-pee ul-NAIR-iss",
-    "origin": "Latin flexor, \"bender\", carpi, \"of the wrist\", ulnaris, \"on the ulna side\".",
-    "location": "The most medial muscle of the superficial anterior forearm, along the ulna on the little-finger side.",
-    "description": "A two-headed superficial flexor; its tendon contains the pisiform bone at the wrist.",
-    "function": "Flexes the wrist and adducts it (ulnar deviation). Medial epicondyle and olecranon/posterior border of ulna -> pisiform, hook of hamate and base of 5th metacarpal. Ulnar nerve (C7-C8).",
-    "mnemonic": "Ring finger of the \"hand on forearm\" mnemonic; it is the one superficial flexor on the ulnar nerve.",
-    "clinical": "The ulnar nerve enters the forearm between its two heads (cubital tunnel), a common site of ulnar nerve compression.",
-    "hint": "The little-finger-side wrist flexor that ends at the pea-shaped carpal bone and is supplied by the \"funny bone\" nerve."
+    "origin": "From the Latin for bender of the wrist on the ulna side. The ulna is on your little-finger side.",
+    "location": "It runs down the front of the forearm along the little-finger side. It is the innermost of the surface muscles.",
+    "description": "A two-headed wrist bender. Its tendon holds a pea-shaped bone, the pisiform, that you can feel at the wrist.",
+    "function": "It bends your wrist and tips your hand toward the little finger, like swinging a hammer down onto a nail.",
+    "mnemonic": "Your ring finger covers it in the hand-on-forearm trick. It is the one surface flexor run by the ulnar nerve.",
+    "clinical": "The ulnar nerve, your funny bone nerve, slips between its two heads. Squeezing here, in the cubital tunnel, causes tingling in the little finger.",
+    "hint": "The little-finger-side wrist bender that ends at the pea-shaped wrist bone and is run by the funny bone nerve."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which superficial forearm flexor is supplied by the ulnar nerve rather than the median nerve?",
+     "text": "Which surface forearm flexor is powered by the ulnar nerve, not the median nerve?",
      "options": [
       "Flexor carpi radialis",
       "Palmaris longus",
@@ -1900,7 +1900,7 @@
       "Flexor carpi ulnaris"
      ],
      "answer": 3,
-     "explanation": "Flexor carpi ulnaris is supplied by the ulnar nerve; the other superficial flexors are supplied by the median nerve."
+     "explanation": "Flexor carpi ulnaris runs on the ulnar nerve. The other surface flexors all use the median nerve."
     }
    ],
    "merged": true
@@ -1950,26 +1950,26 @@
    ],
    "content": {
     "pronunciation": "FLEK-sor dij-ih-TOR-um soo-per-fish-ee-AH-lis",
-    "origin": "Latin flexor, \"bender\", digitorum, \"of the fingers\", superficialis, \"near the surface\".",
-    "location": "The intermediate layer of the anterior forearm, deep to the superficial wrist flexors and superficial to FDP.",
-    "description": "A broad muscle with four tendons that pass through the carpal tunnel; each tendon splits to let an FDP tendon through.",
-    "function": "Flexes the proximal interphalangeal joints of the four fingers, and helps flex the knuckles and wrist. Medial epicondyle, coronoid process and anterior radius -> sides of the middle phalanges of the medial four digits. Median nerve (C7-C8, T1).",
-    "mnemonic": "\"Superficialis splits in two to let profundus through\": FDS goes to the middle phalanx, FDP to the distal.",
-    "clinical": "It is tested by holding the other fingers straight and asking the patient to bend one finger at the middle joint; cut tendons at the palm are common in hand injuries.",
-    "hint": "The intermediate-layer finger flexor whose split tendons reach the middle phalanges."
+    "origin": "From the Latin for bender of the fingers, near the surface. It is the shallower of the two long finger benders.",
+    "location": "It sits in the middle layer of the front of the forearm, under the wrist benders and on top of the deep finger bender.",
+    "description": "A broad muscle with four tendons that pass through the carpal tunnel. Each tendon splits in two to let a deeper tendon pass through.",
+    "function": "It bends the middle joint of each finger, like curling your fingers round a bag handle. It also helps bend the knuckles and wrist.",
+    "mnemonic": "Superficialis splits in two to let profundus through. The surface one stops at the middle bone, the deep one goes to the tip.",
+    "clinical": "To test it, hold the other fingers straight and bend one finger at its middle joint. Cuts across the palm often sever these tendons.",
+    "hint": "The middle-layer finger bender whose split tendons reach the middle finger bones."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Tendons of flexor digitorum superficialis insert on which bones?",
+     "text": "Where do the tendons of flexor digitorum superficialis attach?",
      "options": [
-      "Distal phalanges",
-      "Metacarpal bases",
-      "Middle phalanges",
-      "Proximal phalanges"
+      "Fingertip bones",
+      "Base of the hand bones",
+      "Middle finger bones",
+      "Finger bones nearest the palm"
      ],
      "answer": 2,
-     "explanation": "FDS tendons split and insert on the sides of the middle phalanges."
+     "explanation": "Each tendon splits and attaches to the sides of the middle finger bone. That is why it bends the middle joint."
     }
    ],
    "merged": true
@@ -2026,18 +2026,18 @@
    ],
    "content": {
     "pronunciation": "FLEK-sor dij-ih-TOR-um proh-FUN-dus",
-    "origin": "Latin flexor, \"bender\", digitorum, \"of the fingers\", profundus, \"deep\".",
-    "location": "In the deep layer of the anterior forearm, lying on the ulna and interosseous membrane, deep to FDS.",
-    "description": "A large deep muscle with four tendons that pass through the carpal tunnel and through the split FDS tendons to the fingertips.",
-    "function": "The only muscle that flexes the distal interphalangeal (fingertip) joints; also helps flex the other finger joints and wrist. Anterior and medial ulna and interosseous membrane -> bases of distal phalanges of digits 2-5. Medial part: ulnar nerve; lateral part: anterior interosseous nerve (median) (C8, T1).",
-    "mnemonic": "\"Profundus = deep and to the tips\": the deep muscle reaches the distal phalanx.",
-    "clinical": "A tendon avulsion from the distal phalanx (\"jersey finger\", often the ring finger) stops the fingertip bending; its split nerve supply explains findings in ulnar and median nerve injuries.",
-    "hint": "The deep finger flexor with a split nerve supply that is the only muscle bending the fingertips."
+    "origin": "From the Latin for bender of the fingers, deep. It lies deeper than the other finger bender.",
+    "location": "It lies in the deepest layer of the front of the forearm, on the ulna, under flexor digitorum superficialis.",
+    "description": "A large deep muscle with four tendons. They pass through the carpal tunnel and through the split surface tendons to the fingertips.",
+    "function": "It is the only muscle that bends your fingertips, like curling them to scratch an itch. The ulnar nerve runs its little-finger side and a median nerve branch its index side.",
+    "mnemonic": "Profundus is deep and goes to the tips. The deep muscle reaches the very end of each finger.",
+    "clinical": "Its tendon can rip off the fingertip when you grab a jersey, often on the ring finger. Afterwards that fingertip cannot bend.",
+    "hint": "The deep finger bender with two nerves, the only muscle that bends the fingertips."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which muscle is the only one that flexes the distal interphalangeal joints of the fingers?",
+     "text": "Which is the only muscle that bends the fingertip joints?",
      "options": [
       "Flexor digitorum superficialis",
       "Flexor digitorum profundus",
@@ -2045,11 +2045,11 @@
       "Palmaris longus"
      ],
      "answer": 1,
-     "explanation": "Only flexor digitorum profundus inserts on the distal phalanges of the fingers."
+     "explanation": "Only flexor digitorum profundus reaches the fingertip bones, so only it can bend the last joint."
     },
     {
      "kind": "function",
-     "text": "The medial part of flexor digitorum profundus (to the ring and little fingers) is supplied by which nerve?",
+     "text": "The part of flexor digitorum profundus going to the ring and little fingers is powered by which nerve?",
      "options": [
       "Ulnar nerve",
       "Radial nerve",
@@ -2057,7 +2057,7 @@
       "Musculocutaneous nerve"
      ],
      "answer": 0,
-     "explanation": "The medial part of FDP is supplied by the ulnar nerve; the lateral part by the anterior interosseous branch of the median nerve."
+     "explanation": "The ulnar nerve runs the ring and little finger part. A branch of the median nerve runs the index and middle part."
     }
    ]
   },
@@ -2101,18 +2101,18 @@
    ],
    "content": {
     "pronunciation": "FLEK-sor POL-ih-sis LONG-gus",
-    "origin": "Latin flexor, \"bender\", pollicis, \"of the thumb\", longus, \"long\".",
-    "location": "In the deep layer of the anterior forearm, on the front of the radius, lateral to FDP.",
-    "description": "A deep muscle whose single tendon passes through the carpal tunnel to the tip of the thumb.",
-    "function": "Flexes the interphalangeal joint of the thumb, and helps flex its other joints. Anterior surface of radius and interosseous membrane -> base of distal phalanx of thumb. Anterior interosseous nerve, a branch of the median nerve (C8, T1).",
-    "mnemonic": "\"Long flexor of the thumb\" goes the whole length to the thumb tip.",
-    "clinical": "Anterior interosseous nerve injury weakens this muscle and the index part of FDP, so the patient cannot make an \"OK\" sign (makes a pinch instead).",
+    "origin": "From the Latin for long bender of the thumb.",
+    "location": "It lies in the deep layer of the front of the forearm, on the radius, beside the deep finger bender.",
+    "description": "A deep muscle with a single tendon that runs through the carpal tunnel to the tip of the thumb.",
+    "function": "It bends the tip of your thumb, which you need to pinch, hold a pen or turn a key. It also helps bend the thumb's other joints.",
+    "mnemonic": "The long flexor of the thumb goes the whole long way, from forearm to thumb tip.",
+    "clinical": "Its nerve, a median nerve branch called the anterior interosseous nerve, also runs the index part of the deep finger bender. If injured, you cannot make a round OK sign.",
     "hint": "The deep forearm muscle on the radius that bends the tip of the thumb."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Inability to make a round \"OK\" sign (flexing the thumb tip and index tip) suggests injury to the nerve supplying:",
+     "text": "Someone cannot make a round OK sign with thumb and index tips. The nerve to which muscle is hurt?",
      "options": [
       "Brachioradialis",
       "Extensor pollicis longus",
@@ -2120,7 +2120,7 @@
       "Flexor pollicis longus"
      ],
      "answer": 3,
-     "explanation": "The anterior interosseous nerve supplies flexor pollicis longus and the index part of FDP."
+     "explanation": "The anterior interosseous nerve powers flexor pollicis longus and the index part of the deep finger bender. Without it, the OK circle flattens into a pinch."
     }
    ]
   },
@@ -2168,12 +2168,12 @@
    ],
    "content": {
     "pronunciation": "PROH-nay-tor kwod-RAY-tus",
-    "origin": "Latin pronare, \"to turn face down\", and quadratus, \"square\".",
-    "location": "The deepest muscle of the distal anterior forearm, just above the wrist, lying directly on the radius and ulna.",
-    "description": "A flat, square muscle running across between the lower ends of the ulna and radius.",
-    "function": "The main pronator of the forearm; it also holds the lower radius and ulna together. Distal quarter of anterior ulna -> distal quarter of anterior radius. Anterior interosseous nerve (median) (C8, T1).",
-    "mnemonic": "Quadratus = square: the square pronator at the bottom of the forearm.",
-    "clinical": "It lies close to the site of a common distal radius fracture and is often lifted during surgical plating of the radius.",
+    "origin": "From the Latin for turning face down, and quadratus, meaning square.",
+    "location": "It is the deepest muscle just above the front of your wrist, lying right on the radius and ulna.",
+    "description": "A flat, square muscle stretched across between the lower ends of the two forearm bones.",
+    "function": "It is the main muscle that turns your palm down, like flipping your hand over on a table. It also holds the two forearm bones together.",
+    "mnemonic": "Quadratus means square. It is the square palm-down muscle at the bottom of the forearm.",
+    "clinical": "It lies right over a common spot for a broken wrist. Surgeons lift it aside to fix the radius with a metal plate.",
     "hint": "The small square muscle deep in the lower forearm that turns the palm down."
    },
    "questions": [
@@ -2181,13 +2181,13 @@
      "kind": "location",
      "text": "Where is pronator quadratus found?",
      "options": [
-      "Upper lateral forearm",
+      "Upper outer forearm",
       "Back of the elbow",
-      "Deep in the distal anterior forearm",
-      "On the front of the humerus"
+      "Deep in the front of the forearm, near the wrist",
+      "On the front of the arm bone"
      ],
      "answer": 2,
-     "explanation": "Pronator quadratus is the deepest muscle of the lower anterior forearm, just above the wrist."
+     "explanation": "Pronator quadratus is the deepest muscle at the front of the lower forearm, just above the wrist."
     }
    ]
   },
@@ -2231,18 +2231,18 @@
    ],
    "content": {
     "pronunciation": "BRAY-kee-oh-ray-dee-AH-lis",
-    "origin": "Latin brachium, \"arm\", and radius: running from the arm to the radius.",
-    "location": "The most superficial muscle on the lateral (thumb) side of the forearm; it forms the lateral border of the cubital fossa.",
-    "description": "A long superficial muscle with a flat tendon to the lower radius; it lies in the posterior compartment but acts as a flexor.",
-    "function": "Flexes the elbow, most strongly with the forearm midway between pronation and supination (the \"hammer\" position). Lateral supracondylar ridge of humerus -> lateral side of distal radius just above the styloid. Radial nerve (C5-C6).",
-    "mnemonic": "The \"beer-drinking muscle\": it flexes the elbow with the thumb up, as when lifting a glass.",
-    "clinical": "The brachioradialis reflex (tap near the wrist on the thumb side) tests C5-C6.",
-    "hint": "The superficial muscle on the thumb side of the forearm that bends the elbow with the thumb pointing up."
+    "origin": "From the Latin for arm, plus radius. It runs from the arm bone down to the radius.",
+    "location": "It is the fleshy muscle on the thumb side of your forearm, just below the elbow. It forms the outer edge of the elbow pit.",
+    "description": "A long surface muscle with a flat tendon to the lower radius. It sits with the back forearm muscles and is powered by the radial nerve.",
+    "function": "It bends your elbow, strongest with your thumb pointing up, like lifting a hammer or a mug.",
+    "mnemonic": "Call it the mug-lifting muscle. It lifts your drink with your thumb pointing up.",
+    "clinical": "Tapping its tendon near the thumb side of the wrist tests the C5 and C6 nerves. This is the brachioradialis reflex.",
+    "hint": "The surface muscle on the thumb side of the forearm that bends the elbow with the thumb pointing up."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Brachioradialis is a flexor of the elbow, but which nerve supplies it?",
+     "text": "Brachioradialis bends the elbow, but which nerve powers it?",
      "options": [
       "Musculocutaneous nerve",
       "Radial nerve",
@@ -2250,7 +2250,7 @@
       "Ulnar nerve"
      ],
      "answer": 1,
-     "explanation": "Although it flexes the elbow, brachioradialis lies with the extensors and is supplied by the radial nerve."
+     "explanation": "Although it bends the elbow, brachioradialis sits with the back forearm muscles and is powered by the radial nerve."
     }
    ]
   },
@@ -2298,26 +2298,26 @@
    ],
    "content": {
     "pronunciation": "eks-TEN-sor KAR-pee ray-dee-AH-lis LONG-gus",
-    "origin": "Latin extensor, \"straightener\", carpi, \"of the wrist\", radialis, \"radius side\", longus, \"long\".",
-    "location": "In the lateral part of the posterior forearm, just behind brachioradialis.",
-    "description": "A long wrist extensor whose tendon runs on the back of the radius, beside ECRB, to the index metacarpal.",
-    "function": "Extends the wrist and abducts it (radial deviation); helps make a firm fist. Lateral supracondylar ridge of humerus -> dorsal base of 2nd metacarpal. Radial nerve (C6-C7).",
-    "mnemonic": "The two radial extensors go to fingers 2 and 3: \"longus to 2, brevis to 3\".",
-    "clinical": "Wrist extensors must hold the wrist back for a strong grip; radial nerve palsy causes wrist drop, weakening grip.",
-    "hint": "The long wrist extensor beside the thumb-side elbow flexor, going to the index metacarpal."
+    "origin": "From the Latin for long straightener of the wrist on the radius side.",
+    "location": "It lies on the thumb side of the back of the forearm, just behind brachioradialis.",
+    "description": "A long wrist straightener whose tendon runs down the back of the radius, beside its shorter partner, to the index finger's hand bone.",
+    "function": "It pulls your wrist back and tips it toward the thumb. It holds the wrist steady so you can make a firm fist.",
+    "mnemonic": "The two radial extensors go to hand bones two and three. Remember: longus to two, brevis to three.",
+    "clinical": "Your grip is weak unless these muscles hold the wrist back. Radial nerve damage causes wrist drop, where the hand flops down.",
+    "hint": "The long wrist straightener beside the thumb-side elbow bender, going to the index finger's hand bone."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Extensor carpi radialis longus inserts on the base of which metacarpal?",
+     "text": "Extensor carpi radialis longus attaches to the base of which hand bone?",
      "options": [
-      "1st",
-      "2nd",
-      "3rd",
-      "5th"
+      "First metacarpal, the thumb",
+      "Second metacarpal, the index",
+      "Third metacarpal, the middle",
+      "Fifth metacarpal, the little finger"
      ],
      "answer": 1,
-     "explanation": "ECRL inserts on the base of the 2nd metacarpal; ECRB on the 3rd."
+     "explanation": "The long radial extensor goes to the second metacarpal, the index finger's hand bone. The short one goes to the third."
     }
    ]
   },
@@ -2365,18 +2365,18 @@
    ],
    "content": {
     "pronunciation": "eks-TEN-sor KAR-pee ray-dee-AH-lis BREV-iss",
-    "origin": "Latin extensor, \"straightener\", carpi, \"of the wrist\", radialis, \"radius side\", brevis, \"short\".",
-    "location": "In the posterior forearm, deep and medial to ECRL.",
-    "description": "A shorter wrist extensor arising from the common extensor origin; its tendon runs with ECRL to the middle metacarpal.",
-    "function": "Extends and abducts the wrist. Lateral epicondyle of humerus (common extensor origin) -> dorsal base of 3rd metacarpal. Deep branch of radial nerve (C7-C8).",
-    "mnemonic": "Brevis goes to the middle (3rd) metacarpal, in the centre of the wrist.",
-    "clinical": "Lateral epicondylitis (\"tennis elbow\") most often involves the origin of this muscle at the lateral epicondyle.",
-    "hint": "The short radial wrist extensor from the lateral epicondyle; its origin is the usual site of tennis elbow."
+    "origin": "From the Latin for short straightener of the wrist on the radius side.",
+    "location": "It lies on the back of the forearm, just under and inside its longer partner.",
+    "description": "A shorter wrist straightener starting from the outer bump of the elbow. Its tendon runs beside the long one to the middle finger's hand bone.",
+    "function": "It pulls your wrist back and steadies it, like when you hold a racket or lift a kettle.",
+    "mnemonic": "Brevis goes to the middle. It ends on the third hand bone, right in the centre of the wrist.",
+    "clinical": "Tennis elbow usually starts where this muscle attaches to the outer elbow bump. Gripping and lifting then hurt.",
+    "hint": "The short radial wrist straightener from the outer elbow bump, the usual spot for tennis elbow."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "Tennis elbow (lateral epicondylitis) most often involves the origin of which muscle?",
+     "text": "Tennis elbow most often affects where which muscle starts?",
      "options": [
       "Pronator teres",
       "Flexor carpi ulnaris",
@@ -2384,7 +2384,7 @@
       "Extensor carpi radialis brevis"
      ],
      "answer": 3,
-     "explanation": "The common extensor origin, especially ECRB, is the usual site of tennis elbow."
+     "explanation": "Tennis elbow is overuse at the outer elbow bump, and extensor carpi radialis brevis is the muscle most often involved."
     }
    ]
   },
@@ -2441,18 +2441,18 @@
    ],
    "content": {
     "pronunciation": "eks-TEN-sor dij-ih-TOR-um",
-    "origin": "Latin extensor, \"straightener\", and digitorum, \"of the fingers\".",
-    "location": "In the middle of the superficial layer of the posterior forearm.",
-    "description": "A superficial muscle dividing into four tendons that fan across the back of the hand, linked by bands and ending in extensor expansions.",
-    "function": "Extends the four fingers at the knuckles (and, via the extensor expansions, the finger joints) and helps extend the wrist. Lateral epicondyle (common extensor origin) -> extensor expansions of digits 2-5. Posterior interosseous nerve, from the radial nerve (C7-C8).",
-    "mnemonic": "The \"common\" finger extensor: one muscle, four tendons for the four fingers.",
-    "clinical": "Its tendons are visible on the back of the hand when the fingers are straightened; they can be cut in hand injuries or rupture in rheumatoid arthritis.",
-    "hint": "The central superficial muscle on the back of the forearm whose four tendons straighten the fingers."
+    "origin": "From the Latin for straightener of the fingers.",
+    "location": "It runs down the middle of the back of your forearm, right under the skin.",
+    "description": "A surface muscle that splits into four tendons. They fan across the back of your hand, linked by small bands.",
+    "function": "It straightens your four fingers, like opening your hand to let go of a ball. It is powered by the posterior interosseous nerve, a radial nerve branch.",
+    "mnemonic": "The common finger straightener: one muscle, four tendons, four fingers.",
+    "clinical": "You can see its tendons on the back of your hand when you straighten your fingers. They can be cut in hand injuries or snap in rheumatoid arthritis.",
+    "hint": "The middle surface muscle on the back of the forearm whose four tendons straighten the fingers."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Extensor digitorum is supplied by which nerve?",
+     "text": "Which nerve powers extensor digitorum?",
      "options": [
       "Anterior interosseous nerve",
       "Ulnar nerve",
@@ -2460,7 +2460,7 @@
       "Axillary nerve"
      ],
      "answer": 2,
-     "explanation": "Extensor digitorum is supplied by the posterior interosseous nerve, the deep branch of the radial nerve."
+     "explanation": "The posterior interosseous nerve, a deep branch of the radial nerve, powers extensor digitorum."
     }
    ]
   },
@@ -2505,18 +2505,18 @@
    ],
    "content": {
     "pronunciation": "eks-TEN-sor DIJ-ih-tee MIN-ih-mee",
-    "origin": "Latin extensor, \"straightener\", digiti minimi, \"of the smallest finger\".",
-    "location": "In the superficial posterior forearm, between extensor digitorum and ECU.",
-    "description": "A slender muscle, often partly joined to extensor digitorum, with a tendon to the little finger.",
-    "function": "Extends the little finger, allowing it to straighten on its own. Lateral epicondyle (common extensor origin) -> extensor expansion of little finger. Posterior interosseous nerve (C7-C8).",
-    "mnemonic": "Minimi = smallest: the extensor of the smallest finger.",
-    "clinical": "With extensor indicis, it lets the index and little fingers be raised independently (the \"horns\" gesture).",
-    "hint": "The slender extra extensor that lets the smallest finger straighten independently."
+    "origin": "From the Latin for straightener of the smallest finger.",
+    "location": "It lies on the surface of the back of the forearm, between the main finger straightener and the ulnar wrist straightener.",
+    "description": "A slender muscle, often partly joined to the main finger straightener, with a tendon to the little finger.",
+    "function": "It straightens your little finger on its own, like lifting your pinkie while holding a cup.",
+    "mnemonic": "Minimi means smallest. It straightens the smallest finger.",
+    "clinical": "With extensor indicis, it lets you raise your index and little fingers on their own, as in the rock and roll horns sign.",
+    "hint": "The slender extra straightener that lets the smallest finger lift on its own."
    },
    "questions": [
     {
      "kind": "terminology",
-     "text": "Which finger does extensor digiti minimi extend?",
+     "text": "Which finger does extensor digiti minimi straighten?",
      "options": [
       "Thumb",
       "Little finger",
@@ -2524,7 +2524,7 @@
       "Index finger"
      ],
      "answer": 1,
-     "explanation": "Digiti minimi means \"of the smallest finger\", the little finger."
+     "explanation": "Digiti minimi means of the smallest finger, so it straightens your little finger."
     }
    ]
   },
@@ -2580,26 +2580,26 @@
    ],
    "content": {
     "pronunciation": "eks-TEN-sor KAR-pee ul-NAIR-iss",
-    "origin": "Latin extensor, \"straightener\", carpi, \"of the wrist\", ulnaris, \"ulna side\".",
-    "location": "The most medial muscle of the superficial posterior forearm, along the back of the ulna.",
-    "description": "A long superficial extensor whose tendon runs in a groove beside the ulnar styloid to the little-finger metacarpal.",
-    "function": "Extends the wrist and adducts it (ulnar deviation). Lateral epicondyle and posterior border of ulna -> base of 5th metacarpal. Posterior interosseous nerve (C7-C8).",
-    "mnemonic": "Works with FCU to adduct the wrist: \"the two ulnar muscles pull toward the ulna\".",
-    "clinical": "Its tendon can slip out of its groove (subluxate) in sports that twist the wrist, such as tennis and golf.",
-    "hint": "The little-finger-side wrist extensor running along the back of the ulna to the 5th metacarpal."
+    "origin": "From the Latin for straightener of the wrist on the ulna side.",
+    "location": "It is the innermost surface muscle on the back of the forearm, running along the back of the ulna.",
+    "description": "A long surface muscle whose tendon runs in a groove beside the knobbly end of the ulna, then on to the little finger's hand bone.",
+    "function": "It pulls your wrist back and tips it toward the little finger, like wiping a table from side to side.",
+    "mnemonic": "It teams up with flexor carpi ulnaris. The two ulnar muscles pull your hand toward the ulna.",
+    "clinical": "Its tendon can slip out of its groove in sports that twist the wrist, like tennis and golf.",
+    "hint": "The little-finger-side wrist straightener running along the back of the ulna to the fifth hand bone."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which pair of muscles together adduct (ulnar deviate) the wrist?",
+     "text": "Which pair of muscles together tip the hand toward the little finger?",
      "options": [
-      "FCU and ECU",
-      "FCR and ECRL",
-      "Palmaris longus and ECRB",
-      "FDS and extensor digitorum"
+      "Flexor and extensor carpi ulnaris",
+      "Flexor carpi radialis and extensor carpi radialis longus",
+      "Palmaris longus and extensor carpi radialis brevis",
+      "Flexor digitorum superficialis and extensor digitorum"
      ],
      "answer": 0,
-     "explanation": "Flexor carpi ulnaris and extensor carpi ulnaris both pull the hand toward the ulnar side."
+     "explanation": "Flexor carpi ulnaris and extensor carpi ulnaris both pull the hand toward the ulna, on the little-finger side."
     }
    ],
    "merged": true
@@ -2648,18 +2648,18 @@
    ],
    "content": {
     "pronunciation": "SOO-pin-ay-tor",
-    "origin": "Latin supinare, \"to lay on the back\" (turn face up).",
-    "location": "Deep in the upper posterior and lateral forearm, wrapping around the upper third of the radius.",
-    "description": "A sheet-like deep muscle that curls around the radius; the deep branch of the radial nerve passes through it.",
-    "function": "Supinates the forearm (turns the palm up), especially when the elbow is straight. Lateral epicondyle, radial collateral and anular ligaments and supinator crest of ulna -> lateral, posterior and anterior surfaces of upper third of radius. Deep branch of radial nerve.",
-    "mnemonic": "It does what it says: the supinator supinates, with biceps as its powerful partner.",
-    "clinical": "The deep radial nerve can be compressed as it enters the muscle (at the arcade of Frohse), weakening finger and thumb extension.",
-    "hint": "The deep muscle wrapping around the upper radius that turns the palm up; a radial nerve branch passes through it."
+    "origin": "From the Latin for turning face up, like lying on your back.",
+    "location": "It lies deep in the upper back and outer side of your forearm, wrapped round the top of the radius.",
+    "description": "A sheet-like deep muscle that curls round the radius like a sling. A branch of the radial nerve passes through it.",
+    "function": "It turns your palm up, like holding out your hand for a coin. It does this best when your elbow is straight.",
+    "mnemonic": "It does what it says. The supinator supinates, with the biceps as its powerful partner.",
+    "clinical": "The deep branch of the radial nerve can be squeezed where it enters this muscle. Then straightening the fingers and thumb gets weak.",
+    "hint": "The deep muscle wrapped round the top of the radius that turns the palm up, with a nerve branch passing through it."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Supinator works with which muscle to turn the palm upward?",
+     "text": "Supinator works with which muscle to turn the palm up?",
      "options": [
       "Pronator teres",
       "Triceps brachii",
@@ -2667,7 +2667,7 @@
       "Biceps brachii"
      ],
      "answer": 3,
-     "explanation": "Biceps brachii is the powerful synergist of supinator in supination."
+     "explanation": "Biceps brachii is the powerful partner of supinator. Supinator does the light work and biceps adds force, like twisting a stiff lid."
     }
    ]
   },
@@ -2711,18 +2711,18 @@
    ],
    "content": {
     "pronunciation": "ab-DUK-tor POL-ih-sis LONG-gus",
-    "origin": "Latin abductor, \"one that leads away\", pollicis, \"of the thumb\", longus, \"long\".",
-    "location": "In the deep layer of the posterior forearm; its tendon \"outcrops\" around the lateral side of the forearm to the thumb.",
-    "description": "A deep muscle whose tendon, with EPB, forms the lateral (front) border of the anatomical snuffbox.",
-    "function": "Abducts the thumb and extends it at the carpometacarpal joint; helps abduct the wrist. Posterior surfaces of ulna, radius and interosseous membrane -> base of 1st metacarpal. Posterior interosseous nerve (C7-C8).",
-    "mnemonic": "APL and EPB travel together: \"the two thumb tendons that share a tunnel\".",
-    "clinical": "Inflammation of the APL and EPB tendon sheath at the wrist is De Quervain tenosynovitis (positive Finkelstein test).",
-    "hint": "The deep outcropping thumb muscle that moves the thumb away from the palm and borders the snuffbox with its short-extensor partner."
+    "origin": "From the Latin for long muscle that moves the thumb away.",
+    "location": "It lies in the deep layer of the back of the forearm. Its tendon curls round the thumb side of the wrist to the thumb.",
+    "description": "A deep muscle whose tendon, with its short partner, forms the front edge of the anatomical snuffbox, the hollow at the base of your thumb.",
+    "function": "It moves your thumb away from your palm, like opening your hand to grab a big jar. It also helps straighten the thumb and tip the wrist.",
+    "mnemonic": "The long abductor and the short extensor travel together. Think of them as two thumb tendons sharing one tunnel.",
+    "clinical": "When the shared tunnel of these two tendons gets inflamed, it is called De Quervain tenosynovitis. Moving the thumb and wrist then hurts, and the Finkelstein test is positive.",
+    "hint": "The deep thumb muscle that swings the thumb away from the palm and edges the snuffbox with its short partner."
    },
    "questions": [
     {
      "kind": "clinical",
-     "text": "De Quervain tenosynovitis involves the tendons of abductor pollicis longus and:",
+     "text": "De Quervain tenosynovitis affects abductor pollicis longus and which other tendon?",
      "options": [
       "Extensor pollicis longus",
       "Flexor pollicis longus",
@@ -2730,7 +2730,7 @@
       "Extensor indicis"
      ],
      "answer": 2,
-     "explanation": "APL and EPB share a tendon sheath at the wrist, which becomes inflamed in De Quervain tenosynovitis."
+     "explanation": "Abductor pollicis longus and extensor pollicis brevis share a tunnel at the wrist. When it swells, both tendons hurt."
     }
    ]
   },
@@ -2778,26 +2778,26 @@
    ],
    "content": {
     "pronunciation": "eks-TEN-sor POL-ih-sis BREV-iss",
-    "origin": "Latin extensor, \"straightener\", pollicis, \"of the thumb\", brevis, \"short\".",
-    "location": "In the deep layer of the posterior forearm, just below APL; its tendon runs beside APL to the thumb.",
-    "description": "A short deep muscle whose tendon forms part of the lateral border of the anatomical snuffbox.",
-    "function": "Extends the thumb at the metacarpophalangeal joint and carpometacarpal joint. Posterior surface of radius and interosseous membrane -> base of proximal phalanx of thumb. Posterior interosseous nerve (C7-C8).",
-    "mnemonic": "Brevis = short, so it stops short at the proximal phalanx; longus goes all the way to the distal phalanx.",
-    "clinical": "It is involved with APL in De Quervain tenosynovitis.",
-    "hint": "The short thumb extensor that stops at the proximal phalanx and travels with the long thumb abductor."
+    "origin": "From the Latin for short straightener of the thumb.",
+    "location": "It lies deep in the back of the forearm, just below the long thumb abductor. Its tendon runs beside it to the thumb.",
+    "description": "A short deep muscle whose tendon forms part of the front edge of the anatomical snuffbox.",
+    "function": "It straightens your thumb at its base knuckle, like sticking your thumb out to hitch a ride.",
+    "mnemonic": "Brevis is short, so it stops short at the first thumb bone. Longus goes all the way to the tip.",
+    "clinical": "It gets inflamed with the long thumb abductor in De Quervain tenosynovitis, causing pain on the thumb side of the wrist.",
+    "hint": "The short thumb straightener that stops at the first thumb bone and travels with the long thumb abductor."
    },
    "questions": [
     {
      "kind": "relationship",
-     "text": "Extensor pollicis brevis inserts on which bone?",
+     "text": "Where does extensor pollicis brevis attach?",
      "options": [
-      "Base of distal phalanx of thumb",
-      "Base of proximal phalanx of thumb",
-      "Base of 1st metacarpal",
-      "Trapezium"
+      "Base of the thumb tip bone",
+      "Base of the first thumb bone",
+      "Base of the thumb hand bone",
+      "A wrist bone, the trapezium"
      ],
      "answer": 1,
-     "explanation": "EPB inserts on the base of the proximal phalanx of the thumb."
+     "explanation": "Brevis means short, so it stops at the first bone of the thumb, the proximal phalanx."
     }
    ]
   },
@@ -2845,18 +2845,18 @@
    ],
    "content": {
     "pronunciation": "eks-TEN-sor POL-ih-sis LONG-gus",
-    "origin": "Latin extensor, \"straightener\", pollicis, \"of the thumb\", longus, \"long\".",
-    "location": "In the deep layer of the posterior forearm; its tendon hooks around the dorsal tubercle of the radius and forms the medial (back) border of the anatomical snuffbox.",
-    "description": "A deep muscle with a long tendon that changes direction around the dorsal (Lister) tubercle of the radius.",
-    "function": "Extends all joints of the thumb, including the tip (interphalangeal joint). Posterior surface of middle ulna and interosseous membrane -> base of distal phalanx of thumb. Posterior interosseous nerve (C7-C8).",
-    "mnemonic": "Longus goes the long way: around Lister's tubercle to the thumb tip.",
-    "clinical": "Its tendon can rupture weeks after a distal radius fracture as it rubs over the tubercle, so the thumb tip cannot be lifted.",
-    "hint": "The long thumb extensor that hooks around the bump on the back of the radius and forms the back border of the snuffbox."
+    "origin": "From the Latin for long straightener of the thumb.",
+    "location": "It lies deep in the back of the forearm. Its tendon hooks round a bump on the back of the radius and forms the back edge of the snuffbox.",
+    "description": "A deep muscle with a long tendon that turns round a small bump on the radius, called Lister's tubercle, like a rope round a pulley.",
+    "function": "It straightens every joint of your thumb, right to the tip, like flicking your thumb up and back.",
+    "mnemonic": "Longus goes the long way, round Lister's tubercle and on to the thumb tip.",
+    "clinical": "Weeks after a broken wrist, its tendon can wear through where it rubs on the bump. Then you cannot lift the tip of your thumb.",
+    "hint": "The long thumb straightener that hooks round the bump on the back of the radius and forms the back edge of the snuffbox."
    },
    "questions": [
     {
      "kind": "location",
-     "text": "Which tendon forms the medial (posterior) border of the anatomical snuffbox?",
+     "text": "Which tendon forms the back edge of the anatomical snuffbox?",
      "options": [
       "Extensor pollicis longus",
       "Abductor pollicis longus",
@@ -2864,7 +2864,7 @@
       "Extensor carpi radialis longus"
      ],
      "answer": 0,
-     "explanation": "EPL forms the posterior/medial border; APL and EPB form the anterior/lateral border."
+     "explanation": "Extensor pollicis longus forms the back edge. The long abductor and short extensor form the front edge."
     }
    ]
   },
@@ -2904,18 +2904,18 @@
    ],
    "content": {
     "pronunciation": "eks-TEN-sor IN-dih-sis",
-    "origin": "Latin extensor, \"straightener\", and indicis, \"of the index (pointing) finger\".",
-    "location": "The most distal muscle in the deep layer of the posterior forearm, on the lower ulna.",
-    "description": "A narrow deep muscle whose tendon joins the extensor digitorum tendon to the index finger on its medial side.",
-    "function": "Extends the index finger independently (pointing) and helps extend the wrist. Posterior surface of distal ulna and interosseous membrane -> extensor expansion of index finger. Posterior interosseous nerve (C7-C8).",
-    "mnemonic": "Indicis = index: the \"pointing\" muscle.",
-    "clinical": "Its tendon is a common donor for tendon transfer, for example to replace a ruptured extensor pollicis longus.",
-    "hint": "The deep muscle on the lower ulna that lets you point with the index finger independently."
+    "origin": "From the Latin for straightener of the index finger, your pointing finger.",
+    "location": "It is the lowest muscle in the deep layer of the back of the forearm, on the lower ulna.",
+    "description": "A narrow deep muscle whose tendon joins the main index finger tendon on its inner side.",
+    "function": "It straightens your index finger on its own so you can point. It also helps pull the wrist back.",
+    "mnemonic": "Indicis means index. It is your pointing muscle.",
+    "clinical": "Surgeons often move its tendon to replace a snapped long thumb straightener, extensor pollicis longus.",
+    "hint": "The deep muscle on the lower ulna that lets you point with your index finger on its own."
    },
    "questions": [
     {
      "kind": "function",
-     "text": "Which muscle allows the index finger to extend independently of the others?",
+     "text": "Which muscle lets your index finger straighten on its own?",
      "options": [
       "Extensor digiti minimi",
       "Flexor digitorum superficialis",
@@ -2923,7 +2923,7 @@
       "Extensor indicis"
      ],
      "answer": 3,
-     "explanation": "Extensor indicis gives the index finger its own extensor for pointing."
+     "explanation": "Extensor indicis gives the index finger its own straightener, so you can point while the other fingers stay curled."
     }
    ]
   }

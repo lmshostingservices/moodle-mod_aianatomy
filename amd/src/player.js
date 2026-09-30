@@ -95,6 +95,9 @@ class Player {
         document.addEventListener('fullscreenchange', () => this.syncFullscreen());
         document.addEventListener('webkitfullscreenchange', () => this.syncFullscreen());
         document.addEventListener('keydown', (e) => this.onKey(e));
+        // Leaving the page or switching tab ends any voiceover.
+        document.addEventListener('visibilitychange', () => document.hidden && this.silence());
+        window.addEventListener('pagehide', () => this.silence());
         window.addEventListener('resize', () => {
             this.fitCard();
         });
@@ -623,6 +626,24 @@ class Player {
         if (this.infoEl) {
             this.infoEl.remove();
             this.infoEl = null;
+            // Closing the card ends its voiceover.
+            this.silence();
+        }
+    }
+
+    /**
+     * Stops every voice: the LMS Labs voiceover and the browser's own speech (pronunciation fallback).
+     */
+    silence() {
+        if (this.voice) {
+            this.voice.stop();
+        }
+        if ('speechSynthesis' in window) {
+            try {
+                window.speechSynthesis.cancel();
+            } catch (e) {
+                // Nothing to stop.
+            }
         }
     }
 
@@ -1089,10 +1110,9 @@ class Player {
         const card = this.card;
         this.card = null;
         this.listenBtn = null;
-        if (this.cardListening) {
-            this.cardListening = null;
-            this.voice.stop();
-        }
+        // Closing the card (or opening another one) ends its voiceover.
+        this.cardListening = null;
+        this.silence();
         if (this.viewer) {
             this.viewer.setRightInset(0);
         }
@@ -2398,7 +2418,9 @@ class Player {
             return;
         }
         if (e.key === 'Escape') {
-            if (this.selectedChip) {
+            if (this.infoEl) {
+                this.hideInfo();
+            } else if (this.selectedChip) {
                 this.clearSelection();
             } else if (this.card) {
                 this.studySelect(null);
@@ -2421,9 +2443,7 @@ class Player {
      */
     teardown() {
         window.clearInterval(this.timerHandle);
-        if (this.voice) {
-            this.voice.stop();
-        }
+        this.silence();
         if (this.overlay) {
             this.overlay.destroy();
             this.overlay = null;

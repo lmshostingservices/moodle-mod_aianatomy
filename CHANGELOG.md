@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.12 (2026-10-11)
+Much less voiceover to pay for, and the voice stops whenever a card closes. (1.2.11 is kept unchanged.)
+- **Only the cards are voiced.** Each ticked structure's card is read in full, in Study and in the Practice pop-up card (one shared set of clips). Find prompts, questions, answer options, feedback, fixed phrases and separate name clips are no longer voiced; the Pronounce button uses the browser's own speech. Unticked structures have no voiceover. A full library now needs 25–251 clips instead of 98–640 (all 15 libraries: 1,911 instead of 4,931, down 61%).
+- **Voice only in the activity language.** A card is voiced only once its content is in the activity language (approved translation). A German activity never pays for English text read by a German voice; after translation the cards are voiced in German (locale de-DE).
+- **Clips are reused across activities.** The identical clip (same text, language, voice and speed) already made for another AI Anatomy activity on the site is copied instead of generated again: a second activity from the same library costs nothing.
+- **No credits for a card that cannot play.** If one clip of a card fails for good (409/410/413/422), the card's other missing clips are held too (a card never plays in part); they are created when a teacher retries.
+- **Voice stops with the card.** Closing a card (close button, Escape, opening another card, picking up the next label in Practice), leaving the mode, switching tab or leaving the page stops the voiceover and the browser's pronunciation speech.
+- Upgrade step 2026101100 sets `voiceplaces` to `cards` and adds an index on `aianatomy_voice.hash`. Clips made earlier stay stored; nothing is deleted.
+- Strings updated in all 25 languages (602 each): `voiceover_included`, `voiceprep_text`, `voice_summary`, `voiceauto_desc`, `voice_generateall`, `voice_generated`, `privacy:metadata:lmslabs_tts`.
+
 ## 1.2.11 (2026-10-10)
 Fixes from the LMS Labs review of 1.2.10 (1.2.10 is kept unchanged, SHA-256 223211bc61ac003ee6bd32ae4758a967c05627e21e3d79f546c0d138584552d4).
 - **Preparation always ends.** A clip that fails for good (409 conflict, 410 expired, 413/422 invalid text) keeps a failed marker and is never re-sent automatically. When every other clip is ready the activity is *incomplete*: the background task stops (no endless re-queuing), students start with the voiceover that exists, and the reason is recorded for the teacher (who can retry explicitly with Generate all voiceover). Changing texts or saving the activity clears the reason and prepares again.

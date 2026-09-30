@@ -193,5 +193,17 @@ function xmldb_aianatomy_upgrade($oldversion) {
         $dbman->change_field_default($table, $field);
         upgrade_mod_savepoint(true, 2026101000, 'aianatomy');
     }
+
+    if ($oldversion < 2026101100) {
+        // Only the cards are voiced now (find prompts, questions and feedback are not).
+        $DB->set_field('aianatomy', 'voiceplaces', 'cards');
+        // Finds a clip another activity already has, so it is copied instead of paid for again.
+        $table = new xmldb_table('aianatomy_voice');
+        $index = new xmldb_index('hash', XMLDB_INDEX_NOTUNIQUE, ['hash']);
+        if (!$dbman->index_exists($table, $index)) {
+            $dbman->add_index($table, $index);
+        }
+        upgrade_mod_savepoint(true, 2026101100, 'aianatomy');
+    }
     return true;
 }

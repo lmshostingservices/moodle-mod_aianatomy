@@ -185,6 +185,7 @@
       </KEYS>
       <INDEXES>
         <INDEX NAME="clip" UNIQUE="true" FIELDS="aianatomyid, hash"/>
+        <INDEX NAME="hash" UNIQUE="false" FIELDS="hash"/>
       </INDEXES>
     </TABLE>
     <TABLE NAME="aianatomy_job" COMMENT="LMS Labs requests in progress: the persisted Idempotency-Key and exact body, so a request can be polled or recovered with the same key">

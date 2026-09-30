@@ -184,7 +184,10 @@ class manager {
             }
         }
         $item = null;
-        if (voice::on($instance, 'cards')) {
+        // Only ticked structures are voiced, and only once their text is in the activity language (an untranslated
+        // card would be read in the wrong language and have to be paid for again after translation).
+        $inlanguage = language::same((string)($row->contentlang ?? 'en'), (string)($instance->language ?? 'en'));
+        if (voice::on($instance, 'cards') && !empty($row->enabled) && $inlanguage) {
             $item = voice::item($instance, voice::card_text($names[$s['id']], $content['latin'] ?? '', $content, $related));
         }
         return ['content' => $content, 'related' => $related, 'voice' => $item];
@@ -368,7 +371,7 @@ class manager {
             'enabled' => voice::enabled($instance),
             'places' => voice::places($instance),
             'auto' => (bool)($instance->voiceauto ?? 0),
-            'phrases' => voice::enabled($instance) ? array_filter(voice::phrases($instance)) : [],
+            'phrases' => voice::on($instance, 'feedback') ? array_filter(voice::phrases($instance)) : [],
         ];
     }
 
@@ -450,10 +453,7 @@ class manager {
             $card = self::card($instance, $context, $s, $row, $names);
             $content = $card['content'];
             $related = $card['related'];
-            $voiceitems = [];
-            if (voice::on($instance, 'cards')) {
-                $voiceitems = array_filter(['name' => voice::item($instance, $names[$s['id']], 'slow'), 'card' => $card['voice']]);
-            }
+            $voiceitems = array_filter(['card' => $card['voice']]);
             $structures[] = [
                 'id' => $s['id'],
                 'node' => $s['node'],
@@ -563,7 +563,7 @@ class manager {
     }
 
     /**
-     * Every text students can hear in this activity, as signed items (for teacher pre-generation).
+     * Every card students can hear in this activity, as signed items (prepared before students start).
      * Built in the activity language so the texts match what students get.
      *
      * @param stdClass $instance
@@ -583,43 +583,11 @@ class manager {
                     $items[$item['sig']] = $item;
                 }
             };
-            $pack = pack::get($instance->pack);
-            $rows = self::get_structures($instance->id);
+            // Only the cards are voiced (see voice::PLACES); study_data() gives each ticked structure's card item.
             foreach (self::study_data($instance, $context)['structures'] as $st) {
                 foreach ((array)$st['voice'] as $item) {
                     $add($item);
                 }
-            }
-            foreach ($pack['structures'] as $s) {
-                $row = $rows[$s['id']] ?? null;
-                if ($row && $row->enabled && voice::on($instance, 'prompts')) {
-                    $add(voice::item($instance, get_string('findprompt', 'mod_aianatomy', self::display_name($row, $s))));
-                }
-            }
-            foreach (self::student_questions($instance) as $q) {
-                if (!isset($rows[$q->structureid]) || !$rows[$q->structureid]->enabled) {
-                    continue;
-                }
-                $options = array_values(json_decode($q->options, true) ?: []);
-                if (voice::on($instance, 'questions')) {
-                    $add(voice::item($instance, $q->questiontext));
-                    foreach ($options as $o) {
-                        $add(voice::item($instance, $o));
-                    }
-                }
-                if (voice::on($instance, 'feedback')) {
-                    $add(
-                        voice::item(
-                            $instance, get_string(
-                                'voice_answeris', 'mod_aianatomy',
-                                rtrim(voice::plain($options[$q->answer] ?? ''), '.')
-                            ) . ' ' . voice::plain((string)$q->explanation)
-                        )
-                    );
-                }
-            }
-            foreach (voice::phrases($instance) as $item) {
-                $add($item);
             }
             return array_values($items);
         } finally {

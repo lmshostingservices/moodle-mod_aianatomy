@@ -40,8 +40,12 @@ class voice {
         'Charon' => 'male', 'Fenrir' => 'male', 'Orus' => 'male', 'Puck' => 'male',
     ];
 
-    /** @var string[] Where voiceover can be offered */
-    const PLACES = ['cards', 'prompts', 'questions', 'feedback'];
+    /**
+     * @var string[] Where voiceover is offered: only the cards (Study cards and the Practice pop-up card of each
+     * ticked structure). Find prompts, questions and feedback are not voiced, which keeps the credits spent per
+     * activity low. Values from older versions ('prompts', 'questions', 'feedback') are ignored.
+     */
+    const PLACES = ['cards'];
 
     /** Card fields in the order the card shows them (and the voiceover reads them). */
     const CARDFIELDS = ['origin', 'location', 'description', 'function', 'mnemonic', 'clinical'];
@@ -292,6 +296,10 @@ class voice {
         foreach (self::chunks($text) as $chunk) {
             $hash = self::hash($locale, $voicename, $speed, $chunk);
             $file = $fs->get_file($context->id, 'mod_aianatomy', 'voice', 0, '/', $hash . '.mp3');
+            if (!$file && $generate) {
+                // Free: the same clip (same text, language, voice and speed) made for another activity on this site.
+                $file = self::reuse($instance, $context, $hash, $locale, $voicename, $speed, $chunk);
+            }
             if (!$file) {
                 if (!$generate) {
                     $out['missing']++;
@@ -379,6 +387,52 @@ class voice {
     }
 
     /**
+     * Copies a clip another AI Anatomy activity on this site already has (identical audio, no LMS Labs request).
+     *
+     * @param stdClass $instance
+     * @param \context_module $context
+     * @param string $hash clip hash (locale, voice, speed and text)
+     * @param string $locale
+     * @param string $voicename
+     * @param string $speed
+     * @param string $chunk clip text
+     * @return \stored_file|null
+     */
+    protected static function reuse(stdClass $instance, \context_module $context, string $hash, string $locale,
+            string $voicename, string $speed, string $chunk): ?\stored_file {
+        global $DB;
+        $fs = get_file_storage();
+        $others = $DB->get_records_select(
+            'aianatomy_voice', 'hash = :hash AND aianatomyid <> :id', ['hash' => $hash, 'id' => $instance->id], 'id ASC',
+            'id, aianatomyid', 0, 5
+        );
+        foreach ($others as $other) {
+            $cm = get_coursemodule_from_instance('aianatomy', $other->aianatomyid, 0, false, IGNORE_MISSING);
+            if (!$cm) {
+                continue;
+            }
+            $source = $fs->get_file(\context_module::instance($cm->id)->id, 'mod_aianatomy', 'voice', 0, '/', $hash . '.mp3');
+            if (!$source) {
+                continue;
+            }
+            $file = $fs->create_file_from_storedfile(
+                ['contextid' => $context->id, 'component' => 'mod_aianatomy', 'filearea' => 'voice', 'itemid' => 0,
+                'filepath' => '/', 'filename' => $hash . '.mp3'],
+                $source
+            );
+            if (!$DB->record_exists('aianatomy_voice', ['aianatomyid' => $instance->id, 'hash' => $hash])) {
+                $DB->insert_record(
+                    'aianatomy_voice', (object)['aianatomyid' => $instance->id, 'hash' => $hash, 'locale' => $locale,
+                    'voicename' => $voicename, 'speed' => $speed, 'textlength' => \core_text::strlen($chunk),
+                    'credits' => '0', 'requestid' => 'reused', 'timecreated' => time()]
+                );
+            }
+            return $file;
+        }
+        return null;
+    }
+
+    /**
      * Clip statistics for the editor.
      *
      * @param stdClass $instance
@@ -422,6 +476,8 @@ class voice {
         $blocked = [];
         foreach (manager::voice_items($instance, $context) as $item) {
             $missing = 0;
+            $itemmissing = [];
+            $itemfailed = '';
             foreach (self::chunks($item['text']) as $chunk) {
                 $hash = self::hash($locale, $voicename, $item['speed'], $chunk);
                 if (isset($seen[$hash])) {
@@ -434,9 +490,19 @@ class voice {
                 if (isset($failed[$hash])) {
                     // Failed for good (409/410/413/422): never re-sent automatically; a teacher can retry it.
                     $blocked[$hash] = $failed[$hash];
+                    $itemfailed = $failed[$hash];
                 } else {
                     $missing++;
+                    $itemmissing[] = $hash;
                 }
+            }
+            if ($itemfailed !== '') {
+                // A card with a failed clip can never play (no partial playback), so its other missing clips are not
+                // paid for either; they are created when a teacher retries the card.
+                foreach ($itemmissing as $hash) {
+                    $blocked[$hash] = $itemfailed;
+                }
+                $missing = 0;
             }
             $items[] = [$item, $missing];
         }

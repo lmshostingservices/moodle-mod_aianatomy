@@ -271,20 +271,25 @@ final class voice_test extends \advanced_testcase {
     }
 
     /**
-     * Test attempts never carry spoken feedback; practice does.
+     * Only the cards are voiced: questions, options and feedback carry no audio in Practice or Test.
      */
-    public function test_no_feedback_voice_in_test(): void {
+    public function test_only_cards_voiced(): void {
         $this->resetAfterTest();
         [$instance, $context] = $this->setup_voice(['quizcount' => 3]);
         [$course, $cm] = get_course_and_cm_from_instance($instance->id, 'aianatomy');
         $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
-        $test = manager::start_attempt($instance, $cm, $course, $context, 'test', (int)$student->id);
-        foreach ($test['questions'] as $q) {
-            $this->assertArrayNotHasKey('voicefeedback', $q);
-            $this->assertArrayNotHasKey('answer', $q);
+        foreach (['test', 'practice'] as $mode) {
+            $attempt = manager::start_attempt($instance, $cm, $course, $context, $mode, (int)$student->id);
+            foreach ($attempt['questions'] as $q) {
+                $this->assertArrayNotHasKey('voice', $q);
+                $this->assertArrayNotHasKey('voiceoptions', $q);
+                $this->assertArrayNotHasKey('voicefeedback', $q);
+            }
+            $this->assertSame(['cards'], $attempt['voice']['places']);
+            $this->assertSame([], $attempt['voice']['phrases']);
         }
-        $practice = manager::start_attempt($instance, $cm, $course, $context, 'practice', (int)$student->id);
-        $this->assertArrayHasKey('voicefeedback', $practice['questions'][0]);
+        $old = (object)(['voiceplaces' => 'cards,prompts,questions,feedback'] + (array)$instance);
+        $this->assertSame(['cards'], voice::places($old));
     }
 
     /**

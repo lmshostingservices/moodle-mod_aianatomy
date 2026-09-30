@@ -244,7 +244,8 @@ export default class Voice {
             };
             a.onended = () => done();
             a.onerror = () => done(new Error('voiceaudioerror:' + (a.error ? a.error.code : 'unknown')));
-            a.onpause = () => done();
+            // A muted card pauses its clip; only a real stop (or the browser) ends it.
+            a.onpause = () => (this.muted && token === this.token ? null : done());
             a.onplaying = () => this.listeners.forEach((fn) => fn());
             try {
                 a.play().catch((error) => done(error));
@@ -255,9 +256,41 @@ export default class Voice {
     }
 
     /**
+     * Whether the current reading is muted (held where it was, not ended).
+     *
+     * @returns {boolean}
+     */
+    get isMuted() {
+        return !!(this.muted && this.audio);
+    }
+
+    /**
+     * Mutes or unmutes the current reading. Unmuting carries on from the same place; nothing is restarted or skipped.
+     *
+     * @param {boolean} muted
+     */
+    setMuted(muted) {
+        if (!this.audio) {
+            this.muted = false;
+            return;
+        }
+        this.muted = !!muted;
+        if (this.muted) {
+            this.audio.pause();
+        } else {
+            const p = this.audio.play();
+            if (p && p.catch) {
+                p.catch(() => this.stop());
+            }
+        }
+        this.listeners.forEach((fn) => fn());
+    }
+
+    /**
      * Stops playback.
      */
     stop() {
+        this.muted = false;
         this.token++;
         if (this.audio) {
             const a = this.audio;

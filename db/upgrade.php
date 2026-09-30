@@ -205,5 +205,14 @@ function xmldb_aianatomy_upgrade($oldversion) {
         }
         upgrade_mod_savepoint(true, 2026101100, 'aianatomy');
     }
+
+    if ($oldversion < 2026101200) {
+        // The voice now says the real term instead of the respelling (BRONG-kee-al was read letter by letter), so the
+        // first clip of each card changes. Prepare the new clips before students need them.
+        foreach ($DB->get_records('aianatomy') as $instance) {
+            \mod_aianatomy\local\voice::queue($instance);
+        }
+        upgrade_mod_savepoint(true, 2026101200, 'aianatomy');
+    }
     return true;
 }

@@ -628,8 +628,9 @@ class voice {
             $parts[] = rtrim(self::plain($latin), '.') . '.';
         }
         if (!empty($content['pronunciation'])) {
-            $say = rtrim(self::plain($content['pronunciation']), '.');
-            $parts[] = get_string('field_pronunciation', 'mod_aianatomy') . ': ' . $say . '.';
+            // The card shows a respelling (BRONG-kee-al tree) for reading. Spoken aloud a respelling sounds wrong, so the
+            // voice says the real term instead, which the voice pronounces correctly.
+            $parts[] = get_string('voice_sayit', 'mod_aianatomy', self::spoken_term($name, $content['pronunciation'])) . '.';
         }
         foreach (self::CARDFIELDS as $f) {
             if (!empty($content[$f])) {
@@ -639,7 +640,83 @@ class voice {
         foreach (self::related_groups($related) as $label => $list) {
             $parts[] = $label . ': ' . self::plain(implode(', ', $list)) . '.';
         }
-        return implode(' ', $parts);
+        return self::speakable(implode(' ', $parts));
+    }
+
+    /** Capitalised memory words that are said as words, not letter by letter (text on screen is unchanged). */
+    const SPOKENWORDS = ['WET' => 'wet', 'BED' => 'bed', 'VAN' => 'van', 'SITS' => 'sits', 'SAIL' => 'sail', 'TAP' => 'tap',
+        'GORD' => 'gord', 'UM' => 'um', 'OK' => 'okay', 'MILC' => 'milk'];
+
+    /**
+     * Text as the voice should hear it. Capital letters are read out one by one (BRONG becomes B, R, O, N, G), so
+     * respellings such as SKAF-oyd are lowered, and capitalised memory words are said as words. Real acronyms
+     * (ECG, CPR, LAD) stay spelt out.
+     *
+     * @param string $text
+     * @return string
+     */
+    public static function speakable(string $text): string {
+        $text = preg_replace_callback(
+            '/\b[A-Za-z]+(?:-[A-Za-z]+)+\b/u',
+            fn($m) => preg_match('/(^|-)[A-Z]{2,}(-|$)/', $m[0]) ? strtolower($m[0]) : $m[0],
+            $text
+        );
+        return preg_replace_callback(
+            '/\b(' . implode('|', array_keys(self::SPOKENWORDS)) . ')\b/',
+            fn($m) => self::SPOKENWORDS[$m[1]],
+            $text
+        );
+    }
+
+    /**
+     * The words of the name that a pronunciation respelling covers, so the voice can say them as real words.
+     * The respelling is matched to the run of name words that sounds most like it: "Right bronchial tree" with
+     * "BRONG-kee-al tree" gives "bronchial tree", "Middle lobe of right lung" with "LOBE" gives "lobe". When nothing
+     * matches well, the whole name is used.
+     *
+     * @param string $name display name
+     * @param string $pronunciation respelling shown on the card
+     * @return string
+     */
+    public static function spoken_term(string $name, string $pronunciation): string {
+        $strip = fn($t) => trim(preg_replace('/\s*\([^)]*\)/u', '', self::plain($t)));
+        $name = rtrim($strip($name), '.');
+        // Only the main respelling: "KOH-lon; SEE-kum" and "FAL-anks (plural: ...)" keep the first part.
+        $respelled = $strip(preg_split('/[;,]/u', $pronunciation)[0]);
+        $words = preg_split('/\s+/u', $name, -1, PREG_SPLIT_NO_EMPTY) ?: [];
+        $count = count(preg_split('/\s+/u', $respelled, -1, PREG_SPLIT_NO_EMPTY) ?: []);
+        if ($count < 1 || $count >= count($words)) {
+            return $name;
+        }
+        $target = self::sound($respelled);
+        $best = null;
+        $bestscore = 1.0;
+        for ($i = 0; $i + $count <= count($words); $i++) {
+            $run = implode(' ', array_slice($words, $i, $count));
+            $sound = self::sound($run);
+            $longest = max(strlen($sound), strlen($target), 1);
+            $score = levenshtein($sound, $target) / $longest;
+            if ($score < $bestscore) {
+                $bestscore = $score;
+                $best = $run;
+            }
+        }
+        return ($best !== null && $bestscore <= 0.5) ? $best : $name;
+    }
+
+    /**
+     * Rough consonant sound of Latin-script text, for matching a respelling to the words it spells.
+     *
+     * @param string $text
+     * @return string
+     */
+    protected static function sound(string $text): string {
+        $t = \core_text::strtolower(\core_text::specialtoascii($text));
+        $t = preg_replace('/[^a-z]/', '', $t);
+        $t = strtr($t, ['ph' => 'f', 'ch' => 'k', 'ck' => 'k', 'qu' => 'kw', 'x' => 'ks', 'c' => 'k', 'q' => 'k',
+            'z' => 's', 'ng' => 'n', 'th' => 't', 'gh' => 'g', 'wh' => 'w', 'j' => 'g']);
+        $t = preg_replace('/[aeiouyhw]/', '', $t);
+        return preg_replace('/(.)\1+/', '$1', $t);
     }
 
     /**

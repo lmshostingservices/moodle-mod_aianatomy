@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.2.14 (2026-10-13)
+(1.2.13 is kept unchanged.)
+- **The card's speaker button mutes and unmutes.** Pressing it while the card is being read mutes it; pressing again carries on from the same place (nothing restarts or is skipped). Once the reading has finished, it plays the card again from the start. The Study card's Listen button works the same way (Listen, Mute, Unmute). The icon and label show the state. Closing the card still stops its voice.
+- **Confetti at every round end.** When a Practice round is complete (all names placed, or every structure found), confetti falls down the whole screen for about three seconds. It never blocks clicks and is skipped when the device asks for reduced motion. The results screen celebration is unchanged.
+- New strings `voicemute`, `voiceunmute` in all 25 languages (605 each). No database change.
+
+## 1.2.13 (2026-10-12)
+The voiceover says names correctly. (1.2.12 is kept unchanged.)
+- **Pronunciation is spoken as the real word.** The card shows a respelling such as BRONG-kee-al tree, and the voice read its capitals letter by letter (B, R, O, N, G). The voice now says "Say it like this: bronchial tree", using the words of the name the respelling covers (all 117 cases in the libraries checked; the whole name is used when nothing matches). The respelling stays on the card for reading.
+- **No more letter-by-letter reading of capitals.** Respellings inside card text are lowered for the voice, and capitalised memory words are said as words (A WET BED, SITS, SAIL, VAN, MILC as "milk", OK as "okay"). Real acronyms (ECG, CPR, LAD) stay spelt out. The text on screen is unchanged.
+- **The Practice card no longer covers the model.** On wide screens the card after a correct label is docked at the top of the Names panel (the drag instructions hide while it is open), so the model and every label box stay visible. It stays open while the student picks up the next name and is replaced by the next correct label's card; closing it stops its voice. On narrow screens, where the Names panel sits below the model, it stays a compact sheet at the bottom of the model.
+- Upgrade step 2026101200 queues voiceover preparation for every activity: about one new clip per card (the opening clip with the name changes), created before students need it.
+- New string `voice_sayit` in all 25 languages (603 each).
+
 ## 1.2.12 (2026-10-11)
 Much less voiceover to pay for, and the voice stops whenever a card closes. (1.2.11 is kept unchanged.)
 - **Only the cards are voiced.** Each ticked structure's card is read in full, in Study and in the Practice pop-up card (one shared set of clips). Find prompts, questions, answer options, feedback, fixed phrases and separate name clips are no longer voiced; the Pronounce button uses the browser's own speech. Unticked structures have no voiceover. A full library now needs 25–251 clips instead of 98–640 (all 15 libraries: 1,911 instead of 4,931, down 61%).

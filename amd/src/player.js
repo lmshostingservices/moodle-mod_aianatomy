@@ -31,7 +31,7 @@ import * as Sound from 'mod_aianatomy/sound';
 import Viewer, {supported} from 'mod_aianatomy/viewer';
 import Overlay from 'mod_aianatomy/overlay';
 import Voice from 'mod_aianatomy/voice';
-import {loadStrings, fmt, el, icon, iconButton, button, clock, shuffle, confetti, burst, speak, COARSE,
+import {loadStrings, fmt, el, icon, iconButton, button, clock, shuffle, confetti, confettiRain, burst, speak, COARSE,
     REDUCED} from 'mod_aianatomy/ui';
 
 const STRING_KEYS = [
@@ -41,7 +41,7 @@ const STRING_KEYS = [
     'field_function', 'field_mnemonic', 'field_clinical', 'field_hint', 'field_relationships', 'nottested',
     'rel_articulates_with', 'rel_adjacent_to', 'rel_continuous_with', 'rel_supplies', 'rel_drains_to', 'rel_works_with',
     'rel_opposes', 'rel_attaches_to', 'rel_part_of', 'rel_contains', 'rel_connects',
-    'voiceon', 'voiceoff', 'listen', 'stoplistening', 'listenquestion', 'listenprompt', 'voiceerror_short',
+    'voiceon', 'voiceoff', 'listen', 'stoplistening', 'voicemute', 'voiceunmute', 'listenquestion', 'listenprompt', 'voiceerror_short',
     'searchstructures', 'nomatches', 'studytip', 'clicktoexplore', 'clicktostudy', 'views', 'roundof', 'labelit',
     'findit', 'quiz', 'hint', 'showanswers', 'reset', 'submitround', 'next', 'previous', 'finish', 'labeltray',
     'instructions_drag', 'instructions_tap', 'correctfeedback', 'wrongfeedback', 'placedfeedback', 'selectedfeedback',
@@ -579,7 +579,9 @@ class Player {
         if (!info || !info.facts || !info.facts.length) {
             return;
         }
-        const card = el('div', 'ax-info', {role: 'dialog', 'aria-label': info.name});
+        // Wide screens: the card sits in the side panel, so it never covers the model or a label box.
+        const docked = !!this.side && window.matchMedia('(min-width: 901px)').matches;
+        const card = el('div', 'ax-info' + (docked ? ' is-docked' : ''), {role: 'dialog', 'aria-label': info.name});
         card.style.setProperty('--c', colour || 'var(--aa-primary)');
         const head = el('div', 'ax-info-head');
         const title = el('div', 'ax-info-title');
@@ -597,8 +599,17 @@ class Player {
         }
         head.appendChild(title);
         if (info.voice && this.voice.has('cards')) {
-            const listen = iconButton('speak', S.listen, 'ax-info-listen');
-            listen.addEventListener('click', () => this.voice.play(info.voice, true));
+            // One button: mute / unmute the card's reading (it carries on from the same place), or play it again
+            // from the start once it has finished.
+            const listen = iconButton('speak', S.voicemute, 'ax-info-listen');
+            listen.addEventListener('click', () => {
+                if (this.voice.audio) {
+                    this.voice.setMuted(!this.voice.isMuted);
+                } else {
+                    this.voice.play(info.voice, true);
+                }
+            });
+            this.infoListenBtn = listen;
             head.appendChild(listen);
         }
         const close = iconButton('cross', S.close, 'ax-info-close');
@@ -611,7 +622,13 @@ class Player {
             list.appendChild(el('dd', '', {formatted: f.text}));
         });
         card.appendChild(list);
-        this.view.appendChild(card);
+        if (docked) {
+            this.side.prepend(card);
+            this.side.classList.add('has-info');
+            this.side.scrollTop = 0;
+        } else {
+            this.view.appendChild(card);
+        }
         this.infoEl = card;
         window.requestAnimationFrame(() => card.classList.add('is-on'));
         if (info.voice && this.voice.auto) {
@@ -626,6 +643,10 @@ class Player {
         if (this.infoEl) {
             this.infoEl.remove();
             this.infoEl = null;
+            this.infoListenBtn = null;
+            if (this.side) {
+                this.side.classList.remove('has-info');
+            }
             // Closing the card ends its voiceover.
             this.silence();
         }
@@ -1060,8 +1081,9 @@ class Player {
             // Listen reads the card aloud (a second press stops it).
             const listen = button(S.listen, 'voice', 'aa-btn-ghost aa-btn-sm ax-listen');
             listen.addEventListener('click', () => {
-                if (this.voice.playing && this.cardListening === s.id) {
-                    this.voice.stop();
+                if (this.voice.audio && this.cardListening === s.id) {
+                    // Mute / unmute: the reading carries on from the same place.
+                    this.voice.setMuted(!this.voice.isMuted);
                     return;
                 }
                 this.cardListening = s.id;
@@ -1343,8 +1365,11 @@ class Player {
      * @param {HTMLElement} chip
      */
     chipPointerDown(e, chip) {
-        // Picking up the next name closes the previous card, so it never covers a label box.
-        this.hideInfo();
+        // Picking up the next name closes a floating card, so it never covers a label box. A card docked in the side
+        // panel covers nothing and stays until the next correct label replaces it (or the student closes it).
+        if (!this.infoEl || !this.infoEl.classList.contains('is-docked')) {
+            this.hideInfo();
+        }
         if (chip.disabled || e.button > 0) {
             return;
         }
@@ -1596,6 +1621,7 @@ class Player {
         this.nextBtn.focus({preventScroll: true});
         Sound.play('slide');
         this.setStatus(S.roundcomplete, 'good');
+        confettiRain();
         this.record('label', this.round.pins.map((p) => p.token));
     }
 
@@ -1742,6 +1768,7 @@ class Player {
             this.phase = 'done';
             this.setStatus(S.roundcomplete, 'good');
             Sound.play('slide');
+            confettiRain();
             this.record('find', this.round.pins.map((p) => p.token));
             this.nextBtn.disabled = false;
             this.nextBtn.focus({preventScroll: true});
@@ -2336,10 +2363,25 @@ class Player {
             this.voiceBtn.setAttribute('aria-pressed', off ? 'false' : 'true');
             this.voiceBtn.classList.toggle('is-playing', this.voice.playing || !!this.voice.preparing);
         }
+        const reading = !!this.voice.audio;
+        const muted = reading && this.voice.isMuted;
         if (this.listenBtn) {
-            const on = this.voice.playing && !!this.cardListening;
-            this.listenBtn.classList.toggle('is-playing', on);
-            this.listenBtn.querySelector('span:not(.aa-btnic)').textContent = on ? S.stoplistening : S.listen;
+            const mine = reading && !!this.cardListening;
+            this.listenBtn.classList.toggle('is-playing', mine && !muted);
+            this.listenBtn.querySelector('span:not(.aa-btnic)').textContent =
+                !mine ? S.listen : (muted ? S.voiceunmute : S.voicemute);
+            const ic = this.listenBtn.querySelector('.aa-btnic');
+            if (ic) {
+                ic.innerHTML = icon(mine && muted ? 'speakoff' : 'voice');
+            }
+        }
+        if (this.infoListenBtn) {
+            const label = muted ? S.voiceunmute : (reading ? S.voicemute : S.listen);
+            this.infoListenBtn.innerHTML = icon(muted ? 'speakoff' : 'speak');
+            this.infoListenBtn.setAttribute('aria-label', label);
+            this.infoListenBtn.setAttribute('title', label);
+            this.infoListenBtn.setAttribute('aria-pressed', muted ? 'true' : 'false');
+            this.infoListenBtn.classList.toggle('is-playing', reading && !muted);
         }
     }
 

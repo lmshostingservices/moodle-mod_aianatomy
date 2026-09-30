@@ -118,6 +118,7 @@ export const ICONS = {
     isolate: '<circle cx="12" cy="12" r="4"/><path d="M3 3l3 3M21 3l-3 3M3 21l3-3M21 21l-3-3"/>',
     layers: '<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>',
     speak: '<path d="M4 10v4h4l5 4V6L8 10z"/><path d="M16 9a4 4 0 010 6"/>',
+    speakoff: '<path d="M4 10v4h4l5 4V6L8 10z"/><path d="M17 9.5l5 5M22 9.5l-5 5"/>',
     globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/>',
     voice: '<circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0114 0"/><path d="M16.5 5.5a4 4 0 010 5M19.5 3a8 8 0 010 10"/>',
     voiceoff: '<circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0114 0"/><path d="M17 5l5 5M22 5l-5 5"/>',
@@ -270,6 +271,73 @@ export const confetti = (host, amount = 140) => {
             c.restore();
         });
         if (t < 2600) {
+            requestAnimationFrame(frame);
+        } else {
+            canvas.remove();
+        }
+    };
+    requestAnimationFrame(frame);
+};
+
+/**
+ * Confetti falling down the whole screen (round complete). Covers the viewport without blocking clicks.
+ *
+ * @param {number} amount pieces
+ * @param {number} duration milliseconds
+ */
+export const confettiRain = (amount = 170, duration = 3400) => {
+    if (REDUCED) {
+        return;
+    }
+    const host = document.fullscreenElement || document.webkitFullscreenElement || document.body;
+    const canvas = el('canvas', 'aa-confetti-rain', {'aria-hidden': 'true'});
+    host.appendChild(canvas);
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    const c = canvas.getContext('2d');
+    c.scale(dpr, dpr);
+    const colors = ['#6366F1', '#0EA5E9', '#10B981', '#F59E0B', '#EF4444', '#EC4899', '#8B5CF6'];
+    // Positions follow elapsed time (not frame count), so the fall looks the same on slow and 120 Hz screens.
+    const parts = Array.from({length: amount}, () => ({
+        x0: Math.random() * w,
+        y0: -Math.random() * h * 0.5 - 12,
+        vy: (Math.random() * 0.25 + 0.3) * h / 1000,
+        sway: Math.random() * 26 + 8,
+        phase: Math.random() * Math.PI * 2,
+        r: Math.random() * 6 + 5,
+        a: Math.random() * Math.PI,
+        va: (Math.random() - 0.5) * 0.2,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        shape: Math.random() > 0.4,
+    }));
+    const start = performance.now();
+    const frame = (now) => {
+        const t = now - start;
+        c.clearRect(0, 0, w, h);
+        c.globalAlpha = Math.min(1, Math.max(0, (duration - t) / 600));
+        parts.forEach((p) => {
+            const y = p.y0 + p.vy * t;
+            if (y > h + 20 || y < -20) {
+                return;
+            }
+            c.save();
+            c.translate(p.x0 + Math.sin(t / 420 + p.phase) * p.sway, y);
+            c.rotate(p.a + p.va * t / 16);
+            c.scale(1, Math.abs(Math.cos(t / 260 + p.phase)) * 0.7 + 0.3);
+            c.fillStyle = p.color;
+            if (p.shape) {
+                c.fillRect(-p.r / 2, -p.r / 4, p.r, p.r / 2);
+            } else {
+                c.beginPath();
+                c.arc(0, 0, p.r / 2.6, 0, Math.PI * 2);
+                c.fill();
+            }
+            c.restore();
+        });
+        if (t < duration) {
             requestAnimationFrame(frame);
         } else {
             canvas.remove();

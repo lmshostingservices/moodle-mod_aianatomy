@@ -1042,6 +1042,15 @@
     z-index: 60;
     pointer-events: none;
 }
+/* Round complete: confetti falling over the whole screen (appended to body, or the fullscreen element). */
+.aa-confetti-rain {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    pointer-events: none;
+}
 .path-mod-aianatomy .aa-banner {
     position: absolute;
     top: 44px;
@@ -4584,6 +4593,40 @@ html.aa-lock-scroll body {
 }
 .path-mod-aianatomy .ax-info-facts dd {
     margin: 1px 0 0;
+}
+/* Wide screens: the card is docked at the top of the side panel instead of floating over the model. */
+.path-mod-aianatomy .ax-info.is-docked,
+.path-mod-aianatomy .ax-info.is-docked.is-on {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: auto;
+    max-height: calc(var(--ax-h, 640px) * .45);
+    padding: 10px 10px 10px 12px;
+    transform: none;
+    box-shadow: var(--aa-shadow-sm);
+    border: 1px solid var(--aa-border);
+    border-left: 6px solid var(--c);
+}
+.path-mod-aianatomy .ax-info.is-docked {
+    transform: translateY(-6px);
+}
+.path-mod-aianatomy .ax-info.is-docked .ax-info-sub {
+    margin-left: 0;
+}
+.path-mod-aianatomy .ax-info.is-docked .ax-info-title {
+    font-size: .95rem;
+}
+.path-mod-aianatomy .ax-info.is-docked .aa-iconbtn {
+    width: 28px;
+    height: 28px;
+}
+/* While a card is docked the drag instructions are hidden, so more names stay in view. */
+.path-mod-aianatomy .ax-side.has-info .ax-side-help {
+    display: none;
+}
+.path-mod-aianatomy .ax-info.is-docked.is-on {
+    transform: none;
 }
 @media (max-width: 600px) {
     .path-mod-aianatomy .ax-info {

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.15 (2026-11-24)
+
+- Fixed: installing or upgrading showed eleven "XMLDB has detected one CHAR NOT NULL column ... with '' (empty string) as DEFAULT" warnings. The columns no longer declare an empty default. Moodle was already creating them without one, so existing sites need no database change.
+
 ## 1.2.14 (2026-10-13)
 (1.2.13 is kept unchanged.)
 - **The card's speaker button mutes and unmutes.** Pressing it while the card is being read mutes it; pressing again carries on from the same place (nothing restarts or is skipped). Once the reading has finished, it plays the card again from the start. The Study card's Listen button works the same way (Listen, Mute, Unmute). The icon and label show the state. Closing the card still stops its voice.

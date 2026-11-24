@@ -13,7 +13,7 @@
         <FIELD NAME="introformat" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="pack" TYPE="char" LENGTH="64" NOTNULL="true" DEFAULT="hand_right" SEQUENCE="false" COMMENT="Anatomy pack id (folder in packs/)"/>
         <FIELD NAME="level" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="diploma" SEQUENCE="false" COMMENT="Not used since 1.2.10 (one writing style for all learners); kept for backup and restore"/>
-        <FIELD NAME="studyfields" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Comma separated content fields shown to students"/>
+        <FIELD NAME="studyfields" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="Comma separated content fields shown to students"/>
         <FIELD NAME="explode" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="100" SEQUENCE="false" COMMENT="Explode distance, percent"/>
         <FIELD NAME="showcontext" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="1" SEQUENCE="false" COMMENT="Non-selected anatomy: 0 hidden, 1 faded, 2 shown"/>
         <FIELD NAME="studytip" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Activity-wide study tip or group mnemonic"/>
@@ -34,7 +34,7 @@
         <FIELD NAME="voicename" TYPE="char" LENGTH="30" NOTNULL="true" DEFAULT="Kore" SEQUENCE="false" COMMENT="Chirp 3 HD voice"/>
         <FIELD NAME="voiceplaces" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="cards,questions,feedback,prompts" SEQUENCE="false" COMMENT="Where voiceover is used (always all places since 1.2.10)"/>
         <FIELD NAME="voiceauto" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 = read prompts and questions automatically"/>
-        <FIELD NAME="voiceerror" TYPE="char" LENGTH="40" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Why voiceover preparation stopped (error code), empty when fine"/>
+        <FIELD NAME="voiceerror" TYPE="char" LENGTH="40" NOTNULL="true" SEQUENCE="false" COMMENT="Why voiceover preparation stopped (error code), empty when fine"/>
         <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
       </FIELDS>
@@ -50,16 +50,16 @@
         <FIELD NAME="structureid" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" COMMENT="Stable anatomical id from the pack"/>
         <FIELD NAME="enabled" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 = studied and assessed, 0 = context only"/>
         <FIELD NAME="sortorder" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="label" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Label text override, empty = pack name"/>
-        <FIELD NAME="anchor" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Mesh-local anchor x,y,z; empty = structure centre"/>
-        <FIELD NAME="labelpos" TYPE="char" LENGTH="50" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Label box position x,y (0-1 of the viewer); empty = automatic"/>
+        <FIELD NAME="label" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="Label text override, empty = pack name"/>
+        <FIELD NAME="anchor" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" COMMENT="Mesh-local anchor x,y,z; empty = structure centre"/>
+        <FIELD NAME="labelpos" TYPE="char" LENGTH="50" NOTNULL="true" SEQUENCE="false" COMMENT="Label box position x,y (0-1 of the viewer); empty = automatic"/>
         <FIELD NAME="content" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="JSON teaching content students see"/>
         <FIELD NAME="contentstatus" TYPE="char" LENGTH="16" NOTNULL="true" DEFAULT="library" SEQUENCE="false" COMMENT="library, approved or edited"/>
         <FIELD NAME="contentlang" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="en" SEQUENCE="false" COMMENT="Language of the live content"/>
         <FIELD NAME="draft" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="JSON AI draft waiting for teacher review"/>
-        <FIELD NAME="draftlang" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Language of the draft"/>
+        <FIELD NAME="draftlang" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="Language of the draft"/>
         <FIELD NAME="aigenerated" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 if the live content came from AI"/>
-        <FIELD NAME="aimodel" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="aimodel" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="timegenerated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="approvedby" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="timeapproved" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
@@ -130,9 +130,9 @@
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
         <FIELD NAME="attemptid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="kind" TYPE="char" LENGTH="10" NOTNULL="true" DEFAULT="label" SEQUENCE="false" COMMENT="label, find or quiz"/>
-        <FIELD NAME="structureid" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Target structure"/>
+        <FIELD NAME="structureid" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" COMMENT="Target structure"/>
         <FIELD NAME="questionid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="answer" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Structure placed or option chosen"/>
+        <FIELD NAME="answer" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" COMMENT="Structure placed or option chosen"/>
         <FIELD NAME="correct" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="tries" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
         <FIELD NAME="roundno" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
@@ -175,8 +175,8 @@
         <FIELD NAME="voicename" TYPE="char" LENGTH="30" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="speed" TYPE="char" LENGTH="10" NOTNULL="true" DEFAULT="normal" SEQUENCE="false"/>
         <FIELD NAME="textlength" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="credits" TYPE="char" LENGTH="20" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="X-Credits-Charged reported by LMS Labs"/>
-        <FIELD NAME="requestid" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="credits" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="X-Credits-Charged reported by LMS Labs"/>
+        <FIELD NAME="requestid" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
       </FIELDS>
       <KEYS>

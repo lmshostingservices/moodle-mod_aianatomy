@@ -53,7 +53,7 @@ function xmldb_aianatomy_upgrade($oldversion) {
         }
         $table = new xmldb_table('aianatomy_structure');
         foreach ([new xmldb_field('contentlang', XMLDB_TYPE_CHAR, '20', null, XMLDB_NOTNULL, null, 'en', 'contentstatus'),
-                  new xmldb_field('draftlang', XMLDB_TYPE_CHAR, '20', null, XMLDB_NOTNULL, null, '', 'draft')] as $field) {
+                  new xmldb_field('draftlang', XMLDB_TYPE_CHAR, '20', null, XMLDB_NOTNULL, null, null, 'draft')] as $field) {
             if (!$dbman->field_exists($table, $field)) {
                 $dbman->add_field($table, $field);
             }
@@ -72,8 +72,8 @@ function xmldb_aianatomy_upgrade($oldversion) {
             $table->add_field('voicename', XMLDB_TYPE_CHAR, '30', null, XMLDB_NOTNULL, null, null);
             $table->add_field('speed', XMLDB_TYPE_CHAR, '10', null, XMLDB_NOTNULL, null, 'normal');
             $table->add_field('textlength', XMLDB_TYPE_INTEGER, '6', null, XMLDB_NOTNULL, null, '0');
-            $table->add_field('credits', XMLDB_TYPE_CHAR, '20', null, XMLDB_NOTNULL, null, '');
-            $table->add_field('requestid', XMLDB_TYPE_CHAR, '100', null, XMLDB_NOTNULL, null, '');
+            $table->add_field('credits', XMLDB_TYPE_CHAR, '20', null, XMLDB_NOTNULL, null, null);
+            $table->add_field('requestid', XMLDB_TYPE_CHAR, '100', null, XMLDB_NOTNULL, null, null);
             $table->add_field('timecreated', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0');
             $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
             $table->add_key('aianatomyid', XMLDB_KEY_FOREIGN, ['aianatomyid'], 'aianatomy', ['id']);
@@ -117,7 +117,7 @@ function xmldb_aianatomy_upgrade($oldversion) {
     if ($oldversion < 2026100900) {
         // Voiceover preparation status.
         $table = new xmldb_table('aianatomy');
-        $field = new xmldb_field('voiceerror', XMLDB_TYPE_CHAR, '40', null, XMLDB_NOTNULL, null, '', 'voiceauto');
+        $field = new xmldb_field('voiceerror', XMLDB_TYPE_CHAR, '40', null, XMLDB_NOTNULL, null, null, 'voiceauto');
         if (!$dbman->field_exists($table, $field)) {
             $dbman->add_field($table, $field);
         }

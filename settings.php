@@ -116,12 +116,23 @@ if ($ADMIN->fulltree) {
             new moodle_url('/admin/settings.php', ['section' => 'local_aiconfig']),
             get_string('act_configurecentral', 'mod_aianatomy')
         ) : '';
+    // Bring your own AI: say which parts run on the site's own AI.
+    $ownai = '';
+    foreach (['text', 'voice'] as $service) {
+        if (\mod_aianatomy\byok::uses($service)) {
+            $ownai .= html_writer::div(
+                html_writer::tag('i', '', ['class' => 'fa fa-microchip me-2', 'aria-hidden' => 'true']) .
+                    s(get_string('byok_settings_' . $service, 'mod_aianatomy')),
+                'alert alert-success d-flex align-items-center py-2'
+            );
+        }
+    }
     $settings->add(
         new admin_setting_heading(
             'mod_aianatomy/credentialstatus', get_string('credentials', 'mod_aianatomy'),
-            html_writer::div(
+            $ownai . html_writer::div(
                 s($status) . ' ' . $configlink,
-                $source === 'missing' ? 'alert alert-warning' : 'alert alert-info'
+                $source === 'missing' && !$ownai ? 'alert alert-warning' : 'alert alert-info'
             )
         )
     );

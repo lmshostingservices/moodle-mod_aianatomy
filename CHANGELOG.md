@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0 (2026-11-26)
+
+- **Bring your own AI.** With an LMS Labs Bring your own AI licence, writing (library content, questions, translations and group translations) follows Text and voiceover follows Voice in AI Grader Central Config. Parts set to the site's own AI run from the site straight to the provider and use no LMS Labs credits; parts left on credits work as before. The LMS Labs text route's request checks, extra instruction, response schemas and result checks are ported into the plugin and were compared with the service's code on 17,000 generated cases with no differences. A Google voice key uses the same Chirp 3 HD voices, an OpenAI key the closest OpenAI voice.
+- The settings page shows which parts run on the site's own AI, and the editor names "your site's own AI" as the AI in use.
+- New strings `byok_name`, `byok_settings_text`, `byok_settings_voice` in all 25 languages. No database change.
+
 ## 1.2.15 (2026-11-24)
 
 - Fixed: installing or upgrading showed eleven "XMLDB has detected one CHAR NOT NULL column ... with '' (empty string) as DEFAULT" warnings. The columns no longer declare an empty default. Moodle was already creating them without one, so existing sites need no database change.

@@ -293,7 +293,7 @@ class generator {
             function (string $text) use ($instance, $structureid) {
                 $draft = pack::clean_content(self::parse_json($text));
                 manager::store_draft(
-                    $instance, $structureid, $draft, 'LMS Labs',
+                    $instance, $structureid, $draft, (new provider_lmslabs())->get_model_name(),
                     language::normalise($instance->language ?? 'en')
                 );
                 return ['draft' => $draft];
@@ -451,7 +451,7 @@ class generator {
                 $data = self::parse_json($text);
                 $draft = pack::clean_content(is_array($data['content'] ?? null) ? $data['content'] : []);
                 $name = \core_text::substr(trim(clean_param(strip_tags((string)($data['name'] ?? '')), PARAM_TEXT)), 0, 255);
-                manager::store_draft($instance, $structureid, $draft, 'LMS Labs', $target, $name);
+                manager::store_draft($instance, $structureid, $draft, (new provider_lmslabs())->get_model_name(), $target, $name);
                 $new = [];
                 foreach ((array)($data['questions'] ?? []) as $tq) {
                     $qid = is_array($tq) ? ($meta['refs'][(int)($tq['ref'] ?? 0)] ?? null) : null;

@@ -55,7 +55,7 @@ class tts_lmslabs {
      * @return bool
      */
     public static function is_ready(): bool {
-        return self::endpoint() !== '' && credentials::source() !== 'missing';
+        return \mod_aianatomy\byok::uses('voice') || (self::endpoint() !== '' && credentials::source() !== 'missing');
     }
 
     /**
@@ -85,6 +85,11 @@ class tts_lmslabs {
      *               or ['state' => 'pending', 'retryafter']
      */
     public static function request(\stdClass $job): array {
+        // Bring your own AI: the clip is made on the site's own voice, at no charge.
+        if (\mod_aianatomy\byok::uses('voice')) {
+            return ['state' => 'done', 'audio' => \mod_aianatomy\byok::speech((string)$job->body), 'mimetype' => 'audio/mpeg',
+                'credits' => '0', 'balance' => '', 'requestid' => ''];
+        }
         [$status, $headers, $body] = lmslabs::send(
             'POST', self::endpoint(), $job->body, 'audio/mpeg, application/json',
             $job->idemkey
@@ -124,7 +129,8 @@ class tts_lmslabs {
         if (!$refresh && is_array($cached) && ($cached['time'] ?? 0) > time() - self::CAPSCACHE) {
             return $cached['locales'] ?: null;
         }
-        if (!self::is_ready()) {
+        // The catalogue is a free LMS Labs lookup, so it needs LMS Labs credentials even when clips run on the site's own voice.
+        if (self::endpoint() === '' || credentials::source() === 'missing') {
             return is_array($cached) ? ($cached['locales'] ?: null) : null;
         }
         [$status, , $body] = lmslabs::send('GET', endpoints::capabilities(), null, 'application/json', null, 10);

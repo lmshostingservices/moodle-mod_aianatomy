@@ -48,7 +48,7 @@ class provider_lmslabs implements provider {
      * @return bool
      */
     public function is_ready(): bool {
-        return endpoints::text() !== '' && credentials::source() !== 'missing';
+        return \mod_aianatomy\byok::uses('text') || (endpoints::text() !== '' && credentials::source() !== 'missing');
     }
 
     /**
@@ -57,7 +57,7 @@ class provider_lmslabs implements provider {
      * @return string
      */
     public function get_model_name(): string {
-        return 'LMS Labs';
+        return \mod_aianatomy\byok::uses('text') ? get_string('byok_name', 'mod_aianatomy') : 'LMS Labs';
     }
 
     /**
@@ -77,7 +77,9 @@ class provider_lmslabs implements provider {
         if (\core_text::strlen($system) + \core_text::strlen($prompt) > self::MAXMESSAGECHARS) {
             throw new moodle_exception('aitoolarge', 'mod_aianatomy');
         }
-        $creds = credentials::resolve();
+        // On the site's own AI no LMS Labs credentials are needed, so the site ID is sent only when there is one.
+        $own = \mod_aianatomy\byok::uses('text');
+        $creds = $own && credentials::source() === 'missing' ? ['siteid' => null] : credentials::resolve();
         $body = [
             'messages' => [
                 ['role' => 'system', 'content' => $system],
@@ -92,6 +94,9 @@ class provider_lmslabs implements provider {
                 'contextid' => $context->id,
             ],
         ];
+        if ($creds['siteid'] === null) {
+            unset($body['metadata']['siteid']);
+        }
         if ($source !== null) {
             $body['source'] = $source;
         }
@@ -109,6 +114,10 @@ class provider_lmslabs implements provider {
      * @return array
      */
     public function request(\stdClass $job): array {
+        // Bring your own AI: the job runs on the site's own AI, with the service's checks, at no charge.
+        if (\mod_aianatomy\byok::uses('text')) {
+            return ['state' => 'done', 'text' => \mod_aianatomy\byok::text((string)$job->body), 'credits' => '0', 'balance' => ''];
+        }
         [$status, $headers, $body] = lmslabs::send(
             'POST', endpoints::text(), $job->body, 'application/json',
             $job->idemkey

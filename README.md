@@ -67,7 +67,10 @@ How the credentials work:
 - The API key stays on the server. Generation requests send it only in the `X-API-Key` header (with `X-Site-ID`); the activation routes send it in their JSON request body, as LMS Labs requires. It is never sent to the browser or written to logs or content.
 - No student data is sent to the AI service. Prompts contain only anatomy facts from the pack and the writing style; voiceover sends only the teaching text to be read.
 
-LMS Labs AI credits are the only AI source. There is no free or third-party AI option. Without LMS Labs credentials, teachers can still use and edit the library content and questions by hand.
+Without LMS Labs credentials or Bring your own AI, teachers can still use and edit the library content and questions by hand.
+
+### Bring your own AI
+With an LMS Labs Bring your own AI licence, set **Text** and/or **Voice** to Moodle AI or your own key in AI Grader Central Config (`local_aiconfig`; Voice needs your own key). Writing (library content, questions, translations) then follows Text and voiceover follows Voice: each part set to your site's own AI runs straight from your Moodle site to the provider and uses no LMS Labs credits. The plugin adds the same instruction and response schema as the LMS Labs service and checks the AI's answers the same way. A Google voice key uses the same Chirp 3 HD voices; an OpenAI key uses the closest OpenAI voice. The voice catalogue is still read from LMS Labs (free) when the site has LMS Labs credentials; without them all eight voices are offered.
 
 ## Security and integrity
 - In Test mode the browser never receives the answer key. Pins, labels and questions use random tokens for each attempt, question options are shuffled for each attempt, and the server marks everything.
